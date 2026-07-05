@@ -1,8 +1,32 @@
 import { NextResponse } from "next/server";
 import { getArticleIntelligence, getRelatedArticles, searchWikipedia } from "@/lib/wikipedia";
 
-const MAX_INPUT_CHARS = 15000;
-const geminiPrompt = `Return valid JSON only. Use only the article text provided. Do not add outside facts. Generate a compact response with: {"editorialBrief": "...", "timeline": [{"year": "...", "title": "...", "summary": "..."}]}. Include timeline entries only when the article clearly contains chronology. If chronology is not present, return an empty timeline array.`;
+const MAX_INPUT_CHARS = 120000;
+const geminiPrompt = `Return valid JSON only. Use the following schema:
+{
+  "editorialBrief": "Encyclopedia-style summary briefing of the topic.",
+  "timeline": [
+    {
+      "year": "Event year (e.g. '1804' or 'Context')",
+      "title": "Concise title, maximum 10-12 words",
+      "summary": "Cohesive summary of the event.",
+      "significance": "Historical or conceptual significance at the time.",
+      "longTermImpact": "The long-term legacy or consequences.",
+      "relatedPeople": ["Key figures involved"],
+      "relatedPlaces": ["Key locations involved"]
+    }
+  ],
+  "relatedArticles": [
+    {
+      "title": "Wikipedia article title (e.g. 'French Revolution')",
+      "description": "Short explanation of its relation to the topic.",
+      "relevanceScore": 0.95, // Float between 0.0 and 1.0 representing importance
+      "category": "One of: 'person', 'place', 'event', 'organization', 'concept', 'period'",
+      "connections": ["Titles of other articles in this relatedArticles list that this node connects to"]
+    }
+  ]
+}
+Do not include any JSON wrappers or markdown code blocks (like \`\`\`json). Start with { and end with }. Do not add outside facts. Ensure all text is grammatically correct and reads naturally like a professionally edited encyclopedia.`;
 
 function normalizeText(text: string) {
   return text.replace(/\s+/g, " ").replace(/\[\d+\]/g, "").trim();
@@ -293,7 +317,7 @@ async function getGeminiInsights(articleTitle: string, articleExtract: string, b
     const response = await ai.models.generateContent({
       model: "gemini-2.0-flash",
       contents,
-      config: { temperature: 0.2, maxOutputTokens: 600 },
+      config: { temperature: 0.2, maxOutputTokens: 4000 },
     });
 
     const text = typeof (response as { text?: string }).text === "string" ? (response as { text?: string }).text : "";
@@ -303,11 +327,26 @@ async function getGeminiInsights(articleTitle: string, articleExtract: string, b
     return {
       editorialBrief: typeof parsed.editorialBrief === "string" ? parsed.editorialBrief : null,
       timeline: Array.isArray(parsed.timeline)
-        ? parsed.timeline.filter((item: unknown): item is { year: string; title: string; summary: string } => {
-            if (!item || typeof item !== "object") return false;
-            const candidate = item as Record<string, unknown>;
-            return typeof candidate.year === "string" && typeof candidate.title === "string" && typeof candidate.summary === "string";
-          })
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ? parsed.timeline.map((item: any) => ({
+            year: String(item.year || "Context"),
+            title: String(item.title || "").slice(0, 100),
+            summary: String(item.summary || ""),
+            significance: String(item.significance || ""),
+            longTermImpact: String(item.longTermImpact || ""),
+            relatedPeople: Array.isArray(item.relatedPeople) ? item.relatedPeople.map(String) : [],
+            relatedPlaces: Array.isArray(item.relatedPlaces) ? item.relatedPlaces.map(String) : [],
+          }))
+        : [],
+      relatedArticles: Array.isArray(parsed.relatedArticles)
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ? parsed.relatedArticles.map((item: any) => ({
+            title: String(item.title || ""),
+            description: String(item.description || ""),
+            relevanceScore: typeof item.relevanceScore === "number" ? item.relevanceScore : 0.8,
+            category: String(item.category || "concept"),
+            connections: Array.isArray(item.connections) ? item.connections.map(String) : [],
+          }))
         : [],
     };
   } catch (error) {
@@ -339,24 +378,39 @@ export async function POST(request: Request) {
     const gemini = await getGeminiInsights(articleSource.title, articleSource.extract, baseTimeline);
 
     const editorialBrief = refineEditorialBrief(gemini?.editorialBrief || null, articleSource.extract, articleSource.title);
-    const timeline = (gemini?.timeline?.length ? gemini.timeline : baseTimeline).map(
-      (
-        item: { year: string; title: string; summary: string; significance?: string },
-        index: number
-      ) => {
+    
+    // Map chronological timeline elements
+    let timeline;
+    if (gemini?.timeline?.length) {
+      timeline = gemini.timeline;
+    } else {
+      timeline = baseTimeline.map((item) => {
         const focusDetails = buildFocusCardDetails(item.summary, articleSource.extract, articleSource.title);
         return {
-          ...item,
-          significance: baseTimeline[index]?.significance || "This milestone is part of the article's documented chronology and is grounded in the source text.",
-          whatHappened: focusDetails.whatHappened,
-          whyItMattered: focusDetails.whyItMattered,
-          longTermImpact: focusDetails.longTermImpact,
-          relatedPeople: focusDetails.relatedPeople,
-          relatedPlaces: focusDetails.relatedPlaces,
+          year: item.year,
+          title: item.title,
+          summary: item.summary,
+          significance: item.significance || "This milestone is part of the article's documented chronology.",
+          longTermImpact: focusDetails.longTermImpact || "Its consequences continued to shape the subject's historical context over time.",
+          relatedPeople: focusDetails.relatedPeople || [],
+          relatedPlaces: focusDetails.relatedPlaces || [],
         };
-      }
-    );
-    const relatedArticles = Array.isArray(related) ? related.slice(0, 8) : [];
+      });
+    }
+
+    // Map related concept graph articles
+    let relatedArticles;
+    if (gemini?.relatedArticles?.length) {
+      relatedArticles = gemini.relatedArticles;
+    } else {
+      relatedArticles = (Array.isArray(related) ? related.slice(0, 8) : []).map((item) => ({
+        title: item.title,
+        description: item.description || "Related concept explored in Wikipedia",
+        relevanceScore: 0.75,
+        category: "concept",
+        connections: [],
+      }));
+    }
 
     return NextResponse.json({
       article: {

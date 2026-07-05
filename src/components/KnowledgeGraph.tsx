@@ -1,12 +1,15 @@
 "use client";
 
+import { useMemo } from "react";
 import { ReactFlow, Background } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
 
 type RelatedArticleItem = {
   title: string;
   description?: string;
-  thumbnail?: { source: string };
+  relevanceScore?: number;
+  category?: string;
+  connections?: string[];
 };
 
 type Props = {
@@ -16,64 +19,192 @@ type Props = {
 };
 
 export default function KnowledgeGraph({ title, related, onSelectNode }: Props) {
-  // Center main node, distribute related nodes in a circular or structured layout around it
-  const mainNode = {
-    id: "main",
-    position: { x: 400, y: 150 },
-    data: { label: title },
-    style: {
-      border: "1px solid rgba(0, 245, 160, 0.4)",
-      borderRadius: 999,
-      padding: "20px 32px",
-      fontWeight: 700,
-      background: "rgba(0, 245, 160, 0.05)",
-      color: "#ffffff",
-      fontSize: 18,
-      boxShadow: "0 0 30px rgba(0, 245, 160, 0.15)",
-      textAlign: "center" as const,
-      cursor: "default",
-    },
-  };
+  const { nodes, edges } = useMemo(() => {
+    // 1. Initialize nodes list with seed circular coordinates
+    const initialNodes = [
+      { id: "main", title, x: 0, y: 0, fx: 0, fy: 0, isMain: true, relevanceScore: 1.0, category: "main" },
+      ...related.map((item, index) => {
+        const angle = (index * 2 * Math.PI) / Math.max(related.length, 1);
+        const initRadius = 160 + (index % 5) * 12;
+        return {
+          id: String(index),
+          title: item.title,
+          x: Math.cos(angle) * initRadius,
+          y: Math.sin(angle) * initRadius,
+          fx: 0,
+          fy: 0,
+          isMain: false,
+          relevanceScore: item.relevanceScore || 0.8,
+          category: item.category || "concept",
+        };
+      }),
+    ];
 
-  const relatedNodes = related.slice(0, 6).map((article, index) => {
-    // Distribute nodes in a semi-circle or ring around the center
-    const angle = (index * 2 * Math.PI) / Math.min(related.length, 6);
-    const radius = 240;
-    const x = 400 + radius * Math.cos(angle);
-    const y = 150 + radius * Math.sin(angle);
+    // 2. Establish connections (edges)
+    const activeEdges: Array<{ id: string; source: string; target: string; animated?: boolean; style?: React.CSSProperties }> = [];
+    
+    // Connect center node to all related nodes
+    related.forEach((_, index) => {
+      activeEdges.push({
+        id: `edge-main-${index}`,
+        source: "main",
+        target: String(index),
+        animated: true,
+        style: { stroke: "rgba(255, 255, 255, 0.08)", strokeWidth: 1.5 },
+      });
+    });
 
-    return {
-      id: String(index),
-      position: { x, y },
-      data: { label: article.title },
-      style: {
-        border: "1px solid rgba(255, 255, 255, 0.1)",
-        borderRadius: 999,
-        padding: "12px 20px",
-        background: "rgba(15, 15, 20, 0.8)",
-        backdropFilter: "blur(8px)",
-        color: "#d4d4d8",
-        fontSize: 14,
-        textAlign: "center" as const,
-        cursor: "pointer",
-        transition: "all 0.3s ease",
-        boxShadow: "0 4px 20px rgba(0,0,0,0.3)",
-      },
-    };
-  });
+    // Connect related nodes to each other based on their semantic connections
+    related.forEach((item, i) => {
+      if (Array.isArray(item.connections)) {
+        item.connections.forEach((connTitle) => {
+          const targetIndex = related.findIndex((r) => r.title.toLowerCase() === connTitle.toLowerCase());
+          if (targetIndex !== -1 && targetIndex !== i) {
+            const edgeId = i < targetIndex ? `edge-${i}-${targetIndex}` : `edge-${targetIndex}-${i}`;
+            if (!activeEdges.some((e) => e.id === edgeId)) {
+              activeEdges.push({
+                id: edgeId,
+                source: String(i),
+                target: String(targetIndex),
+                animated: false,
+                style: { stroke: "rgba(0, 217, 245, 0.15)", strokeWidth: 1 },
+              });
+            }
+          }
+        });
+      }
+    });
 
-  const nodes = [mainNode, ...relatedNodes];
+    // 3. Run spring-embedder simulation (physics solver)
+    const iterations = 80;
+    const kRepel = 200000; // Repel constant
+    const kSpring = 0.05;  // Spring constant
+    const dRest = 200;     // Resting distance
+    const dt = 0.4;        // Time delta
 
-  const edges = related.slice(0, 6).map((_, index) => ({
-    id: `e-${index}`,
-    source: "main",
-    target: String(index),
-    animated: true,
-    style: {
-      stroke: "rgba(0, 217, 245, 0.25)",
-      strokeWidth: 2,
-    },
-  }));
+    for (let step = 0; step < iterations; step++) {
+      // Repulsion force between all node pairs
+      for (let i = 0; i < initialNodes.length; i++) {
+        const n1 = initialNodes[i];
+        for (let j = i + 1; j < initialNodes.length; j++) {
+          const n2 = initialNodes[j];
+          const dx = n2.x - n1.x;
+          const dy = n2.y - n1.y;
+          const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+          
+          if (dist < 600) {
+            const force = kRepel / (dist * dist);
+            const fx = force * (dx / dist);
+            const fy = force * (dy / dist);
+            
+            n1.fx -= fx;
+            n1.fy -= fy;
+            n2.fx += fx;
+            n2.fy += fy;
+          }
+        }
+      }
+
+      // Attraction force along connected edges
+      activeEdges.forEach((edge) => {
+        const sNode = initialNodes.find((n) => n.id === edge.source);
+        const tNode = initialNodes.find((n) => n.id === edge.target);
+        if (!sNode || !tNode) return;
+
+        const dx = tNode.x - sNode.x;
+        const dy = tNode.y - sNode.y;
+        const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+        
+        const force = kSpring * (dist - dRest);
+        const fx = force * (dx / dist);
+        const fy = force * (dy / dist);
+        
+        sNode.fx += fx;
+        sNode.fy += fy;
+        tNode.fx -= fx;
+        tNode.fy -= fy;
+      });
+
+      // Update positions
+      initialNodes.forEach((node) => {
+        if (node.isMain) {
+          // Keep center node anchored at origin
+          node.x = 0;
+          node.y = 0;
+        } else {
+          // Apply forces with damping factor
+          node.x += node.fx * dt;
+          node.y += node.fy * dt;
+        }
+        node.fx = 0;
+        node.fy = 0;
+      });
+    }
+
+    // Map computed layout back to React Flow nodes structure
+    const reactFlowNodes = initialNodes.map((node) => {
+      // Determine category styling
+      let borderCol = "rgba(0, 217, 245, 0.4)";
+      let bgCol = "rgba(0, 217, 245, 0.05)";
+      let textCol = "#d4d4d8";
+      let glowShadow = "0 4px 20px rgba(0, 0, 0, 0.3)";
+
+      if (node.isMain) {
+        borderCol = "rgba(0, 245, 160, 0.5)";
+        bgCol = "rgba(0, 245, 160, 0.05)";
+        textCol = "#ffffff";
+        glowShadow = "0 0 35px rgba(0, 245, 160, 0.25)";
+      } else {
+        switch (node.category.toLowerCase()) {
+          case "person":
+            borderCol = "rgba(121, 40, 202, 0.4)";
+            bgCol = "rgba(121, 40, 202, 0.05)";
+            break;
+          case "place":
+            borderCol = "rgba(59, 130, 246, 0.4)";
+            bgCol = "rgba(59, 130, 246, 0.05)";
+            break;
+          case "event":
+            borderCol = "rgba(239, 68, 68, 0.4)";
+            bgCol = "rgba(239, 68, 68, 0.05)";
+            break;
+          case "period":
+            borderCol = "rgba(245, 158, 11, 0.4)";
+            bgCol = "rgba(245, 158, 11, 0.05)";
+            break;
+          case "organization":
+            borderCol = "rgba(16, 185, 129, 0.4)";
+            bgCol = "rgba(16, 185, 129, 0.05)";
+            break;
+        }
+      }
+
+      const baseScale = node.isMain ? 1.25 : 0.8 + node.relevanceScore * 0.45;
+
+      return {
+        id: node.id,
+        position: { x: node.x, y: node.y },
+        data: { label: node.title },
+        style: {
+          border: `1px solid ${borderCol}`,
+          borderRadius: 999,
+          padding: node.isMain ? "20px 32px" : "12px 20px",
+          background: bgCol,
+          backdropFilter: "blur(8px)",
+          color: textCol,
+          fontSize: `${13 * baseScale}px`,
+          fontWeight: node.isMain ? 700 : 500,
+          textAlign: "center" as const,
+          cursor: node.isMain ? "default" : "pointer",
+          transition: "all 0.3s ease",
+          boxShadow: glowShadow,
+          minWidth: node.isMain ? "160px" : "110px",
+        },
+      };
+    });
+
+    return { nodes: reactFlowNodes, edges: activeEdges };
+  }, [title, related]);
 
   return (
     <section className="border-t border-white/5 py-12 md:py-16">

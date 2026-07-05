@@ -26,6 +26,9 @@ type AnalysisResponse = {
     relatedArticles?: Array<{
       title: string;
       description?: string;
+      relevanceScore?: number;
+      category?: string;
+      connections?: string[];
       thumbnail?: { source: string };
     }>;
   };
