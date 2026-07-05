@@ -4,27 +4,47 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://visualizer.wiki"),
+  metadataBase: new URL("https://www.visualizer.wiki"),
+
   title: "Visualizer.wiki",
-  description: "Explore Wikipedia visually through summaries, timelines and images.",
+  description:
+    "Explore Wikipedia visually through summaries, timelines and images.",
   applicationName: "Visualizer.wiki",
-  keywords: ["Wikipedia", "visualizer", "timeline", "knowledge", "AI summaries"],
+
+  keywords: [
+    "Wikipedia",
+    "visualizer",
+    "timeline",
+    "knowledge",
+    "AI summaries",
+  ],
+
+  verification: {
+    google: "bvKGYR_AZdGrVDgA68Cupls_CPMOrR6ijdFfA1AirkE",
+  },
+
   manifest: "/manifest.json",
+
   alternates: {
     canonical: "/",
   },
+
   openGraph: {
     title: "Visualizer.wiki",
-    description: "Explore Wikipedia visually through summaries, timelines and images.",
-    url: "https://visualizer.wiki",
+    description:
+      "Explore Wikipedia visually through summaries, timelines and images.",
+    url: "https://www.visualizer.wiki",
     siteName: "Visualizer.wiki",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Visualizer.wiki",
-    description: "Explore Wikipedia visually through summaries, timelines and images.",
+    description:
+      "Explore Wikipedia visually through summaries, timelines and images.",
   },
+
   robots: {
     index: true,
     follow: true,
@@ -46,6 +66,7 @@ export default function RootLayout({
         <Suspense fallback={null}>
           <GoogleAnalytics />
         </Suspense>
+
         {children}
       </body>
     </html>
