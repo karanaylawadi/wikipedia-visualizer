@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: #000000;
+  color: #ffffff;
+}
+
+.react-flow__attribution {
+  display: none !important;
+}
+
+.animated-gradient {
+  background: linear-gradient(
+    90deg,
+    #00f5a0,
+    #00d9f5,
+    #007cf0,
+    #00f5a0
+  );
+  background-size: 300% 300%;
+  animation: gradientMove 4s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}

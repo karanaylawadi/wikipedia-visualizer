@@ -1,0 +1,10 @@
+{
+  "name": "Visualizer.wiki",
+  "short_name": "Visualizer",
+  "description": "Explore Wikipedia visually through summaries, timelines and images.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": []
+}
