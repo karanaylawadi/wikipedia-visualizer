@@ -8,6 +8,24 @@ export type ArticleIntelligence = WikiResult & {
   categories: string[];
 };
 
+type WikipediaSearchResponse = {
+  query?: {
+    search?: Array<{
+      title?: string;
+    }>;
+  };
+};
+
+type WikipediaSummaryResponse = {
+  title?: string;
+  extract?: string;
+  description?: string;
+  thumbnail?: WikiResult["thumbnail"];
+  content_urls?: WikiResult["content_urls"];
+  timestamp?: string;
+  lang?: string;
+};
+
 const RELATED_TOPIC_KEYWORDS = [
   "war",
   "battle",
@@ -69,7 +87,10 @@ function countOccurrences(text: string, title: string) {
 function isAdministrativeTopic(title: string, description?: string) {
   const normalizedTitle = normalizeTitleText(title).toLowerCase();
   const combined = `${normalizedTitle} ${description || ""}`.toLowerCase();
-  return /\b(author|writer|editor|publication|journal|essay|poem|novel|play|album|film|series|reference|references|bibliography|maintenance|year|years|month|months|day|days|date|dates|template|portal|category|special|help|file|user|talk|isbn|citation|wikipedia)\b/.test(combined);
+
+  return /\b(author|writer|editor|publication|journal|essay|poem|novel|play|album|film|series|reference|references|bibliography|maintenance|year|years|month|months|day|days|date|dates|template|portal|category|special|help|file|user|talk|isbn|citation|wikipedia)\b/.test(
+    combined
+  );
 }
 
 function isRecognizableRelatedTopic(title: string, description?: string) {
@@ -77,16 +98,24 @@ function isRecognizableRelatedTopic(title: string, description?: string) {
   const combined = `${normalizedTitle} ${description || ""}`.toLowerCase();
 
   if (!normalizedTitle || normalizedTitle.length < 3) return false;
-  if (/^(list of|category:|portal:|template:|wikipedia:|special:|help:|file:|user:|talk:|book:|isbn|citation|template|category)/i.test(normalizedTitle)) {
+
+  if (
+    /^(list of|category:|portal:|template:|wikipedia:|special:|help:|file:|user:|talk:|book:|isbn|citation|template|category)/i.test(
+      normalizedTitle
+    )
+  ) {
     return false;
   }
+
   if (isAdministrativeTopic(normalizedTitle, description)) {
     return false;
   }
 
   const score =
     (description ? 2 : 0) +
-    (RELATED_TOPIC_KEYWORDS.some((keyword) => combined.includes(keyword)) ? 3 : 0) +
+    (RELATED_TOPIC_KEYWORDS.some((keyword) => combined.includes(keyword))
+      ? 3
+      : 0) +
     (normalizedTitle.split(/\s+/).length <= 3 ? 1 : 0);
 
   return score >= 2;
@@ -94,102 +123,175 @@ function isRecognizableRelatedTopic(title: string, description?: string) {
 
 function getCategoryScore(title: string, categories: string[] = []) {
   const topicTokens = new Set(tokenize(title));
+
   return categories.reduce((score, category) => {
     const name = category.replace(/^Category:/i, "").toLowerCase();
-    const overlap = tokenize(name).filter((token) => topicTokens.has(token)).length;
+    const overlap = tokenize(name).filter((token) =>
+      topicTokens.has(token)
+    ).length;
+
     return score + overlap;
   }, 0);
 }
 
-export async function searchWikipedia(query: string): Promise<WikiResult | null> {
-  if (!query.trim()) return null;
-
-  const response = await fetch(
-    `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(query)}`
+async function getCanonicalWikipediaTitle(query: string) {
+  const searchResponse = await fetch(
+    `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(
+      query
+    )}&format=json&origin=*&srlimit=1`
   );
 
-  if (!response.ok) return null;
+  if (!searchResponse.ok) return null;
 
-  const data = await response.json();
+  const searchData = (await searchResponse.json()) as WikipediaSearchResponse;
+  const title = searchData.query?.search?.[0]?.title;
 
-  return {
-    title: data.title,
-    extract: data.extract,
-    description: data.description,
-    thumbnail: data.thumbnail,
-    content_urls: data.content_urls,
-    timestamp: data.timestamp,
-    lang: data.lang,
-  };
+  return title || null;
 }
 
-export async function getArticleIntelligence(query: string): Promise<ArticleIntelligence | null> {
-  if (!query.trim()) return null;
+export async function searchWikipedia(
+  query: string
+): Promise<WikiResult | null> {
+  const trimmedQuery = query.trim();
 
-  const [summaryResponse, parseResponse] = await Promise.all([
-    fetch(
-      `https://en.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(query)}&prop=extracts|links|categories|pageimages|description&explaintext=1&redirects=1&pllimit=100&cllimit=50&format=json&origin=*&plnamespace=0&clshow=!hidden&pithumbsize=1200&piprop=thumbnail`
-    ),
-    fetch(
-      `https://en.wikipedia.org/w/api.php?action=parse&format=json&origin=*&page=${encodeURIComponent(query)}&prop=sections|wikitext`
-    ),
-  ]);
+  if (!trimmedQuery) return null;
 
-  if (!summaryResponse.ok || !parseResponse.ok) return null;
+  try {
+    const canonicalTitle =
+      (await getCanonicalWikipediaTitle(trimmedQuery)) || trimmedQuery;
 
-  const summaryData = await summaryResponse.json();
-  const parseData = await parseResponse.json();
+    const response = await fetch(
+      `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(
+        canonicalTitle
+      )}`
+    );
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const page = Object.values(summaryData.query?.pages || {})[0] as any;
-  if (!page) return null;
+    if (!response.ok) return null;
 
-  const articleExtract = typeof page.extract === "string" ? page.extract : "";
-  const paragraphs = articleExtract
-    .split(/\n{2,}/)
-    .map((entry: string) => entry.trim())
-    .filter(Boolean);
-  const lead = paragraphs[0] || articleExtract;
-  const sectionHeadings = Array.isArray(parseData.parse?.sections)
-    ? parseData.parse.sections
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        .map((section: any) => section.line)
-        .filter((line: string | undefined): line is string => Boolean(line))
-    : [];
-  const wikitext = typeof parseData.parse?.wikitext?.["*"] === "string" ? parseData.parse.wikitext["*"] : "";
-  const links = Array.isArray(page.links)
-    ? page.links
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        .filter((link: any) => typeof link?.title === "string")
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        .map((link: any) => ({ title: link.title, description: link.description }))
-    : [];
-  const categories = Array.isArray(page.categories)
+    const data = (await response.json()) as WikipediaSummaryResponse;
+
+    if (!data.title || !data.extract) return null;
+
+    return {
+      title: data.title,
+      extract: data.extract,
+      description: data.description,
+      thumbnail: data.thumbnail,
+      content_urls: data.content_urls,
+      timestamp: data.timestamp,
+      lang: data.lang,
+    };
+  } catch (error) {
+    console.error("Wikipedia search failed:", error);
+    return null;
+  }
+}
+
+export async function getArticleIntelligence(
+  query: string
+): Promise<ArticleIntelligence | null> {
+  const trimmedQuery = query.trim();
+
+  if (!trimmedQuery) return null;
+
+  try {
+    const canonicalTitle =
+      (await getCanonicalWikipediaTitle(trimmedQuery)) || trimmedQuery;
+
+    const [summaryResponse, parseResponse] = await Promise.all([
+      fetch(
+        `https://en.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(
+          canonicalTitle
+        )}&prop=extracts|links|categories|pageimages|description&explaintext=1&redirects=1&pllimit=100&cllimit=50&format=json&origin=*&plnamespace=0&clshow=!hidden&pithumbsize=1200&piprop=thumbnail`
+      ),
+      fetch(
+        `https://en.wikipedia.org/w/api.php?action=parse&format=json&origin=*&page=${encodeURIComponent(
+          canonicalTitle
+        )}&prop=sections|wikitext`
+      ),
+    ]);
+
+    if (!summaryResponse.ok || !parseResponse.ok) return null;
+
+    const summaryData = await summaryResponse.json();
+    const parseData = await parseResponse.json();
+
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    ? page.categories.map((category: any) => category.title).filter((title: string | undefined): title is string => Boolean(title))
-    : [];
+    const page = Object.values(summaryData.query?.pages || {})[0] as any;
 
-  return {
-    title: page.title || query,
-    extract: articleExtract,
-    description: page.description,
-    thumbnail: page.thumbnail,
-    content_urls: page.content_urls,
-    timestamp: page.timestamp,
-    lang: page.lang,
-    lead,
-    sectionHeadings,
-    wikitext,
-    links,
-    categories,
-  };
+    if (!page || page.missing) return null;
+
+    const articleExtract = typeof page.extract === "string" ? page.extract : "";
+
+    const paragraphs = articleExtract
+      .split(/\n{2,}/)
+      .map((entry: string) => entry.trim())
+      .filter(Boolean);
+
+    const lead = paragraphs[0] || articleExtract;
+
+    const sectionHeadings = Array.isArray(parseData.parse?.sections)
+      ? parseData.parse.sections
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          .map((section: any) => section.line)
+          .filter((line: string | undefined): line is string => Boolean(line))
+      : [];
+
+    const wikitext =
+      typeof parseData.parse?.wikitext?.["*"] === "string"
+        ? parseData.parse.wikitext["*"]
+        : "";
+
+    const links = Array.isArray(page.links)
+      ? page.links
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          .filter((link: any) => typeof link?.title === "string")
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          .map((link: any) => ({
+            title: link.title,
+            description: link.description,
+          }))
+      : [];
+
+    const categories = Array.isArray(page.categories)
+      ? page.categories
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          .map((category: any) => category.title)
+          .filter((title: string | undefined): title is string =>
+            Boolean(title)
+          )
+      : [];
+
+    return {
+      title: page.title || canonicalTitle,
+      extract: articleExtract,
+      description: page.description,
+      thumbnail: page.thumbnail,
+      content_urls: page.content_urls,
+      timestamp: page.timestamp,
+      lang: page.lang,
+      lead,
+      sectionHeadings,
+      wikitext,
+      links,
+      categories,
+    };
+  } catch (error) {
+    console.error("Wikipedia article intelligence failed:", error);
+    return null;
+  }
 }
 
-export async function getRelatedArticles(query: string): Promise<RelatedArticle[]> {
+export async function getRelatedArticles(
+  query: string
+): Promise<RelatedArticle[]> {
   const article = await getArticleIntelligence(query);
+
   if (!article) return [];
 
-  const fullText = `${article.extract} ${article.lead} ${article.description || ""}`;
+  const fullText = `${article.extract} ${article.lead} ${
+    article.description || ""
+  }`;
   const leadText = article.lead || "";
   const wikitext = article.wikitext || "";
   const sectionText = (article.sectionHeadings || []).join(" ");
@@ -200,13 +302,34 @@ export async function getRelatedArticles(query: string): Promise<RelatedArticle[
     .map((link) => {
       const normalizedTitle = normalizeTitleText(link.title);
       const leadMentions = countOccurrences(leadText, normalizedTitle);
-      const infoboxMentions = countOccurrences(infoboxScoreText, normalizedTitle);
+      const infoboxMentions = countOccurrences(
+        infoboxScoreText,
+        normalizedTitle
+      );
       const sectionMentions = countOccurrences(sectionText, normalizedTitle);
       const internalLinkFrequency = countOccurrences(fullText, normalizedTitle);
-      const categoryBoost = getCategoryScore(normalizedTitle, article.categories);
-      const keywordBoost = RELATED_TOPIC_KEYWORDS.some((keyword) => `${normalizedTitle} ${link.description || ""}`.toLowerCase().includes(keyword)) ? 2 : 0;
-      const lengthPenalty = normalizedTitle.split(/\s+/).length > 4 ? -1 : 0;
-      const score = leadMentions * 6 + infoboxMentions * 4 + sectionMentions * 3 + internalLinkFrequency * 2 + categoryBoost * 2 + keywordBoost + lengthPenalty;
+      const categoryBoost = getCategoryScore(
+        normalizedTitle,
+        article.categories
+      );
+      const keywordBoost = RELATED_TOPIC_KEYWORDS.some((keyword) =>
+        `${normalizedTitle} ${link.description || ""}`
+          .toLowerCase()
+          .includes(keyword)
+      )
+        ? 2
+        : 0;
+      const lengthPenalty =
+        normalizedTitle.split(/\s+/).length > 4 ? -1 : 0;
+
+      const score =
+        leadMentions * 6 +
+        infoboxMentions * 4 +
+        sectionMentions * 3 +
+        internalLinkFrequency * 2 +
+        categoryBoost * 2 +
+        keywordBoost +
+        lengthPenalty;
 
       return {
         title: link.title,
