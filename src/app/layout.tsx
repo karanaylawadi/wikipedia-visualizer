@@ -5,18 +5,35 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.visualizer.wiki"),
+
   title: "Visualizer.wiki",
   description:
     "Explore Wikipedia visually through summaries, timelines and images.",
   applicationName: "Visualizer.wiki",
-  keywords: ["Wikipedia", "visualizer", "timeline", "knowledge", "AI summaries"],
+
+  keywords: [
+    "Wikipedia",
+    "visualizer",
+    "timeline",
+    "knowledge",
+    "AI summaries",
+  ],
+
   verification: {
     google: "bvKGYR_AZdGrVDgA68Cupls_CPMOrR6ijdFfA1AirkE",
   },
+
   manifest: "/manifest.json",
+
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
+
   alternates: {
     canonical: "/",
   },
+
   openGraph: {
     title: "Visualizer.wiki",
     description:
@@ -25,12 +42,14 @@ export const metadata: Metadata = {
     siteName: "Visualizer.wiki",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Visualizer.wiki",
     description:
       "Explore Wikipedia visually through summaries, timelines and images.",
   },
+
   robots: {
     index: true,
     follow: true,
