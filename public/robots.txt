@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://visualizer.wiki/sitemap.xml
+Sitemap: https://www.visualizer.wiki/sitemap.xml
