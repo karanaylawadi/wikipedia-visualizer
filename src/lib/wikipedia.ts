@@ -140,6 +140,7 @@ export async function getArticleIntelligence(query: string): Promise<ArticleInte
   const summaryData = await summaryResponse.json();
   const parseData = await parseResponse.json();
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const page = Object.values(summaryData.query?.pages || {})[0] as any;
   if (!page) return null;
 
@@ -151,16 +152,20 @@ export async function getArticleIntelligence(query: string): Promise<ArticleInte
   const lead = paragraphs[0] || articleExtract;
   const sectionHeadings = Array.isArray(parseData.parse?.sections)
     ? parseData.parse.sections
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         .map((section: any) => section.line)
         .filter((line: string | undefined): line is string => Boolean(line))
     : [];
   const wikitext = typeof parseData.parse?.wikitext?.["*"] === "string" ? parseData.parse.wikitext["*"] : "";
   const links = Array.isArray(page.links)
     ? page.links
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         .filter((link: any) => typeof link?.title === "string")
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         .map((link: any) => ({ title: link.title, description: link.description }))
     : [];
   const categories = Array.isArray(page.categories)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     ? page.categories.map((category: any) => category.title).filter((title: string | undefined): title is string => Boolean(title))
     : [];
 

@@ -6,6 +6,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import AISummary from "@/components/AISummary";
 import HeroImage from "@/components/HeroImage";
 import Timeline, { TimelineItem } from "@/components/Timeline";
+import KnowledgeGraph from "@/components/KnowledgeGraph";
 import { trackRelatedTopicClicked, trackTimelineCardClicked, trackTopicOpened } from "@/lib/gtag";
 
 type AnalysisResponse = {
@@ -69,6 +70,10 @@ function ResultsContent() {
         }
 
         setData(json);
+        // Default select the first event to populate details pane
+        if (json.analysis.timeline?.length > 0) {
+          setSelectedEvent(json.analysis.timeline[0]);
+        }
         trackTopicOpened(decodedTopic);
       } catch (err: unknown) {
         setError(err instanceof Error ? err.message : "Something went wrong.");
@@ -80,65 +85,87 @@ function ResultsContent() {
     void loadTopic();
   }, [decodedTopic]);
 
+  // Active detail view event determines what details are shown
+  const activeEvent = selectedEvent || (data?.analysis.timeline?.length ? data.analysis.timeline[0] : null);
+
   return (
-    <main className="min-h-screen bg-black px-4 py-6 text-white sm:px-8 sm:py-8 lg:px-10 lg:py-10">
-      <div className="mx-auto max-w-6xl">
-        <nav className="flex items-center justify-between border-b border-white/10 pb-6">
+    <main className="relative min-h-screen bg-[#030303] px-4 py-6 text-white sm:px-8 sm:py-8 lg:px-12 lg:py-10">
+      {/* Background radial glows */}
+      <div className="glow-cyan radial-glow absolute top-10 left-10 opacity-10" />
+      <div className="glow-violet radial-glow absolute bottom-10 right-10 opacity-10" />
+
+      <div className="relative z-10 mx-auto max-w-6xl">
+        {/* Navigation header */}
+        <nav className="flex items-center justify-between border-b border-white/5 pb-5">
           <button
             onClick={() => router.push("/")}
-            className="text-sm text-neutral-400 transition hover:text-white"
+            className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-neutral-400 transition hover:text-white"
           >
             ← Home
           </button>
 
+          <span className="text-[10px] font-semibold uppercase tracking-[0.3em] text-neutral-600">
+            Visualizer.wiki
+          </span>
+
           <button
             onClick={() => router.back()}
-            className="text-sm text-neutral-400 transition hover:text-white"
+            className="text-xs font-semibold uppercase tracking-[0.2em] text-neutral-400 transition hover:text-white"
           >
             Back
           </button>
         </nav>
 
+        {/* Loading State */}
         {loading && (
-          <section className="flex min-h-[70vh] flex-col items-center justify-center text-center animate-[fadeIn_0.5s_ease-out]">
-            <div className="mb-8 h-16 w-16 rounded-full p-[2px] animated-gradient">
-              <div className="h-full w-full rounded-full bg-black" />
+          <section className="flex min-h-[75vh] flex-col items-center justify-center text-center animate-fade-in-up">
+            <div className="relative mb-8 flex h-16 w-16 items-center justify-center">
+              <div className="absolute inset-0 rounded-full border-t-2 border-cyan-400 animate-spin" />
+              <div className="h-10 w-10 rounded-full bg-black/40 backdrop-blur-md" />
             </div>
-            <p className="text-xs uppercase tracking-[0.45em] text-cyan-300">
+            <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-cyan-400">
               Reading Wikipedia
             </p>
-            <h1 className="mt-5 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl md:text-7xl">
-              Building your visual briefing
+            <h1 className="mt-5 max-w-2xl text-3xl font-extrabold tracking-tight sm:text-5xl md:text-6xl bg-gradient-to-b from-white to-neutral-500 bg-clip-text text-transparent">
+              Synthesizing Briefing
             </h1>
+            <p className="mt-4 text-xs text-neutral-500 max-w-xs">
+              Fetching details, timeline milestones, and connected concepts for {decodedTopic}...
+            </p>
           </section>
         )}
 
+        {/* Error State */}
         {error && !loading && (
-          <section className="flex min-h-[70vh] flex-col items-center justify-center text-center animate-[fadeIn_0.5s_ease-out]">
-            <p className="text-xs uppercase tracking-[0.45em] text-red-400">Error</p>
-            <h1 className="mt-5 text-4xl font-bold sm:text-5xl">Could not load topic.</h1>
-            <p className="mt-5 max-w-xl text-lg leading-8 text-neutral-400">{error}</p>
+          <section className="flex min-h-[75vh] flex-col items-center justify-center text-center animate-fade-in-up">
+            <span className="text-3xl">⚠️</span>
+            <p className="mt-4 text-[10px] font-bold uppercase tracking-[0.4em] text-red-500">Error</p>
+            <h1 className="mt-3 text-2xl font-bold tracking-tight sm:text-4xl text-white">Could not load topic</h1>
+            <p className="mt-4 max-w-md text-sm leading-relaxed text-neutral-500">{error}</p>
             <button
               onClick={() => router.push("/")}
-              className="mt-8 rounded-full border border-white/20 px-6 py-3 font-semibold transition hover:bg-white hover:text-black"
+              className="mt-8 rounded-full bg-white px-6 py-3 text-xs font-bold text-black transition hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]"
             >
               Try another search
             </button>
           </section>
         )}
 
+        {/* Render Results Content */}
         {data && !loading && (
-          <div className="animate-[fadeIn_0.6s_ease-out]">
-            <section className="grid gap-8 border-b border-white/10 py-10 sm:gap-10 sm:py-12 md:py-16 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12">
+          <div className="animate-fade-in-up mt-8 space-y-12">
+            
+            {/* 1. Briefing Header Section */}
+            <section className="grid gap-6 sm:gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:gap-10">
               <div className="space-y-6">
-                <div className="rounded-[2rem] border border-white/10 bg-neutral-950/80 p-7 sm:p-8 lg:p-10">
-                  <p className="text-xs uppercase tracking-[0.35em] text-neutral-500">
-                    Wikipedia briefing
+                <div className="rounded-[2rem] border border-white/5 bg-gradient-to-br from-neutral-900/30 to-neutral-950/50 p-7 backdrop-blur-xl sm:p-8">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-neutral-500">
+                    Subject Profile
                   </p>
-                  <h1 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl md:text-6xl">
+                  <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
                     {data.article.title}
                   </h1>
-                  <p className="mt-5 text-lg leading-8 text-neutral-400">
+                  <p className="mt-5 text-base leading-relaxed text-neutral-400">
                     {data.analysis.description}
                   </p>
                 </div>
@@ -150,114 +177,183 @@ function ResultsContent() {
                 />
               </div>
 
-              <HeroImage title={data.article.title} imageUrl={data.article.thumbnail ?? null} />
+              <div className="min-h-[320px] lg:min-h-full">
+                <HeroImage title={data.article.title} imageUrl={data.article.thumbnail ?? null} />
+              </div>
             </section>
 
-            {selectedEvent && (
-              <section className="my-8 rounded-[2rem] border border-cyan-400/25 bg-neutral-950/80 p-6 sm:my-10 sm:p-8 lg:p-10">
-                <div className="flex items-start justify-between gap-4">
+            {/* 2. Knowledge Map Section */}
+            {data.analysis.relatedArticles?.length ? (
+              <KnowledgeGraph
+                title={data.article.title}
+                related={data.analysis.relatedArticles}
+                onSelectNode={(nodeTitle) => {
+                  trackRelatedTopicClicked(nodeTitle);
+                  router.push(`/results?topic=${encodeURIComponent(nodeTitle)}`);
+                }}
+              />
+            ) : null}
+
+            {/* 3. Chronology Milestones Section (Two columns on desktop) */}
+            {data.analysis.timeline?.length > 0 && (
+              <section className="border-t border-white/5 py-12 md:py-16">
+                <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 lg:items-start">
+                  
+                  {/* Left: Scrollable Timeline */}
                   <div>
-                    <p className="text-xs uppercase tracking-[0.35em] text-cyan-300">
-                      Focus card
-                    </p>
-                    <h2 className="mt-4 text-3xl font-semibold text-white">
-                      {selectedEvent.title}
-                    </h2>
-                    <p className="mt-2 text-base text-neutral-500">{selectedEvent.year}</p>
+                    <Timeline
+                      items={data.analysis.timeline}
+                      selectedItem={activeEvent}
+                      onSelect={(item) => {
+                        setSelectedEvent(item);
+                        trackTimelineCardClicked(item.title);
+                      }}
+                    />
                   </div>
-                  <button
-                    onClick={() => setSelectedEvent(null)}
-                    className="text-sm text-neutral-500 transition hover:text-white"
-                  >
-                    Close
-                  </button>
-                </div>
-                <div className="mt-6 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-                  <div className="space-y-4">
-                    <div>
-                      <p className="text-xs uppercase tracking-[0.35em] text-neutral-500">What happened</p>
-                      <p className="mt-3 text-lg leading-8 text-neutral-200">
-                        {selectedEvent.whatHappened || selectedEvent.summary}
-                      </p>
-                    </div>
-                    <div>
-                      <p className="text-xs uppercase tracking-[0.35em] text-neutral-500">Why it mattered</p>
-                      <p className="mt-3 text-lg leading-8 text-neutral-300">
-                        {selectedEvent.whyItMattered || selectedEvent.significance || "This milestone marks a turning point in the subject's historical development."}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="space-y-4 rounded-[1.5rem] border border-white/10 bg-black/40 p-6">
-                    <div>
-                      <p className="text-xs uppercase tracking-[0.35em] text-neutral-500">Long-term impact</p>
-                      <p className="mt-3 text-lg leading-8 text-neutral-300">
-                        {selectedEvent.longTermImpact || "Its consequences continued to shape the subject's historical context over time."}
-                      </p>
-                    </div>
-                    <div>
-                      <p className="text-xs uppercase tracking-[0.35em] text-neutral-500">Related people</p>
-                      <div className="mt-3 flex flex-wrap gap-2">
-                        {(selectedEvent.relatedPeople?.length ? selectedEvent.relatedPeople : ["Notable figures"]).map((person) => (
-                          <span key={person} className="rounded-full border border-white/10 px-3 py-1 text-sm text-neutral-300">
-                            {person}
+
+                  {/* Right: Sticky Details Card */}
+                  <div className="lg:sticky lg:top-8 lg:mt-16">
+                    {activeEvent && (
+                      <div className="rounded-[2rem] border border-cyan-500/20 bg-gradient-to-br from-neutral-900/35 via-[#0d0d12]/90 to-black p-6 shadow-xl backdrop-blur-xl sm:p-8">
+                        <div className="flex items-center justify-between">
+                          <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-cyan-400">
+                            Milestone Profile
+                          </p>
+                          <span className="rounded-full border border-cyan-400/30 bg-cyan-500/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.15em] text-cyan-300">
+                            {activeEvent.year}
                           </span>
-                        ))}
+                        </div>
+
+                        <h3 className="mt-5 text-2xl font-semibold tracking-tight text-white md:text-3xl">
+                          {activeEvent.title}
+                        </h3>
+
+                        <hr className="my-5 border-white/5" />
+
+                        <div className="space-y-5 text-sm leading-relaxed">
+                          <div>
+                            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500">
+                              What Happened
+                            </span>
+                            <p className="mt-2 text-neutral-300">
+                              {activeEvent.whatHappened || activeEvent.summary}
+                            </p>
+                          </div>
+
+                          <div>
+                            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500">
+                              Significance
+                            </span>
+                            <p className="mt-2 text-neutral-400">
+                              {activeEvent.whyItMattered || activeEvent.significance || "Marks a defining point in the subject's development."}
+                            </p>
+                          </div>
+
+                          {activeEvent.longTermImpact && (
+                            <div>
+                              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500">
+                                Long-term Impact
+                              </span>
+                              <p className="mt-2 text-neutral-400">
+                                {activeEvent.longTermImpact}
+                              </p>
+                            </div>
+                          )}
+
+                          {activeEvent.relatedPeople && activeEvent.relatedPeople.length > 0 && (
+                            <div>
+                              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500">
+                                Related Figures
+                              </span>
+                              <div className="mt-2.5 flex flex-wrap gap-1.5">
+                                {activeEvent.relatedPeople.map((person) => (
+                                  <span
+                                    key={person}
+                                    className="rounded-full border border-white/5 bg-white/[0.02] px-2.5 py-1 text-xs text-neutral-400 hover:border-cyan-500/30 hover:text-white transition duration-300"
+                                  >
+                                    {person}
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+
+                          {activeEvent.relatedPlaces && activeEvent.relatedPlaces.length > 0 && (
+                            <div>
+                              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500">
+                                Key Locations
+                              </span>
+                              <div className="mt-2.5 flex flex-wrap gap-1.5">
+                                {activeEvent.relatedPlaces.map((place) => (
+                                  <span
+                                    key={place}
+                                    className="rounded-full border border-white/5 bg-white/[0.02] px-2.5 py-1 text-xs text-neutral-400 hover:border-cyan-500/30 hover:text-white transition duration-300"
+                                  >
+                                    {place}
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+                        </div>
                       </div>
-                    </div>
-                    <div>
-                      <p className="text-xs uppercase tracking-[0.35em] text-neutral-500">Related places</p>
-                      <div className="mt-3 flex flex-wrap gap-2">
-                        {(selectedEvent.relatedPlaces?.length ? selectedEvent.relatedPlaces : ["Key locations"]).map((place) => (
-                          <span key={place} className="rounded-full border border-white/10 px-3 py-1 text-sm text-neutral-300">
-                            {place}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
+                    )}
                   </div>
+
                 </div>
               </section>
             )}
 
-            {data.analysis.timeline?.length > 0 && (
-              <Timeline
-                items={data.analysis.timeline}
-                onSelect={(item) => {
-                  setSelectedEvent(item);
-                  trackTimelineCardClicked(item.title);
-                }}
-              />
-            )}
-
+            {/* 4. Related Readings/Topics Cards */}
             {data.analysis.relatedArticles?.length ? (
-              <section className="border-t border-white/10 py-10 sm:py-12 md:py-16">
-                <p className="text-xs uppercase tracking-[0.35em] text-cyan-300">
-                  Related Topics
+              <section className="border-t border-white/5 py-12 md:py-16">
+                <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-cyan-400">
+                  Related Readings
                 </p>
-                <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                <h2 className="mt-2 text-3xl font-semibold tracking-tight text-white">
+                  Explore Further
+                </h2>
+                <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
                   {data.analysis.relatedArticles.map((article) => (
                     <button
                       key={article.title}
                       type="button"
-                      onClick={() => trackRelatedTopicClicked(article.title)}
-                      className="rounded-[1.5rem] border border-white/10 bg-neutral-950/80 p-6 text-left transition hover:border-cyan-400/50 hover:bg-neutral-900"
+                      onClick={() => {
+                        trackRelatedTopicClicked(article.title);
+                        router.push(`/results?topic=${encodeURIComponent(article.title)}`);
+                      }}
+                      className="group relative flex flex-col justify-between rounded-2xl border border-white/5 bg-white/[0.02] p-6 text-left transition-all duration-300 hover:border-cyan-400/30 hover:bg-white/[0.04] hover:shadow-[0_0_30px_rgba(0,245,160,0.05)]"
                     >
-                      <h3 className="text-xl font-semibold text-white">{article.title}</h3>
-                      {article.description && (
-                        <p className="mt-3 text-sm leading-7 text-neutral-400">{article.description}</p>
-                      )}
+                      <div>
+                        <h3 className="text-lg font-semibold text-white group-hover:text-cyan-300 transition duration-300">
+                          {article.title}
+                        </h3>
+                        {article.description && (
+                          <p className="mt-2.5 text-xs text-neutral-500 line-clamp-2 capitalize">
+                            {article.description}
+                          </p>
+                        )}
+                      </div>
+                      <div className="mt-6 flex items-center justify-between text-xs text-neutral-500">
+                        <span>Read Briefing</span>
+                        <span className="group-hover:translate-x-1 transition duration-300 text-cyan-400 font-bold">
+                          →
+                        </span>
+                      </div>
                     </button>
                   ))}
                 </div>
               </section>
             ) : null}
 
-            <footer className="border-t border-white/10 py-10 text-center sm:py-12">
-              <div className="mx-auto flex max-w-2xl flex-col items-center gap-3 text-sm leading-7 text-neutral-500">
-                <p className="font-semibold tracking-[0.3em] text-neutral-300 uppercase">Visualizer.wiki</p>
-                <p>Powered by Wikipedia</p>
-                <p>AI summaries use Wikipedia-only content</p>
-                <p>Built with Next.js</p>
+            {/* 5. Editorial Footer */}
+            <footer className="border-t border-white/5 py-12 text-center">
+              <div className="mx-auto flex max-w-2xl flex-col items-center gap-3 text-xs text-neutral-600">
+                <p className="font-semibold tracking-[0.3em] text-neutral-400 uppercase">
+                  Visualizer.wiki
+                </p>
+                <p>Synthesized dynamically from English Wikipedia articles</p>
+                <p>AI briefs use Wikipedia-only source records</p>
               </div>
 
               {data.article.url && (
@@ -265,12 +361,13 @@ function ResultsContent() {
                   href={data.article.url}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-8 inline-flex items-center rounded-full border border-white/20 px-6 py-3 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white hover:text-black"
+                  className="mt-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white px-5 py-2.5 text-xs font-bold text-black transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_20px_rgba(255,255,255,0.4)]"
                 >
-                  Read on Wikipedia
+                  Read original Wikipedia Article
                 </a>
               )}
             </footer>
+
           </div>
         )}
       </div>
@@ -282,8 +379,13 @@ export default function ResultsPage() {
   return (
     <Suspense
       fallback={
-        <main className="flex min-h-screen items-center justify-center bg-black px-6 text-white">
-          <p className="text-lg text-neutral-400">Preparing your story…</p>
+        <main className="flex min-h-screen items-center justify-center bg-[#030303] px-6 text-white">
+          <div className="text-center">
+            <div className="relative mx-auto mb-6 flex h-12 w-12 items-center justify-center">
+              <div className="absolute inset-0 rounded-full border-t border-cyan-400 animate-spin" />
+            </div>
+            <p className="text-xs uppercase tracking-[0.35em] text-neutral-500">Preparing Visualizer Session...</p>
+          </div>
         </main>
       }
     >
