@@ -15,7 +15,7 @@ type Props = {
   category: string;
 };
 
-export default function PerspectivesGrid({ cards, category }: Props) {
+export default function PerspectiveGrid({ cards, category }: Props) {
   const handleCardClick = (card: PerspectiveCard) => {
     trackCarouselCardClicked(card.title);
   };
@@ -42,7 +42,6 @@ export default function PerspectivesGrid({ cards, category }: Props) {
         </p>
       </div>
 
-      {/* Grid wrapping exactly 5 cards naturally with custom grid-template-columns */}
       <div
         className="grid gap-6 animate-fade-in-up"
         style={{ gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))" }}
@@ -55,32 +54,27 @@ export default function PerspectivesGrid({ cards, category }: Props) {
               className="group relative flex flex-col justify-between rounded-3xl border border-white/5 bg-gradient-to-br from-neutral-900/35 via-neutral-950/50 to-black p-6.5 shadow-xl transition-all duration-500 hover:border-cyan-500/20 hover:shadow-[0_0_40px_rgba(0,245,160,0.04)] cursor-pointer min-h-[300px]"
             >
               <div>
-                {/* Small perspective label */}
                 <div className="flex items-center justify-between mb-4">
                   <span className="rounded-full bg-white/[0.03] border border-white/5 px-3.5 py-1.5 text-[9px] font-bold uppercase tracking-[0.20em] text-neutral-400 group-hover:text-cyan-400 transition-colors duration-300">
                     {card.referenceLabel || `Perspective ${index + 1}`}
                   </span>
                 </div>
 
-                {/* Headline */}
                 <h3 className="text-xl font-bold tracking-tight text-white transition-colors duration-300 group-hover:text-cyan-200">
                   {card.title}
                 </h3>
 
-                {/* Reader Question */}
                 {card.readerQuestion && (
                   <p className="mt-2 text-xs font-medium text-neutral-400 italic">
                     {card.readerQuestion}
                   </p>
                 )}
 
-                {/* Editorial Summary */}
                 <p className="mt-4 text-sm leading-relaxed text-neutral-300 font-light line-clamp-[7] overflow-hidden">
                   {card.summary}
                 </p>
               </div>
 
-              {/* Optional Key Takeaway */}
               {card.keyTakeaway && (
                 <div className="mt-6 pt-4 border-t border-white/5">
                   <span className="text-[9px] font-bold uppercase tracking-wider text-neutral-500 block mb-1">

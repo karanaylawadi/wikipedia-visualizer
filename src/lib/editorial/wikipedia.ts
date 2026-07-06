@@ -64,6 +64,7 @@ const RELATED_TOPIC_KEYWORDS = [
   "country",
   "province",
   "district",
+  "settlement",
 ];
 
 function normalizeTitleText(title: string) {
@@ -216,8 +217,18 @@ export async function getArticleIntelligence(
     const summaryData = await summaryResponse.json();
     const parseData = await parseResponse.json();
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const page = Object.values(summaryData.query?.pages || {})[0] as any;
+    const page = Object.values(summaryData.query?.pages || {})[0] as {
+      title?: string;
+      extract?: string;
+      description?: string;
+      thumbnail?: WikiResult["thumbnail"];
+      content_urls?: WikiResult["content_urls"];
+      timestamp?: string;
+      lang?: string;
+      links?: Array<{ title: string; description?: string }>;
+      categories?: Array<{ title: string }>;
+      missing?: boolean;
+    };
 
     if (!page || page.missing) return null;
 
@@ -232,8 +243,7 @@ export async function getArticleIntelligence(
 
     const sectionHeadings = Array.isArray(parseData.parse?.sections)
       ? parseData.parse.sections
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          .map((section: any) => section.line)
+          .map((section: { line?: string }) => section.line)
           .filter((line: string | undefined): line is string => Boolean(line))
       : [];
 
@@ -244,10 +254,8 @@ export async function getArticleIntelligence(
 
     const links = Array.isArray(page.links)
       ? page.links
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          .filter((link: any) => typeof link?.title === "string")
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          .map((link: any) => ({
+          .filter((link) => typeof link?.title === "string")
+          .map((link) => ({
             title: link.title,
             description: link.description,
           }))
@@ -255,8 +263,7 @@ export async function getArticleIntelligence(
 
     const categories = Array.isArray(page.categories)
       ? page.categories
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          .map((category: any) => category.title)
+          .map((category) => category.title)
           .filter((title: string | undefined): title is string =>
             Boolean(title)
           )
@@ -300,48 +307,56 @@ export async function getRelatedArticles(
   const scored = article.links
     .filter((link) => isRecognizableRelatedTopic(link.title, link.description))
     .map((link) => {
-      const normalizedTitle = normalizeTitleText(link.title);
-      const leadMentions = countOccurrences(leadText, normalizedTitle);
-      const infoboxMentions = countOccurrences(
-        infoboxScoreText,
-        normalizedTitle
-      );
-      const sectionMentions = countOccurrences(sectionText, normalizedTitle);
-      const internalLinkFrequency = countOccurrences(fullText, normalizedTitle);
-      const categoryBoost = getCategoryScore(
-        normalizedTitle,
-        article.categories
-      );
-      const keywordBoost = RELATED_TOPIC_KEYWORDS.some((keyword) =>
-        `${normalizedTitle} ${link.description || ""}`
-          .toLowerCase()
-          .includes(keyword)
-      )
-        ? 2
-        : 0;
-      const lengthPenalty =
-        normalizedTitle.split(/\s+/).length > 4 ? -1 : 0;
+      let score = 0;
 
-      const score =
-        leadMentions * 6 +
-        infoboxMentions * 4 +
-        sectionMentions * 3 +
-        internalLinkFrequency * 2 +
-        categoryBoost * 2 +
-        keywordBoost +
-        lengthPenalty;
+      // 1. Title match in lead text
+      const termOccurrencesInLead = countOccurrences(leadText, link.title);
+      score += termOccurrencesInLead * 15;
+
+      // 2. Exact match check in body
+      const occurrencesInBody = countOccurrences(fullText, link.title);
+      score += occurrencesInBody * 4;
+
+      // 3. Category match scores
+      const categoriesScore = getCategoryScore(link.title, article.categories);
+      score += categoriesScore * 6;
+
+      // 4. Section headings overlap
+      const headingsScore = getCategoryScore(link.title, article.sectionHeadings);
+      score += headingsScore * 10;
+
+      // 5. Infobox first mention bonus
+      if (infoboxScoreText.includes(link.title)) {
+        score += 20;
+      }
+
+      // 6. Section matching text bonus
+      if (sectionText.includes(link.title)) {
+        score += 8;
+      }
 
       return {
         title: link.title,
         description: link.description,
-        thumbnail: undefined,
         score,
       };
-    })
-    .filter((item) => item.score >= 4)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 8)
-    .map(({ title, description }) => ({ title, description }));
+    });
 
-  return scored;
+  // Sort and deduplicate
+  const uniqueScoredMap = new Map<string, typeof scored[number]>();
+  for (const item of scored) {
+    const existing = uniqueScoredMap.get(item.title);
+    if (!existing || existing.score < item.score) {
+      uniqueScoredMap.set(item.title, item);
+    }
+  }
+
+  const sortedUnique = Array.from(uniqueScoredMap.values())
+    .filter((item) => item.score > 2)
+    .sort((a, b) => b.score - a.score);
+
+  return sortedUnique.slice(0, 20).map((item) => ({
+    title: item.title,
+    description: item.description,
+  }));
 }

@@ -3,10 +3,41 @@
 import { Suspense, useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import AISummary from "@/components/AISummary";
-import PerspectivesGrid, { PerspectiveCard } from "@/components/PerspectivesGrid";
-import { trackRelatedTopicClicked, trackTopicOpened } from "@/lib/gtag";
+import PerspectiveGrid from "@/components/PerspectiveGrid";
+import type { PerspectiveCard } from "@/components/PerspectiveGrid";
+import Timeline from "@/components/Timeline";
+import PeopleAlsoExplored from "@/components/PeopleAlsoExplored";
+import type { ExploreTopic } from "@/components/PeopleAlsoExplored";
+import RelatedJourney from "@/components/RelatedJourney";
+import VisualModules from "@/components/VisualModules";
+import { trackTopicOpened } from "@/lib/gtag";
 
-type AnalysisResponse = {
+interface TimelineMilestone {
+  year: string;
+  event: string;
+}
+
+interface BreadcrumbItem {
+  label: string;
+  url: string;
+}
+
+interface StructuredFacts {
+  title: string;
+  subtitle: string;
+  leadParagraph: string;
+  categories: string[];
+  majorSections: string[];
+  relatedArticles: string[];
+  importantDates: string[];
+  extractSummary: string;
+  statistics: string[];
+  keyPeople: string[];
+  locations: string[];
+  organizations: string[];
+}
+
+interface AnalysisResponse {
   article: {
     title: string;
     description?: string;
@@ -15,17 +46,27 @@ type AnalysisResponse = {
     url?: string;
   };
   topicCategory: string;
+  topicSubcategory: string;
   shortSummary: string;
   resultCards: PerspectiveCard[];
   didYouKnow: string[];
-  relatedTopics: Array<{
-    title: string;
-    description?: string;
-  }>;
+  exploredTopics: ExploreTopic[];
+  timeline: TimelineMilestone[] | null;
+  seo: {
+    metaTitle: string;
+    metaDescription: string;
+    openGraphTitle: string;
+    openGraphDescription: string;
+    canonicalUrl: string;
+    breadcrumbs: BreadcrumbItem[];
+    jsonLdSchema: Record<string, unknown>;
+  };
+  structuredFacts: StructuredFacts;
+  relatedList: string[];
   generatedAt: string;
   cacheVersion: string;
   cacheStatus?: string;
-};
+}
 
 function ResultsContent() {
   const router = useRouter();
@@ -75,6 +116,40 @@ function ResultsContent() {
     void loadTopic();
   }, [decodedTopic]);
 
+  // Dynamically update SEO tags on client side
+  useEffect(() => {
+    if (!data?.seo) return;
+    const seo = data.seo;
+    document.title = seo.metaTitle;
+
+    const updateMeta = (name: string, content: string, isProperty = false) => {
+      const selector = isProperty ? `meta[property="${name}"]` : `meta[name="${name}"]`;
+      let meta = document.querySelector(selector);
+      if (!meta) {
+        meta = document.createElement("meta");
+        if (isProperty) {
+          meta.setAttribute("property", name);
+        } else {
+          meta.setAttribute("name", name);
+        }
+        document.head.appendChild(meta);
+      }
+      meta.setAttribute("content", content);
+    };
+
+    updateMeta("description", seo.metaDescription);
+    updateMeta("og:title", seo.openGraphTitle, true);
+    updateMeta("og:description", seo.openGraphDescription, true);
+
+    let link: HTMLLinkElement | null = document.querySelector('link[rel="canonical"]');
+    if (!link) {
+      link = document.createElement("link");
+      link.setAttribute("rel", "canonical");
+      document.head.appendChild(link);
+    }
+    link.setAttribute("href", seo.canonicalUrl);
+  }, [data]);
+
   const humanReadableCategory = (cat: string) => {
     if (!cat) return "";
     return cat
@@ -83,15 +158,220 @@ function ResultsContent() {
       .join(" ");
   };
 
+  const renderAdaptiveLayout = () => {
+    if (!data) return null;
+
+    const cat = data.topicCategory.toLowerCase();
+    
+    const showTimeline = !!data.timeline;
+    const showPerspectives = data.resultCards?.length > 0;
+    const showDidYouKnow = data.didYouKnow?.length > 0;
+    const showExplored = data.exploredTopics?.length > 0;
+    const showJourney = data.relatedList?.length > 0;
+
+    // 1. Historical Event, Empire, War
+    if (cat.includes("event") || cat.includes("war") || cat.includes("battle") || cat.includes("empire")) {
+      return (
+        <div className="space-y-10">
+          <AISummary
+            title={data.article.title}
+            description={data.article.description || ""}
+            briefing={data.shortSummary}
+          />
+          {showTimeline && <Timeline timeline={data.timeline} />}
+          {showPerspectives && (
+            <PerspectiveGrid
+              cards={data.resultCards}
+              category={data.topicCategory}
+            />
+          )}
+          <VisualModules category={data.topicCategory} facts={data.structuredFacts} />
+          {showDidYouKnow && (
+            <section className="py-4 animate-fade-in-up">
+              <h2 className="text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400 mb-6">
+                Surprising Insights
+              </h2>
+              <ul className="space-y-4 max-w-3xl">
+                {data.didYouKnow.map((fact, index) => (
+                  <li key={index} className="flex gap-4 items-start text-sm leading-relaxed text-neutral-300 font-light">
+                    <span className="text-cyan-400 select-none">•</span>
+                    <span>{fact}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+          {showExplored && <PeopleAlsoExplored topics={data.exploredTopics} />}
+          {showJourney && (
+            <RelatedJourney
+              currentTopic={data.article.title}
+              relatedList={data.relatedList}
+            />
+          )}
+        </div>
+      );
+    }
+
+    // 2. Person, Biography, Scientist, Artist
+    if (cat.includes("person") || cat.includes("figure") || cat.includes("scientist") || cat.includes("inventor") || cat.includes("artist")) {
+      return (
+        <div className="space-y-10">
+          <AISummary
+            title={data.article.title}
+            description={data.article.description || ""}
+            briefing={data.shortSummary}
+          />
+          <VisualModules category={data.topicCategory} facts={data.structuredFacts} />
+          {showTimeline && <Timeline timeline={data.timeline} />}
+          {showPerspectives && (
+            <PerspectiveGrid
+              cards={data.resultCards}
+              category={data.topicCategory}
+            />
+          )}
+          {showExplored && <PeopleAlsoExplored topics={data.exploredTopics} />}
+        </div>
+      );
+    }
+
+    // 3. Corporate entities & Brands
+    if (cat.includes("company") || cat.includes("brand")) {
+      return (
+        <div className="space-y-10">
+          <AISummary
+            title={data.article.title}
+            description={data.article.description || ""}
+            briefing={data.shortSummary}
+          />
+          <VisualModules category={data.topicCategory} facts={data.structuredFacts} />
+          {showTimeline && <Timeline timeline={data.timeline} />}
+          {showPerspectives && (
+            <PerspectiveGrid
+              cards={data.resultCards}
+              category={data.topicCategory}
+            />
+          )}
+          {showExplored && <PeopleAlsoExplored topics={data.exploredTopics} />}
+        </div>
+      );
+    }
+
+    // 4. Creative arts (Movie, TV Series, Book, Artwork)
+    if (cat.includes("movie") || cat.includes("tv series") || cat.includes("book") || cat.includes("video game") || cat.includes("artwork") || cat.includes("painting")) {
+      return (
+        <div className="space-y-10">
+          <AISummary
+            title={data.article.title}
+            description={data.article.description || ""}
+            briefing={data.shortSummary}
+          />
+          <VisualModules category={data.topicCategory} facts={data.structuredFacts} />
+          {showPerspectives && (
+            <PerspectiveGrid
+              cards={data.resultCards}
+              category={data.topicCategory}
+            />
+          )}
+          {showDidYouKnow && (
+            <section className="py-4 animate-fade-in-up">
+              <h2 className="text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400 mb-6">
+                Surprising Insights
+              </h2>
+              <ul className="space-y-4 max-w-3xl">
+                {data.didYouKnow.map((fact, index) => (
+                  <li key={index} className="flex gap-4 items-start text-sm leading-relaxed text-neutral-300 font-light">
+                    <span className="text-cyan-400 select-none">•</span>
+                    <span>{fact}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+          {showExplored && <PeopleAlsoExplored topics={data.exploredTopics} />}
+        </div>
+      );
+    }
+
+    // 5. Geopolitical areas (Country, City, Region)
+    if (cat.includes("country") || cat.includes("city") || cat.includes("region") || cat.includes("landmark") || cat.includes("architecture")) {
+      return (
+        <div className="space-y-10">
+          <AISummary
+            title={data.article.title}
+            description={data.article.description || ""}
+            briefing={data.shortSummary}
+          />
+          <VisualModules category={data.topicCategory} facts={data.structuredFacts} />
+          {showTimeline && <Timeline timeline={data.timeline} />}
+          {showPerspectives && (
+            <PerspectiveGrid
+              cards={data.resultCards}
+              category={data.topicCategory}
+            />
+          )}
+          {showExplored && <PeopleAlsoExplored topics={data.exploredTopics} />}
+        </div>
+      );
+    }
+
+    // Default science concept & technical breakdown layout
+    return (
+      <div className="space-y-10">
+        <AISummary
+          title={data.article.title}
+          description={data.article.description || ""}
+          briefing={data.shortSummary}
+        />
+        {showPerspectives && (
+          <PerspectiveGrid
+            cards={data.resultCards}
+            category={data.topicCategory}
+          />
+        )}
+        <VisualModules category={data.topicCategory} facts={data.structuredFacts} />
+        {showDidYouKnow && (
+          <section className="py-4 animate-fade-in-up">
+            <h2 className="text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400 mb-6">
+              Surprising Insights
+            </h2>
+            <ul className="space-y-4 max-w-3xl">
+              {data.didYouKnow.map((fact, index) => (
+                <li key={index} className="flex gap-4 items-start text-sm leading-relaxed text-neutral-300 font-light">
+                  <span className="text-cyan-400 select-none">•</span>
+                  <span>{fact}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+        {showJourney && (
+          <RelatedJourney
+            currentTopic={data.article.title}
+            relatedList={data.relatedList}
+          />
+        )}
+        {showExplored && <PeopleAlsoExplored topics={data.exploredTopics} />}
+      </div>
+    );
+  };
+
   return (
     <main className="relative min-h-screen bg-[#030303] px-4 py-6 text-white sm:px-8 sm:py-8 lg:px-12 lg:py-10">
+      {/* Dynamic JSON-LD SEO Schema injection */}
+      {data?.seo?.jsonLdSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(data.seo.jsonLdSchema) }}
+        />
+      )}
+
       {/* Background radial glows */}
       <div className="glow-cyan radial-glow absolute top-10 left-10 opacity-10" />
       <div className="glow-violet radial-glow absolute bottom-10 right-10 opacity-10" />
 
       <div className="relative z-10 mx-auto max-w-5xl">
         {/* Navigation header */}
-        <nav className="flex items-center justify-between border-b border-white/5 pb-5">
+        <nav className="flex items-center justify-between border-b border-white/5 pb-5 mb-5">
           <button
             onClick={() => router.push("/")}
             className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-neutral-400 transition hover:text-white"
@@ -110,6 +390,23 @@ function ResultsContent() {
             Back
           </button>
         </nav>
+
+        {/* Dynamic SEO Breadcrumbs */}
+        {data?.seo?.breadcrumbs && (
+          <div className="flex items-center gap-2 text-[10px] uppercase tracking-wider text-neutral-500 mb-6 font-mono">
+            {data.seo.breadcrumbs.map((bc, index) => (
+              <span key={index} className="flex items-center gap-2">
+                {index > 0 && <span>/</span>}
+                <button
+                  onClick={() => router.push(bc.url)}
+                  className="hover:text-white transition-colors duration-200"
+                >
+                  {bc.label}
+                </button>
+              </span>
+            ))}
+          </div>
+        )}
 
         {/* Loading State */}
         {loading && (
@@ -149,8 +446,6 @@ function ResultsContent() {
         {/* Render Results Content */}
         {data && !loading && (
           <div className="animate-fade-in-up mt-8 space-y-10">
-            
-            {/* 1. Header Profile & AI Summary */}
             <section className="space-y-6">
               <div className="flex flex-col gap-2">
                 <div className="flex items-center justify-between">
@@ -158,7 +453,7 @@ function ResultsContent() {
                     {humanReadableCategory(data.topicCategory) || "Encyclopedia Profile"}
                   </span>
                   {data.cacheStatus && (
-                    <span className="text-[9px] uppercase tracking-[0.2em] text-neutral-600 bg-neutral-900 px-2 py-0.5 rounded border border-white/5">
+                    <span className="text-[9px] uppercase tracking-[0.2em] text-neutral-600 bg-neutral-900 px-2 py-0.5 rounded border border-white/5 font-mono">
                       Cache: {data.cacheStatus}
                     </span>
                   )}
@@ -170,90 +465,12 @@ function ResultsContent() {
                   {data.article.description || data.article.extract.split(".")[0] + "."}
                 </p>
               </div>
-
-              <AISummary
-                title={data.article.title}
-                description={data.article.description || ""}
-                briefing={data.shortSummary}
-              />
             </section>
 
-            <hr className="border-white/5" />
+            {/* Render Adaptive Category-Specific Layout */}
+            {renderAdaptiveLayout()}
 
-            {/* 2. Analysis Perspectives (CSS Grid cards) */}
-            {data.resultCards?.length > 0 && (
-              <section>
-                <PerspectivesGrid
-                  cards={data.resultCards}
-                  category={data.topicCategory}
-                />
-              </section>
-            )}
-
-            <hr className="border-white/5" />
-
-            {/* 3. Did You Know Section (Premium bulleted list) */}
-            {data.didYouKnow?.length > 0 && (
-              <section className="py-6 animate-fade-in-up">
-                <h2 className="text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400 mb-6">
-                  Did You Know?
-                </h2>
-                <ul className="space-y-4 max-w-3xl">
-                  {data.didYouKnow.map((fact, index) => (
-                    <li key={index} className="flex gap-4 items-start text-sm leading-relaxed text-neutral-300 font-light">
-                      <span className="text-cyan-400 select-none">•</span>
-                      <span>{fact}</span>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            )}
-
-            <hr className="border-white/5" />
-
-            {/* 4. Related Readings/Topics Cards */}
-            {data.relatedTopics?.length ? (
-              <section className="py-6">
-                <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-cyan-400">
-                  Related Readings
-                </p>
-                <h2 className="mt-2 text-3xl font-semibold tracking-tight text-white">
-                  Explore Further
-                </h2>
-                <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-                  {data.relatedTopics.map((topic) => (
-                    <button
-                      key={topic.title}
-                      type="button"
-                      onClick={() => {
-                        trackRelatedTopicClicked(topic.title);
-                        router.push(`/results?topic=${encodeURIComponent(topic.title)}`);
-                      }}
-                      className="group relative flex flex-col justify-between rounded-2xl border border-white/5 bg-white/[0.02] p-6 text-left transition-all duration-300 hover:border-cyan-400/30 hover:bg-white/[0.04] hover:shadow-[0_0_30px_rgba(0,245,160,0.05)]"
-                    >
-                      <div>
-                        <h3 className="text-lg font-semibold text-white group-hover:text-cyan-300 transition duration-300">
-                          {topic.title}
-                        </h3>
-                        {topic.description && (
-                          <p className="mt-2.5 text-xs text-neutral-500 line-clamp-2 capitalize">
-                            {topic.description}
-                          </p>
-                        )}
-                      </div>
-                      <div className="mt-6 flex items-center justify-between text-xs text-neutral-500">
-                        <span>Read Briefing</span>
-                        <span className="group-hover:translate-x-1 transition duration-300 text-cyan-400 font-bold">
-                          →
-                        </span>
-                      </div>
-                    </button>
-                  ))}
-                </div>
-              </section>
-            ) : null}
-
-            {/* 5. Editorial Footer */}
+            {/* Editorial Footer */}
             <footer className="border-t border-white/5 py-12 text-center">
               <div className="mx-auto flex max-w-2xl flex-col items-center gap-3 text-xs text-neutral-600">
                 <p className="font-semibold tracking-[0.3em] text-neutral-400 uppercase">
@@ -274,7 +491,6 @@ function ResultsContent() {
                 </a>
               )}
             </footer>
-
           </div>
         )}
       </div>

@@ -1,84 +1,45 @@
-import TimelineCard from "@/components/TimelineCard";
+"use client";
 
-export type TimelineItem = {
+interface Milestone {
   year: string;
-  title: string;
-  summary: string;
-  significance?: string;
-  whatHappened?: string;
-  whyItMattered?: string;
-  longTermImpact?: string;
-  relatedPeople?: string[];
-  relatedPlaces?: string[];
-};
+  event: string;
+}
 
 type Props = {
-  items: TimelineItem[];
-  selectedItem?: TimelineItem | null;
-  onSelect?: (item: TimelineItem) => void;
-  onExplore?: (topic: string) => void;
+  timeline: Milestone[] | null;
 };
 
-export default function Timeline({ items, selectedItem, onSelect, onExplore }: Props) {
+export default function Timeline({ timeline }: Props) {
+  if (!timeline || timeline.length === 0) return null;
+
   return (
-    <section className="py-12 md:py-16">
-      <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-        <div>
-          <p className="text-xs uppercase tracking-[0.35em] text-cyan-400">
-            Timeline
-          </p>
-          <h2 className="mt-2 text-3xl font-semibold tracking-tight text-white">
-            Chronology Milestones
-          </h2>
-        </div>
-        <p className="max-w-md text-sm leading-relaxed text-neutral-400">
-          Click any key moment along the timeline to read details on why it mattered and its long-term impacts.
+    <section className="py-8 border-t border-white/5 mt-10 animate-fade-in-up">
+      <div className="flex flex-col gap-2 mb-8">
+        <p className="text-xs uppercase tracking-[0.35em] text-cyan-400">
+          Chronology
         </p>
+        <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl bg-gradient-to-r from-white to-neutral-400 bg-clip-text text-transparent">
+          Historical Timeline
+        </h2>
       </div>
 
-      <div className="mt-8 space-y-6">
-        {items.map((item, index) => {
-          const isSelected = selectedItem?.title === item.title;
-          return (
-            <div key={`${item.year}-${item.title}`} className="relative pl-6 md:pl-8">
-              {index < items.length - 1 && (
-                <div className={`absolute left-[5px] top-4 h-[calc(100%+1.5rem)] w-[2px] transition-all duration-500 ${
-                  isSelected 
-                    ? "bg-gradient-to-b from-cyan-400 via-cyan-500/30 to-white/5" 
-                    : "bg-white/10"
-                }`} />
-              )}
-              
-              {/* Dynamic timeline node dot indicator */}
-              <div className={`absolute left-[1px] top-6 h-[10px] w-[10px] rounded-full border transition-all duration-300 ${
-                isSelected
-                  ? "border-cyan-400 bg-cyan-400 shadow-[0_0_10px_#00f5a0] scale-125"
-                  : "border-white/20 bg-[#0a0a0c] hover:border-cyan-400"
-              }`} />
-              
-              <div className="ml-2">
-                <TimelineCard 
-                  item={item} 
-                  isSelected={isSelected}
-                  onSelect={() => onSelect?.(item)} 
-                />
-              </div>
+      <div className="relative border-l border-white/10 ml-4 md:ml-6 pl-6 space-y-8 my-6">
+        {timeline.map((milestone, index) => (
+          <div key={index} className="relative group">
+            {/* Timeline bullet indicator dot */}
+            <div className="absolute -left-[31px] top-1.5 h-[13px] w-[13px] rounded-full border-2 border-cyan-400 bg-black group-hover:bg-cyan-400 transition-colors duration-300 shadow-[0_0_10px_rgba(34,211,238,0.3)]" />
+            
+            <div className="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6">
+              <span className="text-base font-bold text-cyan-400 font-mono tracking-wider min-w-[90px]">
+                {milestone.year}
+              </span>
+              <p className="text-sm text-neutral-200 font-light group-hover:text-white transition-colors duration-300">
+                {milestone.event}
+              </p>
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
-
-      {onExplore && (
-        <div className="mt-8 flex justify-start">
-          <button
-            type="button"
-            onClick={() => onExplore("History")}
-            className="rounded-full border border-white/10 px-5 py-3 text-sm font-medium text-neutral-300 transition-all duration-300 hover:border-cyan-400/50 hover:text-white hover:shadow-[0_0_20px_rgba(0,245,160,0.05)]"
-          >
-            Explore related history
-          </button>
-        </div>
-      )}
     </section>
   );
 }
