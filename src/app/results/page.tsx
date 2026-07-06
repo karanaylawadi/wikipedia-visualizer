@@ -3,8 +3,7 @@
 import { Suspense, useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import AISummary from "@/components/AISummary";
-import HeroImage from "@/components/HeroImage";
-import Carousel, { CarouselCard } from "@/components/Carousel";
+import PerspectivesGrid, { PerspectiveCard } from "@/components/PerspectivesGrid";
 import { trackRelatedTopicClicked, trackTopicOpened } from "@/lib/gtag";
 
 type AnalysisResponse = {
@@ -17,7 +16,7 @@ type AnalysisResponse = {
   };
   topicCategory: string;
   shortSummary: string;
-  resultCards: CarouselCard[];
+  resultCards: PerspectiveCard[];
   didYouKnow: string[];
   relatedTopics: Array<{
     title: string;
@@ -76,13 +75,21 @@ function ResultsContent() {
     void loadTopic();
   }, [decodedTopic]);
 
+  const humanReadableCategory = (cat: string) => {
+    if (!cat) return "";
+    return cat
+      .split("_")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
+  };
+
   return (
     <main className="relative min-h-screen bg-[#030303] px-4 py-6 text-white sm:px-8 sm:py-8 lg:px-12 lg:py-10">
       {/* Background radial glows */}
       <div className="glow-cyan radial-glow absolute top-10 left-10 opacity-10" />
       <div className="glow-violet radial-glow absolute bottom-10 right-10 opacity-10" />
 
-      <div className="relative z-10 mx-auto max-w-6xl">
+      <div className="relative z-10 mx-auto max-w-5xl">
         {/* Navigation header */}
         <nav className="flex items-center justify-between border-b border-white/5 pb-5">
           <button
@@ -118,7 +125,7 @@ function ResultsContent() {
               Synthesizing Briefing
             </h1>
             <p className="mt-4 text-xs text-neutral-500 max-w-xs">
-              Fetching details, theme perspectives, and connected concepts for {decodedTopic}...
+              Fetching details, dynamic perspectives, and connected concepts for {decodedTopic}...
             </p>
           </section>
         )}
@@ -141,56 +148,72 @@ function ResultsContent() {
 
         {/* Render Results Content */}
         {data && !loading && (
-          <div className="animate-fade-in-up mt-8 space-y-12">
+          <div className="animate-fade-in-up mt-8 space-y-10">
             
-            {/* 1. Briefing Header Section */}
-            <section className="grid gap-6 sm:gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:gap-10">
-              <div className="space-y-6">
-                <div className="rounded-[2rem] border border-white/5 bg-gradient-to-br from-neutral-900/30 to-neutral-950/50 p-7 backdrop-blur-xl sm:p-8">
-                  <div className="flex items-center justify-between">
-                    <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-neutral-500">
-                      Subject Profile
-                    </p>
-                    {data.cacheStatus && (
-                      <span className="text-[9px] uppercase tracking-[0.2em] text-neutral-600 bg-neutral-900 px-2 py-0.5 rounded border border-white/5">
-                        Cache: {data.cacheStatus}
-                      </span>
-                    )}
-                  </div>
-                  <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
-                    {data.article.title}
-                  </h1>
-                  <p className="mt-5 text-base leading-relaxed text-neutral-400 line-clamp-3">
-                    {data.article.description || data.article.extract}
-                  </p>
+            {/* 1. Header Profile & AI Summary */}
+            <section className="space-y-6">
+              <div className="flex flex-col gap-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-cyan-400">
+                    {humanReadableCategory(data.topicCategory) || "Encyclopedia Profile"}
+                  </span>
+                  {data.cacheStatus && (
+                    <span className="text-[9px] uppercase tracking-[0.2em] text-neutral-600 bg-neutral-900 px-2 py-0.5 rounded border border-white/5">
+                      Cache: {data.cacheStatus}
+                    </span>
+                  )}
                 </div>
-
-                <AISummary
-                  title={data.article.title}
-                  description={data.article.description || ""}
-                  briefing={data.shortSummary}
-                />
+                <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
+                  {data.article.title}
+                </h1>
+                <p className="text-base leading-relaxed text-neutral-400 font-light">
+                  {data.article.description || data.article.extract.split(".")[0] + "."}
+                </p>
               </div>
 
-              <div className="min-h-[320px] lg:min-h-full">
-                <HeroImage title={data.article.title} imageUrl={data.article.thumbnail ?? null} />
-              </div>
+              <AISummary
+                title={data.article.title}
+                description={data.article.description || ""}
+                briefing={data.shortSummary}
+              />
             </section>
 
-            {/* 2. Key Perspectives Carousel Section */}
+            <hr className="border-white/5" />
+
+            {/* 2. Analysis Perspectives (CSS Grid cards) */}
             {data.resultCards?.length > 0 && (
-              <section className="border-t border-white/5 pt-6">
-                <Carousel
+              <section>
+                <PerspectivesGrid
                   cards={data.resultCards}
                   category={data.topicCategory}
-                  didYouKnow={data.didYouKnow}
                 />
               </section>
             )}
 
-            {/* 3. Related Readings/Topics Cards */}
+            <hr className="border-white/5" />
+
+            {/* 3. Did You Know Section (Premium bulleted list) */}
+            {data.didYouKnow?.length > 0 && (
+              <section className="py-6 animate-fade-in-up">
+                <h2 className="text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400 mb-6">
+                  Did You Know?
+                </h2>
+                <ul className="space-y-4 max-w-3xl">
+                  {data.didYouKnow.map((fact, index) => (
+                    <li key={index} className="flex gap-4 items-start text-sm leading-relaxed text-neutral-300 font-light">
+                      <span className="text-cyan-400 select-none">•</span>
+                      <span>{fact}</span>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
+            <hr className="border-white/5" />
+
+            {/* 4. Related Readings/Topics Cards */}
             {data.relatedTopics?.length ? (
-              <section className="border-t border-white/5 py-12 md:py-16">
+              <section className="py-6">
                 <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-cyan-400">
                   Related Readings
                 </p>
@@ -230,7 +253,7 @@ function ResultsContent() {
               </section>
             ) : null}
 
-            {/* 4. Editorial Footer */}
+            {/* 5. Editorial Footer */}
             <footer className="border-t border-white/5 py-12 text-center">
               <div className="mx-auto flex max-w-2xl flex-col items-center gap-3 text-xs text-neutral-600">
                 <p className="font-semibold tracking-[0.3em] text-neutral-400 uppercase">
