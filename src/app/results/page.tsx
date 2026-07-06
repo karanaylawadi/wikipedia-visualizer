@@ -1,13 +1,11 @@
-
 "use client";
 
 import { Suspense, useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import AISummary from "@/components/AISummary";
 import HeroImage from "@/components/HeroImage";
-import Timeline, { TimelineItem } from "@/components/Timeline";
-import KnowledgeGraph from "@/components/KnowledgeGraph";
-import { trackRelatedTopicClicked, trackTimelineCardClicked, trackTopicOpened } from "@/lib/gtag";
+import Carousel, { CarouselCard } from "@/components/Carousel";
+import { trackRelatedTopicClicked, trackTopicOpened } from "@/lib/gtag";
 
 type AnalysisResponse = {
   article: {
@@ -17,21 +15,17 @@ type AnalysisResponse = {
     thumbnail?: string | null;
     url?: string;
   };
-  analysis: {
+  topicCategory: string;
+  shortSummary: string;
+  resultCards: CarouselCard[];
+  didYouKnow: string[];
+  relatedTopics: Array<{
     title: string;
-    description: string;
-    briefing: string;
-    editorialBrief?: string;
-    timeline: TimelineItem[];
-    relatedArticles?: Array<{
-      title: string;
-      description?: string;
-      relevanceScore?: number;
-      category?: string;
-      connections?: string[];
-      thumbnail?: { source: string };
-    }>;
-  };
+    description?: string;
+  }>;
+  generatedAt: string;
+  cacheVersion: string;
+  cacheStatus?: string;
 };
 
 function ResultsContent() {
@@ -42,7 +36,6 @@ function ResultsContent() {
   const [data, setData] = useState<AnalysisResponse | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-  const [selectedEvent, setSelectedEvent] = useState<TimelineItem | null>(null);
 
   const decodedTopic = useMemo(() => decodeURIComponent(topic), [topic]);
 
@@ -57,7 +50,6 @@ function ResultsContent() {
       setLoading(true);
       setError("");
       setData(null);
-      setSelectedEvent(null);
 
       try {
         const response = await fetch("/api/analyze", {
@@ -73,10 +65,6 @@ function ResultsContent() {
         }
 
         setData(json);
-        // Default select the first event to populate details pane
-        if (json.analysis.timeline?.length > 0) {
-          setSelectedEvent(json.analysis.timeline[0]);
-        }
         trackTopicOpened(decodedTopic);
       } catch (err: unknown) {
         setError(err instanceof Error ? err.message : "Something went wrong.");
@@ -87,9 +75,6 @@ function ResultsContent() {
 
     void loadTopic();
   }, [decodedTopic]);
-
-  // Active detail view event determines what details are shown
-  const activeEvent = selectedEvent || (data?.analysis.timeline?.length ? data.analysis.timeline[0] : null);
 
   return (
     <main className="relative min-h-screen bg-[#030303] px-4 py-6 text-white sm:px-8 sm:py-8 lg:px-12 lg:py-10">
@@ -133,7 +118,7 @@ function ResultsContent() {
               Synthesizing Briefing
             </h1>
             <p className="mt-4 text-xs text-neutral-500 max-w-xs">
-              Fetching details, timeline milestones, and connected concepts for {decodedTopic}...
+              Fetching details, theme perspectives, and connected concepts for {decodedTopic}...
             </p>
           </section>
         )}
@@ -162,21 +147,28 @@ function ResultsContent() {
             <section className="grid gap-6 sm:gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:gap-10">
               <div className="space-y-6">
                 <div className="rounded-[2rem] border border-white/5 bg-gradient-to-br from-neutral-900/30 to-neutral-950/50 p-7 backdrop-blur-xl sm:p-8">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-neutral-500">
-                    Subject Profile
-                  </p>
+                  <div className="flex items-center justify-between">
+                    <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-neutral-500">
+                      Subject Profile
+                    </p>
+                    {data.cacheStatus && (
+                      <span className="text-[9px] uppercase tracking-[0.2em] text-neutral-600 bg-neutral-900 px-2 py-0.5 rounded border border-white/5">
+                        Cache: {data.cacheStatus}
+                      </span>
+                    )}
+                  </div>
                   <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
                     {data.article.title}
                   </h1>
-                  <p className="mt-5 text-base leading-relaxed text-neutral-400">
-                    {data.analysis.description}
+                  <p className="mt-5 text-base leading-relaxed text-neutral-400 line-clamp-3">
+                    {data.article.description || data.article.extract}
                   </p>
                 </div>
 
                 <AISummary
-                  title={data.analysis.title}
-                  description={data.analysis.description}
-                  briefing={data.analysis.editorialBrief || data.analysis.briefing}
+                  title={data.article.title}
+                  description={data.article.description || ""}
+                  briefing={data.shortSummary}
                 />
               </div>
 
@@ -185,130 +177,19 @@ function ResultsContent() {
               </div>
             </section>
 
-            {/* 2. Knowledge Map Section */}
-            {data.analysis.relatedArticles?.length ? (
-              <KnowledgeGraph
-                title={data.article.title}
-                related={data.analysis.relatedArticles}
-                onSelectNode={(nodeTitle) => {
-                  trackRelatedTopicClicked(nodeTitle);
-                  router.push(`/results?topic=${encodeURIComponent(nodeTitle)}`);
-                }}
-              />
-            ) : null}
-
-            {/* 3. Chronology Milestones Section (Two columns on desktop) */}
-            {data.analysis.timeline?.length > 0 && (
-              <section className="border-t border-white/5 py-12 md:py-16">
-                <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 lg:items-start">
-                  
-                  {/* Left: Scrollable Timeline */}
-                  <div>
-                    <Timeline
-                      items={data.analysis.timeline}
-                      selectedItem={activeEvent}
-                      onSelect={(item) => {
-                        setSelectedEvent(item);
-                        trackTimelineCardClicked(item.title);
-                      }}
-                    />
-                  </div>
-
-                  {/* Right: Sticky Details Card */}
-                  <div className="lg:sticky lg:top-8 lg:mt-16">
-                    {activeEvent && (
-                      <div className="rounded-[2rem] border border-cyan-500/20 bg-gradient-to-br from-neutral-900/35 via-[#0d0d12]/90 to-black p-6 shadow-xl backdrop-blur-xl sm:p-8">
-                        <div className="flex items-center justify-between">
-                          <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-cyan-400">
-                            Milestone Profile
-                          </p>
-                          <span className="rounded-full border border-cyan-400/30 bg-cyan-500/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.15em] text-cyan-300">
-                            {activeEvent.year}
-                          </span>
-                        </div>
-
-                        <h3 className="mt-5 text-2xl font-semibold tracking-tight text-white md:text-3xl">
-                          {activeEvent.title}
-                        </h3>
-
-                        <hr className="my-5 border-white/5" />
-
-                        <div className="space-y-5 text-sm leading-relaxed">
-                          <div>
-                            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500">
-                              What Happened
-                            </span>
-                            <p className="mt-2 text-neutral-300">
-                              {activeEvent.whatHappened || activeEvent.summary}
-                            </p>
-                          </div>
-
-                          <div>
-                            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500">
-                              Significance
-                            </span>
-                            <p className="mt-2 text-neutral-400">
-                              {activeEvent.whyItMattered || activeEvent.significance || "Marks a defining point in the subject's development."}
-                            </p>
-                          </div>
-
-                          {activeEvent.longTermImpact && (
-                            <div>
-                              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500">
-                                Long-term Impact
-                              </span>
-                              <p className="mt-2 text-neutral-400">
-                                {activeEvent.longTermImpact}
-                              </p>
-                            </div>
-                          )}
-
-                          {activeEvent.relatedPeople && activeEvent.relatedPeople.length > 0 && (
-                            <div>
-                              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500">
-                                Related Figures
-                              </span>
-                              <div className="mt-2.5 flex flex-wrap gap-1.5">
-                                {activeEvent.relatedPeople.map((person) => (
-                                  <span
-                                    key={person}
-                                    className="rounded-full border border-white/5 bg-white/[0.02] px-2.5 py-1 text-xs text-neutral-400 hover:border-cyan-500/30 hover:text-white transition duration-300"
-                                  >
-                                    {person}
-                                  </span>
-                                ))}
-                              </div>
-                            </div>
-                          )}
-
-                          {activeEvent.relatedPlaces && activeEvent.relatedPlaces.length > 0 && (
-                            <div>
-                              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500">
-                                Key Locations
-                              </span>
-                              <div className="mt-2.5 flex flex-wrap gap-1.5">
-                                {activeEvent.relatedPlaces.map((place) => (
-                                  <span
-                                    key={place}
-                                    className="rounded-full border border-white/5 bg-white/[0.02] px-2.5 py-1 text-xs text-neutral-400 hover:border-cyan-500/30 hover:text-white transition duration-300"
-                                  >
-                                    {place}
-                                  </span>
-                                ))}
-                              </div>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-
-                </div>
+            {/* 2. Key Perspectives Carousel Section */}
+            {data.resultCards?.length > 0 && (
+              <section className="border-t border-white/5 pt-6">
+                <Carousel
+                  cards={data.resultCards}
+                  category={data.topicCategory}
+                  didYouKnow={data.didYouKnow}
+                />
               </section>
             )}
 
-            {/* 4. Related Readings/Topics Cards */}
-            {data.analysis.relatedArticles?.length ? (
+            {/* 3. Related Readings/Topics Cards */}
+            {data.relatedTopics?.length ? (
               <section className="border-t border-white/5 py-12 md:py-16">
                 <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-cyan-400">
                   Related Readings
@@ -317,23 +198,23 @@ function ResultsContent() {
                   Explore Further
                 </h2>
                 <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-                  {data.analysis.relatedArticles.map((article) => (
+                  {data.relatedTopics.map((topic) => (
                     <button
-                      key={article.title}
+                      key={topic.title}
                       type="button"
                       onClick={() => {
-                        trackRelatedTopicClicked(article.title);
-                        router.push(`/results?topic=${encodeURIComponent(article.title)}`);
+                        trackRelatedTopicClicked(topic.title);
+                        router.push(`/results?topic=${encodeURIComponent(topic.title)}`);
                       }}
                       className="group relative flex flex-col justify-between rounded-2xl border border-white/5 bg-white/[0.02] p-6 text-left transition-all duration-300 hover:border-cyan-400/30 hover:bg-white/[0.04] hover:shadow-[0_0_30px_rgba(0,245,160,0.05)]"
                     >
                       <div>
                         <h3 className="text-lg font-semibold text-white group-hover:text-cyan-300 transition duration-300">
-                          {article.title}
+                          {topic.title}
                         </h3>
-                        {article.description && (
+                        {topic.description && (
                           <p className="mt-2.5 text-xs text-neutral-500 line-clamp-2 capitalize">
-                            {article.description}
+                            {topic.description}
                           </p>
                         )}
                       </div>
@@ -349,7 +230,7 @@ function ResultsContent() {
               </section>
             ) : null}
 
-            {/* 5. Editorial Footer */}
+            {/* 4. Editorial Footer */}
             <footer className="border-t border-white/5 py-12 text-center">
               <div className="mx-auto flex max-w-2xl flex-col items-center gap-3 text-xs text-neutral-600">
                 <p className="font-semibold tracking-[0.3em] text-neutral-400 uppercase">

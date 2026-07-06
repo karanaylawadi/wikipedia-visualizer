@@ -67,3 +67,12 @@ export function trackRelatedTopicClicked(title: string) {
     label: title,
   });
 }
+
+export function trackCarouselCardClicked(title: string) {
+  trackEvent({
+    action: "carousel_card_clicked",
+    category: "engagement",
+    label: title,
+  });
+}
+

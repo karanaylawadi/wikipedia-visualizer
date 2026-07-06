@@ -1,302 +1,163 @@
 import { NextResponse } from "next/server";
 import { getArticleIntelligence, getRelatedArticles, searchWikipedia } from "@/lib/wikipedia";
+import { createCacheKey, getCachedAnalysis, setCachedAnalysis } from "@/lib/cache";
 
 const MAX_INPUT_CHARS = 120000;
-const geminiPrompt = `Return valid JSON only. Use the following schema:
+
+const geminiPrompt = `You are the Chief Editor of Visualizer.wiki. Your mission is to transform factual Wikipedia articles into a premium visual knowledge experience for an intelligent reader with 5-10 minutes.
+Your writing style must combine:
+- National Geographic (immersive, narrative)
+- The New York Times (intellectual, crisp)
+- Encyclopaedia Britannica (scholarly, authoritative)
+- Apple Human Interface (concise, clear, elegant)
+- Bloomberg explainers (structured, analytical)
+
+Never copy Wikipedia wording. Rewrite everything naturally. Never sound robotic.
+
+Return valid JSON matching this schema:
 {
-  "editorialBrief": "Encyclopedia-style summary briefing of the topic.",
-  "timeline": [
+  "topicCategory": "One of the 30 allowed categories listed below.",
+  "shortSummary": "Premium editorial introduction. Explain what it is, why it matters, and why it is remembered today in 120-150 words (maximum 180 words). Do not copy raw Wikipedia text. Avoid pronunciations, citations, dates, or lists.",
+  "resultCards": [
     {
-      "year": "Event year (e.g. '1804' or 'Context')",
-      "title": "Concise title, maximum 10-12 words",
-      "summary": "Cohesive summary of the event.",
-      "significance": "Historical or conceptual significance at the time.",
-      "longTermImpact": "The long-term legacy or consequences.",
-      "relatedPeople": ["Key figures involved"],
-      "relatedPlaces": ["Key locations involved"]
+      "title": "Editorial title, 2-6 words. Magazine headline style (e.g. 'The Cold War Moves to Space', 'Inside the Roman Empire', 'The Moon Race Begins'). Never start with 'It' or end mid-sentence.",
+      "summary": "Cohesive summary of this perspective, 80-120 words (maximum 150 words). Focus on ONE idea. Do not copy raw Wikipedia sentences. Do not repeat the card title in the summary body.",
+      "referenceLabel": "A descriptive section or source label (e.g. 'Sputnik Crisis', 'Lunar Architecture').",
+      "imageHint": "A specific Wikipedia page title or search query for a landscape or square image related to this perspective.",
+      "metadata": {
+        // Structured metadata based on topic Category. Read instructions below.
+      }
     }
   ],
-  "relatedArticles": [
+  "didYouKnow": [
+    "Fact 1 (maximum 25 words. Surprising, fascinating fact)",
+    "Fact 2 (maximum 25 words)",
+    "Fact 3 (maximum 25 words)"
+  ],
+  "relatedTopics": [
     {
-      "title": "Wikipedia article title (e.g. 'French Revolution')",
-      "description": "Short explanation of its relation to the topic.",
-      "relevanceScore": 0.95, // Float between 0.0 and 1.0 representing importance
-      "category": "One of: 'person', 'place', 'event', 'organization', 'concept', 'period'",
-      "connections": ["Titles of other articles in this relatedArticles list that this node connects to"]
+      "title": "Wikipedia article title (e.g., 'Apollo 11')",
+      "description": "Short explanation of the relationship."
     }
   ]
 }
-Do not include any JSON wrappers or markdown code blocks (like \`\`\`json). Start with { and end with }. Do not add outside facts. Ensure all text is grammatically correct and reads naturally like a professionally edited encyclopedia.`;
 
-function normalizeText(text: string) {
-  return text.replace(/\s+/g, " ").replace(/\[\d+\]/g, "").trim();
+Instructions for card level "metadata":
+Provide an object with string keys and values representing the structured metadata for the topic.
+- historical_event, war_conflict, sports_event: year, location, keyPeople, duration
+- landmark, building_architecture, artwork, historical_place, tourist_place: built, architect, location, unesco, annualVisitors (or artist, year, medium, museum for artwork)
+- city: country, population, founded, language
+- country: capital, population, currency, officialLanguage
+- movie, tv_show, video_game: director, releaseYear, runtime, genre, boxOffice, awards (use developer, publisher for video_game; creator, seasons, episodes for tv_show)
+- book: author, published, genre, pages
+- person, politician, artist_actor, author, music_artist, inventor: born, died, nationality, occupation, knownFor
+- scientist: field, majorDiscovery, awards
+- company, brand: founded, headquarters, industry, founder, ceo, employees
+- technology, science_concept: inventor, introduced, industry, currentStatus (or field, keyApplications)
+- sports_team: league, founded, stadium, championships
+- religion, mythology: origin, followers, holyText
+- generic: No metadata required (return empty object {}).
+
+30 Allowed Categories:
+historical_event, war_conflict, historical_place, tourist_place, landmark, building_architecture, city, country, person, politician, scientist, inventor, artist_actor, author, movie, tv_show, book, music_artist, album_song, company, brand, technology, science_concept, sports_team, sports_event, religion, mythology, artwork, video_game, generic
+
+Classification Examples:
+- Space Race -> historical_event
+- Roman Empire -> historical_event
+- Titanic (film) -> movie
+- Titanic (ship) -> historical_event
+- Steve Jobs -> person
+- Apple Inc -> company
+- Quantum Computing -> science_concept
+- ChatGPT -> technology
+- Taj Mahal -> landmark
+- Dubai -> city
+- India -> country
+
+Perspective Planning (resultCards MUST contain exactly 5 elements):
+For the topic, ask yourself: 'If someone searched this topic, what are the five most useful perspectives they would want to explore?' Select the five strongest perspectives. Each topic should feel unique.
+Do not use rigid layout templates. For Space Race, write on Origins, Sputnik, Moon Landing, Cold War Politics, Scientific Legacy. For Taj Mahal, write on History, Architecture, Mumtaz Mahal, Visiting Today, UNESCO Legacy.
+
+Editorial Review Step:
+Before producing final JSON, perform a review:
+1. Ensure perfect grammar and natural English.
+2. Ensure card summaries are under 150 words and shortSummary is under 180 words.
+3. Card titles must be engaging, 2-6 words, and contain no awkward 'of Space Race' style suffix.
+4. Facts must be accurate, surprising, and under 25 words.
+5. Generate 6-10 related topics. Avoid raw years, generic dates, or maintenance pages.
+6. The JSON output must be completely valid and contain NO markdown block wrappers (like \`\`\`json). Start with { and end with }.`;
+
+// Fallback logic in case Gemini fails
+function getFallbackCategory(categories: string[], title: string, extract: string): string {
+  const text = `${title} ${extract} ${categories.map((c) => c.replace(/^Category:/i, "")).join(" ")}`.toLowerCase();
+
+  if (title.toLowerCase().includes("space race")) return "historical_event";
+  if (title.toLowerCase().includes("taj mahal")) return "landmark";
+  if (title.toLowerCase().includes("roman empire")) return "historical_event";
+  if (title.toLowerCase().includes("titanic") && text.includes("film")) return "movie";
+  if (title.toLowerCase().includes("titanic") && (text.includes("ship") || text.includes("sinking"))) return "historical_event";
+  if (title.toLowerCase().includes("steve jobs")) return "person";
+  if (title.toLowerCase().includes("apple inc.")) return "company";
+  if (title.toLowerCase().includes("quantum computing")) return "science_concept";
+  if (title.toLowerCase().includes("eiffel tower")) return "landmark";
+  if (title.toLowerCase().includes("world war")) return "war_conflict";
+
+  if (text.includes("film") || text.includes("cinema") || text.includes("movie") || text.includes("directed by")) return "movie";
+  if (text.includes("television series") || text.includes("tv show") || text.includes("sitcom")) return "tv_show";
+  if (text.includes("novel") || text.includes("book") || text.includes("literature") || text.includes("written by")) return "book";
+  if (text.includes("singer") || text.includes("musician") || text.includes("band") || text.includes("orchestra")) return "music_artist";
+  if (text.includes("song") || text.includes("single") || text.includes("album") || text.includes("track")) return "album_song";
+
+  if (text.includes("politician") || text.includes("president") || text.includes("prime minister") || text.includes("senator")) return "politician";
+  if (text.includes("actor") || text.includes("actress") || text.includes("director") || text.includes("artist") || text.includes("painter") || text.includes("sculptor")) return "artist_actor";
+  if (text.includes("writer") || text.includes("poet") || text.includes("novelist") || text.includes("author")) return "author";
+  if (text.includes("scientist") || text.includes("physicist") || text.includes("chemist") || text.includes("mathematician")) return "scientist";
+  if (text.includes("inventor") || text.includes("engineer")) return "inventor";
+  if (text.includes("biography") || text.includes("born") || text.includes("died") || text.includes("person")) return "person";
+
+  if (text.includes("war ") || text.includes("battle ") || text.includes("campaign ") || text.includes("military conflict")) return "war_conflict";
+  if (text.includes("treaty ") || text.includes("revolution ") || text.includes("historical event") || text.includes("space race")) return "historical_event";
+
+  if (text.includes("city") || text.includes("capital")) return "city";
+  if (text.includes("country") || text.includes("nation") || text.includes("republic") || text.includes("state")) return "country";
+  if (text.includes("landmark") || text.includes("monument")) return "landmark";
+  if (text.includes("archaeological site") || text.includes("ruins")) return "historical_place";
+  if (text.includes("attraction") || text.includes("park") || text.includes("resort") || text.includes("tourism")) return "tourist_place";
+
+  if (text.includes("architecture") || text.includes("building") || text.includes("palace") || text.includes("castle") || text.includes("temple") || text.includes("cathedral")) return "building_architecture";
+  if (text.includes("painting") || text.includes("sculpture") || text.includes("artwork") || text.includes("museum piece")) return "artwork";
+  if (text.includes("company") || text.includes("brand") || text.includes("corporation") || text.includes("founded in")) return "company";
+  if (text.includes("technology") || text.includes("software") || text.includes("hardware") || text.includes("engine") || text.includes("computing")) return "technology";
+  if (text.includes("quantum") || text.includes("physics") || text.includes("theory") || text.includes("concept") || text.includes("science")) return "science_concept";
+
+  if (text.includes("sports team") || text.includes("club") || text.includes("fc") || text.includes("franchise")) return "sports_team";
+  if (text.includes("olympic") || text.includes("tournament") || text.includes("sports event") || text.includes("championship")) return "sports_event";
+  if (text.includes("mythology") || text.includes("religion") || text.includes("god") || text.includes("deity")) return "religion";
+
+  return "generic";
 }
 
-function createEditorialBriefFallback(extract: string, title: string) {
-  const sentences = extract
-    .split(/(?<=[.!?])\s+/)
-    .map((sentence) => normalizeText(sentence))
-    .filter(Boolean);
+function getFallbackCards(category: string, title: string, extract: string, sectionHeadings: string[]) {
+  const defaultPerspectives = ["Overview", "Historical Context", "Key Development", "Importance", "Legacy"];
+  const paragraphs = extract.split(/\n+/).map((p) => p.trim()).filter(Boolean);
 
-  const meaningful = sentences.filter((sentence) => {
-    const lower = sentence.toLowerCase();
-    if (sentence.length < 40) return false;
-    if (lower.includes("this article") || lower.includes("may refer to") || lower.includes("can refer to")) {
-      return false;
+  return defaultPerspectives.map((theme, i) => {
+    const hint = sectionHeadings[i] || title;
+    let summaryText = paragraphs[i] || paragraphs[0] || `Exploring the ${theme.toLowerCase()} of ${title}.`;
+
+    const words = summaryText.split(/\s+/).filter(Boolean);
+    if (words.length < 85) {
+      summaryText += ` This crucial thematic perspective illustrates the broad historic and conceptual legacy of ${title}, showing how it influenced developments and persists in the modern scholarly discourse.`;
     }
-    return true;
+
+    return {
+      title: `${theme}`,
+      summary: summaryText.slice(0, 800),
+      referenceLabel: theme,
+      imageHint: hint,
+      metadata: {},
+    };
   });
-
-  const summarySentences = meaningful.slice(0, 4);
-  let summary = summarySentences.join(" ");
-
-  if (summary.length < 140) {
-    summary = `${title} is a subject of enduring historical, cultural, and political significance. ${summary}`.trim();
-  }
-
-  const words = summary.split(/\s+/).filter(Boolean);
-  if (words.length < 80) {
-    summary = `${summary} Its legacy continues to shape public memory, institutions, and the broader historical narrative.`;
-  }
-
-  if (words.length > 130) {
-    const clipped = words.slice(0, 125).join(" ");
-    return `${clipped.replace(/[.,;:]+$/, "")} .`;
-  }
-
-  return summary;
-}
-
-function refineEditorialBrief(seed: string | null, extract: string, title: string) {
-  const fallback = createEditorialBriefFallback(extract, title);
-  const baseText = normalizeText(seed || fallback);
-  const candidateSentences = baseText
-    .split(/(?<=[.!?])\s+/)
-    .map((sentence) => normalizeText(sentence))
-    .filter(Boolean);
-
-  if (candidateSentences.length === 0) {
-    return fallback;
-  }
-
-  const compact = candidateSentences.slice(0, 3).join(" ");
-  const words = compact.split(/\s+/).filter(Boolean);
-  if (words.length >= 80 && words.length <= 120) {
-    return compact;
-  }
-
-  return createEditorialBriefFallback(extract, title);
-}
-
-function createTimelineTitle(sentence: string, title: string) {
-  let body = normalizeText(sentence);
-
-  body = body.replace(/\b(?:1[0-9]{3}|20[0-9]{2}|[0-9]{1,3}\s?(?:BC|BCE|CE|AD|A\.D\.)|(?:early|mid|late|middle)\s+(?:[0-9]{1,2}(?:st|nd|rd|th)?\s+)?(?:century|centuries)|(?:first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|eleventh|twelfth|thirteenth|fourteenth|fifteenth|sixteenth|seventeenth|eighteenth|nineteenth|twentieth|twenty-first|twenty-second|twenty-third|twenty-fourth)\s*(?:century|centuries))\b/gi, "");
-  body = body.replace(/^(?:in|during|by|from|after|before|on|at|under|around|over)\s+/i, "");
-  body = body.replace(/^(?:the|a|an)\s+/i, "");
-  body = body.replace(/^(?:saw|was|were|is|are|became|began|led|marked|followed|resulted|included|formed|established|ended|collapsed|rose|fell)\b/i, "");
-  body = body.replace(/^[,;:\-–—\s]+/, "");
-  body = body.replace(/\.$/, "");
-
-  const cleaned = body
-    .replace(/\s+/g, " ")
-    .replace(/\b(?:was|were|is|are|became|became|began|led|marked|followed|resulted|included|formed|established|ended|collapsed|rose|fell)\b/gi, "")
-    .trim();
-
-  const words = cleaned.split(/\s+/).filter(Boolean);
-  if (!words.length) return title;
-
-  const trimmed = words.slice(0, 8).join(" ");
-  if (!trimmed) return title;
-
-  return trimmed.replace(/^[,;:\-–—\s]+/, "").replace(/[.,;:]+$/, "");
-}
-
-function extractYear(value: string) {
-  const match = value.match(/\b(?:1[0-9]{3}|20[0-9]{2}|[0-9]{1,3}\s?(?:BC|BCE|CE|AD|A\.D\.))\b/i);
-  return match?.[0].trim() || "Context";
-}
-
-function inferMilestoneTitle(sentence: string, title: string) {
-  const body = normalizeText(sentence).replace(/\.$/, "");
-  const lower = body.toLowerCase();
-
-  const explicitEventPatterns = [
-    /\b(Battle|Siege|Treaty|Conquest|Coronation|Election|Revolution|Crisis|Fall|Capture|Founding|Formation|Unification|Independence|Succession)\b/i,
-    /\b(?:Battle|Siege|Treaty|Conquest|Coronation|Election|Revolution|Crisis|Fall|Capture|Founding|Formation|Unification|Independence|Succession)\s+of\s+([A-Z][A-Za-z'’.-]+(?:\s+[A-Z][A-Za-z'’.-]+)*)/i,
-    /\b([A-Z][A-Za-z'’.-]+(?:\s+[A-Z][A-Za-z'’.-]+)*)\s+(?:Battle|Siege|Treaty|Conquest|Coronation|Election|Revolution|Crisis|Fall|Capture|Founding|Formation|Unification|Independence|Succession)\b/i,
-  ];
-
-  for (const pattern of explicitEventPatterns) {
-    const match = body.match(pattern);
-    if (match?.[1]) {
-      return `${match[0].replace(/\s+/g, " ").trim()}`;
-    }
-  }
-
-  if (/\b(found(?:ed|ing)?|establish(?:ed|ment)?|founded)\b/i.test(lower)) {
-    return `Founding of ${title}`;
-  }
-  if (/\b(coronat(?:ion|ed))\b/i.test(lower)) {
-    return `Coronation of ${title}`;
-  }
-  if (/\b(war|battle|campaign|invasion|siege)\b/i.test(lower)) {
-    return `Battle of ${title}`;
-  }
-  if (/\b(discover(?:y|ed)|invent(?:ed|ion)|identified)\b/i.test(lower)) {
-    return `Discovery of ${title}`;
-  }
-  if (/\b(treaty|accord|pact|convention)\b/i.test(lower)) {
-    return `Treaty of ${title}`;
-  }
-  if (/\b(revolut(?:ion|ionary)|independ(?:ence|ent)|election|referendum|coup|overthrow)\b/i.test(lower)) {
-    return `Political change in ${title}`;
-  }
-  if (/\b(death|died|assassinat(?:ed|ion)|killed|murdered)\b/i.test(lower)) {
-    return `Death of ${title}`;
-  }
-  if (/\b(collaps(?:e|ed)|declin(?:e|ed)|fall of|fell)\b/i.test(lower)) {
-    return `Fall of ${title}`;
-  }
-
-  const candidate = createTimelineTitle(sentence, title);
-  return candidate.length > 80 ? candidate.slice(0, 80) : candidate;
-}
-
-function extractEntityPhrases(text: string, title: string, kind: "person" | "place") {
-  const seen = new Set<string>();
-  const fragments: string[] = [];
-  const candidateText = normalizeText(text);
-  const normalizedTitle = title.replace(/\s+/g, " ").trim();
-
-  const personPatterns = [
-    /\b(?:King|Queen|Emperor|President|Prime Minister|Pope|Prince|Duke|Lord|Lady|Saint|General|Marshal)\s+[A-Z][A-Za-z'’.-]+(?:\s+[A-Z][A-Za-z'’.-]+)*/g,
-    /\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+)+\b/g,
-  ];
-  const placePatterns = [
-    /\b(?:city|capital|province|region|state|country|island|river|mountain|desert|ocean|sea|empire|kingdom|republic|nation|valley|forest)\s+(?:of|in|on|near|across)\s+([A-Z][A-Za-z'’.-]+(?:\s+[A-Z][A-Za-z'’.-]+)*)/g,
-    /\b([A-Z][A-Za-z'’.-]+(?:\s+[A-Z][A-Za-z'’.-]+)*)\s+(?:River|Mount|Mountain|Sea|Ocean|City|Province|State|Region|Capital|Empire|Kingdom|Republic|Country|Island|Desert)\b/g,
-  ];
-
-  const patterns = kind === "person" ? personPatterns : placePatterns;
-  for (const pattern of patterns) {
-    for (const match of candidateText.matchAll(pattern)) {
-      const value = (match[1] || match[0] || "").replace(/^[^A-Za-z]+|[^A-Za-z]+$/g, "").trim();
-      if (!value || value.length < 2 || value.toLowerCase() === normalizedTitle.toLowerCase()) continue;
-      if (seen.has(value.toLowerCase())) continue;
-      seen.add(value.toLowerCase());
-      fragments.push(value);
-      if (fragments.length === 3) break;
-    }
-    if (fragments.length === 3) break;
-  }
-
-  return fragments;
-}
-
-function buildFocusCardDetails(summary: string, extract: string, title: string) {
-  const sentences = extract
-    .split(/(?<=[.!?])\s+/)
-    .map((entry) => normalizeText(entry))
-    .filter(Boolean);
-
-  const normalizedSummary = normalizeText(summary || "");
-  const targetIndex = sentences.findIndex((sentence) => {
-    const normalizedSentence = normalizeText(sentence);
-    return normalizedSentence.includes(normalizedSummary.slice(0, 40)) || normalizedSummary.includes(normalizedSentence.slice(0, 40));
-  });
-
-  const whatHappened = normalizedSummary || sentences[targetIndex] || `This milestone shaped the historical arc of ${title}.`;
-  const whyItMattered = sentences[targetIndex + 1]
-    ? normalizeText(sentences[targetIndex + 1])
-    : sentences[1]
-      ? normalizeText(sentences[1])
-      : `It marked an important turning point in the story of ${title}.`;
-  const longTermImpact = sentences[targetIndex + 2]
-    ? normalizeText(sentences[targetIndex + 2])
-    : sentences[2]
-      ? normalizeText(sentences[2])
-      : `Its consequences continued to influence the broader historical context surrounding ${title}.`;
-
-  return {
-    whatHappened,
-    whyItMattered,
-    longTermImpact,
-    relatedPeople: extractEntityPhrases(extract, title, "person"),
-    relatedPlaces: extractEntityPhrases(extract, title, "place"),
-  };
-}
-
-function createTimeline(extract: string, title: string, sectionHeadings: string[] = [], wikitext = "") {
-  const sentences = extract
-    .split(/(?<=[.!?])\s+/)
-    .map((sentence) => sentence.trim())
-    .filter(Boolean);
-
-  const chronologyPattern = /\b(?:1[0-9]{3}|20[0-9]{2}|[0-9]{1,3}\s?(?:BC|BCE|CE)|(?:early|mid|late)?\s*(?:first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|eleventh|twelfth|thirteenth|fourteenth|fifteenth|sixteenth|seventeenth|eighteenth|nineteenth|twentieth|twenty-first|twenty-second|twenty-third|twenty-fourth)\s*(?:century|centuries)|(?:[0-9]{1,2})(?:st|nd|rd|th)?\s*(?:century|centuries))\b/gi;
-
-  const timeline: Array<{ year: string; title: string; summary: string; significance: string }> = [];
-  const seen = new Set<string>();
-
-  for (const sentence of sentences) {
-    const match = sentence.match(chronologyPattern);
-    if (!match) continue;
-
-    const year = match[0].trim();
-    if (seen.has(year)) continue;
-
-    const eventTitle = inferMilestoneTitle(sentence, title);
-
-    timeline.push({
-      year,
-      title: eventTitle.charAt(0).toUpperCase() + eventTitle.slice(1),
-      summary: sentence.replace(/\s+/g, " ").trim(),
-      significance: `This milestone is part of the article's documented chronology and is grounded in the source text.`,
-    });
-
-    seen.add(year);
-
-    if (timeline.length === 5) break;
-  }
-
-  if (timeline.length < 5) {
-    const headingCandidates = sectionHeadings.filter((heading) =>
-      /\b(?:history|early|late|foundation|war|revolution|treaty|death|election|collapse|conquest|independence|coronation|discovery|succession|birth|rise|fall|founding)\b/i.test(heading)
-    );
-
-    for (const candidate of headingCandidates) {
-      const lineTitle = inferMilestoneTitle(candidate, title);
-      if (timeline.some((item) => item.title === lineTitle)) continue;
-      timeline.push({
-        year: "Context",
-        title: lineTitle,
-        summary: candidate.replace(/\s+/g, " ").trim(),
-        significance: `This milestone is derived from the article's section headings and historical context.`,
-      });
-      if (timeline.length === 5) break;
-    }
-  }
-
-  if (timeline.length < 5) {
-    const infoboxSignals = Array.from(wikitext.matchAll(/\|\s*(?:founded|founded_date|established|formed|birth_date|death_date|start_date|end_date|date|reign)\s*=\s*([^\n|]+)/gi));
-
-    for (const match of infoboxSignals) {
-      const value = (match[1] || "").trim();
-      if (!value) continue;
-      const year = extractYear(value);
-      const lineTitle = inferMilestoneTitle(`${year} ${value}`, title);
-      if (timeline.some((item) => item.title === lineTitle)) continue;
-      timeline.push({
-        year,
-        title: lineTitle,
-        summary: `${year}: ${value}`,
-        significance: `This milestone is inferred from the article's infobox chronology.`,
-      });
-      if (timeline.length === 5) break;
-    }
-  }
-
-  return timeline;
 }
 
 function truncateForGemini(text: string) {
@@ -304,7 +165,32 @@ function truncateForGemini(text: string) {
   return normalized.slice(0, MAX_INPUT_CHARS);
 }
 
-async function getGeminiInsights(articleTitle: string, articleExtract: string, baseTimeline: Array<{ year: string; title: string; summary: string; significance: string }>) {
+async function getWikipediaThumbnail(title: string): Promise<string | null> {
+  try {
+    const response = await fetch(
+      `https://en.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(
+        title
+      )}&prop=pageimages&piprop=thumbnail&pithumbsize=600&format=json&origin=*`
+    );
+    if (!response.ok) return null;
+    const data = await response.json();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const page = Object.values(data.query?.pages || {})[0] as any;
+    if (page?.thumbnail) {
+      const { source, width, height } = page.thumbnail;
+      if (width && height && width >= height) {
+        return source;
+      }
+    }
+    return null;
+  } catch (error) {
+    console.error("Error fetching card thumbnail:", error);
+    return null;
+  }
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+async function getGeminiInsights(articleTitle: string, articleExtract: string, sectionHeadings: string[]): Promise<any> {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) return null;
 
@@ -312,7 +198,7 @@ async function getGeminiInsights(articleTitle: string, articleExtract: string, b
     const { GoogleGenAI } = await import("@google/genai");
     const ai = new GoogleGenAI({ apiKey });
 
-    const contents = `${geminiPrompt}\n\nArticle title: ${articleTitle}\n\nArticle text:\n${truncateForGemini(articleExtract)}\n\nChronology candidates:\n${JSON.stringify(baseTimeline.slice(0, 3))}`;
+    const contents = `${geminiPrompt}\n\nArticle title: ${articleTitle}\n\nArticle text:\n${truncateForGemini(articleExtract)}\n\nSection Headings available:\n${sectionHeadings.slice(0, 15).join(", ")}`;
 
     const response = await ai.models.generateContent({
       model: "gemini-2.0-flash",
@@ -320,35 +206,12 @@ async function getGeminiInsights(articleTitle: string, articleExtract: string, b
       config: { temperature: 0.2, maxOutputTokens: 4000 },
     });
 
-    const text = typeof (response as { text?: string }).text === "string" ? (response as { text?: string }).text : "";
+    const text = typeof response.text === "string" ? response.text : "";
     if (!text) return null;
 
-    const parsed = JSON.parse(text.replace(/```json|```/g, "").trim());
-    return {
-      editorialBrief: typeof parsed.editorialBrief === "string" ? parsed.editorialBrief : null,
-      timeline: Array.isArray(parsed.timeline)
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        ? parsed.timeline.map((item: any) => ({
-            year: String(item.year || "Context"),
-            title: String(item.title || "").slice(0, 100),
-            summary: String(item.summary || ""),
-            significance: String(item.significance || ""),
-            longTermImpact: String(item.longTermImpact || ""),
-            relatedPeople: Array.isArray(item.relatedPeople) ? item.relatedPeople.map(String) : [],
-            relatedPlaces: Array.isArray(item.relatedPlaces) ? item.relatedPlaces.map(String) : [],
-          }))
-        : [],
-      relatedArticles: Array.isArray(parsed.relatedArticles)
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        ? parsed.relatedArticles.map((item: any) => ({
-            title: String(item.title || ""),
-            description: String(item.description || ""),
-            relevanceScore: typeof item.relevanceScore === "number" ? item.relevanceScore : 0.8,
-            category: String(item.category || "concept"),
-            connections: Array.isArray(item.connections) ? item.connections.map(String) : [],
-          }))
-        : [],
-    };
+    const cleanText = text.replace(/```json|```/g, "").trim();
+    const parsed = JSON.parse(cleanText);
+    return parsed;
   } catch (error) {
     console.warn("Gemini request failed; falling back to Wikipedia-only data", error);
     return null;
@@ -364,8 +227,16 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "A topic is required." }, { status: 400 });
     }
 
-    const article = await searchWikipedia(topic);
+    const cacheKey = createCacheKey(topic);
+    const cachedData = await getCachedAnalysis(cacheKey);
+    if (cachedData) {
+      return NextResponse.json({
+        ...cachedData,
+        cacheStatus: "hit",
+      });
+    }
 
+    const article = await searchWikipedia(topic);
     if (!article) {
       return NextResponse.json({ error: "No article was found for that topic." }, { status: 404 });
     }
@@ -373,67 +244,105 @@ export async function POST(request: Request) {
     const intelligence = await getArticleIntelligence(topic);
     const articleSource = intelligence || article;
     const related = await getRelatedArticles(topic);
-    const description = articleSource.description || articleSource.extract;
-    const baseTimeline = createTimeline(articleSource.extract, articleSource.title, intelligence?.sectionHeadings || [], intelligence?.wikitext || "");
-    const gemini = await getGeminiInsights(articleSource.title, articleSource.extract, baseTimeline);
 
-    const editorialBrief = refineEditorialBrief(gemini?.editorialBrief || null, articleSource.extract, articleSource.title);
-    
-    // Map chronological timeline elements
-    let timeline;
-    if (gemini?.timeline?.length) {
-      timeline = gemini.timeline;
-    } else {
-      timeline = baseTimeline.map((item) => {
-        const focusDetails = buildFocusCardDetails(item.summary, articleSource.extract, articleSource.title);
-        return {
-          year: item.year,
-          title: item.title,
-          summary: item.summary,
-          significance: item.significance || "This milestone is part of the article's documented chronology.",
-          longTermImpact: focusDetails.longTermImpact || "Its consequences continued to shape the subject's historical context over time.",
-          relatedPeople: focusDetails.relatedPeople || [],
-          relatedPlaces: focusDetails.relatedPlaces || [],
-        };
-      });
+    const sectionHeadings = intelligence?.sectionHeadings || [];
+
+    const gemini = await getGeminiInsights(articleSource.title, articleSource.extract, sectionHeadings);
+
+    let topicCategory = gemini?.topicCategory;
+    let shortSummary = gemini?.shortSummary;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    let resultCards: any[] = gemini?.resultCards;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    let relatedTopics: any[] = gemini?.relatedTopics;
+    let didYouKnow: string[] = gemini?.didYouKnow;
+
+    if (!topicCategory) {
+      topicCategory = getFallbackCategory(intelligence?.categories || [], articleSource.title, articleSource.extract);
     }
 
-    // Map related concept graph articles
-    let relatedArticles;
-    if (gemini?.relatedArticles?.length) {
-      relatedArticles = gemini.relatedArticles;
-    } else {
-      relatedArticles = (Array.isArray(related) ? related.slice(0, 8) : []).map((item) => ({
+    if (!shortSummary || shortSummary.split(/\s+/).length < 80) {
+      const paragraphs = articleSource.extract.split(/\n+/).map((p) => p.trim()).filter(Boolean);
+      shortSummary = paragraphs.slice(0, 2).join(" ");
+      const words = shortSummary.split(/\s+/).filter(Boolean);
+      if (words.length < 80) {
+        shortSummary += ` This article provides a comprehensive overview of ${articleSource.title}, detailing its background, applications, key milestones, and broader significance.`;
+      }
+    }
+
+    if (!Array.isArray(resultCards) || resultCards.length !== 5) {
+      resultCards = getFallbackCards(topicCategory, articleSource.title, articleSource.extract, sectionHeadings);
+    }
+
+    if (!Array.isArray(relatedTopics) || relatedTopics.length === 0) {
+      relatedTopics = (Array.isArray(related) ? related.slice(0, 8) : []).map((item) => ({
         title: item.title,
         description: item.description || "Related concept explored in Wikipedia",
-        relevanceScore: 0.75,
-        category: "concept",
-        connections: [],
       }));
     }
 
-    return NextResponse.json({
+    if (!Array.isArray(didYouKnow) || didYouKnow.length !== 3) {
+      didYouKnow = [
+        `${articleSource.title} remains a subject of enduring global significance and discussion.`,
+        `The documented history of ${articleSource.title} spans key cultural, social, or scientific developments.`,
+        `Major aspects of ${articleSource.title} continue to influence modern society and historical analysis.`
+      ];
+    }
+
+    const resultCardsWithImages = await Promise.all(
+      resultCards.map(async (card) => {
+        let imageUrl = null;
+        const searchHint = card.imageHint || card.imageSearchHint;
+        if (searchHint) {
+          imageUrl = await getWikipediaThumbnail(searchHint);
+        }
+        if (!imageUrl && articleSource.thumbnail?.source) {
+          const thumb = articleSource.thumbnail as { source: string; width?: number; height?: number };
+          const width = thumb.width ?? 600;
+          const height = thumb.height ?? 400;
+          if (width >= height) {
+            imageUrl = thumb.source;
+          }
+        }
+        return {
+          title: String(card.title || "").slice(0, 100),
+          summary: String(card.summary || ""),
+          referenceLabel: String(card.referenceLabel || card.sourceSection || "Detail"),
+          imageHint: String(searchHint || ""),
+          imageUrl,
+          metadata: card.metadata && typeof card.metadata === "object" ? card.metadata : {},
+        };
+      })
+    );
+
+    const responseData = {
       article: {
         title: articleSource.title,
-        description: articleSource.description,
+        description: articleSource.description || "",
         extract: articleSource.extract,
         thumbnail: articleSource.thumbnail?.source ?? null,
         url: articleSource.content_urls?.desktop?.page ?? null,
       },
-      analysis: {
-        title: `${articleSource.title}`,
-        description,
-        editorialBrief,
-        briefing: editorialBrief,
-        timeline: Array.isArray(timeline) ? timeline : [],
-        relatedArticles,
-      },
+      topicCategory,
+      shortSummary,
+      resultCards: resultCardsWithImages,
+      didYouKnow: didYouKnow.map((fact) => String(fact).slice(0, 150)),
+      relatedTopics: relatedTopics.map((rt) => ({
+        title: String(rt.title || ""),
+        description: String(rt.description || ""),
+      })),
+      generatedAt: new Date().toISOString(),
+      cacheVersion: "results-v4-premium-editorial",
+    };
+
+    await setCachedAnalysis(cacheKey, responseData);
+
+    return NextResponse.json({
+      ...responseData,
+      cacheStatus: "miss",
     });
   } catch (error) {
     console.error("Analyze route error", error);
-    return NextResponse.json(
-      { error: "The analysis request failed." },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: "The analysis request failed." }, { status: 500 });
   }
 }

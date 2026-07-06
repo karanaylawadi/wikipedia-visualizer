@@ -27,7 +27,7 @@ export default function AISummary({ title, description, briefing }: Props) {
       
       <hr className="my-6 border-white/5" />
       
-      <p className="max-w-3xl text-lg font-light leading-relaxed text-neutral-200 md:text-xl md:leading-loose">
+      <p className="max-w-3xl text-lg font-light leading-relaxed text-neutral-200 md:text-xl md:leading-loose line-clamp-[10] overflow-hidden">
         {briefing}
       </p>
     </section>
