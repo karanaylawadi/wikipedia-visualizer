@@ -2,15 +2,48 @@
 
 import { Suspense, useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import AISummary from "@/components/AISummary";
+import dynamic from "next/dynamic";
+import EditorialCarousel from "@/components/EditorialCarousel";
 import PerspectiveGrid from "@/components/PerspectiveGrid";
 import type { PerspectiveCard } from "@/components/PerspectiveGrid";
-import Timeline from "@/components/Timeline";
-import PeopleAlsoExplored from "@/components/PeopleAlsoExplored";
-import type { ExploreTopic } from "@/components/PeopleAlsoExplored";
-import RelatedJourney from "@/components/RelatedJourney";
-import VisualModules from "@/components/VisualModules";
 import { trackTopicOpened } from "@/lib/gtag";
+
+// Lazy-loaded components for optimal performance & high Core Web Vitals (LCP/INP)
+const VisualSnapshot = dynamic(() => import("@/components/VisualSnapshot"), {
+  ssr: false,
+  loading: () => (
+    <div className="h-64 w-full rounded-3xl bg-[#07080c] border border-white/5 animate-pulse flex items-center justify-center">
+      <span className="text-[10px] uppercase tracking-[0.3em] text-neutral-600">Loading Visual Snapshot...</span>
+    </div>
+  )
+});
+
+const FactCards = dynamic(() => import("@/components/FactCards"), {
+  ssr: false,
+  loading: () => (
+    <div className="h-44 w-full rounded-3xl bg-[#07080c] border border-white/5 animate-pulse flex items-center justify-center">
+      <span className="text-[10px] uppercase tracking-[0.3em] text-neutral-600">Loading Insights...</span>
+    </div>
+  )
+});
+
+const KnowledgeJourney = dynamic(() => import("@/components/KnowledgeJourney"), {
+  ssr: false,
+  loading: () => (
+    <div className="h-20 w-full rounded-full bg-[#07080c] border border-white/5 animate-pulse flex items-center justify-center">
+      <span className="text-[10px] uppercase tracking-[0.3em] text-neutral-600">Loading Journey Path...</span>
+    </div>
+  )
+});
+
+const DiscoveryCarousel = dynamic(() => import("@/components/DiscoveryCarousel"), {
+  ssr: false,
+  loading: () => (
+    <div className="h-64 w-full rounded-3xl bg-[#07080c] border border-white/5 animate-pulse flex items-center justify-center">
+      <span className="text-[10px] uppercase tracking-[0.3em] text-neutral-600">Loading Discovery Hub...</span>
+    </div>
+  )
+});
 
 interface TimelineMilestone {
   year: string;
@@ -20,6 +53,13 @@ interface TimelineMilestone {
 interface BreadcrumbItem {
   label: string;
   url: string;
+}
+
+interface ExploreTopic {
+  title: string;
+  description: string;
+  thumbnail: string | null;
+  category: string;
 }
 
 interface StructuredFacts {
@@ -158,205 +198,8 @@ function ResultsContent() {
       .join(" ");
   };
 
-  const renderAdaptiveLayout = () => {
-    if (!data) return null;
-
-    const cat = data.topicCategory.toLowerCase();
-    
-    const showTimeline = !!data.timeline;
-    const showPerspectives = data.resultCards?.length > 0;
-    const showDidYouKnow = data.didYouKnow?.length > 0;
-    const showExplored = data.exploredTopics?.length > 0;
-    const showJourney = data.relatedList?.length > 0;
-
-    // 1. Historical Event, Empire, War
-    if (cat.includes("event") || cat.includes("war") || cat.includes("battle") || cat.includes("empire")) {
-      return (
-        <div className="space-y-10">
-          <AISummary
-            title={data.article.title}
-            description={data.article.description || ""}
-            briefing={data.shortSummary}
-          />
-          {showTimeline && <Timeline timeline={data.timeline} />}
-          {showPerspectives && (
-            <PerspectiveGrid
-              cards={data.resultCards}
-              category={data.topicCategory}
-            />
-          )}
-          <VisualModules category={data.topicCategory} facts={data.structuredFacts} />
-          {showDidYouKnow && (
-            <section className="py-4 animate-fade-in-up">
-              <h2 className="text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400 mb-6">
-                Surprising Insights
-              </h2>
-              <ul className="space-y-4 max-w-3xl">
-                {data.didYouKnow.map((fact, index) => (
-                  <li key={index} className="flex gap-4 items-start text-sm leading-relaxed text-neutral-300 font-light">
-                    <span className="text-cyan-400 select-none">•</span>
-                    <span>{fact}</span>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )}
-          {showExplored && <PeopleAlsoExplored topics={data.exploredTopics} />}
-          {showJourney && (
-            <RelatedJourney
-              currentTopic={data.article.title}
-              relatedList={data.relatedList}
-            />
-          )}
-        </div>
-      );
-    }
-
-    // 2. Person, Biography, Scientist, Artist
-    if (cat.includes("person") || cat.includes("figure") || cat.includes("scientist") || cat.includes("inventor") || cat.includes("artist")) {
-      return (
-        <div className="space-y-10">
-          <AISummary
-            title={data.article.title}
-            description={data.article.description || ""}
-            briefing={data.shortSummary}
-          />
-          <VisualModules category={data.topicCategory} facts={data.structuredFacts} />
-          {showTimeline && <Timeline timeline={data.timeline} />}
-          {showPerspectives && (
-            <PerspectiveGrid
-              cards={data.resultCards}
-              category={data.topicCategory}
-            />
-          )}
-          {showExplored && <PeopleAlsoExplored topics={data.exploredTopics} />}
-        </div>
-      );
-    }
-
-    // 3. Corporate entities & Brands
-    if (cat.includes("company") || cat.includes("brand")) {
-      return (
-        <div className="space-y-10">
-          <AISummary
-            title={data.article.title}
-            description={data.article.description || ""}
-            briefing={data.shortSummary}
-          />
-          <VisualModules category={data.topicCategory} facts={data.structuredFacts} />
-          {showTimeline && <Timeline timeline={data.timeline} />}
-          {showPerspectives && (
-            <PerspectiveGrid
-              cards={data.resultCards}
-              category={data.topicCategory}
-            />
-          )}
-          {showExplored && <PeopleAlsoExplored topics={data.exploredTopics} />}
-        </div>
-      );
-    }
-
-    // 4. Creative arts (Movie, TV Series, Book, Artwork)
-    if (cat.includes("movie") || cat.includes("tv series") || cat.includes("book") || cat.includes("video game") || cat.includes("artwork") || cat.includes("painting")) {
-      return (
-        <div className="space-y-10">
-          <AISummary
-            title={data.article.title}
-            description={data.article.description || ""}
-            briefing={data.shortSummary}
-          />
-          <VisualModules category={data.topicCategory} facts={data.structuredFacts} />
-          {showPerspectives && (
-            <PerspectiveGrid
-              cards={data.resultCards}
-              category={data.topicCategory}
-            />
-          )}
-          {showDidYouKnow && (
-            <section className="py-4 animate-fade-in-up">
-              <h2 className="text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400 mb-6">
-                Surprising Insights
-              </h2>
-              <ul className="space-y-4 max-w-3xl">
-                {data.didYouKnow.map((fact, index) => (
-                  <li key={index} className="flex gap-4 items-start text-sm leading-relaxed text-neutral-300 font-light">
-                    <span className="text-cyan-400 select-none">•</span>
-                    <span>{fact}</span>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )}
-          {showExplored && <PeopleAlsoExplored topics={data.exploredTopics} />}
-        </div>
-      );
-    }
-
-    // 5. Geopolitical areas (Country, City, Region)
-    if (cat.includes("country") || cat.includes("city") || cat.includes("region") || cat.includes("landmark") || cat.includes("architecture")) {
-      return (
-        <div className="space-y-10">
-          <AISummary
-            title={data.article.title}
-            description={data.article.description || ""}
-            briefing={data.shortSummary}
-          />
-          <VisualModules category={data.topicCategory} facts={data.structuredFacts} />
-          {showTimeline && <Timeline timeline={data.timeline} />}
-          {showPerspectives && (
-            <PerspectiveGrid
-              cards={data.resultCards}
-              category={data.topicCategory}
-            />
-          )}
-          {showExplored && <PeopleAlsoExplored topics={data.exploredTopics} />}
-        </div>
-      );
-    }
-
-    // Default science concept & technical breakdown layout
-    return (
-      <div className="space-y-10">
-        <AISummary
-          title={data.article.title}
-          description={data.article.description || ""}
-          briefing={data.shortSummary}
-        />
-        {showPerspectives && (
-          <PerspectiveGrid
-            cards={data.resultCards}
-            category={data.topicCategory}
-          />
-        )}
-        <VisualModules category={data.topicCategory} facts={data.structuredFacts} />
-        {showDidYouKnow && (
-          <section className="py-4 animate-fade-in-up">
-            <h2 className="text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400 mb-6">
-              Surprising Insights
-            </h2>
-            <ul className="space-y-4 max-w-3xl">
-              {data.didYouKnow.map((fact, index) => (
-                <li key={index} className="flex gap-4 items-start text-sm leading-relaxed text-neutral-300 font-light">
-                  <span className="text-cyan-400 select-none">•</span>
-                  <span>{fact}</span>
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
-        {showJourney && (
-          <RelatedJourney
-            currentTopic={data.article.title}
-            relatedList={data.relatedList}
-          />
-        )}
-        {showExplored && <PeopleAlsoExplored topics={data.exploredTopics} />}
-      </div>
-    );
-  };
-
   return (
-    <main className="relative min-h-screen bg-[#030303] px-4 py-6 text-white sm:px-8 sm:py-8 lg:px-12 lg:py-10">
+    <main className="relative min-h-screen bg-[#090A0F] px-4 py-6 text-white sm:px-8 sm:py-8 lg:px-12 lg:py-10">
       {/* Dynamic JSON-LD SEO Schema injection */}
       {data?.seo?.jsonLdSchema && (
         <script
@@ -366,8 +209,8 @@ function ResultsContent() {
       )}
 
       {/* Background radial glows */}
-      <div className="glow-cyan radial-glow absolute top-10 left-10 opacity-10" />
-      <div className="glow-violet radial-glow absolute bottom-10 right-10 opacity-10" />
+      <div className="glow-cyan radial-glow absolute top-10 left-10 opacity-10 pointer-events-none" />
+      <div className="glow-violet radial-glow absolute bottom-10 right-10 opacity-10 pointer-events-none" />
 
       <div className="relative z-10 mx-auto max-w-5xl">
         {/* Navigation header */}
@@ -379,7 +222,7 @@ function ResultsContent() {
             ← Home
           </button>
 
-          <span className="text-[10px] font-semibold uppercase tracking-[0.3em] text-neutral-600">
+          <span className="text-[10px] font-semibold uppercase tracking-[0.3em] text-neutral-500">
             Visualizer.wiki
           </span>
 
@@ -445,7 +288,7 @@ function ResultsContent() {
 
         {/* Render Results Content */}
         {data && !loading && (
-          <div className="animate-fade-in-up mt-8 space-y-10">
+          <div className="animate-fade-in-up mt-8 space-y-4">
             <section className="space-y-6">
               <div className="flex flex-col gap-2">
                 <div className="flex items-center justify-between">
@@ -458,20 +301,60 @@ function ResultsContent() {
                     </span>
                   )}
                 </div>
-                <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
+                <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl bg-gradient-to-b from-white to-neutral-400 bg-clip-text text-transparent leading-none">
                   {data.article.title}
                 </h1>
-                <p className="text-base leading-relaxed text-neutral-400 font-light">
+                <p className="text-base leading-relaxed text-neutral-400 font-light max-w-3xl">
                   {data.article.description || data.article.extract.split(".")[0] + "."}
                 </p>
               </div>
             </section>
 
-            {/* Render Adaptive Category-Specific Layout */}
-            {renderAdaptiveLayout()}
+            {/* 1. REPLACE EDITORIAL BRIEF WITH CAROUSEL */}
+            <EditorialCarousel
+              cards={data.resultCards}
+              importantDates={data.structuredFacts?.importantDates}
+              statistics={data.structuredFacts?.statistics}
+            />
+
+            {/* 2. DYNAMIC VISUAL SNAPSHOT */}
+            <VisualSnapshot
+              category={data.topicCategory}
+              facts={data.structuredFacts}
+              timeline={data.timeline}
+              thumbnail={data.article.thumbnail || null}
+            />
+
+            {/* 3. PERSPECTIVES GRID */}
+            {data.resultCards && data.resultCards.length > 0 && (
+              <PerspectiveGrid
+                cards={data.resultCards}
+                category={data.topicCategory}
+              />
+            )}
+
+            {/* 4. SURPRISING INSIGHTS (FACT CARDS) */}
+            {data.didYouKnow && data.didYouKnow.length > 0 && (
+              <FactCards facts={data.didYouKnow} />
+            )}
+
+            {/* 5. KNOWLEDGE JOURNEY (HIERARCHICAL PATHWAY) */}
+            {data.relatedList && data.relatedList.length > 0 && (
+              <KnowledgeJourney
+                currentTopic={data.article.title}
+                category={data.topicCategory}
+                subcategory={data.topicSubcategory}
+                relatedList={data.relatedList}
+              />
+            )}
+
+            {/* 6. DISCOVERY CAROUSEL (PEOPLE ALSO EXPLORED) */}
+            {data.exploredTopics && data.exploredTopics.length > 0 && (
+              <DiscoveryCarousel topics={data.exploredTopics} />
+            )}
 
             {/* Editorial Footer */}
-            <footer className="border-t border-white/5 py-12 text-center">
+            <footer className="border-t border-white/5 py-12 text-center mt-12">
               <div className="mx-auto flex max-w-2xl flex-col items-center gap-3 text-xs text-neutral-600">
                 <p className="font-semibold tracking-[0.3em] text-neutral-400 uppercase">
                   Visualizer.wiki
@@ -501,8 +384,8 @@ function ResultsContent() {
 export default function ResultsPage() {
   return (
     <Suspense
-      fallback={
-        <main className="flex min-h-screen items-center justify-center bg-[#030303] px-6 text-white">
+      fallback = {
+        <main className="flex min-h-screen items-center justify-center bg-[#090A0F] px-6 text-white">
           <div className="text-center">
             <div className="relative mx-auto mb-6 flex h-12 w-12 items-center justify-center">
               <div className="absolute inset-0 rounded-full border-t border-cyan-400 animate-spin" />

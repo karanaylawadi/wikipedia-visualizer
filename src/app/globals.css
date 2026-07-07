@@ -148,3 +148,56 @@ body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+/* Premium V12 Editorial Layout Styles */
+.premium-card {
+  background: rgba(10, 14, 20, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4), 0 0 15px rgba(6, 182, 212, 0.03);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 24px;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.premium-card-active {
+  background: rgba(10, 14, 20, 0.85);
+  border: 1.5px solid rgba(0, 245, 160, 0.25);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 245, 160, 0.15);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-radius: 24px;
+  transform: scale(1.04);
+}
+
+/* Carousel Scroll-Snap Containers */
+.carousel-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel-slide {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+}
+
+/* Glowing node journey lines */
+@keyframes dash {
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+.journey-glow-line {
+  stroke-dasharray: 8, 4;
+  animation: dash 2s linear infinite;
+}
+
+/* Ripple click effect helper */
+.ripple-btn {
+  position: relative;
+  overflow: hidden;
+}
