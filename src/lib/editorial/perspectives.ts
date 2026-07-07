@@ -35,36 +35,41 @@ export async function generatePerspectiveCard(
     const { GoogleGenAI } = await import("@google/genai");
     const ai = new GoogleGenAI({ apiKey });
 
-    const prompt = `You are a Magazine Staff Writer. Write a single analysis perspective card matching these exact directions.
+    const prompt = `You are an expert journalist and editor for National Geographic or The New York Times. Write a single narrative chapter card for a documentary-style briefing.
 Topic: ${structuredFacts.title}
-Perspective Title: ${cardPlan.perspectiveTitle}
-Perspective Label: ${cardPlan.referenceLabel}
-Reader Question: ${cardPlan.readerQuestion}
+Chapter Label: ${cardPlan.referenceLabel}
+Storyline Question to Answer: ${cardPlan.readerQuestion}
+Headline: ${cardPlan.perspectiveTitle}
 Facts to include: ${cardPlan.factsToUse}
 Facts to avoid: ${cardPlan.factsToAvoid}
 
 Context Facts:
 ${structuredFacts.extractSummary}
 
-Factual Overlap Prevention (Do not repeat these details from previous perspectives):
-${factsAlreadyUsed || "No previous perspectives written yet."}
+Factual Overlap Prevention (Do not repeat these details or sentences):
+${factsAlreadyUsed || "No previous chapters written yet."}
 
 Requirements:
-1. Summary must be 80-100 words (strict maximum 120 words).
-2. Write like an article, not encyclopedic lists.
-3. Card headline/title must be 2-5 words. Never exceed 5 words.
-4. Card summary must not start with the topic name or robotic definitions (e.g. no "The [Topic] was...").
-5. The card summary must directly answer the assigned reader question.
-6. The keyTakeaway must be under 18 words.
-7. Avoid AI robotic terms (do not use: represents, illustrates, highlights, demonstrates, trajectory, conceptual, thematic, in conclusion, overall, furthermore, additionally, this crucial perspective).
+1. Narrative summary must be exactly 70-90 words (strict maximum 95 words).
+2. Write in a gripping, premium storytelling style. Every chapter must open with an engaging narrative sentence (e.g., "Everything changed in October 1957 when Sputnik crossed the night sky" instead of "The Space Race began during the Cold War").
+3. NEVER start with robotic definition starts (e.g. do NOT write "X is...", "The X was...", "X was a...", "X has been...").
+4. Directly answer the assigned storyline question.
+5. Key takeaway must be a highly specific editorial lesson under 18 words.
+6. Strictly avoid repetitive AI writing and boilerplate templates. Do not use these forbidden phrases:
+   - "It played an important role..."
+   - "It remains significant..."
+   - "It influenced many..."
+   - "It continues today..."
+   - "This marked a turning point..."
+   - represents, illustrates, highlights, demonstrates, trajectory, conceptual, thematic, in conclusion, overall, furthermore, additionally.
 
 Return valid JSON matching this schema:
 {
   "title": "Editorial headline, 2-5 words",
-  "referenceLabel": "Label, 1-3 words",
-  "readerQuestion": "Reader question answered",
-  "summary": "Editorial card content text (80-100 words)",
-  "keyTakeaway": "Takeaway summary sentence (max 18 words)"
+  "referenceLabel": "Custom chapter label, 2-5 words",
+  "readerQuestion": "Storyline question answered",
+  "summary": "Narrative paragraph text (70-90 words)",
+  "keyTakeaway": "Editorial takeaway (max 18 words)"
 }
 
 Do not return any markdown wrappers. Start with { and end with }.`;

@@ -28,4 +28,9 @@ declare module 'lucide-react' {
   export const X: Icon;
   export const Map: Icon;
   export const MessageSquare: Icon;
+  export const Compass: Icon;
+  export const ShieldAlert: Icon;
+  export const Trophy: Icon;
+  export const ArrowRight: Icon;
+  export const Building: Icon;
 }

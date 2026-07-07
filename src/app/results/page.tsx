@@ -315,6 +315,7 @@ function ResultsContent() {
               cards={data.resultCards}
               importantDates={data.structuredFacts?.importantDates}
               statistics={data.structuredFacts?.statistics}
+              category={data.topicCategory}
             />
 
             {/* 2. DYNAMIC VISUAL SNAPSHOT */}

@@ -52,7 +52,7 @@ export default function DiscoveryCarousel({ topics }: Props) {
             Discovery Hub
           </p>
           <h2 className="text-3xl font-semibold tracking-tight text-white bg-gradient-to-r from-white to-neutral-400 bg-clip-text text-transparent">
-            People Also Explored
+            Related Journeys
           </h2>
         </div>
 

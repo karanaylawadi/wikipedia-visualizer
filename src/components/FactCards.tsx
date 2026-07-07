@@ -35,8 +35,8 @@ const itemVariants = {
 export default function FactCards({ facts }: Props) {
   if (!facts || facts.length === 0) return null;
 
-  // Limit to 2-4 cards as requested
-  const visibleFacts = facts.slice(0, 4);
+  // Render exactly 5 facts as required by V12
+  const visibleFacts = facts.slice(0, 5);
 
   return (
     <section className="py-12 border-t border-white/5 animate-fade-in-up">

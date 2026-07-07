@@ -10,9 +10,10 @@ type Props = {
   cards: EditorialSlideData[];
   importantDates?: string[];
   statistics?: string[];
+  category: string;
 };
 
-export default function EditorialCarousel({ cards, importantDates = [], statistics = [] }: Props) {
+export default function EditorialCarousel({ cards, importantDates = [], statistics = [], category }: Props) {
   const [activeIndex, setActiveIndex] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
   const lastWheelTime = useRef(0);
@@ -99,8 +100,8 @@ export default function EditorialCarousel({ cards, importantDates = [], statisti
   if (!cards || cards.length === 0) return null;
 
   return (
-    <section className="relative py-12 md:py-16 overflow-hidden select-none">
-      <div className="max-w-5xl mx-auto px-4 mb-6 flex items-center justify-between">
+    <section className="relative py-6 md:py-16 overflow-hidden select-none">
+      <div className="max-w-5xl mx-auto px-4 mb-4 flex items-center justify-between">
         <div>
           <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-cyan-400">
             Editorial Storyline
@@ -141,7 +142,7 @@ export default function EditorialCarousel({ cards, importantDates = [], statisti
       <div
         ref={containerRef}
         onWheel={handleWheel}
-        className="relative w-full overflow-visible flex justify-center py-6"
+        className="relative w-full overflow-visible flex justify-center py-4"
       >
         <motion.div
           drag="x"
@@ -183,6 +184,8 @@ export default function EditorialCarousel({ cards, importantDates = [], statisti
                   isActive={isActive}
                   importantDates={importantDates}
                   statistics={statistics}
+                  category={category}
+                  slideCount={cards.length}
                 />
               </motion.div>
             );

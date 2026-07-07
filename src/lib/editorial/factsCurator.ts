@@ -21,22 +21,24 @@ export async function curateSurprisingFacts(
     const { GoogleGenAI } = await import("@google/genai");
     const ai = new GoogleGenAI({ apiKey });
 
-    const prompt = `You are a Fact Curator. Generate exactly three surprising, memorable, and independently verifiable facts about the topic.
+    const prompt = `You are a Fact Curator. Generate exactly five surprising, highly memorable, and independently verifiable facts about the topic.
 Topic: ${structuredFacts.title}
 Context:
 ${structuredFacts.extractSummary}
 
 Requirements:
-1. Return exactly three facts.
-2. Each fact must be under 18 words.
-3. Facts should make readers smile (e.g. funny trivia, bizarre coincidences, unique features). Avoid boring general statements like 'The Roman Empire influenced history.'
+1. Return exactly five facts.
+2. Each fact must be under 18 words (strict maximum 17 words).
+3. Facts must be highly memorable, shareable, and surprising (e.g. unique trivia, weird rules, bizarre coincidences). Reject obvious statements.
 
 Return valid JSON matching this schema:
 {
   "didYouKnow": [
     "Fact 1 under 18 words",
     "Fact 2 under 18 words",
-    "Fact 3 under 18 words"
+    "Fact 3 under 18 words",
+    "Fact 4 under 18 words",
+    "Fact 5 under 18 words"
   ]
 }
 
@@ -45,7 +47,7 @@ Do not return any markdown wrappers. Start with { and end with }.`;
     const response = await ai.models.generateContent({
       model: "gemini-2.0-flash",
       contents: prompt,
-      config: { temperature: 0.4, maxOutputTokens: 250 },
+      config: { temperature: 0.4, maxOutputTokens: 300 },
     });
 
     const text = typeof response.text === "string" ? response.text.replace(/```json|```/g, "").trim() : "";
@@ -56,9 +58,11 @@ Do not return any markdown wrappers. Start with { and end with }.`;
   } catch (error) {
     console.warn("Stage 6 Curation failed", error);
     return [
-      `${structuredFacts.title} continues to influence research in its respective field.`,
-      `Records of ${structuredFacts.title} show unique milestones.`,
-      `Early findings regarding ${structuredFacts.title} were widely discussed.`
+      `${structuredFacts.title} was documented in historical and encyclopedic records.`,
+      `Key findings regarding ${structuredFacts.title} reveal highly unique traits.`,
+      `Scholarly works on ${structuredFacts.title} outline its global footprint.`,
+      `Pivotal developments for ${structuredFacts.title} occurred over several decades.`,
+      `Researchers continue to analyze the long-term impact of ${structuredFacts.title}.`
     ];
   }
 }

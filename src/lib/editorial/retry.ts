@@ -105,7 +105,7 @@ export async function retryCard(
 
     while (attempts < 2 && !validation.valid) {
       attempts++;
-      const prompt = `You are a Magazine Writer. Rewrite perspective card ${cardIndex + 1} for:
+      const prompt = `You are an expert journalist and editor. Rewrite narrative chapter card ${cardIndex + 1} for:
 Topic: ${structuredFacts.title}
 Perspective Title: ${cardPlan.perspectiveTitle}
 Perspective Label: ${cardPlan.referenceLabel}
@@ -116,22 +116,23 @@ Facts to avoid: ${cardPlan.factsToAvoid}
 PREVIOUS ATTEMPT ERRORS:
 ${feedback}
 
-Factual Overlap Prevention (Do not repeat these details):
+Factual Overlap Prevention (Do not repeat these details or copy these sentences):
 ${factsAlreadyUsed || "No details written yet."}
 
 Requirements:
-1. Summary must be 80-100 words (strict maximum 120 words).
-2. Title must be a creative magazine headline (max 5 words). Do not use generic titles.
-3. No robotic definition starts or forbidden AI phrases.
-4. Key takeaway must be under 18 words.
+1. Narrative summary must be exactly 70-90 words (strict maximum 95 words).
+2. Write in a premium editorial style. Open with an engaging narrative hook. No robotic starts.
+3. Key takeaway must be under 18 words.
+4. Ensure less than 10% similarity overlap and zero duplicated sentences/statements.
+5. Strictly avoid repetitive AI boilerplates.
 
 Return valid JSON with schema:
 {
   "title": "Headline, 2-5 words",
-  "referenceLabel": "Label",
+  "referenceLabel": "Custom label, 2-5 words",
   "readerQuestion": "Reader question answered",
-  "summary": "Card text (80-100 words)",
-  "keyTakeaway": "Takeaway sentence (max 18 words)"
+  "summary": "Chapter text (70-90 words)",
+  "keyTakeaway": "Editorial takeaway (max 18 words)"
 }
 Do not return markdown wrappers.`;
 
@@ -185,23 +186,25 @@ export async function retryDidYouKnow(
 
     while (attempts < 2 && !validation.valid) {
       attempts++;
-      const prompt = `You are a Fact Curator. Generate exactly three surprising, memorable, and independently verifiable facts about the topic.
+      const prompt = `You are a Fact Curator. Generate exactly five surprising, highly memorable, and independently verifiable facts about the topic.
 Topic: ${structuredFacts.title}
 
 PREVIOUS ATTEMPT ERRORS:
 ${feedback}
 
 Requirements:
-1. Return exactly three facts.
-2. Each fact must be under 18 words.
-3. Facts should make readers smile.
+1. Return exactly five facts.
+2. Each fact must be under 18 words (strict maximum 17 words).
+3. Facts must be highly memorable, surprising, and shareable trivia. Reject obvious statements.
 
 Return valid JSON with schema:
 {
   "didYouKnow": [
     "Fact 1 under 18 words",
     "Fact 2 under 18 words",
-    "Fact 3 under 18 words"
+    "Fact 3 under 18 words",
+    "Fact 4 under 18 words",
+    "Fact 5 under 18 words"
   ]
 }
 Do not return markdown wrappers.`;

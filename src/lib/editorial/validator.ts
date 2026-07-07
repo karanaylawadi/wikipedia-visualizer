@@ -20,7 +20,12 @@ const FORBIDDEN_AI_PHRASES = [
   "overall",
   "furthermore",
   "additionally",
-  "this crucial perspective"
+  "this crucial perspective",
+  "played an important role",
+  "remains significant",
+  "influenced many",
+  "continues today",
+  "marked a turning point"
 ];
 
 const GENERIC_HEADLINES = [
@@ -103,8 +108,8 @@ export function validateCard(
   const errors: string[] = [];
   const words = card.summary.split(/\s+/).filter(Boolean).length;
 
-  if (words < 80 || words > 120) {
-    errors.push(`Card ${index + 1} word count of ${words} is outside the required 80-120 range.`);
+  if (words < 70 || words > 95) {
+    errors.push(`Card ${index + 1} word count of ${words} is outside the required 70-90 range (strict max 95).`);
   }
 
   const lowerTopic = topic.toLowerCase();
@@ -126,14 +131,27 @@ export function validateCard(
     errors.push(`Card ${index + 1} contains forbidden AI phrases.`);
   }
 
+  // Deduplicate sentence check
+  const getSentences = (text: string) => text.split(/[.!?]+/).map(s => s.trim().toLowerCase()).filter(Boolean);
+  const cardSentences = getSentences(card.summary);
+  for (let j = 0; j < otherCards.length; j++) {
+    const other = otherCards[j];
+    const otherSentences = getSentences(other.summary);
+    for (const s of cardSentences) {
+      if (otherSentences.includes(s)) {
+        errors.push(`Card ${index + 1} shares a duplicate sentence with Card ${j + 1}: "${s}"`);
+      }
+    }
+  }
+
   // Overlap checks
   const cardTokens = cleanAndTokenize(card.summary);
   for (let j = 0; j < otherCards.length; j++) {
     const other = otherCards[j];
     const otherTokens = cleanAndTokenize(other.summary);
     const overlap = getOverlapRatio(cardTokens, otherTokens);
-    if (overlap > 0.15) {
-      errors.push(`Card ${index + 1} has ${Math.round(overlap * 100)}% factual overlap with Card ${j + 1}, exceeding the 15% threshold.`);
+    if (overlap > 0.10) {
+      errors.push(`Card ${index + 1} has ${Math.round(overlap * 100)}% factual overlap with Card ${j + 1}, exceeding the 10% threshold.`);
     }
 
     if (other.title.toLowerCase().trim() === headlineLower) {
@@ -153,13 +171,13 @@ export function validateCard(
 
 export function validateDidYouKnow(facts: string[]): ValidationResult {
   const errors: string[] = [];
-  if (facts.length !== 3) {
-    errors.push("Exactly 3 surprising facts are required.");
+  if (facts.length !== 5) {
+    errors.push("Exactly 5 surprising facts are required.");
   }
   facts.forEach((fact, i) => {
     const words = fact.split(/\s+/).filter(Boolean).length;
-    if (words > 18) {
-      errors.push(`Surprising fact ${i + 1} has ${words} words, exceeding the 18-word maximum.`);
+    if (words >= 18) {
+      errors.push(`Surprising fact ${i + 1} has ${words} words, which is 18 or more words.`);
     }
   });
   return {
