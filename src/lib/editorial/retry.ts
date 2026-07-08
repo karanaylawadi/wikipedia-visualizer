@@ -1,6 +1,5 @@
 import { validateSummary, validateCard, validateDidYouKnow } from "./validator";
-import type { StructuredFacts } from "./facts";
-import type { Classification } from "./classifier";
+import type { TopicKnowledge } from "@/types/wiki";
 import type { CardPlan } from "./planner";
 import { generatePerspectiveCard, PerspectiveCard } from "./perspectives";
 import { generateEditorialBrief } from "./summary";
@@ -9,17 +8,15 @@ import { setCachedStage } from "./cache";
 
 export async function retrySummary(
   topicKey: string,
-  structuredFacts: StructuredFacts,
-  classification: Classification
+  knowledge: TopicKnowledge
 ): Promise<string> {
-  let summary = await generateEditorialBrief(topicKey, structuredFacts, classification);
-  let validation = validateSummary(summary, structuredFacts.title);
+  let summary = await generateEditorialBrief(topicKey, knowledge);
+  let validation = validateSummary(summary, knowledge.title);
   
   if (validation.valid) {
     return summary;
   }
 
-  // If first call failed validation (e.g. cached stale values or direct generation edge cases), try with retry loop
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) return summary;
 
@@ -33,10 +30,14 @@ export async function retrySummary(
     while (attempts < 2 && !validation.valid) {
       attempts++;
       const prompt = `You are a Senior Editor. Rewrite the editorial brief for:
-Topic: ${structuredFacts.title}
-Subtitle: ${structuredFacts.subtitle}
-Lead: ${structuredFacts.leadParagraph}
-Category: ${classification.category}
+Topic: ${knowledge.title}
+Subtitle: ${knowledge.description}
+Category: ${knowledge.category}
+
+Key structured facts (write only from these):
+${knowledge.summaryFacts.map(f => `- ${f}`).join("\n")}
+Key themes:
+${knowledge.themes.map(t => `- ${t}`).join("\n")}
 
 PREVIOUS ATTEMPT ERRORS:
 ${feedback}
@@ -61,9 +62,9 @@ Do not return markdown wrappers.`;
       try {
         const parsed = JSON.parse(text) as { shortSummary: string };
         summary = parsed.shortSummary || summary;
-        validation = validateSummary(summary, structuredFacts.title);
+        validation = validateSummary(summary, knowledge.title);
         if (validation.valid) {
-          await setCachedStage(topicKey, "stage5-brief", parsed);
+          await setCachedStage(topicKey, "summary", parsed);
           break;
         }
         feedback = validation.errors.join("\n");
@@ -82,12 +83,13 @@ export async function retryCard(
   topicKey: string,
   cardIndex: number,
   cardPlan: CardPlan,
-  structuredFacts: StructuredFacts,
+  knowledge: TopicKnowledge,
+  assignedFacts: { facts: string[]; anchors: string[] },
   factsAlreadyUsed: string,
   otherCards: PerspectiveCard[]
 ): Promise<PerspectiveCard> {
-  let card = await generatePerspectiveCard(topicKey, cardIndex, cardPlan, structuredFacts, factsAlreadyUsed);
-  let validation = validateCard(card, cardIndex, structuredFacts.title, otherCards);
+  let card = await generatePerspectiveCard(topicKey, cardIndex, cardPlan, knowledge, assignedFacts, factsAlreadyUsed);
+  let validation = validateCard(card, cardIndex, knowledge.title, otherCards, assignedFacts.anchors);
 
   if (validation.valid) {
     return card;
@@ -106,12 +108,14 @@ export async function retryCard(
     while (attempts < 2 && !validation.valid) {
       attempts++;
       const prompt = `You are an expert journalist and editor. Rewrite narrative chapter card ${cardIndex + 1} for:
-Topic: ${structuredFacts.title}
+Topic: ${knowledge.title}
 Perspective Title: ${cardPlan.perspectiveTitle}
 Perspective Label: ${cardPlan.referenceLabel}
 Reader Question: ${cardPlan.readerQuestion}
-Facts to include: ${cardPlan.factsToUse}
-Facts to avoid: ${cardPlan.factsToAvoid}
+
+FACTS AND ANCHORS ASSIGNED TO THIS CHAPTER (Use ONLY these details; do not write about anything else):
+- Facts: ${assignedFacts.facts.join("; ")}
+- Anchors: ${assignedFacts.anchors.join("; ")}
 
 PREVIOUS ATTEMPT ERRORS:
 ${feedback}
@@ -145,10 +149,10 @@ Do not return markdown wrappers.`;
       const text = typeof response.text === "string" ? response.text.replace(/```json|```/g, "").trim() : "";
       try {
         const parsed = JSON.parse(text) as PerspectiveCard;
-        validation = validateCard(parsed, cardIndex, structuredFacts.title, otherCards);
+        validation = validateCard(parsed, cardIndex, knowledge.title, otherCards, assignedFacts.anchors);
         if (validation.valid) {
           card = parsed;
-          await setCachedStage(topicKey, `stage4-card-${cardIndex}`, parsed);
+          await setCachedStage(topicKey, `chapter-${cardIndex}`, parsed);
           break;
         }
         feedback = validation.errors.join("\n");
@@ -165,9 +169,9 @@ Do not return markdown wrappers.`;
 
 export async function retryDidYouKnow(
   topicKey: string,
-  structuredFacts: StructuredFacts
+  knowledge: TopicKnowledge
 ): Promise<string[]> {
-  let facts = await curateSurprisingFacts(topicKey, structuredFacts);
+  let facts = await curateSurprisingFacts(topicKey, knowledge);
   let validation = validateDidYouKnow(facts);
 
   if (validation.valid) {
@@ -186,8 +190,9 @@ export async function retryDidYouKnow(
 
     while (attempts < 2 && !validation.valid) {
       attempts++;
-      const prompt = `You are a Fact Curator. Generate exactly five surprising, highly memorable, and independently verifiable facts about the topic.
-Topic: ${structuredFacts.title}
+      const prompt = `You are a Fact Curator. Refine these five surprising, highly memorable facts about "${knowledge.title}".
+Original facts to refine:
+${facts.map((f, i) => `${i + 1}. ${f}`).join("\n")}
 
 PREVIOUS ATTEMPT ERRORS:
 ${feedback}

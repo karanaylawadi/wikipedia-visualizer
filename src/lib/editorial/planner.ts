@@ -1,6 +1,5 @@
 import { getCachedStage, setCachedStage } from "./cache";
-import type { StructuredFacts } from "./facts";
-import type { Classification } from "./classifier";
+import type { TopicKnowledge } from "@/types/wiki";
 
 export interface CardPlan {
   readerQuestion: string;
@@ -12,10 +11,9 @@ export interface CardPlan {
 
 export async function createEditorialPlan(
   topicKey: string,
-  structuredFacts: StructuredFacts,
-  classification: Classification
+  knowledge: TopicKnowledge
 ): Promise<{ cards: CardPlan[] }> {
-  const cached = await getCachedStage(topicKey, "stage3-plan");
+  const cached = await getCachedStage(topicKey, "plan");
   if (cached) return cached as { cards: CardPlan[] };
 
   const apiKey = process.env.GEMINI_API_KEY;
@@ -26,9 +24,12 @@ export async function createEditorialPlan(
     const ai = new GoogleGenAI({ apiKey });
 
     const prompt = `You are a Senior Editorial Director. Design the editorial outline of 5 chronological narrative chapters for this topic to make it feel like a National Geographic or New York Times documentary.
-Topic: ${structuredFacts.title}
-Category: ${classification.category} (${classification.subcategory})
-Reader Intent: ${classification.readerIntent}
+Topic: ${knowledge.title}
+Category: ${knowledge.category}
+Description: ${knowledge.description}
+
+Key facts:
+${knowledge.summaryFacts.map(f => `- ${f}`).join("\n")}
 
 Select exactly 5 dynamic, custom chapter labels (referenceLabel) and active headlines (perspectiveTitle, 2-5 words) that sequentially tell the story of the topic.
 Adapt to this strict chronological storyline structure:
@@ -67,7 +68,7 @@ Return exactly 5 cards. Do not return any markdown wrappers. Start with { and en
 
     const text = typeof response.text === "string" ? response.text.replace(/```json|```/g, "").trim() : "";
     const parsed = JSON.parse(text) as { cards: CardPlan[] };
-    await setCachedStage(topicKey, "stage3-plan", parsed);
+    await setCachedStage(topicKey, "plan", parsed);
     return parsed;
   } catch (error) {
     console.warn("Stage 3 Editorial Planning failed", error);

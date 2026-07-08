@@ -1,26 +1,28 @@
 import { getCachedStage, setCachedStage } from "./cache";
-import type { StructuredFacts } from "./facts";
-import type { Classification } from "./classifier";
+import type { TopicKnowledge } from "@/types/wiki";
 
 export async function generateEditorialBrief(
   topicKey: string,
-  structuredFacts: StructuredFacts,
-  classification: Classification
+  knowledge: TopicKnowledge
 ): Promise<string> {
-  const cached = await getCachedStage(topicKey, "stage5-brief");
+  const cached = await getCachedStage(topicKey, "summary");
   if (cached) return (cached as { shortSummary: string }).shortSummary;
 
   const apiKey = process.env.GEMINI_API_KEY;
-  if (!apiKey) return "";
+  if (!apiKey) return `${knowledge.description}. This crucial topic has shaped historical, cultural, and scientific contexts.`;
 
   const { GoogleGenAI } = await import("@google/genai");
   const ai = new GoogleGenAI({ apiKey });
 
   const prompt = `You are a Senior Editor. Write a polished, premium editorial brief explaining why the topic matters and why the reader should care.
-Topic: ${structuredFacts.title}
-Subtitle: ${structuredFacts.subtitle}
-Lead paragraph: ${structuredFacts.leadParagraph}
-Category: ${classification.category}
+Topic: ${knowledge.title}
+Subtitle: ${knowledge.description}
+Category: ${knowledge.category}
+
+Key structured facts about the topic (write only from these facts):
+${knowledge.summaryFacts.map(f => `- ${f}`).join("\n")}
+Key themes:
+${knowledge.themes.map(t => `- ${t}`).join("\n")}
 
 Requirements:
 1. Word count: 120-150 words.
@@ -47,10 +49,10 @@ Do not return any markdown wrappers. Start with { and end with }.`;
     const text = typeof response.text === "string" ? response.text.replace(/```json|```/g, "").trim() : "";
     const parsed = JSON.parse(text) as { shortSummary: string };
     const summary = parsed.shortSummary || "";
-    await setCachedStage(topicKey, "stage5-brief", parsed);
+    await setCachedStage(topicKey, "summary", parsed);
     return summary;
   } catch (error) {
     console.warn("Editorial Brief generation failed, returning fallback", error);
-    return `${structuredFacts.leadParagraph || structuredFacts.subtitle}. This crucial topic has shaped historical, cultural, and scientific contexts.`;
+    return `${knowledge.description}. This crucial topic has shaped historical, cultural, and scientific contexts.`;
   }
 }

@@ -36,7 +36,10 @@ const GENERIC_HEADLINES = [
   "summary",
   "background",
   "origins",
-  "developments"
+  "developments",
+  "dynamics",
+  "evolution",
+  "significance"
 ];
 
 function cleanAndTokenize(text: string): string[] {
@@ -103,7 +106,8 @@ export function validateCard(
   card: PerspectiveCard,
   index: number,
   topic: string,
-  otherCards: PerspectiveCard[]
+  otherCards: PerspectiveCard[],
+  assignedAnchors?: string[]
 ): ValidationResult {
   const errors: string[] = [];
   const words = card.summary.split(/\s+/).filter(Boolean).length;
@@ -113,8 +117,20 @@ export function validateCard(
   }
 
   const lowerTopic = topic.toLowerCase();
-  if (card.summary.toLowerCase().trim().startsWith(lowerTopic)) {
+  const lowerCardSummary = card.summary.toLowerCase().trim();
+  if (lowerCardSummary.startsWith(lowerTopic)) {
     errors.push(`Card ${index + 1} summary starts directly with the topic name.`);
+  }
+
+  const roboticStarts = [
+    `${lowerTopic} is`,
+    `${lowerTopic} was`,
+    `the ${lowerTopic} is`,
+    `the ${lowerTopic} was`,
+    `${lowerTopic} has been`
+  ];
+  if (roboticStarts.some(start => lowerCardSummary.startsWith(start))) {
+    errors.push(`Card ${index + 1} summary starts with robotic definition phrase.`);
   }
 
   const headlineLower = card.title.toLowerCase().trim();
@@ -129,6 +145,19 @@ export function validateCard(
 
   if (FORBIDDEN_AI_PHRASES.some(phrase => card.summary.toLowerCase().includes(phrase))) {
     errors.push(`Card ${index + 1} contains forbidden AI phrases.`);
+  }
+
+  // Anchor validation
+  if (assignedAnchors && assignedAnchors.length >= 2) {
+    let foundCount = 0;
+    for (const anchor of assignedAnchors) {
+      if (lowerCardSummary.includes(anchor.toLowerCase())) {
+        foundCount++;
+      }
+    }
+    if (foundCount < 2) {
+      errors.push(`Card ${index + 1} summary does not mention at least two assigned concrete anchors. Assigned anchors: ${assignedAnchors.join(", ")}. Found: ${foundCount}`);
+    }
   }
 
   // Deduplicate sentence check

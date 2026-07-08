@@ -1,5 +1,5 @@
 import { getCachedStage, setCachedStage } from "./cache";
-import type { StructuredFacts } from "./facts";
+import type { TopicKnowledge } from "@/types/wiki";
 import type { CardPlan } from "./planner";
 
 export interface PerspectiveCard {
@@ -14,10 +14,11 @@ export async function generatePerspectiveCard(
   topicKey: string,
   cardIndex: number,
   cardPlan: CardPlan,
-  structuredFacts: StructuredFacts,
+  knowledge: TopicKnowledge,
+  assignedFacts: { facts: string[]; anchors: string[] },
   factsAlreadyUsed: string
 ): Promise<PerspectiveCard> {
-  const cached = await getCachedStage(topicKey, `stage4-card-${cardIndex}`);
+  const cached = await getCachedStage(topicKey, `chapter-${cardIndex}`);
   if (cached) return cached as PerspectiveCard;
 
   const apiKey = process.env.GEMINI_API_KEY;
@@ -36,17 +37,16 @@ export async function generatePerspectiveCard(
     const ai = new GoogleGenAI({ apiKey });
 
     const prompt = `You are an expert journalist and editor for National Geographic or The New York Times. Write a single narrative chapter card for a documentary-style briefing.
-Topic: ${structuredFacts.title}
+Topic: ${knowledge.title}
 Chapter Label: ${cardPlan.referenceLabel}
 Storyline Question to Answer: ${cardPlan.readerQuestion}
 Headline: ${cardPlan.perspectiveTitle}
-Facts to include: ${cardPlan.factsToUse}
-Facts to avoid: ${cardPlan.factsToAvoid}
 
-Context Facts:
-${structuredFacts.extractSummary}
+FACTS AND ANCHORS ASSIGNED TO THIS CHAPTER (Use ONLY these details; do not write about anything else):
+- Facts: ${assignedFacts.facts.join("; ")}
+- Anchors: ${assignedFacts.anchors.join("; ")}
 
-Factual Overlap Prevention (Do not repeat these details or sentences):
+Factual Overlap Prevention (Do not repeat these details or sentences from previous chapters):
 ${factsAlreadyUsed || "No previous chapters written yet."}
 
 Requirements:
@@ -82,7 +82,7 @@ Do not return any markdown wrappers. Start with { and end with }.`;
 
     const text = typeof response.text === "string" ? response.text.replace(/```json|```/g, "").trim() : "";
     const parsed = JSON.parse(text) as PerspectiveCard;
-    await setCachedStage(topicKey, `stage4-card-${cardIndex}`, parsed);
+    await setCachedStage(topicKey, `chapter-${cardIndex}`, parsed);
     return parsed;
   } catch (error) {
     console.warn(`Card ${cardIndex} generation failed, returning fallback`, error);

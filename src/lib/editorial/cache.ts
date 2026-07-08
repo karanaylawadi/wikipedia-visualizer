@@ -83,6 +83,32 @@ export async function setCachedAnalysis(key: string, data: Record<string, unknow
   }
 }
 
+
+function getStageCacheKey(topicKey: string, stageName: string): string {
+  const trimmed = stageName.trim();
+  if (trimmed === "knowledge" || trimmed === "stage2-classification") {
+    return `knowledge:${topicKey}`;
+  }
+  if (trimmed === "plan" || trimmed === "stage3-plan") {
+    return `plan:${topicKey}`;
+  }
+  if (trimmed === "summary" || trimmed === "stage5-brief") {
+    return `summary:${topicKey}`;
+  }
+  if (trimmed === "facts") {
+    return `facts:${topicKey}`;
+  }
+  if (trimmed === "related" || trimmed === "stage11-explored") {
+    return `related:${topicKey}`;
+  }
+  const cardMatch = trimmed.match(/(?:stage4-card-|chapter-?|chapter:)(\d+)/);
+  if (cardMatch) {
+    return `chapter:${topicKey}:${cardMatch[1]}`;
+  }
+  // Default fallback
+  return `wiki:analysis:${CACHE_VERSION}:${topicKey}:${trimmed}`;
+}
+
 export async function getCachedStage(topicKey: string, stageName: string): Promise<unknown | null> {
   const redisUrl = process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL;
   const redisToken = process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN;
@@ -91,7 +117,7 @@ export async function getCachedStage(topicKey: string, stageName: string): Promi
     return null;
   }
 
-  const fullKey = `wiki:analysis:${CACHE_VERSION}:${topicKey}:${stageName}`;
+  const fullKey = getStageCacheKey(topicKey, stageName);
   const controller = new AbortController();
   const id = setTimeout(() => controller.abort(), 3000);
 
@@ -130,7 +156,7 @@ export async function setCachedStage(topicKey: string, stageName: string, data: 
     return false;
   }
 
-  const fullKey = `wiki:analysis:${CACHE_VERSION}:${topicKey}:${stageName}`;
+  const fullKey = getStageCacheKey(topicKey, stageName);
   const controller = new AbortController();
   const id = setTimeout(() => controller.abort(), 3000);
 

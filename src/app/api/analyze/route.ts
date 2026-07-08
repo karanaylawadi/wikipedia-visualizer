@@ -1,9 +1,8 @@
 import { NextResponse } from "next/server";
 import { searchWikipedia, getArticleIntelligence, getRelatedArticles } from "@/lib/editorial/wikipedia";
 import { createCacheKey, getCachedAnalysis, setCachedAnalysis } from "@/lib/editorial/cache";
-import { extractStructuredFacts } from "@/lib/editorial/facts";
-import { classifyTopic } from "@/lib/editorial/classifier";
-import { extractTimeline } from "@/lib/editorial/timeline";
+import { extractTopicKnowledge } from "@/lib/editorial/extractor";
+import { assignFactsToChapters } from "@/lib/editorial/factAssignment";
 import { createEditorialPlan } from "@/lib/editorial/planner";
 import { curateRelatedExploration } from "@/lib/editorial/related";
 import { retrySummary, retryCard, retryDidYouKnow } from "@/lib/editorial/retry";
@@ -136,23 +135,20 @@ export async function POST(request: Request) {
     const articleSource = intelligence || article;
     const related = await getRelatedArticles(topic);
 
-    // Stage 1: Structured Fact Extraction
-    const structuredFacts = extractStructuredFacts(articleSource, related);
+    // Step 2: Extract structured knowledge TopicKnowledge
+    const knowledge = await extractTopicKnowledge(topicKey, articleSource, related);
 
-    // Stage 2: Category Classification
-    const classification = await classifyTopic(topicKey, structuredFacts);
-
-    // Stage 12: Timeline Extraction
-    const timeline = await extractTimeline(topicKey, structuredFacts, classification);
-
-    // Stage 3: Editorial Planning
-    const plan = await createEditorialPlan(topicKey, structuredFacts, classification);
+    // Step 3: Editorial Planning from TopicKnowledge
+    const plan = await createEditorialPlan(topicKey, knowledge);
     const plannedCards = Array.isArray(plan?.cards) && plan.cards.length === 5 ? plan.cards : null;
 
-    // Stage 5: Editorial Summary (With validation retry loop)
-    const shortSummary = await retrySummary(topicKey, structuredFacts, classification);
+    // Step 5: Assign unique facts to each chapter before writing
+    const assignedFacts = await assignFactsToChapters(topicKey, knowledge, plan);
 
-    // Stage 4: Independent Card Generation (With validation retry loop)
+    // Step 4: Editorial Summary from TopicKnowledge
+    const shortSummary = await retrySummary(topicKey, knowledge);
+
+    // Step 4/6: Independent Card Generation from TopicKnowledge and assigned facts
     const resultCards: PerspectiveCard[] = [];
     if (plannedCards) {
       for (let i = 0; i < 5; i++) {
@@ -161,48 +157,73 @@ export async function POST(request: Request) {
           topicKey,
           i,
           plannedCards[i],
-          structuredFacts,
+          knowledge,
+          assignedFacts[i],
           factsAlreadyUsed,
           resultCards
         );
         resultCards.push(card);
       }
     } else {
-      const fallbacks = getFallbackCards(structuredFacts.title);
+      const fallbacks = getFallbackCards(knowledge.title);
       for (let i = 0; i < 5; i++) {
         resultCards.push(fallbacks[i]);
       }
     }
 
-    // Stage 6: Surprising Facts Curation (With validation retry loop)
-    const didYouKnow = await retryDidYouKnow(topicKey, structuredFacts);
+    // Step 6: Surprising Facts Curation from TopicKnowledge
+    const didYouKnow = await retryDidYouKnow(topicKey, knowledge);
 
-    // Stage 11: People Also Explored Ranking (Custom code Jaccard match scorer)
-    const explored = await curateRelatedExploration(topicKey, structuredFacts, classification);
+    // Map structuredFacts and classification for curateRelatedExploration to remain fully backwards compatible
+    const mappedStructuredFacts = {
+      title: knowledge.title,
+      subtitle: knowledge.description,
+      leadParagraph: knowledge.description,
+      categories: [knowledge.category],
+      majorSections: knowledge.sourceSections.map((s) => s.title),
+      relatedArticles: knowledge.relatedTopics,
+      importantDates: knowledge.dates,
+      extractSummary: knowledge.summaryFacts.join("\n"),
+      statistics: knowledge.numbers,
+      keyPeople: knowledge.people,
+      locations: knowledge.places,
+      organizations: knowledge.organizations,
+    };
 
-    // Stage 15: SEO Metadata Builder
-    const seo = buildStage15SEO(articleSource.title, shortSummary, classification.category);
+    const mappedClassification = {
+      category: knowledge.category,
+      subcategory: "General",
+      confidence: 1.0,
+      readerIntent: "",
+      editorialStyle: "",
+    };
+
+    // Step 11: People Also Explored Ranking
+    const explored = await curateRelatedExploration(topicKey, mappedStructuredFacts, mappedClassification);
+
+    // Step 15: SEO Metadata Builder
+    const seo = buildStage15SEO(knowledge.title, shortSummary, knowledge.category);
 
     const responseData = {
       article: {
-        title: articleSource.title,
-        description: articleSource.description || "",
+        title: knowledge.title,
+        description: knowledge.description,
         extract: articleSource.extract,
         thumbnail: articleSource.thumbnail?.source ?? null,
         url: articleSource.content_urls?.desktop?.page ?? null,
       },
-      topicCategory: classification.category,
-      topicSubcategory: classification.subcategory,
+      topicCategory: knowledge.category,
+      topicSubcategory: "General",
       shortSummary,
       resultCards,
       didYouKnow,
       exploredTopics: explored,
-      timeline,
+      timeline: knowledge.timeline,
       seo,
-      structuredFacts,
-      relatedList: structuredFacts.relatedArticles,
+      structuredFacts: mappedStructuredFacts,
+      relatedList: knowledge.relatedTopics,
       generatedAt: new Date().toISOString(),
-      cacheVersion: "results-v11-editorial-engine",
+      cacheVersion: "results-v13-knowledge-layer",
     };
 
     await setCachedAnalysis(topicKey, responseData);
@@ -212,7 +233,7 @@ export async function POST(request: Request) {
       cacheStatus: "miss",
     });
   } catch (error) {
-    console.error("Analyze route V11 failed:", error);
+    console.error("Analyze route V13 failed:", error);
     return NextResponse.json({ error: "The analysis request failed." }, { status: 500 });
   }
 }
