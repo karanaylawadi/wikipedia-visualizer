@@ -4,9 +4,15 @@ import { Suspense, useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import dynamic from "next/dynamic";
 import EditorialCarousel from "@/components/EditorialCarousel";
-import PerspectiveGrid from "@/components/PerspectiveGrid";
-import type { PerspectiveCard } from "@/components/PerspectiveGrid";
 import { trackTopicOpened } from "@/lib/gtag";
+
+interface PerspectiveCard {
+  title: string;
+  summary: string;
+  referenceLabel: string;
+  readerQuestion: string;
+  keyTakeaway?: string | null;
+}
 
 // Lazy-loaded components for optimal performance & high Core Web Vitals (LCP/INP)
 const VisualSnapshot = dynamic(() => import("@/components/VisualSnapshot"), {
@@ -290,7 +296,7 @@ function ResultsContent() {
 
         {/* Render Results Content */}
         {data && !loading && (
-          <div className="animate-fade-in-up mt-8 space-y-4">
+          <div className="animate-fade-in-up mt-8 space-y-16 md:space-y-24">
             <section className="space-y-6">
               <div className="flex flex-col gap-2">
                 <div className="flex items-center justify-between">
@@ -328,6 +334,7 @@ function ResultsContent() {
               importantDates={data.structuredFacts?.importantDates}
               statistics={data.structuredFacts?.statistics}
               category={data.topicCategory}
+              thumbnail={data.article.thumbnail || null}
             />
 
             {/* 2. DYNAMIC VISUAL SNAPSHOT */}
@@ -338,26 +345,19 @@ function ResultsContent() {
               thumbnail={data.article.thumbnail || null}
             />
 
-            {/* 3. PERSPECTIVES GRID */}
-            {data.resultCards && data.resultCards.length > 0 && (
-              <PerspectiveGrid
-                cards={data.resultCards}
-                category={data.topicCategory}
-              />
-            )}
-
             {/* 4. SURPRISING INSIGHTS (FACT CARDS) */}
             {data.didYouKnow && data.didYouKnow.length > 0 && (
               <FactCards facts={data.didYouKnow} />
             )}
 
-            {/* 5. KNOWLEDGE JOURNEY (HIERARCHICAL PATHWAY) */}
+            {/* 5. DOCUMENTARY TIMELINE */}
             {data.relatedList && data.relatedList.length > 0 && (
               <KnowledgeJourney
                 currentTopic={data.article.title}
                 category={data.topicCategory}
                 subcategory={data.topicSubcategory}
                 relatedList={data.relatedList}
+                timeline={data.timeline}
               />
             )}
 

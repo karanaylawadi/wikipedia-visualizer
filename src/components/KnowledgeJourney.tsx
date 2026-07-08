@@ -1,188 +1,152 @@
 "use client";
 
-import React, { useMemo } from "react";
+import React, { useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
-import { Sparkles, Map } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Compass, Sparkles, Map, Calendar, ArrowRight } from "lucide-react";
+
+type Milestone = {
+  year: string;
+  event: string;
+};
 
 type Props = {
   currentTopic: string;
   category: string;
   subcategory: string;
   relatedList: string[];
+  timeline: Milestone[] | null;
 };
 
-export default function KnowledgeJourney({ currentTopic, category, subcategory, relatedList }: Props) {
+export default function KnowledgeJourney({
+  currentTopic,
+  category,
+  subcategory,
+  relatedList,
+  timeline
+}: Props) {
   const router = useRouter();
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  const humanReadable = (text: string) => {
-    if (!text) return "";
-    return text
-      .split("_")
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(" ");
-  };
+  const parsedTimeline = useMemo(() => {
+    if (timeline && timeline.length > 0) return timeline;
+    // Fallback if no timeline exists: generate from relatedList
+    return (relatedList || []).slice(0, 5).map((t, idx) => ({
+      year: `Phase 0${idx + 1}`,
+      event: `Pivotal landmark connected to ${t}.`
+    }));
+  }, [timeline, relatedList]);
 
-  // Build the 5-node journey
-  const nodes = useMemo(() => {
-    const list = [];
-    
-    // Node 1: General Category
-    if (category) {
-      list.push({
-        label: humanReadable(category),
-        type: "category",
-        query: humanReadable(category),
-        isCurrent: false
-      });
+  const headerDetails = useMemo(() => {
+    const cat = category.toLowerCase();
+    if (cat.includes("history") || cat.includes("war") || cat.includes("empire") || cat.includes("event")) {
+      return { title: "Historical Timeline", subtitle: "Geopolitical campaigns & historic eras" };
     }
-
-    // Node 2: Subcategory
-    if (subcategory && subcategory.toLowerCase() !== category.toLowerCase()) {
-      list.push({
-        label: humanReadable(subcategory),
-        type: "subcategory",
-        query: humanReadable(subcategory),
-        isCurrent: false
-      });
+    if (cat.includes("movie") || cat.includes("tv series") || cat.includes("book") || cat.includes("creative")) {
+      return { title: "Production Timeline", subtitle: "Development history, releases, and reviews" };
     }
-
-    // Node 3: Current Topic (Highlighted)
-    list.push({
-      label: currentTopic,
-      type: "current",
-      query: currentTopic,
-      isCurrent: true
-    });
-
-    // Node 4: Related Topic 1
-    if (relatedList && relatedList.length > 0) {
-      list.push({
-        label: relatedList[0],
-        type: "related",
-        query: relatedList[0],
-        isCurrent: false
-      });
+    if (cat.includes("person") || cat.includes("artist") || cat.includes("biography")) {
+      return { title: "Life Timeline", subtitle: "Personal lifespans, contributions, and key milestones" };
     }
-
-    // Node 5: Related Topic 2
-    if (relatedList && relatedList.length > 1) {
-      list.push({
-        label: relatedList[1],
-        type: "related",
-        query: relatedList[1],
-        isCurrent: false
-      });
+    if (cat.includes("company") || cat.includes("brand") || cat.includes("corporation")) {
+      return { title: "Company Milestones", subtitle: "Founding, expansions, and structural achievements" };
     }
+    if (cat.includes("tech") || cat.includes("programming")) {
+      return { title: "Version History", subtitle: "Architectural iterations & release progression" };
+    }
+    return { title: "Chronological Milestones", subtitle: "Milestones and chronological timeline points" };
+  }, [category]);
 
-    return list;
-  }, [currentTopic, category, subcategory, relatedList]);
-
-  const handleNodeClick = (node: typeof nodes[0]) => {
-    if (node.isCurrent) return;
-    router.push(`/results?topic=${encodeURIComponent(node.query)}`);
-  };
-
-  const HorizontalConnector = () => (
-    <div className="hidden md:block flex-grow h-10 min-w-[24px] self-center relative mx-0.5">
-      <svg className="w-full h-full" overflow="visible">
-        <line
-          x1="0"
-          y1="50%"
-          x2="100%"
-          y2="50%"
-          stroke="rgba(6, 182, 212, 0.15)"
-          strokeWidth="1.5"
-        />
-        <line
-          x1="0"
-          y1="50%"
-          x2="100%"
-          y2="50%"
-          stroke="#00f5a0"
-          strokeWidth="1.5"
-          className="journey-glow-line"
-          strokeLinecap="round"
-        />
-      </svg>
-    </div>
-  );
-
-  const VerticalConnector = () => (
-    <div className="md:hidden w-10 h-6 flex items-center justify-center relative my-0.5">
-      <svg className="w-full h-full" overflow="visible">
-        <line
-          x1="50%"
-          y1="0"
-          x2="50%"
-          y2="100%"
-          stroke="rgba(6, 182, 212, 0.15)"
-          strokeWidth="1.5"
-        />
-        <line
-          x1="50%"
-          y1="0"
-          x2="50%"
-          y2="100%"
-          stroke="#00f5a0"
-          strokeWidth="1.5"
-          className="journey-glow-line"
-          strokeLinecap="round"
-        />
-      </svg>
-    </div>
-  );
+  const activeMilestone = parsedTimeline[activeIndex] || parsedTimeline[0] || null;
 
   return (
-    <section className="py-12 border-t border-white/5 animate-fade-in-up">
-      <div className="flex flex-col gap-2 mb-8">
+    <section className="py-16 md:py-24 border-b border-white/5 animate-fade-in-up">
+      <div className="flex flex-col gap-2 mb-10">
         <p className="text-[10px] font-bold uppercase tracking-[0.35em] text-cyan-400">
-          Knowledge path
+          {headerDetails.subtitle}
         </p>
         <h2 className="text-3xl font-semibold tracking-tight text-white bg-gradient-to-r from-white to-neutral-400 bg-clip-text text-transparent">
-          Explore the Journey
+          {headerDetails.title}
         </h2>
       </div>
 
-      <div className="premium-card p-8 md:p-10 flex flex-col md:flex-row items-center justify-between w-full gap-2 relative hover:border-cyan-500/10">
-        <div className="absolute top-4 right-4 text-cyan-400 opacity-20 hidden md:block">
-          <Map className="h-5 w-5" />
+      <div className="flex flex-col md:flex-row gap-8 items-stretch w-full">
+        {/* LEFT COLUMN: VERTICAL TIMELINE LIST */}
+        <div className="md:w-1/2 flex flex-col gap-4 max-h-[360px] overflow-y-auto pr-2 custom-scrollbar relative pl-4 border-l border-white/10">
+          {parsedTimeline.map((item, idx) => {
+            const isActive = idx === activeIndex;
+            return (
+              <button
+                key={idx}
+                onClick={() => setActiveIndex(idx)}
+                className="relative text-left group focus:outline-none"
+              >
+                {/* Visual timeline bullet */}
+                <div 
+                  className={`absolute -left-[22px] top-1.5 h-3 w-3 rounded-full border transition-all duration-300 ${
+                    isActive 
+                      ? "bg-cyan-400 border-cyan-400 scale-125 shadow-[0_0_8px_rgba(6,182,212,0.4)]" 
+                      : "bg-[#07080c] border-neutral-700 group-hover:border-neutral-500"
+                  }`}
+                />
+                
+                <div className="pl-2">
+                  <span className={`text-[10px] font-mono tracking-wider font-bold transition-colors ${isActive ? "text-cyan-400" : "text-neutral-500 group-hover:text-neutral-300"}`}>
+                    {item.year}
+                  </span>
+                  <p className={`text-xs mt-1 transition-all duration-300 line-clamp-1 leading-snug ${isActive ? "text-white font-medium pl-1" : "text-neutral-400 group-hover:text-neutral-200"}`}>
+                    {item.event}
+                  </p>
+                </div>
+              </button>
+            );
+          })}
         </div>
 
-        {nodes.map((node, index) => {
-          const isLast = index === nodes.length - 1;
-          return (
-            <React.Fragment key={index}>
-              {/* Journey Node Button */}
-              <button
-                type="button"
-                onClick={() => handleNodeClick(node)}
-                disabled={node.isCurrent}
-                className={`relative flex items-center gap-3 px-5 py-3 rounded-full border text-xs transition-all duration-300 w-full md:w-auto md:max-w-[200px] shrink-0 ${
-                  node.isCurrent
-                    ? "border-cyan-500/40 bg-cyan-950/15 text-white font-semibold shadow-[0_0_25px_rgba(6,182,212,0.15)] cursor-default"
-                    : "border-white/5 bg-white/[0.01] text-neutral-400 hover:border-cyan-400/25 hover:bg-white/[0.03] hover:text-white cursor-pointer"
-                }`}
+        {/* RIGHT COLUMN: LARGE DETAILS PANEL */}
+        <div className="md:w-1/2 border border-white/5 bg-[#07080c]/50 rounded-2xl p-8 relative flex flex-col justify-between min-h-[220px]">
+          <AnimatePresence mode="wait">
+            {activeMilestone && (
+              <motion.div
+                key={activeIndex}
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
+                transition={{ duration: 0.2 }}
+                className="w-full flex-grow flex flex-col justify-between"
               >
-                {node.isCurrent ? (
-                  <Sparkles className="h-3.5 w-3.5 text-cyan-400 shrink-0 shadow-[0_0_8px_rgba(34,211,238,0.5)]" />
-                ) : (
-                  <span className="h-4 w-4 rounded-full bg-white/[0.04] border border-white/10 flex items-center justify-center text-[8px] font-bold text-neutral-500 select-none">
-                    {index + 1}
-                  </span>
-                )}
-                <span className="truncate">{node.label}</span>
-              </button>
+                <div>
+                  <div className="flex items-center gap-2 text-[9px] font-mono tracking-wider text-cyan-400 font-bold uppercase mb-2">
+                    <Calendar className="h-3 w-3" />
+                    <span>MILESTONE YEAR</span>
+                  </div>
+                  
+                  <h3 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-none mb-4 font-mono">
+                    {activeMilestone.year}
+                  </h3>
+                  
+                  <p className="text-sm md:text-base leading-relaxed text-neutral-300 font-light">
+                    {activeMilestone.event}
+                  </p>
+                </div>
 
-              {/* Animated Connector lines */}
-              {!isLast && (
-                <>
-                  <HorizontalConnector />
-                  <VerticalConnector />
-                </>
-              )}
-            </React.Fragment>
-          );
-        })}
+                {/* Sub-navigation to related articles */}
+                {relatedList && relatedList[activeIndex % relatedList.length] && (
+                  <div className="mt-6 pt-4 border-t border-white/5 flex items-center justify-between">
+                    <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-widest">Explore Connection</span>
+                    <button
+                      onClick={() => router.push(`/results?topic=${encodeURIComponent(relatedList[activeIndex % relatedList.length])}`)}
+                      className="text-xs text-cyan-400 font-medium flex items-center gap-1.5 hover:text-white transition duration-300"
+                    >
+                      <span>{relatedList[activeIndex % relatedList.length]}</span>
+                      <ArrowRight className="h-3.5 w-3.5" />
+                    </button>
+                  </div>
+                )}
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
       </div>
     </section>
   );
