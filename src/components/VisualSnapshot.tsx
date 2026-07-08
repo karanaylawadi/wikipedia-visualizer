@@ -21,6 +21,19 @@ interface StructuredFacts {
   keyPeople: string[];
   locations: string[];
   organizations: string[];
+  
+  // V14 Ontology Fields
+  entityType?: string;
+  ontologyLabels?: string[];
+  movieData?: any;
+  personData?: any;
+  technologyData?: any;
+  countryData?: any;
+  companyData?: any;
+  bookData?: any;
+  scienceData?: any;
+  organizationData?: any;
+  historyData?: any;
 }
 
 interface TimelineMilestone {
@@ -37,24 +50,46 @@ type Props = {
 
 export default function VisualSnapshot({ category, facts, timeline, thumbnail }: Props) {
   const catLower = category.toLowerCase();
+  const entityType = facts.entityType || "";
 
-  // 1. CLASSIFY DOMAINS
-  const isHistory = catLower.includes("event") || catLower.includes("empire") || catLower.includes("war") || catLower.includes("battle") || catLower.includes("history") || catLower.includes("mission");
-  const isCountry = catLower.includes("country") || catLower.includes("city") || catLower.includes("region") || catLower.includes("landmark") || catLower.includes("architecture");
-  const isTech = catLower.includes("technology") || catLower.includes("programming language") || catLower.includes("operating system") || catLower.includes("software");
-  const isCreative = catLower.includes("movie") || catLower.includes("tv series") || catLower.includes("book") || catLower.includes("video game") || catLower.includes("artwork") || catLower.includes("painting") || catLower.includes("album");
-  const isScience = catLower.includes("concept") || catLower.includes("scientific") || catLower.includes("chemical") || catLower.includes("element") || catLower.includes("disease") || catLower.includes("medicine") || catLower.includes("planet") || catLower.includes("star");
-  const isCompany = catLower.includes("company") || catLower.includes("brand") || catLower.includes("corporation");
+  // 1. CLASSIFY DOMAINS BASED ON V14 ENTITY TYPE OR BACKWARDS-COMPATIBLE KEYWORDS
+  const isHistory = entityType 
+    ? ["Historical Event", "War", "Empire", "Civilization", "Space Mission"].includes(entityType)
+    : catLower.includes("event") || catLower.includes("empire") || catLower.includes("war") || catLower.includes("battle") || catLower.includes("history") || catLower.includes("mission");
+    
+  const isCountry = entityType 
+    ? ["Country", "City"].includes(entityType)
+    : catLower.includes("country") || catLower.includes("city") || catLower.includes("region") || catLower.includes("landmark") || catLower.includes("architecture");
+    
+  const isTech = entityType 
+    ? ["Technology", "Programming Language"].includes(entityType)
+    : catLower.includes("technology") || catLower.includes("programming language") || catLower.includes("operating system") || catLower.includes("software");
+    
+  const isCreative = entityType 
+    ? ["Movie", "TV Series", "Book", "Video Game", "Artwork", "Album", "Song"].includes(entityType)
+    : catLower.includes("movie") || catLower.includes("tv series") || catLower.includes("book") || catLower.includes("video game") || catLower.includes("artwork") || catLower.includes("painting") || catLower.includes("album");
+    
+  const isScience = entityType 
+    ? ["Scientific Concept", "Mathematical Concept", "Medical Condition", "Animal"].includes(entityType)
+    : catLower.includes("concept") || catLower.includes("scientific") || catLower.includes("chemical") || catLower.includes("element") || catLower.includes("disease") || catLower.includes("medicine") || catLower.includes("planet") || catLower.includes("star");
+    
+  const isCompany = entityType 
+    ? ["Company", "Brand", "Organization"].includes(entityType)
+    : catLower.includes("company") || catLower.includes("brand") || catLower.includes("corporation");
+
+  const isPerson = entityType
+    ? ["Person", "Musical Artist"].includes(entityType)
+    : catLower.includes("person") || catLower.includes("artist") || catLower.includes("biography") || catLower.includes("physicist");
 
   // ==========================================
   // MODULE A: HISTORY / EMPIRE / SPACE MISSION
   // ==========================================
   const historyModule = useMemo(() => {
     if (!isHistory) return null;
-    const commanders = facts.keyPeople.slice(0, 3);
-    const factions = facts.organizations.slice(0, 3);
-    const keyTheatres = facts.locations.slice(0, 3);
-    const timelineData = timeline || [];
+    const commanders = facts.historyData?.importantPeople || facts.keyPeople.slice(0, 3);
+    const factions = facts.historyData?.causes || facts.organizations.slice(0, 3);
+    const keyTheatres = facts.historyData?.geography || facts.locations.slice(0, 3);
+    const timelineData = facts.historyData?.timeline || timeline || [];
 
     return { commanders, factions, keyTheatres, timelineData };
   }, [isHistory, facts, timeline]);
@@ -64,29 +99,11 @@ export default function VisualSnapshot({ category, facts, timeline, thumbnail }:
   // ==========================================
   const countryModule = useMemo(() => {
     if (!isCountry) return null;
-    let population = "N/A";
-    let gdp = "N/A";
-    const capital = facts.locations[0] || "Capital City";
-    const region = facts.locations[1] || "Continental Area";
-    const bordering = facts.locations.slice(2, 5); // Fallback representing neighbours
-
-    facts.statistics.forEach((stat) => {
-      const sLower = stat.toLowerCase();
-      if (sLower.includes("population") || sLower.includes("inhabitants") || sLower.includes("million") || sLower.includes("billion")) {
-        if (!sLower.includes("$") && !sLower.includes("gdp") && population === "N/A") {
-          population = stat;
-        }
-      }
-      if (sLower.includes("gdp") || sLower.includes("usd") || sLower.includes("$") || sLower.includes("nominal")) {
-        if (gdp === "N/A") {
-          gdp = stat;
-        }
-      }
-    });
-
-    // Provide nice defaults if Wikipedia extract was clean of stats
-    if (population === "N/A") population = "Estimated 10M+";
-    if (gdp === "N/A") gdp = "Varies regionally";
+    const capital = facts.countryData?.capital || facts.locations[0] || "Capital City";
+    const region = facts.countryData?.mapLocation || facts.locations[1] || "Continental Area";
+    const bordering = facts.countryData?.bordering || facts.locations.slice(2, 5);
+    const population = facts.countryData?.population || "Estimated 10M+";
+    const gdp = facts.countryData?.gdp || "Varies regionally";
 
     return { population, gdp, capital, region, bordering };
   }, [isCountry, facts]);
@@ -96,10 +113,10 @@ export default function VisualSnapshot({ category, facts, timeline, thumbnail }:
   // ==========================================
   const techModule = useMemo(() => {
     if (!isTech) return null;
-    const inventor = facts.keyPeople[0] || facts.organizations[0] || "Key Pioneers";
-    const launchYear = facts.importantDates[0] || "N/A";
-    const keyInventions = facts.relatedArticles.slice(0, 4);
-    const applications = facts.categories.slice(0, 4);
+    const inventor = facts.technologyData?.inventor || facts.keyPeople[0] || "Key Pioneers";
+    const launchYear = facts.technologyData?.launchYear || facts.importantDates[0] || "N/A";
+    const keyInventions = facts.technologyData?.architecture || facts.relatedArticles.slice(0, 4);
+    const applications = facts.technologyData?.evolution || facts.categories.slice(0, 4);
 
     return { inventor, launchYear, keyInventions, applications };
   }, [isTech, facts]);
@@ -109,25 +126,11 @@ export default function VisualSnapshot({ category, facts, timeline, thumbnail }:
   // ==========================================
   const creativeModule = useMemo(() => {
     if (!isCreative) return null;
-    const cast = facts.keyPeople.slice(0, 4);
-    const publisher = facts.organizations[0] || "Production Affiliate";
-    const release = facts.importantDates[0] || "N/A";
-    let boxOffice = "N/A";
-    let awards = "Nominated/Recognized";
-
-    facts.statistics.forEach((stat) => {
-      const s = stat.toLowerCase();
-      if (s.includes("$") || s.includes("million") || s.includes("billion") || s.includes("gross") || s.includes("budget")) {
-        if (boxOffice === "N/A") boxOffice = stat;
-      }
-      if (s.includes("award") || s.includes("oscar") || s.includes("won") || s.includes("academy")) {
-        awards = stat;
-      }
-    });
-
-    if (boxOffice === "N/A" && facts.statistics.length > 0) {
-      boxOffice = facts.statistics[0];
-    }
+    const cast = facts.movieData?.cast || facts.bookData?.themes || facts.keyPeople.slice(0, 4);
+    const publisher = facts.movieData?.producer || facts.bookData?.publisher || facts.organizations[0] || "Production Affiliate";
+    const release = facts.movieData?.releaseDate || facts.bookData?.releaseDate || facts.importantDates[0] || "N/A";
+    const boxOffice = facts.movieData?.boxOffice || facts.bookData?.pages || "N/A";
+    const awards = facts.movieData?.awards || "Recognized / Nominated";
 
     return { cast, publisher, release, boxOffice, awards };
   }, [isCreative, facts]);
@@ -137,17 +140,10 @@ export default function VisualSnapshot({ category, facts, timeline, thumbnail }:
   // ==========================================
   const scienceModule = useMemo(() => {
     if (!isScience) return null;
-    const keyScientists = facts.keyPeople.slice(0, 3);
+    const keyScientists = facts.scienceData?.discoverer ? [facts.scienceData.discoverer] : facts.keyPeople.slice(0, 3);
     const timelineData = timeline || [];
-    
-    // Search extract for symbols resembling formulas or definitions
-    let formula = "";
-    const formulaMatch = facts.extractSummary.match(/[A-Z][a-z]?\s*=\s*[^.!?]*/);
-    if (formulaMatch) {
-      formula = formulaMatch[0];
-    }
-
-    const relationships = facts.relatedArticles.slice(0, 4);
+    const formula = facts.scienceData?.formula || "Theoretical Principles";
+    const relationships = facts.scienceData?.applications || facts.relatedArticles.slice(0, 4);
 
     return { keyScientists, timelineData, formula, relationships };
   }, [isScience, facts, timeline]);
@@ -157,27 +153,29 @@ export default function VisualSnapshot({ category, facts, timeline, thumbnail }:
   // ==========================================
   const companyModule = useMemo(() => {
     if (!isCompany) return null;
-    const founders = facts.keyPeople.slice(1, 4);
-    const ceo = facts.keyPeople[0] || "Chief Executive";
-    let revenue = "N/A";
-    let marketCap = "N/A";
-
-    facts.statistics.forEach((stat) => {
-      const s = stat.toLowerCase();
-      if (s.includes("revenue") || s.includes("sales") || s.includes("turnover")) {
-        revenue = stat;
-      } else if (s.includes("cap") || s.includes("valuation") || s.includes("worth")) {
-        marketCap = stat;
-      } else if (s.includes("$") && revenue === "N/A") {
-        revenue = stat;
-      }
-    });
-
-    if (revenue === "N/A") revenue = "Private / Disclosed in reports";
-    if (marketCap === "N/A") marketCap = "Enterprise Tier";
+    const founders = facts.companyData?.founder ? [facts.companyData.founder] : facts.keyPeople.slice(1, 4);
+    const ceo = facts.companyData?.leadership?.[0] || facts.keyPeople[0] || "Chief Executive";
+    const revenue = facts.companyData?.revenue || "N/A";
+    const marketCap = facts.companyData?.competitors?.[0] ? `Competes with ${facts.companyData.competitors[0]}` : "Enterprise Tier";
 
     return { founders, ceo, revenue, marketCap };
   }, [isCompany, facts]);
+
+  // ==========================================
+  // MODULE G: BIOGRAPHY / PERSON SNAPSHOT
+  // ==========================================
+  const personModule = useMemo(() => {
+    if (!isPerson) return null;
+    const data = facts.personData || {};
+    const birth = data.birth || "Unknown";
+    const death = data.death || "Present / Active";
+    const occupation = data.occupation || "Notable Individual";
+    const majorWorks = data.majorWorks || facts.relatedArticles.slice(0, 3);
+    const legacy = data.legacy || [];
+    const timelineData = data.timeline || timeline || [];
+
+    return { birth, death, occupation, majorWorks, legacy, timelineData };
+  }, [isPerson, facts, timeline]);
 
   // ==========================================
   // RENDERING MODULE LOGICS
@@ -198,57 +196,39 @@ export default function VisualSnapshot({ category, facts, timeline, thumbnail }:
 
           <div className="grid gap-6 md:grid-cols-3">
             {/* Interactive Timeline column */}
-            <div className="premium-card p-6 md:col-span-2 hover:border-cyan-500/20">
-              <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-cyan-400 mb-6 flex items-center gap-1.5">
-                <Calendar className="h-3.5 w-3.5" /> Chronology & Timeline
+            <div className="premium-card p-5 md:col-span-2 hover:border-cyan-500/20">
+              <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-cyan-400 mb-4 flex items-center gap-1.5">
+                <Compass className="h-3.5 w-3.5" /> Campaign Milestones
               </h4>
-              <div className="relative border-l border-white/10 ml-3 pl-6 space-y-6">
-                {historyModule.timelineData.slice(0, 4).map((milestone, idx) => (
-                  <div key={idx} className="relative group/timeline-item">
-                    <div className="absolute -left-[31px] top-1 h-2.5 w-2.5 rounded-full border border-cyan-400 bg-neutral-950 group-hover/timeline-item:bg-cyan-400 transition-colors shadow-[0_0_8px_rgba(6,182,212,0.4)]" />
-                    <p className="text-xs font-bold text-cyan-400 font-mono">{milestone.year}</p>
-                    <p className="text-xs text-neutral-300 font-light mt-1">{milestone.event}</p>
+              <div className="relative pl-4 border-l border-white/10 flex flex-col gap-4 max-h-[220px] overflow-y-auto custom-scrollbar">
+                {historyModule.timelineData.map((m: any, idx: number) => (
+                  <div key={idx} className="relative group">
+                    <div className="absolute -left-[21px] top-1.5 h-2 w-2 rounded-full bg-cyan-500 ring-4 ring-cyan-950 group-hover:bg-white transition-colors" />
+                    <span className="text-[9px] font-mono text-cyan-500 font-bold block">{m.year}</span>
+                    <p className="text-[11px] text-neutral-300 font-medium leading-normal mt-0.5">{m.event}</p>
                   </div>
                 ))}
-                {historyModule.timelineData.length === 0 && (
-                  <p className="text-xs text-neutral-500 font-light italic">No timeline entries available.</p>
-                )}
               </div>
             </div>
 
-            {/* Factions, Generals & Locations */}
-            <div className="space-y-6">
-              {historyModule.commanders.length > 0 && (
-                <div className="premium-card p-5 hover:border-cyan-500/20">
-                  <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-purple-400 mb-3 flex items-center gap-1.5">
-                    <User className="h-3.5 w-3.5" /> Commanders & Leaders
-                  </h4>
-                  <ul className="space-y-2 text-xs text-neutral-300 font-light">
-                    {historyModule.commanders.map((item, idx) => (
-                      <li key={idx} className="flex gap-2 items-center">
-                        <span className="h-1.5 w-1.5 rounded-full bg-purple-400" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
+            {/* Commanders & Factions cards */}
+            <div className="flex flex-col gap-4">
+              <div className="premium-card p-5 hover:border-cyan-500/20 flex-grow">
+                <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-cyan-400 mb-3 flex items-center gap-1.5">
+                  <Users className="h-3.5 w-3.5" /> Core Figures
+                </h4>
+                <div className="flex flex-col gap-1.5">
+                  {historyModule.commanders.slice(0, 3).map((item: string, idx: number) => (
+                    <span key={idx} className="text-[10px] font-mono text-neutral-300 flex items-center gap-2">
+                      <span className="h-1 w-1 bg-cyan-500 rounded-full" />
+                      {item}
+                    </span>
+                  ))}
+                  {historyModule.commanders.length === 0 && (
+                    <span className="text-[10px] text-neutral-500 italic">Disclosed in archives</span>
+                  )}
                 </div>
-              )}
-
-              {historyModule.factions.length > 0 && (
-                <div className="premium-card p-5 hover:border-cyan-500/20">
-                  <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-emerald-400 mb-3 flex items-center gap-1.5">
-                    <ShieldAlert className="h-3.5 w-3.5" /> Combatant Factions
-                  </h4>
-                  <ul className="space-y-2 text-xs text-neutral-300 font-light">
-                    {historyModule.factions.map((item, idx) => (
-                      <li key={idx} className="flex gap-2 items-center">
-                        <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+              </div>
 
               <div className="premium-card p-5 hover:border-cyan-500/20">
                 <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-cyan-400 mb-3 flex items-center gap-1.5">
@@ -257,7 +237,7 @@ export default function VisualSnapshot({ category, facts, timeline, thumbnail }:
                 <div className="h-20 bg-neutral-950/80 border border-white/5 rounded-xl flex items-center justify-center relative overflow-hidden">
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(6,182,212,0.08)_1px,transparent_1px)] bg-[size:12px_12px]" />
                   <span className="text-[10px] font-mono text-cyan-400 relative z-10">
-                    📍 {historyModule.keyTheatres[0] || facts.locations[0] || "Global Campaign Map"}
+                    📍 {historyModule.keyTheatres[0] || "Global Campaign Map"}
                   </span>
                 </div>
               </div>
@@ -308,7 +288,7 @@ export default function VisualSnapshot({ category, facts, timeline, thumbnail }:
               <div>
                 <p className="text-[9px] font-semibold uppercase tracking-[0.2em] text-neutral-500 mb-1">Neighbouring Regions</p>
                 <div className="flex flex-wrap gap-1 mt-1">
-                  {countryModule.bordering.slice(0, 2).map((item, idx) => (
+                  {countryModule.bordering.slice(0, 2).map((item: string, idx: number) => (
                     <span key={idx} className="text-[9px] bg-white/[0.03] px-2 py-0.5 rounded border border-white/5 text-neutral-300 truncate max-w-full">
                       {item}
                     </span>
@@ -355,9 +335,9 @@ export default function VisualSnapshot({ category, facts, timeline, thumbnail }:
             <div className="premium-card p-6 flex flex-col justify-between min-h-[170px] hover:border-cyan-500/20">
               <Sparkles className="h-6 w-6 text-emerald-400" />
               <div>
-                <p className="text-[9px] font-semibold uppercase tracking-[0.2em] text-neutral-500 mb-1">Ecosystem Nodes</p>
+                <p className="text-[9px] font-semibold uppercase tracking-[0.2em] text-neutral-500 mb-1">Architecture Nodes</p>
                 <div className="flex flex-wrap gap-1 mt-1">
-                  {techModule.keyInventions.slice(0, 3).map((item, idx) => (
+                  {techModule.keyInventions.slice(0, 3).map((item: string, idx: number) => (
                     <span key={idx} className="text-[9px] bg-white/[0.03] px-2 py-0.5 rounded border border-white/5 text-neutral-300 truncate">
                       {item}
                     </span>
@@ -394,7 +374,7 @@ export default function VisualSnapshot({ category, facts, timeline, thumbnail }:
 
             <div className="flex-grow grid gap-4 sm:grid-cols-2 md:grid-cols-4 w-full">
               <div className="border-l border-white/10 pl-4 py-1">
-                <span className="text-[9px] uppercase tracking-wider text-neutral-500 font-bold block mb-1">Release Date</span>
+                <span className="text-[9px] uppercase tracking-wider text-neutral-500 font-bold block mb-1">Release / Date</span>
                 <span className="text-xs font-semibold text-cyan-400">{creativeModule.release}</span>
               </div>
               <div className="border-l border-white/10 pl-4 py-1">
@@ -477,7 +457,7 @@ export default function VisualSnapshot({ category, facts, timeline, thumbnail }:
             <div className="premium-card p-6 flex flex-col justify-between min-h-[150px] hover:border-cyan-500/20">
               <Building className="h-6 w-6 text-cyan-400 opacity-80" />
               <div>
-                <p className="text-[9px] font-semibold uppercase tracking-[0.2em] text-neutral-500 mb-1">Current CEO</p>
+                <p className="text-[9px] font-semibold uppercase tracking-[0.2em] text-neutral-500 mb-1">Leadership</p>
                 <h3 className="text-base font-bold text-white truncate">{companyModule.ceo}</h3>
               </div>
             </div>
@@ -493,7 +473,7 @@ export default function VisualSnapshot({ category, facts, timeline, thumbnail }:
             <div className="premium-card p-6 flex flex-col justify-between min-h-[150px] hover:border-cyan-500/20">
               <TrendingUp className="h-6 w-6 text-purple-400 opacity-80" />
               <div>
-                <p className="text-[9px] font-semibold uppercase tracking-[0.2em] text-neutral-500 mb-1">Market Cap</p>
+                <p className="text-[9px] font-semibold uppercase tracking-[0.2em] text-neutral-500 mb-1">Market Dynamics</p>
                 <h3 className="text-xs font-bold text-white line-clamp-2">{companyModule.marketCap}</h3>
               </div>
             </div>
@@ -503,7 +483,7 @@ export default function VisualSnapshot({ category, facts, timeline, thumbnail }:
               <div>
                 <p className="text-[9px] font-semibold uppercase tracking-[0.2em] text-neutral-500 mb-1">Founders</p>
                 <div className="flex flex-wrap gap-1 mt-1">
-                  {companyModule.founders.slice(0, 2).map((item, idx) => (
+                  {companyModule.founders.slice(0, 2).map((item: string, idx: number) => (
                     <span key={idx} className="text-[9px] bg-white/[0.03] px-2 py-0.5 rounded border border-white/5 text-neutral-300 truncate">
                       {item}
                     </span>
@@ -512,6 +492,57 @@ export default function VisualSnapshot({ category, facts, timeline, thumbnail }:
                     <span className="text-[9px] text-neutral-500 italic">Disclosed in archives</span>
                   )}
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* 7. PERSON SNAPSHOT */}
+      {isPerson && personModule && (
+        <section className="py-8 border-t border-white/5 animate-fade-in-up">
+          <div className="flex flex-col gap-2 mb-8">
+            <p className="text-[10px] font-bold uppercase tracking-[0.35em] text-cyan-400">
+              Biographical Profile
+            </p>
+            <h2 className="text-3xl font-semibold tracking-tight text-white bg-gradient-to-r from-white to-neutral-400 bg-clip-text text-transparent">
+              Visual Snapshot
+            </h2>
+          </div>
+
+          <div className="premium-card p-6.5 hover:border-cyan-500/20 flex flex-col md:flex-row gap-6 items-center">
+            {thumbnail ? (
+              <div className="w-36 h-48 rounded-xl overflow-hidden border border-white/5 bg-neutral-900 shadow-2xl relative flex-shrink-0">
+                <img src={thumbnail} alt={facts.title} className="h-full w-full object-cover" />
+              </div>
+            ) : (
+              <div className="w-36 h-48 rounded-xl border border-white/5 bg-gradient-to-br from-neutral-900 to-black flex items-center justify-center shadow-2xl flex-shrink-0">
+                <User className="h-10 w-10 text-cyan-500/30" />
+              </div>
+            )}
+
+            <div className="flex-grow grid gap-4 sm:grid-cols-2 md:grid-cols-4 w-full">
+              <div className="border-l border-white/10 pl-4 py-1">
+                <span className="text-[9px] uppercase tracking-wider text-neutral-500 font-bold block mb-1">Occupation</span>
+                <span className="text-xs font-semibold text-cyan-400">{personModule.occupation}</span>
+              </div>
+              <div className="border-l border-white/10 pl-4 py-1">
+                <span className="text-[9px] uppercase tracking-wider text-neutral-500 font-bold block mb-1">Lifespan</span>
+                <span className="text-xs font-semibold text-neutral-200 line-clamp-1">{personModule.birth} — {personModule.death}</span>
+              </div>
+              <div className="border-l border-white/10 pl-4 py-1">
+                <span className="text-[9px] uppercase tracking-wider text-neutral-500 font-bold block mb-1">Notable Works</span>
+                <div className="flex flex-wrap gap-1 mt-1">
+                  {personModule.majorWorks.slice(0, 2).map((item: string, idx: number) => (
+                    <span key={idx} className="text-[9px] bg-white/[0.03] px-2 py-0.5 rounded border border-white/5 text-neutral-300 truncate max-w-full">
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="border-l border-white/10 pl-4 py-1">
+                <span className="text-[9px] uppercase tracking-wider text-neutral-500 font-bold block mb-1">Legacy Summary</span>
+                <span className="text-xs font-semibold text-neutral-200 line-clamp-2">{personModule.legacy[0] || "Pioneering contributions to history"}</span>
               </div>
             </div>
           </div>

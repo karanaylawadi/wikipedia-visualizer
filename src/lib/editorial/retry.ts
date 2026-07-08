@@ -1,8 +1,8 @@
 import { validateSummary, validateCard, validateDidYouKnow } from "./validator";
 import type { TopicKnowledge } from "@/types/wiki";
 import type { CardPlan } from "./planner";
-import { generatePerspectiveCard, PerspectiveCard } from "./perspectives";
-import { generateEditorialBrief } from "./summary";
+import { generatePerspectiveCard, PerspectiveCard, getDomainCardPrompt } from "./perspectives";
+import { generateEditorialBrief, getDomainSummaryPrompt } from "./summary";
 import { curateSurprisingFacts } from "./factsCurator";
 import { setCachedStage } from "./cache";
 
@@ -11,7 +11,7 @@ export async function retrySummary(
   knowledge: TopicKnowledge
 ): Promise<string> {
   let summary = await generateEditorialBrief(topicKey, knowledge);
-  let validation = validateSummary(summary, knowledge.title);
+  let validation = validateSummary(summary, knowledge.common.title);
   
   if (validation.valid) {
     return summary;
@@ -29,28 +29,13 @@ export async function retrySummary(
 
     while (attempts < 2 && !validation.valid) {
       attempts++;
-      const prompt = `You are a Senior Editor. Rewrite the editorial brief for:
-Topic: ${knowledge.title}
-Subtitle: ${knowledge.description}
-Category: ${knowledge.category}
-
-Key structured facts (write only from these):
-${knowledge.summaryFacts.map(f => `- ${f}`).join("\n")}
-Key themes:
-${knowledge.themes.map(t => `- ${t}`).join("\n")}
+      const basePrompt = getDomainSummaryPrompt(knowledge);
+      const prompt = `${basePrompt}
 
 PREVIOUS ATTEMPT ERRORS:
 ${feedback}
 
-Requirements:
-1. Word count: 120-150 words.
-2. First sentence must state immediately why the topic matters.
-3. No robotic definition starts like "X is..." or "The X was...".
-4. Do not use forbidden phrases: represents, illustrates, highlights, demonstrates, trajectory, conceptual, thematic, in conclusion, overall, furthermore, additionally.
-
-Return valid JSON with schema:
-{ "shortSummary": "Polished text" }
-Do not return markdown wrappers.`;
+Please revise the previous brief summary text to fix the errors listed above while maintaining the category, guidelines, and word count constraints. Only output the revised JSON.`;
 
       const response = await ai.models.generateContent({
         model: "gemini-2.0-flash",
@@ -62,7 +47,7 @@ Do not return markdown wrappers.`;
       try {
         const parsed = JSON.parse(text) as { shortSummary: string };
         summary = parsed.shortSummary || summary;
-        validation = validateSummary(summary, knowledge.title);
+        validation = validateSummary(summary, knowledge.common.title);
         if (validation.valid) {
           await setCachedStage(topicKey, "summary", parsed);
           break;
@@ -89,7 +74,7 @@ export async function retryCard(
   otherCards: PerspectiveCard[]
 ): Promise<PerspectiveCard> {
   let card = await generatePerspectiveCard(topicKey, cardIndex, cardPlan, knowledge, assignedFacts, factsAlreadyUsed);
-  let validation = validateCard(card, cardIndex, knowledge.title, otherCards, assignedFacts.anchors);
+  let validation = validateCard(card, cardIndex, knowledge.common.title, otherCards, assignedFacts.anchors, knowledge.entityType);
 
   if (validation.valid) {
     return card;
@@ -107,38 +92,13 @@ export async function retryCard(
 
     while (attempts < 2 && !validation.valid) {
       attempts++;
-      const prompt = `You are an expert journalist and editor. Rewrite narrative chapter card ${cardIndex + 1} for:
-Topic: ${knowledge.title}
-Perspective Title: ${cardPlan.perspectiveTitle}
-Perspective Label: ${cardPlan.referenceLabel}
-Reader Question: ${cardPlan.readerQuestion}
-
-FACTS AND ANCHORS ASSIGNED TO THIS CHAPTER (Use ONLY these details; do not write about anything else):
-- Facts: ${assignedFacts.facts.join("; ")}
-- Anchors: ${assignedFacts.anchors.join("; ")}
+      const basePrompt = getDomainCardPrompt(knowledge, cardPlan, assignedFacts, factsAlreadyUsed);
+      const prompt = `${basePrompt}
 
 PREVIOUS ATTEMPT ERRORS:
 ${feedback}
 
-Factual Overlap Prevention (Do not repeat these details or copy these sentences):
-${factsAlreadyUsed || "No details written yet."}
-
-Requirements:
-1. Narrative summary must be exactly 70-90 words (strict maximum 95 words).
-2. Write in a premium editorial style. Open with an engaging narrative hook. No robotic starts.
-3. Key takeaway must be under 18 words.
-4. Ensure less than 10% similarity overlap and zero duplicated sentences/statements.
-5. Strictly avoid repetitive AI boilerplates.
-
-Return valid JSON with schema:
-{
-  "title": "Headline, 2-5 words",
-  "referenceLabel": "Custom label, 2-5 words",
-  "readerQuestion": "Reader question answered",
-  "summary": "Chapter text (70-90 words)",
-  "keyTakeaway": "Editorial takeaway (max 18 words)"
-}
-Do not return markdown wrappers.`;
+Please revise the previous chapter card text to fix the errors listed above while maintaining all constraints. Only output the revised JSON.`;
 
       const response = await ai.models.generateContent({
         model: "gemini-2.0-flash",
@@ -149,7 +109,7 @@ Do not return markdown wrappers.`;
       const text = typeof response.text === "string" ? response.text.replace(/```json|```/g, "").trim() : "";
       try {
         const parsed = JSON.parse(text) as PerspectiveCard;
-        validation = validateCard(parsed, cardIndex, knowledge.title, otherCards, assignedFacts.anchors);
+        validation = validateCard(parsed, cardIndex, knowledge.common.title, otherCards, assignedFacts.anchors, knowledge.entityType);
         if (validation.valid) {
           card = parsed;
           await setCachedStage(topicKey, `chapter-${cardIndex}`, parsed);
@@ -190,7 +150,7 @@ export async function retryDidYouKnow(
 
     while (attempts < 2 && !validation.valid) {
       attempts++;
-      const prompt = `You are a Fact Curator. Refine these five surprising, highly memorable facts about "${knowledge.title}".
+      const prompt = `You are a Fact Curator. Refine these five surprising, highly memorable facts about "${knowledge.common.title}".
 Original facts to refine:
 ${facts.map((f, i) => `${i + 1}. ${f}`).join("\n")}
 

@@ -9,6 +9,115 @@ export interface ChapterFactAssignment {
 
 export type TopicFactAssignment = Record<number, ChapterFactAssignment>;
 
+interface FactPools {
+  summaryFacts: string[];
+  dates: string[];
+  people: string[];
+  places: string[];
+  events: string[];
+  inventions: string[];
+  numbers: string[];
+  works: string[];
+  organizations: string[];
+}
+
+function getFactPools(knowledge: TopicKnowledge): FactPools {
+  const summaryFacts = knowledge.common.summaryFacts || [];
+  const dates: string[] = [];
+  const people: string[] = [];
+  const places: string[] = [];
+  const events: string[] = [];
+  const inventions: string[] = [];
+  const numbers: string[] = [];
+  const works: string[] = [];
+  const organizations: string[] = [];
+
+  if (knowledge.common.timeline) {
+    for (const milestone of knowledge.common.timeline) {
+      if (milestone.year) dates.push(milestone.year);
+      if (milestone.event) events.push(milestone.event);
+    }
+  }
+
+  if (knowledge.movieData) {
+    const md = knowledge.movieData;
+    if (md.director) people.push(md.director);
+    if (md.producer) organizations.push(md.producer);
+    if (md.cast) people.push(...md.cast);
+    if (md.music) people.push(md.music);
+    if (md.cinematography) people.push(md.cinematography);
+    if (md.boxOffice) numbers.push(md.boxOffice);
+    if (md.budget) numbers.push(md.budget);
+  }
+
+  if (knowledge.personData) {
+    const pd = knowledge.personData;
+    if (pd.birth) dates.push(pd.birth);
+    if (pd.death) dates.push(pd.death);
+    if (pd.majorWorks) works.push(...pd.majorWorks);
+    if (pd.awards) works.push(...pd.awards);
+  }
+
+  if (knowledge.companyData) {
+    const cd = knowledge.companyData;
+    if (cd.founder) people.push(cd.founder);
+    if (cd.headquarters) places.push(cd.headquarters);
+    if (cd.products) inventions.push(...cd.products);
+    if (cd.competitors) organizations.push(...cd.competitors);
+    if (cd.revenue) numbers.push(cd.revenue);
+  }
+
+  if (knowledge.countryData) {
+    const cnd = knowledge.countryData;
+    if (cnd.capital) places.push(cnd.capital);
+    if (cnd.bordering) places.push(...cnd.bordering);
+    if (cnd.population) numbers.push(cnd.population);
+    if (cnd.gdp) numbers.push(cnd.gdp);
+  }
+
+  if (knowledge.technologyData) {
+    const td = knowledge.technologyData;
+    if (td.inventor) people.push(td.inventor);
+    if (td.launchYear) dates.push(td.launchYear);
+    if (td.architecture) inventions.push(...td.architecture);
+    if (td.competitors) inventions.push(...td.competitors);
+  }
+
+  if (knowledge.scienceData) {
+    const sd = knowledge.scienceData;
+    if (sd.discoverer) people.push(sd.discoverer);
+    if (sd.discovery) dates.push(sd.discovery);
+    if (sd.applications) inventions.push(...sd.applications);
+    if (sd.formula) works.push(sd.formula);
+  }
+
+  if (knowledge.organizationData) {
+    const od = knowledge.organizationData;
+    if (od.founder) people.push(od.founder);
+    if (od.headquarters) places.push(od.headquarters);
+    if (od.members) places.push(...od.members);
+  }
+
+  if (knowledge.historyData) {
+    const hd = knowledge.historyData;
+    if (hd.importantPeople) people.push(...hd.importantPeople);
+    if (hd.geography) places.push(...hd.geography);
+    if (hd.majorEvents) events.push(...hd.majorEvents);
+  }
+
+  return {
+    summaryFacts: summaryFacts.filter(Boolean),
+    dates: Array.from(new Set(dates)).filter(Boolean),
+    people: Array.from(new Set(people)).filter(Boolean),
+    places: Array.from(new Set(places)).filter(Boolean),
+    events: Array.from(new Set(events)).filter(Boolean),
+    inventions: Array.from(new Set(inventions)).filter(Boolean),
+    numbers: Array.from(new Set(numbers)).filter(Boolean),
+    works: Array.from(new Set(works)).filter(Boolean),
+    organizations: Array.from(new Set(organizations)).filter(Boolean),
+  };
+}
+
 export async function assignFactsToChapters(
   topicKey: string,
   knowledge: TopicKnowledge,
@@ -28,6 +137,8 @@ export async function assignFactsToChapters(
     4: { facts: [], anchors: [] }
   };
 
+  const pools = getFactPools(knowledge);
+
   if (apiKey && plan.cards && plan.cards.length === 5) {
     try {
       const { GoogleGenAI } = await import("@google/genai");
@@ -39,15 +150,15 @@ Chapters:
 ${plan.cards.map((c, i) => `Chapter ${i + 1}: ${c.referenceLabel} - "${c.perspectiveTitle}" (${c.readerQuestion})`).join("\n")}
 
 TopicKnowledge fields:
-- Summary Facts: ${JSON.stringify(knowledge.summaryFacts)}
-- People: ${JSON.stringify(knowledge.people)}
-- Places: ${JSON.stringify(knowledge.places)}
-- Organizations: ${JSON.stringify(knowledge.organizations)}
-- Events: ${JSON.stringify(knowledge.events)}
-- Dates: ${JSON.stringify(knowledge.dates)}
-- Numbers: ${JSON.stringify(knowledge.numbers)}
-- Works: ${JSON.stringify(knowledge.works)}
-- Inventions: ${JSON.stringify(knowledge.inventions)}
+- Summary Facts: ${JSON.stringify(pools.summaryFacts)}
+- People: ${JSON.stringify(pools.people)}
+- Places: ${JSON.stringify(pools.places)}
+- Organizations: ${JSON.stringify(pools.organizations)}
+- Events: ${JSON.stringify(pools.events)}
+- Dates: ${JSON.stringify(pools.dates)}
+- Numbers: ${JSON.stringify(pools.numbers)}
+- Works: ${JSON.stringify(pools.works)}
+- Inventions: ${JSON.stringify(pools.inventions)}
 
 Requirements:
 1. Assign exactly 2-4 unique facts (from Summary Facts) and exactly 2-4 concrete anchors (drawn from People, Places, Organizations, Events, Dates, Numbers, Works, or Inventions) to each chapter.
@@ -105,9 +216,6 @@ Do not return markdown formatting blocks. Just return raw JSON starting with { a
     rawAssignment = getFallbackProgrammaticAssignment(knowledge);
   }
 
-  // Apply strict programmatic repair to guarantee rules:
-  // 1. Every chapter has at least 2 anchors.
-  // 2. Zero duplicated facts/anchors across chapters.
   const repairedAssignment = repairAssignments(rawAssignment, knowledge);
 
   await setCachedStage(topicKey, "facts", repairedAssignment);
@@ -123,8 +231,8 @@ function getFallbackProgrammaticAssignment(knowledge: TopicKnowledge): TopicFact
     4: { facts: [], anchors: [] }
   };
 
-  // Divide summaryFacts
-  const facts = knowledge.summaryFacts || [];
+  const pools = getFactPools(knowledge);
+  const facts = pools.summaryFacts || [];
   for (let i = 0; i < 5; i++) {
     const start = i * 2;
     assignment[i].facts = facts.slice(start, start + 2);
@@ -141,20 +249,21 @@ export function repairAssignments(
   const usedAnchors = new Set<string>();
   const repaired: TopicFactAssignment = {};
 
+  const pools = getFactPools(knowledge);
+
   const allPossibleAnchors = [
-    ...(knowledge.dates || []),
-    ...(knowledge.people || []),
-    ...(knowledge.places || []),
-    ...(knowledge.events || []),
-    ...(knowledge.inventions || []),
-    ...(knowledge.numbers || []),
-    ...(knowledge.works || []),
-    ...(knowledge.organizations || []),
+    ...pools.dates,
+    ...pools.people,
+    ...pools.places,
+    ...pools.events,
+    ...pools.inventions,
+    ...pools.numbers,
+    ...pools.works,
+    ...pools.organizations,
   ].filter(Boolean);
 
   const normalize = (s: string) => s.toLowerCase().trim();
 
-  // Step 1: Clean and deduplicate raw assignments
   for (let i = 0; i < 5; i++) {
     const rawChapter = assignment[i] || { facts: [], anchors: [] };
     const chapterFacts: string[] = [];
@@ -179,7 +288,6 @@ export function repairAssignments(
     repaired[i] = { facts: chapterFacts, anchors: chapterAnchors };
   }
 
-  // Step 2: Ensure each chapter has at least 2 anchors
   for (let i = 0; i < 5; i++) {
     const chap = repaired[i];
     while (chap.anchors.length < 2) {
@@ -188,8 +296,7 @@ export function repairAssignments(
         usedAnchors.add(normalize(unused));
         chap.anchors.push(unused);
       } else {
-        // Fallback anchors derived from title/description
-        const fallbackAnchor = `${knowledge.title} detail part ${i + 1} (${chap.anchors.length + 1})`;
+        const fallbackAnchor = `${knowledge.common.title} detail part ${i + 1} (${chap.anchors.length + 1})`;
         chap.anchors.push(fallbackAnchor);
         usedAnchors.add(normalize(fallbackAnchor));
       }

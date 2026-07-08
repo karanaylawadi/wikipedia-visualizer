@@ -106,6 +106,8 @@ interface AnalysisResponse {
   generatedAt: string;
   cacheVersion: string;
   cacheStatus?: string;
+  ontologyLabels?: string[];
+  entityType?: string;
 }
 
 function ResultsContent() {
@@ -304,6 +306,16 @@ function ResultsContent() {
                 <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl bg-gradient-to-b from-white to-neutral-400 bg-clip-text text-transparent leading-none">
                   {data.article.title}
                 </h1>
+                {data.ontologyLabels && data.ontologyLabels.length > 0 && (
+                  <div className="flex flex-wrap gap-2 text-[10px] text-neutral-400 font-mono mt-1 mb-2">
+                    {data.ontologyLabels.map((label: string, idx: number) => (
+                      <span key={idx} className="flex items-center gap-2">
+                        {idx > 0 && <span className="text-neutral-700 font-sans">•</span>}
+                        <span className="bg-white/[0.03] px-2 py-0.5 rounded border border-white/5 font-semibold text-cyan-400/90">{label}</span>
+                      </span>
+                    ))}
+                  </div>
+                )}
                 <p className="text-base leading-relaxed text-neutral-400 font-light max-w-3xl">
                   {data.article.description || data.article.extract.split(".")[0] + "."}
                 </p>

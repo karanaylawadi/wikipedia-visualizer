@@ -1,6 +1,5 @@
 import { getCachedStage, setCachedStage } from "./cache";
-import type { Classification } from "./classifier";
-import type { StructuredFacts } from "./facts";
+import type { TopicKnowledge } from "@/types/wiki";
 
 export interface RelatedTopic {
   title: string;
@@ -20,32 +19,69 @@ function cleanAndTokenize(text: string): Set<string> {
 }
 
 function computeSimilarityScore(
-  title: string,
-  description: string,
-  topicTokens: Set<string>,
-  categoryTokens: Set<string>
+  item: RelatedTopic,
+  knowledge: TopicKnowledge
 ): number {
-  const itemTokens = cleanAndTokenize(`${title} ${description}`);
+  const text = `${item.title} ${item.description}`.toLowerCase();
   let score = 0;
+
+  // 1. Basic token overlap with original title and brief description
+  const topicTokens = cleanAndTokenize(`${knowledge.common.title} ${knowledge.common.description}`);
+  const itemTokens = cleanAndTokenize(text);
   for (const token of itemTokens) {
     if (topicTokens.has(token)) score += 3.0;
-    if (categoryTokens.has(token)) score += 1.5;
   }
+
+  // 2. Exact match with ontology path labels
+  for (const label of knowledge.ontologyLabels) {
+    if (text.includes(label.toLowerCase())) {
+      score += 5.0;
+    }
+  }
+
+  // 3. Domain/Entity-type alignment boost
+  const type = knowledge.entityType;
+  const itemCat = item.category.toLowerCase();
+
+  if (type === "Movie" || type === "TV Series") {
+    if (itemCat.includes("movie") || itemCat.includes("tv") || text.includes("film") || text.includes("cinema") || text.includes("director") || text.includes("starring")) {
+      score += 12.0;
+    }
+  } else if (type === "Person" || type === "Musical Artist") {
+    if (itemCat.includes("person") || text.includes("born") || text.includes("biography") || text.includes("pioneer") || text.includes("scientist") || text.includes("artist")) {
+      score += 12.0;
+    }
+  } else if (type === "Company" || type === "Brand" || type === "Organization") {
+    if (itemCat.includes("company") || itemCat.includes("organization") || text.includes("revenue") || text.includes("founded") || text.includes("headquarters") || text.includes("corporate")) {
+      score += 12.0;
+    }
+  } else if (type === "Historical Event" || type === "War" || type === "Empire" || type === "Civilization" || type === "Space Mission") {
+    if (text.includes("war") || text.includes("battle") || text.includes("treaty") || text.includes("empire") || text.includes("history") || text.includes("revolution")) {
+      score += 12.0;
+    }
+  } else if (type === "Technology" || type === "Programming Language") {
+    if (text.includes("technology") || text.includes("software") || text.includes("programming") || text.includes("language") || text.includes("operating system") || text.includes("protocol")) {
+      score += 12.0;
+    }
+  } else if (type === "Scientific Concept" || type === "Mathematical Concept" || type === "Medical Condition" || type === "Animal") {
+    if (text.includes("science") || text.includes("discovery") || text.includes("formula") || text.includes("theory") || text.includes("biology") || text.includes("mathematics")) {
+      score += 12.0;
+    }
+  }
+
   return score;
 }
 
 export async function curateRelatedExploration(
   topicKey: string,
-  structuredFacts: StructuredFacts,
-  classification: Classification
+  knowledge: TopicKnowledge
 ): Promise<RelatedTopic[]> {
   const cached = await getCachedStage(topicKey, "stage11-explored");
   if (cached) return (cached as { explored: RelatedTopic[] }).explored;
 
-  const initialList = structuredFacts.relatedArticles.slice(0, 20);
+  const initialList = (knowledge.common.relatedTopics || []).slice(0, 20);
   if (initialList.length === 0) return [];
 
-  // Query Wikipedia details in a single batch
   let rawExplored: RelatedTopic[] = [];
   try {
     const detailsUrl = `https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages|description|categories&titles=${encodeURIComponent(initialList.join("|"))}&piprop=thumbnail&pithumbsize=120&origin=*`;
@@ -65,9 +101,10 @@ export async function curateRelatedExploration(
         const categories: string[] = Array.isArray(page.categories)
           ? page.categories.map((c: { title?: string }) => String(c.title || "").toLowerCase())
           : [];
-        let category = classification.category;
-
+        
+        let category = knowledge.entityType;
         const catText = categories.join(" ");
+
         if (catText.includes("film") || catText.includes("movie") || catText.includes("cinema")) {
           category = "Movie";
         } else if (catText.includes("novel") || catText.includes("book") || catText.includes("writer") || catText.includes("literature")) {
@@ -76,6 +113,8 @@ export async function curateRelatedExploration(
           category = "Person";
         } else if (catText.includes("city") || catText.includes("settlements") || catText.includes("towns")) {
           category = "City";
+        } else if (catText.includes("company") || catText.includes("companies")) {
+          category = "Company";
         }
 
         pageMap.set(title, { description, thumbnail, category });
@@ -87,7 +126,7 @@ export async function curateRelatedExploration(
           title,
           description: details.description || "Connected subject",
           thumbnail: details.thumbnail || null,
-          category: details.category || classification.category,
+          category: details.category || knowledge.entityType,
         };
       });
     } else {
@@ -95,7 +134,7 @@ export async function curateRelatedExploration(
         title,
         description: "Connected subject",
         thumbnail: null,
-        category: classification.category,
+        category: knowledge.entityType,
       }));
     }
   } catch (e) {
@@ -104,20 +143,16 @@ export async function curateRelatedExploration(
       title,
       description: "Connected subject",
       thumbnail: null,
-      category: classification.category,
+      category: knowledge.entityType,
     }));
   }
 
-  // Rank using code-based Jaccard similarity score
-  const topicTokens = cleanAndTokenize(structuredFacts.title);
-  const categoryTokens = cleanAndTokenize(`${classification.category} ${classification.subcategory}`);
-
+  // Rank using our custom computeSimilarityScore
   const scoredExplored = rawExplored.map((item) => {
-    const similarity = computeSimilarityScore(item.title, item.description, topicTokens, categoryTokens);
+    const similarity = computeSimilarityScore(item, knowledge);
     return { item, similarity };
   });
 
-  // Sort descending by similarity score
   scoredExplored.sort((a, b) => b.similarity - a.similarity);
 
   const result = scoredExplored.slice(0, 10).map((r) => r.item);

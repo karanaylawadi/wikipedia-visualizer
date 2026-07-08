@@ -8,12 +8,12 @@ export async function curateSurprisingFacts(
   const cached = await getCachedStage(topicKey, "stage6-didyouknow");
   if (cached) return (cached as { didYouKnow: string[] }).didYouKnow;
 
-  const facts = Array.isArray(knowledge.surprisingFacts) && knowledge.surprisingFacts.length > 0
-    ? knowledge.surprisingFacts
+  const facts = Array.isArray(knowledge.common.surprisingFacts) && knowledge.common.surprisingFacts.length > 0
+    ? knowledge.common.surprisingFacts
     : [
-        `${knowledge.title} is studied globally.`,
-        `Early records of ${knowledge.title} show high complexity.`,
-        `Pivotal developments for ${knowledge.title} occurred over several decades.`
+        `${knowledge.common.title} is studied globally.`,
+        `Early records of ${knowledge.common.title} show high complexity.`,
+        `Pivotal developments for ${knowledge.common.title} occurred over several decades.`
       ];
 
   await setCachedStage(topicKey, "stage6-didyouknow", { didYouKnow: facts });

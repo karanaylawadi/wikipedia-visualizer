@@ -107,7 +107,8 @@ export function validateCard(
   index: number,
   topic: string,
   otherCards: PerspectiveCard[],
-  assignedAnchors?: string[]
+  assignedAnchors?: string[],
+  entityType?: string
 ): ValidationResult {
   const errors: string[] = [];
   const words = card.summary.split(/\s+/).filter(Boolean).length;
@@ -145,6 +146,31 @@ export function validateCard(
 
   if (FORBIDDEN_AI_PHRASES.some(phrase => card.summary.toLowerCase().includes(phrase))) {
     errors.push(`Card ${index + 1} contains forbidden AI phrases.`);
+  }
+
+  // Ontology specific validation
+  if (entityType) {
+    if (entityType === "Movie" || entityType === "TV Series") {
+      if (lowerCardSummary.includes("long before the movie") || lowerCardSummary.includes("long before the film")) {
+        errors.push(`Card ${index + 1} uses forbidden historical preamble: "Long before the..."`);
+      }
+    } else {
+      if (lowerCardSummary.includes("protagonist") || lowerCardSummary.includes("character arc") || lowerCardSummary.includes("plotline")) {
+        errors.push(`Card ${index + 1} contains narrative terms like "protagonist" but is not a creative entity.`);
+      }
+    }
+
+    if (entityType !== "Country" && entityType !== "City") {
+      if (lowerCardSummary.includes("geopolitical landscape") || lowerCardSummary.includes("bordering nations")) {
+        errors.push(`Card ${index + 1} contains geopolitical terms but is not a country or city.`);
+      }
+    }
+
+    if (entityType !== "Person" && entityType !== "Musical Artist") {
+      if (lowerCardSummary.includes("early childhood") || lowerCardSummary.includes("biographical trajectory") || lowerCardSummary.includes("his early life") || lowerCardSummary.includes("her early life")) {
+        errors.push(`Card ${index + 1} contains biographical personal terms but is not a biography.`);
+      }
+    }
   }
 
   // Anchor validation

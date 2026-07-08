@@ -165,7 +165,7 @@ export async function POST(request: Request) {
         resultCards.push(card);
       }
     } else {
-      const fallbacks = getFallbackCards(knowledge.title);
+      const fallbacks = getFallbackCards(knowledge.common.title);
       for (let i = 0; i < 5; i++) {
         resultCards.push(fallbacks[i]);
       }
@@ -176,54 +176,61 @@ export async function POST(request: Request) {
 
     // Map structuredFacts and classification for curateRelatedExploration to remain fully backwards compatible
     const mappedStructuredFacts = {
-      title: knowledge.title,
-      subtitle: knowledge.description,
-      leadParagraph: knowledge.description,
-      categories: [knowledge.category],
-      majorSections: knowledge.sourceSections.map((s) => s.title),
-      relatedArticles: knowledge.relatedTopics,
-      importantDates: knowledge.dates,
-      extractSummary: knowledge.summaryFacts.join("\n"),
-      statistics: knowledge.numbers,
-      keyPeople: knowledge.people,
-      locations: knowledge.places,
-      organizations: knowledge.organizations,
-    };
-
-    const mappedClassification = {
-      category: knowledge.category,
-      subcategory: "General",
-      confidence: 1.0,
-      readerIntent: "",
-      editorialStyle: "",
+      title: knowledge.common.title,
+      subtitle: knowledge.common.description,
+      leadParagraph: knowledge.common.description,
+      categories: [knowledge.common.category],
+      majorSections: knowledge.common.sourceSections.map((s) => s.title),
+      relatedArticles: knowledge.common.relatedTopics,
+      importantDates: knowledge.common.timeline.map((t) => `${t.year}: ${t.event}`),
+      extractSummary: knowledge.common.summaryFacts.join("\n"),
+      statistics: (knowledge.common.summaryFacts || []).filter((s) => /\d/.test(s)),
+      keyPeople: knowledge.personData?.occupation ? [knowledge.common.title] : (knowledge.historyData?.importantPeople || knowledge.movieData?.cast || []),
+      locations: knowledge.historyData?.geography || knowledge.countryData?.bordering || [],
+      organizations: knowledge.companyData?.founder ? [knowledge.common.title] : (knowledge.organizationData?.members || []),
+      
+      // Inject ontology metadata for visual snapshot rendering
+      entityType: knowledge.entityType,
+      ontologyLabels: knowledge.ontologyLabels,
+      movieData: knowledge.movieData,
+      personData: knowledge.personData,
+      technologyData: knowledge.technologyData,
+      countryData: knowledge.countryData,
+      companyData: knowledge.companyData,
+      bookData: knowledge.bookData,
+      scienceData: knowledge.scienceData,
+      organizationData: knowledge.organizationData,
+      historyData: knowledge.historyData,
     };
 
     // Step 11: People Also Explored Ranking
-    const explored = await curateRelatedExploration(topicKey, mappedStructuredFacts, mappedClassification);
+    const explored = await curateRelatedExploration(topicKey, knowledge);
 
     // Step 15: SEO Metadata Builder
-    const seo = buildStage15SEO(knowledge.title, shortSummary, knowledge.category);
+    const seo = buildStage15SEO(knowledge.common.title, shortSummary, knowledge.common.category);
 
     const responseData = {
       article: {
-        title: knowledge.title,
-        description: knowledge.description,
+        title: knowledge.common.title,
+        description: knowledge.common.description,
         extract: articleSource.extract,
         thumbnail: articleSource.thumbnail?.source ?? null,
         url: articleSource.content_urls?.desktop?.page ?? null,
       },
-      topicCategory: knowledge.category,
+      topicCategory: knowledge.common.category,
       topicSubcategory: "General",
+      ontologyLabels: knowledge.ontologyLabels,
+      entityType: knowledge.entityType,
       shortSummary,
       resultCards,
       didYouKnow,
       exploredTopics: explored,
-      timeline: knowledge.timeline,
+      timeline: knowledge.common.timeline,
       seo,
       structuredFacts: mappedStructuredFacts,
-      relatedList: knowledge.relatedTopics,
+      relatedList: knowledge.common.relatedTopics,
       generatedAt: new Date().toISOString(),
-      cacheVersion: "results-v13-knowledge-layer",
+      cacheVersion: "results-v14-ontology-engine",
     };
 
     await setCachedAnalysis(topicKey, responseData);
@@ -233,7 +240,7 @@ export async function POST(request: Request) {
       cacheStatus: "miss",
     });
   } catch (error) {
-    console.error("Analyze route V13 failed:", error);
+    console.error("Analyze route V14 failed:", error);
     return NextResponse.json({ error: "The analysis request failed." }, { status: 500 });
   }
 }
