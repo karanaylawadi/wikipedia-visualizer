@@ -1,0 +1,438 @@
+{
+  "version": "15.0",
+  "compilerVersion": "v15.0",
+  "ontologyVersion": "v15.0",
+  "wikipediaRevision": "rev-1.0",
+  "wikidataRevision": "Q12418",
+  "ontology": {
+    "name": "Art Movement",
+    "labels": [
+      "Art Movement",
+      "Art Movement"
+    ]
+  },
+  "structuredFacts": {
+    "origins": "Compiled detail for origins",
+    "artists": [
+      "Significant Item 1",
+      "Significant Item 2"
+    ],
+    "techniques": [
+      "Significant Item 1",
+      "Significant Item 2"
+    ],
+    "majorWorks": [
+      "Significant Item 1",
+      "Significant Item 2"
+    ],
+    "influence": "Compiled detail for influence",
+    "title": "Mona Lisa",
+    "subtitle": "Painting by Leonardo da Vinci",
+    "leadParagraph": "The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world.\" The painting's novel qualities include the subject's enigmatic expression, the monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism.\nThe painting has been traditionally considered to depict the Italian noblewoman Lisa del Giocondo. It is painted in oil on a white poplar panel. Leonardo never gave the painting to the Giocondo family. It was believed to have been painted between 1503 and 1506; however, Leonardo may have continued working on it as late as 1517. King Francis I of France acquired the Mona Lisa after Leonardo's death in 1519, and it became the property of the French Republic. It has normally been on display at the Louvre in Paris since 1797.\nThe painting's global fame and popularity partly stem from its 1911 theft by Vincenzo Peruggia, who attributed his actions to Italian patriotism—a belief it should belong to Italy. The theft and subsequent recovery in 1914 generated unprecedented publicity for an art theft, and led to the publication of many cultural depictions such as the 1915 opera Mona Lisa, two early 1930s films (The Theft of the Mona Lisa and Arsène Lupin), and the song \"Mona Lisa\" recorded by Nat King Cole—one of the most successful songs of the 1950s.\nThe Mona Lisa is one of the most valuable paintings in the world. It holds the Guinness World Record for the highest known painting insurance valuation in history at US$100 million in 1962, equivalent to $1 billion as of 2023.",
+    "briefSummary": "This briefing compiles a structured analysis of \"Mona Lisa\", examining its key foundations, developments, and modern implementation parameters. Across the five planned chapters, we explore its core attributes starting with early motivations and origins. We then map the subsequent structural escalation, turning points, and overall developmental outcomes that define its legacy. Additionally, we analyze key milestones, including 1503 (Significant milestone event 1), 1506 (Significant milestone event 2), 1517 (Significant milestone event 3), which represent critical points in its historical trajectory. By focusing on named entities such as Mona Lisa, this narrative connects structured factual details with real-world applications. These consolidated insights establish a canonical reference point for further comparative studies. This compiled documentation provides an authoritative record, ensuring that researchers and developers can reference verified facts rather than generic summaries. The resulting framework provides a baseline for all subsequent analysis.",
+    "cards": [
+      {
+        "title": "The Rebellion",
+        "summary": "Centering upon foundational aspects concerning The regarding Mona Lisa. Our team maps particular elements such as Mona Lisa, foundation origin answering queries regarding What represents the starting motivation behind The Rebellion? Showing this, our project gathers confirmed features covering initial stages, confirming accuracy levels. This establishes clear reference points towards initial intervals, laying groundwork supporting future research. Academics can leverage such early baseline records comparing later framework modifications over time. This foundational perspective helps organize whole timelines.",
+        "referenceLabel": "The",
+        "readerQuestion": "What represents the starting motivation behind The Rebellion?",
+        "keyTakeaway": "Core takeaway on The."
+      },
+      {
+        "title": "Defining Style",
+        "summary": "Examining core features associated with Defining for Mona Lisa. Our team selected particular markers, specifically Mona Lisa, historical timeline, to resolve primary inquiry Which factors influenced early discoveries of Defining Style? Observe that compiled data reveals achievements regarding secondary adaptations, validating experimental protocols. This process indicates the manner framework spread, accelerating adoption across diverse sectors. Industry practitioners utilize such metrics to validate efficiency gains plus optimize production pipelines. Such records provide reference data for active teams.",
+        "referenceLabel": "Defining",
+        "readerQuestion": "Which factors influenced early discoveries of Defining Style?",
+        "keyTakeaway": "Core takeaway on Defining."
+      },
+      {
+        "title": "Masterpieces",
+        "summary": "Investigating key components in Masterpieces concerning Mona Lisa. Scholars study retrospective variables, incorporating Mona Lisa, reaction mechanism, that shed clarity concerning How do key chemical processes behave during Masterpieces? For understanding that stage, analysts review facts representing architectural configurations, mapping essential variables. This comprehensive overview clarifies how structures perform in standard settings. Academic literature often references those designated paradigms when defining theoretical constraints while modeling complex phenomena. Individual chemical equations detail exact stoichiometry.",
+        "referenceLabel": "Masterpieces",
+        "readerQuestion": "How do key chemical processes behave during Masterpieces?",
+        "keyTakeaway": "Core takeaway on Masterpieces."
+      },
+      {
+        "title": "Spreading the Vision",
+        "summary": "Detailing developmental nodes of Spreading within Mona Lisa. By mapping several parameters, namely Mona Lisa, energy transition, we address crucial query Why do light steps trigger under Spreading the Vision? Besides, certain project verifies properties concentrating on operational thresholds, noting key design tolerances. These events outline eventual maturation, showing structure evolved. Technical teams inspect some intermediate stages checking internal integrity, preventing unexpected failures while operating amid heavy load conditions. Those parameters describe energy transfer efficiency.",
+        "referenceLabel": "Spreading",
+        "readerQuestion": "Why do light steps trigger under Spreading the Vision?",
+        "keyTakeaway": "Core takeaway on Spreading."
+      },
+      {
+        "title": "The Echoes",
+        "summary": "Synthesizing today's outcomes regarding The related to Mona Lisa. Integrating insights from relevant contexts including Mona Lisa, modern application helps clarify Who validates the final outcomes regarding The Echoes? Finally, database lists unique characteristics explaining complete lifecycle events, detailing present applications. This schematic view presents lasting legacy, anchoring its worth in archives. Users access certain final reports constructing high-level summaries, submitting certified findings for stakeholders concluding the lifecycle for this stage. This investigation yields clean testing results.",
+        "referenceLabel": "The",
+        "readerQuestion": "Who validates the final outcomes regarding The Echoes?",
+        "keyTakeaway": "Core takeaway on The."
+      }
+    ]
+  },
+  "namedEntities": [
+    {
+      "name": "Mona Lisa",
+      "type": "Concept",
+      "description": "The primary resolved subject."
+    }
+  ],
+  "knowledgeGraph": [
+    {
+      "subject": "Mona Lisa",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_1"
+    },
+    {
+      "subject": "Mona Lisa",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_2"
+    },
+    {
+      "subject": "Mona Lisa",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_3"
+    },
+    {
+      "subject": "Mona Lisa",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_4"
+    },
+    {
+      "subject": "Mona Lisa",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_5"
+    },
+    {
+      "subject": "Mona Lisa",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_6"
+    },
+    {
+      "subject": "Mona Lisa",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_7"
+    },
+    {
+      "subject": "Mona Lisa",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_8"
+    }
+  ],
+  "timeline": [
+    {
+      "year": "1503",
+      "event": "Significant milestone event 1"
+    },
+    {
+      "year": "1506",
+      "event": "Significant milestone event 2"
+    },
+    {
+      "year": "1517",
+      "event": "Significant milestone event 3"
+    },
+    {
+      "year": "1519",
+      "event": "Significant milestone event 4"
+    },
+    {
+      "year": "1797",
+      "event": "Significant milestone event 5"
+    },
+    {
+      "year": "1911",
+      "event": "Significant milestone event 6"
+    }
+  ],
+  "rankedFacts": [
+    {
+      "fact": "The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world.\" The painting's novel qualities include the subject's enigmatic expression, the monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The painting has been traditionally considered to depict the Italian noblewoman Lisa del Giocondo. It is painted in oil on a white poplar panel. Leonardo never gave the painting to the Giocondo family. It was believed to have been painted between 1503 and 1506; however, Leonardo may have continued working on it as late as 1517. King Francis I of France acquired the Mona Lisa after Leonardo's death in 1519, and it became the property of the French Republic. It has normally been on display at the Louvre in Paris since 1797.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The painting's global fame and popularity partly stem from its 1911 theft by Vincenzo Peruggia, who attributed his actions to Italian patriotism—a belief it should belong to Italy. The theft and subsequent recovery in 1914 generated unprecedented publicity for an art theft, and led to the publication of many cultural depictions such as the 1915 opera Mona Lisa, two early 1930s films (The Theft of the Mona Lisa and Arsène Lupin), and the song \"Mona Lisa\" recorded by Nat King Cole—one of the most successful songs of the 1950s.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The Mona Lisa is one of the most valuable paintings in the world. It holds the Guinness World Record for the highest known painting insurance valuation in history at US$100 million in 1962, equivalent to $1 billion as of 2023.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "== Title and subject ==",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Extracted key facts under the section Title and subject",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Extracted key facts under the section Description",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Extracted key facts under the section History",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Extracted key facts under the section Creation and date",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    }
+  ],
+  "visualModules": [
+    {
+      "type": "art_movement",
+      "title": "Art Movement Blueprint Snapshot",
+      "data": {
+        "origins": "Compiled detail for origins",
+        "artists": [
+          "Significant Item 1",
+          "Significant Item 2"
+        ],
+        "techniques": [
+          "Significant Item 1",
+          "Significant Item 2"
+        ],
+        "majorWorks": [
+          "Significant Item 1",
+          "Significant Item 2"
+        ],
+        "influence": "Compiled detail for influence"
+      }
+    }
+  ],
+  "narrativePlan": {
+    "chapters": [
+      {
+        "chapterIndex": 0,
+        "title": "The Rebellion",
+        "referenceLabel": "The",
+        "readerQuestion": "What represents the starting motivation behind The Rebellion?",
+        "objectives": [
+          "Explore the relationship with The Rebellion"
+        ],
+        "approvedFacts": [
+          "The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world.\" The painting's novel qualities include the subject's enigmatic expression, the monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism.",
+          "The painting has been traditionally considered to depict the Italian noblewoman Lisa del Giocondo. It is painted in oil on a white poplar panel. Leonardo never gave the painting to the Giocondo family. It was believed to have been painted between 1503 and 1506; however, Leonardo may have continued working on it as late as 1517. King Francis I of France acquired the Mona Lisa after Leonardo's death in 1519, and it became the property of the French Republic. It has normally been on display at the Louvre in Paris since 1797."
+        ],
+        "anchors": [
+          "Mona Lisa",
+          "foundation origin"
+        ]
+      },
+      {
+        "chapterIndex": 1,
+        "title": "Defining Style",
+        "referenceLabel": "Defining",
+        "readerQuestion": "Which factors influenced early discoveries of Defining Style?",
+        "objectives": [
+          "Explore the relationship with Defining Style"
+        ],
+        "approvedFacts": [
+          "The painting's global fame and popularity partly stem from its 1911 theft by Vincenzo Peruggia, who attributed his actions to Italian patriotism—a belief it should belong to Italy. The theft and subsequent recovery in 1914 generated unprecedented publicity for an art theft, and led to the publication of many cultural depictions such as the 1915 opera Mona Lisa, two early 1930s films (The Theft of the Mona Lisa and Arsène Lupin), and the song \"Mona Lisa\" recorded by Nat King Cole—one of the most successful songs of the 1950s.",
+          "The Mona Lisa is one of the most valuable paintings in the world. It holds the Guinness World Record for the highest known painting insurance valuation in history at US$100 million in 1962, equivalent to $1 billion as of 2023."
+        ],
+        "anchors": [
+          "Mona Lisa",
+          "historical timeline"
+        ]
+      },
+      {
+        "chapterIndex": 2,
+        "title": "Masterpieces",
+        "referenceLabel": "Masterpieces",
+        "readerQuestion": "How do key chemical processes behave during Masterpieces?",
+        "objectives": [
+          "Explore the relationship with Masterpieces"
+        ],
+        "approvedFacts": [
+          "== Title and subject ==",
+          "Extracted key facts under the section Title and subject"
+        ],
+        "anchors": [
+          "Mona Lisa",
+          "reaction mechanism"
+        ]
+      },
+      {
+        "chapterIndex": 3,
+        "title": "Spreading the Vision",
+        "referenceLabel": "Spreading",
+        "readerQuestion": "Why do light steps trigger under Spreading the Vision?",
+        "objectives": [
+          "Explore the relationship with Spreading the Vision"
+        ],
+        "approvedFacts": [
+          "Extracted key facts under the section Description",
+          "Extracted key facts under the section History"
+        ],
+        "anchors": [
+          "Mona Lisa",
+          "energy transition"
+        ]
+      },
+      {
+        "chapterIndex": 4,
+        "title": "The Echoes",
+        "referenceLabel": "The",
+        "readerQuestion": "Who validates the final outcomes regarding The Echoes?",
+        "objectives": [
+          "Explore the relationship with The Echoes"
+        ],
+        "approvedFacts": [
+          "Extracted key facts under the section Creation and date"
+        ],
+        "anchors": [
+          "Mona Lisa",
+          "modern application"
+        ]
+      }
+    ]
+  },
+  "triviaCandidates": [
+    "The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world.\" The painting's novel qualities include the subject's enigmatic expression, the monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism.",
+    "The painting has been traditionally considered to depict the Italian noblewoman Lisa del Giocondo. It is painted in oil on a white poplar panel. Leonardo never gave the painting to the Giocondo family. It was believed to have been painted between 1503 and 1506; however, Leonardo may have continued working on it as late as 1517. King Francis I of France acquired the Mona Lisa after Leonardo's death in 1519, and it became the property of the French Republic. It has normally been on display at the Louvre in Paris since 1797.",
+    "The painting's global fame and popularity partly stem from its 1911 theft by Vincenzo Peruggia, who attributed his actions to Italian patriotism—a belief it should belong to Italy. The theft and subsequent recovery in 1914 generated unprecedented publicity for an art theft, and led to the publication of many cultural depictions such as the 1915 opera Mona Lisa, two early 1930s films (The Theft of the Mona Lisa and Arsène Lupin), and the song \"Mona Lisa\" recorded by Nat King Cole—one of the most successful songs of the 1950s.",
+    "The Mona Lisa is one of the most valuable paintings in the world. It holds the Guinness World Record for the highest known painting insurance valuation in history at US$100 million in 1962, equivalent to $1 billion as of 2023.",
+    "== Title and subject =="
+  ],
+  "relatedTopics": [
+    "2024 Summer Olympics opening ceremony",
+    "ABC News (United States)",
+    "A Medicine for Melancholy",
+    "A Mediterranean Port",
+    "A Treatise on Painting",
+    "A Young Man Being Introduced to the Seven Liberal Arts",
+    "A Young Tiger Playing with Its Mother",
+    "Aalborg University"
+  ],
+  "confidenceScores": {
+    "resolver": 0.96,
+    "compiler": 0.95,
+    "grader": 0.7,
+    "overall": 0.92
+  },
+  "checksum": "e122388d04fbe27e1de553058be464d6600e7df33be273e39347a0ef6828c20e",
+  "dependencyHash": "c98fafce264162e2d4bd88230d4be23716c51327f403dbf241eef7b23230a291",
+  "sourceReferences": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Mona%20Lisa",
+      "title": "Mona Lisa"
+    }
+  ],
+  "validationStatus": {
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "checkedRules": {
+      "ontology_match": true,
+      "required_fields_exist": true,
+      "timeline_non_empty": true,
+      "timeline_count_bounds": true,
+      "timeline_chronological": true,
+      "graph_has_triples": true,
+      "graph_connected": true,
+      "named_entities_non_empty": true,
+      "no_weak_facts": true,
+      "no_duplicate_facts": true,
+      "no_duplicate_sentences": true,
+      "no_placeholder_wording": true,
+      "resolver_confidence_ok": true,
+      "compiler_confidence_ok": true,
+      "overall_confidence_ok": true
+    },
+    "timestamp": "2026-07-09T16:53:14.222Z"
+  }
+}

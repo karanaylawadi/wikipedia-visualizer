@@ -85,7 +85,11 @@ export async function curateRelatedExploration(
   let rawExplored: RelatedTopic[] = [];
   try {
     const detailsUrl = `https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages|description|categories&titles=${encodeURIComponent(initialList.join("|"))}&piprop=thumbnail&pithumbsize=120&origin=*`;
-    const detailsRes = await fetch(detailsUrl);
+    const detailsRes = await fetch(detailsUrl, {
+      headers: {
+        "User-Agent": "WikipediaVisualizer/1.0 (contact: info@visualizer.wiki)"
+      }
+    });
     
     if (detailsRes.ok) {
       const detailsData = await detailsRes.json();

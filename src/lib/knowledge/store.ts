@@ -1,0 +1,65 @@
+import fs from "fs";
+import path from "path";
+import crypto from "crypto";
+import type { KnowledgeArtifact } from "@/types/knowledge";
+import { createCacheKey } from "../editorial/cache";
+
+const BASE_DIR = path.join(process.cwd(), "knowledge");
+export const COMPILER_VERSION = "v15.0";
+export const ONTOLOGY_VERSION = "v15.0";
+
+// Normalize ontology name to directory name (e.g. "Historical Event" -> "historical_event")
+function getOntologyDirName(ontologyName: string): string {
+  return ontologyName.toLowerCase().replace(/\s+/g, "_");
+}
+
+export function getArtifactPath(ontologyName: string, topicTitle: string): string {
+  const dirName = getOntologyDirName(ontologyName);
+  const slug = createCacheKey(topicTitle);
+  return path.join(BASE_DIR, dirName, `${slug}.json`);
+}
+
+export function loadLocalArtifact(ontologyName: string, topicTitle: string): KnowledgeArtifact | null {
+  const filePath = getArtifactPath(ontologyName, topicTitle);
+  if (!fs.existsSync(filePath)) {
+    return null;
+  }
+  try {
+    const data = fs.readFileSync(filePath, "utf-8");
+    return JSON.parse(data) as KnowledgeArtifact;
+  } catch (error) {
+    console.warn(`[Store] Failed to load local artifact at ${filePath}:`, error);
+    return null;
+  }
+}
+
+export function saveLocalArtifact(artifact: KnowledgeArtifact): void {
+  const filePath = getArtifactPath(artifact.ontology.name, artifact.ontology.labels[1] || artifact.structuredFacts.title || "general");
+  const dirPath = path.dirname(filePath);
+  if (!fs.existsSync(dirPath)) {
+    fs.mkdirSync(dirPath, { recursive: true });
+  }
+  try {
+    const data = JSON.stringify(artifact, null, 2);
+    fs.writeFileSync(filePath, data, "utf-8");
+    console.log(`[Store] Successfully saved canonical knowledge artifact at: ${filePath}`);
+  } catch (error) {
+    console.warn(`[Store] Failed to save local artifact to ${filePath}:`, error);
+  }
+}
+
+export function calculateChecksum(data: any): string {
+  const hash = crypto.createHash("sha256");
+  hash.update(typeof data === "string" ? data : JSON.stringify(data));
+  return hash.digest("hex");
+}
+
+export function calculateDependencyHash(inputs: {
+  compilerVersion: string;
+  ontologyVersion: string;
+  wikipediaRevision: string;
+  sourceTextChecksum: string;
+}): string {
+  const combined = `${inputs.compilerVersion}:${inputs.ontologyVersion}:${inputs.wikipediaRevision}:${inputs.sourceTextChecksum}`;
+  return crypto.createHash("sha256").update(combined).digest("hex");
+}

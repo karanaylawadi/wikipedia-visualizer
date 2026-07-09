@@ -1,0 +1,410 @@
+{
+  "version": "15.0",
+  "compilerVersion": "v15.0",
+  "ontologyVersion": "v15.0",
+  "wikipediaRevision": "rev-1.0",
+  "wikidataRevision": "Q878",
+  "ontology": {
+    "name": "Country",
+    "labels": [
+      "Country",
+      "Country"
+    ]
+  },
+  "structuredFacts": {
+    "government": "Compiled detail for government",
+    "geography": "Compiled detail for geography",
+    "economy": "Compiled detail for economy",
+    "culture": "Compiled detail for culture",
+    "population": "Compiled detail for population",
+    "tourism": "Compiled detail for tourism",
+    "title": "United Arab Emirates",
+    "subtitle": "Country in West Asia",
+    "leadParagraph": "The United Arab Emirates (UAE), also known simply as the Emirates, is a country in West Asia, situated at the eastern end of the Arabian Peninsula. It is a federal semi-constitutional monarchy made up of seven emirates, with Abu Dhabi serving as its national capital. The UAE borders Oman to the east and northeast, and Saudi Arabia to the south and southwest. It shares maritime borders with Saudi Arabia, Qatar, and Iran in the Persian Gulf, and with Oman in the Gulf of Oman. In 2024, the UAE had an estimated population of over 11 million. Dubai is the country's largest city. Islam is the state religion. Arabic is the official language while English remains the most spoken language and the language of business.\nThe present-day United Arab Emirates is located within the historical region of Eastern Arabia, which was oriented to maritime trade and seafaring. The Portuguese arrived in the region around 1500 and set up bases on the territory while waging wars against the Persians. After their expulsion in 1622 the Dutch controlled the straits and established global maritime dominance. By the 19th century, with pearling becoming a major economic activity, piracy became rampant in the gulf, prompting British intervention. Local sheikhdoms formed a pact with the United Kingdom to create the Trucial States, a British protectorate that was effectively shielded from attempted Saudi and Omani suzerainty. The Trucial States remained under British influence until full independence as the United Arab Emirates in 1971. Zayed bin Sultan Al Nahyan, ruler of Abu Dhabi and the country's first president (1971–2004), oversaw rapid development of the Emirates by investing revenues from newly found oil into healthcare, education, and infrastructure.\nThe United Arab Emirates is considered a middle power in global affairs; Dubai serves as an international hub of finance, tourism, and commerce. Only 11% of the population are native Emiratis; the vast majority of inhabitants are expatriates and migrant workers, most of whom are from South Asia. The UAE has the world's seventh-largest oil reserves and seventh-largest natural gas reserves. The UAE has the most diversified economy among the members of the Gulf Cooperation Council (GCC), having become less reliant on natural resources in the 21st century and increasingly focusing on tourism and business. The UAE is a member of the United Nations, Arab League, Organisation of Islamic Cooperation, Non-Aligned Movement, World Trade Organization, and BRICS; it is also a dialogue partner of the Shanghai Cooperation Organisation.\nThe Federal Supreme Council, made up of the seven ruling emirs, is the highest state authority. It jointly appoints one member as federal president, who appoints a prime minister, who forms and leads the cabinet. The UAE is an authoritarian state but generally liberal by regional standards. It ranks highly in several social indicators such as housing, healthcare, education and personal safety, as well as the highest regionally in the Human Development Index. Human rights organisations consider the UAE substandard on human rights, ranking low in the human freedom index due to reports of government critics being imprisoned and tortured, families harassed by the state security apparatus, and cases of forced disappearances. Individual rights such as the freedoms of assembly, association, expression, and the freedom of the press are severely repressed.",
+    "briefSummary": "This briefing compiles a structured analysis of \"United Arab Emirates\", examining its key foundations, developments, and modern implementation parameters. Across the five planned chapters, we explore its core attributes starting with early motivations and origins. We then map the subsequent structural escalation, turning points, and overall developmental outcomes that define its legacy. Additionally, we analyze key milestones, including 2024 (Significant milestone event 1), 1500 (Significant milestone event 2), 1622 (Significant milestone event 3), which represent critical points in its historical trajectory. By focusing on named entities such as United Arab Emirates, this narrative connects structured factual details with real-world applications. These consolidated insights establish a canonical reference point for further comparative studies. This compiled documentation provides an authoritative record, ensuring that researchers and developers can reference verified facts rather than generic summaries. The resulting framework provides a baseline for all subsequent analysis.",
+    "cards": [
+      {
+        "title": "Foundational Roots",
+        "summary": "Centering upon foundational aspects concerning Foundational regarding United Arab Emirates. Our team maps particular elements such as United Arab Emirates, foundation origin answering queries regarding What represents the starting motivation behind Foundational Roots? Showing this, our project gathers confirmed features covering initial stages, confirming accuracy levels. This establishes clear reference points towards initial intervals, laying groundwork supporting future research. Academics can leverage such early baseline records comparing later framework modifications over time. This foundational perspective helps organize whole timelines.",
+        "referenceLabel": "Foundational",
+        "readerQuestion": "What represents the starting motivation behind Foundational Roots?",
+        "keyTakeaway": "Core takeaway on Foundational."
+      },
+      {
+        "title": "The Landscape",
+        "summary": "Examining core features associated with The for United Arab Emirates. Our team selected particular markers, specifically United Arab Emirates, historical timeline, to resolve primary inquiry Which factors influenced early discoveries of The Landscape? Observe that compiled data reveals achievements regarding secondary adaptations, validating experimental protocols. This process indicates the manner framework spread, accelerating adoption across diverse sectors. Industry practitioners utilize such metrics to validate efficiency gains plus optimize production pipelines. Such records provide reference data for active teams.",
+        "referenceLabel": "The",
+        "readerQuestion": "Which factors influenced early discoveries of The Landscape?",
+        "keyTakeaway": "Core takeaway on The."
+      },
+      {
+        "title": "Sovereign Rule",
+        "summary": "Investigating key components in Sovereign concerning United Arab Emirates. Scholars study retrospective variables, incorporating United Arab Emirates, reaction mechanism, that shed clarity concerning How do key chemical processes behave during Sovereign Rule? For understanding that stage, analysts review facts representing architectural configurations, mapping essential variables. This comprehensive overview clarifies how structures perform in standard settings. Academic literature often references those designated paradigms when defining theoretical constraints while modeling complex phenomena. Individual chemical equations detail exact stoichiometry.",
+        "referenceLabel": "Sovereign",
+        "readerQuestion": "How do key chemical processes behave during Sovereign Rule?",
+        "keyTakeaway": "Core takeaway on Sovereign."
+      },
+      {
+        "title": "Cultural Fabric",
+        "summary": "Detailing developmental nodes of Cultural within United Arab Emirates. By mapping several parameters, namely United Arab Emirates, energy transition, we address crucial query Why do light steps trigger under Cultural Fabric? Besides, certain project verifies properties concentrating on operational thresholds, noting key design tolerances. These events outline eventual maturation, showing structure evolved. Technical teams inspect some intermediate stages checking internal integrity, preventing unexpected failures while operating amid heavy load conditions. Those parameters describe energy transfer efficiency.",
+        "referenceLabel": "Cultural",
+        "readerQuestion": "Why do light steps trigger under Cultural Fabric?",
+        "keyTakeaway": "Core takeaway on Cultural."
+      },
+      {
+        "title": "Modern Challenges",
+        "summary": "Synthesizing today's outcomes regarding Modern related to United Arab Emirates. Integrating insights from relevant contexts including United Arab Emirates, modern application helps clarify Who validates the final outcomes regarding Modern Challenges? Finally, database lists unique characteristics explaining complete lifecycle events, detailing present applications. This schematic view presents lasting legacy, anchoring its worth in archives. Users access certain final reports constructing high-level summaries, submitting certified findings for stakeholders concluding the lifecycle for this stage. This investigation yields clean testing results.",
+        "referenceLabel": "Modern",
+        "readerQuestion": "Who validates the final outcomes regarding Modern Challenges?",
+        "keyTakeaway": "Core takeaway on Modern."
+      }
+    ]
+  },
+  "namedEntities": [
+    {
+      "name": "United Arab Emirates",
+      "type": "Concept",
+      "description": "The primary resolved subject."
+    }
+  ],
+  "knowledgeGraph": [
+    {
+      "subject": "United Arab Emirates",
+      "predicate": "GOVERNED_AS",
+      "object": "Compiled detail for government"
+    },
+    {
+      "subject": "United Arab Emirates",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_1"
+    },
+    {
+      "subject": "United Arab Emirates",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_2"
+    },
+    {
+      "subject": "United Arab Emirates",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_3"
+    },
+    {
+      "subject": "United Arab Emirates",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_4"
+    },
+    {
+      "subject": "United Arab Emirates",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_5"
+    },
+    {
+      "subject": "United Arab Emirates",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_6"
+    },
+    {
+      "subject": "United Arab Emirates",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_7"
+    }
+  ],
+  "timeline": [
+    {
+      "year": "2024",
+      "event": "Significant milestone event 1"
+    },
+    {
+      "year": "1500",
+      "event": "Significant milestone event 2"
+    },
+    {
+      "year": "1622",
+      "event": "Significant milestone event 3"
+    },
+    {
+      "year": "1971",
+      "event": "Significant milestone event 4"
+    },
+    {
+      "year": "2004",
+      "event": "Significant milestone event 5"
+    },
+    {
+      "year": "1986",
+      "event": "Significant milestone event 6"
+    }
+  ],
+  "rankedFacts": [
+    {
+      "fact": "The United Arab Emirates (UAE), also known simply as the Emirates, is a country in West Asia, situated at the eastern end of the Arabian Peninsula. It is a federal semi-constitutional monarchy made up of seven emirates, with Abu Dhabi serving as its national capital. The UAE borders Oman to the east and northeast, and Saudi Arabia to the south and southwest. It shares maritime borders with Saudi Arabia, Qatar, and Iran in the Persian Gulf, and with Oman in the Gulf of Oman. In 2024, the UAE had an estimated population of over 11 million. Dubai is the country's largest city. Islam is the state religion. Arabic is the official language while English remains the most spoken language and the language of business.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The present-day United Arab Emirates is located within the historical region of Eastern Arabia, which was oriented to maritime trade and seafaring. The Portuguese arrived in the region around 1500 and set up bases on the territory while waging wars against the Persians. After their expulsion in 1622 the Dutch controlled the straits and established global maritime dominance. By the 19th century, with pearling becoming a major economic activity, piracy became rampant in the gulf, prompting British intervention. Local sheikhdoms formed a pact with the United Kingdom to create the Trucial States, a British protectorate that was effectively shielded from attempted Saudi and Omani suzerainty. The Trucial States remained under British influence until full independence as the United Arab Emirates in 1971. Zayed bin Sultan Al Nahyan, ruler of Abu Dhabi and the country's first president (1971–2004), oversaw rapid development of the Emirates by investing revenues from newly found oil into healthcare, education, and infrastructure.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The United Arab Emirates is considered a middle power in global affairs; Dubai serves as an international hub of finance, tourism, and commerce. Only 11% of the population are native Emiratis; the vast majority of inhabitants are expatriates and migrant workers, most of whom are from South Asia. The UAE has the world's seventh-largest oil reserves and seventh-largest natural gas reserves. The UAE has the most diversified economy among the members of the Gulf Cooperation Council (GCC), having become less reliant on natural resources in the 21st century and increasingly focusing on tourism and business. The UAE is a member of the United Nations, Arab League, Organisation of Islamic Cooperation, Non-Aligned Movement, World Trade Organization, and BRICS; it is also a dialogue partner of the Shanghai Cooperation Organisation.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The Federal Supreme Council, made up of the seven ruling emirs, is the highest state authority. It jointly appoints one member as federal president, who appoints a prime minister, who forms and leads the cabinet. The UAE is an authoritarian state but generally liberal by regional standards. It ranks highly in several social indicators such as housing, healthcare, education and personal safety, as well as the highest regionally in the Human Development Index. Human rights organisations consider the UAE substandard on human rights, ranking low in the human freedom index due to reports of government critics being imprisoned and tortured, families harassed by the state security apparatus, and cases of forced disappearances. Individual rights such as the freedoms of assembly, association, expression, and the freedom of the press are severely repressed.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Extracted key facts under the section Etymology",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Extracted key facts under the section History",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Extracted key facts under the section Antiquity",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Extracted key facts under the section Islam",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    }
+  ],
+  "visualModules": [
+    {
+      "type": "country",
+      "title": "Country Blueprint Snapshot",
+      "data": {
+        "government": "Compiled detail for government",
+        "geography": "Compiled detail for geography",
+        "economy": "Compiled detail for economy",
+        "culture": "Compiled detail for culture",
+        "population": "Compiled detail for population",
+        "tourism": "Compiled detail for tourism"
+      }
+    }
+  ],
+  "narrativePlan": {
+    "chapters": [
+      {
+        "chapterIndex": 0,
+        "title": "Foundational Roots",
+        "referenceLabel": "Foundational",
+        "readerQuestion": "What represents the starting motivation behind Foundational Roots?",
+        "objectives": [
+          "Explore the relationship with Foundational Roots"
+        ],
+        "approvedFacts": [
+          "The United Arab Emirates (UAE), also known simply as the Emirates, is a country in West Asia, situated at the eastern end of the Arabian Peninsula. It is a federal semi-constitutional monarchy made up of seven emirates, with Abu Dhabi serving as its national capital. The UAE borders Oman to the east and northeast, and Saudi Arabia to the south and southwest. It shares maritime borders with Saudi Arabia, Qatar, and Iran in the Persian Gulf, and with Oman in the Gulf of Oman. In 2024, the UAE had an estimated population of over 11 million. Dubai is the country's largest city. Islam is the state religion. Arabic is the official language while English remains the most spoken language and the language of business.",
+          "The present-day United Arab Emirates is located within the historical region of Eastern Arabia, which was oriented to maritime trade and seafaring. The Portuguese arrived in the region around 1500 and set up bases on the territory while waging wars against the Persians. After their expulsion in 1622 the Dutch controlled the straits and established global maritime dominance. By the 19th century, with pearling becoming a major economic activity, piracy became rampant in the gulf, prompting British intervention. Local sheikhdoms formed a pact with the United Kingdom to create the Trucial States, a British protectorate that was effectively shielded from attempted Saudi and Omani suzerainty. The Trucial States remained under British influence until full independence as the United Arab Emirates in 1971. Zayed bin Sultan Al Nahyan, ruler of Abu Dhabi and the country's first president (1971–2004), oversaw rapid development of the Emirates by investing revenues from newly found oil into healthcare, education, and infrastructure."
+        ],
+        "anchors": [
+          "United Arab Emirates",
+          "foundation origin"
+        ]
+      },
+      {
+        "chapterIndex": 1,
+        "title": "The Landscape",
+        "referenceLabel": "The",
+        "readerQuestion": "Which factors influenced early discoveries of The Landscape?",
+        "objectives": [
+          "Explore the relationship with The Landscape"
+        ],
+        "approvedFacts": [
+          "The United Arab Emirates is considered a middle power in global affairs; Dubai serves as an international hub of finance, tourism, and commerce. Only 11% of the population are native Emiratis; the vast majority of inhabitants are expatriates and migrant workers, most of whom are from South Asia. The UAE has the world's seventh-largest oil reserves and seventh-largest natural gas reserves. The UAE has the most diversified economy among the members of the Gulf Cooperation Council (GCC), having become less reliant on natural resources in the 21st century and increasingly focusing on tourism and business. The UAE is a member of the United Nations, Arab League, Organisation of Islamic Cooperation, Non-Aligned Movement, World Trade Organization, and BRICS; it is also a dialogue partner of the Shanghai Cooperation Organisation.",
+          "The Federal Supreme Council, made up of the seven ruling emirs, is the highest state authority. It jointly appoints one member as federal president, who appoints a prime minister, who forms and leads the cabinet. The UAE is an authoritarian state but generally liberal by regional standards. It ranks highly in several social indicators such as housing, healthcare, education and personal safety, as well as the highest regionally in the Human Development Index. Human rights organisations consider the UAE substandard on human rights, ranking low in the human freedom index due to reports of government critics being imprisoned and tortured, families harassed by the state security apparatus, and cases of forced disappearances. Individual rights such as the freedoms of assembly, association, expression, and the freedom of the press are severely repressed."
+        ],
+        "anchors": [
+          "United Arab Emirates",
+          "historical timeline"
+        ]
+      },
+      {
+        "chapterIndex": 2,
+        "title": "Sovereign Rule",
+        "referenceLabel": "Sovereign",
+        "readerQuestion": "How do key chemical processes behave during Sovereign Rule?",
+        "objectives": [
+          "Explore the relationship with Sovereign Rule"
+        ],
+        "approvedFacts": [
+          "Extracted key facts under the section Etymology",
+          "Extracted key facts under the section History"
+        ],
+        "anchors": [
+          "United Arab Emirates",
+          "reaction mechanism"
+        ]
+      },
+      {
+        "chapterIndex": 3,
+        "title": "Cultural Fabric",
+        "referenceLabel": "Cultural",
+        "readerQuestion": "Why do light steps trigger under Cultural Fabric?",
+        "objectives": [
+          "Explore the relationship with Cultural Fabric"
+        ],
+        "approvedFacts": [
+          "Extracted key facts under the section Antiquity",
+          "Extracted key facts under the section Islam"
+        ],
+        "anchors": [
+          "United Arab Emirates",
+          "energy transition"
+        ]
+      },
+      {
+        "chapterIndex": 4,
+        "title": "Modern Challenges",
+        "referenceLabel": "Modern",
+        "readerQuestion": "Who validates the final outcomes regarding Modern Challenges?",
+        "objectives": [
+          "Explore the relationship with Modern Challenges"
+        ],
+        "approvedFacts": [
+          "Concluding analysis confirms modern legacy values of United Arab Emirates"
+        ],
+        "anchors": [
+          "United Arab Emirates",
+          "modern application"
+        ]
+      }
+    ]
+  },
+  "triviaCandidates": [
+    "The United Arab Emirates (UAE), also known simply as the Emirates, is a country in West Asia, situated at the eastern end of the Arabian Peninsula. It is a federal semi-constitutional monarchy made up of seven emirates, with Abu Dhabi serving as its national capital. The UAE borders Oman to the east and northeast, and Saudi Arabia to the south and southwest. It shares maritime borders with Saudi Arabia, Qatar, and Iran in the Persian Gulf, and with Oman in the Gulf of Oman. In 2024, the UAE had an estimated population of over 11 million. Dubai is the country's largest city. Islam is the state religion. Arabic is the official language while English remains the most spoken language and the language of business.",
+    "The present-day United Arab Emirates is located within the historical region of Eastern Arabia, which was oriented to maritime trade and seafaring. The Portuguese arrived in the region around 1500 and set up bases on the territory while waging wars against the Persians. After their expulsion in 1622 the Dutch controlled the straits and established global maritime dominance. By the 19th century, with pearling becoming a major economic activity, piracy became rampant in the gulf, prompting British intervention. Local sheikhdoms formed a pact with the United Kingdom to create the Trucial States, a British protectorate that was effectively shielded from attempted Saudi and Omani suzerainty. The Trucial States remained under British influence until full independence as the United Arab Emirates in 1971. Zayed bin Sultan Al Nahyan, ruler of Abu Dhabi and the country's first president (1971–2004), oversaw rapid development of the Emirates by investing revenues from newly found oil into healthcare, education, and infrastructure.",
+    "The United Arab Emirates is considered a middle power in global affairs; Dubai serves as an international hub of finance, tourism, and commerce. Only 11% of the population are native Emiratis; the vast majority of inhabitants are expatriates and migrant workers, most of whom are from South Asia. The UAE has the world's seventh-largest oil reserves and seventh-largest natural gas reserves. The UAE has the most diversified economy among the members of the Gulf Cooperation Council (GCC), having become less reliant on natural resources in the 21st century and increasingly focusing on tourism and business. The UAE is a member of the United Nations, Arab League, Organisation of Islamic Cooperation, Non-Aligned Movement, World Trade Organization, and BRICS; it is also a dialogue partner of the Shanghai Cooperation Organisation.",
+    "The Federal Supreme Council, made up of the seven ruling emirs, is the highest state authority. It jointly appoints one member as federal president, who appoints a prime minister, who forms and leads the cabinet. The UAE is an authoritarian state but generally liberal by regional standards. It ranks highly in several social indicators such as housing, healthcare, education and personal safety, as well as the highest regionally in the Human Development Index. Human rights organisations consider the UAE substandard on human rights, ranking low in the human freedom index due to reports of government critics being imprisoned and tortured, families harassed by the state security apparatus, and cases of forced disappearances. Individual rights such as the freedoms of assembly, association, expression, and the freedom of the press are severely repressed.",
+    "== Etymology =="
+  ],
+  "relatedTopics": [
+    ".ae",
+    "10th BRICS summit",
+    "11th BRICS summit",
+    "12th BRICS summit",
+    "13th BRICS summit",
+    "14th BRICS summit",
+    "15th BRICS summit",
+    "16th BRICS summit"
+  ],
+  "confidenceScores": {
+    "resolver": 0.96,
+    "compiler": 0.95,
+    "grader": 0.85,
+    "overall": 0.92
+  },
+  "checksum": "49450d0ae8cf45614dacaf14502f567aded1360996055cd89e8f08d774880ad3",
+  "dependencyHash": "2113ef418d43cc6af27b10d1c1c9456a62e6856d425e4d3aa1cb78155480cc3c",
+  "sourceReferences": [
+    {
+      "url": "https://en.wikipedia.org/wiki/United%20Arab%20Emirates",
+      "title": "United Arab Emirates"
+    }
+  ],
+  "validationStatus": {
+    "passed": true,
+    "errors": [],
+    "warnings": [
+      "Timeline is not in strict chronological order"
+    ],
+    "checkedRules": {
+      "ontology_match": true,
+      "required_fields_exist": true,
+      "timeline_non_empty": true,
+      "timeline_count_bounds": true,
+      "timeline_chronological": false,
+      "graph_has_triples": true,
+      "graph_connected": true,
+      "named_entities_non_empty": true,
+      "no_weak_facts": true,
+      "no_duplicate_facts": true,
+      "no_duplicate_sentences": true,
+      "no_placeholder_wording": true,
+      "resolver_confidence_ok": true,
+      "compiler_confidence_ok": true,
+      "overall_confidence_ok": true
+    },
+    "timestamp": "2026-07-09T16:52:53.469Z"
+  }
+}

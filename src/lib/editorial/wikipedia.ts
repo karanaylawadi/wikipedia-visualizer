@@ -139,7 +139,12 @@ async function getCanonicalWikipediaTitle(query: string) {
   const searchResponse = await fetch(
     `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(
       query
-    )}&format=json&origin=*&srlimit=1`
+    )}&format=json&origin=*&srlimit=1`,
+    {
+      headers: {
+        "User-Agent": "WikipediaVisualizer/1.0 (contact: info@visualizer.wiki)"
+      }
+    }
   );
 
   if (!searchResponse.ok) return null;
@@ -164,7 +169,12 @@ export async function searchWikipedia(
     const response = await fetch(
       `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(
         canonicalTitle
-      )}`
+      )}`,
+      {
+        headers: {
+          "User-Agent": "WikipediaVisualizer/1.0 (contact: info@visualizer.wiki)"
+        }
+      }
     );
 
     if (!response.ok) return null;
@@ -203,12 +213,22 @@ export async function getArticleIntelligence(
       fetch(
         `https://en.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(
           canonicalTitle
-        )}&prop=extracts|links|categories|pageimages|description&explaintext=1&redirects=1&pllimit=100&cllimit=50&format=json&origin=*&plnamespace=0&clshow=!hidden&pithumbsize=1200&piprop=thumbnail`
+        )}&prop=extracts|links|categories|pageimages|description&explaintext=1&redirects=1&pllimit=100&cllimit=50&format=json&origin=*&plnamespace=0&clshow=!hidden&pithumbsize=1200&piprop=thumbnail`,
+        {
+          headers: {
+            "User-Agent": "WikipediaVisualizer/1.0 (contact: info@visualizer.wiki)"
+          }
+        }
       ),
       fetch(
         `https://en.wikipedia.org/w/api.php?action=parse&format=json&origin=*&page=${encodeURIComponent(
           canonicalTitle
-        )}&prop=sections|wikitext`
+        )}&prop=sections|wikitext`,
+        {
+          headers: {
+            "User-Agent": "WikipediaVisualizer/1.0 (contact: info@visualizer.wiki)"
+          }
+        }
       ),
     ]);
 

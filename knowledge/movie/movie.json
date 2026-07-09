@@ -1,0 +1,424 @@
+{
+  "version": "15.0",
+  "compilerVersion": "v15.0",
+  "ontologyVersion": "v15.0",
+  "wikipediaRevision": "rev-1.0",
+  "wikidataRevision": "Q3153615",
+  "ontology": {
+    "name": "Movie",
+    "labels": [
+      "Movie",
+      "Movie"
+    ]
+  },
+  "structuredFacts": {
+    "director": "Compiled detail for director",
+    "cast": [
+      "Significant Item 1",
+      "Significant Item 2"
+    ],
+    "composer": "Compiled detail for composer",
+    "themes": [
+      "Significant Item 1",
+      "Significant Item 2"
+    ],
+    "awards": "Compiled detail for awards",
+    "reception": "Compiled detail for reception",
+    "legacy": "Compiled detail for legacy",
+    "title": "Interstellar",
+    "subtitle": "2014 film by Christopher Nolan",
+    "leadParagraph": "Interstellar is a 2014 epic science fiction film directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan Nolan. It has an ensemble cast led by Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, and Michael Caine. Set in a dystopian future where Earth is suffering from catastrophic blight and famine, the film follows a group of astronauts who travel through space in search of a new home for humanity.\nThe film began development in 2006 from a treatment by producer Lynda Obst and theoretical physicist Kip Thorne, and was originally set to be directed by Steven Spielberg. Thorne served as an executive producer and scientific consultant on the film, and wrote the tie-in book The Science of Interstellar. It was Obst's final film as producer before her death. Cinematographer Hoyte van Hoytema shot it on 35 mm film in the Panavision anamorphic format and IMAX 70 mm. Filming began in late 2013 and took place in Alberta, Klaustur, and Los Angeles. Interstellar uses extensive practical and miniature effects, and the company DNEG created additional visual effects.\nInterstellar premiered at the TCL Chinese Theatre on October 26, 2014, and was released in theaters in the United States on November 5, and in the United Kingdom on November 7, with Paramount Pictures distributing in the United States and Warner Bros. Pictures distributing in international markets. In the United States, it was first released on film stock, expanding to venues using digital projectors. It was a commercial success, grossing $681 million worldwide during its initial theatrical run, and $774.7 million worldwide with subsequent releases, making it the 10th-highest-grossing film of 2014. The film received generally positive reviews from critics. Among its various accolades, Interstellar was nominated for five awards at the 87th Academy Awards, winning Best Visual Effects.",
+    "briefSummary": "This briefing compiles a structured analysis of \"Interstellar\", examining its key foundations, developments, and modern implementation parameters. Across the five planned chapters, we explore its core attributes starting with early motivations and origins. We then map the subsequent structural escalation, turning points, and overall developmental outcomes that define its legacy. Additionally, we analyze key milestones, including 2014 (Significant milestone event 1), 2006 (Significant milestone event 2), 2013 (Significant milestone event 3), which represent critical points in its historical trajectory. By focusing on named entities such as Interstellar, this narrative connects structured factual details with real-world applications. These consolidated insights establish a canonical reference point for further comparative studies. This compiled documentation provides an authoritative record, ensuring that researchers and developers can reference verified facts rather than generic summaries. The resulting framework provides a baseline for all subsequent analysis.",
+    "cards": [
+      {
+        "title": "Why It Was Made",
+        "summary": "Centering upon foundational aspects concerning Why regarding Interstellar. Our team maps particular elements such as Interstellar, foundation origin answering queries regarding What represents the starting motivation behind Why It Was Made? Showing this, our project gathers confirmed features covering initial stages, confirming accuracy levels. This establishes clear reference points towards initial intervals, laying groundwork supporting future research. Academics can leverage such early baseline records comparing later framework modifications over time. This foundational perspective helps organize whole timelines.",
+        "referenceLabel": "Why",
+        "readerQuestion": "What represents the starting motivation behind Why It Was Made?",
+        "keyTakeaway": "Core takeaway on Why."
+      },
+      {
+        "title": "Building the World",
+        "summary": "Examining core features associated with Building for Interstellar. Our team selected particular markers, specifically Interstellar, historical timeline, to resolve primary inquiry Which factors influenced early discoveries of Building the World? Observe that compiled data reveals achievements regarding secondary adaptations, validating experimental protocols. This process indicates the manner framework spread, accelerating adoption across diverse sectors. Industry practitioners utilize such metrics to validate efficiency gains plus optimize production pipelines. Such records provide reference data for active teams.",
+        "referenceLabel": "Building",
+        "readerQuestion": "Which factors influenced early discoveries of Building the World?",
+        "keyTakeaway": "Core takeaway on Building."
+      },
+      {
+        "title": "The Characters",
+        "summary": "Investigating key components in The concerning Interstellar. Scholars study retrospective variables, incorporating Interstellar, reaction mechanism, that shed clarity concerning How do key chemical processes behave during The Characters? For understanding that stage, analysts review facts representing architectural configurations, mapping essential variables. This comprehensive overview clarifies how structures perform in standard settings. Academic literature often references those designated paradigms when defining theoretical constraints while modeling complex phenomena. Individual chemical equations detail exact stoichiometry.",
+        "referenceLabel": "The",
+        "readerQuestion": "How do key chemical processes behave during The Characters?",
+        "keyTakeaway": "Core takeaway on The."
+      },
+      {
+        "title": "Behind the Camera",
+        "summary": "Detailing developmental nodes of Behind within Interstellar. By mapping several parameters, namely Interstellar, energy transition, we address crucial query Why do light steps trigger under Behind the Camera? Besides, certain project verifies properties concentrating on operational thresholds, noting key design tolerances. These events outline eventual maturation, showing structure evolved. Technical teams inspect some intermediate stages checking internal integrity, preventing unexpected failures while operating amid heavy load conditions. Those parameters describe energy transfer efficiency.",
+        "referenceLabel": "Behind",
+        "readerQuestion": "Why do light steps trigger under Behind the Camera?",
+        "keyTakeaway": "Core takeaway on Behind."
+      },
+      {
+        "title": "Lasting Influence",
+        "summary": "Synthesizing today's outcomes regarding Lasting related to Interstellar. Integrating insights from relevant contexts including Interstellar, modern application helps clarify Who validates the final outcomes regarding Lasting Influence? Finally, database lists unique characteristics explaining complete lifecycle events, detailing present applications. This schematic view presents lasting legacy, anchoring its worth in archives. Users access certain final reports constructing high-level summaries, submitting certified findings for stakeholders concluding the lifecycle for this stage. This investigation yields clean testing results.",
+        "referenceLabel": "Lasting",
+        "readerQuestion": "Who validates the final outcomes regarding Lasting Influence?",
+        "keyTakeaway": "Core takeaway on Lasting."
+      }
+    ]
+  },
+  "namedEntities": [
+    {
+      "name": "Interstellar",
+      "type": "Concept",
+      "description": "The primary resolved subject."
+    }
+  ],
+  "knowledgeGraph": [
+    {
+      "subject": "Compiled detail for director",
+      "predicate": "DIRECTED",
+      "object": "Interstellar"
+    },
+    {
+      "subject": "Compiled detail for composer",
+      "predicate": "COMPOSED",
+      "object": "Interstellar"
+    },
+    {
+      "subject": "Significant Item 1",
+      "predicate": "STARRED_IN",
+      "object": "Interstellar"
+    },
+    {
+      "subject": "Significant Item 2",
+      "predicate": "STARRED_IN",
+      "object": "Interstellar"
+    },
+    {
+      "subject": "Significant Item 1",
+      "predicate": "THEME_OF",
+      "object": "Interstellar"
+    },
+    {
+      "subject": "Significant Item 2",
+      "predicate": "THEME_OF",
+      "object": "Interstellar"
+    },
+    {
+      "subject": "Interstellar",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_1"
+    },
+    {
+      "subject": "Interstellar",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_2"
+    }
+  ],
+  "timeline": [
+    {
+      "year": "2014",
+      "event": "Significant milestone event 1"
+    },
+    {
+      "year": "2006",
+      "event": "Significant milestone event 2"
+    },
+    {
+      "year": "2013",
+      "event": "Significant milestone event 3"
+    },
+    {
+      "year": "2067",
+      "event": "Significant milestone event 4"
+    },
+    {
+      "year": "1997",
+      "event": "Significant milestone event 5"
+    },
+    {
+      "year": "2007",
+      "event": "Significant milestone event 6"
+    }
+  ],
+  "rankedFacts": [
+    {
+      "fact": "Interstellar is a 2014 epic science fiction film directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan Nolan. It has an ensemble cast led by Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, and Michael Caine. Set in a dystopian future where Earth is suffering from catastrophic blight and famine, the film follows a group of astronauts who travel through space in search of a new home for humanity.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The film began development in 2006 from a treatment by producer Lynda Obst and theoretical physicist Kip Thorne, and was originally set to be directed by Steven Spielberg. Thorne served as an executive producer and scientific consultant on the film, and wrote the tie-in book The Science of Interstellar. It was Obst's final film as producer before her death. Cinematographer Hoyte van Hoytema shot it on 35 mm film in the Panavision anamorphic format and IMAX 70 mm. Filming began in late 2013 and took place in Alberta, Klaustur, and Los Angeles. Interstellar uses extensive practical and miniature effects, and the company DNEG created additional visual effects.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Interstellar premiered at the TCL Chinese Theatre on October 26, 2014, and was released in theaters in the United States on November 5, and in the United Kingdom on November 7, with Paramount Pictures distributing in the United States and Warner Bros. Pictures distributing in international markets. In the United States, it was first released on film stock, expanding to venues using digital projectors. It was a commercial success, grossing $681 million worldwide during its initial theatrical run, and $774.7 million worldwide with subsequent releases, making it the 10th-highest-grossing film of 2014. The film received generally positive reviews from critics. Among its various accolades, Interstellar was nominated for five awards at the 87th Academy Awards, winning Best Visual Effects.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "In 2067, life on Earth is collapsing. NASA scientists, Amelia Brand, Romilly, and Doyle, are embarking on an intergalactic mission to find another habitable planet, when former NASA pilot, Cooper, arrives 'by coincidence' to the secret facility. Amelia's father and mission leader, Professor Brand, convinces Cooper to join the mission, to save future generations and Cooper's own children, Tom and Murph, from extinction.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Extracted key facts under the section Plot",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Extracted key facts under the section Cast",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Extracted key facts under the section Production",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Extracted key facts under the section Development and financing",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    }
+  ],
+  "visualModules": [
+    {
+      "type": "movie",
+      "title": "Movie Blueprint Snapshot",
+      "data": {
+        "director": "Compiled detail for director",
+        "cast": [
+          "Significant Item 1",
+          "Significant Item 2"
+        ],
+        "composer": "Compiled detail for composer",
+        "themes": [
+          "Significant Item 1",
+          "Significant Item 2"
+        ],
+        "awards": "Compiled detail for awards",
+        "reception": "Compiled detail for reception",
+        "legacy": "Compiled detail for legacy"
+      }
+    }
+  ],
+  "narrativePlan": {
+    "chapters": [
+      {
+        "chapterIndex": 0,
+        "title": "Why It Was Made",
+        "referenceLabel": "Why",
+        "readerQuestion": "What represents the starting motivation behind Why It Was Made?",
+        "objectives": [
+          "Explore the relationship with Why It Was Made"
+        ],
+        "approvedFacts": [
+          "Interstellar is a 2014 epic science fiction film directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan Nolan. It has an ensemble cast led by Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, and Michael Caine. Set in a dystopian future where Earth is suffering from catastrophic blight and famine, the film follows a group of astronauts who travel through space in search of a new home for humanity.",
+          "The film began development in 2006 from a treatment by producer Lynda Obst and theoretical physicist Kip Thorne, and was originally set to be directed by Steven Spielberg. Thorne served as an executive producer and scientific consultant on the film, and wrote the tie-in book The Science of Interstellar. It was Obst's final film as producer before her death. Cinematographer Hoyte van Hoytema shot it on 35 mm film in the Panavision anamorphic format and IMAX 70 mm. Filming began in late 2013 and took place in Alberta, Klaustur, and Los Angeles. Interstellar uses extensive practical and miniature effects, and the company DNEG created additional visual effects."
+        ],
+        "anchors": [
+          "Interstellar",
+          "foundation origin"
+        ]
+      },
+      {
+        "chapterIndex": 1,
+        "title": "Building the World",
+        "referenceLabel": "Building",
+        "readerQuestion": "Which factors influenced early discoveries of Building the World?",
+        "objectives": [
+          "Explore the relationship with Building the World"
+        ],
+        "approvedFacts": [
+          "Interstellar premiered at the TCL Chinese Theatre on October 26, 2014, and was released in theaters in the United States on November 5, and in the United Kingdom on November 7, with Paramount Pictures distributing in the United States and Warner Bros. Pictures distributing in international markets. In the United States, it was first released on film stock, expanding to venues using digital projectors. It was a commercial success, grossing $681 million worldwide during its initial theatrical run, and $774.7 million worldwide with subsequent releases, making it the 10th-highest-grossing film of 2014. The film received generally positive reviews from critics. Among its various accolades, Interstellar was nominated for five awards at the 87th Academy Awards, winning Best Visual Effects.",
+          "In 2067, life on Earth is collapsing. NASA scientists, Amelia Brand, Romilly, and Doyle, are embarking on an intergalactic mission to find another habitable planet, when former NASA pilot, Cooper, arrives 'by coincidence' to the secret facility. Amelia's father and mission leader, Professor Brand, convinces Cooper to join the mission, to save future generations and Cooper's own children, Tom and Murph, from extinction."
+        ],
+        "anchors": [
+          "Interstellar",
+          "historical timeline"
+        ]
+      },
+      {
+        "chapterIndex": 2,
+        "title": "The Characters",
+        "referenceLabel": "The",
+        "readerQuestion": "How do key chemical processes behave during The Characters?",
+        "objectives": [
+          "Explore the relationship with The Characters"
+        ],
+        "approvedFacts": [
+          "Extracted key facts under the section Plot",
+          "Extracted key facts under the section Cast"
+        ],
+        "anchors": [
+          "Interstellar",
+          "reaction mechanism"
+        ]
+      },
+      {
+        "chapterIndex": 3,
+        "title": "Behind the Camera",
+        "referenceLabel": "Behind",
+        "readerQuestion": "Why do light steps trigger under Behind the Camera?",
+        "objectives": [
+          "Explore the relationship with Behind the Camera"
+        ],
+        "approvedFacts": [
+          "Extracted key facts under the section Production",
+          "Extracted key facts under the section Development and financing"
+        ],
+        "anchors": [
+          "Interstellar",
+          "energy transition"
+        ]
+      },
+      {
+        "chapterIndex": 4,
+        "title": "Lasting Influence",
+        "referenceLabel": "Lasting",
+        "readerQuestion": "Who validates the final outcomes regarding Lasting Influence?",
+        "objectives": [
+          "Explore the relationship with Lasting Influence"
+        ],
+        "approvedFacts": [
+          "Concluding analysis confirms modern legacy values of Interstellar"
+        ],
+        "anchors": [
+          "Interstellar",
+          "modern application"
+        ]
+      }
+    ]
+  },
+  "triviaCandidates": [
+    "Interstellar is a 2014 epic science fiction film directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan Nolan. It has an ensemble cast led by Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, and Michael Caine. Set in a dystopian future where Earth is suffering from catastrophic blight and famine, the film follows a group of astronauts who travel through space in search of a new home for humanity.",
+    "The film began development in 2006 from a treatment by producer Lynda Obst and theoretical physicist Kip Thorne, and was originally set to be directed by Steven Spielberg. Thorne served as an executive producer and scientific consultant on the film, and wrote the tie-in book The Science of Interstellar. It was Obst's final film as producer before her death. Cinematographer Hoyte van Hoytema shot it on 35 mm film in the Panavision anamorphic format and IMAX 70 mm. Filming began in late 2013 and took place in Alberta, Klaustur, and Los Angeles. Interstellar uses extensive practical and miniature effects, and the company DNEG created additional visual effects.",
+    "Interstellar premiered at the TCL Chinese Theatre on October 26, 2014, and was released in theaters in the United States on November 5, and in the United Kingdom on November 7, with Paramount Pictures distributing in the United States and Warner Bros. Pictures distributing in international markets. In the United States, it was first released on film stock, expanding to venues using digital projectors. It was a commercial success, grossing $681 million worldwide during its initial theatrical run, and $774.7 million worldwide with subsequent releases, making it the 10th-highest-grossing film of 2014. The film received generally positive reviews from critics. Among its various accolades, Interstellar was nominated for five awards at the 87th Academy Awards, winning Best Visual Effects.",
+    "== Plot ==",
+    "In 2067, life on Earth is collapsing. NASA scientists, Amelia Brand, Romilly, and Doyle, are embarking on an intergalactic mission to find another habitable planet, when former NASA pilot, Cooper, arrives 'by coincidence' to the secret facility. Amelia's father and mission leader, Professor Brand, convinces Cooper to join the mission, to save future generations and Cooper's own children, Tom and Murph, from extinction."
+  ],
+  "relatedTopics": [
+    "/Film",
+    "1917 (2019 film)",
+    "2001: A Space Odyssey",
+    "2014 United States elections",
+    "2014 in film",
+    "35 mm movie film",
+    "35mm movie film",
+    "3D-printed"
+  ],
+  "confidenceScores": {
+    "resolver": 0.96,
+    "compiler": 0.95,
+    "grader": 0.85,
+    "overall": 0.92
+  },
+  "checksum": "49f3685330f6929c3b9c37a10c4e5c4d462799a93e3ab1a93c13976d83bf33a5",
+  "dependencyHash": "e84763ab58dc8da374ac270308ab5fc4f857707d51d6ee07e892e7e2f5f11bca",
+  "sourceReferences": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Interstellar",
+      "title": "Interstellar"
+    }
+  ],
+  "validationStatus": {
+    "passed": true,
+    "errors": [],
+    "warnings": [
+      "Timeline is not in strict chronological order"
+    ],
+    "checkedRules": {
+      "ontology_match": true,
+      "required_fields_exist": true,
+      "timeline_non_empty": true,
+      "timeline_count_bounds": true,
+      "timeline_chronological": false,
+      "graph_has_triples": true,
+      "graph_connected": true,
+      "named_entities_non_empty": true,
+      "no_weak_facts": true,
+      "no_duplicate_facts": true,
+      "no_duplicate_sentences": true,
+      "no_placeholder_wording": true,
+      "resolver_confidence_ok": true,
+      "compiler_confidence_ok": true,
+      "overall_confidence_ok": true
+    },
+    "timestamp": "2026-07-09T16:52:09.001Z"
+  }
+}
