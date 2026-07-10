@@ -23,53 +23,31 @@ function computeSimilarityScore(
   knowledge: TopicKnowledge
 ): number {
   const text = `${item.title} ${item.description}`.toLowerCase();
-  let score = 0;
+  
+  // 1. entity_overlap: shares words/entities
+  const topicTitleWords = cleanAndTokenize(knowledge.common.title);
+  const itemTitleWords = cleanAndTokenize(item.title);
+  let matchingTitleWords = 0;
+  itemTitleWords.forEach(w => {
+    if (topicTitleWords.has(w)) matchingTitleWords++;
+  });
+  const entity_overlap = matchingTitleWords > 0 ? 1.0 : 0.0;
 
-  // 1. Basic token overlap with original title and brief description
-  const topicTokens = cleanAndTokenize(`${knowledge.common.title} ${knowledge.common.description}`);
-  const itemTokens = cleanAndTokenize(text);
-  for (const token of itemTokens) {
-    if (topicTokens.has(token)) score += 3.0;
-  }
+  // 2. graph_proximity: check if title matches any related topic list or keywords
+  const graph_proximity = (knowledge.common.relatedTopics || []).some(t => t.toLowerCase() === item.title.toLowerCase()) ? 1.0 : 0.0;
 
-  // 2. Exact match with ontology path labels
-  for (const label of knowledge.ontologyLabels) {
-    if (text.includes(label.toLowerCase())) {
-      score += 5.0;
-    }
-  }
+  // 3. wikipedia_links_overlap: if it's linked in the main topic's text
+  const isLinked = (knowledge.common.description || "").toLowerCase().includes(item.title.toLowerCase());
+  const wikipedia_links_overlap = isLinked ? 1.0 : 0.0;
 
-  // 3. Domain/Entity-type alignment boost
-  const type = knowledge.entityType;
-  const itemCat = item.category.toLowerCase();
+  // 4. popularity: length of description as proxy for content depth
+  const popularity = Math.min(1.0, item.description.length / 100);
 
-  if (type === "Movie" || type === "TV Series") {
-    if (itemCat.includes("movie") || itemCat.includes("tv") || text.includes("film") || text.includes("cinema") || text.includes("director") || text.includes("starring")) {
-      score += 12.0;
-    }
-  } else if (type === "Person" || type === "Musical Artist") {
-    if (itemCat.includes("person") || text.includes("born") || text.includes("biography") || text.includes("pioneer") || text.includes("scientist") || text.includes("artist")) {
-      score += 12.0;
-    }
-  } else if (type === "Company" || type === "Brand" || type === "Organization") {
-    if (itemCat.includes("company") || itemCat.includes("organization") || text.includes("revenue") || text.includes("founded") || text.includes("headquarters") || text.includes("corporate")) {
-      score += 12.0;
-    }
-  } else if (type === "Historical Event" || type === "War" || type === "Empire" || type === "Civilization" || type === "Space Mission") {
-    if (text.includes("war") || text.includes("battle") || text.includes("treaty") || text.includes("empire") || text.includes("history") || text.includes("revolution")) {
-      score += 12.0;
-    }
-  } else if (type === "Technology" || type === "Programming Language") {
-    if (text.includes("technology") || text.includes("software") || text.includes("programming") || text.includes("language") || text.includes("operating system") || text.includes("protocol")) {
-      score += 12.0;
-    }
-  } else if (type === "Scientific Concept" || type === "Mathematical Concept" || type === "Medical Condition" || type === "Animal") {
-    if (text.includes("science") || text.includes("discovery") || text.includes("formula") || text.includes("theory") || text.includes("biology") || text.includes("mathematics")) {
-      score += 12.0;
-    }
-  }
-
-  return score;
+  // V17 Score formula:
+  // score = entity_overlap * 0.3 + graph_proximity * 0.3 + wikipedia_links_overlap * 0.2 + popularity * 0.2
+  const score = entity_overlap * 0.3 + graph_proximity * 0.3 + wikipedia_links_overlap * 0.2 + popularity * 0.2;
+  
+  return score * 100;
 }
 
 export async function curateRelatedExploration(

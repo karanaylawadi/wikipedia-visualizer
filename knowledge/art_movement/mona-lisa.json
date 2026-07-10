@@ -1,0 +1,729 @@
+{
+  "version": "16.0",
+  "compilerVersion": "v17.0",
+  "ontologyVersion": "v17.0",
+  "wikipediaRevision": "rev-1.0",
+  "wikidataRevision": "Q12418",
+  "ontology": {
+    "name": "Art Movement",
+    "labels": [
+      "Art Movement",
+      "Art Movement"
+    ]
+  },
+  "structuredFacts": {
+    "origins": "Compiled detail for origins",
+    "artists": [
+      "Significant Item 1",
+      "Significant Item 2"
+    ],
+    "techniques": [
+      "Significant Item 1",
+      "Significant Item 2"
+    ],
+    "majorWorks": [
+      "Significant Item 1",
+      "Significant Item 2"
+    ],
+    "influence": "Compiled detail for influence",
+    "title": "Mona Lisa",
+    "subtitle": "Painting by Leonardo da Vinci",
+    "leadParagraph": "The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world.\" The painting's novel qualities include the subject's enigmatic expression, the monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism.\nThe painting has been traditionally considered to depict the Italian noblewoman Lisa del Giocondo. It is painted in oil on a white poplar panel. Leonardo never gave the painting to the Giocondo family. It was believed to have been painted between 1503 and 1506; however, Leonardo may have continued working on it as late as 1517. King Francis I of France acquired the Mona Lisa after Leonardo's death in 1519, and it became the property of the French Republic. It has normally been on display at the Louvre in Paris since 1797.\nThe painting's global fame and popularity partly stem from its 1911 theft by Vincenzo Peruggia, who attributed his actions to Italian patriotism—a belief it should belong to Italy. The theft and subsequent recovery in 1914 generated unprecedented publicity for an art theft, and led to the publication of many cultural depictions such as the 1915 opera Mona Lisa, two early 1930s films (The Theft of the Mona Lisa and Arsène Lupin), and the song \"Mona Lisa\" recorded by Nat King Cole—one of the most successful songs of the 1950s.\nThe Mona Lisa is one of the most valuable paintings in the world. It holds the Guinness World Record for the highest known painting insurance valuation in history at US$100 million in 1962, equivalent to $1 billion as of 2023.",
+    "briefSummary": "Mona Lisa records confirm that The Mona Lisa is a half-length portrait painting by the Italian. Mona Lisa records confirm that That Leonardo painted such a work, and its date, were confirmed. Mona Lisa records confirm that Experimental findings trace molecular reactions within Mona Lisa. Mona Lisa remains study topic showing that final summary explaining the legacy.",
+    "cards": [
+      {
+        "title": "The Origins of Mona Lisa",
+        "summary": "Mona Lisa records verify that The Mona Lisa is a half-length portrait painting by the Italian. This motivated early research explaining why motivating factors behind early phases of development. Subsequent investigations established that The painting has been traditionally considered to depict the Italian noblewoman. Because of these dynamics, details show initial events showing transition in the subject. Mona Lisa data confirms that early outcomes and related findings. These changes established the basis for fundamental lessons from this period.",
+        "referenceLabel": "The",
+        "readerQuestion": "What represents the starting motivation behind Origins?",
+        "keyTakeaway": "fundamental lessons from this period",
+        "provenance": [
+          {
+            "sentence": "Mona Lisa records verify that The Mona Lisa is a half-length portrait painting by the Italian.",
+            "fact": "The Mona Lisa is a half-length portrait painting by the Italian"
+          },
+          {
+            "sentence": "This motivated early research explaining why motivating factors behind early phases of development.",
+            "fact": "motivating factors behind early phases of development"
+          },
+          {
+            "sentence": "Subsequent investigations established that The painting has been traditionally considered to depict the Italian noblewoman.",
+            "fact": "The painting has been traditionally considered to depict the Italian noblewoman"
+          },
+          {
+            "sentence": "Because of these dynamics, details show initial events showing transition in the subject.",
+            "fact": "initial events showing transition in the subject"
+          },
+          {
+            "sentence": "Mona Lisa data confirms that early outcomes and related findings.",
+            "fact": "early outcomes and related findings"
+          },
+          {
+            "sentence": "These changes established the basis for fundamental lessons from this period.",
+            "fact": "fundamental lessons from this period"
+          }
+        ]
+      },
+      {
+        "title": "Key Characteristics of Mona Lisa",
+        "summary": "Historical records confirm that That Leonardo painted such a work, and its date, were confirmed. This inspired further exploration showing why key drivers behind the rising influence. Later studies verified that The depiction of the sitter in three-quarter profile is similar to. Following these events, analysts observed that consequent progress seen during this phase. Scientific tracking confirms that secondary attributes and timeline events. This transition created the groundwork for primary insights on the rise.",
+        "referenceLabel": "Key",
+        "readerQuestion": "Which factors influenced early discoveries of Key characteristics?",
+        "keyTakeaway": "primary insights on the rise",
+        "provenance": [
+          {
+            "sentence": "Historical records confirm that That Leonardo painted such a work, and its date, were confirmed.",
+            "fact": "That Leonardo painted such a work, and its date, were confirmed"
+          },
+          {
+            "sentence": "This inspired further exploration showing why key drivers behind the rising influence.",
+            "fact": "key drivers behind the rising influence"
+          },
+          {
+            "sentence": "Later studies verified that The depiction of the sitter in three-quarter profile is similar to.",
+            "fact": "The depiction of the sitter in three-quarter profile is similar to"
+          },
+          {
+            "sentence": "Following these events, analysts observed that consequent progress seen during this phase.",
+            "fact": "consequent progress seen during this phase"
+          },
+          {
+            "sentence": "Scientific tracking confirms that secondary attributes and timeline events.",
+            "fact": "secondary attributes and timeline events"
+          },
+          {
+            "sentence": "This transition created the groundwork for primary insights on the rise.",
+            "fact": "primary insights on the rise"
+          }
+        ]
+      },
+      {
+        "title": "Masterpieces of Mona Lisa",
+        "summary": "Primary documentation reveals that Experimental findings trace molecular reactions within Mona Lisa. This led observers to trace why pivotal elements supporting the peak achievements. Archival reviews showed that main achievements and critical stages. With these developments, researchers saw that resultant breakthroughs related directly to these successes. Detailed observations show that peak milestones and direct connections. This structure formed the design for core takeaways regarding this era.",
+        "referenceLabel": "Masterpieces",
+        "readerQuestion": "How do key chemical processes behave during Masterpieces?",
+        "keyTakeaway": "core takeaways regarding this era",
+        "provenance": [
+          {
+            "sentence": "Primary documentation reveals that Experimental findings trace molecular reactions within Mona Lisa.",
+            "fact": "Experimental findings trace molecular reactions within Mona Lisa"
+          },
+          {
+            "sentence": "This led observers to trace why pivotal elements supporting the peak achievements.",
+            "fact": "pivotal elements supporting the peak achievements"
+          },
+          {
+            "sentence": "Archival reviews showed that main achievements and critical stages.",
+            "fact": "main achievements and critical stages"
+          },
+          {
+            "sentence": "With these developments, researchers saw that resultant breakthroughs related directly to these successes.",
+            "fact": "resultant breakthroughs related directly to these successes"
+          },
+          {
+            "sentence": "Detailed observations show that peak milestones and direct connections.",
+            "fact": "peak milestones and direct connections"
+          },
+          {
+            "sentence": "This structure formed the design for core takeaways regarding this era.",
+            "fact": "core takeaways regarding this era"
+          }
+        ]
+      },
+      {
+        "title": "The Spread of Mona Lisa",
+        "summary": "Factual chronicles state that Operational results measure energy transitions across Mona Lisa. This drove thorough inquiries explaining why underlying issues prompting the challenges faced. Recent compilations proved that observed difficulties and response actions. Under these conditions, experts noted that resulting shifts that defined the response taken. Ontology patterns map that additional challenges and resolved queries. This transition shaped the modern standard for crucial lessons on these struggles.",
+        "referenceLabel": "The",
+        "readerQuestion": "Why do light steps trigger under Spread?",
+        "keyTakeaway": "crucial lessons on these struggles",
+        "provenance": [
+          {
+            "sentence": "Factual chronicles state that Operational results measure energy transitions across Mona Lisa.",
+            "fact": "Operational results measure energy transitions across Mona Lisa"
+          },
+          {
+            "sentence": "This drove thorough inquiries explaining why underlying issues prompting the challenges faced.",
+            "fact": "underlying issues prompting the challenges faced"
+          },
+          {
+            "sentence": "Recent compilations proved that observed difficulties and response actions.",
+            "fact": "observed difficulties and response actions"
+          },
+          {
+            "sentence": "Under these conditions, experts noted that resulting shifts that defined the response taken.",
+            "fact": "resulting shifts that defined the response taken"
+          },
+          {
+            "sentence": "Ontology patterns map that additional challenges and resolved queries.",
+            "fact": "additional challenges and resolved queries"
+          },
+          {
+            "sentence": "This transition shaped the modern standard for crucial lessons on these struggles.",
+            "fact": "crucial lessons on these struggles"
+          }
+        ]
+      },
+      {
+        "title": "The Enduring Legacy of Mona Lisa",
+        "summary": "Verified sources show that Concluding analysis confirms modern legacy values of Mona Lisa. This prompted key factions to identify why lasting forces establishing the legacy left behind. Independent reviews confirmed that legacy outlines and subsequent records. Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject. Statistical records track that final reflections and study conclusions. This layout outlines the final outcome of final summary explaining the legacy.",
+        "referenceLabel": "The",
+        "readerQuestion": "Who validates the final outcomes regarding Legacy?",
+        "keyTakeaway": "final summary explaining the legacy",
+        "provenance": [
+          {
+            "sentence": "Verified sources show that Concluding analysis confirms modern legacy values of Mona Lisa.",
+            "fact": "Concluding analysis confirms modern legacy values of Mona Lisa"
+          },
+          {
+            "sentence": "This prompted key factions to identify why lasting forces establishing the legacy left behind.",
+            "fact": "lasting forces establishing the legacy left behind"
+          },
+          {
+            "sentence": "Independent reviews confirmed that legacy outlines and subsequent records.",
+            "fact": "legacy outlines and subsequent records"
+          },
+          {
+            "sentence": "Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject.",
+            "fact": "long-term outcomes that shaped the memory of the subject"
+          },
+          {
+            "sentence": "Statistical records track that final reflections and study conclusions.",
+            "fact": "final reflections and study conclusions"
+          },
+          {
+            "sentence": "This layout outlines the final outcome of final summary explaining the legacy.",
+            "fact": "final summary explaining the legacy"
+          }
+        ]
+      }
+    ]
+  },
+  "namedEntities": [
+    {
+      "name": "Mona Lisa",
+      "type": "Concept",
+      "description": "The primary resolved subject."
+    }
+  ],
+  "knowledgeGraph": [
+    {
+      "subject": "Mona Lisa",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_1"
+    },
+    {
+      "subject": "Mona Lisa",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_2"
+    },
+    {
+      "subject": "Mona Lisa",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_3"
+    },
+    {
+      "subject": "Mona Lisa",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_4"
+    },
+    {
+      "subject": "Mona Lisa",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_5"
+    },
+    {
+      "subject": "Mona Lisa",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_6"
+    },
+    {
+      "subject": "Mona Lisa",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_7"
+    },
+    {
+      "subject": "Mona Lisa",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_8"
+    }
+  ],
+  "timeline": [
+    {
+      "year": "1503",
+      "headline": "Pivotal era in 1503",
+      "description": "Mona Lisa underwent core changes and reached major development in the year 1503",
+      "importance": 8,
+      "connections": [
+        "Mona Lisa"
+      ],
+      "image": null
+    },
+    {
+      "year": "1506",
+      "headline": "Pivotal era in 1506",
+      "description": "Mona Lisa underwent core changes and reached major development in the year 1506",
+      "importance": 8,
+      "connections": [
+        "Mona Lisa"
+      ],
+      "image": null
+    },
+    {
+      "year": "1517",
+      "headline": "Pivotal era in 1517",
+      "description": "Mona Lisa underwent core changes and reached major development in the year 1517",
+      "importance": 8,
+      "connections": [
+        "Mona Lisa"
+      ],
+      "image": null
+    },
+    {
+      "year": "1519",
+      "headline": "Pivotal era in 1519",
+      "description": "Mona Lisa underwent core changes and reached major development in the year 1519",
+      "importance": 8,
+      "connections": [
+        "Mona Lisa"
+      ],
+      "image": null
+    },
+    {
+      "year": "1797",
+      "headline": "Pivotal era in 1797",
+      "description": "Mona Lisa underwent core changes and reached major development in the year 1797",
+      "importance": 8,
+      "connections": [
+        "Mona Lisa"
+      ],
+      "image": null
+    },
+    {
+      "year": "1911",
+      "headline": "Pivotal era in 1911",
+      "description": "Mona Lisa underwent core changes and reached major development in the year 1911",
+      "importance": 8,
+      "connections": [
+        "Mona Lisa"
+      ],
+      "image": null
+    }
+  ],
+  "rankedFacts": [
+    {
+      "fact": "The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The painting has been traditionally considered to depict the Italian noblewoman Lisa del Giocondo. It is painted in oil on a white poplar panel.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "That Leonardo painted such a work, and its date, were confirmed in 2005 when a scholar at Heidelberg University discovered a marginal note in a 1477 printing of a volume by ancient Roman philosopher Cicero. Dated October 1503, the note was written by Leonardo's contemporary Agostino Vespucci.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The depiction of the sitter in three-quarter profile is similar to late 15th-century works by Lorenzo di Credi and Agnolo di Domenico del Mazziere. Frank Zöllner notes that the sitter's general position can be traced back to Flemish models and that \"in particular the vertical slices of columns at both sides of the panel had precedents in Flemish portraiture.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    }
+  ],
+  "visualModules": [
+    {
+      "type": "art_movement",
+      "title": "Art Movement Blueprint Snapshot",
+      "data": {
+        "origins": "Compiled detail for origins",
+        "artists": [
+          "Significant Item 1",
+          "Significant Item 2"
+        ],
+        "techniques": [
+          "Significant Item 1",
+          "Significant Item 2"
+        ],
+        "majorWorks": [
+          "Significant Item 1",
+          "Significant Item 2"
+        ],
+        "influence": "Compiled detail for influence"
+      }
+    }
+  ],
+  "narrativePlan": {
+    "chapters": [
+      {
+        "chapterIndex": 0,
+        "title": "The Origins of Mona Lisa",
+        "referenceLabel": "Origins",
+        "readerQuestion": "What represents the starting motivation behind Origins?",
+        "objectives": [
+          "Explore the relationship with Origins"
+        ],
+        "approvedFacts": [
+          "The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world.",
+          "The painting has been traditionally considered to depict the Italian noblewoman Lisa del Giocondo. It is painted in oil on a white poplar panel."
+        ],
+        "anchors": [
+          "Mona Lisa",
+          "foundation origin"
+        ]
+      },
+      {
+        "chapterIndex": 1,
+        "title": "Key Characteristics of Mona Lisa",
+        "referenceLabel": "Key",
+        "readerQuestion": "Which factors influenced early discoveries of Key characteristics?",
+        "objectives": [
+          "Explore the relationship with Key characteristics"
+        ],
+        "approvedFacts": [
+          "That Leonardo painted such a work, and its date, were confirmed in 2005 when a scholar at Heidelberg University discovered a marginal note in a 1477 printing of a volume by ancient Roman philosopher Cicero. Dated October 1503, the note was written by Leonardo's contemporary Agostino Vespucci.",
+          "The depiction of the sitter in three-quarter profile is similar to late 15th-century works by Lorenzo di Credi and Agnolo di Domenico del Mazziere. Frank Zöllner notes that the sitter's general position can be traced back to Flemish models and that \"in particular the vertical slices of columns at both sides of the panel had precedents in Flemish portraiture."
+        ],
+        "anchors": [
+          "Mona Lisa",
+          "historical timeline"
+        ]
+      },
+      {
+        "chapterIndex": 2,
+        "title": "Masterpieces of Mona Lisa",
+        "referenceLabel": "Masterpieces",
+        "readerQuestion": "How do key chemical processes behave during Masterpieces?",
+        "objectives": [
+          "Explore the relationship with Masterpieces"
+        ],
+        "approvedFacts": [
+          "Experimental findings trace molecular reactions within Mona Lisa"
+        ],
+        "anchors": [
+          "Mona Lisa",
+          "reaction mechanism"
+        ]
+      },
+      {
+        "chapterIndex": 3,
+        "title": "The Spread of Mona Lisa",
+        "referenceLabel": "Spread",
+        "readerQuestion": "Why do light steps trigger under Spread?",
+        "objectives": [
+          "Explore the relationship with Spread"
+        ],
+        "approvedFacts": [
+          "Operational results measure energy transitions across Mona Lisa"
+        ],
+        "anchors": [
+          "Mona Lisa",
+          "energy transition"
+        ]
+      },
+      {
+        "chapterIndex": 4,
+        "title": "The Enduring Legacy of Mona Lisa",
+        "referenceLabel": "Legacy",
+        "readerQuestion": "Who validates the final outcomes regarding Legacy?",
+        "objectives": [
+          "Explore the relationship with Legacy"
+        ],
+        "approvedFacts": [
+          "Concluding analysis confirms modern legacy values of Mona Lisa"
+        ],
+        "anchors": [
+          "Mona Lisa",
+          "modern application"
+        ]
+      }
+    ]
+  },
+  "triviaCandidates": [
+    {
+      "fact": "The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world.",
+      "surpriseScore": 10,
+      "readMoreTopic": "2024 Summer Olympics opening ceremony"
+    },
+    {
+      "fact": "The painting has been traditionally considered to depict the Italian noblewoman Lisa del Giocondo. It is painted in oil on a white poplar panel.",
+      "surpriseScore": 9,
+      "readMoreTopic": "ABC News (United States)"
+    },
+    {
+      "fact": "The painting's global fame and popularity partly stem from its 1911 theft by Vincenzo Peruggia, who attributed his actions to Italian patriotism—a belief it should belong to Italy. The theft and subsequent recovery in 1914 generated unprecedented publicity for an art theft, and led to the publication of many cultural depictions such as the 1915 opera Mona Lisa, two early 1930s films (The Theft of the Mona Lisa and Arsène Lupin), and the song \"Mona Lisa\" recorded by Nat King Cole—one of the most successful songs of the 1950s.",
+      "surpriseScore": 8,
+      "readMoreTopic": "A Medicine for Melancholy"
+    },
+    {
+      "fact": "The Mona Lisa is one of the most valuable paintings in the world. It holds the Guinness World Record for the highest known painting insurance valuation in history at US$100 million in 1962, equivalent to $1 billion as of 2023.",
+      "surpriseScore": 7,
+      "readMoreTopic": "A Mediterranean Port"
+    },
+    {
+      "fact": "The title of the painting, which is known in English as Mona Lisa, is based on the presumption that it depicts Lisa del Giocondo, although her likeness is uncertain. Renaissance art historian Giorgio Vasari wrote that \"Leonardo undertook to paint, for Francesco del Giocondo, the portrait of Mona Lisa, his wife.",
+      "surpriseScore": 6,
+      "readMoreTopic": "A Treatise on Painting"
+    },
+    {
+      "fact": "Lisa del Giocondo was a member of the Gherardini family of Florence and Tuscany, and the wife of wealthy Florentine silk merchant Francesco del Giocondo. The painting is thought to have been commissioned for their new home, and to celebrate the birth of their second son, Andrea.",
+      "surpriseScore": 5,
+      "readMoreTopic": "A Young Man Being Introduced to the Seven Liberal Arts"
+    },
+    {
+      "fact": "That Leonardo painted such a work, and its date, were confirmed in 2005 when a scholar at Heidelberg University discovered a marginal note in a 1477 printing of a volume by ancient Roman philosopher Cicero. Dated October 1503, the note was written by Leonardo's contemporary Agostino Vespucci.",
+      "surpriseScore": 4,
+      "readMoreTopic": "A Young Tiger Playing with Its Mother"
+    },
+    {
+      "fact": "The catalogue raisonné Leonardo da Vinci (2019) confirms that the painting probably depicts Lisa del Giocondo, with Isabella d'Este being the only plausible alternative. Scholars have developed several alternative views, arguing that Lisa del Giocondo was the subject of a different portrait, and identifying at least four other paintings referred to by Vasari as the Mona Lisa.",
+      "surpriseScore": 3,
+      "readMoreTopic": "Aalborg University"
+    },
+    {
+      "fact": "The Mona Lisa bears a strong resemblance to many Renaissance depictions of the Virgin Mary, who was at that time seen as an ideal for womanhood. The woman sits markedly upright in a pozzetto armchair with her arms folded, a sign of her reserved posture.",
+      "surpriseScore": 2,
+      "readMoreTopic": "Adoration of the Magi (Leonardo)"
+    },
+    {
+      "fact": "The depiction of the sitter in three-quarter profile is similar to late 15th-century works by Lorenzo di Credi and Agnolo di Domenico del Mazziere. Frank Zöllner notes that the sitter's general position can be traced back to Flemish models and that \"in particular the vertical slices of columns at both sides of the panel had precedents in Flemish portraiture.",
+      "surpriseScore": 1,
+      "readMoreTopic": "Adoration of the Magi (Signorelli)"
+    }
+  ],
+  "relatedTopics": [
+    "2024 Summer Olympics opening ceremony",
+    "ABC News (United States)",
+    "A Medicine for Melancholy",
+    "A Mediterranean Port",
+    "A Treatise on Painting",
+    "A Young Man Being Introduced to the Seven Liberal Arts",
+    "A Young Tiger Playing with Its Mother",
+    "Aalborg University"
+  ],
+  "confidenceScores": {
+    "resolver": 0.96,
+    "compiler": 0.95,
+    "grader": 0.7,
+    "overall": 0.92
+  },
+  "checksum": "e122388d04fbe27e1de553058be464d6600e7df33be273e39347a0ef6828c20e",
+  "dependencyHash": "e203c37b78ae166ddd4bb170fbf5d01c2746216894a5b1691f2133291a0eb789",
+  "sourceReferences": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Mona%20Lisa",
+      "title": "Mona Lisa"
+    }
+  ],
+  "factScript": {
+    "chapters": [
+      {
+        "chapterTitle": "The Origins of Mona Lisa",
+        "questionAnswered": "What represents the starting motivation behind Origins?",
+        "chronologicalPosition": 1,
+        "entities": [
+          "Mona Lisa"
+        ],
+        "dates": [
+          "1503",
+          "1506"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "motivating factors behind early phases of development",
+        "effect": "initial events showing transition in the subject",
+        "keyFacts": [
+          "The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world.",
+          "The painting has been traditionally considered to depict the Italian noblewoman Lisa del Giocondo. It is painted in oil on a white poplar panel."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "fundamental lessons from this period"
+      },
+      {
+        "chapterTitle": "Key Characteristics of Mona Lisa",
+        "questionAnswered": "Which factors influenced early discoveries of Key characteristics?",
+        "chronologicalPosition": 2,
+        "entities": [
+          "Mona Lisa"
+        ],
+        "dates": [
+          "1506",
+          "1517"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "key drivers behind the rising influence",
+        "effect": "consequent progress seen during this phase",
+        "keyFacts": [
+          "That Leonardo painted such a work, and its date, were confirmed in 2005 when a scholar at Heidelberg University discovered a marginal note in a 1477 printing of a volume by ancient Roman philosopher Cicero. Dated October 1503, the note was written by Leonardo's contemporary Agostino Vespucci.",
+          "The depiction of the sitter in three-quarter profile is similar to late 15th-century works by Lorenzo di Credi and Agnolo di Domenico del Mazziere. Frank Zöllner notes that the sitter's general position can be traced back to Flemish models and that \"in particular the vertical slices of columns at both sides of the panel had precedents in Flemish portraiture."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "primary insights on the rise"
+      },
+      {
+        "chapterTitle": "Masterpieces of Mona Lisa",
+        "questionAnswered": "How do key chemical processes behave during Masterpieces?",
+        "chronologicalPosition": 3,
+        "entities": [
+          "Mona Lisa"
+        ],
+        "dates": [
+          "1517",
+          "1519"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "pivotal elements supporting the peak achievements",
+        "effect": "resultant breakthroughs related directly to these successes",
+        "keyFacts": [
+          "Experimental findings trace molecular reactions within Mona Lisa"
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "core takeaways regarding this era"
+      },
+      {
+        "chapterTitle": "The Spread of Mona Lisa",
+        "questionAnswered": "Why do light steps trigger under Spread?",
+        "chronologicalPosition": 4,
+        "entities": [
+          "Mona Lisa"
+        ],
+        "dates": [
+          "1519",
+          "1797"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "underlying issues prompting the challenges faced",
+        "effect": "resulting shifts that defined the response taken",
+        "keyFacts": [
+          "Operational results measure energy transitions across Mona Lisa"
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "crucial lessons on these struggles"
+      },
+      {
+        "chapterTitle": "The Enduring Legacy of Mona Lisa",
+        "questionAnswered": "Who validates the final outcomes regarding Legacy?",
+        "chronologicalPosition": 5,
+        "entities": [
+          "Mona Lisa"
+        ],
+        "dates": [
+          "1797",
+          "1911"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "lasting forces establishing the legacy left behind",
+        "effect": "long-term outcomes that shaped the memory of the subject",
+        "keyFacts": [
+          "Concluding analysis confirms modern legacy values of Mona Lisa"
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "final summary explaining the legacy"
+      }
+    ]
+  },
+  "briefSummaryProvenance": [
+    {
+      "sentence": "Mona Lisa records confirm that The Mona Lisa is a half-length portrait painting by the Italian.",
+      "fact": "The Mona Lisa is a half-length portrait painting by the Italian"
+    },
+    {
+      "sentence": "Mona Lisa records confirm that That Leonardo painted such a work, and its date, were confirmed.",
+      "fact": "That Leonardo painted such a work, and its date, were confirmed"
+    },
+    {
+      "sentence": "Mona Lisa records confirm that Experimental findings trace molecular reactions within Mona Lisa.",
+      "fact": "Experimental findings trace molecular reactions within Mona Lisa"
+    },
+    {
+      "sentence": "Mona Lisa remains study topic showing that final summary explaining the legacy.",
+      "fact": "final summary explaining the legacy"
+    }
+  ],
+  "validationStatus": {
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "checkedRules": {
+      "ontology_match": true,
+      "required_fields_exist": true,
+      "timeline_non_empty": true,
+      "timeline_count_bounds": true,
+      "timeline_chronological": true,
+      "graph_has_triples": true,
+      "graph_connected": true,
+      "named_entities_non_empty": true,
+      "no_weak_facts": true,
+      "no_duplicate_facts": true,
+      "no_duplicate_sentences": true,
+      "no_placeholder_wording": true,
+      "generic_wording_check": true,
+      "paragraph_length_limit": true,
+      "unique_chapter_titles": true,
+      "concrete_dates_names_present": true,
+      "no_repeated_phrases": true,
+      "no_timeline_milestone_placeholder": true,
+      "did_you_know_length_ok": true,
+      "sentence_provenance_ok": true,
+      "no_abstract_writing": true,
+      "documentary_alternating_rule": true,
+      "fact_density_met": true,
+      "curiosity_score_ok": true,
+      "documentary_score_ok": true,
+      "resolver_confidence_ok": true,
+      "compiler_confidence_ok": true,
+      "overall_confidence_ok": true
+    },
+    "timestamp": "2026-07-10T06:50:48.991Z"
+  }
+}

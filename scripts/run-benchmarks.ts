@@ -89,6 +89,12 @@ async function runBenchmarks() {
       
       console.log(`  - Mapped Ontology: ${ontologyName} [${isOntologyCorrect ? "PASS" : "FAIL"}]`);
       console.log(`  - Linter Status: ${lintReport.passed ? "PASS" : "FAIL"}`);
+      console.log(`    V16 Documentary Metrics:`);
+      console.log(`      * Sentence Provenance Check: ${lintReport.checkedRules["sentence_provenance_ok"] ? "PASS" : "FAIL"}`);
+      console.log(`      * Fact Density Check: ${lintReport.checkedRules["fact_density_met"] ? "PASS" : "FAIL"}`);
+      console.log(`      * Generic Wording Check: ${lintReport.checkedRules["generic_wording_check"] ? "PASS" : "FAIL"}`);
+      console.log(`      * Documentary Alternating Rule: ${lintReport.checkedRules["documentary_alternating_rule"] ? "PASS" : "FAIL"}`);
+      console.log(`      * Documentary Score Check: ${lintReport.checkedRules["documentary_score_ok"] ? "PASS" : "FAIL"}`);
       if (!lintReport.passed) {
         console.log(`    Linter Errors:`, lintReport.errors);
       }

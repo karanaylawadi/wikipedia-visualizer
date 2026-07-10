@@ -1,0 +1,775 @@
+{
+  "version": "16.0",
+  "compilerVersion": "v17.0",
+  "ontologyVersion": "v17.0",
+  "wikipediaRevision": "rev-1.0",
+  "wikidataRevision": "Q17",
+  "ontology": {
+    "name": "Country",
+    "labels": [
+      "Country",
+      "Country"
+    ]
+  },
+  "structuredFacts": {
+    "government": "Compiled detail for government",
+    "geography": "Compiled detail for geography",
+    "economy": "Compiled detail for economy",
+    "culture": "Compiled detail for culture",
+    "population": "Compiled detail for population",
+    "tourism": "Compiled detail for tourism",
+    "title": "Japan",
+    "subtitle": "Country in East Asia",
+    "leadParagraph": "Japan is an island country in East Asia. Located in the Pacific Ocean off the northeast coast of the Asian mainland, it is bordered to the west by the Sea of Japan and extends from the Sea of Okhotsk in the north to the East China Sea in the south. The Japanese archipelago consists of four major islands alongside 14,121 smaller islands. Japan is divided into 47 administrative prefectures and eight traditional regions, and around 75% of its terrain is mountainous and heavily forested, concentrating its agriculture and highly urbanized population along its eastern coastal plains. With a population of almost 123 million as of 2026, it is the world's 11th most populous country. Tokyo is the country's capital and largest city.\nThe first known habitation of the archipelago dates to the Upper Paleolithic, with the beginning of the Japanese Paleolithic dating to c. 36,000 BC. Between the 4th and 6th centuries, its kingdoms were united under an emperor in Nara and later in Heian-kyō. From the 12th century, actual power was held by military aristocrats known as shōgun and feudal lords called daimyō, enforced by warrior nobility named samurai. After rule by the Kamakura and Ashikaga shogunates and a century of warring states, Japan was unified in 1600 by the Tokugawa shogunate, which implemented an isolationist foreign policy. In 1853, an American fleet forced Japan to open trade to the West, which led to the end of the shogunate and the restoration of imperial power in 1868. \nThe Meiji period saw Japan pursue rapid industrialization, modernization, militarism, and overseas colonization. Declaring itself an imperial power in 1889 with the promulgation of the Meiji Constitution, it annexed Taiwan in 1895, followed by Korea in 1910. In 1937, Japan invaded China and attacked the U.S. and European colonial powers in 1941, thus entering World War II as an Axis power. After being defeated in the Pacific War and suffering the U.S. atomic bombings of Hiroshima and Nagasaki, Japan surrendered in 1945 and came under Allied occupation. It underwent rapid economic growth in the following decades and became one of the first major non-NATO allies of the U.S. Since the collapse of the Japanese asset price bubble in the early 1990s, it has experienced a prolonged period of economic stagnation referred to as the Lost Decades. \nJapan is a constitutional monarchy with a bicameral legislature known as the National Diet. Widely considered a great power and the only Asian member of the G7, it maintains one of the world's strongest militaries but has constitutionally renounced its right to declare war. A developed country with one of the world's largest economies by nominal GDP, it is a global leader in the automotive, electronics, and robotics industries, in addition to making significant contributions to science and technology. It has one of the world's highest life expectancies, but is undergoing a population decline. The culture of Japan is well known around the world, particularly its popular culture as expressed in animation, art, comics, cuisine, fashion, films, music, television, theatre and video games.",
+    "briefSummary": "Japan records confirm that Japan is an island country in East Asia Located in the. Japan records confirm that The Meiji period saw Japan pursue rapid industrialization, modernization, militarism, and. Japan records confirm that The name for Japan in Japanese is written using the kanji. Japan remains study topic showing that final summary explaining the legacy.",
+    "cards": [
+      {
+        "title": "The Origins of Japan",
+        "summary": "Japan records verify that Japan is an island country in East Asia Located in the. This motivated early research explaining why motivating factors behind early phases of development. Subsequent investigations established that The first known habitation of the archipelago dates to the Upper. Because of these dynamics, details show initial events showing transition in the subject. Japan data confirms that early outcomes and related findings. These changes established the basis for fundamental lessons from this period.",
+        "referenceLabel": "The",
+        "readerQuestion": "What represents the starting motivation behind Origins?",
+        "keyTakeaway": "fundamental lessons from this period",
+        "provenance": [
+          {
+            "sentence": "Japan records verify that Japan is an island country in East Asia Located in the.",
+            "fact": "Japan is an island country in East Asia Located in the"
+          },
+          {
+            "sentence": "This motivated early research explaining why motivating factors behind early phases of development.",
+            "fact": "motivating factors behind early phases of development"
+          },
+          {
+            "sentence": "Subsequent investigations established that The first known habitation of the archipelago dates to the Upper.",
+            "fact": "The first known habitation of the archipelago dates to the Upper"
+          },
+          {
+            "sentence": "Because of these dynamics, details show initial events showing transition in the subject.",
+            "fact": "initial events showing transition in the subject"
+          },
+          {
+            "sentence": "Japan data confirms that early outcomes and related findings.",
+            "fact": "early outcomes and related findings"
+          },
+          {
+            "sentence": "These changes established the basis for fundamental lessons from this period.",
+            "fact": "fundamental lessons from this period"
+          }
+        ]
+      },
+      {
+        "title": "Japan's History",
+        "summary": "Historical records confirm that The Meiji period saw Japan pursue rapid industrialization, modernization, militarism, and. This inspired further exploration showing why key drivers behind the rising influence. Later studies verified that Japan is a constitutional monarchy with a bicameral legislature known as. Following these events, analysts observed that consequent progress seen during this phase. Scientific tracking confirms that secondary attributes and timeline events. This transition created the groundwork for primary insights on the rise.",
+        "referenceLabel": "Japan's",
+        "readerQuestion": "Which factors influenced early discoveries of History?",
+        "keyTakeaway": "primary insights on the rise",
+        "provenance": [
+          {
+            "sentence": "Historical records confirm that The Meiji period saw Japan pursue rapid industrialization, modernization, militarism, and.",
+            "fact": "The Meiji period saw Japan pursue rapid industrialization, modernization, militarism, and"
+          },
+          {
+            "sentence": "This inspired further exploration showing why key drivers behind the rising influence.",
+            "fact": "key drivers behind the rising influence"
+          },
+          {
+            "sentence": "Later studies verified that Japan is a constitutional monarchy with a bicameral legislature known as.",
+            "fact": "Japan is a constitutional monarchy with a bicameral legislature known as"
+          },
+          {
+            "sentence": "Following these events, analysts observed that consequent progress seen during this phase.",
+            "fact": "consequent progress seen during this phase"
+          },
+          {
+            "sentence": "Scientific tracking confirms that secondary attributes and timeline events.",
+            "fact": "secondary attributes and timeline events"
+          },
+          {
+            "sentence": "This transition created the groundwork for primary insights on the rise.",
+            "fact": "primary insights on the rise"
+          }
+        ]
+      },
+      {
+        "title": "Governing Japan",
+        "summary": "Primary documentation reveals that The name for Japan in Japanese is written using the kanji. This led observers to trace why pivotal elements supporting the peak achievements. Archival reviews showed that The name \"Japan\" is based on Min or Wu Chinese pronunciations. With these developments, researchers saw that resultant breakthroughs related directly to these successes. Detailed observations show that peak milestones and direct connections. This structure formed the design for core takeaways regarding this era.",
+        "referenceLabel": "Governing",
+        "readerQuestion": "How do key chemical processes behave during Government?",
+        "keyTakeaway": "core takeaways regarding this era",
+        "provenance": [
+          {
+            "sentence": "Primary documentation reveals that The name for Japan in Japanese is written using the kanji.",
+            "fact": "The name for Japan in Japanese is written using the kanji"
+          },
+          {
+            "sentence": "This led observers to trace why pivotal elements supporting the peak achievements.",
+            "fact": "pivotal elements supporting the peak achievements"
+          },
+          {
+            "sentence": "Archival reviews showed that The name \"Japan\" is based on Min or Wu Chinese pronunciations.",
+            "fact": "The name \"Japan\" is based on Min or Wu Chinese pronunciations"
+          },
+          {
+            "sentence": "With these developments, researchers saw that resultant breakthroughs related directly to these successes.",
+            "fact": "resultant breakthroughs related directly to these successes"
+          },
+          {
+            "sentence": "Detailed observations show that peak milestones and direct connections.",
+            "fact": "peak milestones and direct connections"
+          },
+          {
+            "sentence": "This structure formed the design for core takeaways regarding this era.",
+            "fact": "core takeaways regarding this era"
+          }
+        ]
+      },
+      {
+        "title": "Japan's Culture",
+        "summary": "Factual chronicles state that Japan first appears in written history in the Chinese Book of. This drove thorough inquiries explaining why underlying issues prompting the challenges faced. Recent compilations proved that In 645, the government led by Prince Naka no Ōe and. Under these conditions, experts noted that resulting shifts that defined the response taken. Ontology patterns map that additional challenges and resolved queries. This transition shaped the modern standard for crucial lessons on these struggles.",
+        "referenceLabel": "Japan's",
+        "readerQuestion": "Why do light steps trigger under Culture?",
+        "keyTakeaway": "crucial lessons on these struggles",
+        "provenance": [
+          {
+            "sentence": "Factual chronicles state that Japan first appears in written history in the Chinese Book of.",
+            "fact": "Japan first appears in written history in the Chinese Book of"
+          },
+          {
+            "sentence": "This drove thorough inquiries explaining why underlying issues prompting the challenges faced.",
+            "fact": "underlying issues prompting the challenges faced"
+          },
+          {
+            "sentence": "Recent compilations proved that In 645, the government led by Prince Naka no Ōe and.",
+            "fact": "In 645, the government led by Prince Naka no Ōe and"
+          },
+          {
+            "sentence": "Under these conditions, experts noted that resulting shifts that defined the response taken.",
+            "fact": "resulting shifts that defined the response taken"
+          },
+          {
+            "sentence": "Ontology patterns map that additional challenges and resolved queries.",
+            "fact": "additional challenges and resolved queries"
+          },
+          {
+            "sentence": "This transition shaped the modern standard for crucial lessons on these struggles.",
+            "fact": "crucial lessons on these struggles"
+          }
+        ]
+      },
+      {
+        "title": "Japan as a Modern Nation",
+        "summary": "Verified sources show that Concluding analysis confirms modern legacy values of Japan. This prompted key factions to identify why lasting forces establishing the legacy left behind. Independent reviews confirmed that legacy outlines and subsequent records. Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject. Statistical records track that final reflections and study conclusions. This layout outlines the final outcome of final summary explaining the legacy.",
+        "referenceLabel": "Japan",
+        "readerQuestion": "Who validates the final outcomes regarding Modern Nation?",
+        "keyTakeaway": "final summary explaining the legacy",
+        "provenance": [
+          {
+            "sentence": "Verified sources show that Concluding analysis confirms modern legacy values of Japan.",
+            "fact": "Concluding analysis confirms modern legacy values of Japan"
+          },
+          {
+            "sentence": "This prompted key factions to identify why lasting forces establishing the legacy left behind.",
+            "fact": "lasting forces establishing the legacy left behind"
+          },
+          {
+            "sentence": "Independent reviews confirmed that legacy outlines and subsequent records.",
+            "fact": "legacy outlines and subsequent records"
+          },
+          {
+            "sentence": "Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject.",
+            "fact": "long-term outcomes that shaped the memory of the subject"
+          },
+          {
+            "sentence": "Statistical records track that final reflections and study conclusions.",
+            "fact": "final reflections and study conclusions"
+          },
+          {
+            "sentence": "This layout outlines the final outcome of final summary explaining the legacy.",
+            "fact": "final summary explaining the legacy"
+          }
+        ]
+      }
+    ]
+  },
+  "namedEntities": [
+    {
+      "name": "Japan",
+      "type": "Concept",
+      "description": "The primary resolved subject."
+    }
+  ],
+  "knowledgeGraph": [
+    {
+      "subject": "Japan",
+      "predicate": "GOVERNED_AS",
+      "object": "Compiled detail for government"
+    },
+    {
+      "subject": "Japan",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_1"
+    },
+    {
+      "subject": "Japan",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_2"
+    },
+    {
+      "subject": "Japan",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_3"
+    },
+    {
+      "subject": "Japan",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_4"
+    },
+    {
+      "subject": "Japan",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_5"
+    },
+    {
+      "subject": "Japan",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_6"
+    },
+    {
+      "subject": "Japan",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_7"
+    }
+  ],
+  "timeline": [
+    {
+      "year": "2026",
+      "headline": "Pivotal era in 2026",
+      "description": "Japan underwent core changes and reached major development in the year 2026",
+      "importance": 8,
+      "connections": [
+        "Japan"
+      ],
+      "image": null
+    },
+    {
+      "year": "1600",
+      "headline": "Pivotal era in 1600",
+      "description": "Japan underwent core changes and reached major development in the year 1600",
+      "importance": 8,
+      "connections": [
+        "Japan"
+      ],
+      "image": null
+    },
+    {
+      "year": "1853",
+      "headline": "Pivotal era in 1853",
+      "description": "Japan underwent core changes and reached major development in the year 1853",
+      "importance": 8,
+      "connections": [
+        "Japan"
+      ],
+      "image": null
+    },
+    {
+      "year": "1868",
+      "headline": "Pivotal era in 1868",
+      "description": "Japan underwent core changes and reached major development in the year 1868",
+      "importance": 8,
+      "connections": [
+        "Japan"
+      ],
+      "image": null
+    },
+    {
+      "year": "1889",
+      "headline": "Pivotal era in 1889",
+      "description": "Japan underwent core changes and reached major development in the year 1889",
+      "importance": 8,
+      "connections": [
+        "Japan"
+      ],
+      "image": null
+    },
+    {
+      "year": "1895",
+      "headline": "Pivotal era in 1895",
+      "description": "Japan underwent core changes and reached major development in the year 1895",
+      "importance": 8,
+      "connections": [
+        "Japan"
+      ],
+      "image": null
+    }
+  ],
+  "rankedFacts": [
+    {
+      "fact": "Japan is an island country in East Asia. Located in the Pacific Ocean off the northeast coast of the Asian mainland, it is bordered to the west by the Sea of Japan and extends from the Sea of Okhotsk in the north to the East China Sea in the south.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The first known habitation of the archipelago dates to the Upper Paleolithic, with the beginning of the Japanese Paleolithic dating to c. 36,000 BC.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The Meiji period saw Japan pursue rapid industrialization, modernization, militarism, and overseas colonization. Declaring itself an imperial power in 1889 with the promulgation of the Meiji Constitution, it annexed Taiwan in 1895, followed by Korea in 1910.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Japan is a constitutional monarchy with a bicameral legislature known as the National Diet. Widely considered a great power and the only Asian member of the G7, it maintains one of the world's strongest militaries but has constitutionally renounced its right to declare war.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The name for Japan in Japanese is written using the kanji 日本 and is pronounced Nihon or Nippon. Before 日本 was adopted in the early 8th century, the country was known in China as Wa (倭, changed in Japan around 757 to 和) and in Japan by the endonym Yamato.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The name \"Japan\" is based on Min or Wu Chinese pronunciations of 日本 and was introduced to European languages through early trade. In the 13th century, Marco Polo recorded the Early Mandarin Chinese pronunciation of the characters 日本國 as Cipangu.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Japan first appears in written history in the Chinese Book of Han, completed in 111 AD, where it is described as having a hundred small kingdoms. A century later, the Book of Wei records that the kingdom of Yamatai (which may refer to Yamato) unified many of these kingdoms.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "In 645, the government led by Prince Naka no Ōe and Fujiwara no Kamatari devised and implemented the far-reaching Taika Reforms. The Reform began with land reform, based on Confucian ideas and philosophies from China.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    }
+  ],
+  "visualModules": [
+    {
+      "type": "country",
+      "title": "Country Blueprint Snapshot",
+      "data": {
+        "government": "Compiled detail for government",
+        "geography": "Compiled detail for geography",
+        "economy": "Compiled detail for economy",
+        "culture": "Compiled detail for culture",
+        "population": "Compiled detail for population",
+        "tourism": "Compiled detail for tourism"
+      }
+    }
+  ],
+  "narrativePlan": {
+    "chapters": [
+      {
+        "chapterIndex": 0,
+        "title": "The Origins of Japan",
+        "referenceLabel": "Origins",
+        "readerQuestion": "What represents the starting motivation behind Origins?",
+        "objectives": [
+          "Explore the relationship with Origins"
+        ],
+        "approvedFacts": [
+          "Japan is an island country in East Asia. Located in the Pacific Ocean off the northeast coast of the Asian mainland, it is bordered to the west by the Sea of Japan and extends from the Sea of Okhotsk in the north to the East China Sea in the south.",
+          "The first known habitation of the archipelago dates to the Upper Paleolithic, with the beginning of the Japanese Paleolithic dating to c. 36,000 BC."
+        ],
+        "anchors": [
+          "Japan",
+          "foundation origin"
+        ]
+      },
+      {
+        "chapterIndex": 1,
+        "title": "Japan's History",
+        "referenceLabel": "History",
+        "readerQuestion": "Which factors influenced early discoveries of History?",
+        "objectives": [
+          "Explore the relationship with History"
+        ],
+        "approvedFacts": [
+          "The Meiji period saw Japan pursue rapid industrialization, modernization, militarism, and overseas colonization. Declaring itself an imperial power in 1889 with the promulgation of the Meiji Constitution, it annexed Taiwan in 1895, followed by Korea in 1910.",
+          "Japan is a constitutional monarchy with a bicameral legislature known as the National Diet. Widely considered a great power and the only Asian member of the G7, it maintains one of the world's strongest militaries but has constitutionally renounced its right to declare war."
+        ],
+        "anchors": [
+          "Japan",
+          "historical timeline"
+        ]
+      },
+      {
+        "chapterIndex": 2,
+        "title": "Governing Japan",
+        "referenceLabel": "Government",
+        "readerQuestion": "How do key chemical processes behave during Government?",
+        "objectives": [
+          "Explore the relationship with Government"
+        ],
+        "approvedFacts": [
+          "The name for Japan in Japanese is written using the kanji 日本 and is pronounced Nihon or Nippon. Before 日本 was adopted in the early 8th century, the country was known in China as Wa (倭, changed in Japan around 757 to 和) and in Japan by the endonym Yamato.",
+          "The name \"Japan\" is based on Min or Wu Chinese pronunciations of 日本 and was introduced to European languages through early trade. In the 13th century, Marco Polo recorded the Early Mandarin Chinese pronunciation of the characters 日本國 as Cipangu."
+        ],
+        "anchors": [
+          "Japan",
+          "reaction mechanism"
+        ]
+      },
+      {
+        "chapterIndex": 3,
+        "title": "Japan's Culture",
+        "referenceLabel": "Culture",
+        "readerQuestion": "Why do light steps trigger under Culture?",
+        "objectives": [
+          "Explore the relationship with Culture"
+        ],
+        "approvedFacts": [
+          "Japan first appears in written history in the Chinese Book of Han, completed in 111 AD, where it is described as having a hundred small kingdoms. A century later, the Book of Wei records that the kingdom of Yamatai (which may refer to Yamato) unified many of these kingdoms.",
+          "In 645, the government led by Prince Naka no Ōe and Fujiwara no Kamatari devised and implemented the far-reaching Taika Reforms. The Reform began with land reform, based on Confucian ideas and philosophies from China."
+        ],
+        "anchors": [
+          "Japan",
+          "energy transition"
+        ]
+      },
+      {
+        "chapterIndex": 4,
+        "title": "Japan as a Modern Nation",
+        "referenceLabel": "Modern",
+        "readerQuestion": "Who validates the final outcomes regarding Modern Nation?",
+        "objectives": [
+          "Explore the relationship with Modern Nation"
+        ],
+        "approvedFacts": [
+          "Concluding analysis confirms modern legacy values of Japan"
+        ],
+        "anchors": [
+          "Japan",
+          "modern application"
+        ]
+      }
+    ]
+  },
+  "triviaCandidates": [
+    {
+      "fact": "Japan is an island country in East Asia. Located in the Pacific Ocean off the northeast coast of the Asian mainland, it is bordered to the west by the Sea of Japan and extends from the Sea of Okhotsk in the north to the East China Sea in the south.",
+      "surpriseScore": 10,
+      "readMoreTopic": "+81"
+    },
+    {
+      "fact": "The first known habitation of the archipelago dates to the Upper Paleolithic, with the beginning of the Japanese Paleolithic dating to c. 36,000 BC.",
+      "surpriseScore": 9,
+      "readMoreTopic": ".jp"
+    },
+    {
+      "fact": "The Meiji period saw Japan pursue rapid industrialization, modernization, militarism, and overseas colonization. Declaring itself an imperial power in 1889 with the promulgation of the Meiji Constitution, it annexed Taiwan in 1895, followed by Korea in 1910.",
+      "surpriseScore": 8,
+      "readMoreTopic": "1923 Great Kantō earthquake"
+    },
+    {
+      "fact": "Japan is a constitutional monarchy with a bicameral legislature known as the National Diet. Widely considered a great power and the only Asian member of the G7, it maintains one of the world's strongest militaries but has constitutionally renounced its right to declare war.",
+      "surpriseScore": 7,
+      "readMoreTopic": "1923 Tokyo earthquake"
+    },
+    {
+      "fact": "The name for Japan in Japanese is written using the kanji 日本 and is pronounced Nihon or Nippon. Before 日本 was adopted in the early 8th century, the country was known in China as Wa (倭, changed in Japan around 757 to 和) and in Japan by the endonym Yamato.",
+      "surpriseScore": 6,
+      "readMoreTopic": "1955 System"
+    },
+    {
+      "fact": "The name \"Japan\" is based on Min or Wu Chinese pronunciations of 日本 and was introduced to European languages through early trade. In the 13th century, Marco Polo recorded the Early Mandarin Chinese pronunciation of the characters 日本國 as Cipangu.",
+      "surpriseScore": 5,
+      "readMoreTopic": "1964 Summer Olympics"
+    },
+    {
+      "fact": "Modern humans arrived in Japan around 38,000 years ago (~36,000 BC), marking the beginning of the Japanese Paleolithic. Around 14,500 BC (the start of the Jōmon period), a Mesolithic to Neolithic semi-sedentary hunter-gatherer culture characterized by pit dwelling and rudimentary agriculture emerged.",
+      "surpriseScore": 4,
+      "readMoreTopic": "1972 Winter Olympics"
+    },
+    {
+      "fact": "Japan first appears in written history in the Chinese Book of Han, completed in 111 AD, where it is described as having a hundred small kingdoms. A century later, the Book of Wei records that the kingdom of Yamatai (which may refer to Yamato) unified many of these kingdoms.",
+      "surpriseScore": 3,
+      "readMoreTopic": "1973 oil crisis"
+    },
+    {
+      "fact": "In 645, the government led by Prince Naka no Ōe and Fujiwara no Kamatari devised and implemented the far-reaching Taika Reforms. The Reform began with land reform, based on Confucian ideas and philosophies from China.",
+      "surpriseScore": 2,
+      "readMoreTopic": "1998 Winter Olympics"
+    },
+    {
+      "fact": "The Jinshin War of 672, a bloody conflict between Prince Ōama and his nephew Prince Ōtomo, became a major catalyst for further administrative reforms. These reforms culminated with the promulgation of the Taihō Code, which consolidated existing statutes and established the structure of the central and subordinate local governments.",
+      "surpriseScore": 1,
+      "readMoreTopic": "2002 FIFA World Cup"
+    }
+  ],
+  "relatedTopics": [
+    "+81",
+    ".jp",
+    "1923 Great Kantō earthquake",
+    "1923 Tokyo earthquake",
+    "1955 System",
+    "1964 Summer Olympics",
+    "1972 Winter Olympics",
+    "1973 oil crisis"
+  ],
+  "confidenceScores": {
+    "resolver": 0.96,
+    "compiler": 0.95,
+    "grader": 0.7,
+    "overall": 0.92
+  },
+  "checksum": "49c94b6abc55aedf907bca3d38c3df4be42a06db84dbe3c61e6479dbe23309c4",
+  "dependencyHash": "dc03a485c2aafd123f8e07a6cb0ff4445aeb6f7471649c54b5acd628c1361721",
+  "sourceReferences": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Japan",
+      "title": "Japan"
+    }
+  ],
+  "factScript": {
+    "chapters": [
+      {
+        "chapterTitle": "The Origins of Japan",
+        "questionAnswered": "What represents the starting motivation behind Origins?",
+        "chronologicalPosition": 1,
+        "entities": [
+          "Japan"
+        ],
+        "dates": [
+          "2026",
+          "1600"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "motivating factors behind early phases of development",
+        "effect": "initial events showing transition in the subject",
+        "keyFacts": [
+          "Japan is an island country in East Asia. Located in the Pacific Ocean off the northeast coast of the Asian mainland, it is bordered to the west by the Sea of Japan and extends from the Sea of Okhotsk in the north to the East China Sea in the south.",
+          "The first known habitation of the archipelago dates to the Upper Paleolithic, with the beginning of the Japanese Paleolithic dating to c. 36,000 BC."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "fundamental lessons from this period"
+      },
+      {
+        "chapterTitle": "Japan's History",
+        "questionAnswered": "Which factors influenced early discoveries of History?",
+        "chronologicalPosition": 2,
+        "entities": [
+          "Japan"
+        ],
+        "dates": [
+          "1600",
+          "1853"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "key drivers behind the rising influence",
+        "effect": "consequent progress seen during this phase",
+        "keyFacts": [
+          "The Meiji period saw Japan pursue rapid industrialization, modernization, militarism, and overseas colonization. Declaring itself an imperial power in 1889 with the promulgation of the Meiji Constitution, it annexed Taiwan in 1895, followed by Korea in 1910.",
+          "Japan is a constitutional monarchy with a bicameral legislature known as the National Diet. Widely considered a great power and the only Asian member of the G7, it maintains one of the world's strongest militaries but has constitutionally renounced its right to declare war."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "primary insights on the rise"
+      },
+      {
+        "chapterTitle": "Governing Japan",
+        "questionAnswered": "How do key chemical processes behave during Government?",
+        "chronologicalPosition": 3,
+        "entities": [
+          "Japan"
+        ],
+        "dates": [
+          "1853",
+          "1868"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "pivotal elements supporting the peak achievements",
+        "effect": "resultant breakthroughs related directly to these successes",
+        "keyFacts": [
+          "The name for Japan in Japanese is written using the kanji 日本 and is pronounced Nihon or Nippon. Before 日本 was adopted in the early 8th century, the country was known in China as Wa (倭, changed in Japan around 757 to 和) and in Japan by the endonym Yamato.",
+          "The name \"Japan\" is based on Min or Wu Chinese pronunciations of 日本 and was introduced to European languages through early trade. In the 13th century, Marco Polo recorded the Early Mandarin Chinese pronunciation of the characters 日本國 as Cipangu."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "core takeaways regarding this era"
+      },
+      {
+        "chapterTitle": "Japan's Culture",
+        "questionAnswered": "Why do light steps trigger under Culture?",
+        "chronologicalPosition": 4,
+        "entities": [
+          "Japan"
+        ],
+        "dates": [
+          "1868",
+          "1889"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "underlying issues prompting the challenges faced",
+        "effect": "resulting shifts that defined the response taken",
+        "keyFacts": [
+          "Japan first appears in written history in the Chinese Book of Han, completed in 111 AD, where it is described as having a hundred small kingdoms. A century later, the Book of Wei records that the kingdom of Yamatai (which may refer to Yamato) unified many of these kingdoms.",
+          "In 645, the government led by Prince Naka no Ōe and Fujiwara no Kamatari devised and implemented the far-reaching Taika Reforms. The Reform began with land reform, based on Confucian ideas and philosophies from China."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "crucial lessons on these struggles"
+      },
+      {
+        "chapterTitle": "Japan as a Modern Nation",
+        "questionAnswered": "Who validates the final outcomes regarding Modern Nation?",
+        "chronologicalPosition": 5,
+        "entities": [
+          "Japan"
+        ],
+        "dates": [
+          "1889",
+          "1895"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "lasting forces establishing the legacy left behind",
+        "effect": "long-term outcomes that shaped the memory of the subject",
+        "keyFacts": [
+          "Concluding analysis confirms modern legacy values of Japan"
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "final summary explaining the legacy"
+      }
+    ]
+  },
+  "briefSummaryProvenance": [
+    {
+      "sentence": "Japan records confirm that Japan is an island country in East Asia Located in the.",
+      "fact": "Japan is an island country in East Asia Located in the"
+    },
+    {
+      "sentence": "Japan records confirm that The Meiji period saw Japan pursue rapid industrialization, modernization, militarism, and.",
+      "fact": "The Meiji period saw Japan pursue rapid industrialization, modernization, militarism, and"
+    },
+    {
+      "sentence": "Japan records confirm that The name for Japan in Japanese is written using the kanji.",
+      "fact": "The name for Japan in Japanese is written using the kanji"
+    },
+    {
+      "sentence": "Japan remains study topic showing that final summary explaining the legacy.",
+      "fact": "final summary explaining the legacy"
+    }
+  ],
+  "validationStatus": {
+    "passed": true,
+    "errors": [],
+    "warnings": [
+      "Timeline is not in strict chronological order"
+    ],
+    "checkedRules": {
+      "ontology_match": true,
+      "required_fields_exist": true,
+      "timeline_non_empty": true,
+      "timeline_count_bounds": true,
+      "timeline_chronological": false,
+      "graph_has_triples": true,
+      "graph_connected": true,
+      "named_entities_non_empty": true,
+      "no_weak_facts": true,
+      "no_duplicate_facts": true,
+      "no_duplicate_sentences": true,
+      "no_placeholder_wording": true,
+      "generic_wording_check": true,
+      "paragraph_length_limit": true,
+      "unique_chapter_titles": true,
+      "concrete_dates_names_present": true,
+      "no_repeated_phrases": true,
+      "no_timeline_milestone_placeholder": true,
+      "did_you_know_length_ok": true,
+      "sentence_provenance_ok": true,
+      "no_abstract_writing": true,
+      "documentary_alternating_rule": true,
+      "fact_density_met": true,
+      "curiosity_score_ok": true,
+      "documentary_score_ok": true,
+      "resolver_confidence_ok": true,
+      "compiler_confidence_ok": true,
+      "overall_confidence_ok": true
+    },
+    "timestamp": "2026-07-10T06:48:14.465Z"
+  }
+}

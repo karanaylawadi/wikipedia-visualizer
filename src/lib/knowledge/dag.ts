@@ -3,7 +3,9 @@ import { compileKnowledge, CompiledOutput } from "./compiler";
 import { buildKnowledgeGraph } from "./knowledgeGraph";
 import { evaluateFacts } from "./factEvaluator";
 import { planNarrative } from "./narrativePlanner";
-import { writeBriefSummary, writeChapterCard, PerspectiveCard } from "./geminiWriter";
+import { generateFactScript } from "./factScript";
+import { writeDocumentarySummary, writeDocumentaryCard, sanitizeBannedWords } from "./documentaryWriter";
+import { polishDocumentary } from "./stylePolish";
 import { lintArtifact } from "./linter";
 import {
   loadLocalArtifact,
@@ -13,7 +15,7 @@ import {
   COMPILER_VERSION,
   ONTOLOGY_VERSION
 } from "./store";
-import type { KnowledgeArtifact, ResolvedEntity, TimelineEvent, GraphTriple, EvaluatedFact, VisualModule, NarrativePlan } from "@/types/knowledge";
+import type { KnowledgeArtifact, ResolvedEntity, TimelineEvent, GraphTriple, EvaluatedFact, VisualModule, NarrativePlan, PerspectiveCard, FactScript, SurprisingInsight } from "@/types/knowledge";
 import type { ArticleIntelligence } from "../editorial/wikipedia";
 import { mapEntityTypeToOntology } from "../ontology/ontologyEngine";
 
@@ -49,10 +51,12 @@ export async function processKnowledgeDAG(
   let knowledgeGraph: GraphTriple[];
   let rankedFacts: EvaluatedFact[];
   let timeline: TimelineEvent[];
-  let triviaCandidates: string[];
+  let triviaCandidates: SurprisingInsight[];
   let narrativePlan: NarrativePlan;
   let briefSummaryText = "";
   let perspectiveCards: PerspectiveCard[] = [];
+  let factScript: FactScript | undefined;
+  let briefSummaryProvenance: Array<{ sentence: string; fact: string }> | undefined;
 
   if (needsRecompilation) {
     console.log(`[DAG] Incremental cache miss for "${resolved.canonicalTitle}". Running compiler...`);
@@ -72,14 +76,45 @@ export async function processKnowledgeDAG(
     // Step 8: Stage 9 Narrative Planner
     narrativePlan = await planNarrative(resolved, compiled, rankedFacts);
 
-    // Step 9: Stage 10 Gemini Writer (generate summary and cards)
-    briefSummaryText = await writeBriefSummary(resolved, compiled, narrativePlan);
+    // Phase 1: Fact Script Engine
+    factScript = await generateFactScript(resolved, compiled, rankedFacts, narrativePlan);
+
+    // Phase 2: Documentary Writer
+    const summaryData = await writeDocumentarySummary(resolved, factScript);
+    briefSummaryText = summaryData.summary;
+    briefSummaryProvenance = summaryData.provenance;
     
     perspectiveCards = [];
     for (let i = 0; i < narrativePlan.chapters.length; i++) {
-      const card = await writeChapterCard(resolved, narrativePlan.chapters[i], i, perspectiveCards);
+      const card = await writeDocumentaryCard(resolved, factScript.chapters[i], i, perspectiveCards);
       perspectiveCards.push(card);
     }
+
+    // Phase 10: Style Polish
+    const polished = await polishDocumentary(resolved, briefSummaryText, perspectiveCards);
+    briefSummaryText = sanitizeBannedWords(polished.summary);
+    perspectiveCards = polished.cards.map(c => ({
+      ...c,
+      summary: sanitizeBannedWords(c.summary),
+      keyTakeaway: sanitizeBannedWords(c.keyTakeaway),
+      provenance: c.provenance ? c.provenance.map(p => ({
+        sentence: sanitizeBannedWords(p.sentence),
+        fact: sanitizeBannedWords(p.fact)
+      })) : []
+    }));
+    
+    // Re-map summary provenance sentences if style polish changed them slightly
+    if (briefSummaryProvenance && polished.summary !== summaryData.summary) {
+      const origSentences = summaryData.summary.split(/(?<=[.!?])\s+/).filter(Boolean);
+      const polishedSentences = briefSummaryText.split(/(?<=[.!?])\s+/).filter(Boolean);
+      if (origSentences.length === polishedSentences.length && briefSummaryProvenance.length === polishedSentences.length) {
+        briefSummaryProvenance = briefSummaryProvenance.map((p, idx) => ({
+          sentence: sanitizeBannedWords(polishedSentences[idx]),
+          fact: sanitizeBannedWords(p.fact)
+        }));
+      }
+    }
+
     triviaCandidates = compiled.triviaCandidates;
   } else {
     console.log(`[DAG] Incremental cache hit for "${resolved.canonicalTitle}". Reusing cached sub-stages.`);
@@ -97,8 +132,10 @@ export async function processKnowledgeDAG(
     timeline = cached!.timeline;
     triviaCandidates = cached!.triviaCandidates;
     narrativePlan = cached!.narrativePlan;
-    briefSummaryText = cached!.validationStatus.checkedRules["brief_summary"] ? "summary text" : ""; 
-    // We will parse standard values below
+    factScript = cached!.factScript;
+    briefSummaryProvenance = cached!.briefSummaryProvenance;
+    perspectiveCards = (cached!.structuredFacts.cards || []) as PerspectiveCard[];
+    briefSummaryText = cached!.structuredFacts.briefSummary || "";
   }
 
   // Visual modules construction
@@ -113,7 +150,7 @@ export async function processKnowledgeDAG(
 
   // Stage 4: Compile into Canonical Knowledge Artifact
   const artifactPayload: Omit<KnowledgeArtifact, "validationStatus"> = {
-    version: "15.0",
+    version: "16.0",
     compilerVersion: COMPILER_VERSION,
     ontologyVersion: ONTOLOGY_VERSION,
     wikipediaRevision,
@@ -148,7 +185,12 @@ export async function processKnowledgeDAG(
     dependencyHash: currentDependencyHash,
     sourceReferences: [
       { url: article.content_urls?.desktop?.page || `https://en.wikipedia.org/wiki/${encodeURIComponent(resolved.canonicalTitle)}`, title: resolved.canonicalTitle }
-    ]
+    ],
+    factScript,
+    briefSummaryProvenance: briefSummaryProvenance ? briefSummaryProvenance.map(p => ({
+      sentence: sanitizeBannedWords(p.sentence),
+      fact: sanitizeBannedWords(p.fact)
+    })) : undefined
   };
 
   // Step 10: Stage 8 Knowledge Linter validation

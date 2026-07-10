@@ -1,7 +1,7 @@
 {
-  "version": "15.0",
-  "compilerVersion": "v15.0",
-  "ontologyVersion": "v15.0",
+  "version": "16.0",
+  "compilerVersion": "v16.0",
+  "ontologyVersion": "v16.0",
   "wikipediaRevision": "rev-1.0",
   "wikidataRevision": "Q12418",
   "ontology": {
@@ -29,42 +29,205 @@
     "title": "Mona Lisa",
     "subtitle": "Painting by Leonardo da Vinci",
     "leadParagraph": "The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world.\" The painting's novel qualities include the subject's enigmatic expression, the monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism.\nThe painting has been traditionally considered to depict the Italian noblewoman Lisa del Giocondo. It is painted in oil on a white poplar panel. Leonardo never gave the painting to the Giocondo family. It was believed to have been painted between 1503 and 1506; however, Leonardo may have continued working on it as late as 1517. King Francis I of France acquired the Mona Lisa after Leonardo's death in 1519, and it became the property of the French Republic. It has normally been on display at the Louvre in Paris since 1797.\nThe painting's global fame and popularity partly stem from its 1911 theft by Vincenzo Peruggia, who attributed his actions to Italian patriotism—a belief it should belong to Italy. The theft and subsequent recovery in 1914 generated unprecedented publicity for an art theft, and led to the publication of many cultural depictions such as the 1915 opera Mona Lisa, two early 1930s films (The Theft of the Mona Lisa and Arsène Lupin), and the song \"Mona Lisa\" recorded by Nat King Cole—one of the most successful songs of the 1950s.\nThe Mona Lisa is one of the most valuable paintings in the world. It holds the Guinness World Record for the highest known painting insurance valuation in history at US$100 million in 1962, equivalent to $1 billion as of 2023.",
-    "briefSummary": "This briefing compiles a structured analysis of \"Mona Lisa\", examining its key foundations, developments, and modern implementation parameters. Across the five planned chapters, we explore its core attributes starting with early motivations and origins. We then map the subsequent structural escalation, turning points, and overall developmental outcomes that define its legacy. Additionally, we analyze key milestones, including 1503 (Significant milestone event 1), 1506 (Significant milestone event 2), 1517 (Significant milestone event 3), which represent critical points in its historical trajectory. By focusing on named entities such as Mona Lisa, this narrative connects structured factual details with real-world applications. These consolidated insights establish a canonical reference point for further comparative studies. This compiled documentation provides an authoritative record, ensuring that researchers and developers can reference verified facts rather than generic summaries. The resulting framework provides a baseline for all subsequent analysis.",
+    "briefSummary": "During early periods, The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world;\" The painting's novel qualities include the subject's enigmatic expression, the monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism, establishing a clear pattern. During early periods, The painting's global fame and popularity partly stem from its 1911 theft by Vincenzo Peruggia, who attributed his actions to Italian patriotism—a belief it should belong to Italy The theft and subsequent recovery in 1914 generated unprecedented publicity for an art theft, and led to the publication of many cultural depictions such as the 1915 opera Mona Lisa, two early 1930s films (The Theft of the Mona Lisa and Arsène Lupin), and the song \"Mona Lisa\" recorded by Nat King Cole—one of the most successful songs of the 1950s, establishing a clear pattern. During early periods, == Title and subject ==, establishing a clear pattern. These events explain the historical path of Mona Lisa and show that Understanding the critical dynamics of Influence.",
     "cards": [
       {
-        "title": "The Rebellion",
-        "summary": "Centering upon foundational aspects concerning The regarding Mona Lisa. Our team maps particular elements such as Mona Lisa, foundation origin answering queries regarding What represents the starting motivation behind The Rebellion? Showing this, our project gathers confirmed features covering initial stages, confirming accuracy levels. This establishes clear reference points towards initial intervals, laying groundwork supporting future research. Academics can leverage such early baseline records comparing later framework modifications over time. This foundational perspective helps organize whole timelines.",
-        "referenceLabel": "The",
-        "readerQuestion": "What represents the starting motivation behind The Rebellion?",
-        "keyTakeaway": "Core takeaway on The."
+        "title": "Origins",
+        "summary": "First records confirm that The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world;\" The painting's novel qualities include the subject's enigmatic expression, the monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism. This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Origins. Subsequent investigations established that The painting has been traditionally considered to depict the Italian noblewoman Lisa del Giocondo It is painted in oil on a white poplar panel Leonardo never gave the painting to the Giocondo family It was believed to have been painted between 1503 and 1506; however, Leonardo may have continued working on it as late as 1517 King Francis I of France acquired the Mona Lisa after Leonardo's death in 1519, and it became the property of the French Republic It has normally been on display at the Louvre in Paris since 1797. Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Origins. Modern data confirms that Subsequent observations. These changes established the modern basis for understanding Understanding the critical dynamics of Origins.",
+        "referenceLabel": "Origins",
+        "readerQuestion": "What represents the starting motivation behind Origins?",
+        "keyTakeaway": "Understanding the critical dynamics of Origins",
+        "provenance": [
+          {
+            "sentence": "First records confirm that The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world;\" The painting's novel qualities include the subject's enigmatic expression, the monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism.",
+            "fact": "The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world;\" The painting's novel qualities include the subject's enigmatic expression, the monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism"
+          },
+          {
+            "sentence": "This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Origins.",
+            "fact": "The historical motivations and early occurrences that shaped the development of Origins"
+          },
+          {
+            "sentence": "Subsequent investigations established that The painting has been traditionally considered to depict the Italian noblewoman Lisa del Giocondo It is painted in oil on a white poplar panel Leonardo never gave the painting to the Giocondo family It was believed to have been painted between 1503 and 1506; however, Leonardo may have continued working on it as late as 1517 King Francis I of France acquired the Mona Lisa after Leonardo's death in 1519, and it became the property of the French Republic It has normally been on display at the Louvre in Paris since 1797.",
+            "fact": "The painting has been traditionally considered to depict the Italian noblewoman Lisa del Giocondo It is painted in oil on a white poplar panel Leonardo never gave the painting to the Giocondo family It was believed to have been painted between 1503 and 1506; however, Leonardo may have continued working on it as late as 1517 King Francis I of France acquired the Mona Lisa after Leonardo's death in 1519, and it became the property of the French Republic It has normally been on display at the Louvre in Paris since 1797"
+          },
+          {
+            "sentence": "Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Origins.",
+            "fact": "The subsequent evolution and structural transformation observed in the context of Origins"
+          },
+          {
+            "sentence": "Modern data confirms that Subsequent observations.",
+            "fact": "Subsequent observations"
+          },
+          {
+            "sentence": "These changes established the modern basis for understanding Understanding the critical dynamics of Origins.",
+            "fact": "Understanding the critical dynamics of Origins"
+          }
+        ]
       },
       {
-        "title": "Defining Style",
-        "summary": "Examining core features associated with Defining for Mona Lisa. Our team selected particular markers, specifically Mona Lisa, historical timeline, to resolve primary inquiry Which factors influenced early discoveries of Defining Style? Observe that compiled data reveals achievements regarding secondary adaptations, validating experimental protocols. This process indicates the manner framework spread, accelerating adoption across diverse sectors. Industry practitioners utilize such metrics to validate efficiency gains plus optimize production pipelines. Such records provide reference data for active teams.",
-        "referenceLabel": "Defining",
-        "readerQuestion": "Which factors influenced early discoveries of Defining Style?",
-        "keyTakeaway": "Core takeaway on Defining."
+        "title": "Key characteristics",
+        "summary": "First records confirm that The painting's global fame and popularity partly stem from its 1911 theft by Vincenzo Peruggia, who attributed his actions to Italian patriotism—a belief it should belong to Italy The theft and subsequent recovery in 1914 generated unprecedented publicity for an art theft, and led to the publication of many cultural depictions such as the 1915 opera Mona Lisa, two early 1930s films (The Theft of the Mona Lisa and Arsène Lupin), and the song \"Mona Lisa\" recorded by Nat King Cole—one of the most successful songs of the 1950s. This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Key characteristics. Subsequent investigations established that The Mona Lisa is one of the most valuable paintings in the world It holds the Guinness World Record for the highest known painting insurance valuation in history at US$100 million in 1962, equivalent to $1 billion as of 2023. Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Key characteristics. Modern data confirms that Subsequent observations. These changes established the modern basis for understanding Understanding the critical dynamics of Key characteristics.",
+        "referenceLabel": "Key",
+        "readerQuestion": "Which factors influenced early discoveries of Key characteristics?",
+        "keyTakeaway": "Understanding the critical dynamics of Key charact",
+        "provenance": [
+          {
+            "sentence": "First records confirm that The painting's global fame and popularity partly stem from its 1911 theft by Vincenzo Peruggia, who attributed his actions to Italian patriotism—a belief it should belong to Italy The theft and subsequent recovery in 1914 generated unprecedented publicity for an art theft, and led to the publication of many cultural depictions such as the 1915 opera Mona Lisa, two early 1930s films (The Theft of the Mona Lisa and Arsène Lupin), and the song \"Mona Lisa\" recorded by Nat King Cole—one of the most successful songs of the 1950s.",
+            "fact": "The painting's global fame and popularity partly stem from its 1911 theft by Vincenzo Peruggia, who attributed his actions to Italian patriotism—a belief it should belong to Italy The theft and subsequent recovery in 1914 generated unprecedented publicity for an art theft, and led to the publication of many cultural depictions such as the 1915 opera Mona Lisa, two early 1930s films (The Theft of the Mona Lisa and Arsène Lupin), and the song \"Mona Lisa\" recorded by Nat King Cole—one of the most successful songs of the 1950s"
+          },
+          {
+            "sentence": "This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Key characteristics.",
+            "fact": "The historical motivations and early occurrences that shaped the development of Key characteristics"
+          },
+          {
+            "sentence": "Subsequent investigations established that The Mona Lisa is one of the most valuable paintings in the world It holds the Guinness World Record for the highest known painting insurance valuation in history at US$100 million in 1962, equivalent to $1 billion as of 2023.",
+            "fact": "The Mona Lisa is one of the most valuable paintings in the world It holds the Guinness World Record for the highest known painting insurance valuation in history at US$100 million in 1962, equivalent to $1 billion as of 2023"
+          },
+          {
+            "sentence": "Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Key characteristics.",
+            "fact": "The subsequent evolution and structural transformation observed in the context of Key characteristics"
+          },
+          {
+            "sentence": "Modern data confirms that Subsequent observations.",
+            "fact": "Subsequent observations"
+          },
+          {
+            "sentence": "These changes established the modern basis for understanding Understanding the critical dynamics of Key characteristics.",
+            "fact": "Understanding the critical dynamics of Key characteristics"
+          }
+        ]
+      },
+      {
+        "title": "Leading artists",
+        "summary": "First records confirm that == Title and subject ==. This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Leading artists. Subsequent investigations established that Extracted key facts under the section Title and subject. Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Leading artists. Modern data confirms that Subsequent observations. These changes established the modern basis for understanding Understanding the critical dynamics of Leading artists.",
+        "referenceLabel": "Leading",
+        "readerQuestion": "How do key chemical processes behave during Leading artists?",
+        "keyTakeaway": "Understanding the critical dynamics of Leading art",
+        "provenance": [
+          {
+            "sentence": "First records confirm that == Title and subject ==.",
+            "fact": "== Title and subject =="
+          },
+          {
+            "sentence": "This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Leading artists.",
+            "fact": "The historical motivations and early occurrences that shaped the development of Leading artists"
+          },
+          {
+            "sentence": "Subsequent investigations established that Extracted key facts under the section Title and subject.",
+            "fact": "Extracted key facts under the section Title and subject"
+          },
+          {
+            "sentence": "Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Leading artists.",
+            "fact": "The subsequent evolution and structural transformation observed in the context of Leading artists"
+          },
+          {
+            "sentence": "Modern data confirms that Subsequent observations.",
+            "fact": "Subsequent observations"
+          },
+          {
+            "sentence": "These changes established the modern basis for understanding Understanding the critical dynamics of Leading artists.",
+            "fact": "Understanding the critical dynamics of Leading artists"
+          }
+        ]
       },
       {
         "title": "Masterpieces",
-        "summary": "Investigating key components in Masterpieces concerning Mona Lisa. Scholars study retrospective variables, incorporating Mona Lisa, reaction mechanism, that shed clarity concerning How do key chemical processes behave during Masterpieces? For understanding that stage, analysts review facts representing architectural configurations, mapping essential variables. This comprehensive overview clarifies how structures perform in standard settings. Academic literature often references those designated paradigms when defining theoretical constraints while modeling complex phenomena. Individual chemical equations detail exact stoichiometry.",
+        "summary": "First records confirm that Extracted key facts under the section Description. This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Masterpieces. Subsequent investigations established that Extracted key facts under the section History. Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Masterpieces. Modern data confirms that Subsequent observations. These changes established the modern basis for understanding Understanding the critical dynamics of Masterpieces.",
         "referenceLabel": "Masterpieces",
-        "readerQuestion": "How do key chemical processes behave during Masterpieces?",
-        "keyTakeaway": "Core takeaway on Masterpieces."
+        "readerQuestion": "Why do light steps trigger under Masterpieces?",
+        "keyTakeaway": "Understanding the critical dynamics of Masterpiece",
+        "provenance": [
+          {
+            "sentence": "First records confirm that Extracted key facts under the section Description.",
+            "fact": "Extracted key facts under the section Description"
+          },
+          {
+            "sentence": "This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Masterpieces.",
+            "fact": "The historical motivations and early occurrences that shaped the development of Masterpieces"
+          },
+          {
+            "sentence": "Subsequent investigations established that Extracted key facts under the section History.",
+            "fact": "Extracted key facts under the section History"
+          },
+          {
+            "sentence": "Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Masterpieces.",
+            "fact": "The subsequent evolution and structural transformation observed in the context of Masterpieces"
+          },
+          {
+            "sentence": "Modern data confirms that Subsequent observations.",
+            "fact": "Subsequent observations"
+          },
+          {
+            "sentence": "These changes established the modern basis for understanding Understanding the critical dynamics of Masterpieces.",
+            "fact": "Understanding the critical dynamics of Masterpieces"
+          }
+        ]
       },
       {
-        "title": "Spreading the Vision",
-        "summary": "Detailing developmental nodes of Spreading within Mona Lisa. By mapping several parameters, namely Mona Lisa, energy transition, we address crucial query Why do light steps trigger under Spreading the Vision? Besides, certain project verifies properties concentrating on operational thresholds, noting key design tolerances. These events outline eventual maturation, showing structure evolved. Technical teams inspect some intermediate stages checking internal integrity, preventing unexpected failures while operating amid heavy load conditions. Those parameters describe energy transfer efficiency.",
-        "referenceLabel": "Spreading",
-        "readerQuestion": "Why do light steps trigger under Spreading the Vision?",
-        "keyTakeaway": "Core takeaway on Spreading."
+        "title": "Spread",
+        "summary": "First records confirm that Extracted key facts under the section Creation and date. This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Spread. Subsequent investigations established that Core development details. Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Spread. Modern data confirms that Subsequent observations. These changes established the modern basis for understanding Understanding the critical dynamics of Spread.",
+        "referenceLabel": "Spread",
+        "readerQuestion": "Who validates the final outcomes regarding Spread?",
+        "keyTakeaway": "Understanding the critical dynamics of Spread",
+        "provenance": [
+          {
+            "sentence": "First records confirm that Extracted key facts under the section Creation and date.",
+            "fact": "Extracted key facts under the section Creation and date"
+          },
+          {
+            "sentence": "This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Spread.",
+            "fact": "The historical motivations and early occurrences that shaped the development of Spread"
+          },
+          {
+            "sentence": "Subsequent investigations established that Core development details.",
+            "fact": "Core development details"
+          },
+          {
+            "sentence": "Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Spread.",
+            "fact": "The subsequent evolution and structural transformation observed in the context of Spread"
+          },
+          {
+            "sentence": "Modern data confirms that Subsequent observations.",
+            "fact": "Subsequent observations"
+          },
+          {
+            "sentence": "These changes established the modern basis for understanding Understanding the critical dynamics of Spread.",
+            "fact": "Understanding the critical dynamics of Spread"
+          }
+        ]
       },
       {
-        "title": "The Echoes",
-        "summary": "Synthesizing today's outcomes regarding The related to Mona Lisa. Integrating insights from relevant contexts including Mona Lisa, modern application helps clarify Who validates the final outcomes regarding The Echoes? Finally, database lists unique characteristics explaining complete lifecycle events, detailing present applications. This schematic view presents lasting legacy, anchoring its worth in archives. Users access certain final reports constructing high-level summaries, submitting certified findings for stakeholders concluding the lifecycle for this stage. This investigation yields clean testing results.",
-        "referenceLabel": "The",
-        "readerQuestion": "Who validates the final outcomes regarding The Echoes?",
-        "keyTakeaway": "Core takeaway on The."
+        "title": "Influence",
+        "summary": "First records confirm that Primary foundational records list early temporal developments of Mona Lisa. This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Influence. Subsequent investigations established that Core development details. Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Influence. Modern data confirms that Subsequent observations. These changes established the modern basis for understanding Understanding the critical dynamics of Influence.",
+        "referenceLabel": "Influence",
+        "readerQuestion": "What represents the starting motivation behind Influence?",
+        "keyTakeaway": "Understanding the critical dynamics of Influence",
+        "provenance": [
+          {
+            "sentence": "First records confirm that Primary foundational records list early temporal developments of Mona Lisa.",
+            "fact": "Primary foundational records list early temporal developments of Mona Lisa"
+          },
+          {
+            "sentence": "This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Influence.",
+            "fact": "The historical motivations and early occurrences that shaped the development of Influence"
+          },
+          {
+            "sentence": "Subsequent investigations established that Core development details.",
+            "fact": "Core development details"
+          },
+          {
+            "sentence": "Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Influence.",
+            "fact": "The subsequent evolution and structural transformation observed in the context of Influence"
+          },
+          {
+            "sentence": "Modern data confirms that Subsequent observations.",
+            "fact": "Subsequent observations"
+          },
+          {
+            "sentence": "These changes established the modern basis for understanding Understanding the critical dynamics of Influence.",
+            "fact": "Understanding the critical dynamics of Influence"
+          }
+        ]
       }
     ]
   },
@@ -297,11 +460,11 @@
     "chapters": [
       {
         "chapterIndex": 0,
-        "title": "The Rebellion",
-        "referenceLabel": "The",
-        "readerQuestion": "What represents the starting motivation behind The Rebellion?",
+        "title": "Origins",
+        "referenceLabel": "Origins",
+        "readerQuestion": "What represents the starting motivation behind Origins?",
         "objectives": [
-          "Explore the relationship with The Rebellion"
+          "Explore the relationship with Origins"
         ],
         "approvedFacts": [
           "The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world.\" The painting's novel qualities include the subject's enigmatic expression, the monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism.",
@@ -314,11 +477,11 @@
       },
       {
         "chapterIndex": 1,
-        "title": "Defining Style",
-        "referenceLabel": "Defining",
-        "readerQuestion": "Which factors influenced early discoveries of Defining Style?",
+        "title": "Key characteristics",
+        "referenceLabel": "Key",
+        "readerQuestion": "Which factors influenced early discoveries of Key characteristics?",
         "objectives": [
-          "Explore the relationship with Defining Style"
+          "Explore the relationship with Key characteristics"
         ],
         "approvedFacts": [
           "The painting's global fame and popularity partly stem from its 1911 theft by Vincenzo Peruggia, who attributed his actions to Italian patriotism—a belief it should belong to Italy. The theft and subsequent recovery in 1914 generated unprecedented publicity for an art theft, and led to the publication of many cultural depictions such as the 1915 opera Mona Lisa, two early 1930s films (The Theft of the Mona Lisa and Arsène Lupin), and the song \"Mona Lisa\" recorded by Nat King Cole—one of the most successful songs of the 1950s.",
@@ -331,11 +494,11 @@
       },
       {
         "chapterIndex": 2,
-        "title": "Masterpieces",
-        "referenceLabel": "Masterpieces",
-        "readerQuestion": "How do key chemical processes behave during Masterpieces?",
+        "title": "Leading artists",
+        "referenceLabel": "Leading",
+        "readerQuestion": "How do key chemical processes behave during Leading artists?",
         "objectives": [
-          "Explore the relationship with Masterpieces"
+          "Explore the relationship with Leading artists"
         ],
         "approvedFacts": [
           "== Title and subject ==",
@@ -348,11 +511,11 @@
       },
       {
         "chapterIndex": 3,
-        "title": "Spreading the Vision",
-        "referenceLabel": "Spreading",
-        "readerQuestion": "Why do light steps trigger under Spreading the Vision?",
+        "title": "Masterpieces",
+        "referenceLabel": "Masterpieces",
+        "readerQuestion": "Why do light steps trigger under Masterpieces?",
         "objectives": [
-          "Explore the relationship with Spreading the Vision"
+          "Explore the relationship with Masterpieces"
         ],
         "approvedFacts": [
           "Extracted key facts under the section Description",
@@ -365,11 +528,11 @@
       },
       {
         "chapterIndex": 4,
-        "title": "The Echoes",
-        "referenceLabel": "The",
-        "readerQuestion": "Who validates the final outcomes regarding The Echoes?",
+        "title": "Spread",
+        "referenceLabel": "Spread",
+        "readerQuestion": "Who validates the final outcomes regarding Spread?",
         "objectives": [
-          "Explore the relationship with The Echoes"
+          "Explore the relationship with Spread"
         ],
         "approvedFacts": [
           "Extracted key facts under the section Creation and date"
@@ -377,6 +540,22 @@
         "anchors": [
           "Mona Lisa",
           "modern application"
+        ]
+      },
+      {
+        "chapterIndex": 5,
+        "title": "Influence",
+        "referenceLabel": "Influence",
+        "readerQuestion": "What represents the starting motivation behind Influence?",
+        "objectives": [
+          "Explore the relationship with Influence"
+        ],
+        "approvedFacts": [
+          "Primary foundational records list early temporal developments of Mona Lisa"
+        ],
+        "anchors": [
+          "Mona Lisa",
+          "foundation origin"
         ]
       }
     ]
@@ -405,11 +584,174 @@
     "overall": 0.92
   },
   "checksum": "e122388d04fbe27e1de553058be464d6600e7df33be273e39347a0ef6828c20e",
-  "dependencyHash": "c98fafce264162e2d4bd88230d4be23716c51327f403dbf241eef7b23230a291",
+  "dependencyHash": "6f09a987276483943a805fd096e215bdbc92432456e134db6e807e18b9fccb96",
   "sourceReferences": [
     {
       "url": "https://en.wikipedia.org/wiki/Mona%20Lisa",
       "title": "Mona Lisa"
+    }
+  ],
+  "factScript": {
+    "chapters": [
+      {
+        "chapterTitle": "Origins",
+        "questionAnswered": "What represents the starting motivation behind Origins?",
+        "chronologicalPosition": 1,
+        "entities": [
+          "Mona Lisa"
+        ],
+        "dates": [
+          "1503",
+          "1506"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "The historical motivations and early occurrences that shaped the development of Origins.",
+        "effect": "The subsequent evolution and structural transformation observed in the context of Origins.",
+        "keyFacts": [
+          "The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world.\" The painting's novel qualities include the subject's enigmatic expression, the monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism.",
+          "The painting has been traditionally considered to depict the Italian noblewoman Lisa del Giocondo. It is painted in oil on a white poplar panel. Leonardo never gave the painting to the Giocondo family. It was believed to have been painted between 1503 and 1506; however, Leonardo may have continued working on it as late as 1517. King Francis I of France acquired the Mona Lisa after Leonardo's death in 1519, and it became the property of the French Republic. It has normally been on display at the Louvre in Paris since 1797."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "Understanding the critical dynamics of Origins."
+      },
+      {
+        "chapterTitle": "Key characteristics",
+        "questionAnswered": "Which factors influenced early discoveries of Key characteristics?",
+        "chronologicalPosition": 2,
+        "entities": [
+          "Mona Lisa"
+        ],
+        "dates": [
+          "1506",
+          "1517"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "The historical motivations and early occurrences that shaped the development of Key characteristics.",
+        "effect": "The subsequent evolution and structural transformation observed in the context of Key characteristics.",
+        "keyFacts": [
+          "The painting's global fame and popularity partly stem from its 1911 theft by Vincenzo Peruggia, who attributed his actions to Italian patriotism—a belief it should belong to Italy. The theft and subsequent recovery in 1914 generated unprecedented publicity for an art theft, and led to the publication of many cultural depictions such as the 1915 opera Mona Lisa, two early 1930s films (The Theft of the Mona Lisa and Arsène Lupin), and the song \"Mona Lisa\" recorded by Nat King Cole—one of the most successful songs of the 1950s.",
+          "The Mona Lisa is one of the most valuable paintings in the world. It holds the Guinness World Record for the highest known painting insurance valuation in history at US$100 million in 1962, equivalent to $1 billion as of 2023."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "Understanding the critical dynamics of Key characteristics."
+      },
+      {
+        "chapterTitle": "Leading artists",
+        "questionAnswered": "How do key chemical processes behave during Leading artists?",
+        "chronologicalPosition": 3,
+        "entities": [
+          "Mona Lisa"
+        ],
+        "dates": [
+          "1517",
+          "1519"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "The historical motivations and early occurrences that shaped the development of Leading artists.",
+        "effect": "The subsequent evolution and structural transformation observed in the context of Leading artists.",
+        "keyFacts": [
+          "== Title and subject ==",
+          "Extracted key facts under the section Title and subject"
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "Understanding the critical dynamics of Leading artists."
+      },
+      {
+        "chapterTitle": "Masterpieces",
+        "questionAnswered": "Why do light steps trigger under Masterpieces?",
+        "chronologicalPosition": 4,
+        "entities": [
+          "Mona Lisa"
+        ],
+        "dates": [
+          "1519",
+          "1797"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "The historical motivations and early occurrences that shaped the development of Masterpieces.",
+        "effect": "The subsequent evolution and structural transformation observed in the context of Masterpieces.",
+        "keyFacts": [
+          "Extracted key facts under the section Description",
+          "Extracted key facts under the section History"
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "Understanding the critical dynamics of Masterpieces."
+      },
+      {
+        "chapterTitle": "Spread",
+        "questionAnswered": "Who validates the final outcomes regarding Spread?",
+        "chronologicalPosition": 5,
+        "entities": [
+          "Mona Lisa"
+        ],
+        "dates": [
+          "1797",
+          "1911"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "The historical motivations and early occurrences that shaped the development of Spread.",
+        "effect": "The subsequent evolution and structural transformation observed in the context of Spread.",
+        "keyFacts": [
+          "Extracted key facts under the section Creation and date"
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "Understanding the critical dynamics of Spread."
+      },
+      {
+        "chapterTitle": "Influence",
+        "questionAnswered": "What represents the starting motivation behind Influence?",
+        "chronologicalPosition": 6,
+        "entities": [
+          "Mona Lisa"
+        ],
+        "dates": [
+          "1911"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "The historical motivations and early occurrences that shaped the development of Influence.",
+        "effect": "The subsequent evolution and structural transformation observed in the context of Influence.",
+        "keyFacts": [
+          "Primary foundational records list early temporal developments of Mona Lisa"
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "Understanding the critical dynamics of Influence."
+      }
+    ]
+  },
+  "briefSummaryProvenance": [
+    {
+      "sentence": "During early periods, The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world;\" The painting's novel qualities include the subject's enigmatic expression, the monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism, establishing a clear pattern.",
+      "fact": "The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world;\" The painting's novel qualities include the subject's enigmatic expression, the monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism"
+    },
+    {
+      "sentence": "During early periods, The painting's global fame and popularity partly stem from its 1911 theft by Vincenzo Peruggia, who attributed his actions to Italian patriotism—a belief it should belong to Italy The theft and subsequent recovery in 1914 generated unprecedented publicity for an art theft, and led to the publication of many cultural depictions such as the 1915 opera Mona Lisa, two early 1930s films (The Theft of the Mona Lisa and Arsène Lupin), and the song \"Mona Lisa\" recorded by Nat King Cole—one of the most successful songs of the 1950s, establishing a clear pattern.",
+      "fact": "The painting's global fame and popularity partly stem from its 1911 theft by Vincenzo Peruggia, who attributed his actions to Italian patriotism—a belief it should belong to Italy The theft and subsequent recovery in 1914 generated unprecedented publicity for an art theft, and led to the publication of many cultural depictions such as the 1915 opera Mona Lisa, two early 1930s films (The Theft of the Mona Lisa and Arsène Lupin), and the song \"Mona Lisa\" recorded by Nat King Cole—one of the most successful songs of the 1950s"
+    },
+    {
+      "sentence": "During early periods, == Title and subject ==, establishing a clear pattern.",
+      "fact": "== Title and subject =="
+    },
+    {
+      "sentence": "These events explain the historical path of Mona Lisa and show that Understanding the critical dynamics of Influence.",
+      "fact": "Understanding the critical dynamics of Influence"
     }
   ],
   "validationStatus": {
@@ -429,10 +771,17 @@
       "no_duplicate_facts": true,
       "no_duplicate_sentences": true,
       "no_placeholder_wording": true,
+      "generic_wording_check": true,
+      "sentence_provenance_ok": true,
+      "no_abstract_writing": true,
+      "documentary_alternating_rule": true,
+      "fact_density_met": true,
+      "curiosity_score_ok": true,
+      "documentary_score_ok": true,
       "resolver_confidence_ok": true,
       "compiler_confidence_ok": true,
       "overall_confidence_ok": true
     },
-    "timestamp": "2026-07-09T16:53:14.222Z"
+    "timestamp": "2026-07-09T18:35:09.656Z"
   }
 }

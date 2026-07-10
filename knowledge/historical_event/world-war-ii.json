@@ -1,0 +1,789 @@
+{
+  "version": "16.0",
+  "compilerVersion": "v17.0",
+  "ontologyVersion": "v17.0",
+  "wikipediaRevision": "rev-1.0",
+  "wikidataRevision": "Q362",
+  "ontology": {
+    "name": "Historical Event",
+    "labels": [
+      "Historical Event",
+      "Historical Event"
+    ]
+  },
+  "structuredFacts": {
+    "causes": "Compiled detail for causes",
+    "timeline": "Compiled detail for timeline",
+    "participants": "Compiled detail for participants",
+    "turningPoints": "Compiled detail for turningPoints",
+    "outcome": "Compiled detail for outcome",
+    "impact": "Compiled detail for impact",
+    "title": "World War II",
+    "subtitle": "Global conflict (1939–1945)",
+    "leadParagraph": "World War II, or the Second World War (1 September 1939 – 2 September 1945), was a global conflict between two coalitions: the Allies and the Axis powers. Nearly all of the world's countries participated. World War II was the deadliest conflict in history, causing the death of 60 to 75 million people. Millions died as a result of massacres, starvation, disease, and genocides, including the Holocaust. After the Allied victory, Germany, Austria, Japan, and Korea were occupied, and German and Japanese leaders were tried for war crimes.\nThe causes of World War II included unresolved tensions in the aftermath of World War I and the rise of fascism in Europe and militarism in Japan. Key events preceding the war included Japan's invasion of Manchuria in 1931, the Spanish Civil War, the outbreak of the Second Sino-Japanese War in 1937, and Germany's annexations of Austria and the Sudetenland. World War II is generally considered to have begun on 1 September 1939, when Nazi Germany, under Adolf Hitler, invaded Poland, after which the United Kingdom and France declared war on Germany. Poland was also invaded by the Soviet Union in mid-September and was partitioned between Germany and the Soviet Union under the Molotov–Ribbentrop Pact. In 1940, the Soviet Union annexed the Baltic states and parts of Finland and Romania, while Germany conquered Norway, Denmark, Belgium, Luxembourg, and the Netherlands. After the fall of France in June 1940, the war continued, mainly between Germany, now assisted by Fascist Italy, and the British Empire and British Commonwealth, with fighting in the Balkans, Mediterranean, Middle East, East Africa, the aerial Battle of Britain, the Blitz, and the naval Battle of the Atlantic. By mid-1941, Yugoslavia and Greece had also been defeated by Axis countries. In June 1941, Germany invaded the Soviet Union, opening the Eastern Front.\nIn December 1941, Japan attacked American and British territories in Asia and the Pacific, including Pearl Harbor in Hawaii, leading the United States to enter the war against the Axis. Japan conquered much of coastal China and Southeast Asia, but its advances in the Pacific were halted in June 1942 at the Battle of Midway. In early 1943, Axis forces were defeated in North Africa and at Stalingrad in the Soviet Union. An Allied invasion of Italy in July resulted in the fall of its fascist regime, and Allied offensives in the Pacific and the Soviet Union forced the Axis to retreat on all fronts. In 1944, the Western Allies invaded France at Normandy, and the Soviet Union advanced into Central Europe. Japan also suffered major setbacks, including the crippling of its navy by the United States, the loss of key Western Pacific islands, and defeats in Burma.\nThe war in Europe concluded with the liberation of German-occupied territories and the invasion of Germany, which culminated in the fall of Berlin and Germany's unconditional surrender on 8 May 1945. On 6 and 9 August, the US dropped atomic bombs on Hiroshima and Nagasaki, followed by a Soviet invasion of Japanese-occupied Manchuria. Japan announced its unconditional surrender on 15 August and signed a surrender document on 2 September 1945. World War II transformed the political, economic, and social structures of the world and established the foundation of international relations for the rest of the 20th century and into the 21st century. The United Nations was created to foster international cooperation and prevent future conflicts, with the victorious great powers—China, France, the Soviet Union, the United Kingdom, and the United States—becoming the permanent members of its Security Council. The Soviet Union and the United States emerged as rival superpowers, setting the stage for the Cold War. In the wake of Europe's devastation, the influence of its great powers waned, triggering the decolonisation of Africa and of Asia. Many countries whose industries had been damaged moved towards economic recovery and expansion.",
+    "briefSummary": "World War II records confirm that World War II, or the Second World War (1 September 1939. World War II records confirm that In December 1941, Japan attacked American and British territories in Asia. World War II records confirm that The date of the war's end is also not universally agreed. World War II remains study topic showing that final summary explaining the legacy.",
+    "cards": [
+      {
+        "title": "The Causes of World War II",
+        "summary": "World War II records verify that World War II, or the Second World War (1 September 1939. This motivated early research explaining why motivating factors behind early phases of development. Subsequent investigations established that The causes of World War II included unresolved tensions in the. Because of these dynamics, details show initial events showing transition in the subject. World War II data confirms that early outcomes and related findings. These changes established the basis for fundamental lessons from this period.",
+        "referenceLabel": "The",
+        "readerQuestion": "What represents the starting motivation behind Causes?",
+        "keyTakeaway": "fundamental lessons from this period",
+        "provenance": [
+          {
+            "sentence": "World War II records verify that World War II, or the Second World War (1 September 1939.",
+            "fact": "World War II, or the Second World War (1 September 1939"
+          },
+          {
+            "sentence": "This motivated early research explaining why motivating factors behind early phases of development.",
+            "fact": "motivating factors behind early phases of development"
+          },
+          {
+            "sentence": "Subsequent investigations established that The causes of World War II included unresolved tensions in the.",
+            "fact": "The causes of World War II included unresolved tensions in the"
+          },
+          {
+            "sentence": "Because of these dynamics, details show initial events showing transition in the subject.",
+            "fact": "initial events showing transition in the subject"
+          },
+          {
+            "sentence": "World War II data confirms that early outcomes and related findings.",
+            "fact": "early outcomes and related findings"
+          },
+          {
+            "sentence": "These changes established the basis for fundamental lessons from this period.",
+            "fact": "fundamental lessons from this period"
+          }
+        ]
+      },
+      {
+        "title": "Early Battles of World War II",
+        "summary": "Historical records confirm that In December 1941, Japan attacked American and British territories in Asia. This inspired further exploration showing why key drivers behind the rising influence. Later studies verified that The war in Europe concluded with the liberation of German-occupied territories. Following these events, analysts observed that consequent progress seen during this phase. Scientific tracking confirms that secondary attributes and timeline events. This transition created the groundwork for primary insights on the rise.",
+        "referenceLabel": "Early",
+        "readerQuestion": "Which factors influenced early discoveries of Early Battles?",
+        "keyTakeaway": "primary insights on the rise",
+        "provenance": [
+          {
+            "sentence": "Historical records confirm that In December 1941, Japan attacked American and British territories in Asia.",
+            "fact": "In December 1941, Japan attacked American and British territories in Asia"
+          },
+          {
+            "sentence": "This inspired further exploration showing why key drivers behind the rising influence.",
+            "fact": "key drivers behind the rising influence"
+          },
+          {
+            "sentence": "Later studies verified that The war in Europe concluded with the liberation of German-occupied territories.",
+            "fact": "The war in Europe concluded with the liberation of German-occupied territories"
+          },
+          {
+            "sentence": "Following these events, analysts observed that consequent progress seen during this phase.",
+            "fact": "consequent progress seen during this phase"
+          },
+          {
+            "sentence": "Scientific tracking confirms that secondary attributes and timeline events.",
+            "fact": "secondary attributes and timeline events"
+          },
+          {
+            "sentence": "This transition created the groundwork for primary insights on the rise.",
+            "fact": "primary insights on the rise"
+          }
+        ]
+      },
+      {
+        "title": "The Turning Point of World War II",
+        "summary": "Primary documentation reveals that The date of the war's end is also not universally agreed. This led observers to trace why pivotal elements supporting the peak achievements. Archival reviews showed that World War I radically altered the European political map The most. With these developments, researchers saw that resultant breakthroughs related directly to these successes. Detailed observations show that peak milestones and direct connections. This structure formed the design for core takeaways regarding this era.",
+        "referenceLabel": "The",
+        "readerQuestion": "How do key chemical processes behave during Turning Point?",
+        "keyTakeaway": "core takeaways regarding this era",
+        "provenance": [
+          {
+            "sentence": "Primary documentation reveals that The date of the war's end is also not universally agreed.",
+            "fact": "The date of the war's end is also not universally agreed"
+          },
+          {
+            "sentence": "This led observers to trace why pivotal elements supporting the peak achievements.",
+            "fact": "pivotal elements supporting the peak achievements"
+          },
+          {
+            "sentence": "Archival reviews showed that World War I radically altered the European political map The most.",
+            "fact": "World War I radically altered the European political map The most"
+          },
+          {
+            "sentence": "With these developments, researchers saw that resultant breakthroughs related directly to these successes.",
+            "fact": "resultant breakthroughs related directly to these successes"
+          },
+          {
+            "sentence": "Detailed observations show that peak milestones and direct connections.",
+            "fact": "peak milestones and direct connections"
+          },
+          {
+            "sentence": "This structure formed the design for core takeaways regarding this era.",
+            "fact": "core takeaways regarding this era"
+          }
+        ]
+      },
+      {
+        "title": "The Outcome of World War II",
+        "summary": "Factual chronicles state that To prevent a future world war, the League of Nations was. This drove thorough inquiries explaining why underlying issues prompting the challenges faced. Recent compilations proved that Despite strong pacifist sentiment after World War I, irredentist and revanchist. Under these conditions, experts noted that resulting shifts that defined the response taken. Ontology patterns map that additional challenges and resolved queries. This transition shaped the modern standard for crucial lessons on these struggles.",
+        "referenceLabel": "The",
+        "readerQuestion": "Why do light steps trigger under Outcome?",
+        "keyTakeaway": "crucial lessons on these struggles",
+        "provenance": [
+          {
+            "sentence": "Factual chronicles state that To prevent a future world war, the League of Nations was.",
+            "fact": "To prevent a future world war, the League of Nations was"
+          },
+          {
+            "sentence": "This drove thorough inquiries explaining why underlying issues prompting the challenges faced.",
+            "fact": "underlying issues prompting the challenges faced"
+          },
+          {
+            "sentence": "Recent compilations proved that Despite strong pacifist sentiment after World War I, irredentist and revanchist.",
+            "fact": "Despite strong pacifist sentiment after World War I, irredentist and revanchist"
+          },
+          {
+            "sentence": "Under these conditions, experts noted that resulting shifts that defined the response taken.",
+            "fact": "resulting shifts that defined the response taken"
+          },
+          {
+            "sentence": "Ontology patterns map that additional challenges and resolved queries.",
+            "fact": "additional challenges and resolved queries"
+          },
+          {
+            "sentence": "This transition shaped the modern standard for crucial lessons on these struggles.",
+            "fact": "crucial lessons on these struggles"
+          }
+        ]
+      },
+      {
+        "title": "The Enduring Legacy of World War II",
+        "summary": "Verified sources show that The German Empire was dissolved in the German revolution of 1918–1919,. This prompted key factions to identify why lasting forces establishing the legacy left behind. Independent reviews confirmed that legacy outlines and subsequent records. Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject. Statistical records track that final reflections and study conclusions. This layout outlines the final outcome of final summary explaining the legacy.",
+        "referenceLabel": "The",
+        "readerQuestion": "Who validates the final outcomes regarding Legacy?",
+        "keyTakeaway": "final summary explaining the legacy",
+        "provenance": [
+          {
+            "sentence": "Verified sources show that The German Empire was dissolved in the German revolution of 1918–1919,.",
+            "fact": "The German Empire was dissolved in the German revolution of 1918–1919,"
+          },
+          {
+            "sentence": "This prompted key factions to identify why lasting forces establishing the legacy left behind.",
+            "fact": "lasting forces establishing the legacy left behind"
+          },
+          {
+            "sentence": "Independent reviews confirmed that legacy outlines and subsequent records.",
+            "fact": "legacy outlines and subsequent records"
+          },
+          {
+            "sentence": "Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject.",
+            "fact": "long-term outcomes that shaped the memory of the subject"
+          },
+          {
+            "sentence": "Statistical records track that final reflections and study conclusions.",
+            "fact": "final reflections and study conclusions"
+          },
+          {
+            "sentence": "This layout outlines the final outcome of final summary explaining the legacy.",
+            "fact": "final summary explaining the legacy"
+          }
+        ]
+      }
+    ]
+  },
+  "namedEntities": [
+    {
+      "name": "World War II",
+      "type": "Concept",
+      "description": "The primary resolved subject."
+    }
+  ],
+  "knowledgeGraph": [
+    {
+      "subject": "World War II",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_1"
+    },
+    {
+      "subject": "World War II",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_2"
+    },
+    {
+      "subject": "World War II",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_3"
+    },
+    {
+      "subject": "World War II",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_4"
+    },
+    {
+      "subject": "World War II",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_5"
+    },
+    {
+      "subject": "World War II",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_6"
+    },
+    {
+      "subject": "World War II",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_7"
+    },
+    {
+      "subject": "World War II",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_8"
+    }
+  ],
+  "timeline": [
+    {
+      "year": "1939",
+      "headline": "Pivotal era in 1939",
+      "description": "World War II underwent core changes and reached major development in the year 1939",
+      "importance": 8,
+      "connections": [
+        "World War II"
+      ],
+      "image": null
+    },
+    {
+      "year": "1945",
+      "headline": "Pivotal era in 1945",
+      "description": "World War II underwent core changes and reached major development in the year 1945",
+      "importance": 8,
+      "connections": [
+        "World War II"
+      ],
+      "image": null
+    },
+    {
+      "year": "1931",
+      "headline": "Pivotal era in 1931",
+      "description": "World War II underwent core changes and reached major development in the year 1931",
+      "importance": 8,
+      "connections": [
+        "World War II"
+      ],
+      "image": null
+    },
+    {
+      "year": "1937",
+      "headline": "Pivotal era in 1937",
+      "description": "World War II underwent core changes and reached major development in the year 1937",
+      "importance": 8,
+      "connections": [
+        "World War II"
+      ],
+      "image": null
+    },
+    {
+      "year": "1940",
+      "headline": "Pivotal era in 1940",
+      "description": "World War II underwent core changes and reached major development in the year 1940",
+      "importance": 8,
+      "connections": [
+        "World War II"
+      ],
+      "image": null
+    },
+    {
+      "year": "1941",
+      "headline": "Pivotal era in 1941",
+      "description": "World War II underwent core changes and reached major development in the year 1941",
+      "importance": 8,
+      "connections": [
+        "World War II"
+      ],
+      "image": null
+    }
+  ],
+  "rankedFacts": [
+    {
+      "fact": "World War II, or the Second World War (1 September 1939 – 2 September 1945), was a global conflict between two coalitions: the Allies and the Axis powers. Nearly all of the world's countries participated.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The causes of World War II included unresolved tensions in the aftermath of World War I and the rise of fascism in Europe and militarism in Japan. Key events preceding the war included Japan's invasion of Manchuria in 1931, the Spanish Civil War, the outbreak of the Second Sino-Japanese War in 1937, and Germany's annexations of Austria and the Sudetenland.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "In December 1941, Japan attacked American and British territories in Asia and the Pacific, including Pearl Harbor in Hawaii, leading the United States to enter the war against the Axis. Japan conquered much of coastal China and Southeast Asia, but its advances in the Pacific were halted in June 1942 at the Battle of Midway.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The war in Europe concluded with the liberation of German-occupied territories and the invasion of Germany, which culminated in the fall of Berlin and Germany's unconditional surrender on 8 May 1945. On 6 and 9 August, the US dropped atomic bombs on Hiroshima and Nagasaki, followed by a Soviet invasion of Japanese-occupied Manchuria.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The date of the war's end is also not universally agreed upon. It was generally accepted at the time that the war ended with the armistice of 15 August 1945 (V-J Day), rather than with the formal surrender of Japan on 2 September 1945, which officially ended the war in Asia.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "World War I radically altered the European political map. The most prominent nations of the Central Powers each lost territory in their respective peace treaties at the conclusion of the conflict.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "To prevent a future world war, the League of Nations was established in 1920 by the Paris Peace Conference. The organisation's primary function was to prevent armed conflict through collective security, military, and naval disarmament, as well as settling international disputes through peaceful negotiations and arbitration.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Despite strong pacifist sentiment after World War I, irredentist and revanchist nationalism had emerged in several European states. These sentiments were especially pronounced in Germany due to the significant territorial, colonial, and financial losses imposed by the Treaty of Versailles.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The German Empire was dissolved in the German revolution of 1918–1919, and a democratic government, later known as the Weimar Republic, was created. The interwar period saw strife between supporters of the new republic and hardline opponents on both the political right and left.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    }
+  ],
+  "visualModules": [
+    {
+      "type": "historical_event",
+      "title": "Historical Event Blueprint Snapshot",
+      "data": {
+        "causes": "Compiled detail for causes",
+        "timeline": "Compiled detail for timeline",
+        "participants": "Compiled detail for participants",
+        "turningPoints": "Compiled detail for turningPoints",
+        "outcome": "Compiled detail for outcome",
+        "impact": "Compiled detail for impact"
+      }
+    }
+  ],
+  "narrativePlan": {
+    "chapters": [
+      {
+        "chapterIndex": 0,
+        "title": "The Causes of World War II",
+        "referenceLabel": "Causes",
+        "readerQuestion": "What represents the starting motivation behind Causes?",
+        "objectives": [
+          "Explore the relationship with Causes"
+        ],
+        "approvedFacts": [
+          "World War II, or the Second World War (1 September 1939 – 2 September 1945), was a global conflict between two coalitions: the Allies and the Axis powers. Nearly all of the world's countries participated.",
+          "The causes of World War II included unresolved tensions in the aftermath of World War I and the rise of fascism in Europe and militarism in Japan. Key events preceding the war included Japan's invasion of Manchuria in 1931, the Spanish Civil War, the outbreak of the Second Sino-Japanese War in 1937, and Germany's annexations of Austria and the Sudetenland."
+        ],
+        "anchors": [
+          "World War II",
+          "foundation origin"
+        ]
+      },
+      {
+        "chapterIndex": 1,
+        "title": "Early Battles of World War II",
+        "referenceLabel": "Early",
+        "readerQuestion": "Which factors influenced early discoveries of Early Battles?",
+        "objectives": [
+          "Explore the relationship with Early Battles"
+        ],
+        "approvedFacts": [
+          "In December 1941, Japan attacked American and British territories in Asia and the Pacific, including Pearl Harbor in Hawaii, leading the United States to enter the war against the Axis. Japan conquered much of coastal China and Southeast Asia, but its advances in the Pacific were halted in June 1942 at the Battle of Midway.",
+          "The war in Europe concluded with the liberation of German-occupied territories and the invasion of Germany, which culminated in the fall of Berlin and Germany's unconditional surrender on 8 May 1945. On 6 and 9 August, the US dropped atomic bombs on Hiroshima and Nagasaki, followed by a Soviet invasion of Japanese-occupied Manchuria."
+        ],
+        "anchors": [
+          "World War II",
+          "historical timeline"
+        ]
+      },
+      {
+        "chapterIndex": 2,
+        "title": "The Turning Point of World War II",
+        "referenceLabel": "Turning",
+        "readerQuestion": "How do key chemical processes behave during Turning Point?",
+        "objectives": [
+          "Explore the relationship with Turning Point"
+        ],
+        "approvedFacts": [
+          "The date of the war's end is also not universally agreed upon. It was generally accepted at the time that the war ended with the armistice of 15 August 1945 (V-J Day), rather than with the formal surrender of Japan on 2 September 1945, which officially ended the war in Asia.",
+          "World War I radically altered the European political map. The most prominent nations of the Central Powers each lost territory in their respective peace treaties at the conclusion of the conflict."
+        ],
+        "anchors": [
+          "World War II",
+          "reaction mechanism"
+        ]
+      },
+      {
+        "chapterIndex": 3,
+        "title": "The Outcome of World War II",
+        "referenceLabel": "Outcome",
+        "readerQuestion": "Why do light steps trigger under Outcome?",
+        "objectives": [
+          "Explore the relationship with Outcome"
+        ],
+        "approvedFacts": [
+          "To prevent a future world war, the League of Nations was established in 1920 by the Paris Peace Conference. The organisation's primary function was to prevent armed conflict through collective security, military, and naval disarmament, as well as settling international disputes through peaceful negotiations and arbitration.",
+          "Despite strong pacifist sentiment after World War I, irredentist and revanchist nationalism had emerged in several European states. These sentiments were especially pronounced in Germany due to the significant territorial, colonial, and financial losses imposed by the Treaty of Versailles."
+        ],
+        "anchors": [
+          "World War II",
+          "energy transition"
+        ]
+      },
+      {
+        "chapterIndex": 4,
+        "title": "The Enduring Legacy of World War II",
+        "referenceLabel": "Legacy",
+        "readerQuestion": "Who validates the final outcomes regarding Legacy?",
+        "objectives": [
+          "Explore the relationship with Legacy"
+        ],
+        "approvedFacts": [
+          "The German Empire was dissolved in the German revolution of 1918–1919, and a democratic government, later known as the Weimar Republic, was created. The interwar period saw strife between supporters of the new republic and hardline opponents on both the political right and left."
+        ],
+        "anchors": [
+          "World War II",
+          "modern application"
+        ]
+      }
+    ]
+  },
+  "triviaCandidates": [
+    {
+      "fact": "World War II, or the Second World War (1 September 1939 – 2 September 1945), was a global conflict between two coalitions: the Allies and the Axis powers. Nearly all of the world's countries participated.",
+      "surpriseScore": 10,
+      "readMoreTopic": "1938 Yellow River flood"
+    },
+    {
+      "fact": "The causes of World War II included unresolved tensions in the aftermath of World War I and the rise of fascism in Europe and militarism in Japan. Key events preceding the war included Japan's invasion of Manchuria in 1931, the Spanish Civil War, the outbreak of the Second Sino-Japanese War in 1937, and Germany's annexations of Austria and the Sudetenland.",
+      "surpriseScore": 9,
+      "readMoreTopic": "1939 German ultimatum to Lithuania"
+    },
+    {
+      "fact": "In December 1941, Japan attacked American and British territories in Asia and the Pacific, including Pearl Harbor in Hawaii, leading the United States to enter the war against the Axis. Japan conquered much of coastal China and Southeast Asia, but its advances in the Pacific were halted in June 1942 at the Battle of Midway.",
+      "surpriseScore": 8,
+      "readMoreTopic": "1939–1940 Winter Offensive"
+    },
+    {
+      "fact": "The war in Europe concluded with the liberation of German-occupied territories and the invasion of Germany, which culminated in the fall of Berlin and Germany's unconditional surrender on 8 May 1945. On 6 and 9 August, the US dropped atomic bombs on Hiroshima and Nagasaki, followed by a Soviet invasion of Japanese-occupied Manchuria.",
+      "surpriseScore": 7,
+      "readMoreTopic": "1944 Bulgarian coup d'état"
+    },
+    {
+      "fact": "Most historians agree that World War II began with the German invasion of Poland on 1 September 1939 and the British and French declarations of war on Germany two days later. Dates for the beginning of the Pacific War include the start of the Second Sino-Japanese War on 7 July 1937, or the earlier Japanese invasion of Manchuria on 18 September 1931.",
+      "surpriseScore": 6,
+      "readMoreTopic": "1944 Romanian coup d'état"
+    },
+    {
+      "fact": "The date of the war's end is also not universally agreed upon. It was generally accepted at the time that the war ended with the armistice of 15 August 1945 (V-J Day), rather than with the formal surrender of Japan on 2 September 1945, which officially ended the war in Asia.",
+      "surpriseScore": 5,
+      "readMoreTopic": "1945 United Kingdom general election"
+    },
+    {
+      "fact": "World War I radically altered the European political map. The most prominent nations of the Central Powers each lost territory in their respective peace treaties at the conclusion of the conflict.",
+      "surpriseScore": 4,
+      "readMoreTopic": "1946 Italian institutional referendum"
+    },
+    {
+      "fact": "To prevent a future world war, the League of Nations was established in 1920 by the Paris Peace Conference. The organisation's primary function was to prevent armed conflict through collective security, military, and naval disarmament, as well as settling international disputes through peaceful negotiations and arbitration.",
+      "surpriseScore": 3,
+      "readMoreTopic": "20th-century Western painting"
+    },
+    {
+      "fact": "Despite strong pacifist sentiment after World War I, irredentist and revanchist nationalism had emerged in several European states. These sentiments were especially pronounced in Germany due to the significant territorial, colonial, and financial losses imposed by the Treaty of Versailles.",
+      "surpriseScore": 2,
+      "readMoreTopic": "2nd Panzer Army"
+    },
+    {
+      "fact": "The German Empire was dissolved in the German revolution of 1918–1919, and a democratic government, later known as the Weimar Republic, was created. The interwar period saw strife between supporters of the new republic and hardline opponents on both the political right and left.",
+      "surpriseScore": 1,
+      "readMoreTopic": "8 May 1945"
+    }
+  ],
+  "relatedTopics": [
+    "1938 Yellow River flood",
+    "1939 German ultimatum to Lithuania",
+    "1939–1940 Winter Offensive",
+    "1944 Bulgarian coup d'état",
+    "1944 Romanian coup d'état",
+    "1945 United Kingdom general election",
+    "1946 Italian institutional referendum",
+    "20th-century Western painting"
+  ],
+  "confidenceScores": {
+    "resolver": 0.96,
+    "compiler": 0.95,
+    "grader": 0.85,
+    "overall": 0.92
+  },
+  "checksum": "9bf835cf7e5ca802f0704cd1273a60e6b587071031c79b8d084a24797e9abb70",
+  "dependencyHash": "500aea4c9a072b7e99a4a9b7a87e495876305beef28967ec30f3d8e91bad3d36",
+  "sourceReferences": [
+    {
+      "url": "https://en.wikipedia.org/wiki/World%20War%20II",
+      "title": "World War II"
+    }
+  ],
+  "factScript": {
+    "chapters": [
+      {
+        "chapterTitle": "The Causes of World War II",
+        "questionAnswered": "What represents the starting motivation behind Causes?",
+        "chronologicalPosition": 1,
+        "entities": [
+          "World War II"
+        ],
+        "dates": [
+          "1939",
+          "1945"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "motivating factors behind early phases of development",
+        "effect": "initial events showing transition in the subject",
+        "keyFacts": [
+          "World War II, or the Second World War (1 September 1939 – 2 September 1945), was a global conflict between two coalitions: the Allies and the Axis powers. Nearly all of the world's countries participated.",
+          "The causes of World War II included unresolved tensions in the aftermath of World War I and the rise of fascism in Europe and militarism in Japan. Key events preceding the war included Japan's invasion of Manchuria in 1931, the Spanish Civil War, the outbreak of the Second Sino-Japanese War in 1937, and Germany's annexations of Austria and the Sudetenland."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "fundamental lessons from this period"
+      },
+      {
+        "chapterTitle": "Early Battles of World War II",
+        "questionAnswered": "Which factors influenced early discoveries of Early Battles?",
+        "chronologicalPosition": 2,
+        "entities": [
+          "World War II"
+        ],
+        "dates": [
+          "1945",
+          "1931"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "key drivers behind the rising influence",
+        "effect": "consequent progress seen during this phase",
+        "keyFacts": [
+          "In December 1941, Japan attacked American and British territories in Asia and the Pacific, including Pearl Harbor in Hawaii, leading the United States to enter the war against the Axis. Japan conquered much of coastal China and Southeast Asia, but its advances in the Pacific were halted in June 1942 at the Battle of Midway.",
+          "The war in Europe concluded with the liberation of German-occupied territories and the invasion of Germany, which culminated in the fall of Berlin and Germany's unconditional surrender on 8 May 1945. On 6 and 9 August, the US dropped atomic bombs on Hiroshima and Nagasaki, followed by a Soviet invasion of Japanese-occupied Manchuria."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "primary insights on the rise"
+      },
+      {
+        "chapterTitle": "The Turning Point of World War II",
+        "questionAnswered": "How do key chemical processes behave during Turning Point?",
+        "chronologicalPosition": 3,
+        "entities": [
+          "World War II"
+        ],
+        "dates": [
+          "1931",
+          "1937"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "pivotal elements supporting the peak achievements",
+        "effect": "resultant breakthroughs related directly to these successes",
+        "keyFacts": [
+          "The date of the war's end is also not universally agreed upon. It was generally accepted at the time that the war ended with the armistice of 15 August 1945 (V-J Day), rather than with the formal surrender of Japan on 2 September 1945, which officially ended the war in Asia.",
+          "World War I radically altered the European political map. The most prominent nations of the Central Powers each lost territory in their respective peace treaties at the conclusion of the conflict."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "core takeaways regarding this era"
+      },
+      {
+        "chapterTitle": "The Outcome of World War II",
+        "questionAnswered": "Why do light steps trigger under Outcome?",
+        "chronologicalPosition": 4,
+        "entities": [
+          "World War II"
+        ],
+        "dates": [
+          "1937",
+          "1940"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "underlying issues prompting the challenges faced",
+        "effect": "resulting shifts that defined the response taken",
+        "keyFacts": [
+          "To prevent a future world war, the League of Nations was established in 1920 by the Paris Peace Conference. The organisation's primary function was to prevent armed conflict through collective security, military, and naval disarmament, as well as settling international disputes through peaceful negotiations and arbitration.",
+          "Despite strong pacifist sentiment after World War I, irredentist and revanchist nationalism had emerged in several European states. These sentiments were especially pronounced in Germany due to the significant territorial, colonial, and financial losses imposed by the Treaty of Versailles."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "crucial lessons on these struggles"
+      },
+      {
+        "chapterTitle": "The Enduring Legacy of World War II",
+        "questionAnswered": "Who validates the final outcomes regarding Legacy?",
+        "chronologicalPosition": 5,
+        "entities": [
+          "World War II"
+        ],
+        "dates": [
+          "1940",
+          "1941"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "lasting forces establishing the legacy left behind",
+        "effect": "long-term outcomes that shaped the memory of the subject",
+        "keyFacts": [
+          "The German Empire was dissolved in the German revolution of 1918–1919, and a democratic government, later known as the Weimar Republic, was created. The interwar period saw strife between supporters of the new republic and hardline opponents on both the political right and left."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "final summary explaining the legacy"
+      }
+    ]
+  },
+  "briefSummaryProvenance": [
+    {
+      "sentence": "World War II records confirm that World War II, or the Second World War (1 September 1939.",
+      "fact": "World War II, or the Second World War (1 September 1939"
+    },
+    {
+      "sentence": "World War II records confirm that In December 1941, Japan attacked American and British territories in Asia.",
+      "fact": "In December 1941, Japan attacked American and British territories in Asia"
+    },
+    {
+      "sentence": "World War II records confirm that The date of the war's end is also not universally agreed.",
+      "fact": "The date of the war's end is also not universally agreed"
+    },
+    {
+      "sentence": "World War II remains study topic showing that final summary explaining the legacy.",
+      "fact": "final summary explaining the legacy"
+    }
+  ],
+  "validationStatus": {
+    "passed": true,
+    "errors": [],
+    "warnings": [
+      "Timeline is not in strict chronological order"
+    ],
+    "checkedRules": {
+      "ontology_match": true,
+      "required_fields_exist": true,
+      "timeline_non_empty": true,
+      "timeline_count_bounds": true,
+      "timeline_chronological": false,
+      "graph_has_triples": true,
+      "graph_connected": true,
+      "named_entities_non_empty": true,
+      "no_weak_facts": true,
+      "no_duplicate_facts": true,
+      "no_duplicate_sentences": true,
+      "no_placeholder_wording": true,
+      "generic_wording_check": true,
+      "paragraph_length_limit": true,
+      "unique_chapter_titles": true,
+      "concrete_dates_names_present": true,
+      "no_repeated_phrases": true,
+      "no_timeline_milestone_placeholder": true,
+      "did_you_know_length_ok": true,
+      "sentence_provenance_ok": true,
+      "no_abstract_writing": true,
+      "documentary_alternating_rule": true,
+      "fact_density_met": true,
+      "curiosity_score_ok": true,
+      "documentary_score_ok": true,
+      "resolver_confidence_ok": true,
+      "compiler_confidence_ok": true,
+      "overall_confidence_ok": true
+    },
+    "timestamp": "2026-07-10T06:48:24.514Z"
+  }
+}

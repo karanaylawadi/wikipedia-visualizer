@@ -1,4 +1,4 @@
-import type { PerspectiveCard } from "./perspectives";
+import type { PerspectiveCard } from "@/types/knowledge";
 
 const FORBIDDEN_AI_PHRASES = [
   "this topic",
@@ -25,7 +25,45 @@ const FORBIDDEN_AI_PHRASES = [
   "remains significant",
   "influenced many",
   "continues today",
-  "marked a turning point"
+  "marked a turning point",
+  "framework",
+  "ecosystem",
+  "protocol",
+  "stakeholder",
+  "leveraged",
+  "methodology",
+  "optimization",
+  "selected markers",
+  "our team",
+  "compiled data",
+  "industry practitioners",
+  "validation",
+  "implementation",
+  "deployment",
+  "core parameters",
+  "utilize",
+  "accelerating adoption",
+  "secondary adaptations",
+  "systematic approach",
+  "comprehensive analysis",
+  "critical infrastructure",
+  "dynamic environment",
+  "best practices",
+  "served as a foundation",
+  "helped shape",
+  "widely recognized",
+  "continues to influence",
+  "significant milestone",
+  "over time",
+  "throughout history",
+  "across industries",
+  "centering upon",
+  "these observations",
+  "compiled data reveals",
+  "this establishes",
+  "mechanism",
+  "therefore",
+  "collectively"
 ];
 
 const GENERIC_HEADLINES = [
@@ -39,7 +77,31 @@ const GENERIC_HEADLINES = [
   "developments",
   "dynamics",
   "evolution",
-  "significance"
+  "significance",
+  "rise",
+  "peak",
+  "challenges",
+  "need",
+  "invention",
+  "adoption",
+  "impact",
+  "future",
+  "founding",
+  "growth",
+  "competition",
+  "key characteristics",
+  "masterpieces",
+  "spread",
+  "purpose",
+  "structure",
+  "major campaigns",
+  "future vision",
+  "story",
+  "production",
+  "release",
+  "reception",
+  "introduction",
+  "conclusion"
 ];
 
 function cleanAndTokenize(text: string): string[] {

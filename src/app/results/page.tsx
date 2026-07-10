@@ -53,7 +53,11 @@ const DiscoveryCarousel = dynamic(() => import("@/components/DiscoveryCarousel")
 
 interface TimelineMilestone {
   year: string;
-  event: string;
+  headline: string;
+  description: string;
+  importance: number;
+  connections: string[];
+  image?: string | null;
 }
 
 interface BreadcrumbItem {
@@ -153,6 +157,9 @@ function ResultsContent() {
         }
 
         setData(json);
+        if (json.relatedList) {
+          localStorage.setItem("last-topic-neighbors", JSON.stringify(json.relatedList));
+        }
         trackTopicOpened(decodedTopic);
       } catch (err: unknown) {
         setError(err instanceof Error ? err.message : "Something went wrong.");

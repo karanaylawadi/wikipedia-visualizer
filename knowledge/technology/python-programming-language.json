@@ -1,0 +1,745 @@
+{
+  "version": "16.0",
+  "compilerVersion": "v17.0",
+  "ontologyVersion": "v17.0",
+  "wikipediaRevision": "rev-1.0",
+  "wikidataRevision": "Q28865",
+  "ontology": {
+    "name": "Technology",
+    "labels": [
+      "Technology",
+      "Technology"
+    ]
+  },
+  "structuredFacts": {
+    "inventor": "Compiled detail for inventor",
+    "launchYear": "Compiled detail for launchYear",
+    "industry": "Compiled detail for industry",
+    "architecture": "Compiled detail for architecture",
+    "competitors": "Compiled detail for competitors",
+    "adoption": "Compiled detail for adoption",
+    "title": "Python (programming language)",
+    "subtitle": "General-purpose programming language",
+    "leadParagraph": "Python is a high-level, general-purpose programming language that emphasizes code readability, simplicity, and ease-of-writing with the use of significant indentation, an extensive (\"batteries-included\") standard library, and garbage collection. Python supports multiple programming paradigms but with an emphasis on object-oriented programming and dynamic typing.\nGuido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language. Python 3.0, released in 2008, was a major revision and not completely backward-compatible with earlier versions. Beginning with Python 3.5, capabilities and keywords for typing were added to the language, allowing optional static typing. As of 2026, the Python Software Foundation supports Python 3.10, 3.11, 3.12, 3.13, and 3.14, following the project's annual release cycle and five-year support policy. Python 3.15 is currently in the beta development phase, and the stable release is expected to launch in October 2026. Earlier versions in the 3.x series have reached end-of-life and no longer receive security updates. \nPython is widely taught as an introductory programming language.",
+    "briefSummary": "Python (programming language) records confirm that Python is a high-level, general-purpose programming language that emphasizes code readability,. Python (programming language) records confirm that Python is widely taught as an introductory programming language. Python (programming language) records confirm that Python 2 0 was released on 16 October 2000, featuring many. Python (programming language) remains study topic showing that final summary explaining the legacy.",
+    "cards": [
+      {
+        "title": "The Need for Python (programming language)",
+        "summary": "Python (programming language) records verify that Python is a high-level, general-purpose programming language that emphasizes code readability,. Early motivation drove research explaining why motivating factors behind early phases of development. Subsequent investigations established that Guido van Rossum began working on Python in the late 1980s. Because of these dynamics, details show initial events showing transition in the subject. Python (programming language) data confirms that early outcomes and related findings. These changes established the basis for fundamental lessons from this period.",
+        "referenceLabel": "The",
+        "readerQuestion": "What represents the starting motivation behind Need?",
+        "keyTakeaway": "fundamental lessons from this period",
+        "provenance": [
+          {
+            "sentence": "Python (programming language) records verify that Python is a high-level, general-purpose programming language that emphasizes code readability,.",
+            "fact": "Python is a high-level, general-purpose programming language that emphasizes code readability,"
+          },
+          {
+            "sentence": "Early motivation drove research explaining why motivating factors behind early phases of development.",
+            "fact": "motivating factors behind early phases of development"
+          },
+          {
+            "sentence": "Subsequent investigations established that Guido van Rossum began working on Python in the late 1980s.",
+            "fact": "Guido van Rossum began working on Python in the late 1980s"
+          },
+          {
+            "sentence": "Because of these dynamics, details show initial events showing transition in the subject.",
+            "fact": "initial events showing transition in the subject"
+          },
+          {
+            "sentence": "Python (programming language) data confirms that early outcomes and related findings.",
+            "fact": "early outcomes and related findings"
+          },
+          {
+            "sentence": "These changes established the basis for fundamental lessons from this period.",
+            "fact": "fundamental lessons from this period"
+          }
+        ]
+      },
+      {
+        "title": "The Invention of Python (programming language)",
+        "summary": "Historical records confirm that Python is widely taught as an introductory programming language. These revelations inspired further exploration showing why key drivers behind the rising influence. Later studies verified that The name Python derives from the British comedy series Monty Python's. Following these events, analysts observed that consequent progress seen during this phase. Scientific tracking confirms that secondary attributes and timeline events. This transition created the groundwork for primary insights on the rise.",
+        "referenceLabel": "The",
+        "readerQuestion": "Which factors influenced early discoveries of Invention?",
+        "keyTakeaway": "primary insights on the rise",
+        "provenance": [
+          {
+            "sentence": "Historical records confirm that Python is widely taught as an introductory programming language.",
+            "fact": "Python is widely taught as an introductory programming language"
+          },
+          {
+            "sentence": "These revelations inspired further exploration showing why key drivers behind the rising influence.",
+            "fact": "key drivers behind the rising influence"
+          },
+          {
+            "sentence": "Later studies verified that The name Python derives from the British comedy series Monty Python's.",
+            "fact": "The name Python derives from the British comedy series Monty Python's"
+          },
+          {
+            "sentence": "Following these events, analysts observed that consequent progress seen during this phase.",
+            "fact": "consequent progress seen during this phase"
+          },
+          {
+            "sentence": "Scientific tracking confirms that secondary attributes and timeline events.",
+            "fact": "secondary attributes and timeline events"
+          },
+          {
+            "sentence": "This transition created the groundwork for primary insights on the rise.",
+            "fact": "primary insights on the rise"
+          }
+        ]
+      },
+      {
+        "title": "The Adoption of Python (programming language)",
+        "summary": "Primary documentation reveals that Python 2 0 was released on 16 October 2000, featuring many. Such outcomes led observers to trace why pivotal elements supporting the peak achievements. Archival reviews showed that As of May 2026, Python 3 14. With these developments, researchers saw that resultant breakthroughs related directly to these successes. Detailed observations show that peak milestones and direct connections. This structure formed the design for core takeaways regarding this era.",
+        "referenceLabel": "The",
+        "readerQuestion": "How do key chemical processes behave during Adoption?",
+        "keyTakeaway": "core takeaways regarding this era",
+        "provenance": [
+          {
+            "sentence": "Primary documentation reveals that Python 2 0 was released on 16 October 2000, featuring many.",
+            "fact": "Python 2 0 was released on 16 October 2000, featuring many"
+          },
+          {
+            "sentence": "Such outcomes led observers to trace why pivotal elements supporting the peak achievements.",
+            "fact": "pivotal elements supporting the peak achievements"
+          },
+          {
+            "sentence": "Archival reviews showed that As of May 2026, Python 3 14.",
+            "fact": "As of May 2026, Python 3 14"
+          },
+          {
+            "sentence": "With these developments, researchers saw that resultant breakthroughs related directly to these successes.",
+            "fact": "resultant breakthroughs related directly to these successes"
+          },
+          {
+            "sentence": "Detailed observations show that peak milestones and direct connections.",
+            "fact": "peak milestones and direct connections"
+          },
+          {
+            "sentence": "This structure formed the design for core takeaways regarding this era.",
+            "fact": "core takeaways regarding this era"
+          }
+        ]
+      },
+      {
+        "title": "The Global Impact of Python (programming language)",
+        "summary": "Factual chronicles state that Operational results measure energy transitions across Python (programming language). Ongoing difficulties drove thorough inquiries explaining why underlying issues prompting the challenges faced. Recent compilations proved that observed difficulties and response actions. Under these conditions, experts noted that resulting shifts that defined the response taken. Ontology patterns map that additional challenges and resolved queries. This transition shaped the modern standard for crucial lessons on these struggles.",
+        "referenceLabel": "The",
+        "readerQuestion": "Why do light steps trigger under Impact?",
+        "keyTakeaway": "crucial lessons on these struggles",
+        "provenance": [
+          {
+            "sentence": "Factual chronicles state that Operational results measure energy transitions across Python (programming language).",
+            "fact": "Operational results measure energy transitions across Python (programming language)"
+          },
+          {
+            "sentence": "Ongoing difficulties drove thorough inquiries explaining why underlying issues prompting the challenges faced.",
+            "fact": "underlying issues prompting the challenges faced"
+          },
+          {
+            "sentence": "Recent compilations proved that observed difficulties and response actions.",
+            "fact": "observed difficulties and response actions"
+          },
+          {
+            "sentence": "Under these conditions, experts noted that resulting shifts that defined the response taken.",
+            "fact": "resulting shifts that defined the response taken"
+          },
+          {
+            "sentence": "Ontology patterns map that additional challenges and resolved queries.",
+            "fact": "additional challenges and resolved queries"
+          },
+          {
+            "sentence": "This transition shaped the modern standard for crucial lessons on these struggles.",
+            "fact": "crucial lessons on these struggles"
+          }
+        ]
+      },
+      {
+        "title": "The Future of Python (programming language)",
+        "summary": "Verified sources show that Concluding analysis confirms modern legacy values of Python (programming language). The legacy prompted key factions to identify why lasting forces establishing the legacy left behind. Independent reviews confirmed that legacy outlines and subsequent records. Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject. Statistical records track that final reflections and study conclusions. This layout outlines the final outcome of final summary explaining the legacy.",
+        "referenceLabel": "The",
+        "readerQuestion": "Who validates the final outcomes regarding Future?",
+        "keyTakeaway": "final summary explaining the legacy",
+        "provenance": [
+          {
+            "sentence": "Verified sources show that Concluding analysis confirms modern legacy values of Python (programming language).",
+            "fact": "Concluding analysis confirms modern legacy values of Python (programming language)"
+          },
+          {
+            "sentence": "The legacy prompted key factions to identify why lasting forces establishing the legacy left behind.",
+            "fact": "lasting forces establishing the legacy left behind"
+          },
+          {
+            "sentence": "Independent reviews confirmed that legacy outlines and subsequent records.",
+            "fact": "legacy outlines and subsequent records"
+          },
+          {
+            "sentence": "Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject.",
+            "fact": "long-term outcomes that shaped the memory of the subject"
+          },
+          {
+            "sentence": "Statistical records track that final reflections and study conclusions.",
+            "fact": "final reflections and study conclusions"
+          },
+          {
+            "sentence": "This layout outlines the final outcome of final summary explaining the legacy.",
+            "fact": "final summary explaining the legacy"
+          }
+        ]
+      }
+    ]
+  },
+  "namedEntities": [
+    {
+      "name": "Python (programming language)",
+      "type": "Concept",
+      "description": "The primary resolved subject."
+    }
+  ],
+  "knowledgeGraph": [
+    {
+      "subject": "Compiled detail for inventor",
+      "predicate": "INVENTED",
+      "object": "Python (programming language)"
+    },
+    {
+      "subject": "Python (programming language)",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_1"
+    },
+    {
+      "subject": "Python (programming language)",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_2"
+    },
+    {
+      "subject": "Python (programming language)",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_3"
+    },
+    {
+      "subject": "Python (programming language)",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_4"
+    },
+    {
+      "subject": "Python (programming language)",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_5"
+    },
+    {
+      "subject": "Python (programming language)",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_6"
+    },
+    {
+      "subject": "Python (programming language)",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_7"
+    }
+  ],
+  "timeline": [
+    {
+      "year": "2008",
+      "headline": "Pivotal era in 2008",
+      "description": "Python (programming language) underwent core changes and reached major development in the year 2008",
+      "importance": 8,
+      "connections": [
+        "Python (programming language)"
+      ],
+      "image": null
+    },
+    {
+      "year": "2026",
+      "headline": "Pivotal era in 2026",
+      "description": "Python (programming language) underwent core changes and reached major development in the year 2026",
+      "importance": 8,
+      "connections": [
+        "Python (programming language)"
+      ],
+      "image": null
+    },
+    {
+      "year": "1989",
+      "headline": "Pivotal era in 1989",
+      "description": "Python (programming language) underwent core changes and reached major development in the year 1989",
+      "importance": 8,
+      "connections": [
+        "Python (programming language)"
+      ],
+      "image": null
+    },
+    {
+      "year": "1991",
+      "headline": "Pivotal era in 1991",
+      "description": "Python (programming language) underwent core changes and reached major development in the year 1991",
+      "importance": 8,
+      "connections": [
+        "Python (programming language)"
+      ],
+      "image": null
+    },
+    {
+      "year": "2018",
+      "headline": "Pivotal era in 2018",
+      "description": "Python (programming language) underwent core changes and reached major development in the year 2018",
+      "importance": 8,
+      "connections": [
+        "Python (programming language)"
+      ],
+      "image": null
+    },
+    {
+      "year": "2019",
+      "headline": "Pivotal era in 2019",
+      "description": "Python (programming language) underwent core changes and reached major development in the year 2019",
+      "importance": 8,
+      "connections": [
+        "Python (programming language)"
+      ],
+      "image": null
+    }
+  ],
+  "rankedFacts": [
+    {
+      "fact": "Python is a high-level, general-purpose programming language that emphasizes code readability, simplicity, and ease-of-writing with the use of significant indentation, an extensive (\"batteries-included\") standard library, and garbage collection. Python supports multiple programming paradigms but with an emphasis on object-oriented programming and dynamic typing.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language. Python 3.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Python is widely taught as an introductory programming language.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The name Python derives from the British comedy series Monty Python's Flying Circus. (See § Naming.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Python 2. 0 was released on 16 October 2000, featuring many new features such as list comprehensions, cycle-detecting garbage collection, reference counting, and Unicode support.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "As of May 2026, Python 3. 14.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    }
+  ],
+  "visualModules": [
+    {
+      "type": "technology",
+      "title": "Technology Blueprint Snapshot",
+      "data": {
+        "inventor": "Compiled detail for inventor",
+        "launchYear": "Compiled detail for launchYear",
+        "industry": "Compiled detail for industry",
+        "architecture": "Compiled detail for architecture",
+        "competitors": "Compiled detail for competitors",
+        "adoption": "Compiled detail for adoption"
+      }
+    }
+  ],
+  "narrativePlan": {
+    "chapters": [
+      {
+        "chapterIndex": 0,
+        "title": "The Need for Python (programming language)",
+        "referenceLabel": "Need",
+        "readerQuestion": "What represents the starting motivation behind Need?",
+        "objectives": [
+          "Explore the relationship with Need"
+        ],
+        "approvedFacts": [
+          "Python is a high-level, general-purpose programming language that emphasizes code readability, simplicity, and ease-of-writing with the use of significant indentation, an extensive (\"batteries-included\") standard library, and garbage collection. Python supports multiple programming paradigms but with an emphasis on object-oriented programming and dynamic typing.",
+          "Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language. Python 3."
+        ],
+        "anchors": [
+          "Python (programming language)",
+          "foundation origin"
+        ]
+      },
+      {
+        "chapterIndex": 1,
+        "title": "The Invention of Python (programming language)",
+        "referenceLabel": "Invention",
+        "readerQuestion": "Which factors influenced early discoveries of Invention?",
+        "objectives": [
+          "Explore the relationship with Invention"
+        ],
+        "approvedFacts": [
+          "Python is widely taught as an introductory programming language.",
+          "The name Python derives from the British comedy series Monty Python's Flying Circus. (See § Naming."
+        ],
+        "anchors": [
+          "Python (programming language)",
+          "historical timeline"
+        ]
+      },
+      {
+        "chapterIndex": 2,
+        "title": "The Adoption of Python (programming language)",
+        "referenceLabel": "Adoption",
+        "readerQuestion": "How do key chemical processes behave during Adoption?",
+        "objectives": [
+          "Explore the relationship with Adoption"
+        ],
+        "approvedFacts": [
+          "Python 2. 0 was released on 16 October 2000, featuring many new features such as list comprehensions, cycle-detecting garbage collection, reference counting, and Unicode support.",
+          "As of May 2026, Python 3. 14."
+        ],
+        "anchors": [
+          "Python (programming language)",
+          "reaction mechanism"
+        ]
+      },
+      {
+        "chapterIndex": 3,
+        "title": "The Global Impact of Python (programming language)",
+        "referenceLabel": "Impact",
+        "readerQuestion": "Why do light steps trigger under Impact?",
+        "objectives": [
+          "Explore the relationship with Impact"
+        ],
+        "approvedFacts": [
+          "Operational results measure energy transitions across Python (programming language)"
+        ],
+        "anchors": [
+          "Python (programming language)",
+          "energy transition"
+        ]
+      },
+      {
+        "chapterIndex": 4,
+        "title": "The Future of Python (programming language)",
+        "referenceLabel": "Future",
+        "readerQuestion": "Who validates the final outcomes regarding Future?",
+        "objectives": [
+          "Explore the relationship with Future"
+        ],
+        "approvedFacts": [
+          "Concluding analysis confirms modern legacy values of Python (programming language)"
+        ],
+        "anchors": [
+          "Python (programming language)",
+          "modern application"
+        ]
+      }
+    ]
+  },
+  "triviaCandidates": [
+    {
+      "fact": "Python is a high-level, general-purpose programming language that emphasizes code readability, simplicity, and ease-of-writing with the use of significant indentation, an extensive (\"batteries-included\") standard library, and garbage collection. Python supports multiple programming paradigms but with an emphasis on object-oriented programming and dynamic typing.",
+      "surpriseScore": 10,
+      "readMoreTopic": "\"Hello, World!\" program"
+    },
+    {
+      "fact": "Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language. Python 3.",
+      "surpriseScore": 9,
+      "readMoreTopic": "?:"
+    },
+    {
+      "fact": "Python is widely taught as an introductory programming language.",
+      "surpriseScore": 8,
+      "readMoreTopic": "ABC (programming language)"
+    },
+    {
+      "fact": "Python was conceived in the late 1980s by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands. It was designed as a successor to the ABC programming language, which was inspired by SETL, capable of exception handling and interfacing with the Amoeba operating system.",
+      "surpriseScore": 7,
+      "readMoreTopic": "ADMB"
+    },
+    {
+      "fact": "The name Python derives from the British comedy series Monty Python's Flying Circus. (See § Naming.",
+      "surpriseScore": 6,
+      "readMoreTopic": "ALGOL"
+    },
+    {
+      "fact": "Python 2. 0 was released on 16 October 2000, featuring many new features such as list comprehensions, cycle-detecting garbage collection, reference counting, and Unicode support.",
+      "surpriseScore": 5,
+      "readMoreTopic": "ALGOL 68"
+    },
+    {
+      "fact": "Python 3. 0 was released on 3 December 2008, and was a major revision and not completely backward-compatible with earlier versions, with some new semantics and changed syntax.",
+      "surpriseScore": 4,
+      "readMoreTopic": "APL (programming language)"
+    },
+    {
+      "fact": "As of May 2026, Python 3. 14.",
+      "surpriseScore": 3,
+      "readMoreTopic": "ATmega"
+    },
+    {
+      "fact": "Python is a multi-paradigm programming language. Object-oriented programming and structured programming are fully supported, and many of their features support functional programming and aspect-oriented programming – including metaprogramming and metaobjects.",
+      "surpriseScore": 2,
+      "readMoreTopic": "AVR microcontrollers"
+    },
+    {
+      "fact": "Python uses dynamic typing and a combination of reference counting and a cycle-detecting garbage collector for memory management. It uses dynamic name resolution (late binding), which binds method and variable names during program execution.",
+      "surpriseScore": 1,
+      "readMoreTopic": "Academic Free License"
+    }
+  ],
+  "relatedTopics": [
+    "\"Hello, World!\" program",
+    "?:",
+    "ABC (programming language)",
+    "ADMB",
+    "ALGOL",
+    "ALGOL 68",
+    "APL (programming language)",
+    "ATmega"
+  ],
+  "confidenceScores": {
+    "resolver": 0.96,
+    "compiler": 0.95,
+    "grader": 0.7,
+    "overall": 0.92
+  },
+  "checksum": "e2c073d3282e42ba0e553410dcaeb21daf6a0020d90024a310d6080687ac445f",
+  "dependencyHash": "feeb94011827b5fbbddd36addda699a21d690d4f44b79bfac969d34ecd795520",
+  "sourceReferences": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Python%20(programming%20language)",
+      "title": "Python (programming language)"
+    }
+  ],
+  "factScript": {
+    "chapters": [
+      {
+        "chapterTitle": "The Need for Python (programming language)",
+        "questionAnswered": "What represents the starting motivation behind Need?",
+        "chronologicalPosition": 1,
+        "entities": [
+          "Python (programming language)"
+        ],
+        "dates": [
+          "2008",
+          "2026"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "motivating factors behind early phases of development",
+        "effect": "initial events showing transition in the subject",
+        "keyFacts": [
+          "Python is a high-level, general-purpose programming language that emphasizes code readability, simplicity, and ease-of-writing with the use of significant indentation, an extensive (\"batteries-included\") standard library, and garbage collection. Python supports multiple programming paradigms but with an emphasis on object-oriented programming and dynamic typing.",
+          "Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language. Python 3."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "fundamental lessons from this period"
+      },
+      {
+        "chapterTitle": "The Invention of Python (programming language)",
+        "questionAnswered": "Which factors influenced early discoveries of Invention?",
+        "chronologicalPosition": 2,
+        "entities": [
+          "Python (programming language)"
+        ],
+        "dates": [
+          "2026",
+          "1989"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "key drivers behind the rising influence",
+        "effect": "consequent progress seen during this phase",
+        "keyFacts": [
+          "Python is widely taught as an introductory programming language.",
+          "The name Python derives from the British comedy series Monty Python's Flying Circus. (See § Naming."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "primary insights on the rise"
+      },
+      {
+        "chapterTitle": "The Adoption of Python (programming language)",
+        "questionAnswered": "How do key chemical processes behave during Adoption?",
+        "chronologicalPosition": 3,
+        "entities": [
+          "Python (programming language)"
+        ],
+        "dates": [
+          "1989",
+          "1991"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "pivotal elements supporting the peak achievements",
+        "effect": "resultant breakthroughs related directly to these successes",
+        "keyFacts": [
+          "Python 2. 0 was released on 16 October 2000, featuring many new features such as list comprehensions, cycle-detecting garbage collection, reference counting, and Unicode support.",
+          "As of May 2026, Python 3. 14."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "core takeaways regarding this era"
+      },
+      {
+        "chapterTitle": "The Global Impact of Python (programming language)",
+        "questionAnswered": "Why do light steps trigger under Impact?",
+        "chronologicalPosition": 4,
+        "entities": [
+          "Python (programming language)"
+        ],
+        "dates": [
+          "1991",
+          "2018"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "underlying issues prompting the challenges faced",
+        "effect": "resulting shifts that defined the response taken",
+        "keyFacts": [
+          "Operational results measure energy transitions across Python (programming language)"
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "crucial lessons on these struggles"
+      },
+      {
+        "chapterTitle": "The Future of Python (programming language)",
+        "questionAnswered": "Who validates the final outcomes regarding Future?",
+        "chronologicalPosition": 5,
+        "entities": [
+          "Python (programming language)"
+        ],
+        "dates": [
+          "2018",
+          "2019"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "lasting forces establishing the legacy left behind",
+        "effect": "long-term outcomes that shaped the memory of the subject",
+        "keyFacts": [
+          "Concluding analysis confirms modern legacy values of Python (programming language)"
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "final summary explaining the legacy"
+      }
+    ]
+  },
+  "briefSummaryProvenance": [
+    {
+      "sentence": "Python (programming language) records confirm that Python is a high-level, general-purpose programming language that emphasizes code readability,.",
+      "fact": "Python is a high-level, general-purpose programming language that emphasizes code readability,"
+    },
+    {
+      "sentence": "Python (programming language) records confirm that Python is widely taught as an introductory programming language.",
+      "fact": "Python is widely taught as an introductory programming language"
+    },
+    {
+      "sentence": "Python (programming language) records confirm that Python 2 0 was released on 16 October 2000, featuring many.",
+      "fact": "Python 2 0 was released on 16 October 2000, featuring many"
+    },
+    {
+      "sentence": "Python (programming language) remains study topic showing that final summary explaining the legacy.",
+      "fact": "final summary explaining the legacy"
+    }
+  ],
+  "validationStatus": {
+    "passed": true,
+    "errors": [],
+    "warnings": [
+      "Timeline is not in strict chronological order"
+    ],
+    "checkedRules": {
+      "ontology_match": true,
+      "required_fields_exist": true,
+      "timeline_non_empty": true,
+      "timeline_count_bounds": true,
+      "timeline_chronological": false,
+      "graph_has_triples": true,
+      "graph_connected": true,
+      "named_entities_non_empty": true,
+      "no_weak_facts": true,
+      "no_duplicate_facts": true,
+      "no_duplicate_sentences": true,
+      "no_placeholder_wording": true,
+      "generic_wording_check": true,
+      "paragraph_length_limit": true,
+      "unique_chapter_titles": true,
+      "concrete_dates_names_present": true,
+      "no_repeated_phrases": true,
+      "no_timeline_milestone_placeholder": true,
+      "did_you_know_length_ok": true,
+      "sentence_provenance_ok": true,
+      "no_abstract_writing": true,
+      "documentary_alternating_rule": true,
+      "fact_density_met": true,
+      "curiosity_score_ok": true,
+      "documentary_score_ok": true,
+      "resolver_confidence_ok": true,
+      "compiler_confidence_ok": true,
+      "overall_confidence_ok": true
+    },
+    "timestamp": "2026-07-10T06:52:46.680Z"
+  }
+}

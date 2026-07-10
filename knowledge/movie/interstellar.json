@@ -1,0 +1,819 @@
+{
+  "version": "16.0",
+  "compilerVersion": "v17.0",
+  "ontologyVersion": "v17.0",
+  "wikipediaRevision": "rev-1.0",
+  "wikidataRevision": "Q3153615",
+  "ontology": {
+    "name": "Movie",
+    "labels": [
+      "Movie",
+      "Movie"
+    ]
+  },
+  "structuredFacts": {
+    "director": "Compiled detail for director",
+    "cast": [
+      "Significant Item 1",
+      "Significant Item 2"
+    ],
+    "composer": "Compiled detail for composer",
+    "themes": [
+      "Significant Item 1",
+      "Significant Item 2"
+    ],
+    "awards": "Compiled detail for awards",
+    "reception": "Compiled detail for reception",
+    "legacy": "Compiled detail for legacy",
+    "title": "Interstellar",
+    "subtitle": "2014 film by Christopher Nolan",
+    "leadParagraph": "Interstellar is a 2014 epic science fiction film directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan Nolan. It has an ensemble cast led by Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, and Michael Caine. Set in a dystopian future where Earth is suffering from catastrophic blight and famine, the film follows a group of astronauts who travel through space in search of a new home for humanity.\nThe film began development in 2006 from a treatment by producer Lynda Obst and theoretical physicist Kip Thorne, and was originally set to be directed by Steven Spielberg. Thorne served as an executive producer and scientific consultant on the film, and wrote the tie-in book The Science of Interstellar. It was Obst's final film as producer before her death. Cinematographer Hoyte van Hoytema shot it on 35 mm film in the Panavision anamorphic format and IMAX 70 mm. Filming began in late 2013 and took place in Alberta, Klaustur, and Los Angeles. Interstellar uses extensive practical and miniature effects, and the company DNEG created additional visual effects.\nInterstellar premiered at the TCL Chinese Theatre on October 26, 2014, and was released in theaters in the United States on November 5, and in the United Kingdom on November 7, with Paramount Pictures distributing in the United States and Warner Bros. Pictures distributing in international markets. In the United States, it was first released on film stock, expanding to venues using digital projectors. It was a commercial success, grossing $681 million worldwide during its initial theatrical run, and $774.7 million worldwide with subsequent releases, making it the 10th-highest-grossing film of 2014. The film received generally positive reviews from critics. Among its various accolades, Interstellar was nominated for five awards at the 87th Academy Awards, winning Best Visual Effects.",
+    "briefSummary": "Interstellar records confirm that Interstellar is a 2014 epic science fiction film directed by Christopher. Interstellar records confirm that Interstellar premiered at the TCL Chinese Theatre on October 26, 2014,. Interstellar records confirm that NASA's earlier mission—Lazarus—reported faraway habitable environments, accessible by a wormhole near. Interstellar remains study topic showing that final summary explaining the legacy.",
+    "cards": [
+      {
+        "title": "Interstellar's Story",
+        "summary": "Interstellar records verify that Interstellar is a 2014 epic science fiction film directed by Christopher. This motivated early research explaining why motivating factors behind early phases of development. Subsequent investigations established that The film began development in 2006 from a treatment by producer. Because of these dynamics, details show initial events showing transition in the subject. Interstellar data confirms that early outcomes and related findings. These changes established the basis for fundamental lessons from this period.",
+        "referenceLabel": "Interstellar's",
+        "readerQuestion": "What represents the starting motivation behind Story?",
+        "keyTakeaway": "fundamental lessons from this period",
+        "provenance": [
+          {
+            "sentence": "Interstellar records verify that Interstellar is a 2014 epic science fiction film directed by Christopher.",
+            "fact": "Interstellar is a 2014 epic science fiction film directed by Christopher"
+          },
+          {
+            "sentence": "This motivated early research explaining why motivating factors behind early phases of development.",
+            "fact": "motivating factors behind early phases of development"
+          },
+          {
+            "sentence": "Subsequent investigations established that The film began development in 2006 from a treatment by producer.",
+            "fact": "The film began development in 2006 from a treatment by producer"
+          },
+          {
+            "sentence": "Because of these dynamics, details show initial events showing transition in the subject.",
+            "fact": "initial events showing transition in the subject"
+          },
+          {
+            "sentence": "Interstellar data confirms that early outcomes and related findings.",
+            "fact": "early outcomes and related findings"
+          },
+          {
+            "sentence": "These changes established the basis for fundamental lessons from this period.",
+            "fact": "fundamental lessons from this period"
+          }
+        ]
+      },
+      {
+        "title": "Inside the Production of Interstellar",
+        "summary": "Historical records confirm that Interstellar premiered at the TCL Chinese Theatre on October 26, 2014,. This inspired further exploration showing why key drivers behind the rising influence. Later studies verified that In 2067, life on Earth is collapsing NASA scientists, Amelia Brand,. Following these events, analysts observed that consequent progress seen during this phase. Scientific tracking confirms that secondary attributes and timeline events. This transition created the groundwork for primary insights on the rise.",
+        "referenceLabel": "Inside",
+        "readerQuestion": "Which factors influenced early discoveries of Production?",
+        "keyTakeaway": "primary insights on the rise",
+        "provenance": [
+          {
+            "sentence": "Historical records confirm that Interstellar premiered at the TCL Chinese Theatre on October 26, 2014,.",
+            "fact": "Interstellar premiered at the TCL Chinese Theatre on October 26, 2014,"
+          },
+          {
+            "sentence": "This inspired further exploration showing why key drivers behind the rising influence.",
+            "fact": "key drivers behind the rising influence"
+          },
+          {
+            "sentence": "Later studies verified that In 2067, life on Earth is collapsing NASA scientists, Amelia Brand,.",
+            "fact": "In 2067, life on Earth is collapsing NASA scientists, Amelia Brand,"
+          },
+          {
+            "sentence": "Following these events, analysts observed that consequent progress seen during this phase.",
+            "fact": "consequent progress seen during this phase"
+          },
+          {
+            "sentence": "Scientific tracking confirms that secondary attributes and timeline events.",
+            "fact": "secondary attributes and timeline events"
+          },
+          {
+            "sentence": "This transition created the groundwork for primary insights on the rise.",
+            "fact": "primary insights on the rise"
+          }
+        ]
+      },
+      {
+        "title": "The Release of Interstellar",
+        "summary": "Primary documentation reveals that NASA's earlier mission—Lazarus—reported faraway habitable environments, accessible by a wormhole near. This led observers to trace why pivotal elements supporting the peak achievements. Archival reviews showed that On Earth, an older Murph has joined NASA, and works with. With these developments, researchers saw that resultant breakthroughs related directly to these successes. Detailed observations show that peak milestones and direct connections. This structure formed the design for core takeaways regarding this era.",
+        "referenceLabel": "The",
+        "readerQuestion": "How do key chemical processes behave during Release?",
+        "keyTakeaway": "core takeaways regarding this era",
+        "provenance": [
+          {
+            "sentence": "Primary documentation reveals that NASA's earlier mission—Lazarus—reported faraway habitable environments, accessible by a wormhole near.",
+            "fact": "NASA's earlier mission—Lazarus—reported faraway habitable environments, accessible by a wormhole near"
+          },
+          {
+            "sentence": "This led observers to trace why pivotal elements supporting the peak achievements.",
+            "fact": "pivotal elements supporting the peak achievements"
+          },
+          {
+            "sentence": "Archival reviews showed that On Earth, an older Murph has joined NASA, and works with.",
+            "fact": "On Earth, an older Murph has joined NASA, and works with"
+          },
+          {
+            "sentence": "With these developments, researchers saw that resultant breakthroughs related directly to these successes.",
+            "fact": "resultant breakthroughs related directly to these successes"
+          },
+          {
+            "sentence": "Detailed observations show that peak milestones and direct connections.",
+            "fact": "peak milestones and direct connections"
+          },
+          {
+            "sentence": "This structure formed the design for core takeaways regarding this era.",
+            "fact": "core takeaways regarding this era"
+          }
+        ]
+      },
+      {
+        "title": "How the World Received Interstellar",
+        "summary": "Factual chronicles state that When Cooper resolves to return to Earth alone, the planet's previous. This drove thorough inquiries explaining why underlying issues prompting the challenges faced. Recent compilations proved that Beyond Gargantua's horizon, Cooper emerges inside a tesseract where time is. Under these conditions, experts noted that resulting shifts that defined the response taken. Ontology patterns map that additional challenges and resolved queries. This transition shaped the modern standard for crucial lessons on these struggles.",
+        "referenceLabel": "How",
+        "readerQuestion": "Why do light steps trigger under Reception?",
+        "keyTakeaway": "crucial lessons on these struggles",
+        "provenance": [
+          {
+            "sentence": "Factual chronicles state that When Cooper resolves to return to Earth alone, the planet's previous.",
+            "fact": "When Cooper resolves to return to Earth alone, the planet's previous"
+          },
+          {
+            "sentence": "This drove thorough inquiries explaining why underlying issues prompting the challenges faced.",
+            "fact": "underlying issues prompting the challenges faced"
+          },
+          {
+            "sentence": "Recent compilations proved that Beyond Gargantua's horizon, Cooper emerges inside a tesseract where time is.",
+            "fact": "Beyond Gargantua's horizon, Cooper emerges inside a tesseract where time is"
+          },
+          {
+            "sentence": "Under these conditions, experts noted that resulting shifts that defined the response taken.",
+            "fact": "resulting shifts that defined the response taken"
+          },
+          {
+            "sentence": "Ontology patterns map that additional challenges and resolved queries.",
+            "fact": "additional challenges and resolved queries"
+          },
+          {
+            "sentence": "This transition shaped the modern standard for crucial lessons on these struggles.",
+            "fact": "crucial lessons on these struggles"
+          }
+        ]
+      },
+      {
+        "title": "The Enduring Legacy of Interstellar",
+        "summary": "Verified sources show that Aboard a space-station with a recreated healthy-Earth environment, Cooper reunites with. This prompted key factions to identify why lasting forces establishing the legacy left behind. Independent reviews confirmed that Matthew McConaughey as Joseph \"Coop\" Cooper, a widowed NASA pilot who. Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject. Statistical records track that final reflections and study conclusions. This layout outlines the final outcome of final summary explaining the legacy.",
+        "referenceLabel": "The",
+        "readerQuestion": "Who validates the final outcomes regarding Legacy?",
+        "keyTakeaway": "final summary explaining the legacy",
+        "provenance": [
+          {
+            "sentence": "Verified sources show that Aboard a space-station with a recreated healthy-Earth environment, Cooper reunites with.",
+            "fact": "Aboard a space-station with a recreated healthy-Earth environment, Cooper reunites with"
+          },
+          {
+            "sentence": "This prompted key factions to identify why lasting forces establishing the legacy left behind.",
+            "fact": "lasting forces establishing the legacy left behind"
+          },
+          {
+            "sentence": "Independent reviews confirmed that Matthew McConaughey as Joseph \"Coop\" Cooper, a widowed NASA pilot who.",
+            "fact": "Matthew McConaughey as Joseph \"Coop\" Cooper, a widowed NASA pilot who"
+          },
+          {
+            "sentence": "Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject.",
+            "fact": "long-term outcomes that shaped the memory of the subject"
+          },
+          {
+            "sentence": "Statistical records track that final reflections and study conclusions.",
+            "fact": "final reflections and study conclusions"
+          },
+          {
+            "sentence": "This layout outlines the final outcome of final summary explaining the legacy.",
+            "fact": "final summary explaining the legacy"
+          }
+        ]
+      }
+    ]
+  },
+  "namedEntities": [
+    {
+      "name": "Interstellar",
+      "type": "Concept",
+      "description": "The primary resolved subject."
+    }
+  ],
+  "knowledgeGraph": [
+    {
+      "subject": "Compiled detail for director",
+      "predicate": "DIRECTED",
+      "object": "Interstellar"
+    },
+    {
+      "subject": "Compiled detail for composer",
+      "predicate": "COMPOSED",
+      "object": "Interstellar"
+    },
+    {
+      "subject": "Significant Item 1",
+      "predicate": "STARRED_IN",
+      "object": "Interstellar"
+    },
+    {
+      "subject": "Significant Item 2",
+      "predicate": "STARRED_IN",
+      "object": "Interstellar"
+    },
+    {
+      "subject": "Significant Item 1",
+      "predicate": "THEME_OF",
+      "object": "Interstellar"
+    },
+    {
+      "subject": "Significant Item 2",
+      "predicate": "THEME_OF",
+      "object": "Interstellar"
+    },
+    {
+      "subject": "Interstellar",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_1"
+    },
+    {
+      "subject": "Interstellar",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_2"
+    }
+  ],
+  "timeline": [
+    {
+      "year": "2014",
+      "headline": "Pivotal era in 2014",
+      "description": "Interstellar underwent core changes and reached major development in the year 2014",
+      "importance": 8,
+      "connections": [
+        "Interstellar"
+      ],
+      "image": null
+    },
+    {
+      "year": "2006",
+      "headline": "Pivotal era in 2006",
+      "description": "Interstellar underwent core changes and reached major development in the year 2006",
+      "importance": 8,
+      "connections": [
+        "Interstellar"
+      ],
+      "image": null
+    },
+    {
+      "year": "2013",
+      "headline": "Pivotal era in 2013",
+      "description": "Interstellar underwent core changes and reached major development in the year 2013",
+      "importance": 8,
+      "connections": [
+        "Interstellar"
+      ],
+      "image": null
+    },
+    {
+      "year": "2067",
+      "headline": "Pivotal era in 2067",
+      "description": "Interstellar underwent core changes and reached major development in the year 2067",
+      "importance": 8,
+      "connections": [
+        "Interstellar"
+      ],
+      "image": null
+    },
+    {
+      "year": "1997",
+      "headline": "Pivotal era in 1997",
+      "description": "Interstellar underwent core changes and reached major development in the year 1997",
+      "importance": 8,
+      "connections": [
+        "Interstellar"
+      ],
+      "image": null
+    },
+    {
+      "year": "2007",
+      "headline": "Pivotal era in 2007",
+      "description": "Interstellar underwent core changes and reached major development in the year 2007",
+      "importance": 8,
+      "connections": [
+        "Interstellar"
+      ],
+      "image": null
+    }
+  ],
+  "rankedFacts": [
+    {
+      "fact": "Interstellar is a 2014 epic science fiction film directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan Nolan. It has an ensemble cast led by Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, and Michael Caine.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The film began development in 2006 from a treatment by producer Lynda Obst and theoretical physicist Kip Thorne, and was originally set to be directed by Steven Spielberg. Thorne served as an executive producer and scientific consultant on the film, and wrote the tie-in book The Science of Interstellar.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Interstellar premiered at the TCL Chinese Theatre on October 26, 2014, and was released in theaters in the United States on November 5, and in the United Kingdom on November 7, with Paramount Pictures distributing in the United States and Warner Bros. Pictures distributing in international markets.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "In 2067, life on Earth is collapsing. NASA scientists, Amelia Brand, Romilly, and Doyle, are embarking on an intergalactic mission to find another habitable planet, when former NASA pilot, Cooper, arrives 'by coincidence' to the secret facility.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "NASA's earlier mission—Lazarus—reported faraway habitable environments, accessible by a wormhole near Saturn. After a two-year voyage, Cooper's crew pass through the wormhole aboard the spacecraft Endurance, emerging into a planetary system orbiting the black hole Gargantua.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "On Earth, an older Murph has joined NASA, and works with Brand. She discovers inconsistencies in Brand's equations, which will purportedly guide humanity's mass exodus from Earth once a viable alternative (planet) is discovered.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "When Cooper resolves to return to Earth alone, the planet's previous explorer, Mann, tries to kill him. It emerges that Mann falsified information about his planet's habitability in hopes of being rescued.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Beyond Gargantua's horizon, Cooper emerges inside a tesseract where time is 'physical'. He sees navigable snapshots of Murph's bedroom-in-time, and succeeds in interacting with objects there.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Aboard a space-station with a recreated healthy-Earth environment, Cooper reunites with Murph, now older than him. Having assured humanity's continued existence, Murph is nearing death but does not want Cooper to witness it.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Matthew McConaughey as Joseph \"Coop\" Cooper, a widowed NASA pilot who reluctantly becomes a farmer after the agency is closed by the government, and eventually joins the Endurance mission as the lead pilot.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    }
+  ],
+  "visualModules": [
+    {
+      "type": "movie",
+      "title": "Movie Blueprint Snapshot",
+      "data": {
+        "director": "Compiled detail for director",
+        "cast": [
+          "Significant Item 1",
+          "Significant Item 2"
+        ],
+        "composer": "Compiled detail for composer",
+        "themes": [
+          "Significant Item 1",
+          "Significant Item 2"
+        ],
+        "awards": "Compiled detail for awards",
+        "reception": "Compiled detail for reception",
+        "legacy": "Compiled detail for legacy"
+      }
+    }
+  ],
+  "narrativePlan": {
+    "chapters": [
+      {
+        "chapterIndex": 0,
+        "title": "Interstellar's Story",
+        "referenceLabel": "Story",
+        "readerQuestion": "What represents the starting motivation behind Story?",
+        "objectives": [
+          "Explore the relationship with Story"
+        ],
+        "approvedFacts": [
+          "Interstellar is a 2014 epic science fiction film directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan Nolan. It has an ensemble cast led by Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, and Michael Caine.",
+          "The film began development in 2006 from a treatment by producer Lynda Obst and theoretical physicist Kip Thorne, and was originally set to be directed by Steven Spielberg. Thorne served as an executive producer and scientific consultant on the film, and wrote the tie-in book The Science of Interstellar."
+        ],
+        "anchors": [
+          "Interstellar",
+          "foundation origin"
+        ]
+      },
+      {
+        "chapterIndex": 1,
+        "title": "Inside the Production of Interstellar",
+        "referenceLabel": "Production",
+        "readerQuestion": "Which factors influenced early discoveries of Production?",
+        "objectives": [
+          "Explore the relationship with Production"
+        ],
+        "approvedFacts": [
+          "Interstellar premiered at the TCL Chinese Theatre on October 26, 2014, and was released in theaters in the United States on November 5, and in the United Kingdom on November 7, with Paramount Pictures distributing in the United States and Warner Bros. Pictures distributing in international markets.",
+          "In 2067, life on Earth is collapsing. NASA scientists, Amelia Brand, Romilly, and Doyle, are embarking on an intergalactic mission to find another habitable planet, when former NASA pilot, Cooper, arrives 'by coincidence' to the secret facility."
+        ],
+        "anchors": [
+          "Interstellar",
+          "historical timeline"
+        ]
+      },
+      {
+        "chapterIndex": 2,
+        "title": "The Release of Interstellar",
+        "referenceLabel": "Release",
+        "readerQuestion": "How do key chemical processes behave during Release?",
+        "objectives": [
+          "Explore the relationship with Release"
+        ],
+        "approvedFacts": [
+          "NASA's earlier mission—Lazarus—reported faraway habitable environments, accessible by a wormhole near Saturn. After a two-year voyage, Cooper's crew pass through the wormhole aboard the spacecraft Endurance, emerging into a planetary system orbiting the black hole Gargantua.",
+          "On Earth, an older Murph has joined NASA, and works with Brand. She discovers inconsistencies in Brand's equations, which will purportedly guide humanity's mass exodus from Earth once a viable alternative (planet) is discovered."
+        ],
+        "anchors": [
+          "Interstellar",
+          "reaction mechanism"
+        ]
+      },
+      {
+        "chapterIndex": 3,
+        "title": "How the World Received Interstellar",
+        "referenceLabel": "Reception",
+        "readerQuestion": "Why do light steps trigger under Reception?",
+        "objectives": [
+          "Explore the relationship with Reception"
+        ],
+        "approvedFacts": [
+          "When Cooper resolves to return to Earth alone, the planet's previous explorer, Mann, tries to kill him. It emerges that Mann falsified information about his planet's habitability in hopes of being rescued.",
+          "Beyond Gargantua's horizon, Cooper emerges inside a tesseract where time is 'physical'. He sees navigable snapshots of Murph's bedroom-in-time, and succeeds in interacting with objects there."
+        ],
+        "anchors": [
+          "Interstellar",
+          "energy transition"
+        ]
+      },
+      {
+        "chapterIndex": 4,
+        "title": "The Enduring Legacy of Interstellar",
+        "referenceLabel": "Legacy",
+        "readerQuestion": "Who validates the final outcomes regarding Legacy?",
+        "objectives": [
+          "Explore the relationship with Legacy"
+        ],
+        "approvedFacts": [
+          "Aboard a space-station with a recreated healthy-Earth environment, Cooper reunites with Murph, now older than him. Having assured humanity's continued existence, Murph is nearing death but does not want Cooper to witness it.",
+          "Matthew McConaughey as Joseph \"Coop\" Cooper, a widowed NASA pilot who reluctantly becomes a farmer after the agency is closed by the government, and eventually joins the Endurance mission as the lead pilot."
+        ],
+        "anchors": [
+          "Interstellar",
+          "modern application"
+        ]
+      }
+    ]
+  },
+  "triviaCandidates": [
+    {
+      "fact": "Interstellar is a 2014 epic science fiction film directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan Nolan. It has an ensemble cast led by Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, and Michael Caine.",
+      "surpriseScore": 10,
+      "readMoreTopic": "/Film"
+    },
+    {
+      "fact": "The film began development in 2006 from a treatment by producer Lynda Obst and theoretical physicist Kip Thorne, and was originally set to be directed by Steven Spielberg. Thorne served as an executive producer and scientific consultant on the film, and wrote the tie-in book The Science of Interstellar.",
+      "surpriseScore": 9,
+      "readMoreTopic": "1917 (2019 film)"
+    },
+    {
+      "fact": "Interstellar premiered at the TCL Chinese Theatre on October 26, 2014, and was released in theaters in the United States on November 5, and in the United Kingdom on November 7, with Paramount Pictures distributing in the United States and Warner Bros. Pictures distributing in international markets.",
+      "surpriseScore": 8,
+      "readMoreTopic": "2001: A Space Odyssey"
+    },
+    {
+      "fact": "In 2067, life on Earth is collapsing. NASA scientists, Amelia Brand, Romilly, and Doyle, are embarking on an intergalactic mission to find another habitable planet, when former NASA pilot, Cooper, arrives 'by coincidence' to the secret facility.",
+      "surpriseScore": 7,
+      "readMoreTopic": "2014 United States elections"
+    },
+    {
+      "fact": "NASA's earlier mission—Lazarus—reported faraway habitable environments, accessible by a wormhole near Saturn. After a two-year voyage, Cooper's crew pass through the wormhole aboard the spacecraft Endurance, emerging into a planetary system orbiting the black hole Gargantua.",
+      "surpriseScore": 6,
+      "readMoreTopic": "2014 in film"
+    },
+    {
+      "fact": "On Earth, an older Murph has joined NASA, and works with Brand. She discovers inconsistencies in Brand's equations, which will purportedly guide humanity's mass exodus from Earth once a viable alternative (planet) is discovered.",
+      "surpriseScore": 5,
+      "readMoreTopic": "35 mm movie film"
+    },
+    {
+      "fact": "When Cooper resolves to return to Earth alone, the planet's previous explorer, Mann, tries to kill him. It emerges that Mann falsified information about his planet's habitability in hopes of being rescued.",
+      "surpriseScore": 4,
+      "readMoreTopic": "35mm movie film"
+    },
+    {
+      "fact": "Beyond Gargantua's horizon, Cooper emerges inside a tesseract where time is 'physical'. He sees navigable snapshots of Murph's bedroom-in-time, and succeeds in interacting with objects there.",
+      "surpriseScore": 3,
+      "readMoreTopic": "3D-printed"
+    },
+    {
+      "fact": "Aboard a space-station with a recreated healthy-Earth environment, Cooper reunites with Murph, now older than him. Having assured humanity's continued existence, Murph is nearing death but does not want Cooper to witness it.",
+      "surpriseScore": 2,
+      "readMoreTopic": "70 mm"
+    },
+    {
+      "fact": "Matthew McConaughey as Joseph \"Coop\" Cooper, a widowed NASA pilot who reluctantly becomes a farmer after the agency is closed by the government, and eventually joins the Endurance mission as the lead pilot.",
+      "surpriseScore": 1,
+      "readMoreTopic": "87th Academy Awards"
+    }
+  ],
+  "relatedTopics": [
+    "/Film",
+    "1917 (2019 film)",
+    "2001: A Space Odyssey",
+    "2014 United States elections",
+    "2014 in film",
+    "35 mm movie film",
+    "35mm movie film",
+    "3D-printed"
+  ],
+  "confidenceScores": {
+    "resolver": 0.96,
+    "compiler": 0.95,
+    "grader": 0.85,
+    "overall": 0.92
+  },
+  "checksum": "f2db560caffc176aed4ee9fea015165c06190f6e3b1d8cb443bf6a559376882c",
+  "dependencyHash": "5225bb07078491ad52ba6358aab56391bec87ad9f781ba4bd39c7c25d7b35796",
+  "sourceReferences": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Interstellar",
+      "title": "Interstellar"
+    }
+  ],
+  "factScript": {
+    "chapters": [
+      {
+        "chapterTitle": "Interstellar's Story",
+        "questionAnswered": "What represents the starting motivation behind Story?",
+        "chronologicalPosition": 1,
+        "entities": [
+          "Interstellar"
+        ],
+        "dates": [
+          "2014",
+          "2006"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "motivating factors behind early phases of development",
+        "effect": "initial events showing transition in the subject",
+        "keyFacts": [
+          "Interstellar is a 2014 epic science fiction film directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan Nolan. It has an ensemble cast led by Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, and Michael Caine.",
+          "The film began development in 2006 from a treatment by producer Lynda Obst and theoretical physicist Kip Thorne, and was originally set to be directed by Steven Spielberg. Thorne served as an executive producer and scientific consultant on the film, and wrote the tie-in book The Science of Interstellar."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "fundamental lessons from this period"
+      },
+      {
+        "chapterTitle": "Inside the Production of Interstellar",
+        "questionAnswered": "Which factors influenced early discoveries of Production?",
+        "chronologicalPosition": 2,
+        "entities": [
+          "Interstellar"
+        ],
+        "dates": [
+          "2006",
+          "2013"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "key drivers behind the rising influence",
+        "effect": "consequent progress seen during this phase",
+        "keyFacts": [
+          "Interstellar premiered at the TCL Chinese Theatre on October 26, 2014, and was released in theaters in the United States on November 5, and in the United Kingdom on November 7, with Paramount Pictures distributing in the United States and Warner Bros. Pictures distributing in international markets.",
+          "In 2067, life on Earth is collapsing. NASA scientists, Amelia Brand, Romilly, and Doyle, are embarking on an intergalactic mission to find another habitable planet, when former NASA pilot, Cooper, arrives 'by coincidence' to the secret facility."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "primary insights on the rise"
+      },
+      {
+        "chapterTitle": "The Release of Interstellar",
+        "questionAnswered": "How do key chemical processes behave during Release?",
+        "chronologicalPosition": 3,
+        "entities": [
+          "Interstellar"
+        ],
+        "dates": [
+          "2013",
+          "2067"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "pivotal elements supporting the peak achievements",
+        "effect": "resultant breakthroughs related directly to these successes",
+        "keyFacts": [
+          "NASA's earlier mission—Lazarus—reported faraway habitable environments, accessible by a wormhole near Saturn. After a two-year voyage, Cooper's crew pass through the wormhole aboard the spacecraft Endurance, emerging into a planetary system orbiting the black hole Gargantua.",
+          "On Earth, an older Murph has joined NASA, and works with Brand. She discovers inconsistencies in Brand's equations, which will purportedly guide humanity's mass exodus from Earth once a viable alternative (planet) is discovered."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "core takeaways regarding this era"
+      },
+      {
+        "chapterTitle": "How the World Received Interstellar",
+        "questionAnswered": "Why do light steps trigger under Reception?",
+        "chronologicalPosition": 4,
+        "entities": [
+          "Interstellar"
+        ],
+        "dates": [
+          "2067",
+          "1997"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "underlying issues prompting the challenges faced",
+        "effect": "resulting shifts that defined the response taken",
+        "keyFacts": [
+          "When Cooper resolves to return to Earth alone, the planet's previous explorer, Mann, tries to kill him. It emerges that Mann falsified information about his planet's habitability in hopes of being rescued.",
+          "Beyond Gargantua's horizon, Cooper emerges inside a tesseract where time is 'physical'. He sees navigable snapshots of Murph's bedroom-in-time, and succeeds in interacting with objects there."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "crucial lessons on these struggles"
+      },
+      {
+        "chapterTitle": "The Enduring Legacy of Interstellar",
+        "questionAnswered": "Who validates the final outcomes regarding Legacy?",
+        "chronologicalPosition": 5,
+        "entities": [
+          "Interstellar"
+        ],
+        "dates": [
+          "1997",
+          "2007"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "lasting forces establishing the legacy left behind",
+        "effect": "long-term outcomes that shaped the memory of the subject",
+        "keyFacts": [
+          "Aboard a space-station with a recreated healthy-Earth environment, Cooper reunites with Murph, now older than him. Having assured humanity's continued existence, Murph is nearing death but does not want Cooper to witness it.",
+          "Matthew McConaughey as Joseph \"Coop\" Cooper, a widowed NASA pilot who reluctantly becomes a farmer after the agency is closed by the government, and eventually joins the Endurance mission as the lead pilot."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "final summary explaining the legacy"
+      }
+    ]
+  },
+  "briefSummaryProvenance": [
+    {
+      "sentence": "Interstellar records confirm that Interstellar is a 2014 epic science fiction film directed by Christopher.",
+      "fact": "Interstellar is a 2014 epic science fiction film directed by Christopher"
+    },
+    {
+      "sentence": "Interstellar records confirm that Interstellar premiered at the TCL Chinese Theatre on October 26, 2014,.",
+      "fact": "Interstellar premiered at the TCL Chinese Theatre on October 26, 2014,"
+    },
+    {
+      "sentence": "Interstellar records confirm that NASA's earlier mission—Lazarus—reported faraway habitable environments, accessible by a wormhole near.",
+      "fact": "NASA's earlier mission—Lazarus—reported faraway habitable environments, accessible by a wormhole near"
+    },
+    {
+      "sentence": "Interstellar remains study topic showing that final summary explaining the legacy.",
+      "fact": "final summary explaining the legacy"
+    }
+  ],
+  "validationStatus": {
+    "passed": true,
+    "errors": [],
+    "warnings": [
+      "Timeline is not in strict chronological order"
+    ],
+    "checkedRules": {
+      "ontology_match": true,
+      "required_fields_exist": true,
+      "timeline_non_empty": true,
+      "timeline_count_bounds": true,
+      "timeline_chronological": false,
+      "graph_has_triples": true,
+      "graph_connected": true,
+      "named_entities_non_empty": true,
+      "no_weak_facts": true,
+      "no_duplicate_facts": true,
+      "no_duplicate_sentences": true,
+      "no_placeholder_wording": true,
+      "generic_wording_check": true,
+      "paragraph_length_limit": true,
+      "unique_chapter_titles": true,
+      "concrete_dates_names_present": true,
+      "no_repeated_phrases": true,
+      "no_timeline_milestone_placeholder": true,
+      "did_you_know_length_ok": true,
+      "sentence_provenance_ok": true,
+      "no_abstract_writing": true,
+      "documentary_alternating_rule": true,
+      "fact_density_met": true,
+      "curiosity_score_ok": true,
+      "documentary_score_ok": true,
+      "resolver_confidence_ok": true,
+      "compiler_confidence_ok": true,
+      "overall_confidence_ok": true
+    },
+    "timestamp": "2026-07-10T06:47:39.827Z"
+  }
+}

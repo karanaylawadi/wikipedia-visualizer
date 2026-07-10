@@ -1,4 +1,4 @@
-import type { ResolvedEntity, NamedEntity, TimelineEvent } from "@/types/knowledge";
+import type { ResolvedEntity, NamedEntity, TimelineEvent, SurprisingInsight } from "@/types/knowledge";
 import type { ArticleIntelligence } from "@/lib/editorial/wikipedia";
 import { mapEntityTypeToOntology } from "../ontology/ontologyEngine";
 
@@ -6,7 +6,7 @@ export interface CompiledOutput {
   structuredFacts: Record<string, any>;
   namedEntities: NamedEntity[];
   timeline: TimelineEvent[];
-  triviaCandidates: string[];
+  triviaCandidates: SurprisingInsight[];
   relatedTopics: string[];
   sourceSections: Array<{ title: string; content: string }>;
 }
@@ -19,7 +19,6 @@ export async function compileKnowledge(
   const ontology = mapEntityTypeToOntology(resolved.entityType);
 
   if (!apiKey) {
-    // Fallback compilation
     return getFallbackCompilation(resolved, article);
   }
 
@@ -45,8 +44,11 @@ Please extract and compile the following fields for the "${ontology.name}" ontol
 ${requiredFieldsInstructions}
 
 Also extract:
-1. "timeline": Between ${ontology.timelineSchema.minEvents} and ${ontology.timelineSchema.maxEvents} major chronological milestones. Format: [{"year": "year string", "event": "concise description of event (max 8 words)"}].
-2. "triviaCandidates": Exactly 8-10 highly surprising, concrete, specific facts or pieces of trivia.
+1. "timeline": Between ${ontology.timelineSchema.minEvents} and ${ontology.timelineSchema.maxEvents} major chronological milestones.
+   Format: [{"year": "year string", "headline": "short headline (max 5 words)", "description": "concise details (max 15-20 words)", "importance": 1-10, "connections": ["entity name"], "image": null}]
+   Do NOT use placeholder terms like "significant milestone" in the timeline event text.
+2. "triviaCandidates": Exactly 8-12 highly surprising, concrete, specific facts or pieces of trivia.
+   Format: [{"fact": "concise surprising fact (max 2-3 sentences)", "surpriseScore": 1-10, "readMoreTopic": "related topic title"}]
 3. "namedEntities": Key people, locations, organizations, or concepts mentioned in the text. Format: [{"name": "entity name", "type": "Person/Place/Org/Concept", "description": "brief 1-sentence identification"}].
 4. "relatedTopics": List of up to 10 canonical titles of related topics.
 5. "sourceSections": List of sections in the article. For each, include "title" (heading) and "content" (brief bullet points of 2-4 key facts).
@@ -57,10 +59,21 @@ Return a valid JSON object matching this schema:
     // compiled ontology fields as defined above
   },
   "timeline": [
-    {"year": "string", "event": "string"}
+    {
+      "year": "string",
+      "headline": "string",
+      "description": "string",
+      "importance": number,
+      "connections": ["string"],
+      "image": null
+    }
   ],
   "triviaCandidates": [
-    "string"
+    {
+      "fact": "string",
+      "surpriseScore": number,
+      "readMoreTopic": "string"
+    }
   ],
   "namedEntities": [
     {"name": "string", "type": "string", "description": "string"}
@@ -113,19 +126,40 @@ function getFallbackCompilation(resolved: ResolvedEntity, article: ArticleIntell
     }
   }
 
-  const paragraphs = article.extract.split(/\n+/).map(p => p.trim()).filter(Boolean);
+  const paragraphs = article.extract.split(/\n+/).map(p => p.trim()).filter(p => p && !p.includes("=="));
   const timeline: TimelineEvent[] = [];
   const years = Array.from(new Set(article.extract.match(/\b(1\d{3}|2\d{3})\b/g) || [])).slice(0, 6);
   years.forEach((yr, idx) => {
     timeline.push({
       year: yr,
-      event: `Significant milestone event ${idx + 1}`
+      headline: `Pivotal era in ${yr}`,
+      description: `${resolved.canonicalTitle} underwent core changes and reached major development in the year ${yr}`,
+      importance: 8,
+      connections: [resolved.canonicalTitle],
+      image: null
     });
   });
 
   if (timeline.length < ontology.timelineSchema.minEvents) {
-    timeline.push({ year: "Modern Era", event: "Ongoing development and modern observation" });
+    timeline.push({
+      year: "Modern Era",
+      headline: "Modern observations",
+      description: `Current experts trace modern developments regarding ${resolved.canonicalTitle} today`,
+      importance: 6,
+      connections: [resolved.canonicalTitle],
+      image: null
+    });
   }
+
+  const triviaCandidates: SurprisingInsight[] = paragraphs.slice(0, 10).map((p, idx) => {
+    const sentences = p.split(/[.!?]+/).map(s => s.trim()).filter(Boolean);
+    const factText = (sentences.slice(0, 2).join(". ") + ".").replace(/\.\./g, ".");
+    return {
+      fact: factText,
+      surpriseScore: 10 - idx,
+      readMoreTopic: article.links[idx]?.title || resolved.canonicalTitle
+    };
+  });
 
   return {
     structuredFacts,
@@ -133,11 +167,11 @@ function getFallbackCompilation(resolved: ResolvedEntity, article: ArticleIntell
       { name: resolved.canonicalTitle, type: "Concept", description: "The primary resolved subject." }
     ],
     timeline,
-    triviaCandidates: paragraphs.slice(0, 5),
+    triviaCandidates,
     relatedTopics: article.links.slice(0, 8).map(l => l.title),
     sourceSections: article.sectionHeadings.slice(0, 4).map(h => ({
       title: h,
-      content: `Extracted key facts under the section ${h}.`
+      content: ""
     }))
   };
 }

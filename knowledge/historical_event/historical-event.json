@@ -1,7 +1,7 @@
 {
-  "version": "15.0",
-  "compilerVersion": "v15.0",
-  "ontologyVersion": "v15.0",
+  "version": "16.0",
+  "compilerVersion": "v16.0",
+  "ontologyVersion": "v16.0",
   "wikipediaRevision": "rev-1.0",
   "wikidataRevision": "Q1932",
   "ontology": {
@@ -21,42 +21,172 @@
     "title": "Space Race",
     "subtitle": "US–USSR spaceflight capability rivalry",
     "leadParagraph": "The Space Race (Russian: космическая гонка, romanized: kosmicheskaya gonka, IPA: [kɐsˈmʲitɕɪskəjə ˈɡonkə]) was a 20th-century competition between the Cold War rivals, the United States and the Soviet Union, to achieve superior spaceflight capability. It had its origins in the ballistic missile-based nuclear arms race between the two nations following World War II and the onset of the Cold War. The technological advantage demonstrated by spaceflight achievement was seen as necessary for national security, particularly in regard to intercontinental ballistic missile and satellite reconnaissance capability, but also became part of the cultural symbolism and ideology of the time. The Space Race brought pioneering launches of artificial satellites, robotic landers to the Moon, Venus, and Mars, and human spaceflight in low Earth orbit and ultimately to the Moon.\nPublic interest in space travel originated in the 1951 publication of a Soviet youth magazine and was promptly picked up by US magazines. The competition began on July 29, 1955, when the United States announced its intent to launch artificial satellites for the International Geophysical Year. Five days later, the Soviet Union responded by declaring they would also launch a satellite \"in the near future\". The launching of satellites was enabled by developments in ballistic missile capabilities since the end of World War II. The competition gained Western public attention with the \"Sputnik crisis\", when the USSR achieved the first successful satellite launch, Sputnik 1, on October 4, 1957. It gained momentum when the USSR sent the first human, Yuri Gagarin, into space with the orbital flight of Vostok 1 on April 12, 1961. These were followed by a string of other firsts achieved by the Soviets over the next few years.\nGagarin's flight led US president John F. Kennedy to raise the stakes on May 25, 1961, by asking the US Congress to commit to the goal of \"landing a man on the Moon and returning him safely to the Earth\" before the end of the decade. Both countries began developing super heavy-lift launch vehicles, with the US successfully deploying the Saturn V, which was large enough to send a three-person orbiter and two-person lander to the Moon. Kennedy's Moon landing goal was achieved in July 1969, with the flight of Apollo 11. The USSR continued to pursue crewed lunar programs to launch and land on the Moon before the US with its N1 rocket but did not succeed, and eventually canceled it to concentrate on Salyut, the first space station program, and the first landings on Venus and on Mars. Meanwhile, the US landed five more Apollo crews on the Moon, and continued exploration of other extraterrestrial bodies robotically.\nA period of détente followed with the April 1972 agreement on a cooperative Apollo–Soyuz Test Project (ASTP), resulting in the July 1975 rendezvous in Earth orbit of a US astronaut crew with a Soviet cosmonaut crew and joint development of an international docking standard APAS-75. Being considered as the final act of the Space Race by many observers, the competition was however only gradually replaced with cooperation. The collapse of the Soviet Union eventually allowed the US and the newly reconstituted Russian Federation to end their Cold War competition also in space, by agreeing in 1993 on the Shuttle–Mir and International Space Station programs.",
-    "briefSummary": "This briefing compiles a structured analysis of \"Space Race\", examining its key foundations, developments, and modern implementation parameters. Across the five planned chapters, we explore its core attributes starting with early motivations and origins. We then map the subsequent structural escalation, turning points, and overall developmental outcomes that define its legacy. Additionally, we analyze key milestones, including 1951 (Significant milestone event 1), 1955 (Significant milestone event 2), 1957 (Significant milestone event 3), which represent critical points in its historical trajectory. By focusing on named entities such as Space Race, this narrative connects structured factual details with real-world applications. These consolidated insights establish a canonical reference point for further comparative studies. This compiled documentation provides an authoritative record, ensuring that researchers and developers can reference verified facts rather than generic summaries. The resulting framework provides a baseline for all subsequent analysis.",
+    "briefSummary": "During early periods, The Space Race (Russian: космическая гонка, romanized: kosmicheskaya gonka, IPA: [kɐsˈmʲitɕɪskəjə ˈɡonkə]) was a 20th-century competition between the Cold War rivals, the United States and the Soviet Union, to achieve superior spaceflight capability It had its origins in the ballistic missile-based nuclear arms race between the two nations following World War II and the onset of the Cold War The technological advantage demonstrated by spaceflight achievement was seen as necessary for national security, particularly in regard to intercontinental ballistic missile and satellite reconnaissance capability, but also became part of the cultural symbolism and ideology of the time The Space Race brought pioneering launches of artificial satellites, robotic landers to the Moon, Venus, and Mars, and human spaceflight in low Earth orbit and ultimately to the Moon, establishing a clear pattern. During early periods, Gagarin's flight led US president John F Kennedy to raise the stakes on May 25, 1961, by asking the US Congress to commit to the goal of \"landing a man on the Moon and returning him safely to the Earth\" before the end of the decade Both countries began developing super heavy-lift launch vehicles, with the US successfully deploying the Saturn V, which was large enough to send a three-person orbiter and two-person lander to the Moon Kennedy's Moon landing goal was achieved in July 1969, with the flight of Apollo 11 The USSR continued to pursue crewed lunar programs to launch and land on the Moon before the US with its N1 rocket but did not succeed, and eventually canceled it to concentrate on Salyut, the first space station program, and the first landings on Venus and on Mars Meanwhile, the US landed five more Apollo crews on the Moon, and continued exploration of other extraterrestrial bodies robotically, establishing a clear pattern. During early periods, Extracted key facts under the section Origins, establishing a clear pattern. These events explain the historical path of Space Race and show that Understanding the critical dynamics of Consequences.",
     "cards": [
       {
-        "title": "The Spark",
-        "summary": "Centering upon foundational aspects concerning The regarding Space Race. Our team maps particular elements such as Space Race, foundation origin answering queries regarding What represents the starting motivation behind The Spark? Showing this, our project gathers confirmed features covering initial stages, confirming accuracy levels. This establishes clear reference points towards initial intervals, laying groundwork supporting future research. Academics can leverage such early baseline records comparing later framework modifications over time. This foundational perspective helps organize whole timelines.",
-        "referenceLabel": "The",
-        "readerQuestion": "What represents the starting motivation behind The Spark?",
-        "keyTakeaway": "Core takeaway on The."
+        "title": "Origins",
+        "summary": "First records confirm that The Space Race (Russian: космическая гонка, romanized: kosmicheskaya gonka, IPA: [kɐsˈmʲitɕɪskəjə ˈɡonkə]) was a 20th-century competition between the Cold War rivals, the United States and the Soviet Union, to achieve superior spaceflight capability It had its origins in the ballistic missile-based nuclear arms race between the two nations following World War II and the onset of the Cold War The technological advantage demonstrated by spaceflight achievement was seen as necessary for national security, particularly in regard to intercontinental ballistic missile and satellite reconnaissance capability, but also became part of the cultural symbolism and ideology of the time The Space Race brought pioneering launches of artificial satellites, robotic landers to the Moon, Venus, and Mars, and human spaceflight in low Earth orbit and ultimately to the Moon. This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Origins. Subsequent investigations established that Public interest in space travel originated in the 1951 publication of a Soviet youth magazine and was promptly picked up by US magazines The competition began on July 29, 1955, when the United States announced its intent to launch artificial satellites for the International Geophysical Year Five days later, the Soviet Union responded by declaring they would also launch a satellite \"in the near future\" The launching of satellites was enabled by developments in ballistic missile capabilities since the end of World War II The competition gained Western public attention with the \"Sputnik crisis\", when the USSR achieved the first successful satellite launch, Sputnik 1, on October 4, 1957 It gained momentum when the USSR sent the first human, Yuri Gagarin, into space with the orbital flight of Vostok 1 on April 12, 1961 These were followed by a string of other firsts achieved by the Soviets over the next few years. Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Origins. Modern data confirms that Subsequent observations. These changes established the modern basis for understanding Understanding the critical dynamics of Origins.",
+        "referenceLabel": "Origins",
+        "readerQuestion": "What represents the starting motivation behind Origins?",
+        "keyTakeaway": "Understanding the critical dynamics of Origins",
+        "provenance": [
+          {
+            "sentence": "First records confirm that The Space Race (Russian: космическая гонка, romanized: kosmicheskaya gonka, IPA: [kɐsˈmʲitɕɪskəjə ˈɡonkə]) was a 20th-century competition between the Cold War rivals, the United States and the Soviet Union, to achieve superior spaceflight capability It had its origins in the ballistic missile-based nuclear arms race between the two nations following World War II and the onset of the Cold War The technological advantage demonstrated by spaceflight achievement was seen as necessary for national security, particularly in regard to intercontinental ballistic missile and satellite reconnaissance capability, but also became part of the cultural symbolism and ideology of the time The Space Race brought pioneering launches of artificial satellites, robotic landers to the Moon, Venus, and Mars, and human spaceflight in low Earth orbit and ultimately to the Moon.",
+            "fact": "The Space Race (Russian: космическая гонка, romanized: kosmicheskaya gonka, IPA: [kɐsˈmʲitɕɪskəjə ˈɡonkə]) was a 20th-century competition between the Cold War rivals, the United States and the Soviet Union, to achieve superior spaceflight capability It had its origins in the ballistic missile-based nuclear arms race between the two nations following World War II and the onset of the Cold War The technological advantage demonstrated by spaceflight achievement was seen as necessary for national security, particularly in regard to intercontinental ballistic missile and satellite reconnaissance capability, but also became part of the cultural symbolism and ideology of the time The Space Race brought pioneering launches of artificial satellites, robotic landers to the Moon, Venus, and Mars, and human spaceflight in low Earth orbit and ultimately to the Moon"
+          },
+          {
+            "sentence": "This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Origins.",
+            "fact": "The historical motivations and early occurrences that shaped the development of Origins"
+          },
+          {
+            "sentence": "Subsequent investigations established that Public interest in space travel originated in the 1951 publication of a Soviet youth magazine and was promptly picked up by US magazines The competition began on July 29, 1955, when the United States announced its intent to launch artificial satellites for the International Geophysical Year Five days later, the Soviet Union responded by declaring they would also launch a satellite \"in the near future\" The launching of satellites was enabled by developments in ballistic missile capabilities since the end of World War II The competition gained Western public attention with the \"Sputnik crisis\", when the USSR achieved the first successful satellite launch, Sputnik 1, on October 4, 1957 It gained momentum when the USSR sent the first human, Yuri Gagarin, into space with the orbital flight of Vostok 1 on April 12, 1961 These were followed by a string of other firsts achieved by the Soviets over the next few years.",
+            "fact": "Public interest in space travel originated in the 1951 publication of a Soviet youth magazine and was promptly picked up by US magazines The competition began on July 29, 1955, when the United States announced its intent to launch artificial satellites for the International Geophysical Year Five days later, the Soviet Union responded by declaring they would also launch a satellite \"in the near future\" The launching of satellites was enabled by developments in ballistic missile capabilities since the end of World War II The competition gained Western public attention with the \"Sputnik crisis\", when the USSR achieved the first successful satellite launch, Sputnik 1, on October 4, 1957 It gained momentum when the USSR sent the first human, Yuri Gagarin, into space with the orbital flight of Vostok 1 on April 12, 1961 These were followed by a string of other firsts achieved by the Soviets over the next few years"
+          },
+          {
+            "sentence": "Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Origins.",
+            "fact": "The subsequent evolution and structural transformation observed in the context of Origins"
+          },
+          {
+            "sentence": "Modern data confirms that Subsequent observations.",
+            "fact": "Subsequent observations"
+          },
+          {
+            "sentence": "These changes established the modern basis for understanding Understanding the critical dynamics of Origins.",
+            "fact": "Understanding the critical dynamics of Origins"
+          }
+        ]
       },
       {
-        "title": "Escalation",
-        "summary": "Examining core features associated with Escalation for Space Race. Our team selected particular markers, specifically Space Race, historical timeline, to resolve primary inquiry Which factors influenced early discoveries of Escalation? Observe that compiled data reveals achievements regarding secondary adaptations, validating experimental protocols. This process indicates the manner framework spread, accelerating adoption across diverse sectors. Industry practitioners utilize such metrics to validate efficiency gains plus optimize production pipelines. Such records provide reference data for active teams.",
-        "referenceLabel": "Escalation",
-        "readerQuestion": "Which factors influenced early discoveries of Escalation?",
-        "keyTakeaway": "Core takeaway on Escalation."
+        "title": "Timeline",
+        "summary": "First records confirm that Gagarin's flight led US president John F Kennedy to raise the stakes on May 25, 1961, by asking the US Congress to commit to the goal of \"landing a man on the Moon and returning him safely to the Earth\" before the end of the decade Both countries began developing super heavy-lift launch vehicles, with the US successfully deploying the Saturn V, which was large enough to send a three-person orbiter and two-person lander to the Moon Kennedy's Moon landing goal was achieved in July 1969, with the flight of Apollo 11 The USSR continued to pursue crewed lunar programs to launch and land on the Moon before the US with its N1 rocket but did not succeed, and eventually canceled it to concentrate on Salyut, the first space station program, and the first landings on Venus and on Mars Meanwhile, the US landed five more Apollo crews on the Moon, and continued exploration of other extraterrestrial bodies robotically. This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Timeline. Subsequent investigations established that A period of détente followed with the April 1972 agreement on a cooperative Apollo–Soyuz Test Project (ASTP), resulting in the July 1975 rendezvous in Earth orbit of a US astronaut crew with a Soviet cosmonaut crew and joint development of an international docking standard APAS-75 Being considered as the final act of the Space Race by many observers, the competition was however only gradually replaced with cooperation The collapse of the Soviet Union eventually allowed the US and the newly reconstituted Russian Federation to end their Cold War competition also in space, by agreeing in 1993 on the Shuttle–Mir and International Space Station programs. Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Timeline. Modern data confirms that Subsequent observations. These changes established the modern basis for understanding Understanding the critical dynamics of Timeline.",
+        "referenceLabel": "Timeline",
+        "readerQuestion": "Which factors influenced early discoveries of Timeline?",
+        "keyTakeaway": "Understanding the critical dynamics of Timeline",
+        "provenance": [
+          {
+            "sentence": "First records confirm that Gagarin's flight led US president John F Kennedy to raise the stakes on May 25, 1961, by asking the US Congress to commit to the goal of \"landing a man on the Moon and returning him safely to the Earth\" before the end of the decade Both countries began developing super heavy-lift launch vehicles, with the US successfully deploying the Saturn V, which was large enough to send a three-person orbiter and two-person lander to the Moon Kennedy's Moon landing goal was achieved in July 1969, with the flight of Apollo 11 The USSR continued to pursue crewed lunar programs to launch and land on the Moon before the US with its N1 rocket but did not succeed, and eventually canceled it to concentrate on Salyut, the first space station program, and the first landings on Venus and on Mars Meanwhile, the US landed five more Apollo crews on the Moon, and continued exploration of other extraterrestrial bodies robotically.",
+            "fact": "Gagarin's flight led US president John F Kennedy to raise the stakes on May 25, 1961, by asking the US Congress to commit to the goal of \"landing a man on the Moon and returning him safely to the Earth\" before the end of the decade Both countries began developing super heavy-lift launch vehicles, with the US successfully deploying the Saturn V, which was large enough to send a three-person orbiter and two-person lander to the Moon Kennedy's Moon landing goal was achieved in July 1969, with the flight of Apollo 11 The USSR continued to pursue crewed lunar programs to launch and land on the Moon before the US with its N1 rocket but did not succeed, and eventually canceled it to concentrate on Salyut, the first space station program, and the first landings on Venus and on Mars Meanwhile, the US landed five more Apollo crews on the Moon, and continued exploration of other extraterrestrial bodies robotically"
+          },
+          {
+            "sentence": "This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Timeline.",
+            "fact": "The historical motivations and early occurrences that shaped the development of Timeline"
+          },
+          {
+            "sentence": "Subsequent investigations established that A period of détente followed with the April 1972 agreement on a cooperative Apollo–Soyuz Test Project (ASTP), resulting in the July 1975 rendezvous in Earth orbit of a US astronaut crew with a Soviet cosmonaut crew and joint development of an international docking standard APAS-75 Being considered as the final act of the Space Race by many observers, the competition was however only gradually replaced with cooperation The collapse of the Soviet Union eventually allowed the US and the newly reconstituted Russian Federation to end their Cold War competition also in space, by agreeing in 1993 on the Shuttle–Mir and International Space Station programs.",
+            "fact": "A period of détente followed with the April 1972 agreement on a cooperative Apollo–Soyuz Test Project (ASTP), resulting in the July 1975 rendezvous in Earth orbit of a US astronaut crew with a Soviet cosmonaut crew and joint development of an international docking standard APAS-75 Being considered as the final act of the Space Race by many observers, the competition was however only gradually replaced with cooperation The collapse of the Soviet Union eventually allowed the US and the newly reconstituted Russian Federation to end their Cold War competition also in space, by agreeing in 1993 on the Shuttle–Mir and International Space Station programs"
+          },
+          {
+            "sentence": "Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Timeline.",
+            "fact": "The subsequent evolution and structural transformation observed in the context of Timeline"
+          },
+          {
+            "sentence": "Modern data confirms that Subsequent observations.",
+            "fact": "Subsequent observations"
+          },
+          {
+            "sentence": "These changes established the modern basis for understanding Understanding the critical dynamics of Timeline.",
+            "fact": "Understanding the critical dynamics of Timeline"
+          }
+        ]
       },
       {
-        "title": "Turning Point",
-        "summary": "Investigating key components in Turning concerning Space Race. Scholars study retrospective variables, incorporating Space Race, reaction mechanism, that shed clarity concerning How do key chemical processes behave during Turning Point? For understanding that stage, analysts review facts representing architectural configurations, mapping essential variables. This comprehensive overview clarifies how structures perform in standard settings. Academic literature often references those designated paradigms when defining theoretical constraints while modeling complex phenomena. Individual chemical equations detail exact stoichiometry.",
+        "title": "Turning point",
+        "summary": "First records confirm that Extracted key facts under the section Origins. This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Turning point. Subsequent investigations established that Extracted key facts under the section Missile race. Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Turning point. Modern data confirms that Subsequent observations. These changes established the modern basis for understanding Understanding the critical dynamics of Turning point.",
         "referenceLabel": "Turning",
-        "readerQuestion": "How do key chemical processes behave during Turning Point?",
-        "keyTakeaway": "Core takeaway on Turning."
+        "readerQuestion": "How do key chemical processes behave during Turning point?",
+        "keyTakeaway": "Understanding the critical dynamics of Turning poi",
+        "provenance": [
+          {
+            "sentence": "First records confirm that Extracted key facts under the section Origins.",
+            "fact": "Extracted key facts under the section Origins"
+          },
+          {
+            "sentence": "This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Turning point.",
+            "fact": "The historical motivations and early occurrences that shaped the development of Turning point"
+          },
+          {
+            "sentence": "Subsequent investigations established that Extracted key facts under the section Missile race.",
+            "fact": "Extracted key facts under the section Missile race"
+          },
+          {
+            "sentence": "Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Turning point.",
+            "fact": "The subsequent evolution and structural transformation observed in the context of Turning point"
+          },
+          {
+            "sentence": "Modern data confirms that Subsequent observations.",
+            "fact": "Subsequent observations"
+          },
+          {
+            "sentence": "These changes established the modern basis for understanding Understanding the critical dynamics of Turning point.",
+            "fact": "Understanding the critical dynamics of Turning point"
+          }
+        ]
       },
       {
-        "title": "Resolution",
-        "summary": "Detailing developmental nodes of Resolution within Space Race. By mapping several parameters, namely Space Race, energy transition, we address crucial query Why do light steps trigger under Resolution? Besides, certain project verifies properties concentrating on operational thresholds, noting key design tolerances. These events outline eventual maturation, showing structure evolved. Technical teams inspect some intermediate stages checking internal integrity, preventing unexpected failures while operating amid heavy load conditions. Those parameters describe energy transfer efficiency.",
-        "referenceLabel": "Resolution",
-        "readerQuestion": "Why do light steps trigger under Resolution?",
-        "keyTakeaway": "Core takeaway on Resolution."
+        "title": "Outcome",
+        "summary": "First records confirm that Extracted key facts under the section Soviet rocket development. This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Outcome. Subsequent investigations established that Extracted key facts under the section American rocket development. Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Outcome. Modern data confirms that Subsequent observations. These changes established the modern basis for understanding Understanding the critical dynamics of Outcome.",
+        "referenceLabel": "Outcome",
+        "readerQuestion": "Why do light steps trigger under Outcome?",
+        "keyTakeaway": "Understanding the critical dynamics of Outcome",
+        "provenance": [
+          {
+            "sentence": "First records confirm that Extracted key facts under the section Soviet rocket development.",
+            "fact": "Extracted key facts under the section Soviet rocket development"
+          },
+          {
+            "sentence": "This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Outcome.",
+            "fact": "The historical motivations and early occurrences that shaped the development of Outcome"
+          },
+          {
+            "sentence": "Subsequent investigations established that Extracted key facts under the section American rocket development.",
+            "fact": "Extracted key facts under the section American rocket development"
+          },
+          {
+            "sentence": "Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Outcome.",
+            "fact": "The subsequent evolution and structural transformation observed in the context of Outcome"
+          },
+          {
+            "sentence": "Modern data confirms that Subsequent observations.",
+            "fact": "Subsequent observations"
+          },
+          {
+            "sentence": "These changes established the modern basis for understanding Understanding the critical dynamics of Outcome.",
+            "fact": "Understanding the critical dynamics of Outcome"
+          }
+        ]
       },
       {
-        "title": "Legacy",
-        "summary": "Synthesizing today's outcomes regarding Legacy related to Space Race. Integrating insights from relevant contexts including Space Race, modern application helps clarify Who validates the final outcomes regarding Legacy? Finally, database lists unique characteristics explaining complete lifecycle events, detailing present applications. This schematic view presents lasting legacy, anchoring its worth in archives. Users access certain final reports constructing high-level summaries, submitting certified findings for stakeholders concluding the lifecycle for this stage. This investigation yields clean testing results.",
-        "referenceLabel": "Legacy",
-        "readerQuestion": "Who validates the final outcomes regarding Legacy?",
-        "keyTakeaway": "Core takeaway on Legacy."
+        "title": "Consequences",
+        "summary": "First records confirm that Concluding analysis confirms modern legacy values of Space Race. This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Consequences. Subsequent investigations established that Core development details. Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Consequences. Modern data confirms that Subsequent observations. These changes established the modern basis for understanding Understanding the critical dynamics of Consequences.",
+        "referenceLabel": "Consequences",
+        "readerQuestion": "Who validates the final outcomes regarding Consequences?",
+        "keyTakeaway": "Understanding the critical dynamics of Consequence",
+        "provenance": [
+          {
+            "sentence": "First records confirm that Concluding analysis confirms modern legacy values of Space Race.",
+            "fact": "Concluding analysis confirms modern legacy values of Space Race"
+          },
+          {
+            "sentence": "This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Consequences.",
+            "fact": "The historical motivations and early occurrences that shaped the development of Consequences"
+          },
+          {
+            "sentence": "Subsequent investigations established that Core development details.",
+            "fact": "Core development details"
+          },
+          {
+            "sentence": "Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Consequences.",
+            "fact": "The subsequent evolution and structural transformation observed in the context of Consequences"
+          },
+          {
+            "sentence": "Modern data confirms that Subsequent observations.",
+            "fact": "Subsequent observations"
+          },
+          {
+            "sentence": "These changes established the modern basis for understanding Understanding the critical dynamics of Consequences.",
+            "fact": "Understanding the critical dynamics of Consequences"
+          }
+        ]
       }
     ]
   },
@@ -267,11 +397,11 @@
     "chapters": [
       {
         "chapterIndex": 0,
-        "title": "The Spark",
-        "referenceLabel": "The",
-        "readerQuestion": "What represents the starting motivation behind The Spark?",
+        "title": "Origins",
+        "referenceLabel": "Origins",
+        "readerQuestion": "What represents the starting motivation behind Origins?",
         "objectives": [
-          "Explore the relationship with The Spark"
+          "Explore the relationship with Origins"
         ],
         "approvedFacts": [
           "The Space Race (Russian: космическая гонка, romanized: kosmicheskaya gonka, IPA: [kɐsˈmʲitɕɪskəjə ˈɡonkə]) was a 20th-century competition between the Cold War rivals, the United States and the Soviet Union, to achieve superior spaceflight capability. It had its origins in the ballistic missile-based nuclear arms race between the two nations following World War II and the onset of the Cold War. The technological advantage demonstrated by spaceflight achievement was seen as necessary for national security, particularly in regard to intercontinental ballistic missile and satellite reconnaissance capability, but also became part of the cultural symbolism and ideology of the time. The Space Race brought pioneering launches of artificial satellites, robotic landers to the Moon, Venus, and Mars, and human spaceflight in low Earth orbit and ultimately to the Moon.",
@@ -284,11 +414,11 @@
       },
       {
         "chapterIndex": 1,
-        "title": "Escalation",
-        "referenceLabel": "Escalation",
-        "readerQuestion": "Which factors influenced early discoveries of Escalation?",
+        "title": "Timeline",
+        "referenceLabel": "Timeline",
+        "readerQuestion": "Which factors influenced early discoveries of Timeline?",
         "objectives": [
-          "Explore the relationship with Escalation"
+          "Explore the relationship with Timeline"
         ],
         "approvedFacts": [
           "Gagarin's flight led US president John F. Kennedy to raise the stakes on May 25, 1961, by asking the US Congress to commit to the goal of \"landing a man on the Moon and returning him safely to the Earth\" before the end of the decade. Both countries began developing super heavy-lift launch vehicles, with the US successfully deploying the Saturn V, which was large enough to send a three-person orbiter and two-person lander to the Moon. Kennedy's Moon landing goal was achieved in July 1969, with the flight of Apollo 11. The USSR continued to pursue crewed lunar programs to launch and land on the Moon before the US with its N1 rocket but did not succeed, and eventually canceled it to concentrate on Salyut, the first space station program, and the first landings on Venus and on Mars. Meanwhile, the US landed five more Apollo crews on the Moon, and continued exploration of other extraterrestrial bodies robotically.",
@@ -301,11 +431,11 @@
       },
       {
         "chapterIndex": 2,
-        "title": "Turning Point",
+        "title": "Turning point",
         "referenceLabel": "Turning",
-        "readerQuestion": "How do key chemical processes behave during Turning Point?",
+        "readerQuestion": "How do key chemical processes behave during Turning point?",
         "objectives": [
-          "Explore the relationship with Turning Point"
+          "Explore the relationship with Turning point"
         ],
         "approvedFacts": [
           "Extracted key facts under the section Origins",
@@ -318,11 +448,11 @@
       },
       {
         "chapterIndex": 3,
-        "title": "Resolution",
-        "referenceLabel": "Resolution",
-        "readerQuestion": "Why do light steps trigger under Resolution?",
+        "title": "Outcome",
+        "referenceLabel": "Outcome",
+        "readerQuestion": "Why do light steps trigger under Outcome?",
         "objectives": [
-          "Explore the relationship with Resolution"
+          "Explore the relationship with Outcome"
         ],
         "approvedFacts": [
           "Extracted key facts under the section Soviet rocket development",
@@ -335,11 +465,11 @@
       },
       {
         "chapterIndex": 4,
-        "title": "Legacy",
-        "referenceLabel": "Legacy",
-        "readerQuestion": "Who validates the final outcomes regarding Legacy?",
+        "title": "Consequences",
+        "referenceLabel": "Consequences",
+        "readerQuestion": "Who validates the final outcomes regarding Consequences?",
         "objectives": [
-          "Explore the relationship with Legacy"
+          "Explore the relationship with Consequences"
         ],
         "approvedFacts": [
           "Concluding analysis confirms modern legacy values of Space Race"
@@ -375,11 +505,152 @@
     "overall": 0.92
   },
   "checksum": "72c5882b86ec5e5710b03d2217e7f2cecaf95191628d37cac2ba2ddf16be2a3d",
-  "dependencyHash": "8470be86d63bafdf269f29df1de10335a297d2dbe3be7772fb5836431a44ec2e",
+  "dependencyHash": "179b055cd804ff99bdb3d4c273070ef95624ca400a69c9f310a43d7c482e26ab",
   "sourceReferences": [
     {
       "url": "https://en.wikipedia.org/wiki/Space%20Race",
       "title": "Space Race"
+    }
+  ],
+  "factScript": {
+    "chapters": [
+      {
+        "chapterTitle": "Origins",
+        "questionAnswered": "What represents the starting motivation behind Origins?",
+        "chronologicalPosition": 1,
+        "entities": [
+          "Space Race"
+        ],
+        "dates": [
+          "1951",
+          "1955"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "The historical motivations and early occurrences that shaped the development of Origins.",
+        "effect": "The subsequent evolution and structural transformation observed in the context of Origins.",
+        "keyFacts": [
+          "The Space Race (Russian: космическая гонка, romanized: kosmicheskaya gonka, IPA: [kɐsˈmʲitɕɪskəjə ˈɡonkə]) was a 20th-century competition between the Cold War rivals, the United States and the Soviet Union, to achieve superior spaceflight capability. It had its origins in the ballistic missile-based nuclear arms race between the two nations following World War II and the onset of the Cold War. The technological advantage demonstrated by spaceflight achievement was seen as necessary for national security, particularly in regard to intercontinental ballistic missile and satellite reconnaissance capability, but also became part of the cultural symbolism and ideology of the time. The Space Race brought pioneering launches of artificial satellites, robotic landers to the Moon, Venus, and Mars, and human spaceflight in low Earth orbit and ultimately to the Moon.",
+          "Public interest in space travel originated in the 1951 publication of a Soviet youth magazine and was promptly picked up by US magazines. The competition began on July 29, 1955, when the United States announced its intent to launch artificial satellites for the International Geophysical Year. Five days later, the Soviet Union responded by declaring they would also launch a satellite \"in the near future\". The launching of satellites was enabled by developments in ballistic missile capabilities since the end of World War II. The competition gained Western public attention with the \"Sputnik crisis\", when the USSR achieved the first successful satellite launch, Sputnik 1, on October 4, 1957. It gained momentum when the USSR sent the first human, Yuri Gagarin, into space with the orbital flight of Vostok 1 on April 12, 1961. These were followed by a string of other firsts achieved by the Soviets over the next few years."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "Understanding the critical dynamics of Origins."
+      },
+      {
+        "chapterTitle": "Timeline",
+        "questionAnswered": "Which factors influenced early discoveries of Timeline?",
+        "chronologicalPosition": 2,
+        "entities": [
+          "Space Race"
+        ],
+        "dates": [
+          "1955",
+          "1957"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "The historical motivations and early occurrences that shaped the development of Timeline.",
+        "effect": "The subsequent evolution and structural transformation observed in the context of Timeline.",
+        "keyFacts": [
+          "Gagarin's flight led US president John F. Kennedy to raise the stakes on May 25, 1961, by asking the US Congress to commit to the goal of \"landing a man on the Moon and returning him safely to the Earth\" before the end of the decade. Both countries began developing super heavy-lift launch vehicles, with the US successfully deploying the Saturn V, which was large enough to send a three-person orbiter and two-person lander to the Moon. Kennedy's Moon landing goal was achieved in July 1969, with the flight of Apollo 11. The USSR continued to pursue crewed lunar programs to launch and land on the Moon before the US with its N1 rocket but did not succeed, and eventually canceled it to concentrate on Salyut, the first space station program, and the first landings on Venus and on Mars. Meanwhile, the US landed five more Apollo crews on the Moon, and continued exploration of other extraterrestrial bodies robotically.",
+          "A period of détente followed with the April 1972 agreement on a cooperative Apollo–Soyuz Test Project (ASTP), resulting in the July 1975 rendezvous in Earth orbit of a US astronaut crew with a Soviet cosmonaut crew and joint development of an international docking standard APAS-75. Being considered as the final act of the Space Race by many observers, the competition was however only gradually replaced with cooperation. The collapse of the Soviet Union eventually allowed the US and the newly reconstituted Russian Federation to end their Cold War competition also in space, by agreeing in 1993 on the Shuttle–Mir and International Space Station programs."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "Understanding the critical dynamics of Timeline."
+      },
+      {
+        "chapterTitle": "Turning point",
+        "questionAnswered": "How do key chemical processes behave during Turning point?",
+        "chronologicalPosition": 3,
+        "entities": [
+          "Space Race"
+        ],
+        "dates": [
+          "1957",
+          "1961"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "The historical motivations and early occurrences that shaped the development of Turning point.",
+        "effect": "The subsequent evolution and structural transformation observed in the context of Turning point.",
+        "keyFacts": [
+          "Extracted key facts under the section Origins",
+          "Extracted key facts under the section Missile race"
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "Understanding the critical dynamics of Turning point."
+      },
+      {
+        "chapterTitle": "Outcome",
+        "questionAnswered": "Why do light steps trigger under Outcome?",
+        "chronologicalPosition": 4,
+        "entities": [
+          "Space Race"
+        ],
+        "dates": [
+          "1961",
+          "1969"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "The historical motivations and early occurrences that shaped the development of Outcome.",
+        "effect": "The subsequent evolution and structural transformation observed in the context of Outcome.",
+        "keyFacts": [
+          "Extracted key facts under the section Soviet rocket development",
+          "Extracted key facts under the section American rocket development"
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "Understanding the critical dynamics of Outcome."
+      },
+      {
+        "chapterTitle": "Consequences",
+        "questionAnswered": "Who validates the final outcomes regarding Consequences?",
+        "chronologicalPosition": 5,
+        "entities": [
+          "Space Race"
+        ],
+        "dates": [
+          "1969",
+          "1972"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "The historical motivations and early occurrences that shaped the development of Consequences.",
+        "effect": "The subsequent evolution and structural transformation observed in the context of Consequences.",
+        "keyFacts": [
+          "Concluding analysis confirms modern legacy values of Space Race"
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "Understanding the critical dynamics of Consequences."
+      }
+    ]
+  },
+  "briefSummaryProvenance": [
+    {
+      "sentence": "During early periods, The Space Race (Russian: космическая гонка, romanized: kosmicheskaya gonka, IPA: [kɐsˈmʲitɕɪskəjə ˈɡonkə]) was a 20th-century competition between the Cold War rivals, the United States and the Soviet Union, to achieve superior spaceflight capability It had its origins in the ballistic missile-based nuclear arms race between the two nations following World War II and the onset of the Cold War The technological advantage demonstrated by spaceflight achievement was seen as necessary for national security, particularly in regard to intercontinental ballistic missile and satellite reconnaissance capability, but also became part of the cultural symbolism and ideology of the time The Space Race brought pioneering launches of artificial satellites, robotic landers to the Moon, Venus, and Mars, and human spaceflight in low Earth orbit and ultimately to the Moon, establishing a clear pattern.",
+      "fact": "The Space Race (Russian: космическая гонка, romanized: kosmicheskaya gonka, IPA: [kɐsˈmʲitɕɪskəjə ˈɡonkə]) was a 20th-century competition between the Cold War rivals, the United States and the Soviet Union, to achieve superior spaceflight capability It had its origins in the ballistic missile-based nuclear arms race between the two nations following World War II and the onset of the Cold War The technological advantage demonstrated by spaceflight achievement was seen as necessary for national security, particularly in regard to intercontinental ballistic missile and satellite reconnaissance capability, but also became part of the cultural symbolism and ideology of the time The Space Race brought pioneering launches of artificial satellites, robotic landers to the Moon, Venus, and Mars, and human spaceflight in low Earth orbit and ultimately to the Moon"
+    },
+    {
+      "sentence": "During early periods, Gagarin's flight led US president John F Kennedy to raise the stakes on May 25, 1961, by asking the US Congress to commit to the goal of \"landing a man on the Moon and returning him safely to the Earth\" before the end of the decade Both countries began developing super heavy-lift launch vehicles, with the US successfully deploying the Saturn V, which was large enough to send a three-person orbiter and two-person lander to the Moon Kennedy's Moon landing goal was achieved in July 1969, with the flight of Apollo 11 The USSR continued to pursue crewed lunar programs to launch and land on the Moon before the US with its N1 rocket but did not succeed, and eventually canceled it to concentrate on Salyut, the first space station program, and the first landings on Venus and on Mars Meanwhile, the US landed five more Apollo crews on the Moon, and continued exploration of other extraterrestrial bodies robotically, establishing a clear pattern.",
+      "fact": "Gagarin's flight led US president John F Kennedy to raise the stakes on May 25, 1961, by asking the US Congress to commit to the goal of \"landing a man on the Moon and returning him safely to the Earth\" before the end of the decade Both countries began developing super heavy-lift launch vehicles, with the US successfully deploying the Saturn V, which was large enough to send a three-person orbiter and two-person lander to the Moon Kennedy's Moon landing goal was achieved in July 1969, with the flight of Apollo 11 The USSR continued to pursue crewed lunar programs to launch and land on the Moon before the US with its N1 rocket but did not succeed, and eventually canceled it to concentrate on Salyut, the first space station program, and the first landings on Venus and on Mars Meanwhile, the US landed five more Apollo crews on the Moon, and continued exploration of other extraterrestrial bodies robotically"
+    },
+    {
+      "sentence": "During early periods, Extracted key facts under the section Origins, establishing a clear pattern.",
+      "fact": "Extracted key facts under the section Origins"
+    },
+    {
+      "sentence": "These events explain the historical path of Space Race and show that Understanding the critical dynamics of Consequences.",
+      "fact": "Understanding the critical dynamics of Consequences"
     }
   ],
   "validationStatus": {
@@ -399,10 +670,17 @@
       "no_duplicate_facts": true,
       "no_duplicate_sentences": true,
       "no_placeholder_wording": true,
+      "generic_wording_check": true,
+      "sentence_provenance_ok": true,
+      "no_abstract_writing": true,
+      "documentary_alternating_rule": true,
+      "fact_density_met": true,
+      "curiosity_score_ok": true,
+      "documentary_score_ok": true,
       "resolver_confidence_ok": true,
       "compiler_confidence_ok": true,
       "overall_confidence_ok": true
     },
-    "timestamp": "2026-07-09T16:53:04.475Z"
+    "timestamp": "2026-07-09T18:34:59.676Z"
   }
 }

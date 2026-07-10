@@ -47,7 +47,7 @@ export function lintArtifact(artifact: Omit<KnowledgeArtifact, "validationStatus
       lastYear = yrInt;
     }
   }
-  registerCheck("timeline_chronological", yearsAreOrdered, "Timeline is not in strict chronological order", true); // Warning rather than failure
+  registerCheck("timeline_chronological", yearsAreOrdered, "Timeline is not in strict chronological order", true);
 
   // 3. Knowledge Graph Connectivity
   const graph = artifact.knowledgeGraph || [];
@@ -111,7 +111,7 @@ export function lintArtifact(artifact: Omit<KnowledgeArtifact, "validationStatus
   const traverse = (obj: any): boolean => {
     if (typeof obj === "string") {
       const lower = obj.toLowerCase();
-      return lower.includes("placeholder") || lower.includes("tbd") || lower.includes("details are n/a") || lower.includes("unknown director") || lower.includes("unknown founder");
+      return lower.includes("placeholder") || lower.includes("tbd") || lower.includes("details are na") || lower.includes("details are n/a") || lower.includes("unknown director") || lower.includes("unknown founder");
     }
     if (Array.isArray(obj)) {
       return obj.some(item => traverse(item));
@@ -124,7 +124,234 @@ export function lintArtifact(artifact: Omit<KnowledgeArtifact, "validationStatus
   hasPlaceholder = traverse(artifact.structuredFacts);
   registerCheck("no_placeholder_wording", !hasPlaceholder, "Artifact contains placeholder wording ('TBD', 'placeholder', 'N/A', etc.)");
 
-  // 8. Confidence Thresholds Met
+  // 8. V17 Editorial & Linter Validation rules
+  const BANNED_AI_WORDS_PHRASES = [
+    "framework", "ecosystem", "protocol", "stakeholder", "leveraged", "methodology", "optimization",
+    "selected markers", "our team", "compiled data", "industry practitioners", "validation",
+    "implementation", "deployment", "core parameters", "utilize", "accelerating adoption",
+    "secondary adaptations", "systematic approach", "comprehensive analysis", "critical infrastructure",
+    "dynamic environment", "best practices", "played an important role", "served as a foundation",
+    "marked a turning point", "helped shape", "widely recognized", "continues to influence",
+    "significant milestone", "over time", "throughout history", "across industries",
+    "centering upon", "these observations", "compiled data reveals", "this establishes", "mechanism", "therefore", "collectively"
+  ];
+
+  let genericWordingScore = 0;
+  const checkBannedWords = (text: string) => {
+    const lower = text.toLowerCase();
+    for (const phrase of BANNED_AI_WORDS_PHRASES) {
+      if (lower.includes(phrase)) {
+        genericWordingScore++;
+      }
+    }
+  };
+  checkBannedWords(artifact.structuredFacts.briefSummary || "");
+  (artifact.structuredFacts.cards || []).forEach((c: any) => {
+    checkBannedWords(c.summary || "");
+  });
+  registerCheck("generic_wording_check", genericWordingScore === 0, `Artifact contains generic AI wording / banned phrases: ${genericWordingScore} occurrences`);
+
+  // Paragraph length limit: fail if any paragraph exceeds 130 words
+  let paragraphTooLong = false;
+  const briefSummaryWords = (artifact.structuredFacts.briefSummary || "").split(/\s+/).filter(Boolean).length;
+  if (briefSummaryWords > 130) {
+    paragraphTooLong = true;
+  }
+  (artifact.structuredFacts.cards || []).forEach((c: any) => {
+    const cardWords = (c.summary || "").split(/\s+/).filter(Boolean).length;
+    if (cardWords > 130) {
+      paragraphTooLong = true;
+    }
+  });
+  registerCheck("paragraph_length_limit", !paragraphTooLong, "Artifact contains a paragraph exceeding 130 words");
+
+  // Generic chapter title check
+  const genericTitles = [
+    "origins", "history", "government", "culture", "modern nation", "problem", "discovery",
+    "mechanism", "evidence", "applications", "causes", "early battles", "turning point",
+    "outcome", "legacy", "early life", "rise", "peak", "challenges", "need", "invention",
+    "adoption", "impact", "future", "founding", "growth", "competition", "key characteristics",
+    "masterpieces", "spread", "purpose", "structure", "major campaigns", "future vision",
+    "story", "production", "release", "reception", "introduction", "conclusion", "summary",
+    "overview"
+  ];
+  let genericTitleFound = false;
+  (artifact.structuredFacts.cards || []).forEach((c: any) => {
+    if (c.title && genericTitles.includes(c.title.toLowerCase().trim())) {
+      genericTitleFound = true;
+    }
+  });
+  registerCheck("unique_chapter_titles", !genericTitleFound, "Chapter title must be a specific headline, not generic");
+
+  // Concrete names or dates presence: check if dates or capitalised named entities appear in the card texts
+  let lacksConcreteNounsOrDates = false;
+  (artifact.structuredFacts.cards || []).forEach((c: any) => {
+    const summary = c.summary || "";
+    const hasYear = /\b(1\d{3}|2\d{3})\b/.test(summary);
+    const capitalizedMatches = summary.match(/\b[A-Z][a-z]+\b/g) || [];
+    // Filter out common sentence starters
+    const cleanCapitalized = capitalizedMatches.filter((word: string) => !["First", "This", "The", "Under", "Subsequent", "Because", "Modern", "These", "During"].includes(word));
+    if (!hasYear && cleanCapitalized.length === 0) {
+      lacksConcreteNounsOrDates = true;
+    }
+  });
+  registerCheck("concrete_dates_names_present", !lacksConcreteNounsOrDates, "Every card must contain at least one date or concrete named entity");
+
+  // Repeated phrases check
+  let hasRepeatedPhrases = false;
+  const phrasesSet = new Set<string>();
+  (artifact.structuredFacts.cards || []).forEach((c: any) => {
+    const summary = c.summary || "";
+    const words = summary.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "").split(/\s+/).filter(Boolean);
+    for (let i = 0; i < words.length - 3; i++) {
+      const phrase = words.slice(i, i + 4).join(" ");
+      if (phrasesSet.has(phrase)) {
+        hasRepeatedPhrases = true;
+      }
+      phrasesSet.add(phrase);
+    }
+  });
+  registerCheck("no_repeated_phrases", !hasRepeatedPhrases, "Identical 4-word phrases must not repeat across chapters");
+
+  // Timeline contains placeholder milestone check
+  let timelineMilestonePlaceholder = false;
+  (artifact.timeline || []).forEach((e: any) => {
+    const desc = (e.description || e.headline || "").toLowerCase();
+    if (desc.includes("significant milestone")) {
+      timelineMilestonePlaceholder = true;
+    }
+  });
+  registerCheck("no_timeline_milestone_placeholder", !timelineMilestonePlaceholder, "Timeline must not contain generic 'significant milestone' descriptions");
+
+  // Did You Know <= 3 sentences check
+  let didYouKnowTooLong = false;
+  (artifact.triviaCandidates || []).forEach((insight: any) => {
+    const factText = typeof insight === "string" ? insight : (insight.fact || "");
+    const sentenceCount = factText.split(/[.!?]+/).map((s: string) => s.trim()).filter(Boolean).length;
+    if (sentenceCount > 3) {
+      didYouKnowTooLong = true;
+    }
+  });
+  registerCheck("did_you_know_length_ok", !didYouKnowTooLong, "Did You Know insights must be max 3 sentences long");
+
+  // Sentence Provenance Check
+  let provenanceValid = true;
+  let totalSentencesChecked = 0;
+  let validProvenanceCount = 0;
+
+  const cleanSentenceForCompare = (str: string) => {
+    return str.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()'"\s]/g, "").trim();
+  };
+
+  const checkProvenance = (text: string, provenanceList: any[]) => {
+    const cleanText = cleanSentenceForCompare(text);
+    let combinedCleanSentences = "";
+
+    (provenanceList || []).forEach(p => {
+      totalSentencesChecked++;
+      const cleanP = cleanSentenceForCompare(p.sentence);
+      combinedCleanSentences += cleanP;
+
+      if (cleanText.includes(cleanP) && p.fact) {
+        validProvenanceCount++;
+      } else {
+        provenanceValid = false;
+      }
+    });
+
+    if (Math.abs(cleanText.length - combinedCleanSentences.length) > 15) {
+      provenanceValid = false;
+    }
+  };
+
+  checkProvenance(artifact.structuredFacts.briefSummary || "", artifact.briefSummaryProvenance || []);
+  (artifact.structuredFacts.cards || []).forEach((c: any) => {
+    checkProvenance(c.summary || "", c.provenance || []);
+  });
+
+  const provenanceRatio = totalSentencesChecked > 0 ? (validProvenanceCount / totalSentencesChecked) : 0;
+  registerCheck("sentence_provenance_ok", provenanceValid && provenanceRatio === 1.0, `Sentence provenance is incomplete: only ${Math.round(provenanceRatio * 100)}% of sentences are mapped to facts`);
+
+  // No Abstract Writing Check
+  const abstractWords = ["importance", "impact", "legacy", "framework", "system", "process", "development", "mechanism", "structure"];
+  let abstractWritingErrors = 0;
+
+  const checkAbstractWriting = (text: string, anchors: string[]) => {
+    const paragraphs = text.split(/\n+/).filter(Boolean);
+    paragraphs.forEach(para => {
+      const lower = para.toLowerCase();
+      for (const word of abstractWords) {
+        if (lower.includes(word)) {
+          const hasAnchor = anchors.some(a => lower.includes(a.toLowerCase()));
+          const hasYear = /\b(1\d{3}|2\d{3})\b/.test(para);
+          const hasCapitalWord = /[A-Z][a-z]+/.test(para.substring(1)); 
+          if (!hasAnchor && !hasYear && !hasCapitalWord) {
+            abstractWritingErrors++;
+          }
+        }
+      }
+    });
+  };
+
+  (artifact.structuredFacts.cards || []).forEach((c: any) => {
+    const anchors = c.provenance ? c.provenance.map((p: any) => p.fact) : [];
+    checkAbstractWriting(c.summary || "", anchors);
+  });
+  registerCheck("no_abstract_writing", abstractWritingErrors === 0, `Artifact contains abstract writing without concrete nouns: ${abstractWritingErrors} occurrences`);
+
+  // Documentary Alternating Rule (exactly 6 sentences per card summary)
+  let alternatingPatternViolations = 0;
+  (artifact.structuredFacts.cards || []).forEach((c: any) => {
+    const sentences = c.summary.split(/(?<=[.!?])\s+/).filter(Boolean);
+    if (sentences.length !== 6) {
+      alternatingPatternViolations++;
+    }
+  });
+  registerCheck("documentary_alternating_rule", alternatingPatternViolations === 0, `Card summaries must follow the alternating pattern: exactly 6 sentences per card summary. Violations: ${alternatingPatternViolations}`);
+
+  // Fact Density Check
+  let factDensityViolations = 0;
+  (artifact.structuredFacts.cards || []).forEach((c: any) => {
+    const summary = c.summary || "";
+    const capitalizedMatches = summary.match(/\b[A-Z][a-z]+\b/g) || [];
+    const uniqueCaps = new Set(capitalizedMatches);
+    const namedEntitiesCount = uniqueCaps.size;
+    const uniqueFacts = new Set((c.provenance || []).map((p: any) => p.fact.toLowerCase())).size;
+
+    if (namedEntitiesCount < 4 || uniqueFacts < 3) {
+      factDensityViolations++;
+    }
+  });
+  registerCheck("fact_density_met", factDensityViolations === 0, `Chapter cards do not meet the minimum fact density requirements (Named Entities >= 4, Unique Facts >= 3). Violations: ${factDensityViolations}`);
+
+  // Curiosity Check
+  let curiosityViolations = 0;
+  (artifact.structuredFacts.cards || []).forEach((c: any) => {
+    const lower = (c.summary || "").toLowerCase();
+    if (lower.includes("this is important") || lower.includes("it is important") || lower.includes("remains significant")) {
+      curiosityViolations++;
+    }
+  });
+  registerCheck("curiosity_score_ok", curiosityViolations === 0, `Chapter cards must explain significance without saying 'This is important'. Violations: ${curiosityViolations}`);
+
+  // Documentary Score Calculation with V17 penalties
+  let documentaryScore = 100;
+  if (genericWordingScore > 0) documentaryScore -= 15;
+  if (!provenanceValid) documentaryScore -= 15;
+  if (abstractWritingErrors > 0) documentaryScore -= 15;
+  if (alternatingPatternViolations > 0) documentaryScore -= 15;
+  if (factDensityViolations > 0) documentaryScore -= 10;
+  if (curiosityViolations > 0) documentaryScore -= 10;
+  if (paragraphTooLong) documentaryScore -= 10;
+  if (genericTitleFound) documentaryScore -= 10;
+  if (lacksConcreteNounsOrDates) documentaryScore -= 10;
+  if (hasRepeatedPhrases) documentaryScore -= 5;
+  if (timelineMilestonePlaceholder) documentaryScore -= 5;
+  if (didYouKnowTooLong) documentaryScore -= 5;
+
+  registerCheck("documentary_score_ok", documentaryScore >= 80, `Documentary score is too low: ${documentaryScore}/100`);
+
+  // 9. Confidence Thresholds Met
   const resolverConfidence = artifact.confidenceScores.resolver;
   const compilerConfidence = artifact.confidenceScores.compiler;
   const overallConfidence = artifact.confidenceScores.overall;

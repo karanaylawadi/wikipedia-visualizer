@@ -1,0 +1,819 @@
+{
+  "version": "16.0",
+  "compilerVersion": "v17.0",
+  "ontologyVersion": "v17.0",
+  "wikipediaRevision": "rev-1.0",
+  "wikidataRevision": "Q25188",
+  "ontology": {
+    "name": "Movie",
+    "labels": [
+      "Movie",
+      "Movie"
+    ]
+  },
+  "structuredFacts": {
+    "director": "Compiled detail for director",
+    "cast": [
+      "Significant Item 1",
+      "Significant Item 2"
+    ],
+    "composer": "Compiled detail for composer",
+    "themes": [
+      "Significant Item 1",
+      "Significant Item 2"
+    ],
+    "awards": "Compiled detail for awards",
+    "reception": "Compiled detail for reception",
+    "legacy": "Compiled detail for legacy",
+    "title": "Inception",
+    "subtitle": "2010 film by Christopher Nolan",
+    "leadParagraph": "Inception is a 2010  science fiction action film written and directed by Christopher Nolan, who also produced it with Emma Thomas, his wife. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets. He is offered a chance to have his criminal history erased as payment for the implantation of another person's idea into a target's subconscious. The ensemble cast includes Ken Watanabe, Joseph Gordon-Levitt, Marion Cotillard, Elliot Page, Tom Hardy, Cillian Murphy, Tom Berenger, Dileep Rao, and Michael Caine.\nAfter the completion of Insomnia in 2002, Nolan presented to Warner Bros. a written 80-page treatment for a horror film envisioning \"dream stealers,\" based on lucid dreaming. Deciding he needed more experience before tackling a production of this magnitude and complexity, Nolan shelved the project and instead worked on Batman Begins (2005), The Prestige (2006), and The Dark Knight (2008). The treatment was revised over six months and was purchased by Warner Bros. in February 2009. Inception was filmed in six countries, beginning in Tokyo on June 19 and ending in Canada on November 22. Its official budget was $160 million, split between Warner Bros. and Legendary. Nolan's reputation and success with The Dark Knight helped secure the film's US$100 million in advertising expenditure.\nInception's premiere was held in London on July 8, 2010; it was released in both conventional and IMAX theaters beginning on July 16, 2010. Inception grossed $839 million worldwide, becoming the fourth-highest-grossing film of 2010. Considered one of the best films of the 2010s, Inception, among its numerous accolades, won four Oscars (Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects) and was nominated for four more (Best Picture, Best Original Screenplay, Best Art Direction, Best Original Score) at the 83rd Academy Awards. The Library of Congress selected Inception for preservation in the United States National Film Registry's class of 2025 for being \"culturally, historically or aesthetically significant\".",
+    "briefSummary": "Inception records confirm that Inception is a 2010 science fiction action film written and directed. Inception records confirm that Inception's premiere was held in London on July 8, 2010; it. Inception records confirm that Cobb accepts the offer and assembles his team: a forger named. Inception remains study topic showing that final summary explaining the legacy.",
+    "cards": [
+      {
+        "title": "Inception's Story",
+        "summary": "Inception records verify that Inception is a 2010 science fiction action film written and directed. This motivated early research explaining why motivating factors behind early phases of development. Subsequent investigations established that After the completion of Insomnia in 2002, Nolan presented to Warner. Because of these dynamics, details show initial events showing transition in the subject. Inception data confirms that early outcomes and related findings. These changes established the basis for fundamental lessons from this period.",
+        "referenceLabel": "Inception's",
+        "readerQuestion": "What represents the starting motivation behind Story?",
+        "keyTakeaway": "fundamental lessons from this period",
+        "provenance": [
+          {
+            "sentence": "Inception records verify that Inception is a 2010 science fiction action film written and directed.",
+            "fact": "Inception is a 2010 science fiction action film written and directed"
+          },
+          {
+            "sentence": "This motivated early research explaining why motivating factors behind early phases of development.",
+            "fact": "motivating factors behind early phases of development"
+          },
+          {
+            "sentence": "Subsequent investigations established that After the completion of Insomnia in 2002, Nolan presented to Warner.",
+            "fact": "After the completion of Insomnia in 2002, Nolan presented to Warner"
+          },
+          {
+            "sentence": "Because of these dynamics, details show initial events showing transition in the subject.",
+            "fact": "initial events showing transition in the subject"
+          },
+          {
+            "sentence": "Inception data confirms that early outcomes and related findings.",
+            "fact": "early outcomes and related findings"
+          },
+          {
+            "sentence": "These changes established the basis for fundamental lessons from this period.",
+            "fact": "fundamental lessons from this period"
+          }
+        ]
+      },
+      {
+        "title": "Inside the Production of Inception",
+        "summary": "Historical records confirm that Inception's premiere was held in London on July 8, 2010; it. This inspired further exploration showing why key drivers behind the rising influence. Later studies verified that Dom Cobb and Arthur are \"extractors\" who perform corporate espionage using. Following these events, analysts observed that consequent progress seen during this phase. Scientific tracking confirms that secondary attributes and timeline events. This transition created the groundwork for primary insights on the rise.",
+        "referenceLabel": "Inside",
+        "readerQuestion": "Which factors influenced early discoveries of Production?",
+        "keyTakeaway": "primary insights on the rise",
+        "provenance": [
+          {
+            "sentence": "Historical records confirm that Inception's premiere was held in London on July 8, 2010; it.",
+            "fact": "Inception's premiere was held in London on July 8, 2010; it"
+          },
+          {
+            "sentence": "This inspired further exploration showing why key drivers behind the rising influence.",
+            "fact": "key drivers behind the rising influence"
+          },
+          {
+            "sentence": "Later studies verified that Dom Cobb and Arthur are \"extractors\" who perform corporate espionage using.",
+            "fact": "Dom Cobb and Arthur are \"extractors\" who perform corporate espionage using"
+          },
+          {
+            "sentence": "Following these events, analysts observed that consequent progress seen during this phase.",
+            "fact": "consequent progress seen during this phase"
+          },
+          {
+            "sentence": "Scientific tracking confirms that secondary attributes and timeline events.",
+            "fact": "secondary attributes and timeline events"
+          },
+          {
+            "sentence": "This transition created the groundwork for primary insights on the rise.",
+            "fact": "primary insights on the rise"
+          }
+        ]
+      },
+      {
+        "title": "The Release of Inception",
+        "summary": "Primary documentation reveals that Cobb accepts the offer and assembles his team: a forger named. This led observers to trace why pivotal elements supporting the peak achievements. Archival reviews showed that The team abducts Robert in a city on the first level,. With these developments, researchers saw that resultant breakthroughs related directly to these successes. Detailed observations show that peak milestones and direct connections. This structure formed the design for core takeaways regarding this era.",
+        "referenceLabel": "The",
+        "readerQuestion": "How do key chemical processes behave during Release?",
+        "keyTakeaway": "core takeaways regarding this era",
+        "provenance": [
+          {
+            "sentence": "Primary documentation reveals that Cobb accepts the offer and assembles his team: a forger named.",
+            "fact": "Cobb accepts the offer and assembles his team: a forger named"
+          },
+          {
+            "sentence": "This led observers to trace why pivotal elements supporting the peak achievements.",
+            "fact": "pivotal elements supporting the peak achievements"
+          },
+          {
+            "sentence": "Archival reviews showed that The team abducts Robert in a city on the first level,.",
+            "fact": "The team abducts Robert in a city on the first level,"
+          },
+          {
+            "sentence": "With these developments, researchers saw that resultant breakthroughs related directly to these successes.",
+            "fact": "resultant breakthroughs related directly to these successes"
+          },
+          {
+            "sentence": "Detailed observations show that peak milestones and direct connections.",
+            "fact": "peak milestones and direct connections"
+          },
+          {
+            "sentence": "This structure formed the design for core takeaways regarding this era.",
+            "fact": "core takeaways regarding this era"
+          }
+        ]
+      },
+      {
+        "title": "How the World Received Inception",
+        "summary": "Factual chronicles state that Cobb explains to Ariadne that he and Mal entered Limbo while. This drove thorough inquiries explaining why underlying issues prompting the challenges faced. Recent compilations proved that Yusuf drives the team around the first level as they are. Under these conditions, experts noted that resulting shifts that defined the response taken. Ontology patterns map that additional challenges and resolved queries. This transition shaped the modern standard for crucial lessons on these struggles.",
+        "referenceLabel": "How",
+        "readerQuestion": "Why do light steps trigger under Reception?",
+        "keyTakeaway": "crucial lessons on these struggles",
+        "provenance": [
+          {
+            "sentence": "Factual chronicles state that Cobb explains to Ariadne that he and Mal entered Limbo while.",
+            "fact": "Cobb explains to Ariadne that he and Mal entered Limbo while"
+          },
+          {
+            "sentence": "This drove thorough inquiries explaining why underlying issues prompting the challenges faced.",
+            "fact": "underlying issues prompting the challenges faced"
+          },
+          {
+            "sentence": "Recent compilations proved that Yusuf drives the team around the first level as they are.",
+            "fact": "Yusuf drives the team around the first level as they are"
+          },
+          {
+            "sentence": "Under these conditions, experts noted that resulting shifts that defined the response taken.",
+            "fact": "resulting shifts that defined the response taken"
+          },
+          {
+            "sentence": "Ontology patterns map that additional challenges and resolved queries.",
+            "fact": "additional challenges and resolved queries"
+          },
+          {
+            "sentence": "This transition shaped the modern standard for crucial lessons on these struggles.",
+            "fact": "crucial lessons on these struggles"
+          }
+        ]
+      },
+      {
+        "title": "The Enduring Legacy of Inception",
+        "summary": "Verified sources show that In the third level, the team infiltrates an alpine fortress with. This prompted key factions to identify why lasting forces establishing the legacy left behind. Independent reviews confirmed that Revived into the third level, Robert discovers the planted idea: his. Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject. Statistical records track that final reflections and study conclusions. This layout outlines the final outcome of final summary explaining the legacy.",
+        "referenceLabel": "The",
+        "readerQuestion": "Who validates the final outcomes regarding Legacy?",
+        "keyTakeaway": "final summary explaining the legacy",
+        "provenance": [
+          {
+            "sentence": "Verified sources show that In the third level, the team infiltrates an alpine fortress with.",
+            "fact": "In the third level, the team infiltrates an alpine fortress with"
+          },
+          {
+            "sentence": "This prompted key factions to identify why lasting forces establishing the legacy left behind.",
+            "fact": "lasting forces establishing the legacy left behind"
+          },
+          {
+            "sentence": "Independent reviews confirmed that Revived into the third level, Robert discovers the planted idea: his.",
+            "fact": "Revived into the third level, Robert discovers the planted idea: his"
+          },
+          {
+            "sentence": "Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject.",
+            "fact": "long-term outcomes that shaped the memory of the subject"
+          },
+          {
+            "sentence": "Statistical records track that final reflections and study conclusions.",
+            "fact": "final reflections and study conclusions"
+          },
+          {
+            "sentence": "This layout outlines the final outcome of final summary explaining the legacy.",
+            "fact": "final summary explaining the legacy"
+          }
+        ]
+      }
+    ]
+  },
+  "namedEntities": [
+    {
+      "name": "Inception",
+      "type": "Concept",
+      "description": "The primary resolved subject."
+    }
+  ],
+  "knowledgeGraph": [
+    {
+      "subject": "Compiled detail for director",
+      "predicate": "DIRECTED",
+      "object": "Inception"
+    },
+    {
+      "subject": "Compiled detail for composer",
+      "predicate": "COMPOSED",
+      "object": "Inception"
+    },
+    {
+      "subject": "Significant Item 1",
+      "predicate": "STARRED_IN",
+      "object": "Inception"
+    },
+    {
+      "subject": "Significant Item 2",
+      "predicate": "STARRED_IN",
+      "object": "Inception"
+    },
+    {
+      "subject": "Significant Item 1",
+      "predicate": "THEME_OF",
+      "object": "Inception"
+    },
+    {
+      "subject": "Significant Item 2",
+      "predicate": "THEME_OF",
+      "object": "Inception"
+    },
+    {
+      "subject": "Inception",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_1"
+    },
+    {
+      "subject": "Inception",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_2"
+    }
+  ],
+  "timeline": [
+    {
+      "year": "2010",
+      "headline": "Pivotal era in 2010",
+      "description": "Inception underwent core changes and reached major development in the year 2010",
+      "importance": 8,
+      "connections": [
+        "Inception"
+      ],
+      "image": null
+    },
+    {
+      "year": "2002",
+      "headline": "Pivotal era in 2002",
+      "description": "Inception underwent core changes and reached major development in the year 2002",
+      "importance": 8,
+      "connections": [
+        "Inception"
+      ],
+      "image": null
+    },
+    {
+      "year": "2005",
+      "headline": "Pivotal era in 2005",
+      "description": "Inception underwent core changes and reached major development in the year 2005",
+      "importance": 8,
+      "connections": [
+        "Inception"
+      ],
+      "image": null
+    },
+    {
+      "year": "2006",
+      "headline": "Pivotal era in 2006",
+      "description": "Inception underwent core changes and reached major development in the year 2006",
+      "importance": 8,
+      "connections": [
+        "Inception"
+      ],
+      "image": null
+    },
+    {
+      "year": "2008",
+      "headline": "Pivotal era in 2008",
+      "description": "Inception underwent core changes and reached major development in the year 2008",
+      "importance": 8,
+      "connections": [
+        "Inception"
+      ],
+      "image": null
+    },
+    {
+      "year": "2009",
+      "headline": "Pivotal era in 2009",
+      "description": "Inception underwent core changes and reached major development in the year 2009",
+      "importance": 8,
+      "connections": [
+        "Inception"
+      ],
+      "image": null
+    }
+  ],
+  "rankedFacts": [
+    {
+      "fact": "Inception is a 2010  science fiction action film written and directed by Christopher Nolan, who also produced it with Emma Thomas, his wife. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "After the completion of Insomnia in 2002, Nolan presented to Warner Bros. a written 80-page treatment for a horror film envisioning \"dream stealers,\" based on lucid dreaming.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Inception's premiere was held in London on July 8, 2010; it was released in both conventional and IMAX theaters beginning on July 16, 2010. Inception grossed $839 million worldwide, becoming the fourth-highest-grossing film of 2010.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Dom Cobb and Arthur are \"extractors\" who perform corporate espionage using experimental dream-sharing technology to infiltrate their targets' subconscious and extract information. Their latest target, Saito, is impressed with Cobb's ability to layer multiple dreams within each other.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Cobb accepts the offer and assembles his team: a forger named Eames, a chemist named Yusuf, and a college student named Ariadne. Ariadne is tasked with designing the dream's architecture, something Cobb himself cannot do for fear of being sabotaged by his mind's projection of his late wife, Mal.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The team abducts Robert in a city on the first level, but unknown to any team member, his subconscious projections, trained to anticipate such a scenario, attack them. After Saito is wounded, Cobb reveals that while dying in the dream would usually awaken dreamers, Yusuf's sedatives will instead send them into \"Limbo\": a world of infinite subconscious.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Cobb explains to Ariadne that he and Mal entered Limbo while experimenting with dream-sharing, experiencing fifty years in one night due to the time dilation with reality. After waking up, Mal still believed she was dreaming.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Yusuf drives the team around the first level as they are sedated into the second level, a hotel dreamed by Arthur. Cobb persuades Robert that Browning has kidnapped him to stop the dissolution and that Cobb is a defensive projection, leading Robert to another third level deeper as part of a ruse to enter Robert's subconscious.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "In the third level, the team infiltrates an alpine fortress with a projection of Maurice inside, where the inception itself can be performed. However, Yusuf performs his kick too soon by driving off a bridge, forcing Arthur and Eames to improvise a new set of kicks synchronized with them hitting the water by rigging an elevator and the fortress, respectively, with explosives.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Revived into the third level, Robert discovers the planted idea: his dying father telling him to create something for himself. While Cobb searches for Saito in Limbo, the others ride the synced kicks back to reality.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    }
+  ],
+  "visualModules": [
+    {
+      "type": "movie",
+      "title": "Movie Blueprint Snapshot",
+      "data": {
+        "director": "Compiled detail for director",
+        "cast": [
+          "Significant Item 1",
+          "Significant Item 2"
+        ],
+        "composer": "Compiled detail for composer",
+        "themes": [
+          "Significant Item 1",
+          "Significant Item 2"
+        ],
+        "awards": "Compiled detail for awards",
+        "reception": "Compiled detail for reception",
+        "legacy": "Compiled detail for legacy"
+      }
+    }
+  ],
+  "narrativePlan": {
+    "chapters": [
+      {
+        "chapterIndex": 0,
+        "title": "Inception's Story",
+        "referenceLabel": "Story",
+        "readerQuestion": "What represents the starting motivation behind Story?",
+        "objectives": [
+          "Explore the relationship with Story"
+        ],
+        "approvedFacts": [
+          "Inception is a 2010  science fiction action film written and directed by Christopher Nolan, who also produced it with Emma Thomas, his wife. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets.",
+          "After the completion of Insomnia in 2002, Nolan presented to Warner Bros. a written 80-page treatment for a horror film envisioning \"dream stealers,\" based on lucid dreaming."
+        ],
+        "anchors": [
+          "Inception",
+          "foundation origin"
+        ]
+      },
+      {
+        "chapterIndex": 1,
+        "title": "Inside the Production of Inception",
+        "referenceLabel": "Production",
+        "readerQuestion": "Which factors influenced early discoveries of Production?",
+        "objectives": [
+          "Explore the relationship with Production"
+        ],
+        "approvedFacts": [
+          "Inception's premiere was held in London on July 8, 2010; it was released in both conventional and IMAX theaters beginning on July 16, 2010. Inception grossed $839 million worldwide, becoming the fourth-highest-grossing film of 2010.",
+          "Dom Cobb and Arthur are \"extractors\" who perform corporate espionage using experimental dream-sharing technology to infiltrate their targets' subconscious and extract information. Their latest target, Saito, is impressed with Cobb's ability to layer multiple dreams within each other."
+        ],
+        "anchors": [
+          "Inception",
+          "historical timeline"
+        ]
+      },
+      {
+        "chapterIndex": 2,
+        "title": "The Release of Inception",
+        "referenceLabel": "Release",
+        "readerQuestion": "How do key chemical processes behave during Release?",
+        "objectives": [
+          "Explore the relationship with Release"
+        ],
+        "approvedFacts": [
+          "Cobb accepts the offer and assembles his team: a forger named Eames, a chemist named Yusuf, and a college student named Ariadne. Ariadne is tasked with designing the dream's architecture, something Cobb himself cannot do for fear of being sabotaged by his mind's projection of his late wife, Mal.",
+          "The team abducts Robert in a city on the first level, but unknown to any team member, his subconscious projections, trained to anticipate such a scenario, attack them. After Saito is wounded, Cobb reveals that while dying in the dream would usually awaken dreamers, Yusuf's sedatives will instead send them into \"Limbo\": a world of infinite subconscious."
+        ],
+        "anchors": [
+          "Inception",
+          "reaction mechanism"
+        ]
+      },
+      {
+        "chapterIndex": 3,
+        "title": "How the World Received Inception",
+        "referenceLabel": "Reception",
+        "readerQuestion": "Why do light steps trigger under Reception?",
+        "objectives": [
+          "Explore the relationship with Reception"
+        ],
+        "approvedFacts": [
+          "Cobb explains to Ariadne that he and Mal entered Limbo while experimenting with dream-sharing, experiencing fifty years in one night due to the time dilation with reality. After waking up, Mal still believed she was dreaming.",
+          "Yusuf drives the team around the first level as they are sedated into the second level, a hotel dreamed by Arthur. Cobb persuades Robert that Browning has kidnapped him to stop the dissolution and that Cobb is a defensive projection, leading Robert to another third level deeper as part of a ruse to enter Robert's subconscious."
+        ],
+        "anchors": [
+          "Inception",
+          "energy transition"
+        ]
+      },
+      {
+        "chapterIndex": 4,
+        "title": "The Enduring Legacy of Inception",
+        "referenceLabel": "Legacy",
+        "readerQuestion": "Who validates the final outcomes regarding Legacy?",
+        "objectives": [
+          "Explore the relationship with Legacy"
+        ],
+        "approvedFacts": [
+          "In the third level, the team infiltrates an alpine fortress with a projection of Maurice inside, where the inception itself can be performed. However, Yusuf performs his kick too soon by driving off a bridge, forcing Arthur and Eames to improvise a new set of kicks synchronized with them hitting the water by rigging an elevator and the fortress, respectively, with explosives.",
+          "Revived into the third level, Robert discovers the planted idea: his dying father telling him to create something for himself. While Cobb searches for Saito in Limbo, the others ride the synced kicks back to reality."
+        ],
+        "anchors": [
+          "Inception",
+          "modern application"
+        ]
+      }
+    ]
+  },
+  "triviaCandidates": [
+    {
+      "fact": "Inception is a 2010  science fiction action film written and directed by Christopher Nolan, who also produced it with Emma Thomas, his wife. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets.",
+      "surpriseScore": 10,
+      "readMoreTopic": "12 Monkeys"
+    },
+    {
+      "fact": "After the completion of Insomnia in 2002, Nolan presented to Warner Bros. a written 80-page treatment for a horror film envisioning \"dream stealers,\" based on lucid dreaming.",
+      "surpriseScore": 9,
+      "readMoreTopic": "1917 (2019 film)"
+    },
+    {
+      "fact": "Inception's premiere was held in London on July 8, 2010; it was released in both conventional and IMAX theaters beginning on July 16, 2010. Inception grossed $839 million worldwide, becoming the fourth-highest-grossing film of 2010.",
+      "surpriseScore": 8,
+      "readMoreTopic": "2000X"
+    },
+    {
+      "fact": "Dom Cobb and Arthur are \"extractors\" who perform corporate espionage using experimental dream-sharing technology to infiltrate their targets' subconscious and extract information. Their latest target, Saito, is impressed with Cobb's ability to layer multiple dreams within each other.",
+      "surpriseScore": 7,
+      "readMoreTopic": "2001: A Space Odyssey"
+    },
+    {
+      "fact": "Cobb accepts the offer and assembles his team: a forger named Eames, a chemist named Yusuf, and a college student named Ariadne. Ariadne is tasked with designing the dream's architecture, something Cobb himself cannot do for fear of being sabotaged by his mind's projection of his late wife, Mal.",
+      "surpriseScore": 6,
+      "readMoreTopic": "2001: A Space Odyssey (film)"
+    },
+    {
+      "fact": "The team abducts Robert in a city on the first level, but unknown to any team member, his subconscious projections, trained to anticipate such a scenario, attack them. After Saito is wounded, Cobb reveals that while dying in the dream would usually awaken dreamers, Yusuf's sedatives will instead send them into \"Limbo\": a world of infinite subconscious.",
+      "surpriseScore": 5,
+      "readMoreTopic": "2010 in film"
+    },
+    {
+      "fact": "Cobb explains to Ariadne that he and Mal entered Limbo while experimenting with dream-sharing, experiencing fifty years in one night due to the time dilation with reality. After waking up, Mal still believed she was dreaming.",
+      "surpriseScore": 4,
+      "readMoreTopic": "2D to 3D conversion"
+    },
+    {
+      "fact": "Yusuf drives the team around the first level as they are sedated into the second level, a hotel dreamed by Arthur. Cobb persuades Robert that Browning has kidnapped him to stop the dissolution and that Cobb is a defensive projection, leading Robert to another third level deeper as part of a ruse to enter Robert's subconscious.",
+      "surpriseScore": 3,
+      "readMoreTopic": "35 mm movie film"
+    },
+    {
+      "fact": "In the third level, the team infiltrates an alpine fortress with a projection of Maurice inside, where the inception itself can be performed. However, Yusuf performs his kick too soon by driving off a bridge, forcing Arthur and Eames to improvise a new set of kicks synchronized with them hitting the water by rigging an elevator and the fortress, respectively, with explosives.",
+      "surpriseScore": 2,
+      "readMoreTopic": "3D film"
+    },
+    {
+      "fact": "Revived into the third level, Robert discovers the planted idea: his dying father telling him to create something for himself. While Cobb searches for Saito in Limbo, the others ride the synced kicks back to reality.",
+      "surpriseScore": 1,
+      "readMoreTopic": "4K Blu-ray"
+    }
+  ],
+  "relatedTopics": [
+    "12 Monkeys",
+    "1917 (2019 film)",
+    "2000X",
+    "2001: A Space Odyssey",
+    "2001: A Space Odyssey (film)",
+    "2010 in film",
+    "2D to 3D conversion",
+    "35 mm movie film"
+  ],
+  "confidenceScores": {
+    "resolver": 0.96,
+    "compiler": 0.95,
+    "grader": 0.85,
+    "overall": 0.92
+  },
+  "checksum": "6c3930cd8c4cdd8a43ff085be29209434e78518d959c02cc5d4ac1f134571747",
+  "dependencyHash": "a68601ae8d7499ca6f09229882e6da8d0c8ddc798cb3e7cf4e85b63308248dd7",
+  "sourceReferences": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Inception",
+      "title": "Inception"
+    }
+  ],
+  "factScript": {
+    "chapters": [
+      {
+        "chapterTitle": "Inception's Story",
+        "questionAnswered": "What represents the starting motivation behind Story?",
+        "chronologicalPosition": 1,
+        "entities": [
+          "Inception"
+        ],
+        "dates": [
+          "2010",
+          "2002"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "motivating factors behind early phases of development",
+        "effect": "initial events showing transition in the subject",
+        "keyFacts": [
+          "Inception is a 2010  science fiction action film written and directed by Christopher Nolan, who also produced it with Emma Thomas, his wife. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets.",
+          "After the completion of Insomnia in 2002, Nolan presented to Warner Bros. a written 80-page treatment for a horror film envisioning \"dream stealers,\" based on lucid dreaming."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "fundamental lessons from this period"
+      },
+      {
+        "chapterTitle": "Inside the Production of Inception",
+        "questionAnswered": "Which factors influenced early discoveries of Production?",
+        "chronologicalPosition": 2,
+        "entities": [
+          "Inception"
+        ],
+        "dates": [
+          "2002",
+          "2005"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "key drivers behind the rising influence",
+        "effect": "consequent progress seen during this phase",
+        "keyFacts": [
+          "Inception's premiere was held in London on July 8, 2010; it was released in both conventional and IMAX theaters beginning on July 16, 2010. Inception grossed $839 million worldwide, becoming the fourth-highest-grossing film of 2010.",
+          "Dom Cobb and Arthur are \"extractors\" who perform corporate espionage using experimental dream-sharing technology to infiltrate their targets' subconscious and extract information. Their latest target, Saito, is impressed with Cobb's ability to layer multiple dreams within each other."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "primary insights on the rise"
+      },
+      {
+        "chapterTitle": "The Release of Inception",
+        "questionAnswered": "How do key chemical processes behave during Release?",
+        "chronologicalPosition": 3,
+        "entities": [
+          "Inception"
+        ],
+        "dates": [
+          "2005",
+          "2006"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "pivotal elements supporting the peak achievements",
+        "effect": "resultant breakthroughs related directly to these successes",
+        "keyFacts": [
+          "Cobb accepts the offer and assembles his team: a forger named Eames, a chemist named Yusuf, and a college student named Ariadne. Ariadne is tasked with designing the dream's architecture, something Cobb himself cannot do for fear of being sabotaged by his mind's projection of his late wife, Mal.",
+          "The team abducts Robert in a city on the first level, but unknown to any team member, his subconscious projections, trained to anticipate such a scenario, attack them. After Saito is wounded, Cobb reveals that while dying in the dream would usually awaken dreamers, Yusuf's sedatives will instead send them into \"Limbo\": a world of infinite subconscious."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "core takeaways regarding this era"
+      },
+      {
+        "chapterTitle": "How the World Received Inception",
+        "questionAnswered": "Why do light steps trigger under Reception?",
+        "chronologicalPosition": 4,
+        "entities": [
+          "Inception"
+        ],
+        "dates": [
+          "2006",
+          "2008"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "underlying issues prompting the challenges faced",
+        "effect": "resulting shifts that defined the response taken",
+        "keyFacts": [
+          "Cobb explains to Ariadne that he and Mal entered Limbo while experimenting with dream-sharing, experiencing fifty years in one night due to the time dilation with reality. After waking up, Mal still believed she was dreaming.",
+          "Yusuf drives the team around the first level as they are sedated into the second level, a hotel dreamed by Arthur. Cobb persuades Robert that Browning has kidnapped him to stop the dissolution and that Cobb is a defensive projection, leading Robert to another third level deeper as part of a ruse to enter Robert's subconscious."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "crucial lessons on these struggles"
+      },
+      {
+        "chapterTitle": "The Enduring Legacy of Inception",
+        "questionAnswered": "Who validates the final outcomes regarding Legacy?",
+        "chronologicalPosition": 5,
+        "entities": [
+          "Inception"
+        ],
+        "dates": [
+          "2008",
+          "2009"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "lasting forces establishing the legacy left behind",
+        "effect": "long-term outcomes that shaped the memory of the subject",
+        "keyFacts": [
+          "In the third level, the team infiltrates an alpine fortress with a projection of Maurice inside, where the inception itself can be performed. However, Yusuf performs his kick too soon by driving off a bridge, forcing Arthur and Eames to improvise a new set of kicks synchronized with them hitting the water by rigging an elevator and the fortress, respectively, with explosives.",
+          "Revived into the third level, Robert discovers the planted idea: his dying father telling him to create something for himself. While Cobb searches for Saito in Limbo, the others ride the synced kicks back to reality."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "final summary explaining the legacy"
+      }
+    ]
+  },
+  "briefSummaryProvenance": [
+    {
+      "sentence": "Inception records confirm that Inception is a 2010 science fiction action film written and directed.",
+      "fact": "Inception is a 2010 science fiction action film written and directed"
+    },
+    {
+      "sentence": "Inception records confirm that Inception's premiere was held in London on July 8, 2010; it.",
+      "fact": "Inception's premiere was held in London on July 8, 2010; it"
+    },
+    {
+      "sentence": "Inception records confirm that Cobb accepts the offer and assembles his team: a forger named.",
+      "fact": "Cobb accepts the offer and assembles his team: a forger named"
+    },
+    {
+      "sentence": "Inception remains study topic showing that final summary explaining the legacy.",
+      "fact": "final summary explaining the legacy"
+    }
+  ],
+  "validationStatus": {
+    "passed": true,
+    "errors": [],
+    "warnings": [
+      "Timeline is not in strict chronological order"
+    ],
+    "checkedRules": {
+      "ontology_match": true,
+      "required_fields_exist": true,
+      "timeline_non_empty": true,
+      "timeline_count_bounds": true,
+      "timeline_chronological": false,
+      "graph_has_triples": true,
+      "graph_connected": true,
+      "named_entities_non_empty": true,
+      "no_weak_facts": true,
+      "no_duplicate_facts": true,
+      "no_duplicate_sentences": true,
+      "no_placeholder_wording": true,
+      "generic_wording_check": true,
+      "paragraph_length_limit": true,
+      "unique_chapter_titles": true,
+      "concrete_dates_names_present": true,
+      "no_repeated_phrases": true,
+      "no_timeline_milestone_placeholder": true,
+      "did_you_know_length_ok": true,
+      "sentence_provenance_ok": true,
+      "no_abstract_writing": true,
+      "documentary_alternating_rule": true,
+      "fact_density_met": true,
+      "curiosity_score_ok": true,
+      "documentary_score_ok": true,
+      "resolver_confidence_ok": true,
+      "compiler_confidence_ok": true,
+      "overall_confidence_ok": true
+    },
+    "timestamp": "2026-07-10T06:47:31.842Z"
+  }
+}

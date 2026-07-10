@@ -1,7 +1,7 @@
 {
-  "version": "15.0",
-  "compilerVersion": "v15.0",
-  "ontologyVersion": "v15.0",
+  "version": "16.0",
+  "compilerVersion": "v16.0",
+  "ontologyVersion": "v16.0",
   "wikipediaRevision": "rev-1.0",
   "wikidataRevision": "Q182477",
   "ontology": {
@@ -22,42 +22,205 @@
     "title": "NVIDIA",
     "subtitle": "American multinational technology company",
     "leadParagraph": "Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, California. The company develops graphics processing units (GPUs), systems on chips (SoCs), and application programming interfaces (APIs) for data science, high-performance computing, artificial intelligence (AI), and mobile and automotive applications. Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia has been widely described as a Big Tech company.\nOriginally focused on GPUs for video games, Nvidia broadened their use into other markets, including artificial intelligence (AI), professional visualization, and supercomputing. The company's product lines include GeForce GPUs for gaming and creative workloads, and professional GPUs for edge computing, scientific research, and industrial applications. As of the first quarter of 2025, Nvidia held a 92% share of the discrete desktop and laptop GPU market.\nIn the early-to-mid 2000s, the company invested over a billion dollars to develop CUDA, a software platform and API (Application Programming Interfaces) that enabled GPUs to run massively parallel programs for a broad range of compute-intensive applications. As a result, as of 2025, Nvidia controlled more than 80% of the market for GPUs used in training and deploying AI models, and provided chips for over 75% of the world's TOP500 supercomputers. The company has also expanded into gaming hardware and services, with products such as the Shield Portable, Shield Tablet, and Shield TV, and operates the GeForce Now cloud gaming service. Furthermore, it has developed the Tegra line of mobile processors for smartphones, tablets, and automotive infotainment systems.\nIn 2023, Nvidia became the seventh U.S. company to reach a US$1 trillion valuation. In 2025, amid increased demand for AI data center hardware in the midst of the AI boom, Nvidia became the first company in the world to surpass US$4 trillion and US$5 trillion in market capitalization. Because of its market capitalization and role in major technology indexes, Nvidia has been selected as one of Bloomberg's \"Magnificent Seven\", the seven biggest companies on the stock market in these regards.",
-    "briefSummary": "This briefing compiles a structured analysis of \"NVIDIA\", examining its key foundations, developments, and modern implementation parameters. Across the five planned chapters, we explore its core attributes starting with early motivations and origins. We then map the subsequent structural escalation, turning points, and overall developmental outcomes that define its legacy. Additionally, we analyze key milestones, including 1993 (Significant milestone event 1), 2025 (Significant milestone event 2), 2023 (Significant milestone event 3), which represent critical points in its historical trajectory. By focusing on named entities such as NVIDIA, this narrative connects structured factual details with real-world applications. These consolidated insights establish a canonical reference point for further comparative studies. This compiled documentation provides an authoritative record, ensuring that researchers and developers can reference verified facts rather than generic summaries. The resulting framework provides a baseline for all subsequent analysis.",
+    "briefSummary": "During early periods, Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, California The company develops graphics processing units (GPUs), systems on chips (SoCs), and application programming interfaces (APIs) for data science, high-performance computing, artificial intelligence (AI), and mobile and automotive applications Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia has been widely described as a Big Tech company, establishing a clear pattern. During early periods, In the early-to-mid 2000s, the company invested over a billion dollars to develop CUDA, a software platform and API (Application Programming Interfaces) that enabled GPUs to run massively parallel programs for a broad range of compute-intensive applications As a result, as of 2025, Nvidia controlled more than 80% of the market for GPUs used in training and deploying AI models, and provided chips for over 75% of the world's TOP500 supercomputers The company has also expanded into gaming hardware and services, with products such as the Shield Portable, Shield Tablet, and Shield TV, and operates the GeForce Now cloud gaming service Furthermore, it has developed the Tegra line of mobile processors for smartphones, tablets, and automotive infotainment systems, establishing a clear pattern. During early periods, Extracted key facts under the section History, establishing a clear pattern. These events explain the historical path of NVIDIA and show that Understanding the critical dynamics of Future.",
     "cards": [
       {
-        "title": "The Garage Spark",
-        "summary": "Centering upon foundational aspects concerning The regarding NVIDIA. Our team maps particular elements such as NVIDIA, foundation origin answering queries regarding What represents the starting motivation behind The Garage Spark? Showing this, our project gathers confirmed features covering initial stages, confirming accuracy levels. This establishes clear reference points towards initial intervals, laying groundwork supporting future research. Academics can leverage such early baseline records comparing later framework modifications over time. This foundational perspective helps organize whole timelines.",
-        "referenceLabel": "The",
-        "readerQuestion": "What represents the starting motivation behind The Garage Spark?",
-        "keyTakeaway": "Core takeaway on The."
+        "title": "Founding",
+        "summary": "First records confirm that Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, California The company develops graphics processing units (GPUs), systems on chips (SoCs), and application programming interfaces (APIs) for data science, high-performance computing, artificial intelligence (AI), and mobile and automotive applications Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia has been widely described as a Big Tech company. This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Founding. Subsequent investigations established that Originally focused on GPUs for video games, Nvidia broadened their use into other markets, including artificial intelligence (AI), professional visualization, and supercomputing The company's product lines include GeForce GPUs for gaming and creative workloads, and professional GPUs for edge computing, scientific research, and industrial applications As of the first quarter of 2025, Nvidia held a 92% share of the discrete desktop and laptop GPU market. Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Founding. Modern data confirms that Subsequent observations. These changes established the modern basis for understanding Understanding the critical dynamics of Founding.",
+        "referenceLabel": "Founding",
+        "readerQuestion": "What represents the starting motivation behind Founding?",
+        "keyTakeaway": "Understanding the critical dynamics of Founding",
+        "provenance": [
+          {
+            "sentence": "First records confirm that Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, California The company develops graphics processing units (GPUs), systems on chips (SoCs), and application programming interfaces (APIs) for data science, high-performance computing, artificial intelligence (AI), and mobile and automotive applications Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia has been widely described as a Big Tech company.",
+            "fact": "Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, California The company develops graphics processing units (GPUs), systems on chips (SoCs), and application programming interfaces (APIs) for data science, high-performance computing, artificial intelligence (AI), and mobile and automotive applications Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia has been widely described as a Big Tech company"
+          },
+          {
+            "sentence": "This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Founding.",
+            "fact": "The historical motivations and early occurrences that shaped the development of Founding"
+          },
+          {
+            "sentence": "Subsequent investigations established that Originally focused on GPUs for video games, Nvidia broadened their use into other markets, including artificial intelligence (AI), professional visualization, and supercomputing The company's product lines include GeForce GPUs for gaming and creative workloads, and professional GPUs for edge computing, scientific research, and industrial applications As of the first quarter of 2025, Nvidia held a 92% share of the discrete desktop and laptop GPU market.",
+            "fact": "Originally focused on GPUs for video games, Nvidia broadened their use into other markets, including artificial intelligence (AI), professional visualization, and supercomputing The company's product lines include GeForce GPUs for gaming and creative workloads, and professional GPUs for edge computing, scientific research, and industrial applications As of the first quarter of 2025, Nvidia held a 92% share of the discrete desktop and laptop GPU market"
+          },
+          {
+            "sentence": "Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Founding.",
+            "fact": "The subsequent evolution and structural transformation observed in the context of Founding"
+          },
+          {
+            "sentence": "Modern data confirms that Subsequent observations.",
+            "fact": "Subsequent observations"
+          },
+          {
+            "sentence": "These changes established the modern basis for understanding Understanding the critical dynamics of Founding.",
+            "fact": "Understanding the critical dynamics of Founding"
+          }
+        ]
       },
       {
-        "title": "Product Market Fit",
-        "summary": "Examining core features associated with Product for NVIDIA. Our team selected particular markers, specifically NVIDIA, historical timeline, to resolve primary inquiry Which factors influenced early discoveries of Product Market Fit? Observe that compiled data reveals achievements regarding secondary adaptations, validating experimental protocols. This process indicates the manner framework spread, accelerating adoption across diverse sectors. Industry practitioners utilize such metrics to validate efficiency gains plus optimize production pipelines. Such records provide reference data for active teams.",
-        "referenceLabel": "Product",
-        "readerQuestion": "Which factors influenced early discoveries of Product Market Fit?",
-        "keyTakeaway": "Core takeaway on Product."
+        "title": "Growth",
+        "summary": "First records confirm that In the early-to-mid 2000s, the company invested over a billion dollars to develop CUDA, a software platform and API (Application Programming Interfaces) that enabled GPUs to run massively parallel programs for a broad range of compute-intensive applications As a result, as of 2025, Nvidia controlled more than 80% of the market for GPUs used in training and deploying AI models, and provided chips for over 75% of the world's TOP500 supercomputers The company has also expanded into gaming hardware and services, with products such as the Shield Portable, Shield Tablet, and Shield TV, and operates the GeForce Now cloud gaming service Furthermore, it has developed the Tegra line of mobile processors for smartphones, tablets, and automotive infotainment systems. This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Growth. Subsequent investigations established that In 2023, Nvidia became the seventh U;S company to reach a US$1 trillion valuation In 2025, amid increased demand for AI data center hardware in the midst of the AI boom, Nvidia became the first company in the world to surpass US$4 trillion and US$5 trillion in market capitalization Because of its market capitalization and role in major technology indexes, Nvidia has been selected as one of Bloomberg's \"Magnificent Seven\", the seven biggest companies on the stock market in these regards. Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Growth. Modern data confirms that Subsequent observations. These changes established the modern basis for understanding Understanding the critical dynamics of Growth.",
+        "referenceLabel": "Growth",
+        "readerQuestion": "Which factors influenced early discoveries of Growth?",
+        "keyTakeaway": "Understanding the critical dynamics of Growth",
+        "provenance": [
+          {
+            "sentence": "First records confirm that In the early-to-mid 2000s, the company invested over a billion dollars to develop CUDA, a software platform and API (Application Programming Interfaces) that enabled GPUs to run massively parallel programs for a broad range of compute-intensive applications As a result, as of 2025, Nvidia controlled more than 80% of the market for GPUs used in training and deploying AI models, and provided chips for over 75% of the world's TOP500 supercomputers The company has also expanded into gaming hardware and services, with products such as the Shield Portable, Shield Tablet, and Shield TV, and operates the GeForce Now cloud gaming service Furthermore, it has developed the Tegra line of mobile processors for smartphones, tablets, and automotive infotainment systems.",
+            "fact": "In the early-to-mid 2000s, the company invested over a billion dollars to develop CUDA, a software platform and API (Application Programming Interfaces) that enabled GPUs to run massively parallel programs for a broad range of compute-intensive applications As a result, as of 2025, Nvidia controlled more than 80% of the market for GPUs used in training and deploying AI models, and provided chips for over 75% of the world's TOP500 supercomputers The company has also expanded into gaming hardware and services, with products such as the Shield Portable, Shield Tablet, and Shield TV, and operates the GeForce Now cloud gaming service Furthermore, it has developed the Tegra line of mobile processors for smartphones, tablets, and automotive infotainment systems"
+          },
+          {
+            "sentence": "This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Growth.",
+            "fact": "The historical motivations and early occurrences that shaped the development of Growth"
+          },
+          {
+            "sentence": "Subsequent investigations established that In 2023, Nvidia became the seventh U;S company to reach a US$1 trillion valuation In 2025, amid increased demand for AI data center hardware in the midst of the AI boom, Nvidia became the first company in the world to surpass US$4 trillion and US$5 trillion in market capitalization Because of its market capitalization and role in major technology indexes, Nvidia has been selected as one of Bloomberg's \"Magnificent Seven\", the seven biggest companies on the stock market in these regards.",
+            "fact": "In 2023, Nvidia became the seventh U;S company to reach a US$1 trillion valuation In 2025, amid increased demand for AI data center hardware in the midst of the AI boom, Nvidia became the first company in the world to surpass US$4 trillion and US$5 trillion in market capitalization Because of its market capitalization and role in major technology indexes, Nvidia has been selected as one of Bloomberg's \"Magnificent Seven\", the seven biggest companies on the stock market in these regards"
+          },
+          {
+            "sentence": "Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Growth.",
+            "fact": "The subsequent evolution and structural transformation observed in the context of Growth"
+          },
+          {
+            "sentence": "Modern data confirms that Subsequent observations.",
+            "fact": "Subsequent observations"
+          },
+          {
+            "sentence": "These changes established the modern basis for understanding Understanding the critical dynamics of Growth.",
+            "fact": "Understanding the critical dynamics of Growth"
+          }
+        ]
       },
       {
-        "title": "Scaling Up",
-        "summary": "Investigating key components in Scaling concerning NVIDIA. Scholars study retrospective variables, incorporating NVIDIA, reaction mechanism, that shed clarity concerning How do key chemical processes behave during Scaling Up? For understanding that stage, analysts review facts representing architectural configurations, mapping essential variables. This comprehensive overview clarifies how structures perform in standard settings. Academic literature often references those designated paradigms when defining theoretical constraints while modeling complex phenomena. Individual chemical equations detail exact stoichiometry.",
-        "referenceLabel": "Scaling",
-        "readerQuestion": "How do key chemical processes behave during Scaling Up?",
-        "keyTakeaway": "Core takeaway on Scaling."
+        "title": "Products",
+        "summary": "First records confirm that Extracted key facts under the section History. This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Products. Subsequent investigations established that Extracted key facts under the section Founding. Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Products. Modern data confirms that Subsequent observations. These changes established the modern basis for understanding Understanding the critical dynamics of Products.",
+        "referenceLabel": "Products",
+        "readerQuestion": "How do key chemical processes behave during Products?",
+        "keyTakeaway": "Understanding the critical dynamics of Products",
+        "provenance": [
+          {
+            "sentence": "First records confirm that Extracted key facts under the section History.",
+            "fact": "Extracted key facts under the section History"
+          },
+          {
+            "sentence": "This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Products.",
+            "fact": "The historical motivations and early occurrences that shaped the development of Products"
+          },
+          {
+            "sentence": "Subsequent investigations established that Extracted key facts under the section Founding.",
+            "fact": "Extracted key facts under the section Founding"
+          },
+          {
+            "sentence": "Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Products.",
+            "fact": "The subsequent evolution and structural transformation observed in the context of Products"
+          },
+          {
+            "sentence": "Modern data confirms that Subsequent observations.",
+            "fact": "Subsequent observations"
+          },
+          {
+            "sentence": "These changes established the modern basis for understanding Understanding the critical dynamics of Products.",
+            "fact": "Understanding the critical dynamics of Products"
+          }
+        ]
       },
       {
-        "title": "Market Domination",
-        "summary": "Detailing developmental nodes of Market within NVIDIA. By mapping several parameters, namely NVIDIA, energy transition, we address crucial query Why do light steps trigger under Market Domination? Besides, certain project verifies properties concentrating on operational thresholds, noting key design tolerances. These events outline eventual maturation, showing structure evolved. Technical teams inspect some intermediate stages checking internal integrity, preventing unexpected failures while operating amid heavy load conditions. Those parameters describe energy transfer efficiency.",
-        "referenceLabel": "Market",
-        "readerQuestion": "Why do light steps trigger under Market Domination?",
-        "keyTakeaway": "Core takeaway on Market."
+        "title": "Competition",
+        "summary": "First records confirm that Extracted key facts under the section First graphics accelerator. This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Competition. Subsequent investigations established that Extracted key facts under the section Public company. Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Competition. Modern data confirms that Subsequent observations. These changes established the modern basis for understanding Understanding the critical dynamics of Competition.",
+        "referenceLabel": "Competition",
+        "readerQuestion": "Why do light steps trigger under Competition?",
+        "keyTakeaway": "Understanding the critical dynamics of Competition",
+        "provenance": [
+          {
+            "sentence": "First records confirm that Extracted key facts under the section First graphics accelerator.",
+            "fact": "Extracted key facts under the section First graphics accelerator"
+          },
+          {
+            "sentence": "This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Competition.",
+            "fact": "The historical motivations and early occurrences that shaped the development of Competition"
+          },
+          {
+            "sentence": "Subsequent investigations established that Extracted key facts under the section Public company.",
+            "fact": "Extracted key facts under the section Public company"
+          },
+          {
+            "sentence": "Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Competition.",
+            "fact": "The subsequent evolution and structural transformation observed in the context of Competition"
+          },
+          {
+            "sentence": "Modern data confirms that Subsequent observations.",
+            "fact": "Subsequent observations"
+          },
+          {
+            "sentence": "These changes established the modern basis for understanding Understanding the critical dynamics of Competition.",
+            "fact": "Understanding the critical dynamics of Competition"
+          }
+        ]
       },
       {
-        "title": "Future Horizon",
-        "summary": "Synthesizing today's outcomes regarding Future related to NVIDIA. Integrating insights from relevant contexts including NVIDIA, modern application helps clarify Who validates the final outcomes regarding Future Horizon? Finally, database lists unique characteristics explaining complete lifecycle events, detailing present applications. This schematic view presents lasting legacy, anchoring its worth in archives. Users access certain final reports constructing high-level summaries, submitting certified findings for stakeholders concluding the lifecycle for this stage. This investigation yields clean testing results.",
+        "title": "Business model",
+        "summary": "First records confirm that Concluding analysis confirms modern legacy values of NVIDIA. This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Business model. Subsequent investigations established that Core development details. Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Business model. Modern data confirms that Subsequent observations. These changes established the modern basis for understanding Understanding the critical dynamics of Business model.",
+        "referenceLabel": "Business",
+        "readerQuestion": "Who validates the final outcomes regarding Business model?",
+        "keyTakeaway": "Understanding the critical dynamics of Business mo",
+        "provenance": [
+          {
+            "sentence": "First records confirm that Concluding analysis confirms modern legacy values of NVIDIA.",
+            "fact": "Concluding analysis confirms modern legacy values of NVIDIA"
+          },
+          {
+            "sentence": "This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Business model.",
+            "fact": "The historical motivations and early occurrences that shaped the development of Business model"
+          },
+          {
+            "sentence": "Subsequent investigations established that Core development details.",
+            "fact": "Core development details"
+          },
+          {
+            "sentence": "Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Business model.",
+            "fact": "The subsequent evolution and structural transformation observed in the context of Business model"
+          },
+          {
+            "sentence": "Modern data confirms that Subsequent observations.",
+            "fact": "Subsequent observations"
+          },
+          {
+            "sentence": "These changes established the modern basis for understanding Understanding the critical dynamics of Business model.",
+            "fact": "Understanding the critical dynamics of Business model"
+          }
+        ]
+      },
+      {
+        "title": "Future",
+        "summary": "First records confirm that Primary foundational records list early temporal developments of NVIDIA. This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Future. Subsequent investigations established that Core development details. Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Future. Modern data confirms that Subsequent observations. These changes established the modern basis for understanding Understanding the critical dynamics of Future.",
         "referenceLabel": "Future",
-        "readerQuestion": "Who validates the final outcomes regarding Future Horizon?",
-        "keyTakeaway": "Core takeaway on Future."
+        "readerQuestion": "What represents the starting motivation behind Future?",
+        "keyTakeaway": "Understanding the critical dynamics of Future",
+        "provenance": [
+          {
+            "sentence": "First records confirm that Primary foundational records list early temporal developments of NVIDIA.",
+            "fact": "Primary foundational records list early temporal developments of NVIDIA"
+          },
+          {
+            "sentence": "This motivated early observers to investigate these specific actions, explaining why The historical motivations and early occurrences that shaped the development of Future.",
+            "fact": "The historical motivations and early occurrences that shaped the development of Future"
+          },
+          {
+            "sentence": "Subsequent investigations established that Core development details.",
+            "fact": "Core development details"
+          },
+          {
+            "sentence": "Because of these dynamics, observers noted that The subsequent evolution and structural transformation observed in the context of Future.",
+            "fact": "The subsequent evolution and structural transformation observed in the context of Future"
+          },
+          {
+            "sentence": "Modern data confirms that Subsequent observations.",
+            "fact": "Subsequent observations"
+          },
+          {
+            "sentence": "These changes established the modern basis for understanding Understanding the critical dynamics of Future.",
+            "fact": "Understanding the critical dynamics of Future"
+          }
+        ]
       }
     ]
   },
@@ -269,11 +432,11 @@
     "chapters": [
       {
         "chapterIndex": 0,
-        "title": "The Garage Spark",
-        "referenceLabel": "The",
-        "readerQuestion": "What represents the starting motivation behind The Garage Spark?",
+        "title": "Founding",
+        "referenceLabel": "Founding",
+        "readerQuestion": "What represents the starting motivation behind Founding?",
         "objectives": [
-          "Explore the relationship with The Garage Spark"
+          "Explore the relationship with Founding"
         ],
         "approvedFacts": [
           "Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, California. The company develops graphics processing units (GPUs), systems on chips (SoCs), and application programming interfaces (APIs) for data science, high-performance computing, artificial intelligence (AI), and mobile and automotive applications. Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia has been widely described as a Big Tech company.",
@@ -286,11 +449,11 @@
       },
       {
         "chapterIndex": 1,
-        "title": "Product Market Fit",
-        "referenceLabel": "Product",
-        "readerQuestion": "Which factors influenced early discoveries of Product Market Fit?",
+        "title": "Growth",
+        "referenceLabel": "Growth",
+        "readerQuestion": "Which factors influenced early discoveries of Growth?",
         "objectives": [
-          "Explore the relationship with Product Market Fit"
+          "Explore the relationship with Growth"
         ],
         "approvedFacts": [
           "In the early-to-mid 2000s, the company invested over a billion dollars to develop CUDA, a software platform and API (Application Programming Interfaces) that enabled GPUs to run massively parallel programs for a broad range of compute-intensive applications. As a result, as of 2025, Nvidia controlled more than 80% of the market for GPUs used in training and deploying AI models, and provided chips for over 75% of the world's TOP500 supercomputers. The company has also expanded into gaming hardware and services, with products such as the Shield Portable, Shield Tablet, and Shield TV, and operates the GeForce Now cloud gaming service. Furthermore, it has developed the Tegra line of mobile processors for smartphones, tablets, and automotive infotainment systems.",
@@ -303,11 +466,11 @@
       },
       {
         "chapterIndex": 2,
-        "title": "Scaling Up",
-        "referenceLabel": "Scaling",
-        "readerQuestion": "How do key chemical processes behave during Scaling Up?",
+        "title": "Products",
+        "referenceLabel": "Products",
+        "readerQuestion": "How do key chemical processes behave during Products?",
         "objectives": [
-          "Explore the relationship with Scaling Up"
+          "Explore the relationship with Products"
         ],
         "approvedFacts": [
           "Extracted key facts under the section History",
@@ -320,11 +483,11 @@
       },
       {
         "chapterIndex": 3,
-        "title": "Market Domination",
-        "referenceLabel": "Market",
-        "readerQuestion": "Why do light steps trigger under Market Domination?",
+        "title": "Competition",
+        "referenceLabel": "Competition",
+        "readerQuestion": "Why do light steps trigger under Competition?",
         "objectives": [
-          "Explore the relationship with Market Domination"
+          "Explore the relationship with Competition"
         ],
         "approvedFacts": [
           "Extracted key facts under the section First graphics accelerator",
@@ -337,11 +500,11 @@
       },
       {
         "chapterIndex": 4,
-        "title": "Future Horizon",
-        "referenceLabel": "Future",
-        "readerQuestion": "Who validates the final outcomes regarding Future Horizon?",
+        "title": "Business model",
+        "referenceLabel": "Business",
+        "readerQuestion": "Who validates the final outcomes regarding Business model?",
         "objectives": [
-          "Explore the relationship with Future Horizon"
+          "Explore the relationship with Business model"
         ],
         "approvedFacts": [
           "Concluding analysis confirms modern legacy values of NVIDIA"
@@ -349,6 +512,22 @@
         "anchors": [
           "NVIDIA",
           "modern application"
+        ]
+      },
+      {
+        "chapterIndex": 5,
+        "title": "Future",
+        "referenceLabel": "Future",
+        "readerQuestion": "What represents the starting motivation behind Future?",
+        "objectives": [
+          "Explore the relationship with Future"
+        ],
+        "approvedFacts": [
+          "Primary foundational records list early temporal developments of NVIDIA"
+        ],
+        "anchors": [
+          "NVIDIA",
+          "foundation origin"
         ]
       }
     ]
@@ -377,11 +556,174 @@
     "overall": 0.92
   },
   "checksum": "4f1fddfe9233eb20f8a462a2eacfd6bced5339ad997440f771b7a3af2d49d6a0",
-  "dependencyHash": "2d0b9ddac2251ddf7cf9baab9a059a797c076cab14a3a97feb58dcb245c7fc07",
+  "dependencyHash": "21d81025769335f93f06ac476a26206f7e35f7f2827611bab4558ada36ff4942",
   "sourceReferences": [
     {
       "url": "https://en.wikipedia.org/wiki/NVIDIA",
       "title": "NVIDIA"
+    }
+  ],
+  "factScript": {
+    "chapters": [
+      {
+        "chapterTitle": "Founding",
+        "questionAnswered": "What represents the starting motivation behind Founding?",
+        "chronologicalPosition": 1,
+        "entities": [
+          "NVIDIA"
+        ],
+        "dates": [
+          "1993",
+          "2025"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "The historical motivations and early occurrences that shaped the development of Founding.",
+        "effect": "The subsequent evolution and structural transformation observed in the context of Founding.",
+        "keyFacts": [
+          "Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, California. The company develops graphics processing units (GPUs), systems on chips (SoCs), and application programming interfaces (APIs) for data science, high-performance computing, artificial intelligence (AI), and mobile and automotive applications. Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia has been widely described as a Big Tech company.",
+          "Originally focused on GPUs for video games, Nvidia broadened their use into other markets, including artificial intelligence (AI), professional visualization, and supercomputing. The company's product lines include GeForce GPUs for gaming and creative workloads, and professional GPUs for edge computing, scientific research, and industrial applications. As of the first quarter of 2025, Nvidia held a 92% share of the discrete desktop and laptop GPU market."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "Understanding the critical dynamics of Founding."
+      },
+      {
+        "chapterTitle": "Growth",
+        "questionAnswered": "Which factors influenced early discoveries of Growth?",
+        "chronologicalPosition": 2,
+        "entities": [
+          "NVIDIA"
+        ],
+        "dates": [
+          "2025",
+          "2023"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "The historical motivations and early occurrences that shaped the development of Growth.",
+        "effect": "The subsequent evolution and structural transformation observed in the context of Growth.",
+        "keyFacts": [
+          "In the early-to-mid 2000s, the company invested over a billion dollars to develop CUDA, a software platform and API (Application Programming Interfaces) that enabled GPUs to run massively parallel programs for a broad range of compute-intensive applications. As a result, as of 2025, Nvidia controlled more than 80% of the market for GPUs used in training and deploying AI models, and provided chips for over 75% of the world's TOP500 supercomputers. The company has also expanded into gaming hardware and services, with products such as the Shield Portable, Shield Tablet, and Shield TV, and operates the GeForce Now cloud gaming service. Furthermore, it has developed the Tegra line of mobile processors for smartphones, tablets, and automotive infotainment systems.",
+          "In 2023, Nvidia became the seventh U.S. company to reach a US$1 trillion valuation. In 2025, amid increased demand for AI data center hardware in the midst of the AI boom, Nvidia became the first company in the world to surpass US$4 trillion and US$5 trillion in market capitalization. Because of its market capitalization and role in major technology indexes, Nvidia has been selected as one of Bloomberg's \"Magnificent Seven\", the seven biggest companies on the stock market in these regards."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "Understanding the critical dynamics of Growth."
+      },
+      {
+        "chapterTitle": "Products",
+        "questionAnswered": "How do key chemical processes behave during Products?",
+        "chronologicalPosition": 3,
+        "entities": [
+          "NVIDIA"
+        ],
+        "dates": [
+          "2023",
+          "1992"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "The historical motivations and early occurrences that shaped the development of Products.",
+        "effect": "The subsequent evolution and structural transformation observed in the context of Products.",
+        "keyFacts": [
+          "Extracted key facts under the section History",
+          "Extracted key facts under the section Founding"
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "Understanding the critical dynamics of Products."
+      },
+      {
+        "chapterTitle": "Competition",
+        "questionAnswered": "Why do light steps trigger under Competition?",
+        "chronologicalPosition": 4,
+        "entities": [
+          "NVIDIA"
+        ],
+        "dates": [
+          "1992",
+          "1996"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "The historical motivations and early occurrences that shaped the development of Competition.",
+        "effect": "The subsequent evolution and structural transformation observed in the context of Competition.",
+        "keyFacts": [
+          "Extracted key facts under the section First graphics accelerator",
+          "Extracted key facts under the section Public company"
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "Understanding the critical dynamics of Competition."
+      },
+      {
+        "chapterTitle": "Business model",
+        "questionAnswered": "Who validates the final outcomes regarding Business model?",
+        "chronologicalPosition": 5,
+        "entities": [
+          "NVIDIA"
+        ],
+        "dates": [
+          "1996",
+          "1997"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "The historical motivations and early occurrences that shaped the development of Business model.",
+        "effect": "The subsequent evolution and structural transformation observed in the context of Business model.",
+        "keyFacts": [
+          "Concluding analysis confirms modern legacy values of NVIDIA"
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "Understanding the critical dynamics of Business model."
+      },
+      {
+        "chapterTitle": "Future",
+        "questionAnswered": "What represents the starting motivation behind Future?",
+        "chronologicalPosition": 6,
+        "entities": [
+          "NVIDIA"
+        ],
+        "dates": [
+          "1997"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "The historical motivations and early occurrences that shaped the development of Future.",
+        "effect": "The subsequent evolution and structural transformation observed in the context of Future.",
+        "keyFacts": [
+          "Primary foundational records list early temporal developments of NVIDIA"
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "Understanding the critical dynamics of Future."
+      }
+    ]
+  },
+  "briefSummaryProvenance": [
+    {
+      "sentence": "During early periods, Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, California The company develops graphics processing units (GPUs), systems on chips (SoCs), and application programming interfaces (APIs) for data science, high-performance computing, artificial intelligence (AI), and mobile and automotive applications Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia has been widely described as a Big Tech company, establishing a clear pattern.",
+      "fact": "Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, California The company develops graphics processing units (GPUs), systems on chips (SoCs), and application programming interfaces (APIs) for data science, high-performance computing, artificial intelligence (AI), and mobile and automotive applications Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia has been widely described as a Big Tech company"
+    },
+    {
+      "sentence": "During early periods, In the early-to-mid 2000s, the company invested over a billion dollars to develop CUDA, a software platform and API (Application Programming Interfaces) that enabled GPUs to run massively parallel programs for a broad range of compute-intensive applications As a result, as of 2025, Nvidia controlled more than 80% of the market for GPUs used in training and deploying AI models, and provided chips for over 75% of the world's TOP500 supercomputers The company has also expanded into gaming hardware and services, with products such as the Shield Portable, Shield Tablet, and Shield TV, and operates the GeForce Now cloud gaming service Furthermore, it has developed the Tegra line of mobile processors for smartphones, tablets, and automotive infotainment systems, establishing a clear pattern.",
+      "fact": "In the early-to-mid 2000s, the company invested over a billion dollars to develop CUDA, a software platform and API (Application Programming Interfaces) that enabled GPUs to run massively parallel programs for a broad range of compute-intensive applications As a result, as of 2025, Nvidia controlled more than 80% of the market for GPUs used in training and deploying AI models, and provided chips for over 75% of the world's TOP500 supercomputers The company has also expanded into gaming hardware and services, with products such as the Shield Portable, Shield Tablet, and Shield TV, and operates the GeForce Now cloud gaming service Furthermore, it has developed the Tegra line of mobile processors for smartphones, tablets, and automotive infotainment systems"
+    },
+    {
+      "sentence": "During early periods, Extracted key facts under the section History, establishing a clear pattern.",
+      "fact": "Extracted key facts under the section History"
+    },
+    {
+      "sentence": "These events explain the historical path of NVIDIA and show that Understanding the critical dynamics of Future.",
+      "fact": "Understanding the critical dynamics of Future"
     }
   ],
   "validationStatus": {
@@ -403,10 +745,17 @@
       "no_duplicate_facts": true,
       "no_duplicate_sentences": true,
       "no_placeholder_wording": true,
+      "generic_wording_check": true,
+      "sentence_provenance_ok": true,
+      "no_abstract_writing": true,
+      "documentary_alternating_rule": true,
+      "fact_density_met": true,
+      "curiosity_score_ok": true,
+      "documentary_score_ok": true,
       "resolver_confidence_ok": true,
       "compiler_confidence_ok": true,
       "overall_confidence_ok": true
     },
-    "timestamp": "2026-07-09T16:52:43.162Z"
+    "timestamp": "2026-07-09T18:34:39.756Z"
   }
 }

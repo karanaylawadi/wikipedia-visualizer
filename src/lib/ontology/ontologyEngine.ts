@@ -6,7 +6,7 @@ export const ONTOLOGY_DEFINITIONS: Record<string, OntologyDefinition> = {
     requiredFields: ["director", "cast", "composer", "themes", "awards", "reception", "legacy"],
     requiredEntities: ["Director", "Actor", "Composer"],
     timelineSchema: { minEvents: 5, maxEvents: 8 },
-    documentaryBlueprint: ["Why It Was Made", "Building the World", "The Characters", "Behind the Camera", "Lasting Influence"],
+    documentaryBlueprint: ["Story", "Production", "Release", "Reception", "Legacy"],
     triviaStrategy: "Focus on production design challenges, casting choices, onset accidents, and budget constraints.",
     validationRules: [
       "Must not include box office numbers in the cast list.",
@@ -19,7 +19,7 @@ export const ONTOLOGY_DEFINITIONS: Record<string, OntologyDefinition> = {
     requiredFields: ["government", "geography", "economy", "culture", "population", "tourism"],
     requiredEntities: ["Capital", "Leader", "Currency"],
     timelineSchema: { minEvents: 6, maxEvents: 10 },
-    documentaryBlueprint: ["Foundational Roots", "The Landscape", "Sovereign Rule", "Cultural Fabric", "Modern Challenges"],
+    documentaryBlueprint: ["Origins", "History", "Government", "Culture", "Modern Nation"],
     triviaStrategy: "Focus on unique geographical formations, cultural anomalies, administrative oddities, or historical sovereignty firsts.",
     validationRules: [
       "Population must contain numerical estimates or censuses.",
@@ -31,7 +31,7 @@ export const ONTOLOGY_DEFINITIONS: Record<string, OntologyDefinition> = {
     requiredFields: ["causes", "timeline", "participants", "turningPoints", "outcome", "impact"],
     requiredEntities: ["Leader", "Location", "Date"],
     timelineSchema: { minEvents: 6, maxEvents: 10 },
-    documentaryBlueprint: ["The Spark", "Escalation", "Turning Point", "Resolution", "Legacy"],
+    documentaryBlueprint: ["Causes", "Early Battles", "Turning Point", "Outcome", "Legacy"],
     triviaStrategy: "Focus on overlooked turning points, weather factors, code-breaking, or strategic errors.",
     validationRules: [
       "Must have a clearly defined outcome.",
@@ -43,7 +43,7 @@ export const ONTOLOGY_DEFINITIONS: Record<string, OntologyDefinition> = {
     requiredFields: ["origins", "artists", "techniques", "majorWorks", "influence"],
     requiredEntities: ["Artist", "Medium", "Era"],
     timelineSchema: { minEvents: 5, maxEvents: 8 },
-    documentaryBlueprint: ["The Rebellion", "Defining Style", "Masterpieces", "Spreading the Vision", "The Echoes"],
+    documentaryBlueprint: ["Origins", "Key characteristics", "Masterpieces", "Spread", "Legacy"],
     triviaStrategy: "Focus on manifestos, public reactions, materials used, and artist rivalries.",
     validationRules: [
       "Origins must cite the city or region of origin.",
@@ -55,7 +55,7 @@ export const ONTOLOGY_DEFINITIONS: Record<string, OntologyDefinition> = {
     requiredFields: ["birth", "death", "occupation", "majorWorks", "awards", "legacy", "controversies"],
     requiredEntities: ["Individual", "Date", "Field"],
     timelineSchema: { minEvents: 5, maxEvents: 8 },
-    documentaryBlueprint: ["Early Sparks", "The Breakthrough", "Peak Contributions", "Friction & Obstacles", "Enduring Legacy"],
+    documentaryBlueprint: ["Early Life", "Rise", "Peak", "Challenges", "Legacy"],
     triviaStrategy: "Focus on childhood quirks, key mentors, hidden talents, or unrecognized early contributions.",
     validationRules: [
       "Birth date must be specified.",
@@ -67,7 +67,7 @@ export const ONTOLOGY_DEFINITIONS: Record<string, OntologyDefinition> = {
     requiredFields: ["founder", "industry", "headquarters", "products", "businessModel", "revenue", "leadership"],
     requiredEntities: ["Founder", "CEO", "Headquarters"],
     timelineSchema: { minEvents: 5, maxEvents: 8 },
-    documentaryBlueprint: ["The Garage Spark", "Product Market Fit", "Scaling Up", "Market Domination", "Future Horizon"],
+    documentaryBlueprint: ["Need", "Founding", "Growth", "Competition", "Future"],
     triviaStrategy: "Focus on original brand names, failed pivot prototypes, pivotal acquisitions, or famous internal conflicts.",
     validationRules: [
       "Founder field must not be blank.",
@@ -79,7 +79,7 @@ export const ONTOLOGY_DEFINITIONS: Record<string, OntologyDefinition> = {
     requiredFields: ["inventor", "launchYear", "industry", "architecture", "competitors", "adoption"],
     requiredEntities: ["Inventor", "Standard", "Platform"],
     timelineSchema: { minEvents: 5, maxEvents: 8 },
-    documentaryBlueprint: ["The Problem Statement", "Technical Architecture", "Early Adoption", "War of Standards", "Next Interface"],
+    documentaryBlueprint: ["Need", "Invention", "Adoption", "Impact", "Future"],
     triviaStrategy: "Focus on naming origin, early syntax/design bugs, easter eggs, and major security breaches.",
     validationRules: [
       "Inventor or core developer must be named.",
@@ -91,7 +91,7 @@ export const ONTOLOGY_DEFINITIONS: Record<string, OntologyDefinition> = {
     requiredFields: ["formula", "discovery", "discoverer", "applications", "limitations", "currentResearch"],
     requiredEntities: ["Discoverer", "Principle", "Observation"],
     timelineSchema: { minEvents: 5, maxEvents: 8 },
-    documentaryBlueprint: ["The Anomaly", "Theoretical Breakthrough", "Experimental Proof", "Applications", "Unsolved Questions"],
+    documentaryBlueprint: ["Problem", "Discovery", "Mechanism", "Evidence", "Applications"],
     triviaStrategy: "Focus on accidental discoveries, initial skepticism by the establishment, and counter-intuitive behaviors.",
     validationRules: [
       "Applications must contain at least 2 real-world uses.",
@@ -103,7 +103,7 @@ export const ONTOLOGY_DEFINITIONS: Record<string, OntologyDefinition> = {
     requiredFields: ["founder", "type", "headquarters", "members", "purpose", "history"],
     requiredEntities: ["Founder", "HQ", "Charter"],
     timelineSchema: { minEvents: 5, maxEvents: 8 },
-    documentaryBlueprint: ["The Coalition", "Founding Charter", "Expansion & Growth", "Major Actions", "Modern Mission"],
+    documentaryBlueprint: ["Founding", "Purpose", "Structure", "Major Campaigns", "Future Vision"],
     triviaStrategy: "Focus on founding disputes, symbolic logos, secret meetings, or bureaucratic challenges.",
     validationRules: [
       "Purpose must be a non-empty summary.",

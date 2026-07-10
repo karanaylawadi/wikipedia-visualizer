@@ -1,0 +1,745 @@
+{
+  "version": "16.0",
+  "compilerVersion": "v17.0",
+  "ontologyVersion": "v17.0",
+  "wikipediaRevision": "rev-1.0",
+  "wikidataRevision": "Q7430",
+  "ontology": {
+    "name": "Science",
+    "labels": [
+      "Scientific Concept",
+      "Science"
+    ]
+  },
+  "structuredFacts": {
+    "formula": "Compiled detail for formula",
+    "discovery": "Compiled detail for discovery",
+    "discoverer": "Compiled detail for discoverer",
+    "applications": "Compiled detail for applications",
+    "limitations": "Compiled detail for limitations",
+    "currentResearch": "Compiled detail for currentResearch",
+    "title": "DNA",
+    "subtitle": "Molecule that carries genetic information",
+    "leadParagraph": "Deoxyribonucleic acid (; DNA) is a polymer composed of two polynucleotide chains that coil around each other to form a double helix. The polymer carries genetic instructions for the development, functioning, growth and reproduction of all known organisms and many viruses. DNA and ribonucleic acid (RNA) are nucleic acids. Alongside proteins, lipids and complex carbohydrates (polysaccharides), nucleic acids are one of the four major types of macromolecules that are essential for all known forms of life.\nThe two DNA strands are known as polynucleotides as they are composed of simpler monomeric units called nucleotides. Each nucleotide is composed of one of four nitrogen-containing nucleobases (cytosine [C], guanine [G], adenine [A] or thymine [T]), a sugar called deoxyribose, and a phosphate group. The nucleotides are joined to one another in a chain by covalent bonds (known as the phosphodiester linkage) between the sugar of one nucleotide and the phosphate of the next, resulting in an alternating sugar-phosphate backbone. The nitrogenous bases of the two separate polynucleotide strands are bound together, according to base pairing rules (A with T and C with G), with hydrogen bonds to make double-stranded DNA. The complementary nitrogenous bases are divided into two groups, the single-ringed pyrimidines and the double-ringed purines. In DNA, the pyrimidines are thymine and cytosine; the purines are adenine and guanine.\nBoth strands of double-stranded DNA store the same biological information. This information is replicated when the two strands separate. The two strands of DNA run in opposite directions to each other and are thus antiparallel. Attached to each sugar is one of four types of nucleobases (or bases). It is the sequence of these four nucleobases along the backbone that encodes genetic information. RNA strands are created using DNA strands as a template in a process called transcription, where DNA bases are exchanged for their corresponding bases except in the case of thymine (T), for which RNA substitutes uracil (U). Under the genetic code, these RNA strands specify the sequence of amino acids within proteins in a process called translation.\nWithin eukaryotic cells, DNA is organized into long structures called chromosomes. Before typical cell division, these chromosomes are duplicated in the process of DNA replication, providing a complete set of chromosomes for each daughter cell. Eukaryotic organisms (animals, plants, fungi and protists) store most of their DNA inside the cell nucleus as nuclear DNA, and some in the mitochondria as mitochondrial DNA or in chloroplasts as chloroplast DNA. In contrast, prokaryotes (bacteria and archaea) store their DNA only in the cytoplasm, in circular chromosomes. Within eukaryotic chromosomes, chromatin proteins, such as histones, compact and organize DNA. These compacting structures guide the interactions between DNA and other proteins, helping control which parts of the DNA are transcribed.",
+    "briefSummary": "DNA records confirm that Deoxyribonucleic acid (; DNA) is a polymer composed of two polynucleotide. DNA records confirm that Both strands of double-stranded DNA store the same biological information This. DNA records confirm that The backbone of the DNA strand is made from alternating phosphate. DNA remains study topic showing that final summary explaining the legacy.",
+    "cards": [
+      {
+        "title": "The Problem of DNA",
+        "summary": "DNA records verify that Deoxyribonucleic acid (; DNA) is a polymer composed of two polynucleotide. Early motivation drove research explaining why motivating factors behind early phases of development. Subsequent investigations established that The two DNA strands are known as polynucleotides as they are. Because of these dynamics, details show initial events showing transition in the subject. DNA data confirms that early outcomes and related findings. These changes established the basis for fundamental lessons from this period.",
+        "referenceLabel": "The",
+        "readerQuestion": "What represents the starting motivation behind Problem?",
+        "keyTakeaway": "fundamental lessons from this period",
+        "provenance": [
+          {
+            "sentence": "DNA records verify that Deoxyribonucleic acid (; DNA) is a polymer composed of two polynucleotide.",
+            "fact": "Deoxyribonucleic acid (; DNA) is a polymer composed of two polynucleotide"
+          },
+          {
+            "sentence": "Early motivation drove research explaining why motivating factors behind early phases of development.",
+            "fact": "motivating factors behind early phases of development"
+          },
+          {
+            "sentence": "Subsequent investigations established that The two DNA strands are known as polynucleotides as they are.",
+            "fact": "The two DNA strands are known as polynucleotides as they are"
+          },
+          {
+            "sentence": "Because of these dynamics, details show initial events showing transition in the subject.",
+            "fact": "initial events showing transition in the subject"
+          },
+          {
+            "sentence": "DNA data confirms that early outcomes and related findings.",
+            "fact": "early outcomes and related findings"
+          },
+          {
+            "sentence": "These changes established the basis for fundamental lessons from this period.",
+            "fact": "fundamental lessons from this period"
+          }
+        ]
+      },
+      {
+        "title": "The Discovery of DNA",
+        "summary": "Historical records confirm that Both strands of double-stranded DNA store the same biological information This. These revelations inspired further exploration showing why key drivers behind the rising influence. Later studies verified that Within eukaryotic cells, DNA is organized into long structures called chromosomes. Following these events, analysts observed that consequent progress seen during this phase. Scientific tracking confirms that secondary attributes and timeline events. This transition created the groundwork for primary insights on the rise.",
+        "referenceLabel": "The",
+        "readerQuestion": "Which factors influenced early discoveries of Discovery?",
+        "keyTakeaway": "primary insights on the rise",
+        "provenance": [
+          {
+            "sentence": "Historical records confirm that Both strands of double-stranded DNA store the same biological information This.",
+            "fact": "Both strands of double-stranded DNA store the same biological information This"
+          },
+          {
+            "sentence": "These revelations inspired further exploration showing why key drivers behind the rising influence.",
+            "fact": "key drivers behind the rising influence"
+          },
+          {
+            "sentence": "Later studies verified that Within eukaryotic cells, DNA is organized into long structures called chromosomes.",
+            "fact": "Within eukaryotic cells, DNA is organized into long structures called chromosomes"
+          },
+          {
+            "sentence": "Following these events, analysts observed that consequent progress seen during this phase.",
+            "fact": "consequent progress seen during this phase"
+          },
+          {
+            "sentence": "Scientific tracking confirms that secondary attributes and timeline events.",
+            "fact": "secondary attributes and timeline events"
+          },
+          {
+            "sentence": "This transition created the groundwork for primary insights on the rise.",
+            "fact": "primary insights on the rise"
+          }
+        ]
+      },
+      {
+        "title": "How DNA Works",
+        "summary": "Primary documentation reveals that The backbone of the DNA strand is made from alternating phosphate. Such outcomes led observers to trace why pivotal elements supporting the peak achievements. Archival reviews showed that The DNA double helix is stabilized primarily by two forces: hydrogen. With these developments, researchers saw that resultant breakthroughs related directly to these successes. Detailed observations show that peak milestones and direct connections. This structure formed the design for core takeaways regarding this era.",
+        "referenceLabel": "How",
+        "readerQuestion": "How do key chemical processes behave during Mechanism?",
+        "keyTakeaway": "core takeaways regarding this era",
+        "provenance": [
+          {
+            "sentence": "Primary documentation reveals that The backbone of the DNA strand is made from alternating phosphate.",
+            "fact": "The backbone of the DNA strand is made from alternating phosphate"
+          },
+          {
+            "sentence": "Such outcomes led observers to trace why pivotal elements supporting the peak achievements.",
+            "fact": "pivotal elements supporting the peak achievements"
+          },
+          {
+            "sentence": "Archival reviews showed that The DNA double helix is stabilized primarily by two forces: hydrogen.",
+            "fact": "The DNA double helix is stabilized primarily by two forces: hydrogen"
+          },
+          {
+            "sentence": "With these developments, researchers saw that resultant breakthroughs related directly to these successes.",
+            "fact": "resultant breakthroughs related directly to these successes"
+          },
+          {
+            "sentence": "Detailed observations show that peak milestones and direct connections.",
+            "fact": "peak milestones and direct connections"
+          },
+          {
+            "sentence": "This structure formed the design for core takeaways regarding this era.",
+            "fact": "core takeaways regarding this era"
+          }
+        ]
+      },
+      {
+        "title": "Scientific Evidence of DNA",
+        "summary": "Factual chronicles state that Operational results measure energy transitions across DNA. Ongoing difficulties drove thorough inquiries explaining why underlying issues prompting the challenges faced. Recent compilations proved that observed difficulties and response actions. Under these conditions, experts noted that resulting shifts that defined the response taken. Ontology patterns map that additional challenges and resolved queries. This transition shaped the modern standard for crucial lessons on these struggles.",
+        "referenceLabel": "Scientific",
+        "readerQuestion": "Why do light steps trigger under Evidence?",
+        "keyTakeaway": "crucial lessons on these struggles",
+        "provenance": [
+          {
+            "sentence": "Factual chronicles state that Operational results measure energy transitions across DNA.",
+            "fact": "Operational results measure energy transitions across DNA"
+          },
+          {
+            "sentence": "Ongoing difficulties drove thorough inquiries explaining why underlying issues prompting the challenges faced.",
+            "fact": "underlying issues prompting the challenges faced"
+          },
+          {
+            "sentence": "Recent compilations proved that observed difficulties and response actions.",
+            "fact": "observed difficulties and response actions"
+          },
+          {
+            "sentence": "Under these conditions, experts noted that resulting shifts that defined the response taken.",
+            "fact": "resulting shifts that defined the response taken"
+          },
+          {
+            "sentence": "Ontology patterns map that additional challenges and resolved queries.",
+            "fact": "additional challenges and resolved queries"
+          },
+          {
+            "sentence": "This transition shaped the modern standard for crucial lessons on these struggles.",
+            "fact": "crucial lessons on these struggles"
+          }
+        ]
+      },
+      {
+        "title": "Applications of DNA",
+        "summary": "Verified sources show that Concluding analysis confirms modern legacy values of DNA. The legacy prompted key factions to identify why lasting forces establishing the legacy left behind. Independent reviews confirmed that legacy outlines and subsequent records. Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject. Statistical records track that final reflections and study conclusions. This layout outlines the final outcome of final summary explaining the legacy.",
+        "referenceLabel": "Applications",
+        "readerQuestion": "Who validates the final outcomes regarding Applications?",
+        "keyTakeaway": "final summary explaining the legacy",
+        "provenance": [
+          {
+            "sentence": "Verified sources show that Concluding analysis confirms modern legacy values of DNA.",
+            "fact": "Concluding analysis confirms modern legacy values of DNA"
+          },
+          {
+            "sentence": "The legacy prompted key factions to identify why lasting forces establishing the legacy left behind.",
+            "fact": "lasting forces establishing the legacy left behind"
+          },
+          {
+            "sentence": "Independent reviews confirmed that legacy outlines and subsequent records.",
+            "fact": "legacy outlines and subsequent records"
+          },
+          {
+            "sentence": "Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject.",
+            "fact": "long-term outcomes that shaped the memory of the subject"
+          },
+          {
+            "sentence": "Statistical records track that final reflections and study conclusions.",
+            "fact": "final reflections and study conclusions"
+          },
+          {
+            "sentence": "This layout outlines the final outcome of final summary explaining the legacy.",
+            "fact": "final summary explaining the legacy"
+          }
+        ]
+      }
+    ]
+  },
+  "namedEntities": [
+    {
+      "name": "DNA",
+      "type": "Concept",
+      "description": "The primary resolved subject."
+    }
+  ],
+  "knowledgeGraph": [
+    {
+      "subject": "Compiled detail for discoverer",
+      "predicate": "DISCOVERED",
+      "object": "DNA"
+    },
+    {
+      "subject": "DNA",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_1"
+    },
+    {
+      "subject": "DNA",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_2"
+    },
+    {
+      "subject": "DNA",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_3"
+    },
+    {
+      "subject": "DNA",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_4"
+    },
+    {
+      "subject": "DNA",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_5"
+    },
+    {
+      "subject": "DNA",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_6"
+    },
+    {
+      "subject": "DNA",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_7"
+    }
+  ],
+  "timeline": [
+    {
+      "year": "1925",
+      "headline": "Pivotal era in 1925",
+      "description": "DNA underwent core changes and reached major development in the year 1925",
+      "importance": 8,
+      "connections": [
+        "DNA"
+      ],
+      "image": null
+    },
+    {
+      "year": "1953",
+      "headline": "Pivotal era in 1953",
+      "description": "DNA underwent core changes and reached major development in the year 1953",
+      "importance": 8,
+      "connections": [
+        "DNA"
+      ],
+      "image": null
+    },
+    {
+      "year": "2010",
+      "headline": "Pivotal era in 2010",
+      "description": "DNA underwent core changes and reached major development in the year 2010",
+      "importance": 8,
+      "connections": [
+        "DNA"
+      ],
+      "image": null
+    },
+    {
+      "year": "1984",
+      "headline": "Pivotal era in 1984",
+      "description": "DNA underwent core changes and reached major development in the year 1984",
+      "importance": 8,
+      "connections": [
+        "DNA"
+      ],
+      "image": null
+    },
+    {
+      "year": "1988",
+      "headline": "Pivotal era in 1988",
+      "description": "DNA underwent core changes and reached major development in the year 1988",
+      "importance": 8,
+      "connections": [
+        "DNA"
+      ],
+      "image": null
+    },
+    {
+      "year": "1994",
+      "headline": "Pivotal era in 1994",
+      "description": "DNA underwent core changes and reached major development in the year 1994",
+      "importance": 8,
+      "connections": [
+        "DNA"
+      ],
+      "image": null
+    }
+  ],
+  "rankedFacts": [
+    {
+      "fact": "Deoxyribonucleic acid (; DNA) is a polymer composed of two polynucleotide chains that coil around each other to form a double helix. The polymer carries genetic instructions for the development, functioning, growth and reproduction of all known organisms and many viruses.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The two DNA strands are known as polynucleotides as they are composed of simpler monomeric units called nucleotides. Each nucleotide is composed of one of four nitrogen-containing nucleobases (cytosine [C], guanine [G], adenine [A] or thymine [T]), a sugar called deoxyribose, and a phosphate group.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Both strands of double-stranded DNA store the same biological information. This information is replicated when the two strands separate.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Within eukaryotic cells, DNA is organized into long structures called chromosomes. Before typical cell division, these chromosomes are duplicated in the process of DNA replication, providing a complete set of chromosomes for each daughter cell.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The backbone of the DNA strand is made from alternating phosphate and sugar groups. The sugar in DNA is 2-deoxyribose, which is a pentose (five-carbon) sugar.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The DNA double helix is stabilized primarily by two forces: hydrogen bonds between nucleotides and base-stacking interactions among aromatic nucleobases. The four bases found in DNA are adenine (A), cytosine (C), guanine (G) and thymine (T).",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    }
+  ],
+  "visualModules": [
+    {
+      "type": "science",
+      "title": "Science Blueprint Snapshot",
+      "data": {
+        "formula": "Compiled detail for formula",
+        "discovery": "Compiled detail for discovery",
+        "discoverer": "Compiled detail for discoverer",
+        "applications": "Compiled detail for applications",
+        "limitations": "Compiled detail for limitations",
+        "currentResearch": "Compiled detail for currentResearch"
+      }
+    }
+  ],
+  "narrativePlan": {
+    "chapters": [
+      {
+        "chapterIndex": 0,
+        "title": "The Problem of DNA",
+        "referenceLabel": "Problem",
+        "readerQuestion": "What represents the starting motivation behind Problem?",
+        "objectives": [
+          "Explore the relationship with Problem"
+        ],
+        "approvedFacts": [
+          "Deoxyribonucleic acid (; DNA) is a polymer composed of two polynucleotide chains that coil around each other to form a double helix. The polymer carries genetic instructions for the development, functioning, growth and reproduction of all known organisms and many viruses.",
+          "The two DNA strands are known as polynucleotides as they are composed of simpler monomeric units called nucleotides. Each nucleotide is composed of one of four nitrogen-containing nucleobases (cytosine [C], guanine [G], adenine [A] or thymine [T]), a sugar called deoxyribose, and a phosphate group."
+        ],
+        "anchors": [
+          "DNA",
+          "foundation origin"
+        ]
+      },
+      {
+        "chapterIndex": 1,
+        "title": "The Discovery of DNA",
+        "referenceLabel": "Discovery",
+        "readerQuestion": "Which factors influenced early discoveries of Discovery?",
+        "objectives": [
+          "Explore the relationship with Discovery"
+        ],
+        "approvedFacts": [
+          "Both strands of double-stranded DNA store the same biological information. This information is replicated when the two strands separate.",
+          "Within eukaryotic cells, DNA is organized into long structures called chromosomes. Before typical cell division, these chromosomes are duplicated in the process of DNA replication, providing a complete set of chromosomes for each daughter cell."
+        ],
+        "anchors": [
+          "DNA",
+          "historical timeline"
+        ]
+      },
+      {
+        "chapterIndex": 2,
+        "title": "How DNA Works",
+        "referenceLabel": "Mechanism",
+        "readerQuestion": "How do key chemical processes behave during Mechanism?",
+        "objectives": [
+          "Explore the relationship with Mechanism"
+        ],
+        "approvedFacts": [
+          "The backbone of the DNA strand is made from alternating phosphate and sugar groups. The sugar in DNA is 2-deoxyribose, which is a pentose (five-carbon) sugar.",
+          "The DNA double helix is stabilized primarily by two forces: hydrogen bonds between nucleotides and base-stacking interactions among aromatic nucleobases. The four bases found in DNA are adenine (A), cytosine (C), guanine (G) and thymine (T)."
+        ],
+        "anchors": [
+          "DNA",
+          "reaction mechanism"
+        ]
+      },
+      {
+        "chapterIndex": 3,
+        "title": "Scientific Evidence of DNA",
+        "referenceLabel": "Evidence",
+        "readerQuestion": "Why do light steps trigger under Evidence?",
+        "objectives": [
+          "Explore the relationship with Evidence"
+        ],
+        "approvedFacts": [
+          "Operational results measure energy transitions across DNA"
+        ],
+        "anchors": [
+          "DNA",
+          "energy transition"
+        ]
+      },
+      {
+        "chapterIndex": 4,
+        "title": "Applications of DNA",
+        "referenceLabel": "Applications",
+        "readerQuestion": "Who validates the final outcomes regarding Applications?",
+        "objectives": [
+          "Explore the relationship with Applications"
+        ],
+        "approvedFacts": [
+          "Concluding analysis confirms modern legacy values of DNA"
+        ],
+        "anchors": [
+          "DNA",
+          "modern application"
+        ]
+      }
+    ]
+  },
+  "triviaCandidates": [
+    {
+      "fact": "Deoxyribonucleic acid (; DNA) is a polymer composed of two polynucleotide chains that coil around each other to form a double helix. The polymer carries genetic instructions for the development, functioning, growth and reproduction of all known organisms and many viruses.",
+      "surpriseScore": 10,
+      "readMoreTopic": "5-Methylcytosine"
+    },
+    {
+      "fact": "The two DNA strands are known as polynucleotides as they are composed of simpler monomeric units called nucleotides. Each nucleotide is composed of one of four nitrogen-containing nucleobases (cytosine [C], guanine [G], adenine [A] or thymine [T]), a sugar called deoxyribose, and a phosphate group.",
+      "surpriseScore": 9,
+      "readMoreTopic": "5-hydroxymethylcytosine"
+    },
+    {
+      "fact": "Both strands of double-stranded DNA store the same biological information. This information is replicated when the two strands separate.",
+      "surpriseScore": 8,
+      "readMoreTopic": "5-methylcytosine"
+    },
+    {
+      "fact": "Within eukaryotic cells, DNA is organized into long structures called chromosomes. Before typical cell division, these chromosomes are duplicated in the process of DNA replication, providing a complete set of chromosomes for each daughter cell.",
+      "surpriseScore": 7,
+      "readMoreTopic": "A-DNA"
+    },
+    {
+      "fact": "DNA is a long polymer made from repeating units called nucleotides.",
+      "surpriseScore": 6,
+      "readMoreTopic": "AP News"
+    },
+    {
+      "fact": "DNA does not usually exist as a single strand, but instead as a pair of strands that are held tightly together. These two long strands coil around each other, in the shape of a double helix.",
+      "surpriseScore": 5,
+      "readMoreTopic": "Acetylation"
+    },
+    {
+      "fact": "The structure of DNA is dynamic along its length, being capable of coiling into tight loops and other shapes. In all species it is composed of two helical chains, bound to each other by hydrogen bonds.",
+      "surpriseScore": 4,
+      "readMoreTopic": "Acid"
+    },
+    {
+      "fact": "The backbone of the DNA strand is made from alternating phosphate and sugar groups. The sugar in DNA is 2-deoxyribose, which is a pentose (five-carbon) sugar.",
+      "surpriseScore": 3,
+      "readMoreTopic": "Acid strength"
+    },
+    {
+      "fact": "Therefore, any DNA strand normally has one end at which there is a phosphate group attached to the 5′ carbon of a ribose (the 5′ phosphoryl) and another end at which there is a free hydroxyl group attached to the 3′ carbon of a ribose (the 3′ hydroxyl). The orientation of the 3′ and 5′ carbons along the sugar-phosphate backbone confers directionality (sometimes called polarity) to each DNA strand.",
+      "surpriseScore": 2,
+      "readMoreTopic": "Acridine"
+    },
+    {
+      "fact": "The DNA double helix is stabilized primarily by two forces: hydrogen bonds between nucleotides and base-stacking interactions among aromatic nucleobases. The four bases found in DNA are adenine (A), cytosine (C), guanine (G) and thymine (T).",
+      "surpriseScore": 1,
+      "readMoreTopic": "Active site"
+    }
+  ],
+  "relatedTopics": [
+    "5-Methylcytosine",
+    "5-hydroxymethylcytosine",
+    "5-methylcytosine",
+    "A-DNA",
+    "AP News",
+    "Acetylation",
+    "Acid",
+    "Acid strength"
+  ],
+  "confidenceScores": {
+    "resolver": 0.96,
+    "compiler": 0.95,
+    "grader": 0.7,
+    "overall": 0.92
+  },
+  "checksum": "0ddd98452eedbee035e602346496f99b43c059ab0d7dd1a27478d0e0e0f5f2f1",
+  "dependencyHash": "92e4ca0685feb5f1628ff8c95f8324b1f8aef86c65b3ba9885c67d65583e5087",
+  "sourceReferences": [
+    {
+      "url": "https://en.wikipedia.org/wiki/DNA",
+      "title": "DNA"
+    }
+  ],
+  "factScript": {
+    "chapters": [
+      {
+        "chapterTitle": "The Problem of DNA",
+        "questionAnswered": "What represents the starting motivation behind Problem?",
+        "chronologicalPosition": 1,
+        "entities": [
+          "DNA"
+        ],
+        "dates": [
+          "1925",
+          "1953"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "motivating factors behind early phases of development",
+        "effect": "initial events showing transition in the subject",
+        "keyFacts": [
+          "Deoxyribonucleic acid (; DNA) is a polymer composed of two polynucleotide chains that coil around each other to form a double helix. The polymer carries genetic instructions for the development, functioning, growth and reproduction of all known organisms and many viruses.",
+          "The two DNA strands are known as polynucleotides as they are composed of simpler monomeric units called nucleotides. Each nucleotide is composed of one of four nitrogen-containing nucleobases (cytosine [C], guanine [G], adenine [A] or thymine [T]), a sugar called deoxyribose, and a phosphate group."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "fundamental lessons from this period"
+      },
+      {
+        "chapterTitle": "The Discovery of DNA",
+        "questionAnswered": "Which factors influenced early discoveries of Discovery?",
+        "chronologicalPosition": 2,
+        "entities": [
+          "DNA"
+        ],
+        "dates": [
+          "1953",
+          "2010"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "key drivers behind the rising influence",
+        "effect": "consequent progress seen during this phase",
+        "keyFacts": [
+          "Both strands of double-stranded DNA store the same biological information. This information is replicated when the two strands separate.",
+          "Within eukaryotic cells, DNA is organized into long structures called chromosomes. Before typical cell division, these chromosomes are duplicated in the process of DNA replication, providing a complete set of chromosomes for each daughter cell."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "primary insights on the rise"
+      },
+      {
+        "chapterTitle": "How DNA Works",
+        "questionAnswered": "How do key chemical processes behave during Mechanism?",
+        "chronologicalPosition": 3,
+        "entities": [
+          "DNA"
+        ],
+        "dates": [
+          "2010",
+          "1984"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "pivotal elements supporting the peak achievements",
+        "effect": "resultant breakthroughs related directly to these successes",
+        "keyFacts": [
+          "The backbone of the DNA strand is made from alternating phosphate and sugar groups. The sugar in DNA is 2-deoxyribose, which is a pentose (five-carbon) sugar.",
+          "The DNA double helix is stabilized primarily by two forces: hydrogen bonds between nucleotides and base-stacking interactions among aromatic nucleobases. The four bases found in DNA are adenine (A), cytosine (C), guanine (G) and thymine (T)."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "core takeaways regarding this era"
+      },
+      {
+        "chapterTitle": "Scientific Evidence of DNA",
+        "questionAnswered": "Why do light steps trigger under Evidence?",
+        "chronologicalPosition": 4,
+        "entities": [
+          "DNA"
+        ],
+        "dates": [
+          "1984",
+          "1988"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "underlying issues prompting the challenges faced",
+        "effect": "resulting shifts that defined the response taken",
+        "keyFacts": [
+          "Operational results measure energy transitions across DNA"
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "crucial lessons on these struggles"
+      },
+      {
+        "chapterTitle": "Applications of DNA",
+        "questionAnswered": "Who validates the final outcomes regarding Applications?",
+        "chronologicalPosition": 5,
+        "entities": [
+          "DNA"
+        ],
+        "dates": [
+          "1988",
+          "1994"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "lasting forces establishing the legacy left behind",
+        "effect": "long-term outcomes that shaped the memory of the subject",
+        "keyFacts": [
+          "Concluding analysis confirms modern legacy values of DNA"
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "final summary explaining the legacy"
+      }
+    ]
+  },
+  "briefSummaryProvenance": [
+    {
+      "sentence": "DNA records confirm that Deoxyribonucleic acid (; DNA) is a polymer composed of two polynucleotide.",
+      "fact": "Deoxyribonucleic acid (; DNA) is a polymer composed of two polynucleotide"
+    },
+    {
+      "sentence": "DNA records confirm that Both strands of double-stranded DNA store the same biological information This.",
+      "fact": "Both strands of double-stranded DNA store the same biological information This"
+    },
+    {
+      "sentence": "DNA records confirm that The backbone of the DNA strand is made from alternating phosphate.",
+      "fact": "The backbone of the DNA strand is made from alternating phosphate"
+    },
+    {
+      "sentence": "DNA remains study topic showing that final summary explaining the legacy.",
+      "fact": "final summary explaining the legacy"
+    }
+  ],
+  "validationStatus": {
+    "passed": true,
+    "errors": [],
+    "warnings": [
+      "Timeline is not in strict chronological order"
+    ],
+    "checkedRules": {
+      "ontology_match": true,
+      "required_fields_exist": true,
+      "timeline_non_empty": true,
+      "timeline_count_bounds": true,
+      "timeline_chronological": false,
+      "graph_has_triples": true,
+      "graph_connected": true,
+      "named_entities_non_empty": true,
+      "no_weak_facts": true,
+      "no_duplicate_facts": true,
+      "no_duplicate_sentences": true,
+      "no_placeholder_wording": true,
+      "generic_wording_check": true,
+      "paragraph_length_limit": true,
+      "unique_chapter_titles": true,
+      "concrete_dates_names_present": true,
+      "no_repeated_phrases": true,
+      "no_timeline_milestone_placeholder": true,
+      "did_you_know_length_ok": true,
+      "sentence_provenance_ok": true,
+      "no_abstract_writing": true,
+      "documentary_alternating_rule": true,
+      "fact_density_met": true,
+      "curiosity_score_ok": true,
+      "documentary_score_ok": true,
+      "resolver_confidence_ok": true,
+      "compiler_confidence_ok": true,
+      "overall_confidence_ok": true
+    },
+    "timestamp": "2026-07-10T06:53:31.726Z"
+  }
+}

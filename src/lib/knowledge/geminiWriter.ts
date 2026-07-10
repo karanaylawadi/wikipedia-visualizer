@@ -24,7 +24,7 @@ export async function writeBriefSummary(
   const ai = new GoogleGenAI({ apiKey });
 
   const outline = plan.chapters.map(c => `- Chapter ${c.chapterIndex + 1}: ${c.title}`).join("\n");
-  const coreFacts = compiled.triviaCandidates.slice(0, 5).join("\n- ");
+  const coreFacts = compiled.triviaCandidates.map(c => c.fact).slice(0, 5).join("\n- ");
 
   const prompt = `You are a Master Documentary Narrator. Write a premium brief summary (exactly 120 to 150 words) introducing the topic "${resolved.canonicalTitle}".
 
@@ -56,7 +56,7 @@ Return valid JSON. Only return raw JSON. Start with { and end with }. Do not wra
     summaryText = parsed.shortSummary;
   } catch (error) {
     console.warn("writeBriefSummary failed, using heuristic fallback", error);
-    const timelineSnippet = compiled.timeline.slice(0, 3).map(t => `${t.year} (${t.event})`).join(", ");
+    const timelineSnippet = compiled.timeline.slice(0, 3).map(t => `${t.year} (${t.headline})`).join(", ");
     const entitySnippet = compiled.namedEntities.slice(0, 3).map(e => e.name).join(" and ");
     
     summaryText = `This briefing compiles a structured analysis of "${resolved.canonicalTitle}", examining its key foundations, developments, and modern implementation parameters. Across the five planned chapters, we explore its core attributes starting with early motivations and origins. We then map the subsequent structural escalation, turning points, and overall developmental outcomes that define its legacy. Additionally, we analyze key milestones, including ${timelineSnippet || "early stages"}, which represent critical points in its historical trajectory. By focusing on named entities such as ${entitySnippet || "related elements"}, this narrative connects structured factual details with real-world applications. These consolidated insights establish a canonical reference point for further comparative studies. This compiled documentation provides an authoritative record, ensuring that researchers and developers can reference verified facts rather than generic summaries. The resulting framework provides a baseline for all subsequent analysis.`;

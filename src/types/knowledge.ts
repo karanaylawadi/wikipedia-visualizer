@@ -36,7 +36,11 @@ export interface GraphTriple {
 
 export interface TimelineEvent {
   year: string;
-  event: string;
+  headline: string;
+  description: string;
+  importance: number;
+  connections: string[];
+  image?: string | null;
 }
 
 export interface EvaluationMetrics {
@@ -84,6 +88,12 @@ export interface LintReport {
   timestamp: string;
 }
 
+export interface SurprisingInsight {
+  fact: string;
+  surpriseScore: number;
+  readMoreTopic?: string;
+}
+
 export interface KnowledgeArtifact {
   version: string; // e.g., "15.0"
   compilerVersion: string;
@@ -103,7 +113,7 @@ export interface KnowledgeArtifact {
   rankedFacts: EvaluatedFact[];
   visualModules: VisualModule[];
   narrativePlan: NarrativePlan;
-  triviaCandidates: string[];
+  triviaCandidates: SurprisingInsight[];
   relatedTopics: string[];
   
   confidenceScores: {
@@ -117,4 +127,36 @@ export interface KnowledgeArtifact {
   checksum: string;
   dependencyHash: string;
   sourceReferences: Array<{ url: string; title: string }>;
+  factScript?: FactScript;
+  briefSummaryProvenance?: Array<{ sentence: string; fact: string }>;
+}
+
+export interface PerspectiveCard {
+  title: string;
+  summary: string;
+  referenceLabel: string;
+  readerQuestion: string;
+  keyTakeaway: string;
+  provenance?: Array<{ sentence: string; fact: string }>;
+}
+
+export interface FactScriptChapter {
+  chapterTitle: string;
+  questionAnswered: string;
+  chronologicalPosition: number;
+  entities: string[];
+  dates: string[];
+  locations: string[];
+  people: string[];
+  events: string[];
+  cause: string;
+  effect: string;
+  keyFacts: string[];
+  quotes: string[];
+  connections: string[];
+  takeaway: string;
+}
+
+export interface FactScript {
+  chapters: FactScriptChapter[];
 }

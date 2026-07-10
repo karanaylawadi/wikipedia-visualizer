@@ -37,8 +37,11 @@ export async function evaluateFacts(
   const rawFactsList: string[] = [];
 
   // Gather facts from triviaCandidates and sourceSection bullet points
-  compiled.triviaCandidates.forEach((fact) => {
-    if (fact && !rawFactsList.includes(fact)) rawFactsList.push(fact);
+  compiled.triviaCandidates.forEach((insight) => {
+    if (insight && insight.fact) {
+      const factText = insight.fact;
+      if (!rawFactsList.includes(factText)) rawFactsList.push(factText);
+    }
   });
 
   // Extract statements from sourceSections
@@ -51,8 +54,31 @@ export async function evaluateFacts(
     });
   });
 
-  // Filter out obviously weak facts programmatically first
-  const candidateFacts = rawFactsList.filter(fact => !isFactWeak(fact)).slice(0, 15);
+  // Helper to deduplicate facts that share 3-word phrases (prevents 4-word overlap when templates prepend words)
+  const deduplicateFacts = (facts: string[]): string[] => {
+    const seenPhrases = new Set<string>();
+    const uniqueFacts: string[] = [];
+    for (const fact of facts) {
+      const words = fact.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "").split(/\s+/).filter(Boolean);
+      let hasOverlap = false;
+      const factPhrases: string[] = [];
+      for (let i = 0; i < words.length - 2; i++) {
+        const phrase = words.slice(i, i + 3).join(" ");
+        factPhrases.push(phrase);
+        if (seenPhrases.has(phrase)) {
+          hasOverlap = true;
+        }
+      }
+      if (!hasOverlap) {
+        uniqueFacts.push(fact);
+        factPhrases.forEach(p => seenPhrases.add(p));
+      }
+    }
+    return uniqueFacts;
+  };
+
+  // Filter out obviously weak facts programmatically first and deduplicate overlapping phrases
+  const candidateFacts = deduplicateFacts(rawFactsList.filter(fact => !isFactWeak(fact))).slice(0, 15);
 
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey || candidateFacts.length === 0) {

@@ -7,6 +7,7 @@ type Props = {
   setTopic: (value: string) => void;
   loading: boolean;
   onAnalyze: (customTopic?: string) => void;
+  currentGraphNeighbors?: string[];
 };
 
 interface AutocompleteItem {
@@ -41,6 +42,7 @@ export default function SearchBar({
   setTopic,
   loading,
   onAnalyze,
+  currentGraphNeighbors = [],
 }: Props) {
   const [isFocused, setIsFocused] = useState(false);
   const [suggestions, setSuggestions] = useState<AutocompleteItem[]>([]);
@@ -68,7 +70,7 @@ export default function SearchBar({
     localStorage.setItem("recent-searches", JSON.stringify(filtered));
   };
 
-  // Debounced autocomplete fetch at 250ms
+  // Debounced autocomplete fetch at 250ms with multi-signal ranking
   useEffect(() => {
     if (!topic.trim()) {
       return;
@@ -79,7 +81,44 @@ export default function SearchBar({
         const res = await fetch(`/api/autocomplete?q=${encodeURIComponent(topic)}`);
         if (res.ok) {
           const data = (await res.json()) as AutocompleteItem[];
-          setSuggestions(data);
+          
+          // V17 Multi-signal ranking algorithm
+          const ranked = [...data].sort((a, b) => {
+            const aTitle = a.title.toLowerCase();
+            const bTitle = b.title.toLowerCase();
+            const q = topic.toLowerCase().trim();
+
+            // 1. Exact match priority
+            if (aTitle === q && bTitle !== q) return -1;
+            if (bTitle === q && aTitle !== q) return 1;
+
+            let aScore = 0;
+            let bScore = 0;
+
+            // Signal A: StartsWith match (highest priority keyword match)
+            if (aTitle.startsWith(q)) aScore += 10;
+            if (bTitle.startsWith(q)) bScore += 10;
+
+            // Signal B: Current graph neighbors overlap
+            if (currentGraphNeighbors.some(n => n.toLowerCase() === aTitle)) aScore += 5;
+            if (currentGraphNeighbors.some(n => n.toLowerCase() === bTitle)) bScore += 5;
+
+            // Signal C: Recent searches
+            if (recents.some(r => r.toLowerCase() === aTitle)) aScore += 3;
+            if (recents.some(r => r.toLowerCase() === bTitle)) bScore += 3;
+
+            // Signal D: Trending topics
+            if (TRENDING_TOPICS.some(t => t.toLowerCase() === aTitle)) aScore += 2;
+            if (TRENDING_TOPICS.some(t => t.toLowerCase() === bTitle)) bScore += 2;
+
+            if (aScore !== bScore) {
+              return bScore - aScore; // Descending
+            }
+
+            return aTitle.localeCompare(bTitle);
+          });
+
+          setSuggestions(ranked);
         }
       } catch (err) {
         console.error("Failed to fetch autocomplete:", err);
@@ -87,7 +126,7 @@ export default function SearchBar({
     }, 250);
 
     return () => clearTimeout(handler);
-  }, [topic]);
+  }, [topic, currentGraphNeighbors, recents]);
 
   // Handle outside clicks to close overlay
   useEffect(() => {

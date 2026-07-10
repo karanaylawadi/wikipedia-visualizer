@@ -7,7 +7,7 @@ export interface PerspectiveCard {
   summary: string;
   referenceLabel: string;
   readerQuestion: string;
-  keyTakeaway?: string | null;
+  keyTakeaway: string;
 }
 
 export function getDomainCardPrompt(

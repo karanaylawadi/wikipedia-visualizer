@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import SearchBar from "@/components/SearchBar";
 import { trackSearch, trackTopicOpened } from "@/lib/gtag";
@@ -8,7 +8,21 @@ import { trackSearch, trackTopicOpened } from "@/lib/gtag";
 export default function Home() {
   const [topic, setTopic] = useState("");
   const [loading, setLoading] = useState(false);
+  const [neighbors, setNeighbors] = useState<string[]>([]);
   const router = useRouter();
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const cached = localStorage.getItem("last-topic-neighbors");
+      if (cached) {
+        try {
+          setNeighbors(JSON.parse(cached) as string[]);
+        } catch (e) {
+          console.warn("Failed to parse cached neighbors", e);
+        }
+      }
+    }
+  }, []);
 
   function handleSearch(customTopic?: string) {
     const targetTopic = (customTopic || topic).trim();
@@ -68,6 +82,7 @@ export default function Home() {
             setTopic={setTopic}
             loading={loading}
             onAnalyze={() => handleSearch()}
+            currentGraphNeighbors={neighbors}
           />
         </div>
 

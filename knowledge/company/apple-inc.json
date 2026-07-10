@@ -1,0 +1,791 @@
+{
+  "version": "16.0",
+  "compilerVersion": "v17.0",
+  "ontologyVersion": "v17.0",
+  "wikipediaRevision": "rev-1.0",
+  "wikidataRevision": "Q312",
+  "ontology": {
+    "name": "Company",
+    "labels": [
+      "Company",
+      "Company"
+    ]
+  },
+  "structuredFacts": {
+    "founder": "Compiled detail for founder",
+    "industry": "Compiled detail for industry",
+    "headquarters": "Compiled detail for headquarters",
+    "products": "Compiled detail for products",
+    "businessModel": "Compiled detail for businessModel",
+    "revenue": "Compiled detail for revenue",
+    "leadership": "Compiled detail for leadership",
+    "title": "Apple Inc.",
+    "subtitle": "American multinational technology company",
+    "leadParagraph": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, and known for consumer electronics, software and online services. Founded in 1976 as Apple Computer Company by Steve Jobs, Steve Wozniak and Ronald Wayne, the company was incorporated by Jobs and Wozniak as Apple Computer, Inc. the following year. Its current name was adopted in 2007 as the company expanded its focus from computers to consumer electronics. Apple is one of the Big Tech companies.\nThe company was founded to market Wozniak's Apple I computer. Its successor, the Apple II, became one of the first successful mass-produced microcomputers. Apple introduced the Lisa in 1983 and the Macintosh in 1984, popularizing graphical user interfaces navigated by a mouse. By 1985, internal conflicts led to Jobs leaving the company to form NeXT and Wozniak stepping back from active employment. During the 1990s, Apple lost considerable market share to lower-priced Wintel computers, Intel-powered PC clones running Windows. By 1997, Apple was reporting major losses and struggling to deliver a modernized operating system, leading Apple to acquire NeXT, which brought Jobs back to the company. Under his leadership, Apple returned to profitability through the iMac, iPod, iPhone, and iPad, the iTunes Store, the Apple Store retail chain, and the \"Think different\" advertising campaign. Jobs resigned in 2011 for health reasons and died later that year. He was succeeded as CEO by Tim Cook, who will be succeeded by John Ternus in September 2026.\nApple's product lineup includes portable and home hardware like the iPhone, iPad, Mac, Apple Watch, and AirPods; several in-house operating systems such as iOS, iPadOS, and macOS; and various software and services including Apple Pay and iCloud, as well as multimedia streaming services like Apple Music and Apple TV. Since 2011, Apple has for the most part been the world's largest company by market capitalization, and, as of 2024, is the largest manufacturing company by revenue, the fourth-largest PC vendor, the largest vendor of tablet computers, and the largest vendor of mobile phones. Apple became the first publicly traded US company to be valued at over $1 trillion in 2018, and, as of October 2025, is valued at just over $4 trillion.\nApple has received criticism regarding its contractors' labor conditions, its relationship with trade unions, its environmental practices, and its corporate ethics, including anti-competitive tactics, materials sourcing, and its acquisitions of smaller businesses. Nevertheless, the company has a large following and enjoys a high level of customer loyalty. Apple has consistently been ranked as one of the world's most valuable brands since the late 2000s.",
+    "briefSummary": "Apple Inc records confirm that Apple Inc is an American multinational technology company headquartered in Cupertino,. Apple Inc records confirm that Apple's product lineup includes portable and home hardware like the iPhone,. Apple Inc records confirm that Apple Computer was founded as a partnership on April 1, 1976,. Apple Inc remains study topic showing that final summary explaining the legacy.",
+    "cards": [
+      {
+        "title": "The Need for Apple Inc.",
+        "summary": "Apple Inc records verify that Apple Inc is an American multinational technology company headquartered in Cupertino,. This motivated early research explaining why motivating factors behind early phases of development. Subsequent investigations established that The company was founded to market Wozniak's Apple I computer Its. Because of these dynamics, details show initial events showing transition in the subject. Apple Inc data confirms that early outcomes and related findings. These changes established the basis for fundamental lessons from this period.",
+        "referenceLabel": "The",
+        "readerQuestion": "What represents the starting motivation behind Need?",
+        "keyTakeaway": "fundamental lessons from this period",
+        "provenance": [
+          {
+            "sentence": "Apple Inc records verify that Apple Inc is an American multinational technology company headquartered in Cupertino,.",
+            "fact": "Apple Inc is an American multinational technology company headquartered in Cupertino,"
+          },
+          {
+            "sentence": "This motivated early research explaining why motivating factors behind early phases of development.",
+            "fact": "motivating factors behind early phases of development"
+          },
+          {
+            "sentence": "Subsequent investigations established that The company was founded to market Wozniak's Apple I computer Its.",
+            "fact": "The company was founded to market Wozniak's Apple I computer Its"
+          },
+          {
+            "sentence": "Because of these dynamics, details show initial events showing transition in the subject.",
+            "fact": "initial events showing transition in the subject"
+          },
+          {
+            "sentence": "Apple Inc data confirms that early outcomes and related findings.",
+            "fact": "early outcomes and related findings"
+          },
+          {
+            "sentence": "These changes established the basis for fundamental lessons from this period.",
+            "fact": "fundamental lessons from this period"
+          }
+        ]
+      },
+      {
+        "title": "The Founding of Apple Inc.",
+        "summary": "Historical records confirm that Apple's product lineup includes portable and home hardware like the iPhone,. This inspired further exploration showing why key drivers behind the rising influence. Later studies verified that Apple has received criticism regarding its contractors' labor conditions, its relationship. Following these events, analysts observed that consequent progress seen during this phase. Scientific tracking confirms that secondary attributes and timeline events. This transition created the groundwork for primary insights on the rise.",
+        "referenceLabel": "The",
+        "readerQuestion": "Which factors influenced early discoveries of Founding?",
+        "keyTakeaway": "primary insights on the rise",
+        "provenance": [
+          {
+            "sentence": "Historical records confirm that Apple's product lineup includes portable and home hardware like the iPhone,.",
+            "fact": "Apple's product lineup includes portable and home hardware like the iPhone,"
+          },
+          {
+            "sentence": "This inspired further exploration showing why key drivers behind the rising influence.",
+            "fact": "key drivers behind the rising influence"
+          },
+          {
+            "sentence": "Later studies verified that Apple has received criticism regarding its contractors' labor conditions, its relationship.",
+            "fact": "Apple has received criticism regarding its contractors' labor conditions, its relationship"
+          },
+          {
+            "sentence": "Following these events, analysts observed that consequent progress seen during this phase.",
+            "fact": "consequent progress seen during this phase"
+          },
+          {
+            "sentence": "Scientific tracking confirms that secondary attributes and timeline events.",
+            "fact": "secondary attributes and timeline events"
+          },
+          {
+            "sentence": "This transition created the groundwork for primary insights on the rise.",
+            "fact": "primary insights on the rise"
+          }
+        ]
+      },
+      {
+        "title": "The Growth of Apple Inc.",
+        "summary": "Primary documentation reveals that Apple Computer was founded as a partnership on April 1, 1976,. This led observers to trace why pivotal elements supporting the peak achievements. Archival reviews showed that Wozniak demonstrated the first Apple I prototype at the Homebrew Computer. With these developments, researchers saw that resultant breakthroughs related directly to these successes. Detailed observations show that peak milestones and direct connections. This structure formed the design for core takeaways regarding this era.",
+        "referenceLabel": "The",
+        "readerQuestion": "How do key chemical processes behave during Growth?",
+        "keyTakeaway": "core takeaways regarding this era",
+        "provenance": [
+          {
+            "sentence": "Primary documentation reveals that Apple Computer was founded as a partnership on April 1, 1976,.",
+            "fact": "Apple Computer was founded as a partnership on April 1, 1976,"
+          },
+          {
+            "sentence": "This led observers to trace why pivotal elements supporting the peak achievements.",
+            "fact": "pivotal elements supporting the peak achievements"
+          },
+          {
+            "sentence": "Archival reviews showed that Wozniak demonstrated the first Apple I prototype at the Homebrew Computer.",
+            "fact": "Wozniak demonstrated the first Apple I prototype at the Homebrew Computer"
+          },
+          {
+            "sentence": "With these developments, researchers saw that resultant breakthroughs related directly to these successes.",
+            "fact": "resultant breakthroughs related directly to these successes"
+          },
+          {
+            "sentence": "Detailed observations show that peak milestones and direct connections.",
+            "fact": "peak milestones and direct connections"
+          },
+          {
+            "sentence": "This structure formed the design for core takeaways regarding this era.",
+            "fact": "core takeaways regarding this era"
+          }
+        ]
+      },
+      {
+        "title": "Competition for Apple Inc.",
+        "summary": "Factual chronicles state that Apple Computer, Inc was incorporated in Cupertino, California, on January 3,. This drove thorough inquiries explaining why underlying issues prompting the challenges faced. Recent compilations proved that The Apple II, also designed by Wozniak, was introduced on April. Under these conditions, experts noted that resulting shifts that defined the response taken. Ontology patterns map that additional challenges and resolved queries. This transition shaped the modern standard for crucial lessons on these struggles.",
+        "referenceLabel": "Competition",
+        "readerQuestion": "Why do light steps trigger under Competition?",
+        "keyTakeaway": "crucial lessons on these struggles",
+        "provenance": [
+          {
+            "sentence": "Factual chronicles state that Apple Computer, Inc was incorporated in Cupertino, California, on January 3,.",
+            "fact": "Apple Computer, Inc was incorporated in Cupertino, California, on January 3,"
+          },
+          {
+            "sentence": "This drove thorough inquiries explaining why underlying issues prompting the challenges faced.",
+            "fact": "underlying issues prompting the challenges faced"
+          },
+          {
+            "sentence": "Recent compilations proved that The Apple II, also designed by Wozniak, was introduced on April.",
+            "fact": "The Apple II, also designed by Wozniak, was introduced on April"
+          },
+          {
+            "sentence": "Under these conditions, experts noted that resulting shifts that defined the response taken.",
+            "fact": "resulting shifts that defined the response taken"
+          },
+          {
+            "sentence": "Ontology patterns map that additional challenges and resolved queries.",
+            "fact": "additional challenges and resolved queries"
+          },
+          {
+            "sentence": "This transition shaped the modern standard for crucial lessons on these struggles.",
+            "fact": "crucial lessons on these struggles"
+          }
+        ]
+      },
+      {
+        "title": "The Future of Apple Inc.",
+        "summary": "Verified sources show that On December 12, 1980, Apple became a public company through an. This prompted key factions to identify why lasting forces establishing the legacy left behind. Independent reviews confirmed that legacy outlines and subsequent records. Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject. Statistical records track that final reflections and study conclusions. This layout outlines the final outcome of final summary explaining the legacy.",
+        "referenceLabel": "The",
+        "readerQuestion": "Who validates the final outcomes regarding Future?",
+        "keyTakeaway": "final summary explaining the legacy",
+        "provenance": [
+          {
+            "sentence": "Verified sources show that On December 12, 1980, Apple became a public company through an.",
+            "fact": "On December 12, 1980, Apple became a public company through an"
+          },
+          {
+            "sentence": "This prompted key factions to identify why lasting forces establishing the legacy left behind.",
+            "fact": "lasting forces establishing the legacy left behind"
+          },
+          {
+            "sentence": "Independent reviews confirmed that legacy outlines and subsequent records.",
+            "fact": "legacy outlines and subsequent records"
+          },
+          {
+            "sentence": "Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject.",
+            "fact": "long-term outcomes that shaped the memory of the subject"
+          },
+          {
+            "sentence": "Statistical records track that final reflections and study conclusions.",
+            "fact": "final reflections and study conclusions"
+          },
+          {
+            "sentence": "This layout outlines the final outcome of final summary explaining the legacy.",
+            "fact": "final summary explaining the legacy"
+          }
+        ]
+      }
+    ]
+  },
+  "namedEntities": [
+    {
+      "name": "Apple Inc.",
+      "type": "Concept",
+      "description": "The primary resolved subject."
+    }
+  ],
+  "knowledgeGraph": [
+    {
+      "subject": "Compiled detail for founder",
+      "predicate": "FOUNDED",
+      "object": "Apple Inc."
+    },
+    {
+      "subject": "Apple Inc.",
+      "predicate": "HEADQUARTERED_IN",
+      "object": "Compiled detail for headquarters"
+    },
+    {
+      "subject": "Apple Inc.",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_1"
+    },
+    {
+      "subject": "Apple Inc.",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_2"
+    },
+    {
+      "subject": "Apple Inc.",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_3"
+    },
+    {
+      "subject": "Apple Inc.",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_4"
+    },
+    {
+      "subject": "Apple Inc.",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_5"
+    },
+    {
+      "subject": "Apple Inc.",
+      "predicate": "HAS_PROPERTY",
+      "object": "Detail_Aspect_6"
+    }
+  ],
+  "timeline": [
+    {
+      "year": "1976",
+      "headline": "Pivotal era in 1976",
+      "description": "Apple Inc. underwent core changes and reached major development in the year 1976",
+      "importance": 8,
+      "connections": [
+        "Apple Inc."
+      ],
+      "image": null
+    },
+    {
+      "year": "2007",
+      "headline": "Pivotal era in 2007",
+      "description": "Apple Inc. underwent core changes and reached major development in the year 2007",
+      "importance": 8,
+      "connections": [
+        "Apple Inc."
+      ],
+      "image": null
+    },
+    {
+      "year": "1983",
+      "headline": "Pivotal era in 1983",
+      "description": "Apple Inc. underwent core changes and reached major development in the year 1983",
+      "importance": 8,
+      "connections": [
+        "Apple Inc."
+      ],
+      "image": null
+    },
+    {
+      "year": "1984",
+      "headline": "Pivotal era in 1984",
+      "description": "Apple Inc. underwent core changes and reached major development in the year 1984",
+      "importance": 8,
+      "connections": [
+        "Apple Inc."
+      ],
+      "image": null
+    },
+    {
+      "year": "1985",
+      "headline": "Pivotal era in 1985",
+      "description": "Apple Inc. underwent core changes and reached major development in the year 1985",
+      "importance": 8,
+      "connections": [
+        "Apple Inc."
+      ],
+      "image": null
+    },
+    {
+      "year": "1997",
+      "headline": "Pivotal era in 1997",
+      "description": "Apple Inc. underwent core changes and reached major development in the year 1997",
+      "importance": 8,
+      "connections": [
+        "Apple Inc."
+      ],
+      "image": null
+    }
+  ],
+  "rankedFacts": [
+    {
+      "fact": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, and known for consumer electronics, software and online services.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The company was founded to market Wozniak's Apple I computer. Its successor, the Apple II, became one of the first successful mass-produced microcomputers.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Apple's product lineup includes portable and home hardware like the iPhone, iPad, Mac, Apple Watch, and AirPods; several in-house operating systems such as iOS, iPadOS, and macOS; and various software and services including Apple Pay and iCloud, as well as multimedia streaming services like Apple Music and Apple TV. Since 2011, Apple has for the most part been the world's largest company by market capitalization, and, as of 2024, is the largest manufacturing company by revenue, the fourth-largest PC vendor, the largest vendor of tablet computers, and the largest vendor of mobile phones.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Apple has received criticism regarding its contractors' labor conditions, its relationship with trade unions, its environmental practices, and its corporate ethics, including anti-competitive tactics, materials sourcing, and its acquisitions of smaller businesses. Nevertheless, the company has a large following and enjoys a high level of customer loyalty.",
+      "score": 0.7,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Apple Computer was founded as a partnership on April 1, 1976, by Steve Jobs, Steve Wozniak, and Ronald Wayne. The company's first product was the Apple I, designed by Wozniak and hand-built.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Wozniak demonstrated the first Apple I prototype at the Homebrew Computer Club in July 1976, where local computer retailer Byte Shop placed an order for 50 fully assembled computers. Unlike most contemporary hobbyist computers, which were sold as kits requiring assembly, the Apple I came as a pre-assembled motherboard with a CPU, RAM, and built-in video circuitry, allowing it to connect directly to a household television instead of requiring a costly computer terminal.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "Apple Computer, Inc. was incorporated in Cupertino, California, on January 3, 1977, without Wayne, who had left and sold his share of the company back to Jobs and Wozniak for $800 twelve days after its founding.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "The Apple II, also designed by Wozniak, was introduced on April 16, 1977, at the first West Coast Computer Faire. Alongside the Commodore PET 2001 and the TRS-80, it formed the \"1977 Trinity\" of influential personal computers that established the home computer market.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    },
+    {
+      "fact": "On December 12, 1980, Apple became a public company through an initial public offering (IPO) on the Nasdaq. The company sold 4.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Standard programmatic metric evaluation."
+    }
+  ],
+  "visualModules": [
+    {
+      "type": "company",
+      "title": "Company Blueprint Snapshot",
+      "data": {
+        "founder": "Compiled detail for founder",
+        "industry": "Compiled detail for industry",
+        "headquarters": "Compiled detail for headquarters",
+        "products": "Compiled detail for products",
+        "businessModel": "Compiled detail for businessModel",
+        "revenue": "Compiled detail for revenue",
+        "leadership": "Compiled detail for leadership"
+      }
+    }
+  ],
+  "narrativePlan": {
+    "chapters": [
+      {
+        "chapterIndex": 0,
+        "title": "The Need for Apple Inc.",
+        "referenceLabel": "Need",
+        "readerQuestion": "What represents the starting motivation behind Need?",
+        "objectives": [
+          "Explore the relationship with Need"
+        ],
+        "approvedFacts": [
+          "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, and known for consumer electronics, software and online services.",
+          "The company was founded to market Wozniak's Apple I computer. Its successor, the Apple II, became one of the first successful mass-produced microcomputers."
+        ],
+        "anchors": [
+          "Apple Inc.",
+          "foundation origin"
+        ]
+      },
+      {
+        "chapterIndex": 1,
+        "title": "The Founding of Apple Inc.",
+        "referenceLabel": "Founding",
+        "readerQuestion": "Which factors influenced early discoveries of Founding?",
+        "objectives": [
+          "Explore the relationship with Founding"
+        ],
+        "approvedFacts": [
+          "Apple's product lineup includes portable and home hardware like the iPhone, iPad, Mac, Apple Watch, and AirPods; several in-house operating systems such as iOS, iPadOS, and macOS; and various software and services including Apple Pay and iCloud, as well as multimedia streaming services like Apple Music and Apple TV. Since 2011, Apple has for the most part been the world's largest company by market capitalization, and, as of 2024, is the largest manufacturing company by revenue, the fourth-largest PC vendor, the largest vendor of tablet computers, and the largest vendor of mobile phones.",
+          "Apple has received criticism regarding its contractors' labor conditions, its relationship with trade unions, its environmental practices, and its corporate ethics, including anti-competitive tactics, materials sourcing, and its acquisitions of smaller businesses. Nevertheless, the company has a large following and enjoys a high level of customer loyalty."
+        ],
+        "anchors": [
+          "Apple Inc.",
+          "historical timeline"
+        ]
+      },
+      {
+        "chapterIndex": 2,
+        "title": "The Growth of Apple Inc.",
+        "referenceLabel": "Growth",
+        "readerQuestion": "How do key chemical processes behave during Growth?",
+        "objectives": [
+          "Explore the relationship with Growth"
+        ],
+        "approvedFacts": [
+          "Apple Computer was founded as a partnership on April 1, 1976, by Steve Jobs, Steve Wozniak, and Ronald Wayne. The company's first product was the Apple I, designed by Wozniak and hand-built.",
+          "Wozniak demonstrated the first Apple I prototype at the Homebrew Computer Club in July 1976, where local computer retailer Byte Shop placed an order for 50 fully assembled computers. Unlike most contemporary hobbyist computers, which were sold as kits requiring assembly, the Apple I came as a pre-assembled motherboard with a CPU, RAM, and built-in video circuitry, allowing it to connect directly to a household television instead of requiring a costly computer terminal."
+        ],
+        "anchors": [
+          "Apple Inc.",
+          "reaction mechanism"
+        ]
+      },
+      {
+        "chapterIndex": 3,
+        "title": "Competition for Apple Inc.",
+        "referenceLabel": "Competition",
+        "readerQuestion": "Why do light steps trigger under Competition?",
+        "objectives": [
+          "Explore the relationship with Competition"
+        ],
+        "approvedFacts": [
+          "Apple Computer, Inc. was incorporated in Cupertino, California, on January 3, 1977, without Wayne, who had left and sold his share of the company back to Jobs and Wozniak for $800 twelve days after its founding.",
+          "The Apple II, also designed by Wozniak, was introduced on April 16, 1977, at the first West Coast Computer Faire. Alongside the Commodore PET 2001 and the TRS-80, it formed the \"1977 Trinity\" of influential personal computers that established the home computer market."
+        ],
+        "anchors": [
+          "Apple Inc.",
+          "energy transition"
+        ]
+      },
+      {
+        "chapterIndex": 4,
+        "title": "The Future of Apple Inc.",
+        "referenceLabel": "Future",
+        "readerQuestion": "Who validates the final outcomes regarding Future?",
+        "objectives": [
+          "Explore the relationship with Future"
+        ],
+        "approvedFacts": [
+          "On December 12, 1980, Apple became a public company through an initial public offering (IPO) on the Nasdaq. The company sold 4."
+        ],
+        "anchors": [
+          "Apple Inc.",
+          "modern application"
+        ]
+      }
+    ]
+  },
+  "triviaCandidates": [
+    {
+      "fact": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, and known for consumer electronics, software and online services.",
+      "surpriseScore": 10,
+      "readMoreTopic": "100% renewable energy"
+    },
+    {
+      "fact": "The company was founded to market Wozniak's Apple I computer. Its successor, the Apple II, became one of the first successful mass-produced microcomputers.",
+      "surpriseScore": 9,
+      "readMoreTopic": "1234 (Feist song)"
+    },
+    {
+      "fact": "Apple's product lineup includes portable and home hardware like the iPhone, iPad, Mac, Apple Watch, and AirPods; several in-house operating systems such as iOS, iPadOS, and macOS; and various software and services including Apple Pay and iCloud, as well as multimedia streaming services like Apple Music and Apple TV. Since 2011, Apple has for the most part been the world's largest company by market capitalization, and, as of 2024, is the largest manufacturing company by revenue, the fourth-largest PC vendor, the largest vendor of tablet computers, and the largest vendor of mobile phones.",
+      "surpriseScore": 8,
+      "readMoreTopic": "1977 Trinity"
+    },
+    {
+      "fact": "Apple has received criticism regarding its contractors' labor conditions, its relationship with trade unions, its environmental practices, and its corporate ethics, including anti-competitive tactics, materials sourcing, and its acquisitions of smaller businesses. Nevertheless, the company has a large following and enjoys a high level of customer loyalty.",
+      "surpriseScore": 7,
+      "readMoreTopic": "1984 (advertisement)"
+    },
+    {
+      "fact": "Apple Computer was founded as a partnership on April 1, 1976, by Steve Jobs, Steve Wozniak, and Ronald Wayne. The company's first product was the Apple I, designed by Wozniak and hand-built.",
+      "surpriseScore": 6,
+      "readMoreTopic": "1984 (television commercial)"
+    },
+    {
+      "fact": "Wozniak demonstrated the first Apple I prototype at the Homebrew Computer Club in July 1976, where local computer retailer Byte Shop placed an order for 50 fully assembled computers. Unlike most contemporary hobbyist computers, which were sold as kits requiring assembly, the Apple I came as a pre-assembled motherboard with a CPU, RAM, and built-in video circuitry, allowing it to connect directly to a household television instead of requiring a costly computer terminal.",
+      "surpriseScore": 5,
+      "readMoreTopic": "1989 South Florida television affiliation switch"
+    },
+    {
+      "fact": "Apple Computer, Inc. was incorporated in Cupertino, California, on January 3, 1977, without Wayne, who had left and sold his share of the company back to Jobs and Wozniak for $800 twelve days after its founding.",
+      "surpriseScore": 4,
+      "readMoreTopic": "1994–1996 United States broadcast television realignment"
+    },
+    {
+      "fact": "The Apple II, also designed by Wozniak, was introduced on April 16, 1977, at the first West Coast Computer Faire. Alongside the Commodore PET 2001 and the TRS-80, it formed the \"1977 Trinity\" of influential personal computers that established the home computer market.",
+      "surpriseScore": 3,
+      "readMoreTopic": "2001 Vancouver TV realignment"
+    },
+    {
+      "fact": "The Apple II became Apple's first major commercial success following the 1979 release of VisiCalc, the first widely adopted spreadsheet program and one of the earliest personal computer \"killer applications\". Initially available exclusively for the Apple II, VisiCalc transformed the computer into a popular business tool and helped establish Apple in the growing personal computer industry.",
+      "surpriseScore": 2,
+      "readMoreTopic": "2006 United States broadcast television realignment"
+    },
+    {
+      "fact": "On December 12, 1980, Apple became a public company through an initial public offering (IPO) on the Nasdaq. The company sold 4.",
+      "surpriseScore": 1,
+      "readMoreTopic": "2007 Canada broadcast TV realignment"
+    }
+  ],
+  "relatedTopics": [
+    "100% renewable energy",
+    "1234 (Feist song)",
+    "1977 Trinity",
+    "1984 (advertisement)",
+    "1984 (television commercial)",
+    "1989 South Florida television affiliation switch",
+    "1994–1996 United States broadcast television realignment",
+    "2001 Vancouver TV realignment"
+  ],
+  "confidenceScores": {
+    "resolver": 0.96,
+    "compiler": 0.95,
+    "grader": 0.7,
+    "overall": 0.92
+  },
+  "checksum": "a57f1b1a646b82bab61c520f4a3748ff1754dfaad196f466fc16838b1cdcb869",
+  "dependencyHash": "c2bcea50b9c303de17206f815065ee94203b4a69cdbd81526cd40e7087af6bf1",
+  "sourceReferences": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Apple%20Inc.",
+      "title": "Apple Inc."
+    }
+  ],
+  "factScript": {
+    "chapters": [
+      {
+        "chapterTitle": "The Need for Apple Inc.",
+        "questionAnswered": "What represents the starting motivation behind Need?",
+        "chronologicalPosition": 1,
+        "entities": [
+          "Apple Inc."
+        ],
+        "dates": [
+          "1976",
+          "2007"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "motivating factors behind early phases of development",
+        "effect": "initial events showing transition in the subject",
+        "keyFacts": [
+          "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, and known for consumer electronics, software and online services.",
+          "The company was founded to market Wozniak's Apple I computer. Its successor, the Apple II, became one of the first successful mass-produced microcomputers."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "fundamental lessons from this period"
+      },
+      {
+        "chapterTitle": "The Founding of Apple Inc.",
+        "questionAnswered": "Which factors influenced early discoveries of Founding?",
+        "chronologicalPosition": 2,
+        "entities": [
+          "Apple Inc."
+        ],
+        "dates": [
+          "2007",
+          "1983"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "key drivers behind the rising influence",
+        "effect": "consequent progress seen during this phase",
+        "keyFacts": [
+          "Apple's product lineup includes portable and home hardware like the iPhone, iPad, Mac, Apple Watch, and AirPods; several in-house operating systems such as iOS, iPadOS, and macOS; and various software and services including Apple Pay and iCloud, as well as multimedia streaming services like Apple Music and Apple TV. Since 2011, Apple has for the most part been the world's largest company by market capitalization, and, as of 2024, is the largest manufacturing company by revenue, the fourth-largest PC vendor, the largest vendor of tablet computers, and the largest vendor of mobile phones.",
+          "Apple has received criticism regarding its contractors' labor conditions, its relationship with trade unions, its environmental practices, and its corporate ethics, including anti-competitive tactics, materials sourcing, and its acquisitions of smaller businesses. Nevertheless, the company has a large following and enjoys a high level of customer loyalty."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "primary insights on the rise"
+      },
+      {
+        "chapterTitle": "The Growth of Apple Inc.",
+        "questionAnswered": "How do key chemical processes behave during Growth?",
+        "chronologicalPosition": 3,
+        "entities": [
+          "Apple Inc."
+        ],
+        "dates": [
+          "1983",
+          "1984"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "pivotal elements supporting the peak achievements",
+        "effect": "resultant breakthroughs related directly to these successes",
+        "keyFacts": [
+          "Apple Computer was founded as a partnership on April 1, 1976, by Steve Jobs, Steve Wozniak, and Ronald Wayne. The company's first product was the Apple I, designed by Wozniak and hand-built.",
+          "Wozniak demonstrated the first Apple I prototype at the Homebrew Computer Club in July 1976, where local computer retailer Byte Shop placed an order for 50 fully assembled computers. Unlike most contemporary hobbyist computers, which were sold as kits requiring assembly, the Apple I came as a pre-assembled motherboard with a CPU, RAM, and built-in video circuitry, allowing it to connect directly to a household television instead of requiring a costly computer terminal."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "core takeaways regarding this era"
+      },
+      {
+        "chapterTitle": "Competition for Apple Inc.",
+        "questionAnswered": "Why do light steps trigger under Competition?",
+        "chronologicalPosition": 4,
+        "entities": [
+          "Apple Inc."
+        ],
+        "dates": [
+          "1984",
+          "1985"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "underlying issues prompting the challenges faced",
+        "effect": "resulting shifts that defined the response taken",
+        "keyFacts": [
+          "Apple Computer, Inc. was incorporated in Cupertino, California, on January 3, 1977, without Wayne, who had left and sold his share of the company back to Jobs and Wozniak for $800 twelve days after its founding.",
+          "The Apple II, also designed by Wozniak, was introduced on April 16, 1977, at the first West Coast Computer Faire. Alongside the Commodore PET 2001 and the TRS-80, it formed the \"1977 Trinity\" of influential personal computers that established the home computer market."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "crucial lessons on these struggles"
+      },
+      {
+        "chapterTitle": "The Future of Apple Inc.",
+        "questionAnswered": "Who validates the final outcomes regarding Future?",
+        "chronologicalPosition": 5,
+        "entities": [
+          "Apple Inc."
+        ],
+        "dates": [
+          "1985",
+          "1997"
+        ],
+        "locations": [],
+        "people": [],
+        "events": [],
+        "cause": "lasting forces establishing the legacy left behind",
+        "effect": "long-term outcomes that shaped the memory of the subject",
+        "keyFacts": [
+          "On December 12, 1980, Apple became a public company through an initial public offering (IPO) on the Nasdaq. The company sold 4."
+        ],
+        "quotes": [],
+        "connections": [],
+        "takeaway": "final summary explaining the legacy"
+      }
+    ]
+  },
+  "briefSummaryProvenance": [
+    {
+      "sentence": "Apple Inc records confirm that Apple Inc is an American multinational technology company headquartered in Cupertino,.",
+      "fact": "Apple Inc is an American multinational technology company headquartered in Cupertino,"
+    },
+    {
+      "sentence": "Apple Inc records confirm that Apple's product lineup includes portable and home hardware like the iPhone,.",
+      "fact": "Apple's product lineup includes portable and home hardware like the iPhone,"
+    },
+    {
+      "sentence": "Apple Inc records confirm that Apple Computer was founded as a partnership on April 1, 1976,.",
+      "fact": "Apple Computer was founded as a partnership on April 1, 1976,"
+    },
+    {
+      "sentence": "Apple Inc remains study topic showing that final summary explaining the legacy.",
+      "fact": "final summary explaining the legacy"
+    }
+  ],
+  "validationStatus": {
+    "passed": true,
+    "errors": [],
+    "warnings": [
+      "Timeline is not in strict chronological order"
+    ],
+    "checkedRules": {
+      "ontology_match": true,
+      "required_fields_exist": true,
+      "timeline_non_empty": true,
+      "timeline_count_bounds": true,
+      "timeline_chronological": false,
+      "graph_has_triples": true,
+      "graph_connected": true,
+      "named_entities_non_empty": true,
+      "no_weak_facts": true,
+      "no_duplicate_facts": true,
+      "no_duplicate_sentences": true,
+      "no_placeholder_wording": true,
+      "generic_wording_check": true,
+      "paragraph_length_limit": true,
+      "unique_chapter_titles": true,
+      "concrete_dates_names_present": true,
+      "no_repeated_phrases": true,
+      "no_timeline_milestone_placeholder": true,
+      "did_you_know_length_ok": true,
+      "sentence_provenance_ok": true,
+      "no_abstract_writing": true,
+      "documentary_alternating_rule": true,
+      "fact_density_met": true,
+      "curiosity_score_ok": true,
+      "documentary_score_ok": true,
+      "resolver_confidence_ok": true,
+      "compiler_confidence_ok": true,
+      "overall_confidence_ok": true
+    },
+    "timestamp": "2026-07-10T06:47:58.568Z"
+  }
+}

@@ -5,8 +5,8 @@ import type { KnowledgeArtifact } from "@/types/knowledge";
 import { createCacheKey } from "../editorial/cache";
 
 const BASE_DIR = path.join(process.cwd(), "knowledge");
-export const COMPILER_VERSION = "v15.0";
-export const ONTOLOGY_VERSION = "v15.0";
+export const COMPILER_VERSION = "v17.0";
+export const ONTOLOGY_VERSION = "v17.0";
 
 // Normalize ontology name to directory name (e.g. "Historical Event" -> "historical_event")
 function getOntologyDirName(ontologyName: string): string {
@@ -34,7 +34,7 @@ export function loadLocalArtifact(ontologyName: string, topicTitle: string): Kno
 }
 
 export function saveLocalArtifact(artifact: KnowledgeArtifact): void {
-  const filePath = getArtifactPath(artifact.ontology.name, artifact.ontology.labels[1] || artifact.structuredFacts.title || "general");
+  const filePath = getArtifactPath(artifact.ontology.name, artifact.structuredFacts.title || artifact.ontology.labels[0] || "general");
   const dirPath = path.dirname(filePath);
   if (!fs.existsSync(dirPath)) {
     fs.mkdirSync(dirPath, { recursive: true });

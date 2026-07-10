@@ -112,7 +112,7 @@ export async function POST(request: Request) {
       categories: artifact.ontology.labels,
       majorSections: artifact.sourceReferences.map(r => r.title),
       relatedArticles: artifact.relatedTopics,
-      importantDates: artifact.timeline.map((t) => `${t.year}: ${t.event}`),
+      importantDates: artifact.timeline.map((t) => `${t.year}: ${t.headline}`),
       extractSummary: artifact.structuredFacts.briefSummary,
       statistics: artifact.rankedFacts.filter((f) => /\d/.test(f.fact)).map((f) => f.fact),
       keyPeople: artifact.namedEntities.filter((e) => e.type === "Person").map((e) => e.name),
