@@ -1,0 +1,1444 @@
+{
+  "version": "18.0",
+  "compilerVersion": "v18.0",
+  "ontologyVersion": "v18.0",
+  "wikipediaRevision": "rev-1.0",
+  "wikidataRevision": "Q13417189",
+  "ontology": {
+    "name": "Movie",
+    "labels": [
+      "Movie",
+      "Movie"
+    ]
+  },
+  "structuredFacts": {
+    "director": [
+      "Christopher Nolan"
+    ],
+    "cast": [
+      "Matthew McConaughey (as Joseph \"Coop\" Cooper)",
+      "Anne Hathaway (as Dr. Amelia Brand)",
+      "Jessica Chastain (as Murphy \"Murph\" Cooper)",
+      "Ellen Burstyn (as elderly Murph)",
+      "Mackenzie Foy (as 10-year-old Murph)",
+      "John Lithgow (as Donald)",
+      "Michael Caine (as Professor John Brand)",
+      "Casey Affleck (as Tom Cooper)",
+      "Timothée Chalamet (as 15-year-old Tom)",
+      "Wes Bentley (as Doyle)",
+      "Bill Irwin (as TARS and CASE)",
+      "Topher Grace (as Getty)",
+      "David Gyasi (as Professor Romilly)",
+      "Matt Damon (as Dr. Mann)",
+      "Josh Stewart (as voice of CASE)",
+      "Leah Cairns (as Lois)",
+      "Liam Dickinson (as Coop)",
+      "David Oyelowo (as school principal)",
+      "Collette Wolfe (as Ms. Hanley)",
+      "Francis X. McCarthy (as Boots)",
+      "William Devane (as Williams)",
+      "Elyes Gabel (as Cooper Station administrator)",
+      "Lennart Nowak (as Tom's cousin)",
+      "Jeff Hephner (as Cooper Station doctor)"
+    ],
+    "composer": [],
+    "themes": [
+      "Dystopian future",
+      "Catastrophic blight and famine",
+      "Intergalactic space travel",
+      "Search for a habitable planet",
+      "Time dilation and gravity",
+      "Human survival and extinction"
+    ],
+    "awards": [
+      "Academy Award for Best Visual Effects (87th Academy Awards)",
+      "Nominated for four other Academy Awards"
+    ],
+    "reception": [
+      "Generally positive reviews from critics",
+      "Commercial success, grossing $681 million worldwide during its initial theatrical run",
+      "Grossed $774.7 million worldwide with subsequent releases",
+      "10th-highest-grossing film of 2014"
+    ],
+    "legacy": [
+      "Lynda Obst's final film as a producer before her death"
+    ],
+    "title": "Interstellar (film)",
+    "subtitle": "2014 film by Christopher Nolan",
+    "leadParagraph": "Interstellar is a 2014 epic science fiction film directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan Nolan. It has an ensemble cast led by Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, and Michael Caine. Set in a dystopian future where Earth is suffering from catastrophic blight and famine, the film follows a group of astronauts who travel through space in search of a new home for humanity.\nThe film began development in 2006 from a treatment by producer Lynda Obst and theoretical physicist Kip Thorne, and was originally set to be directed by Steven Spielberg. Thorne served as an executive producer and scientific consultant on the film, and wrote the tie-in book The Science of Interstellar. It was Obst's final film as producer before her death. Cinematographer Hoyte van Hoytema shot it on 35 mm film in the Panavision anamorphic format and IMAX 70 mm. Filming began in late 2013 and took place in Alberta, Klaustur, and Los Angeles. Interstellar uses extensive practical and miniature effects, and the company DNEG created additional visual effects.\nInterstellar premiered at the TCL Chinese Theatre on October 26, 2014, and was released in theaters in the United States on November 5, and in the United Kingdom on November 7, with Paramount Pictures distributing in the United States and Warner Bros. Pictures distributing in international markets. In the United States, it was first released on film stock, expanding to venues using digital projectors. It was a commercial success, grossing $681 million worldwide during its initial theatrical run, and $774.7 million worldwide with subsequent releases, making it the 10th-highest-grossing film of 2014. The film received generally positive reviews from critics. Among its various accolades, Interstellar was nominated for five awards at the 87th Academy Awards, winning Best Visual Effects.",
+    "briefSummary": "Although Steven Spielberg was originally attached to direct a new science fiction film in 2006—a project born from a treatment by producer Lynda Obst and theoretical physicist Kip Thorne—Christopher Nolan ultimately took the helm for the 2014 epic, Interstellar. Starring Matthew McConaughey, Anne Hathaway, and Jessica Chastain, the film is set in the dystopian year of 2067, where Earth ravages under catastrophic blight, dust storms, and severe famine. When former pilot Cooper is recruited to guide a spacecraft through a wormhole near Saturn, a desperate journey begins. Ultimately, the film grossed over $774 million worldwide and won the Academy Award for Best Visual Effects.",
+    "cards": [
+      {
+        "title": "Interstellar and the Cosmic Odyssey",
+        "summary": "Directed by Christopher Nolan, the 2014 epic science fiction film Interstellar stars Matthew McConaughey and Anne Hathaway. Humanity faces extinction on a dying Earth in the dystopian future of 2067, threatened by a catastrophic blight and famine. This grim setting serves as the backdrop for a world plagued by severe, relentless starvation. To save the human race, NASA dispatches a crew of astronauts through a wormhole near Saturn in search of a habitable planet. Former pilot Cooper is recruited for this secret mission, tasked with steering a spacecraft through the distant cosmic gateway. Ultimately, the survival of the species depends on this desperate journey beyond our galaxy.",
+        "referenceLabel": "Story",
+        "readerQuestion": "What is the narrative premise of the film and who are the key characters embarking on this cosmic journey?",
+        "keyTakeaway": "Humanity's survival depends on a desperate journey beyond our galaxy.",
+        "provenance": [
+          {
+            "sentence": "Directed by Christopher Nolan, the 2014 epic science fiction film Interstellar stars Matthew McConaughey and Anne Hathaway.",
+            "fact": "Interstellar is a 2014 epic science fiction film directed by Christopher Nolan and starring Matthew McConaughey, Anne Hathaway, and Jessica Chastain."
+          },
+          {
+            "sentence": "Humanity faces extinction on a dying Earth in the dystopian future of 2067, threatened by a catastrophic blight and famine.",
+            "fact": "A catastrophic blight and famine in the dystopian future of 2067 threaten humanity with extinction on a dying Earth."
+          },
+          {
+            "sentence": "This grim setting serves as the backdrop for a world plagued by severe, relentless starvation.",
+            "fact": "The film is set in the dystopian year of 2067, where Earth is plagued by catastrophic blight, dust storms, and severe famine."
+          },
+          {
+            "sentence": "To save the human race, NASA dispatches a crew of astronauts through a wormhole near Saturn in search of a habitable planet.",
+            "fact": "NASA dispatches a crew of astronauts through a wormhole near Saturn to find a habitable planet to save the human race."
+          },
+          {
+            "sentence": "Former pilot Cooper is recruited for this secret mission, tasked with steering a spacecraft through the distant cosmic gateway.",
+            "fact": "Former pilot Cooper is recruited to join a secret NASA mission to pilot a spacecraft through a wormhole located near Saturn."
+          },
+          {
+            "sentence": "Ultimately, the survival of the species depends on this desperate journey beyond our galaxy.",
+            "fact": "Humanity's survival depends on a desperate journey beyond our galaxy."
+          }
+        ]
+      },
+      {
+        "title": "From Blind Date To IMAX",
+        "summary": "In 1980, Carl Sagan arranged a blind date between producer Lynda Obst and theoretical physicist Kip Thorne. This unexpected pairing sparked a scientifically grounded film concept that soon attracted top-tier Hollywood directors. Although Steven Spielberg was originally attached to direct when development first started in 2006, the project eventually evolved far beyond this early phase. It ultimately became a visually spectacular reality captured through advanced large-format film techniques. Cinematographer Hoyte van Hoytema shot the movie using a mix of Panavision anamorphic and IMAX 70 mm. In the end, scientific collaboration and bold cinematography defined the film's physical creation.",
+        "referenceLabel": "Production",
+        "readerQuestion": "How did a scientific partnership and cinematic vision shape the physical creation of the film?",
+        "keyTakeaway": "Scientific collaboration and bold cinematography defined the film's physical creation.",
+        "provenance": [
+          {
+            "sentence": "In 1980, Carl Sagan arranged a blind date between producer Lynda Obst and theoretical physicist Kip Thorne.",
+            "fact": "The film's concept originated from a blind date between producer Lynda Obst and theoretical physicist Kip Thorne, set up by Carl Sagan."
+          },
+          {
+            "sentence": "This unexpected pairing sparked a scientifically grounded film concept that soon attracted top-tier Hollywood directors.",
+            "fact": "A blind date arranged by Carl Sagan brought together a producer and a physicist, sparking a scientifically grounded film concept that attracted top-tier Hollywood directors."
+          },
+          {
+            "sentence": "Although Steven Spielberg was originally attached to direct when development first started in 2006, the project eventually evolved far beyond this early phase.",
+            "fact": "Steven Spielberg was originally attached to direct the film when development first started in 2006."
+          },
+          {
+            "sentence": "It ultimately became a visually spectacular reality captured through advanced large-format film techniques.",
+            "fact": "The project evolved from an early Spielberg development phase into a visually spectacular reality shot by Hoyte van Hoytema using advanced large-format film techniques."
+          },
+          {
+            "sentence": "Cinematographer Hoyte van Hoytema shot the movie using a mix of Panavision anamorphic and IMAX 70 mm.",
+            "fact": "Cinematographer Hoyte van Hoytema shot the film using a mix of 35 mm film in Panavision anamorphic format and IMAX 70 mm."
+          },
+          {
+            "sentence": "In the end, scientific collaboration and bold cinematography defined the film's physical creation.",
+            "fact": "Scientific collaboration and bold cinematography defined the film's physical creation."
+          }
+        ]
+      },
+      {
+        "title": "Interstellar's Global Launch",
+        "summary": "The TCL Chinese Theatre hosted the film's world premiere on October 26, 2014 . Paramount Pictures and Warner Bros. Pictures partnered to launch Christopher Nolan's sci-fi epic globally . The theatrical rollout began in the United States on November 5, 2014, and reached the United Kingdom on November 7, 2014 . This strategic release helped the film gross hundreds of millions of dollars during its initial run . Paramount Pictures and Warner Bros. Pictures served as the major studio distribution partners for the theatrical release . Ultimately, Interstellar debuted globally in late 2014 to massive success .",
+        "referenceLabel": "Release",
+        "readerQuestion": "When and how did the film make its grand debut to global audiences?",
+        "keyTakeaway": "Interstellar debuted globally in late 2014 to massive success.",
+        "provenance": [
+          {
+            "sentence": "The TCL Chinese Theatre hosted the film's world premiere on October 26, 2014 .",
+            "fact": "The film held its world premiere at the TCL Chinese Theatre on October 26, 2014."
+          },
+          {
+            "sentence": "Paramount Pictures and Warner Bros.",
+            "fact": "The film held its world premiere at the TCL Chinese Theatre on October 26, 2014."
+          },
+          {
+            "sentence": "Pictures partnered to launch Christopher Nolan's sci-fi epic globally .",
+            "fact": "A distribution partnership between Paramount Pictures and Warner Bros. Pictures was established to launch Christopher Nolan's sci-fi epic globally."
+          },
+          {
+            "sentence": "The theatrical rollout began in the United States on November 5, 2014, and reached the United Kingdom on November 7, 2014 .",
+            "fact": "The theatrical rollout began in the United States on November 5, 2014, followed by the United Kingdom on November 7, 2014."
+          },
+          {
+            "sentence": "This strategic release helped the film gross hundreds of millions of dollars during its initial run .",
+            "fact": "The film achieved massive global reach, grossing hundreds of millions of dollars during its initial theatrical run."
+          },
+          {
+            "sentence": "Paramount Pictures and Warner Bros.",
+            "fact": "The film held its world premiere at the TCL Chinese Theatre on October 26, 2014."
+          },
+          {
+            "sentence": "Pictures served as the major studio distribution partners for the theatrical release .",
+            "fact": "Paramount Pictures and Warner Bros. Pictures served as the major studio distribution partners for the theatrical release."
+          },
+          {
+            "sentence": "Ultimately, Interstellar debuted globally in late 2014 to massive success .",
+            "fact": "Interstellar debuted globally in late 2014 to massive success."
+          }
+        ]
+      },
+      {
+        "title": "Interstellar's Global Cinematic Triumph",
+        "summary": "Christopher Nolan's ambitious sci-fi epic captured massive audience attention and critical acclaim for its groundbreaking scientific realism and visual effects. Grossing $681 million worldwide during its initial theatrical run, the film eventually reached $774.7 million after subsequent re-releases. This massive commercial success propelled the film to rank as the 10th-highest-grossing film of 2014 globally. Audiences and critics worldwide embraced the spectacle, securing prestigious industry recognition and culminating in an Academy Award win. At the 87th Academy Awards, the film received five nominations, winning the Oscar for Best Visual Effects. Ultimately, Interstellar achieved massive global box office success and Oscar glory.",
+        "referenceLabel": "Reception",
+        "readerQuestion": "How did critics, global audiences, and the Academy receive the sci-fi epic?",
+        "keyTakeaway": "Interstellar achieved massive global box office success and Oscar glory.",
+        "provenance": [
+          {
+            "sentence": "Christopher Nolan's ambitious sci-fi epic captured massive audience attention and critical acclaim for its groundbreaking scientific realism and visual effects.",
+            "fact": "The global theatrical release of Christopher Nolan's ambitious sci-fi epic captured massive audience attention and critical acclaim for its groundbreaking scientific realism and visual effects."
+          },
+          {
+            "sentence": "Grossing $681 million worldwide during its initial theatrical run, the film eventually reached $774.7 million after subsequent re-releases.",
+            "fact": "Grossed $681 million worldwide during its initial theatrical run, eventually reaching $774.7 million after subsequent re-releases."
+          },
+          {
+            "sentence": "This massive commercial success propelled the film to rank as the 10th-highest-grossing film of 2014 globally.",
+            "fact": "Ranked as the 10th-highest-grossing film of 2014 globally."
+          },
+          {
+            "sentence": "Audiences and critics worldwide embraced the spectacle, securing prestigious industry recognition and culminating in an Academy Award win.",
+            "fact": "The film achieved immense commercial success worldwide and secured prestigious industry recognition, culminating in an Academy Award win."
+          },
+          {
+            "sentence": "At the 87th Academy Awards, the film received five nominations, winning the Oscar for Best Visual Effects.",
+            "fact": "Received five nominations at the 87th Academy Awards, winning the Oscar for Best Visual Effects."
+          },
+          {
+            "sentence": "Ultimately, Interstellar achieved massive global box office success and Oscar glory.",
+            "fact": "Interstellar achieved massive global box office success and Oscar glory."
+          }
+        ]
+      },
+      {
+        "title": "Lynda Obst's Final Cosmic Journey",
+        "summary": "Interstellar stands as the final film produced by Lynda Obst before her passing. To conceive this scientifically grounded space exploration epic, Obst had collaborated with physicist Kip Thorne as early as 2006. Their partnership originated that same year from a treatment the producer and theoretical physicist co-wrote together. Ultimately, the film achieved massive critical and commercial success, securing its place as a landmark science fiction masterpiece and the crowning achievement of Obst's career. It went on to gross over $774 million worldwide and won the Academy Award for Best Visual Effects. Today, Interstellar remains Obst's final, monumental cinematic legacy.",
+        "referenceLabel": "Legacy",
+        "readerQuestion": "What is the lasting significance of the film in the career of its pioneering producer?",
+        "keyTakeaway": "Interstellar stands as Lynda Obst's final, monumental cinematic legacy.",
+        "provenance": [
+          {
+            "sentence": "Interstellar stands as the final film produced by Lynda Obst before her passing.",
+            "fact": "Interstellar served as the final film produced by Lynda Obst before her death."
+          },
+          {
+            "sentence": "To conceive this scientifically grounded space exploration epic, Obst had collaborated with physicist Kip Thorne as early as 2006.",
+            "fact": "Producer Lynda Obst collaborated with physicist Kip Thorne in 2006 to conceive a scientifically grounded space exploration epic."
+          },
+          {
+            "sentence": "Their partnership originated that same year from a treatment the producer and theoretical physicist co-wrote together.",
+            "fact": "The project originated in 2006 from a treatment co-conceived by Lynda Obst and theoretical physicist Kip Thorne."
+          },
+          {
+            "sentence": "Ultimately, the film achieved massive critical and commercial success, securing its place as a landmark science fiction masterpiece and the crowning achievement of Obst's career.",
+            "fact": "The film achieved massive critical and commercial success, securing its place as a landmark science fiction masterpiece and the crowning final achievement of Obst's career."
+          },
+          {
+            "sentence": "It went on to gross over $774 million worldwide and won the Academy Award for Best Visual Effects.",
+            "fact": "The film went on to gross over $774 million worldwide and won the Academy Award for Best Visual Effects."
+          },
+          {
+            "sentence": "Today, Interstellar remains Obst's final, monumental cinematic legacy.",
+            "fact": "Interstellar stands as Lynda Obst's final, monumental cinematic legacy."
+          }
+        ]
+      }
+    ]
+  },
+  "namedEntities": [
+    {
+      "name": "Christopher Nolan",
+      "type": "Person",
+      "description": "Director and co-writer of Interstellar."
+    },
+    {
+      "name": "Jonathan Nolan",
+      "type": "Person",
+      "description": "Co-writer of the screenplay and brother of Christopher Nolan."
+    },
+    {
+      "name": "Matthew McConaughey",
+      "type": "Person",
+      "description": "Lead actor who plays Joseph Cooper."
+    },
+    {
+      "name": "Anne Hathaway",
+      "type": "Person",
+      "description": "Actress who plays Dr. Amelia Brand."
+    },
+    {
+      "name": "Jessica Chastain",
+      "type": "Person",
+      "description": "Actress who plays Murphy Cooper."
+    },
+    {
+      "name": "Kip Thorne",
+      "type": "Person",
+      "description": "Theoretical physicist, executive producer, and scientific consultant for the film."
+    },
+    {
+      "name": "Lynda Obst",
+      "type": "Person",
+      "description": "Producer who conceived the film's premise alongside Kip Thorne."
+    },
+    {
+      "name": "Steven Spielberg",
+      "type": "Person",
+      "description": "Director originally attached to direct the film in 2006."
+    },
+    {
+      "name": "Hoyte van Hoytema",
+      "type": "Person",
+      "description": "Cinematographer who shot the film on 35 mm and IMAX 70 mm."
+    },
+    {
+      "name": "DNEG",
+      "type": "Org",
+      "description": "Visual effects company that worked on the film."
+    },
+    {
+      "name": "Paramount Pictures",
+      "type": "Org",
+      "description": "Distributor of the film in the United States."
+    },
+    {
+      "name": "Warner Bros. Pictures",
+      "type": "Org",
+      "description": "Distributor of the film in international markets."
+    },
+    {
+      "name": "TCL Chinese Theatre",
+      "type": "Place",
+      "description": "The venue where the film premiered on October 26, 2014."
+    }
+  ],
+  "knowledgeGraph": [
+    {
+      "subject": "Christopher Nolan",
+      "predicate": "DIRECTED",
+      "object": "Interstellar (film)"
+    },
+    {
+      "subject": "Christopher Nolan",
+      "predicate": "CO_WROTE",
+      "object": "Interstellar (film)"
+    },
+    {
+      "subject": "Jonathan Nolan",
+      "predicate": "CO_WROTE",
+      "object": "Interstellar (film)"
+    },
+    {
+      "subject": "Matthew McConaughey",
+      "predicate": "STARRED_IN",
+      "object": "Interstellar (film)"
+    },
+    {
+      "subject": "Anne Hathaway",
+      "predicate": "STARRED_IN",
+      "object": "Interstellar (film)"
+    },
+    {
+      "subject": "Jessica Chastain",
+      "predicate": "STARRED_IN",
+      "object": "Interstellar (film)"
+    },
+    {
+      "subject": "Kip Thorne",
+      "predicate": "SERVED_AS_CONSULTANT_FOR",
+      "object": "Interstellar (film)"
+    },
+    {
+      "subject": "Lynda Obst",
+      "predicate": "PRODUCED",
+      "object": "Interstellar (film)"
+    },
+    {
+      "subject": "Hoyte van Hoytema",
+      "predicate": "SERVED_AS_CINEMATOGRAPHER_FOR",
+      "object": "Interstellar (film)"
+    },
+    {
+      "subject": "DNEG",
+      "predicate": "CREATED_VISUAL_EFFECTS_FOR",
+      "object": "Interstellar (film)"
+    },
+    {
+      "subject": "Interstellar (film)",
+      "predicate": "WON_AWARD",
+      "object": "Academy Award for Best Visual Effects (87th Academy Awards)"
+    },
+    {
+      "subject": "Time dilation and gravity",
+      "predicate": "THEME_OF",
+      "object": "Interstellar (film)"
+    },
+    {
+      "subject": "Intergalactic space travel",
+      "predicate": "THEME_OF",
+      "object": "Interstellar (film)"
+    }
+  ],
+  "timeline": [
+    {
+      "year": "2006",
+      "headline": "Development Begins",
+      "description": "Lynda Obst and Kip Thorne conceive the film's premise, attracting interest from director Steven Spielberg.",
+      "importance": 8,
+      "connections": [
+        "Lynda Obst",
+        "Kip Thorne",
+        "Steven Spielberg"
+      ],
+      "image": null
+    },
+    {
+      "year": "2013",
+      "headline": "Principal Photography Starts",
+      "description": "Filming begins in late 2013, taking place in Alberta, Klaustur, and Los Angeles.",
+      "importance": 7,
+      "connections": [
+        "Hoyte van Hoytema",
+        "Christopher Nolan"
+      ],
+      "image": null
+    },
+    {
+      "year": "2014",
+      "headline": "World Premiere",
+      "description": "The film premieres at the TCL Chinese Theatre on October 26, 2014.",
+      "importance": 9,
+      "connections": [
+        "Christopher Nolan",
+        "TCL Chinese Theatre"
+      ],
+      "image": null
+    },
+    {
+      "year": "2014",
+      "headline": "Theatrical Release",
+      "description": "Released in US theaters on November 5 and UK theaters on November 7.",
+      "importance": 9,
+      "connections": [
+        "Paramount Pictures",
+        "Warner Bros. Pictures"
+      ],
+      "image": null
+    },
+    {
+      "year": "2015",
+      "headline": "Academy Awards Success",
+      "description": "Nominated for five Academy Awards, winning the Oscar for Best Visual Effects.",
+      "importance": 8,
+      "connections": [
+        "Academy Awards",
+        "DNEG"
+      ],
+      "image": null
+    }
+  ],
+  "rankedFacts": [
+    {
+      "fact": "The film's concept originated from a blind date between producer Lynda Obst and theoretical physicist Kip Thorne, set up by Carl Sagan.",
+      "score": 0.6257575757575758,
+      "metrics": {
+        "confidence": 0.8666666666666667,
+        "specificity": 0.6181818181818182,
+        "narrativeValue": 0.7772727272727273,
+        "educationalValue": 0.5,
+        "visualValue": 0.6181818181818182,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.5
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "Steven Spielberg was originally attached to direct the film when development first started in 2006.",
+      "score": 0.6619047619047619,
+      "metrics": {
+        "confidence": 0.75,
+        "specificity": 0.85,
+        "narrativeValue": 0.5,
+        "educationalValue": 0.75,
+        "visualValue": 0.43333333333333335,
+        "uniqueness": 0.85,
+        "ontologyRelevance": 0.5
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "Cinematographer Hoyte van Hoytema shot the film using a mix of 35 mm film in Panavision anamorphic format and IMAX 70 mm.",
+      "score": 0.645887445887446,
+      "metrics": {
+        "confidence": 0.8666666666666667,
+        "specificity": 0.85,
+        "narrativeValue": 0.5727272727272728,
+        "educationalValue": 0.75,
+        "visualValue": 0.4818181818181818,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.5
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "Interstellar was producer Lynda Obst's final film before her death.",
+      "score": 0.630952380952381,
+      "metrics": {
+        "confidence": 0.6666666666666666,
+        "specificity": 0.6,
+        "narrativeValue": 0.75,
+        "educationalValue": 0.5,
+        "visualValue": 0.6,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "The film grossed $774.7 million worldwide after subsequent re-releases, making it the 10th-highest-grossing film of 2014.",
+      "score": 0.5889880952380953,
+      "metrics": {
+        "confidence": 0.7666666666666666,
+        "specificity": 0.85,
+        "narrativeValue": 0.39375,
+        "educationalValue": 0.75,
+        "visualValue": 0.3625,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.5
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "Interstellar is a 2014 epic science fiction film directed by Christopher Nolan",
+      "score": 0.6892857142857142,
+      "metrics": {
+        "confidence": 0.7,
+        "specificity": 0.85,
+        "narrativeValue": 0.675,
+        "educationalValue": 0.75,
+        "visualValue": 0.55,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "It stars Matthew McConaughey, Anne Hathaway, and Jessica Chastain",
+      "score": 0.6944444444444444,
+      "metrics": {
+        "confidence": 0.65,
+        "specificity": 0.8555555555555556,
+        "narrativeValue": 1,
+        "educationalValue": 0.5,
+        "visualValue": 0.8555555555555556,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.5
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "Set in 2067, pilot Cooper joins a NASA mission through a wormhole near Saturn",
+      "score": 0.6384353741496599,
+      "metrics": {
+        "confidence": 0.7333333333333334,
+        "specificity": 0.85,
+        "narrativeValue": 0.6214285714285714,
+        "educationalValue": 0.75,
+        "visualValue": 0.5142857142857142,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.5
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "Matt Damon appears as the antagonist Dr",
+      "score": 0.5738095238095238,
+      "metrics": {
+        "confidence": 0.6166666666666667,
+        "specificity": 0.5857142857142856,
+        "narrativeValue": 0.7285714285714285,
+        "educationalValue": 0.5,
+        "visualValue": 0.5857142857142856,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.5
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    }
+  ],
+  "visualModules": [
+    {
+      "type": "movie",
+      "title": "Movie Blueprint Snapshot",
+      "data": {
+        "director": [
+          "Christopher Nolan"
+        ],
+        "cast": [
+          "Matthew McConaughey (as Joseph \"Coop\" Cooper)",
+          "Anne Hathaway (as Dr. Amelia Brand)",
+          "Jessica Chastain (as Murphy \"Murph\" Cooper)",
+          "Ellen Burstyn (as elderly Murph)",
+          "Mackenzie Foy (as 10-year-old Murph)",
+          "John Lithgow (as Donald)",
+          "Michael Caine (as Professor John Brand)",
+          "Casey Affleck (as Tom Cooper)",
+          "Timothée Chalamet (as 15-year-old Tom)",
+          "Wes Bentley (as Doyle)",
+          "Bill Irwin (as TARS and CASE)",
+          "Topher Grace (as Getty)",
+          "David Gyasi (as Professor Romilly)",
+          "Matt Damon (as Dr. Mann)",
+          "Josh Stewart (as voice of CASE)",
+          "Leah Cairns (as Lois)",
+          "Liam Dickinson (as Coop)",
+          "David Oyelowo (as school principal)",
+          "Collette Wolfe (as Ms. Hanley)",
+          "Francis X. McCarthy (as Boots)",
+          "William Devane (as Williams)",
+          "Elyes Gabel (as Cooper Station administrator)",
+          "Lennart Nowak (as Tom's cousin)",
+          "Jeff Hephner (as Cooper Station doctor)"
+        ],
+        "composer": [],
+        "themes": [
+          "Dystopian future",
+          "Catastrophic blight and famine",
+          "Intergalactic space travel",
+          "Search for a habitable planet",
+          "Time dilation and gravity",
+          "Human survival and extinction"
+        ],
+        "awards": [
+          "Academy Award for Best Visual Effects (87th Academy Awards)",
+          "Nominated for four other Academy Awards"
+        ],
+        "reception": [
+          "Generally positive reviews from critics",
+          "Commercial success, grossing $681 million worldwide during its initial theatrical run",
+          "Grossed $774.7 million worldwide with subsequent releases",
+          "10th-highest-grossing film of 2014"
+        ],
+        "legacy": [
+          "Lynda Obst's final film as a producer before her death"
+        ]
+      }
+    }
+  ],
+  "narrativePlan": {
+    "chapters": [
+      {
+        "chapterIndex": 0,
+        "title": "A Dying Earth's Last Hope",
+        "referenceLabel": "Story",
+        "readerQuestion": "What is the narrative premise of the film and who are the key characters embarking on this cosmic journey?",
+        "objectives": [
+          "Introduce the dystopian future setting of 2067 plagued by catastrophic blight and famine.",
+          "Detail the NASA mission through a wormhole near Saturn to find a habitable planet.",
+          "Introduce the central characters including pilot Cooper, Dr. Amelia Brand, and the antagonist Dr. Mann."
+        ],
+        "approvedFacts": [
+          "Interstellar is a 2014 epic science fiction film directed by Christopher Nolan",
+          "It stars Matthew McConaughey, Anne Hathaway, and Jessica Chastain",
+          "Set in 2067, pilot Cooper joins a NASA mission through a wormhole near Saturn"
+        ],
+        "anchors": [
+          "Matthew McConaughey",
+          "Anne Hathaway",
+          "Jessica Chastain"
+        ]
+      },
+      {
+        "chapterIndex": 1,
+        "title": "From Blind Date To IMAX",
+        "referenceLabel": "Production",
+        "readerQuestion": "How did a scientific partnership and cinematic vision shape the physical creation of the film?",
+        "objectives": [
+          "Explore the origin of the film's concept from a blind date between Lynda Obst and Kip Thorne.",
+          "Examine Steven Spielberg's early involvement in the development phase starting in 2006.",
+          "Detail the cinematography techniques used by Hoyte van Hoytema, including IMAX 70 mm and 35 mm film."
+        ],
+        "approvedFacts": [
+          "The film's concept originated from a blind date between producer Lynda Obst and theoretical physicist Kip Thorne, set up by Carl Sagan.",
+          "Steven Spielberg was originally attached to direct the film when development first started in 2006.",
+          "Cinematographer Hoyte van Hoytema shot the film using a mix of 35 mm film in Panavision anamorphic format and IMAX 70 mm."
+        ],
+        "anchors": [
+          "Kip Thorne",
+          "Steven Spielberg",
+          "Hoyte van Hoytema"
+        ]
+      },
+      {
+        "chapterIndex": 2,
+        "title": "Launching Into Global Theaters",
+        "referenceLabel": "Release",
+        "readerQuestion": "When and how did the film make its grand debut to global audiences?",
+        "objectives": [
+          "Trace the timeline of the film's world premiere at the TCL Chinese Theatre in late 2014.",
+          "Detail the theatrical rollout in the United States and the United Kingdom.",
+          "Highlight the distribution partnership between major studios for the theatrical release."
+        ],
+        "approvedFacts": [
+          "Matt Damon appears as the antagonist Dr"
+        ],
+        "anchors": [
+          "2014",
+          "Christopher Nolan",
+          "DNEG"
+        ]
+      },
+      {
+        "chapterIndex": 3,
+        "title": "Box Office And Visual Triumphs",
+        "referenceLabel": "Reception",
+        "readerQuestion": "How did critics, global audiences, and the Academy receive the sci-fi epic?",
+        "objectives": [
+          "Examine the film's massive commercial success, grossing $774.7 million worldwide after subsequent re-releases.",
+          "Highlight the film's achievement as the 10th-highest-grossing film of 2014.",
+          "Detail the film's success at the 87th Academy Awards, specifically winning the Oscar for Best Visual Effects."
+        ],
+        "approvedFacts": [
+          "The film grossed $774.7 million worldwide after subsequent re-releases, making it the 10th-highest-grossing film of 2014."
+        ],
+        "anchors": [
+          "2015",
+          "Jonathan Nolan",
+          "Lynda Obst"
+        ]
+      },
+      {
+        "chapterIndex": 4,
+        "title": "A Producer's Final Cosmic Journey",
+        "referenceLabel": "Legacy",
+        "readerQuestion": "What is the lasting significance of the film in the career of its pioneering producer?",
+        "objectives": [
+          "Reflect on the film's enduring legacy in science fiction cinema.",
+          "Honor the final cinematic contribution of producer Lynda Obst before her passing."
+        ],
+        "approvedFacts": [
+          "Interstellar was producer Lynda Obst's final film before her death."
+        ],
+        "anchors": [
+          "Lynda Obst",
+          "2006"
+        ]
+      }
+    ]
+  },
+  "triviaCandidates": [
+    {
+      "fact": "The film's concept originated from a blind date between producer Lynda Obst and theoretical physicist Kip Thorne, set up by Carl Sagan.",
+      "surpriseScore": 9,
+      "readMoreTopic": "Kip Thorne"
+    },
+    {
+      "fact": "Steven Spielberg was originally attached to direct the film when development first started in 2006.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Steven Spielberg"
+    },
+    {
+      "fact": "Theoretical physicist Kip Thorne served as an executive producer and scientific consultant, and wrote a tie-in book titled 'The Science of Interstellar'.",
+      "surpriseScore": 7,
+      "readMoreTopic": "The Science of Interstellar"
+    },
+    {
+      "fact": "Cinematographer Hoyte van Hoytema shot the film using a mix of 35 mm film in Panavision anamorphic format and IMAX 70 mm.",
+      "surpriseScore": 7,
+      "readMoreTopic": "Hoyte van Hoytema"
+    },
+    {
+      "fact": "The film relied heavily on practical and miniature effects, with DNEG providing the digital visual effects.",
+      "surpriseScore": 8,
+      "readMoreTopic": "DNEG"
+    },
+    {
+      "fact": "Interstellar was producer Lynda Obst's final film before her death.",
+      "surpriseScore": 6,
+      "readMoreTopic": "Lynda Obst"
+    },
+    {
+      "fact": "In the United States, the film was initially released on physical film stock before expanding to digital projectors.",
+      "surpriseScore": 7,
+      "readMoreTopic": "Interstellar (film)"
+    },
+    {
+      "fact": "The film grossed $774.7 million worldwide after subsequent re-releases, making it the 10th-highest-grossing film of 2014.",
+      "surpriseScore": 6,
+      "readMoreTopic": "Interstellar (film)"
+    }
+  ],
+  "relatedTopics": [
+    "Contact (1997 film)",
+    "The Science of Interstellar",
+    "Wormhole",
+    "Black hole",
+    "Time dilation",
+    "Tesseract",
+    "IMAX",
+    "DNEG",
+    "Christopher Nolan filmography"
+  ],
+  "confidenceScores": {
+    "resolver": 0.95,
+    "compiler": 0.8571428571428571,
+    "grader": 0.7677168510501843,
+    "overall": 0.94
+  },
+  "qualityAssessment": {
+    "generationMode": "mixed",
+    "fallbackRatio": 0.05555555555555555,
+    "provenanceCoverage": 0.9166666666666666,
+    "placeholderCount": 0,
+    "verifiedFactRatio": 0.3333333333333333,
+    "qualityScore": 94,
+    "confidenceBreakdown": {
+      "provenanceCoverage": 0.9166666666666666,
+      "fieldCoverage": 0.8571428571428571,
+      "placeholderPenalty": 1,
+      "fallbackPenalty": 0.9444444444444444,
+      "sourceAgreement": 0.95,
+      "extractionCompleteness": 1,
+      "factSpecificity": 0.7677168510501843,
+      "graphValidity": 1,
+      "timelineValidity": 1,
+      "validationPenalty": 1
+    },
+    "status": "PARTIAL",
+    "modulesPassing": [
+      "timeline",
+      "cards",
+      "didYouKnow",
+      "relatedTopics",
+      "structuredFactsData",
+      "knowledgeGraph"
+    ],
+    "modulesHidden": [],
+    "reasons": [
+      "all signals above threshold, no placeholder contamination, majority primary generation",
+      "downgraded because lintArtifact() reported validation errors"
+    ]
+  },
+  "stageDiagnostics": [
+    {
+      "stage": "entityResolver.pass1",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1407
+    },
+    {
+      "stage": "entityResolver.pass2",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1741
+    },
+    {
+      "stage": "compiler",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 8552
+    },
+    {
+      "stage": "knowledgeGraph",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2397
+    },
+    {
+      "stage": "factEvaluator",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": null,
+      "modelValidationAttempted": false,
+      "modelValidationSucceeded": false,
+      "supportedGenerationMethod": false,
+      "requestAttempted": true,
+      "requestSucceeded": false,
+      "failureReason": "Expected ',' or '}' after property value in JSON at position 6789 (line 173 column 20)",
+      "errorCategory": "parser_failure",
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": true,
+      "durationMs": 7698
+    },
+    {
+      "stage": "narrativePlanner",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 4678
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2553
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2463
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2444
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2574
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2472
+    },
+    {
+      "stage": "documentaryWriter.summary",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1682
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1525
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1458
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1721
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2250
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1438
+    },
+    {
+      "stage": "stylePolish",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 8996
+    }
+  ],
+  "checksum": "91cb8b7162415479724210e72d452c29fc2193a3908a97c8ac48dac4caa1cf7c",
+  "dependencyHash": "f2ff66a7ac5704f3f9c0a86d4a10d4525017b9988298f02b3bbd756a91e27127",
+  "sourceReferences": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Interstellar%20(film)",
+      "title": "Interstellar (film)"
+    }
+  ],
+  "factScript": {
+    "chapters": [
+      {
+        "chapterTitle": "A Dying Earth's Last Hope",
+        "referenceLabel": "Story",
+        "questionAnswered": "What is the narrative premise of the film and who are the key characters embarking on this cosmic journey?",
+        "chronologicalPosition": 1,
+        "entities": [
+          "Interstellar",
+          "NASA",
+          "Saturn"
+        ],
+        "dates": [
+          "2014",
+          "2067"
+        ],
+        "locations": [
+          "Earth",
+          "Saturn",
+          "Wormhole"
+        ],
+        "people": [
+          "Christopher Nolan",
+          "Matthew McConaughey",
+          "Anne Hathaway",
+          "Jessica Chastain",
+          "Matt Damon"
+        ],
+        "events": [
+          "2014 theatrical release of Interstellar"
+        ],
+        "cause": "A catastrophic blight and famine in the dystopian future of 2067 threaten humanity with extinction on a dying Earth.",
+        "effect": "NASA dispatches a crew of astronauts through a wormhole near Saturn to find a habitable planet to save the human race.",
+        "keyFacts": [
+          "Interstellar is a 2014 epic science fiction film directed by Christopher Nolan and starring Matthew McConaughey, Anne Hathaway, and Jessica Chastain.",
+          "The film is set in the dystopian year of 2067, where Earth is plagued by catastrophic blight, dust storms, and severe famine.",
+          "Former pilot Cooper is recruited to join a secret NASA mission to pilot a spacecraft through a wormhole located near Saturn.",
+          "The cosmic journey's key crew members include pilot Cooper, Dr. Amelia Brand, and the mysterious antagonist Dr. Mann."
+        ],
+        "quotes": [],
+        "connections": [
+          "Development of the film's premise by Lynda Obst and Kip Thorne starting in 2006"
+        ],
+        "takeaway": "Humanity's survival depends on a desperate journey beyond our galaxy.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "From Blind Date To IMAX",
+        "referenceLabel": "Production",
+        "questionAnswered": "How did a scientific partnership and cinematic vision shape the physical creation of the film?",
+        "chronologicalPosition": 2,
+        "entities": [
+          "Panavision",
+          "IMAX 70 mm",
+          "35 mm film"
+        ],
+        "dates": [
+          "2006",
+          "2013"
+        ],
+        "locations": [
+          "Alberta",
+          "Klaustur",
+          "Los Angeles"
+        ],
+        "people": [
+          "Lynda Obst",
+          "Kip Thorne",
+          "Carl Sagan",
+          "Steven Spielberg",
+          "Hoyte van Hoytema",
+          "Christopher Nolan"
+        ],
+        "events": [
+          "Development phase initiation",
+          "Principal photography"
+        ],
+        "cause": "A blind date arranged by Carl Sagan brought together a producer and a physicist, sparking a scientifically grounded film concept that attracted top-tier Hollywood directors.",
+        "effect": "The project evolved from an early Spielberg development phase into a visually spectacular reality shot by Hoyte van Hoytema using advanced large-format film techniques.",
+        "keyFacts": [
+          "The film's concept originated from a blind date between producer Lynda Obst and theoretical physicist Kip Thorne, set up by Carl Sagan.",
+          "Steven Spielberg was originally attached to direct the film when development first started in 2006.",
+          "Cinematographer Hoyte van Hoytema shot the film using a mix of 35 mm film in Panavision anamorphic format and IMAX 70 mm."
+        ],
+        "quotes": [],
+        "connections": [
+          "Precedes the visual effects development led by DNEG and the film's eventual 2014 theatrical release."
+        ],
+        "takeaway": "Scientific collaboration and bold cinematography defined the film's physical creation.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "Launching Into Global Theaters",
+        "referenceLabel": "Release",
+        "questionAnswered": "When and how did the film make its grand debut to global audiences?",
+        "chronologicalPosition": 3,
+        "entities": [
+          "Paramount Pictures",
+          "Warner Bros. Pictures",
+          "TCL Chinese Theatre"
+        ],
+        "dates": [
+          "October 26, 2014",
+          "November 5, 2014",
+          "November 7, 2014"
+        ],
+        "locations": [
+          "TCL Chinese Theatre",
+          "United States",
+          "United Kingdom"
+        ],
+        "people": [
+          "Christopher Nolan",
+          "Matt Damon"
+        ],
+        "events": [
+          "World Premiere",
+          "Theatrical Release"
+        ],
+        "cause": "A distribution partnership between Paramount Pictures and Warner Bros. Pictures was established to launch Christopher Nolan's sci-fi epic globally.",
+        "effect": "The film achieved massive global reach, grossing hundreds of millions of dollars during its initial theatrical run.",
+        "keyFacts": [
+          "The film held its world premiere at the TCL Chinese Theatre on October 26, 2014.",
+          "The theatrical rollout began in the United States on November 5, 2014, followed by the United Kingdom on November 7, 2014.",
+          "Paramount Pictures and Warner Bros. Pictures served as the major studio distribution partners for the theatrical release.",
+          "Matt Damon appears as the antagonist Dr. Mann."
+        ],
+        "quotes": [],
+        "connections": [
+          "Connects to the initial development phase in 2006 and the subsequent 2015 Academy Awards success."
+        ],
+        "takeaway": "Interstellar debuted globally in late 2014 to massive success.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "Box Office And Visual Triumphs",
+        "referenceLabel": "Reception",
+        "questionAnswered": "How did critics, global audiences, and the Academy receive the sci-fi epic?",
+        "chronologicalPosition": 4,
+        "entities": [
+          "Academy Awards",
+          "DNEG",
+          "Paramount Pictures",
+          "Warner Bros. Pictures"
+        ],
+        "dates": [
+          "2014",
+          "2015"
+        ],
+        "locations": [
+          "Los Angeles"
+        ],
+        "people": [
+          "Christopher Nolan",
+          "Matthew McConaughey",
+          "Anne Hathaway",
+          "Jessica Chastain"
+        ],
+        "events": [
+          "87th Academy Awards",
+          "Initial theatrical run",
+          "Subsequent theatrical re-releases"
+        ],
+        "cause": "The global theatrical release of Christopher Nolan's ambitious sci-fi epic captured massive audience attention and critical acclaim for its groundbreaking scientific realism and visual effects.",
+        "effect": "The film achieved immense commercial success worldwide and secured prestigious industry recognition, culminating in an Academy Award win.",
+        "keyFacts": [
+          "Grossed $681 million worldwide during its initial theatrical run, eventually reaching $774.7 million after subsequent re-releases.",
+          "Ranked as the 10th-highest-grossing film of 2014 globally.",
+          "Received five nominations at the 87th Academy Awards, winning the Oscar for Best Visual Effects."
+        ],
+        "quotes": [],
+        "connections": [
+          "Connects to the initial development of the film's scientific premise by Kip Thorne and Lynda Obst.",
+          "Connects to the production phase where DNEG and the crew engineered the visual effects."
+        ],
+        "takeaway": "Interstellar achieved massive global box office success and Oscar glory.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "A Producer's Final Cosmic Journey",
+        "referenceLabel": "Legacy",
+        "questionAnswered": "What is the lasting significance of the film in the career of its pioneering producer?",
+        "chronologicalPosition": 5,
+        "entities": [
+          "Interstellar",
+          "Academy Awards"
+        ],
+        "dates": [
+          "2006",
+          "2014",
+          "2015"
+        ],
+        "locations": [
+          "TCL Chinese Theatre"
+        ],
+        "people": [
+          "Lynda Obst",
+          "Kip Thorne",
+          "Christopher Nolan"
+        ],
+        "events": [
+          "Development Begins in 2006",
+          "World Premiere on October 26, 2014",
+          "87th Academy Awards in 2015"
+        ],
+        "cause": "Producer Lynda Obst collaborated with physicist Kip Thorne in 2006 to conceive a scientifically grounded space exploration epic.",
+        "effect": "The film achieved massive critical and commercial success, securing its place as a landmark science fiction masterpiece and the crowning final achievement of Obst's career.",
+        "keyFacts": [
+          "Interstellar served as the final film produced by Lynda Obst before her death.",
+          "The project originated in 2006 from a treatment co-conceived by Lynda Obst and theoretical physicist Kip Thorne.",
+          "The film went on to gross over $774 million worldwide and won the Academy Award for Best Visual Effects."
+        ],
+        "quotes": [],
+        "connections": [
+          "Kip Thorne's scientific theories on wormholes and time dilation directly shaped the film's narrative and visual effects."
+        ],
+        "takeaway": "Interstellar stands as Lynda Obst's final, monumental cinematic legacy.",
+        "insufficientData": false
+      }
+    ]
+  },
+  "briefSummaryProvenance": [
+    {
+      "sentence": "In 2006, Steven Spielberg was originally attached to direct a new science fiction film .",
+      "fact": "Chapter 2: Steven Spielberg was originally attached to direct the film when development first started in 2006."
+    },
+    {
+      "sentence": "This project originated from a treatment co-conceived by producer Lynda Obst and theoretical physicist Kip Thorne .",
+      "fact": "Chapter 5: The project originated in 2006 from a treatment co-conceived by Lynda Obst and theoretical physicist Kip Thorne."
+    },
+    {
+      "sentence": "Christopher Nolan eventually directed the 2014 epic film, Interstellar, starring Matthew McConaughey, Anne Hathaway, and Jessica Chastain .",
+      "fact": "Chapter 1: Interstellar is a 2014 epic science fiction film directed by Christopher Nolan and starring Matthew McConaughey, Anne Hathaway, and Jessica Chastain."
+    },
+    {
+      "sentence": "Set in the dystopian year of 2067, the story depicts an Earth plagued by catastrophic blight, dust storms, and severe famine .",
+      "fact": "Chapter 1: The film is set in the dystopian year of 2067, where Earth is plagued by catastrophic blight, dust storms, and severe famine."
+    },
+    {
+      "sentence": "Former pilot Cooper is recruited to pilot a spacecraft through a wormhole near Saturn .",
+      "fact": "Chapter 1: Former pilot Cooper is recruited to join a secret NASA mission to pilot a spacecraft through a wormhole located near Saturn."
+    },
+    {
+      "sentence": "Ultimately, the film grossed over $774 million worldwide and won the Academy Award for Best Visual Effects .",
+      "fact": "Chapter 5: The film went on to gross over $774 million worldwide and won the Academy Award for Best Visual Effects."
+    }
+  ],
+  "validationStatus": {
+    "passed": false,
+    "errors": [
+      "Required array field \"composer\" is empty for ontology \"Movie\"",
+      "Identical 4-word phrases must not repeat across chapters",
+      "Sentence provenance is incomplete: only 87% of sentences are mapped to facts",
+      "Card summaries must follow the alternating pattern: exactly 6 sentences per card summary. Violations: 1",
+      "Documentary score is too low: 65/100"
+    ],
+    "warnings": [],
+    "checkedRules": {
+      "ontology_match": true,
+      "required_fields_exist": false,
+      "timeline_non_empty": true,
+      "timeline_count_bounds": true,
+      "timeline_chronological": true,
+      "graph_has_triples": true,
+      "graph_connected": true,
+      "graph_no_synthetic_nodes": true,
+      "named_entities_non_empty": true,
+      "no_weak_facts": true,
+      "no_duplicate_facts": true,
+      "no_duplicate_sentences": true,
+      "no_placeholder_wording": true,
+      "generic_wording_check": true,
+      "paragraph_length_limit": true,
+      "unique_chapter_titles": true,
+      "concrete_dates_names_present": true,
+      "no_repeated_phrases": false,
+      "no_timeline_milestone_placeholder": true,
+      "reader_question_quality": true,
+      "did_you_know_length_ok": true,
+      "sentence_provenance_ok": false,
+      "no_abstract_writing": true,
+      "documentary_alternating_rule": false,
+      "fact_density_met": true,
+      "curiosity_score_ok": true,
+      "documentary_score_ok": false,
+      "resolver_confidence_ok": true,
+      "compiler_confidence_ok": true,
+      "overall_confidence_ok": true
+    },
+    "timestamp": "2026-07-11T07:51:45.278Z"
+  }
+}

@@ -1,0 +1,1503 @@
+{
+  "version": "18.0",
+  "compilerVersion": "v18.0",
+  "ontologyVersion": "v18.0",
+  "wikipediaRevision": "rev-1.0",
+  "wikidataRevision": "Q4692",
+  "ontology": {
+    "name": "Historical Event",
+    "labels": [
+      "Historical Event",
+      "Historical Event"
+    ]
+  },
+  "structuredFacts": {
+    "causes": [
+      "Social and civic peculiarities of Florence",
+      "Political structure of Florence",
+      "Patronage of the dominant Medici family",
+      "Migration of Greek scholars and their texts to Italy following the fall of Constantinople to the Ottoman Empire",
+      "Rediscovery of classical Greek philosophy and Roman humanitas",
+      "Search for Latin literary, historical, and oratorical texts in Europe's monastic libraries by humanists like Poggio Bracciolini"
+    ],
+    "timeline": [
+      "Late 13th century: First traces in Italy with Dante's writings and Giotto's paintings",
+      "14th century: Resurgence of learning based on classical sources credited to Petrarch",
+      "15th century: Early Renaissance begins in Florence",
+      "1453: Fall of Constantinople generates wave of émigré Greek scholars bringing ancient manuscripts to Western Europe",
+      "Late 15th century: Invention of metal movable type speeds the dissemination of ideas",
+      "1486: Giovanni Pico della Mirandola writes De hominis dignitate (Oration on the Dignity of Man)",
+      "1517: Advent of the Reformation",
+      "1527: Sack of Rome by Holy Roman Emperor Charles V, concluding the Italian Renaissance",
+      "1545: Advent of the Counter-Reformation"
+    ],
+    "participants": [
+      "Dante",
+      "Giotto",
+      "Petrarch",
+      "Leonardo da Vinci",
+      "Michelangelo",
+      "Poggio Bracciolini",
+      "Nicola Pisano",
+      "Masaccio",
+      "Niccolò Machiavelli",
+      "Giovanni Pico della Mirandola",
+      "Lorenzo Valla",
+      "Erasmus",
+      "Tintoretto",
+      "Sofonisba Anguissola",
+      "Paolo Veronese",
+      "The Medici family",
+      "Charles V (Holy Roman Emperor)"
+    ],
+    "turningPoints": [
+      "Fall of Constantinople (1453) leading to the migration of Greek scholars and manuscripts to Italy",
+      "Invention of metal movable type in the late 15th century",
+      "Sack of Rome (1527) by Holy Roman Emperor Charles V",
+      "Advent of the Reformation (1517)"
+    ],
+    "outcome": [
+      "Development of linear perspective and natural reality rendering in painting",
+      "Widespread educational reform and development of vernacular literatures",
+      "Development of the customs and conventions of diplomacy in politics",
+      "Revolutions in printing and navigation",
+      "Introduction of modern banking and the field of accounting",
+      "Paving of the way for the Protestant Reformation through critical engagement with Greek Christian texts"
+    ],
+    "impact": [
+      "Profoundly affected European intellectual life in the early modern period",
+      "Spread from Florence to the rest of Italy, throughout Europe, and to American, African, and Asian territories under European colonial rule or missionary activity",
+      "Shifted intellectual approaches to religion, emphasizing humanism and reason alongside Christianity",
+      "Inspired the concept of the 'Renaissance man' through polymathic achievements"
+    ],
+    "title": "Renaissance",
+    "subtitle": "European cultural period of the 14th to 17th centuries",
+    "leadParagraph": "The Renaissance (UK:  rin-AY-sənss, US:   REN-ə-sahnss) was a European period of history and cultural movement taking place at the end of the Late Middle Ages and the beginning of the early modern era. It is variously defined as covering the 15th and 16th centuries or, more broadly, as lasting from the 14th century to the 17th. It was characterized by the European rediscovery and revival of the literary, philosophical, and artistic achievements of classical antiquity. Associated with great change in art, architecture, politics, literature, exploration and technology, the Renaissance was first centered in the Republic of Florence, then spread to the rest of Italy and later throughout Europe.\nThe Renaissance's intellectual basis was founded in its version of humanism, derived from the concept of Roman humanitas and the rediscovery of classical Greek philosophy, such as that of Protagoras, who said that \"man is the measure of all things\". Although the invention of metal movable type sped the dissemination of ideas from the later 15th century, the changes of the Renaissance were not uniform across Europe: the first traces appear in Italy as early as the late 13th century, in particular with the writings of Dante and the paintings of Giotto.\nAs a cultural movement, the Renaissance encompassed innovative flowering of literary Latin and an explosion of vernacular literatures, beginning with the 14th-century resurgence of learning based on classical sources, which contemporaries credited to Petrarch; the development of linear perspective and other techniques of rendering a more natural reality in painting; and gradual but widespread educational reform. It saw myriad artistic developments and contributions from such polymaths as Leonardo da Vinci and Michelangelo, who inspired the term \"Renaissance man\". In politics, the Renaissance contributed to the development of the customs and conventions of diplomacy. The period also saw revolutions in printing and navigation, as well as the introduction of modern banking and the field of accounting.",
+    "briefSummary": "During the crisis of the Late Middle Ages, Florence birthed the Renaissance under the patronage of the wealthy Medici family. The movement gained momentum in 1453, when the fall of Constantinople forced Greek scholars to flee to Western Europe, carrying ancient manuscripts with them. Meanwhile, humanists like Poggio Bracciolini searched monastic libraries to recover classical Latin literature. Rather than rejecting Christianity, these scholars operated within the faith, and the Catholic Church itself patronized many of the era's greatest artworks. This Italian cultural flowering ended abruptly in 1527, however, when Holy Roman Emperor Charles V assaulted Rome during the War of the League of Cognac. Yet beyond the Italian peninsula, a long Renaissance persisted well into the seventeenth century.",
+    "cards": [
+      {
+        "title": "The Florentine Mind",
+        "summary": "During the Late Middle Ages, the immense financial patronage of the wealthy Medici family allowed Florence to birth the Renaissance. This profound cultural turn toward classical antiquity was catalyzed by a potent mix of political instability and elite funding. Then, the fall of Constantinople in 1453 forced Greek scholars to flee to Western Europe, carrying precious ancient manuscripts with them. Consequently, intellectuals abandoned medieval scholastic science in favor of classical literary, historical, and oratorical texts. By prioritizing the study of ancient literature and rhetoric, these new humanists rejected twelfth-century scientific traditions. Ultimately, Florence sparked humanism through this decisive shift in intellectual focus from science to literature.",
+        "referenceLabel": "Causes",
+        "readerQuestion": "What unique social and intellectual conditions in Florence sparked a departure from medieval thinking?",
+        "keyTakeaway": "Florence sparked humanism by shifting focus from science to literature.",
+        "provenance": [
+          {
+            "sentence": "During the Late Middle Ages, the immense financial patronage of the wealthy Medici family allowed Florence to birth the Renaissance.",
+            "fact": "The Renaissance movement originated in Florence during the crisis of the Late Middle Ages, heavily aided by the financial patronage of the dominant Medici family."
+          },
+          {
+            "sentence": "This profound cultural turn toward classical antiquity was catalyzed by a potent mix of political instability and elite funding.",
+            "fact": "The crisis of the Late Middle Ages, combined with the political structure of Florence, the patronage of the Medici family, and the influx of Greek scholars fleeing Constantinople, catalyzed a shift toward classical antiquity."
+          },
+          {
+            "sentence": "Then, the fall of Constantinople in 1453 forced Greek scholars to flee to Western Europe, carrying precious ancient manuscripts with them.",
+            "fact": "The fall of Constantinople to the Ottoman Empire in 1453 triggered a massive migration of Greek scholars who brought ancient manuscripts to Western Europe."
+          },
+          {
+            "sentence": "Consequently, intellectuals abandoned medieval scholastic science in favor of classical literary, historical, and oratorical texts.",
+            "fact": "Scholars abandoned medieval scholastic focus on natural sciences and mathematics in favor of classical literary, historical, and oratorical texts, establishing the foundation of Renaissance humanism."
+          },
+          {
+            "sentence": "By prioritizing the study of ancient literature and rhetoric, these new humanists rejected twelfth-century scientific traditions.",
+            "fact": "While 12th-century medieval scholars focused on Greek and Arabic works of natural sciences and mathematics, Renaissance humanists shifted focus to classical literary, historical, and oratorical texts."
+          },
+          {
+            "sentence": "Ultimately, Florence sparked humanism through this decisive shift in intellectual focus from science to literature.",
+            "fact": "Florence sparked humanism by shifting focus from science to literature."
+          }
+        ]
+      },
+      {
+        "title": "The Humanist Measure of All",
+        "summary": "When the ancient Greek philosopher Protagoras declared that man is the measure of all things, he set the stage for the rise of Renaissance humanism. This intellectual shift gained momentum as Byzantine scholars fled to Italy with classical manuscripts, igniting a passionate drive to reform medieval scholasticism. Turning away from strictly medieval scientific treatises, scholars began to analyze classical Latin and Greek cultural texts instead. Through this fresh educational approach, they successfully harmonized classical reason with traditional Christian theology. Far from abandoning their beliefs, humanists embraced their faith and used original Greek texts to study the New Testament under the patronage of the Catholic Church. Ultimately, these early modern thinkers beautifully united classical Greek philosophy with their enduring Christian devotion.",
+        "referenceLabel": "Early Battles",
+        "readerQuestion": "How did early Renaissance thinkers challenge medieval scholasticism while maintaining their religious faith?",
+        "keyTakeaway": "Humanists harmonized classical Greek philosophy with Christian faith.",
+        "provenance": [
+          {
+            "sentence": "When the ancient Greek philosopher Protagoras declared that man is the measure of all things, he set the stage for the rise of Renaissance humanism.",
+            "fact": "The intellectual foundation of Renaissance humanism was heavily inspired by the ancient Greek philosopher Protagoras, who famously stated that 'man is the measure of all things'."
+          },
+          {
+            "sentence": "This intellectual shift gained momentum as Byzantine scholars fled to Italy with classical manuscripts, igniting a passionate drive to reform medieval scholasticism.",
+            "fact": "The migration of Greek scholars carrying ancient manuscripts to Italy and the rediscovery of classical philosophy sparked a desire to reform medieval intellectual methods."
+          },
+          {
+            "sentence": "Turning away from strictly medieval scientific treatises, scholars began to analyze classical Latin and Greek cultural texts instead.",
+            "fact": "Renaissance scholars used humanist methods to study classical Latin and Greek texts, differing from medieval scholars by focusing on cultural rather than scientific texts."
+          },
+          {
+            "sentence": "Through this fresh educational approach, they successfully harmonized classical reason with traditional Christian theology.",
+            "fact": "Scholars developed a humanistic approach to education and biblical study that harmonized classical reason with Christian theology, paving the way for religious and educational reforms."
+          },
+          {
+            "sentence": "Far from abandoning their beliefs, humanists embraced their faith and used original Greek texts to study the New Testament under the patronage of the Catholic Church.",
+            "fact": "Renaissance humanists did not reject Christianity; instead, the Catholic Church patronized many of the era's greatest works of art, and humanists used original Greek texts to study the New Testament."
+          },
+          {
+            "sentence": "Ultimately, these early modern thinkers beautifully united classical Greek philosophy with their enduring Christian devotion.",
+            "fact": "Humanists harmonized classical Greek philosophy with Christian faith."
+          }
+        ]
+      },
+      {
+        "title": "The Renaissance Sparked and Shared",
+        "summary": "Under the patronage of the wealthy Medici family, Florence initiated the Renaissance before these revolutionary ideas spread across Europe. This cultural shift intensified when the Ottoman conquest of Constantinople forced Greek scholars to flee to Italy, carrying precious ancient manuscripts with them. Indeed, the 1453 Fall of Constantinople generated a massive wave of émigré intellectuals who brought classical philosophy and historical texts directly to Western Europe. Consequently, classical knowledge and humanist philosophy rapidly expanded from localized Italian centers like Florence to the rest of the continent. This intellectual movement gained even greater momentum in the late 15th century, when the invention of metal movable type accelerated the dissemination of humanist ideas. Ultimately, the combination of geopolitical flight and printing technology rapidly globalized the Renaissance.",
+        "referenceLabel": "Turning Point",
+        "readerQuestion": "Which major geopolitical and technological shifts accelerated the spread of Renaissance ideas across Europe?",
+        "keyTakeaway": "Geopolitical flight and printing technology rapidly globalized Renaissance ideas.",
+        "provenance": [
+          {
+            "sentence": "Under the patronage of the wealthy Medici family, Florence initiated the Renaissance before these revolutionary ideas spread across Europe.",
+            "fact": "The Renaissance began in Florence under the patronage of the dominant Medici family before spreading throughout Europe."
+          },
+          {
+            "sentence": "This cultural shift intensified when the Ottoman conquest of Constantinople forced Greek scholars to flee to Italy, carrying precious ancient manuscripts with them.",
+            "fact": "The Ottoman conquest of Constantinople forced Greek scholars to flee to Italy with ancient manuscripts, while the subsequent invention of metal movable type revolutionized text production."
+          },
+          {
+            "sentence": "Indeed, the 1453 Fall of Constantinople generated a massive wave of émigré intellectuals who brought classical philosophy and historical texts directly to Western Europe.",
+            "fact": "The 1453 Fall of Constantinople generated a wave of émigré Greek scholars who brought ancient manuscripts and classical philosophy to Western Europe."
+          },
+          {
+            "sentence": "Consequently, classical knowledge and humanist philosophy rapidly expanded from localized Italian centers like Florence to the rest of the continent.",
+            "fact": "Classical knowledge and humanist philosophy rapidly spread from localized Italian centers like Florence to the rest of the European continent."
+          },
+          {
+            "sentence": "This intellectual movement gained even greater momentum in the late 15th century, when the invention of metal movable type accelerated the dissemination of humanist ideas.",
+            "fact": "The invention of metal movable type in the late 15th century accelerated the dissemination of humanist ideas across the continent."
+          },
+          {
+            "sentence": "Ultimately, the combination of geopolitical flight and printing technology rapidly globalized the Renaissance.",
+            "fact": "Geopolitical flight and printing technology rapidly globalized Renaissance ideas."
+          }
+        ]
+      },
+      {
+        "title": "The Fall of Renaissance Rome",
+        "summary": "In 1527, Holy Roman Emperor Charles V launched a brutal military assault on the city of Rome. Seeking to crush his rivals during the War of the League of Cognac, the emperor unleashed this violent invasion. The devastating assault unfolded amidst a wider European conflict for geopolitical dominance. This ruinous plunder shattered Italian stability, forcing the vibrant cultural movement to migrate beyond the peninsula's borders. Historically, the Italian Renaissance concluded with either this tragic 1527 sack or the 1545 Counter-Reformation. Ultimately, the violent sacking of the eternal city abruptly ended Italy's golden age of cultural supremacy.",
+        "referenceLabel": "Outcome",
+        "readerQuestion": "What dramatic political and military events brought the Italian Renaissance to its sudden conclusion?",
+        "keyTakeaway": "The 1527 Sack of Rome abruptly ended the Italian Renaissance.",
+        "provenance": [
+          {
+            "sentence": "In 1527, Holy Roman Emperor Charles V launched a brutal military assault on the city of Rome.",
+            "fact": "The Italian Renaissance was brought to a sudden end in 1527 by a military assault on Rome led by Holy Roman Emperor Charles V."
+          },
+          {
+            "sentence": "Seeking to crush his rivals during the War of the League of Cognac, the emperor unleashed this violent invasion.",
+            "fact": "Holy Roman Emperor Charles V launched a military assault on Rome during the war of the League of Cognac."
+          },
+          {
+            "sentence": "The devastating assault unfolded amidst a wider European conflict for geopolitical dominance.",
+            "fact": "The assault occurred during the conflict known as the war of the League of Cognac."
+          },
+          {
+            "sentence": "This ruinous plunder shattered Italian stability, forcing the vibrant cultural movement to migrate beyond the peninsula's borders.",
+            "fact": "The military devastation and subsequent Counter-Reformation brought a sudden end to the Italian Renaissance, shifting the movement's focus outside of Italy."
+          },
+          {
+            "sentence": "Historically, the Italian Renaissance concluded with either this tragic 1527 sack or the 1545 Counter-Reformation.",
+            "fact": "In Italy, the Renaissance conventionally concluded with the Sack of Rome in 1527 or the onset of the Counter-Reformation in 1545."
+          },
+          {
+            "sentence": "Ultimately, the violent sacking of the eternal city abruptly ended Italy's golden age of cultural supremacy.",
+            "fact": "The Sack of Rome abruptly ended the Italian Renaissance."
+          }
+        ]
+      },
+      {
+        "title": "The Renaissance Ledger of Empire",
+        "summary": "Modern banking systems and the formalized field of professional accounting first emerged through the work of Renaissance merchants. This need for sophisticated financial systems was driven directly by expanding European colonial trade routes and the growing wealth of merchants. Subsequently, European colonial rule and Christian missionary networks expanded this economic influence into American, African, and Asian territories. While these developments established modern financial structures globally, they also triggered intense debate over how progressive the period actually was. Some modern historians now challenge the traditional narrative, arguing instead that the era maintained deep continuity with the Middle Ages. Ultimately, Renaissance innovations laid global economic foundations even as deep medieval continuities persisted.",
+        "referenceLabel": "Legacy",
+        "readerQuestion": "How did the Renaissance reshape global commerce, banking, and international territories?",
+        "keyTakeaway": "Renaissance innovations laid global economic foundations amidst medieval continuities.",
+        "provenance": [
+          {
+            "sentence": "Modern banking systems and the formalized field of professional accounting first emerged through the work of Renaissance merchants.",
+            "fact": "The Renaissance period introduced modern banking systems and formalized the professional field of accounting."
+          },
+          {
+            "sentence": "This need for sophisticated financial systems was driven directly by expanding European colonial trade routes and the growing wealth of merchants.",
+            "fact": "The expansion of European colonial trade routes, missionary activities, and the growth of merchant wealth drove the need for sophisticated financial systems and global administrative reach."
+          },
+          {
+            "sentence": "Subsequently, European colonial rule and Christian missionary networks expanded this economic influence into American, African, and Asian territories.",
+            "fact": "Renaissance cultural and economic influence expanded globally into American, African, and Asian territories via European colonial rule and Christian missionary networks."
+          },
+          {
+            "sentence": "While these developments established modern financial structures globally, they also triggered intense debate over how progressive the period actually was.",
+            "fact": "These developments established modern financial infrastructures and spread European cultural influence globally, while triggering a modern historical debate over the period's actual progressiveness."
+          },
+          {
+            "sentence": "Some modern historians now challenge the traditional narrative, arguing instead that the era maintained deep continuity with the Middle Ages.",
+            "fact": "Some modern social and economic historians challenge the traditional narrative, arguing the Renaissance was a period of pessimism and nostalgia that maintained deep continuity with the Middle Ages rather than a cultural advance."
+          },
+          {
+            "sentence": "Ultimately, Renaissance innovations laid global economic foundations even as deep medieval continuities persisted.",
+            "fact": "Renaissance innovations laid global economic foundations amidst deep medieval continuities."
+          }
+        ]
+      }
+    ]
+  },
+  "namedEntities": [
+    {
+      "name": "Republic of Florence",
+      "type": "Place",
+      "description": "An Italian city-state that served as the initial center and birthplace of the Renaissance."
+    },
+    {
+      "name": "Leonardo da Vinci",
+      "type": "Person",
+      "description": "A famous Italian polymath whose diverse talents helped inspire the term 'Renaissance man'."
+    },
+    {
+      "name": "Michelangelo",
+      "type": "Person",
+      "description": "A renowned Italian sculptor and painter of the High Renaissance."
+    },
+    {
+      "name": "Petrarch",
+      "type": "Person",
+      "description": "An Italian scholar and poet often credited by contemporaries with initiating the 14th-century resurgence of learning."
+    },
+    {
+      "name": "Medici",
+      "type": "Org",
+      "description": "The dominant ruling family of Florence known for their extensive patronage of Renaissance art and learning."
+    },
+    {
+      "name": "Constantinople",
+      "type": "Place",
+      "description": "The capital of the Byzantine Empire whose fall in 1453 caused Greek scholars to flee to Italy with classical manuscripts."
+    },
+    {
+      "name": "Niccolò Machiavelli",
+      "type": "Person",
+      "description": "A Florentine political philosopher famous for describing political life realistically and rationally."
+    },
+    {
+      "name": "Giovanni Pico della Mirandola",
+      "type": "Person",
+      "description": "An Italian humanist philosopher who wrote the 'Oration on the Dignity of Man' in 1486."
+    },
+    {
+      "name": "Charles V",
+      "type": "Person",
+      "description": "The Holy Roman Emperor whose forces sacked Rome in 1527, ending the Italian Renaissance."
+    }
+  ],
+  "knowledgeGraph": [
+    {
+      "subject": "Renaissance",
+      "predicate": "HAS_TYPE",
+      "object": "Historical Event"
+    },
+    {
+      "subject": "Republic of Florence",
+      "predicate": "BIRTHPLACE_OF",
+      "object": "Renaissance"
+    },
+    {
+      "subject": "Renaissance",
+      "predicate": "INFLUENCED_BY",
+      "object": "Medici"
+    },
+    {
+      "subject": "Petrarch",
+      "predicate": "INITIATED",
+      "object": "Renaissance"
+    },
+    {
+      "subject": "Fall of Constantinople",
+      "predicate": "CAUSED_MIGRATION_TO",
+      "object": "Republic of Florence"
+    },
+    {
+      "subject": "Leonardo da Vinci",
+      "predicate": "EXEMPLIFIED",
+      "object": "Renaissance"
+    },
+    {
+      "subject": "Michelangelo",
+      "predicate": "PARTICIPATED_IN",
+      "object": "Renaissance"
+    },
+    {
+      "subject": "Giovanni Pico della Mirandola",
+      "predicate": "AUTHORED",
+      "object": "Oration on the Dignity of Man"
+    },
+    {
+      "subject": "Niccolò Machiavelli",
+      "predicate": "DEVELOPED",
+      "object": "Renaissance"
+    },
+    {
+      "subject": "Charles V",
+      "predicate": "SACKED",
+      "object": "Rome"
+    },
+    {
+      "subject": "Sack of Rome",
+      "predicate": "TERMINATED",
+      "object": "Renaissance"
+    },
+    {
+      "subject": "Renaissance",
+      "predicate": "PAVED_WAY_FOR",
+      "object": "Protestant Reformation"
+    }
+  ],
+  "timeline": [
+    {
+      "year": "c. 1300",
+      "headline": "Italian Proto-Renaissance Begins",
+      "description": "First traces of the movement appear in Italy, marked by Dante's writings and Giotto's naturalistic paintings.",
+      "importance": 8,
+      "connections": [
+        "Dante",
+        "Giotto"
+      ],
+      "image": null
+    },
+    {
+      "year": "14th Century",
+      "headline": "Petrarch Revives Classical Learning",
+      "description": "A resurgence of learning based on classical sources begins, heavily credited by contemporaries to the scholar Petrarch.",
+      "importance": 7,
+      "connections": [
+        "Petrarch"
+      ],
+      "image": null
+    },
+    {
+      "year": "1453",
+      "headline": "Fall of Constantinople",
+      "description": "The Ottoman conquest triggers a massive migration of Greek scholars and ancient manuscripts to Italy.",
+      "importance": 10,
+      "connections": [
+        "Constantinople"
+      ],
+      "image": null
+    },
+    {
+      "year": "Late 15th Century",
+      "headline": "Movable Type Invented",
+      "description": "The invention of metal movable type accelerates the dissemination of Renaissance humanist ideas across Europe.",
+      "importance": 10,
+      "connections": [
+        "Movable Type"
+      ],
+      "image": null
+    },
+    {
+      "year": "1486",
+      "headline": "Oration on Dignity of Man",
+      "description": "Giovanni Pico della Mirandola writes his famous defense of human reason, faith, and natural thought.",
+      "importance": 7,
+      "connections": [
+        "Giovanni Pico della Mirandola"
+      ],
+      "image": null
+    },
+    {
+      "year": "1517",
+      "headline": "The Reformation Begins",
+      "description": "The Protestant Reformation begins, signaling the start of the conventional end of the Italian Renaissance.",
+      "importance": 9,
+      "connections": [
+        "Erasmus",
+        "Lorenzo Valla"
+      ],
+      "image": null
+    },
+    {
+      "year": "1527",
+      "headline": "Sack of Rome",
+      "description": "Holy Roman Emperor Charles V assaults Rome, marking the political conclusion of the Italian Renaissance.",
+      "importance": 9,
+      "connections": [
+        "Charles V"
+      ],
+      "image": null
+    }
+  ],
+  "rankedFacts": [
+    {
+      "fact": "The Italian Renaissance was brought to a sudden end in 1527 when the Holy Roman Emperor Charles V launched a military assault on Rome during the war of the League of Cognac.",
+      "score": 0.91,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.95,
+        "narrativeValue": 0.9,
+        "educationalValue": 0.85,
+        "visualValue": 0.8,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.95
+      },
+      "reasoning": "Highly specific historical event with precise dates, actors, and political context, serving as a perfect anchor point for a timeline."
+    },
+    {
+      "fact": "While medieval scholars of the 12th-century Renaissance focused on Greek and Arabic works of natural sciences and mathematics, Renaissance humanists shifted focus to classical literary, historical, and oratorical texts.",
+      "score": 0.89,
+      "metrics": {
+        "confidence": 0.98,
+        "specificity": 0.9,
+        "narrativeValue": 0.75,
+        "educationalValue": 0.95,
+        "visualValue": 0.7,
+        "uniqueness": 0.85,
+        "ontologyRelevance": 0.9
+      },
+      "reasoning": "Excellent comparative historical analysis with high specificity, clearly distinguishing between different intellectual movements across eras."
+    },
+    {
+      "fact": "The movement originated in Florence, aided by the patronage of the Medici family and the influx of Greek scholars after the fall of Constantinople",
+      "score": 0.89,
+      "metrics": {
+        "confidence": 0.98,
+        "specificity": 0.9,
+        "narrativeValue": 0.85,
+        "educationalValue": 0.9,
+        "visualValue": 0.8,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.95
+      },
+      "reasoning": "Highly specific and accurate causal explanation of the Renaissance's origins, featuring key historical actors and events."
+    },
+    {
+      "fact": "In Italy, it conventionally ended with events like the Sack of Rome (1527) or the Counter-Reformation (1545), though a 'long Renaissance' outside Italy extended into the 17th century",
+      "score": 0.88,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.9,
+        "visualValue": 0.85,
+        "uniqueness": 0.75,
+        "ontologyRelevance": 0.9
+      },
+      "reasoning": "Excellent chronological specificity and historiographical nuance, making it highly valuable for timelines and educational frameworks."
+    },
+    {
+      "fact": "Renaissance humanists did not reject Christianity; instead, the Catholic Church patronized many of the era's greatest works of art, and humanists used original Greek texts to study the New Testament.",
+      "score": 0.85,
+      "metrics": {
+        "confidence": 0.98,
+        "specificity": 0.8,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.9,
+        "visualValue": 0.5,
+        "uniqueness": 0.85,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Corrects a common modern misconception about humanism, providing high educational and narrative value regarding the religious context of the era."
+    },
+    {
+      "fact": "The intellectual foundation of Renaissance humanism was heavily inspired by the ancient Greek philosopher Protagoras, who famously stated that 'man is the measure of all things'.",
+      "score": 0.84,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.85,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.9,
+        "visualValue": 0.5,
+        "uniqueness": 0.75,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Highly accurate and specific connection between classical philosophy and Renaissance intellectual foundations, though slightly abstract for direct visual representation."
+    },
+    {
+      "fact": "Renaissance scholars used humanist methods to study classical Latin and Greek texts, differing from medieval scholars by focusing on cultural rather than scientific texts",
+      "score": 0.83,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.8,
+        "narrativeValue": 0.7,
+        "educationalValue": 0.9,
+        "visualValue": 0.6,
+        "uniqueness": 0.75,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Provides strong educational contrast between medieval and Renaissance scholarship, though it slightly overlaps with Fact 3."
+    },
+    {
+      "fact": "The Renaissance saw the introduction of modern banking and the formalization of the field of accounting.",
+      "score": 0.82,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.8,
+        "narrativeValue": 0.7,
+        "educationalValue": 0.85,
+        "visualValue": 0.65,
+        "uniqueness": 0.8,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "Strong historical accuracy linking economic developments to the era, offering high educational value regarding the material conditions of the Renaissance."
+    },
+    {
+      "fact": "Some modern social and economic historians argue the Renaissance was not a cultural 'advance' but rather a period of pessimism and nostalgia, showing deep continuity with the Middle Ages.",
+      "score": 0.81,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.75,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.9,
+        "visualValue": 0.5,
+        "uniqueness": 0.85,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "Provides excellent historiographical nuance and challenges traditional narratives, though it is more conceptual than event-specific."
+    },
+    {
+      "fact": "It spread to other Italian centers like Venice and Rome, and eventually globally through colonial expansion",
+      "score": 0.77,
+      "metrics": {
+        "confidence": 0.9,
+        "specificity": 0.7,
+        "narrativeValue": 0.7,
+        "educationalValue": 0.75,
+        "visualValue": 0.8,
+        "uniqueness": 0.6,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Good geographical tracking of the movement's spread, though the global colonial aspect is somewhat generalized."
+    },
+    {
+      "fact": "The Renaissance spread far beyond Europe, reaching American, African, and Asian territories that were ruled by European colonial powers or visited by Christian missionaries.",
+      "score": 0.76,
+      "metrics": {
+        "confidence": 0.85,
+        "specificity": 0.7,
+        "narrativeValue": 0.75,
+        "educationalValue": 0.8,
+        "visualValue": 0.75,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.75
+      },
+      "reasoning": "Presents an interesting global perspective on the spread of the Renaissance, though the concept of a global Renaissance is somewhat historiographically debated."
+    },
+    {
+      "fact": "The Renaissance began during the crisis of the Late Middle Ages",
+      "score": 0.74,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.65,
+        "narrativeValue": 0.7,
+        "educationalValue": 0.8,
+        "visualValue": 0.65,
+        "uniqueness": 0.6,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Accurately contextualizes the event's origins within a broader historical period, offering good educational value."
+    },
+    {
+      "fact": "It began in Florence and spread throughout Europe",
+      "score": 0.69,
+      "metrics": {
+        "confidence": 0.99,
+        "specificity": 0.5,
+        "narrativeValue": 0.55,
+        "educationalValue": 0.65,
+        "visualValue": 0.7,
+        "uniqueness": 0.3,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "An essential but highly generic geographical fact that lacks deep detail or narrative hook."
+    }
+  ],
+  "visualModules": [
+    {
+      "type": "historical_event",
+      "title": "Historical Event Blueprint Snapshot",
+      "data": {
+        "causes": [
+          "Social and civic peculiarities of Florence",
+          "Political structure of Florence",
+          "Patronage of the dominant Medici family",
+          "Migration of Greek scholars and their texts to Italy following the fall of Constantinople to the Ottoman Empire",
+          "Rediscovery of classical Greek philosophy and Roman humanitas",
+          "Search for Latin literary, historical, and oratorical texts in Europe's monastic libraries by humanists like Poggio Bracciolini"
+        ],
+        "timeline": [
+          "Late 13th century: First traces in Italy with Dante's writings and Giotto's paintings",
+          "14th century: Resurgence of learning based on classical sources credited to Petrarch",
+          "15th century: Early Renaissance begins in Florence",
+          "1453: Fall of Constantinople generates wave of émigré Greek scholars bringing ancient manuscripts to Western Europe",
+          "Late 15th century: Invention of metal movable type speeds the dissemination of ideas",
+          "1486: Giovanni Pico della Mirandola writes De hominis dignitate (Oration on the Dignity of Man)",
+          "1517: Advent of the Reformation",
+          "1527: Sack of Rome by Holy Roman Emperor Charles V, concluding the Italian Renaissance",
+          "1545: Advent of the Counter-Reformation"
+        ],
+        "participants": [
+          "Dante",
+          "Giotto",
+          "Petrarch",
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Poggio Bracciolini",
+          "Nicola Pisano",
+          "Masaccio",
+          "Niccolò Machiavelli",
+          "Giovanni Pico della Mirandola",
+          "Lorenzo Valla",
+          "Erasmus",
+          "Tintoretto",
+          "Sofonisba Anguissola",
+          "Paolo Veronese",
+          "The Medici family",
+          "Charles V (Holy Roman Emperor)"
+        ],
+        "turningPoints": [
+          "Fall of Constantinople (1453) leading to the migration of Greek scholars and manuscripts to Italy",
+          "Invention of metal movable type in the late 15th century",
+          "Sack of Rome (1527) by Holy Roman Emperor Charles V",
+          "Advent of the Reformation (1517)"
+        ],
+        "outcome": [
+          "Development of linear perspective and natural reality rendering in painting",
+          "Widespread educational reform and development of vernacular literatures",
+          "Development of the customs and conventions of diplomacy in politics",
+          "Revolutions in printing and navigation",
+          "Introduction of modern banking and the field of accounting",
+          "Paving of the way for the Protestant Reformation through critical engagement with Greek Christian texts"
+        ],
+        "impact": [
+          "Profoundly affected European intellectual life in the early modern period",
+          "Spread from Florence to the rest of Italy, throughout Europe, and to American, African, and Asian territories under European colonial rule or missionary activity",
+          "Shifted intellectual approaches to religion, emphasizing humanism and reason alongside Christianity",
+          "Inspired the concept of the 'Renaissance man' through polymathic achievements"
+        ]
+      }
+    }
+  ],
+  "narrativePlan": {
+    "chapters": [
+      {
+        "chapterIndex": 0,
+        "title": "The Florentine Cradle of Humanism",
+        "referenceLabel": "Causes",
+        "readerQuestion": "What unique social and intellectual conditions in Florence sparked a departure from medieval thinking?",
+        "objectives": [
+          "Explain how the movement originated in Florence during the crisis of the Late Middle Ages.",
+          "Contrast the humanist focus on classical literary and cultural texts with the scientific focus of medieval scholars."
+        ],
+        "approvedFacts": [
+          "The movement originated in Florence, aided by the patronage of the Medici family and the influx of Greek scholars after the fall of Constantinople",
+          "While medieval scholars of the 12th-century Renaissance focused on Greek and Arabic works of natural sciences and mathematics, Renaissance humanists shifted focus to classical literary, historical, and oratorical texts.",
+          "The Renaissance began during the crisis of the Late Middle Ages"
+        ],
+        "anchors": [
+          "Republic of Florence",
+          "Medici",
+          "Petrarch"
+        ]
+      },
+      {
+        "chapterIndex": 1,
+        "title": "The Humanist Measure of All",
+        "referenceLabel": "Early Battles",
+        "readerQuestion": "How did early Renaissance thinkers challenge medieval scholasticism while maintaining their religious faith?",
+        "objectives": [
+          "Examine the philosophical shift toward humanism inspired by ancient Greek philosophy.",
+          "Detail how scholars used humanist methods to study classical texts without rejecting Christianity."
+        ],
+        "approvedFacts": [
+          "The intellectual foundation of Renaissance humanism was heavily inspired by the ancient Greek philosopher Protagoras, who famously stated that 'man is the measure of all things'.",
+          "Renaissance scholars used humanist methods to study classical Latin and Greek texts, differing from medieval scholars by focusing on cultural rather than scientific texts",
+          "Renaissance humanists did not reject Christianity; instead, the Catholic Church patronized many of the era's greatest works of art, and humanists used original Greek texts to study the New Testament."
+        ],
+        "anchors": [
+          "Giovanni Pico della Mirandola",
+          "Leonardo da Vinci",
+          "Michelangelo"
+        ]
+      },
+      {
+        "chapterIndex": 2,
+        "title": "Constantinople and the Printing Press",
+        "referenceLabel": "Turning Point",
+        "readerQuestion": "Which major geopolitical and technological shifts accelerated the spread of Renaissance ideas across Europe?",
+        "objectives": [
+          "Analyze the impact of the fall of Constantinople and the resulting migration of Greek scholars.",
+          "Explore how the movement expanded from Florence to other Italian centers and throughout Europe."
+        ],
+        "approvedFacts": [
+          "It began in Florence and spread throughout Europe"
+        ],
+        "anchors": [
+          "Constantinople",
+          "1453",
+          "Late 15th Century"
+        ]
+      },
+      {
+        "chapterIndex": 3,
+        "title": "The Sack of Rome",
+        "referenceLabel": "Outcome",
+        "readerQuestion": "What dramatic political and military events brought the Italian Renaissance to its sudden conclusion?",
+        "objectives": [
+          "Detail the military assault on Rome by Holy Roman Emperor Charles V.",
+          "Explain the conventional end of the Italian Renaissance through the Sack of Rome and the Counter-Reformation."
+        ],
+        "approvedFacts": [
+          "The Italian Renaissance was brought to a sudden end in 1527 when the Holy Roman Emperor Charles V launched a military assault on Rome during the war of the League of Cognac.",
+          "In Italy, it conventionally ended with events like the Sack of Rome (1527) or the Counter-Reformation (1545), though a 'long Renaissance' outside Italy extended into the 17th century"
+        ],
+        "anchors": [
+          "Charles V",
+          "1527",
+          "Niccolò Machiavelli"
+        ]
+      },
+      {
+        "chapterIndex": 4,
+        "title": "Global Expansion and Economic Innovation",
+        "referenceLabel": "Legacy",
+        "readerQuestion": "How did the Renaissance reshape global commerce, banking, and international territories?",
+        "objectives": [
+          "Examine the introduction of modern banking and the formalization of accounting.",
+          "Trace the global spread of the Renaissance to American, African, and Asian territories.",
+          "Address the historical debate regarding whether the period represented a cultural advance or deep continuity with the Middle Ages."
+        ],
+        "approvedFacts": [
+          "The Renaissance saw the introduction of modern banking and the formalization of the field of accounting.",
+          "The Renaissance spread far beyond Europe, reaching American, African, and Asian territories that were ruled by European colonial powers or visited by Christian missionaries.",
+          "Some modern social and economic historians argue the Renaissance was not a cultural 'advance' but rather a period of pessimism and nostalgia, showing deep continuity with the Middle Ages."
+        ],
+        "anchors": [
+          "It spread to other Italian centers like Venice and Rome, and eventually globally through colonial expansion"
+        ]
+      }
+    ]
+  },
+  "triviaCandidates": [
+    {
+      "fact": "The intellectual foundation of Renaissance humanism was heavily inspired by the ancient Greek philosopher Protagoras, who famously stated that 'man is the measure of all things'.",
+      "surpriseScore": 7,
+      "readMoreTopic": "Humanism"
+    },
+    {
+      "fact": "The Renaissance saw the introduction of modern banking and the formalization of the field of accounting.",
+      "surpriseScore": 8,
+      "readMoreTopic": "History of banking"
+    },
+    {
+      "fact": "While medieval scholars of the 12th-century Renaissance focused on Greek and Arabic works of natural sciences and mathematics, Renaissance humanists shifted focus to classical literary, historical, and oratorical texts.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Renaissance of the 12th century"
+    },
+    {
+      "fact": "The Italian Renaissance was brought to a sudden end in 1527 when the Holy Roman Emperor Charles V launched a military assault on Rome during the war of the League of Cognac.",
+      "surpriseScore": 9,
+      "readMoreTopic": "Sack of Rome (1527)"
+    },
+    {
+      "fact": "Renaissance humanists did not reject Christianity; instead, the Catholic Church patronized many of the era's greatest works of art, and humanists used original Greek texts to study the New Testament.",
+      "surpriseScore": 7,
+      "readMoreTopic": "Christian humanism"
+    },
+    {
+      "fact": "The term 'Renaissance man' was directly inspired by the diverse, polymathic contributions of Leonardo da Vinci and Michelangelo.",
+      "surpriseScore": 6,
+      "readMoreTopic": "Polymath"
+    },
+    {
+      "fact": "The Renaissance spread far beyond Europe, reaching American, African, and Asian territories that were ruled by European colonial powers or visited by Christian missionaries.",
+      "surpriseScore": 8,
+      "readMoreTopic": "European colonization"
+    },
+    {
+      "fact": "Some modern social and economic historians argue the Renaissance was not a cultural 'advance' but rather a period of pessimism and nostalgia, showing deep continuity with the Middle Ages.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Historiography of the Renaissance"
+    }
+  ],
+  "relatedTopics": [
+    "Humanism",
+    "Italian Renaissance",
+    "Late Middle Ages",
+    "Protestant Reformation",
+    "Sack of Rome (1527)",
+    "Scientific Revolution",
+    "Age of Discovery",
+    "Medici",
+    "Byzantine Empire",
+    "Classical Antiquity"
+  ],
+  "confidenceScores": {
+    "resolver": 0.95,
+    "compiler": 1,
+    "grader": 0.7846153846153846,
+    "overall": 0.96
+  },
+  "qualityAssessment": {
+    "generationMode": "primary",
+    "fallbackRatio": 0,
+    "provenanceCoverage": 0.8611111111111112,
+    "placeholderCount": 0,
+    "verifiedFactRatio": 1,
+    "qualityScore": 96,
+    "confidenceBreakdown": {
+      "provenanceCoverage": 0.8611111111111112,
+      "fieldCoverage": 1,
+      "placeholderPenalty": 1,
+      "fallbackPenalty": 1,
+      "sourceAgreement": 0.95,
+      "extractionCompleteness": 1,
+      "factSpecificity": 0.7846153846153846,
+      "graphValidity": 1,
+      "timelineValidity": 1,
+      "validationPenalty": 1
+    },
+    "status": "PARTIAL",
+    "modulesPassing": [
+      "timeline",
+      "cards",
+      "didYouKnow",
+      "relatedTopics",
+      "structuredFactsData",
+      "knowledgeGraph"
+    ],
+    "modulesHidden": [],
+    "reasons": [
+      "all signals above threshold, no placeholder contamination, majority primary generation",
+      "downgraded because lintArtifact() reported validation errors"
+    ]
+  },
+  "stageDiagnostics": [
+    {
+      "stage": "entityResolver.pass1",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1613
+    },
+    {
+      "stage": "entityResolver.pass2",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1427
+    },
+    {
+      "stage": "compiler",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 10719
+    },
+    {
+      "stage": "knowledgeGraph",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2430
+    },
+    {
+      "stage": "factEvaluator",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 8427
+    },
+    {
+      "stage": "narrativePlanner",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 5152
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 3083
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2997
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2449
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2382
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2702
+    },
+    {
+      "stage": "documentaryWriter.summary",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1672
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1741
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1621
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1497
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1714
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1465
+    },
+    {
+      "stage": "stylePolish",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 8857
+    }
+  ],
+  "checksum": "1d82201184bc8a39e7296e9c795bb3edf30573c3111ca6ee9ce239af51e797e1",
+  "dependencyHash": "ef6ff2f49d9ab2bf6dc4ddf475ec9a9d89336c56153414f4e7828376b3e0e716",
+  "sourceReferences": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Renaissance",
+      "title": "Renaissance"
+    }
+  ],
+  "factScript": {
+    "chapters": [
+      {
+        "chapterTitle": "The Florentine Cradle of Humanism",
+        "referenceLabel": "Causes",
+        "questionAnswered": "What unique social and intellectual conditions in Florence sparked a departure from medieval thinking?",
+        "chronologicalPosition": 1,
+        "entities": [
+          "Republic of Florence",
+          "Medici",
+          "Constantinople"
+        ],
+        "dates": [
+          "1453",
+          "14th Century",
+          "Late 15th Century"
+        ],
+        "locations": [
+          "Florence",
+          "Constantinople",
+          "Italy"
+        ],
+        "people": [
+          "Petrarch",
+          "Poggio Bracciolini",
+          "Giovanni Pico della Mirandola"
+        ],
+        "events": [
+          "Fall of Constantinople",
+          "Crisis of the Late Middle Ages"
+        ],
+        "cause": "The crisis of the Late Middle Ages, combined with the political structure of Florence, the patronage of the Medici family, and the influx of Greek scholars fleeing Constantinople, catalyzed a shift toward classical antiquity.",
+        "effect": "Scholars abandoned medieval scholastic focus on natural sciences and mathematics in favor of classical literary, historical, and oratorical texts, establishing the foundation of Renaissance humanism.",
+        "keyFacts": [
+          "The Renaissance movement originated in Florence during the crisis of the Late Middle Ages, heavily aided by the financial patronage of the dominant Medici family.",
+          "The fall of Constantinople to the Ottoman Empire in 1453 triggered a massive migration of Greek scholars who brought ancient manuscripts to Western Europe.",
+          "While 12th-century medieval scholars focused on Greek and Arabic works of natural sciences and mathematics, Renaissance humanists shifted focus to classical literary, historical, and oratorical texts.",
+          "Humanists like Poggio Bracciolini actively searched Europe's monastic libraries to rediscover classical Latin literary, historical, and oratorical texts."
+        ],
+        "quotes": [],
+        "connections": [
+          "The Protestant Reformation (1517), which was paved by the humanist critical engagement with Greek Christian texts.",
+          "The invention of metal movable type in the late 15th century, which accelerated the dissemination of these newly recovered classical ideas."
+        ],
+        "takeaway": "Florence sparked humanism by shifting focus from science to literature.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "The Humanist Measure of All",
+        "referenceLabel": "Early Battles",
+        "questionAnswered": "How did early Renaissance thinkers challenge medieval scholasticism while maintaining their religious faith?",
+        "chronologicalPosition": 2,
+        "entities": [
+          "Renaissance humanism",
+          "Ancient Greek philosophy",
+          "Classical Latin texts",
+          "Classical Greek texts",
+          "New Testament",
+          "Catholic Church"
+        ],
+        "dates": [
+          "14th century",
+          "1453",
+          "1486"
+        ],
+        "locations": [
+          "Florence",
+          "Italy",
+          "Constantinople"
+        ],
+        "people": [
+          "Protagoras",
+          "Petrarch",
+          "Giovanni Pico della Mirandola"
+        ],
+        "events": [
+          "Fall of Constantinople",
+          "Renaissance"
+        ],
+        "cause": "The migration of Greek scholars carrying ancient manuscripts to Italy and the rediscovery of classical philosophy sparked a desire to reform medieval intellectual methods.",
+        "effect": "Scholars developed a humanistic approach to education and biblical study that harmonized classical reason with Christian theology, paving the way for religious and educational reforms.",
+        "keyFacts": [
+          "The intellectual foundation of Renaissance humanism was heavily inspired by the ancient Greek philosopher Protagoras, who famously stated that 'man is the measure of all things'.",
+          "Renaissance scholars used humanist methods to study classical Latin and Greek texts, differing from medieval scholars by focusing on cultural rather than scientific texts.",
+          "Renaissance humanists did not reject Christianity; instead, the Catholic Church patronized many of the era's greatest works of art, and humanists used original Greek texts to study the New Testament."
+        ],
+        "quotes": [
+          "man is the measure of all things"
+        ],
+        "connections": [
+          "Paves the way for the Protestant Reformation through critical engagement with Greek Christian texts.",
+          "Connects to the rise of Florence as an intellectual hub fueled by Medici patronage and Greek manuscripts."
+        ],
+        "takeaway": "Humanists harmonized classical Greek philosophy with Christian faith.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "Constantinople and the Printing Press",
+        "referenceLabel": "Turning Point",
+        "questionAnswered": "Which major geopolitical and technological shifts accelerated the spread of Renaissance ideas across Europe?",
+        "chronologicalPosition": 3,
+        "entities": [
+          "Movable Type",
+          "Republic of Florence",
+          "Medici"
+        ],
+        "dates": [
+          "1453",
+          "Late 15th Century"
+        ],
+        "locations": [
+          "Constantinople",
+          "Florence",
+          "Italy",
+          "Europe"
+        ],
+        "people": [
+          "The Medici family"
+        ],
+        "events": [
+          "Fall of Constantinople",
+          "Invention of metal movable type"
+        ],
+        "cause": "The Ottoman conquest of Constantinople forced Greek scholars to flee to Italy with ancient manuscripts, while the subsequent invention of metal movable type revolutionized text production.",
+        "effect": "Classical knowledge and humanist philosophy rapidly spread from localized Italian centers like Florence to the rest of the European continent.",
+        "keyFacts": [
+          "The Renaissance began in Florence under the patronage of the dominant Medici family before spreading throughout Europe.",
+          "The 1453 Fall of Constantinople generated a wave of émigré Greek scholars who brought ancient manuscripts and classical philosophy to Western Europe.",
+          "The invention of metal movable type in the late 15th century accelerated the dissemination of humanist ideas across the continent."
+        ],
+        "quotes": [],
+        "connections": [
+          "The migration of Greek texts directly fueled the resurgence of classical learning first championed by Petrarch in the 14th century.",
+          "The rapid dissemination of humanist texts laid the intellectual groundwork for the advent of the Reformation in 1517."
+        ],
+        "takeaway": "Geopolitical flight and printing technology rapidly globalized Renaissance ideas.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "The Sack of Rome",
+        "referenceLabel": "Outcome",
+        "questionAnswered": "What dramatic political and military events brought the Italian Renaissance to its sudden conclusion?",
+        "chronologicalPosition": 4,
+        "entities": [
+          "Holy Roman Empire",
+          "League of Cognac"
+        ],
+        "dates": [
+          "1527",
+          "1545"
+        ],
+        "locations": [
+          "Rome",
+          "Italy"
+        ],
+        "people": [
+          "Charles V"
+        ],
+        "events": [
+          "Sack of Rome",
+          "War of the League of Cognac",
+          "Counter-Reformation"
+        ],
+        "cause": "Holy Roman Emperor Charles V launched a military assault on Rome during the war of the League of Cognac.",
+        "effect": "The military devastation and subsequent Counter-Reformation brought a sudden end to the Italian Renaissance, shifting the movement's focus outside of Italy.",
+        "keyFacts": [
+          "The Italian Renaissance was brought to a sudden end in 1527 by a military assault on Rome led by Holy Roman Emperor Charles V.",
+          "The assault occurred during the conflict known as the war of the League of Cognac.",
+          "In Italy, the Renaissance conventionally concluded with the Sack of Rome in 1527 or the onset of the Counter-Reformation in 1545.",
+          "While the Renaissance ended abruptly in Italy, a 'long Renaissance' continued outside of Italy, extending into the 17th century."
+        ],
+        "quotes": [],
+        "connections": [
+          "The Protestant Reformation (1517)",
+          "The Counter-Reformation (1545)"
+        ],
+        "takeaway": "The Sack of Rome abruptly ended the Italian Renaissance.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "Global Expansion and Economic Innovation",
+        "referenceLabel": "Legacy",
+        "questionAnswered": "How did the Renaissance reshape global commerce, banking, and international territories?",
+        "chronologicalPosition": 5,
+        "entities": [
+          "The Medici family",
+          "European colonial powers",
+          "Christian missionaries"
+        ],
+        "dates": [
+          "1517",
+          "1527"
+        ],
+        "locations": [
+          "Florence",
+          "Italy",
+          "Europe",
+          "American territories",
+          "African territories",
+          "Asian territories"
+        ],
+        "people": [
+          "Charles V"
+        ],
+        "events": [
+          "Sack of Rome",
+          "Advent of the Reformation"
+        ],
+        "cause": "The expansion of European colonial trade routes, missionary activities, and the growth of merchant wealth drove the need for sophisticated financial systems and global administrative reach.",
+        "effect": "These developments established modern financial infrastructures and spread European cultural influence globally, while triggering a modern historical debate over the period's actual progressiveness.",
+        "keyFacts": [
+          "The Renaissance period introduced modern banking systems and formalized the professional field of accounting.",
+          "Renaissance cultural and economic influence expanded globally into American, African, and Asian territories via European colonial rule and Christian missionary networks.",
+          "Some modern social and economic historians challenge the traditional narrative, arguing the Renaissance was a period of pessimism and nostalgia that maintained deep continuity with the Middle Ages rather than a cultural advance."
+        ],
+        "quotes": [],
+        "connections": [
+          "The rise of global trade networks directly links to the development of advanced navigation technologies and printing innovations.",
+          "The wealth generated by these new banking systems fueled the extensive patronage of arts and sciences back in European civic centers."
+        ],
+        "takeaway": "Renaissance innovations laid global economic foundations amidst deep medieval continuities.",
+        "insufficientData": false
+      }
+    ]
+  },
+  "briefSummaryProvenance": [
+    {
+      "sentence": "Florence birthed the Renaissance during the crisis of the Late Middle Ages, fueled by the wealthy Medici family .",
+      "fact": "Chapter 1: The Renaissance movement originated in Florence during the crisis of the Late Middle Ages, heavily aided by the financial patronage of the dominant Medici family."
+    },
+    {
+      "sentence": "In 1453, the fall of Constantinople forced Greek scholars to flee to Western Europe with ancient manuscripts .",
+      "fact": "Chapter 1: The fall of Constantinople to the Ottoman Empire in 1453 triggered a massive migration of Greek scholars who brought ancient manuscripts to Western Europe."
+    },
+    {
+      "sentence": "Humanists like Poggio Bracciolini searched monastic libraries to recover classical Latin literature .",
+      "fact": "Chapter 1: Humanists like Poggio Bracciolini actively searched Europe's monastic libraries to rediscover classical Latin literary, historical, and oratorical texts."
+    },
+    {
+      "sentence": "These scholars did not reject Christianity, and the Catholic Church patronized many of the era's greatest artworks .",
+      "fact": "Chapter 2: Renaissance humanists did not reject Christianity; instead, the Catholic Church patronized many of the era's greatest works of art, and humanists used original Greek texts to study the New Testament."
+    },
+    {
+      "sentence": "However, the Italian Renaissance ended abruptly in 1527 when Holy Roman Emperor Charles V assaulted Rome .",
+      "fact": "Chapter 4: The Italian Renaissance was brought to a sudden end in 1527 by a military assault on Rome led by Holy Roman Emperor Charles V."
+    },
+    {
+      "sentence": "This military invasion occurred during the War of the League of Cognac .",
+      "fact": "Chapter 4: The assault occurred during the conflict known as the war of the League of Cognac."
+    },
+    {
+      "sentence": "Outside of Italy, a long Renaissance persisted into the seventeenth century .",
+      "fact": "Chapter 4: While the Renaissance ended abruptly in Italy, a 'long Renaissance' continued outside of Italy, extending into the 17th century."
+    }
+  ],
+  "validationStatus": {
+    "passed": false,
+    "errors": [
+      "Timeline is not in strict chronological order",
+      "Identical 4-word phrases must not repeat across chapters",
+      "Sentence provenance is incomplete: only 84% of sentences are mapped to facts"
+    ],
+    "warnings": [],
+    "checkedRules": {
+      "ontology_match": true,
+      "required_fields_exist": true,
+      "timeline_non_empty": true,
+      "timeline_count_bounds": true,
+      "timeline_chronological": false,
+      "graph_has_triples": true,
+      "graph_connected": true,
+      "graph_no_synthetic_nodes": true,
+      "named_entities_non_empty": true,
+      "no_weak_facts": true,
+      "no_duplicate_facts": true,
+      "no_duplicate_sentences": true,
+      "no_placeholder_wording": true,
+      "generic_wording_check": true,
+      "paragraph_length_limit": true,
+      "unique_chapter_titles": true,
+      "concrete_dates_names_present": true,
+      "no_repeated_phrases": false,
+      "no_timeline_milestone_placeholder": true,
+      "reader_question_quality": true,
+      "did_you_know_length_ok": true,
+      "sentence_provenance_ok": false,
+      "no_abstract_writing": true,
+      "documentary_alternating_rule": true,
+      "fact_density_met": true,
+      "curiosity_score_ok": true,
+      "documentary_score_ok": true,
+      "resolver_confidence_ok": true,
+      "compiler_confidence_ok": true,
+      "overall_confidence_ok": true
+    },
+    "timestamp": "2026-07-11T08:27:57.269Z"
+  }
+}
