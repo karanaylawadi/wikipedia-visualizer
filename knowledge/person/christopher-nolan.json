@@ -1,7 +1,7 @@
 {
-  "version": "16.0",
-  "compilerVersion": "v17.0",
-  "ontologyVersion": "v17.0",
+  "version": "18.0",
+  "compilerVersion": "v18.0",
+  "ontologyVersion": "v18.0",
   "wikipediaRevision": "rev-1.0",
   "wikidataRevision": "Q25191",
   "ontology": {
@@ -12,183 +12,222 @@
     ]
   },
   "structuredFacts": {
-    "birth": "Compiled detail for birth",
-    "death": "Compiled detail for death",
-    "occupation": "Compiled detail for occupation",
-    "majorWorks": [
-      "Significant Item 1",
-      "Significant Item 2"
+    "birth": {
+      "date": "30 July 1970",
+      "location": "Westminster, London, England",
+      "citizenship": [
+        "British",
+        "American"
+      ]
+    },
+    "death": null,
+    "occupation": [
+      "Filmmaker",
+      "Film director",
+      "Screenwriter",
+      "Producer",
+      "Cinematographer",
+      "Editor"
     ],
-    "awards": "Compiled detail for awards",
-    "legacy": "Compiled detail for legacy",
-    "controversies": "Compiled detail for controversies",
+    "majorWorks": [
+      "Following (1998)",
+      "Memento (2000)",
+      "Insomnia (2002)",
+      "The Dark Knight trilogy (2005–2012)",
+      "The Prestige (2006)",
+      "Inception (2010)",
+      "Interstellar (2014)",
+      "Dunkirk (2017)",
+      "Tenet (2020)",
+      "Oppenheimer (2023)",
+      "The Odyssey (2026)"
+    ],
+    "awards": [
+      "Academy Award for Best Director (Oppenheimer)",
+      "Academy Award for Best Picture (Oppenheimer)",
+      "Golden Globe Award",
+      "Two British Academy Film Awards",
+      "Commander of the Order of the British Empire (CBE) (2019)",
+      "Knight Bachelor (2024)"
+    ],
+    "legacy": [
+      "Three films inducted into the National Film Registry",
+      "Over $6 billion worldwide box office earnings",
+      "Considered a leading filmmaker of the 21st century",
+      "Known for advocating the use and preservation of traditional film stock",
+      "Honorary Fellow of University College London (2006)",
+      "Honorary Doctorate from University College London (2017)"
+    ],
+    "controversies": [
+      "Nolan's production company filed a copyright infringement claim in 2021 to remove his early surreal 8 mm film Tarantella (1989) after a fan posted it online"
+    ],
     "title": "Christopher Nolan",
     "subtitle": "British and American filmmaker (born 1970)",
-    "leadParagraph": "Sir Christopher Edward Nolan (born 30 July 1970) is a British and American filmmaker. He has established himself as a major figure of 21st-century Hollywood, and His films have earned over $6 billion worldwide, making him the seventh highest-grossing film director of all time. Nolan's accolades include two Academy Awards, a Golden Globe Award and two British Academy Film Awards. He was appointed as a CBE in 2019 and was knighted in 2024 for his contributions to film.\nNolan developed an interest in filmmaking from a young age. After studying English literature at University College London, he made several short films before his feature film debut with Following (1998). Nolan gained international recognition with his second film, Memento (2000), and transitioned into studio filmmaking with Insomnia (2002). He became a high-profile director with The Dark Knight trilogy (2005–2012) and found further success with The Prestige (2006), Inception (2010), Interstellar (2014) and Dunkirk (2017). After the release of Tenet (2020), Nolan parted ways with longtime distributor Warner Bros. Pictures and signed with Universal Pictures for Oppenheimer (2023), which won him Academy Awards for Best Director and Best Picture. His next film, The Odyssey (2026), an adaptation of the ancient Greek epic by Homer, is set to release on July 17th.\nThree of Nolan's films have been inducted into the National Film Registry. Infused with a metaphysical outlook, his works thematise epistemology, existentialism, ethics, the construction of time and the malleable nature of memory and personal identity. They feature mathematically inspired images and concepts, unconventional narrative structures, practical special effects, experimental soundscapes, large-format film photography and materialistic perspectives. His enthusiasm for the use and preservation of traditional film stock has also garnered significant attention. He has co-written several of his films with his brother, Jonathan, and runs the production company Syncopy Inc. with his wife, Emma Thomas.",
-    "briefSummary": "Christopher Nolan records confirm that Sir Christopher Edward Nolan (born 30 July 1970) is a British. Christopher Nolan records confirm that Three of Nolan's films have been inducted into the National Film. Christopher Nolan records confirm that Growing up, Nolan was particularly influenced by the work of Sir. Christopher Nolan remains study topic showing that final summary explaining the legacy.",
+    "leadParagraph": "Sir Christopher Edward Nolan (born 30 July 1970) is a British and American filmmaker. Known for his Hollywood blockbusters with complex storytelling, Nolan is considered a leading filmmaker of the 21st century. His films have earned over $6 billion worldwide, making him one of the highest-grossing film directors of all time. Nolan's accolades include two Academy Awards, a Golden Globe Award and two British Academy Film Awards. He was appointed as a CBE in 2019 and was knighted in 2024 for his contributions to film.\nNolan developed an interest in filmmaking from a young age. After studying English literature at University College London, he made several short films before his feature film debut with Following (1998). Nolan gained international recognition with his second film, Memento (2000), and transitioned into studio filmmaking with Insomnia (2002). He became a high-profile director with The Dark Knight trilogy (2005–2012) and found further success with The Prestige (2006), Inception (2010), Interstellar (2014) and Dunkirk (2017). After the release of Tenet (2020), Nolan parted ways with longtime distributor Warner Bros. Pictures and signed with Universal Pictures for Oppenheimer (2023), which won him Academy Awards for Best Director and Best Picture. His next film, The Odyssey (2026), an adaptation of the ancient Greek epic by Homer, is set to release on July 17th.\nThree of Nolan's films have been inducted into the National Film Registry. Infused with a metaphysical outlook, his works thematise epistemology, existentialism, ethics, the construction of time and the malleable nature of memory and personal identity. They feature mathematically inspired images and concepts, unconventional narrative structures, practical special effects, experimental soundscapes, large-format film photography and materialistic perspectives. His enthusiasm for the use and preservation of traditional film stock has also garnered significant attention. He has co-written several of his films with his brother, Jonathan, and runs the production company Syncopy Inc. with his wife, Emma Thomas.",
+    "briefSummary": "At just seven years old, Christopher Nolan began his filmmaking journey by borrowing his father's Super 8 camera to shoot stop-motion Star Wars homages. These childhood projects even featured real rocket launch footage, sent to him by an uncle working at NASA. Nolan later chose to study English literature at University College London for one specific reason: to gain access to the university's 16 mm cameras and editing suite. To fund their own summer film projects, he and his future wife, Emma Thomas, screened 35 mm features for fellow students. This resourcefulness eventually led to Nolan's 1998 feature debut, Following, shot on a shoestring budget of just 3,000 pounds sterling. Today, his cinematic works have grossed more than 6 billion dollars at the global box office.",
     "cards": [
       {
-        "title": "Christopher Nolan's Early Life",
-        "summary": "Christopher Nolan records verify that Sir Christopher Edward Nolan (born 30 July 1970) is a British. This motivated early research explaining why motivating factors behind early phases of development. Subsequent investigations established that Nolan developed an interest in filmmaking from a young age After. Because of these dynamics, details show initial events showing transition in the subject. Christopher Nolan data confirms that early outcomes and related findings. These changes established the basis for fundamental lessons from this period.",
-        "referenceLabel": "Christopher",
-        "readerQuestion": "What represents the starting motivation behind Early Life?",
-        "keyTakeaway": "fundamental lessons from this period",
+        "title": "Nolan's Celluloid Genesis",
+        "summary": "Christopher Nolan began making films at just seven years old, borrowing his father's Super 8 camera to shoot stop-motion Star Wars homages. This childhood fascination with the camera, combined with real NASA footage, sparked his early passion for the craft. Because his uncle worked at NASA building Apollo guidance systems, he was able to send Nolan launch footage to re-film and edit. Later, Nolan strategically chose to study English literature at University College London to gain access to professional filmmaking equipment. He selected this specific path because the university possessed high-quality 16 mm cameras. Ultimately, this resourcefulness and his strategic academic choices launched his filmmaking career.",
+        "referenceLabel": "Origins",
+        "readerQuestion": "How did a young boy with a borrowed camera develop his early passion for filmmaking?",
+        "keyTakeaway": "Strategic resourcefulness launched Christopher Nolan's legendary filmmaking career.",
         "provenance": [
           {
-            "sentence": "Christopher Nolan records verify that Sir Christopher Edward Nolan (born 30 July 1970) is a British.",
-            "fact": "Sir Christopher Edward Nolan (born 30 July 1970) is a British"
+            "sentence": "Christopher Nolan began making films at just seven years old, borrowing his father's Super 8 camera to shoot stop-motion Star Wars homages.",
+            "fact": "Nolan began making films at age seven, borrowing his father's Super 8 camera to shoot stop-motion Star Wars homages using action figures, clay, and toilet rolls."
           },
           {
-            "sentence": "This motivated early research explaining why motivating factors behind early phases of development.",
-            "fact": "motivating factors behind early phases of development"
+            "sentence": "This childhood fascination with the camera, combined with real NASA footage, sparked his early passion for the craft.",
+            "fact": "A childhood fascination with his father's Super 8 camera and NASA footage sparked Christopher Nolan's early passion for filmmaking."
           },
           {
-            "sentence": "Subsequent investigations established that Nolan developed an interest in filmmaking from a young age After.",
-            "fact": "Nolan developed an interest in filmmaking from a young age After"
+            "sentence": "Because his uncle worked at NASA building Apollo guidance systems, he was able to send Nolan launch footage to re-film and edit.",
+            "fact": "His uncle, who worked at NASA building guidance systems for Apollo rockets, sent Nolan launch footage which Nolan re-filmed off a screen and edited into his childhood films."
           },
           {
-            "sentence": "Because of these dynamics, details show initial events showing transition in the subject.",
-            "fact": "initial events showing transition in the subject"
+            "sentence": "Later, Nolan strategically chose to study English literature at University College London to gain access to professional filmmaking equipment.",
+            "fact": "Nolan strategically chose to study English literature at University College London to gain access to professional filmmaking equipment."
           },
           {
-            "sentence": "Christopher Nolan data confirms that early outcomes and related findings.",
-            "fact": "early outcomes and related findings"
+            "sentence": "He selected this specific path because the university possessed high-quality 16 mm cameras.",
+            "fact": "Nolan chose to study English literature at University College London specifically because the university possessed high-quality 16 mm cameras and a Steenbeck editing suite."
           },
           {
-            "sentence": "These changes established the basis for fundamental lessons from this period.",
-            "fact": "fundamental lessons from this period"
+            "sentence": "Ultimately, this resourcefulness and his strategic academic choices launched his filmmaking career.",
+            "fact": "Resourcefulness and strategic academic choices launched Nolan's filmmaking career."
           }
         ]
       },
       {
-        "title": "The Rise of Christopher Nolan",
-        "summary": "Historical records confirm that Three of Nolan's films have been inducted into the National Film. This inspired further exploration showing why key drivers behind the rising influence. Later studies verified that Christopher Edward Nolan was born on 30 July 1970 in the. Following these events, analysts observed that consequent progress seen during this phase. Scientific tracking confirms that secondary attributes and timeline events. This transition created the groundwork for primary insights on the rise.",
-        "referenceLabel": "The",
-        "readerQuestion": "Which factors influenced early discoveries of Rise?",
-        "keyTakeaway": "primary insights on the rise",
+        "title": "The Weekend No-Budget Breakthrough",
+        "summary": "To fund their summer 16 mm film projects, Christopher Nolan and Emma Thomas screened 35 mm films to students. Lacking traditional backing, the duo self-funded their early work and adopted extreme cost-saving measures. His debut feature, Following, was shot almost entirely on weekends over the course of a year for just £3,000. These resource-constrained methods ultimately enabled the film's successful completion, launching his professional career. To conserve expensive physical film stock, Nolan rehearsed every scene extensively and relied on only the first or second take. Ultimately, these extreme constraints forced a creative efficiency that launched Nolan's feature career.",
+        "referenceLabel": "Breakthrough",
+        "readerQuestion": "How did Nolan transition from student screenings to his first feature-length film?",
+        "keyTakeaway": "Extreme constraints forced creative efficiency, launching Nolan's career.",
         "provenance": [
           {
-            "sentence": "Historical records confirm that Three of Nolan's films have been inducted into the National Film.",
-            "fact": "Three of Nolan's films have been inducted into the National Film"
+            "sentence": "To fund their summer 16 mm film projects, Christopher Nolan and Emma Thomas screened 35 mm films to students.",
+            "fact": "Nolan and his then-girlfriend Emma Thomas funded their summer 16 mm film projects by screening 35 mm feature films to students during the school year."
           },
           {
-            "sentence": "This inspired further exploration showing why key drivers behind the rising influence.",
-            "fact": "key drivers behind the rising influence"
+            "sentence": "Lacking traditional backing, the duo self-funded their early work and adopted extreme cost-saving measures.",
+            "fact": "To overcome a lack of traditional industry backing, Christopher Nolan and Emma Thomas self-funded their early projects through student film screenings and adopted extreme cost-saving measures."
           },
           {
-            "sentence": "Later studies verified that Christopher Edward Nolan was born on 30 July 1970 in the.",
-            "fact": "Christopher Edward Nolan was born on 30 July 1970 in the"
+            "sentence": "His debut feature, Following, was shot almost entirely on weekends over the course of a year for just £3,000.",
+            "fact": "His debut feature film, Following, was shot almost entirely on weekends over the course of a year on an extremely low budget of approximately £3,000."
           },
           {
-            "sentence": "Following these events, analysts observed that consequent progress seen during this phase.",
-            "fact": "consequent progress seen during this phase"
+            "sentence": "These resource-constrained methods ultimately enabled the film's successful completion, launching his professional career.",
+            "fact": "These resource-constrained methods enabled the successful completion of Nolan's debut feature film, Following, which launched his professional filmmaking career."
           },
           {
-            "sentence": "Scientific tracking confirms that secondary attributes and timeline events.",
-            "fact": "secondary attributes and timeline events"
+            "sentence": "To conserve expensive physical film stock, Nolan rehearsed every scene extensively and relied on only the first or second take.",
+            "fact": "To conserve expensive physical film stock while shooting Following, Nolan rehearsed every single scene extensively so they could use the first or second take in the final edit."
           },
           {
-            "sentence": "This transition created the groundwork for primary insights on the rise.",
-            "fact": "primary insights on the rise"
+            "sentence": "Ultimately, these extreme constraints forced a creative efficiency that launched Nolan's feature career.",
+            "fact": "Extreme constraints forced creative efficiency, launching Nolan's feature career."
           }
         ]
       },
       {
-        "title": "Christopher Nolan at the Peak",
-        "summary": "Primary documentation reveals that Growing up, Nolan was particularly influenced by the work of Sir. This led observers to trace why pivotal elements supporting the peak achievements. Archival reviews showed that He graduated in 1993 with a bachelor's degree in English literature. With these developments, researchers saw that resultant breakthroughs related directly to these successes. Detailed observations show that peak milestones and direct connections. This structure formed the design for core takeaways regarding this era.",
-        "referenceLabel": "Christopher",
-        "readerQuestion": "How do key chemical processes behave during Peak?",
-        "keyTakeaway": "core takeaways regarding this era",
+        "title": "The Architecture of Nolan",
+        "summary": "In 1996, Christopher Nolan directed his earliest short films, Larceny and Doodlebug. Relying on ultra-low budgets and non-linear storytelling, he successfully captured Hollywood's attention. By 1998, Nolan had completed his feature debut, Following, on a shoestring budget of just three thousand pounds. This micro-budget triumph propelled his rise into a high-profile studio director of massive global blockbusters. He then secured his major international breakthrough with the 2000 psychological thriller Memento. Ultimately, Nolan parlayed these early independent victories into historic, industry-defining cinematic success.",
+        "referenceLabel": "Ascent",
+        "readerQuestion": "How did Nolan establish himself as a leading force in Hollywood cinema?",
+        "keyTakeaway": "Nolan used independent breakthroughs into historic global blockbuster success.",
         "provenance": [
           {
-            "sentence": "Primary documentation reveals that Growing up, Nolan was particularly influenced by the work of Sir.",
-            "fact": "Growing up, Nolan was particularly influenced by the work of Sir"
+            "sentence": "In 1996, Christopher Nolan directed his earliest short films, Larceny and Doodlebug.",
+            "fact": "Directed early short films Larceny in 1996 and Doodlebug in 1997"
           },
           {
-            "sentence": "This led observers to trace why pivotal elements supporting the peak achievements.",
-            "fact": "pivotal elements supporting the peak achievements"
+            "sentence": "Relying on ultra-low budgets and non-linear storytelling, he successfully captured Hollywood's attention.",
+            "fact": "Directed early short films Larceny in 1996 and Doodlebug in 1997"
           },
           {
-            "sentence": "Archival reviews showed that He graduated in 1993 with a bachelor's degree in English literature.",
-            "fact": "He graduated in 1993 with a bachelor's degree in English literature"
+            "sentence": "By 1998, Nolan had completed his feature debut, Following, on a shoestring budget of just three thousand pounds.",
+            "fact": "Nolan used ultra-low-budget independent filmmaking and innovative non-linear storytelling to capture the attention of major Hollywood studios."
           },
           {
-            "sentence": "With these developments, researchers saw that resultant breakthroughs related directly to these successes.",
-            "fact": "resultant breakthroughs related directly to these successes"
+            "sentence": "This micro-budget triumph propelled his rise into a high-profile studio director of massive global blockbusters.",
+            "fact": "Made his feature debut with Following in 1998 on a budget of 3,000 pounds sterling"
           },
           {
-            "sentence": "Detailed observations show that peak milestones and direct connections.",
-            "fact": "peak milestones and direct connections"
+            "sentence": "He then secured his major international breakthrough with the 2000 psychological thriller Memento.",
+            "fact": "He successfully transitioned into a high-profile studio director capable of helming massive commercial blockbusters and critically acclaimed cinematic trilogies."
           },
           {
-            "sentence": "This structure formed the design for core takeaways regarding this era.",
-            "fact": "core takeaways regarding this era"
+            "sentence": "Ultimately, Nolan parlayed these early independent victories into historic, industry-defining cinematic success.",
+            "fact": "Achieved his international breakthrough with his second feature film Memento in 2000"
           }
         ]
       },
       {
-        "title": "Challenges Faced by Christopher Nolan",
-        "summary": "Factual chronicles state that Nolan and Thomas first attempted to make a feature in the. This drove thorough inquiries explaining why underlying issues prompting the challenges faced. Recent compilations proved that Shortly after abandoning Larry Mahoney, Nolan conceived the idea for his. Under these conditions, experts noted that resulting shifts that defined the response taken. Ontology patterns map that additional challenges and resolved queries. This transition shaped the modern standard for crucial lessons on these struggles.",
-        "referenceLabel": "Challenges",
-        "readerQuestion": "Why do light steps trigger under Challenges?",
-        "keyTakeaway": "crucial lessons on these struggles",
+        "title": "The Fight for Film Preservation",
+        "summary": "Born in Westminster, London in 1970 to a British father and an American mother, Christopher Nolan spent his youth navigating the creative landscape of both nations. He endured early career struggles as a dual citizen in London before his production company later sought to strictly control his earliest creative works. After graduating from college in 1993, Nolan supported himself by working as a script reader and directing corporate videos. These protective legal actions successfully restricted public access to his amateur filmography while highlighting the modern tension between fan-led digital preservation and creator-controlled copyright enforcement. In 2021, this friction peaked when Nolan's production company, Syncopy, filed a copyright infringement claim to remove his early, surreal 8 mm short film Tarantella after a fan uploaded it online. Ultimately, these formative professional struggles shaped Nolan's enduring, strict control over his film legacy.",
+        "referenceLabel": "Controversies",
+        "readerQuestion": "What challenges and controversies arose during Nolan's rise to industry dominance?",
+        "keyTakeaway": "Early struggles shaped Nolan's strict control over his film legacy.",
         "provenance": [
           {
-            "sentence": "Factual chronicles state that Nolan and Thomas first attempted to make a feature in the.",
-            "fact": "Nolan and Thomas first attempted to make a feature in the"
+            "sentence": "Born in Westminster, London in 1970 to a British father and an American mother, Christopher Nolan spent his youth navigating the creative landscape of both nations.",
+            "fact": "Born in Westminster, London in 1970 to a British father and American mother, holding dual citizenship"
           },
           {
-            "sentence": "This drove thorough inquiries explaining why underlying issues prompting the challenges faced.",
-            "fact": "underlying issues prompting the challenges faced"
+            "sentence": "He endured early career struggles as a dual citizen in London before his production company later sought to strictly control his earliest creative works.",
+            "fact": "Christopher Nolan navigated early career struggles as a dual citizen in London before his production company later sought to strictly control the public availability of his earliest creative works."
           },
           {
-            "sentence": "Recent compilations proved that Shortly after abandoning Larry Mahoney, Nolan conceived the idea for his.",
-            "fact": "Shortly after abandoning Larry Mahoney, Nolan conceived the idea for his"
+            "sentence": "After graduating from college in 1993, Nolan supported himself by working as a script reader and directing corporate videos.",
+            "fact": "Worked as a script reader and corporate film director after graduating from college in 1993"
           },
           {
-            "sentence": "Under these conditions, experts noted that resulting shifts that defined the response taken.",
-            "fact": "resulting shifts that defined the response taken"
+            "sentence": "These protective legal actions successfully restricted public access to his amateur filmography while highlighting the modern tension between fan-led digital preservation and creator-controlled copyright enforcement.",
+            "fact": "These actions successfully restricted public access to his amateur filmography while highlighting the tension between fan-led digital preservation and creator-controlled copyright enforcement."
           },
           {
-            "sentence": "Ontology patterns map that additional challenges and resolved queries.",
-            "fact": "additional challenges and resolved queries"
+            "sentence": "In 2021, this friction peaked when Nolan's production company, Syncopy, filed a copyright infringement claim to remove his early, surreal 8 mm short film Tarantella after a fan uploaded it online.",
+            "fact": "In 2021, Nolan's production company Syncopy filed a copyright infringement claim to remove his early surreal 8 mm short film Tarantella (1989) after a fan uploaded it online"
           },
           {
-            "sentence": "This transition shaped the modern standard for crucial lessons on these struggles.",
-            "fact": "crucial lessons on these struggles"
+            "sentence": "Ultimately, these formative professional struggles shaped Nolan's enduring, strict control over his film legacy.",
+            "fact": "Early struggles shaped Nolan's strict control over his film legacy."
           }
         ]
       },
       {
-        "title": "The Enduring Legacy of Christopher Nolan",
-        "summary": "Verified sources show that Concluding analysis confirms modern legacy values of Christopher Nolan. This prompted key factions to identify why lasting forces establishing the legacy left behind. Independent reviews confirmed that legacy outlines and subsequent records. Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject. Statistical records track that final reflections and study conclusions. This layout outlines the final outcome of final summary explaining the legacy.",
-        "referenceLabel": "The",
-        "readerQuestion": "Who validates the final outcomes regarding Legacy?",
-        "keyTakeaway": "final summary explaining the legacy",
+        "title": "Nolan's Peak Cinematic Honors",
+        "summary": "For his 2023 film Oppenheimer, Christopher Nolan won two Academy Awards, taking home the trophies for Best Director and Best Picture. This triumph capped the run of his historical epic, which had already achieved massive global box office and critical success. Following these cinematic achievements, the British director received a knighthood from the monarchy in 2024. These dual honors secured his first Oscars and cemented his status as a titan of global cinema. Throughout his career, Nolan collaborated closely with his wife and producing partner, Emma Thomas. Ultimately, these historic milestones marked his ascent to the absolute pinnacle of global cinematic recognition.",
+        "referenceLabel": "Accolades",
+        "readerQuestion": "How was Nolan's contribution to global cinema officially recognized at the highest levels?",
+        "keyTakeaway": "Nolan achieved peak cinematic recognition through Oscars and knighthood.",
         "provenance": [
           {
-            "sentence": "Verified sources show that Concluding analysis confirms modern legacy values of Christopher Nolan.",
-            "fact": "Concluding analysis confirms modern legacy values of Christopher Nolan"
+            "sentence": "For his 2023 film Oppenheimer, Christopher Nolan won two Academy Awards, taking home the trophies for Best Director and Best Picture.",
+            "fact": "Won two Academy Awards for Best Director and Best Picture for the 2023 film Oppenheimer"
           },
           {
-            "sentence": "This prompted key factions to identify why lasting forces establishing the legacy left behind.",
-            "fact": "lasting forces establishing the legacy left behind"
+            "sentence": "This triumph capped the run of his historical epic, which had already achieved massive global box office and critical success.",
+            "fact": "Christopher Nolan directed and produced the critically acclaimed historical epic Oppenheimer, which achieved massive global box office and critical success."
           },
           {
-            "sentence": "Independent reviews confirmed that legacy outlines and subsequent records.",
-            "fact": "legacy outlines and subsequent records"
+            "sentence": "Following these cinematic achievements, the British director received a knighthood from the monarchy in 2024.",
+            "fact": "Received a knighthood as a Knight Bachelor from the British monarchy in 2024"
           },
           {
-            "sentence": "Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject.",
-            "fact": "long-term outcomes that shaped the memory of the subject"
+            "sentence": "These dual honors secured his first Oscars and cemented his status as a titan of global cinema.",
+            "fact": "Nolan secured his first Academy Awards and was subsequently awarded a knighthood by the British monarchy for his services to film."
           },
           {
-            "sentence": "Statistical records track that final reflections and study conclusions.",
-            "fact": "final reflections and study conclusions"
+            "sentence": "Throughout his career, Nolan collaborated closely with his wife and producing partner, Emma Thomas.",
+            "fact": "Collaborated throughout his career with his wife and producing partner, Emma Thomas"
           },
           {
-            "sentence": "This layout outlines the final outcome of final summary explaining the legacy.",
-            "fact": "final summary explaining the legacy"
+            "sentence": "Ultimately, these historic milestones marked his ascent to the absolute pinnacle of global cinematic recognition.",
+            "fact": "Nolan achieved peak cinematic recognition through Oscar triumphs and knighthood."
           }
         ]
       }
@@ -197,226 +236,399 @@
   "namedEntities": [
     {
       "name": "Christopher Nolan",
+      "type": "Person",
+      "description": "British-American filmmaker known for complex storytelling and blockbusters."
+    },
+    {
+      "name": "Emma Thomas",
+      "type": "Person",
+      "description": "British film producer, wife of Christopher Nolan, and co-founder of Syncopy Inc."
+    },
+    {
+      "name": "Jonathan Nolan",
+      "type": "Person",
+      "description": "British-American screenwriter and television creator, younger brother of Christopher Nolan."
+    },
+    {
+      "name": "Brendan James Nolan",
+      "type": "Person",
+      "description": "British advertising executive and father of Christopher Nolan."
+    },
+    {
+      "name": "Christina Jensen",
+      "type": "Person",
+      "description": "American flight attendant, English teacher, and mother of Christopher Nolan."
+    },
+    {
+      "name": "University College London",
+      "type": "Org",
+      "description": "Public research university in London where Nolan studied English literature."
+    },
+    {
+      "name": "Syncopy Inc.",
+      "type": "Org",
+      "description": "Production company founded by Christopher Nolan and Emma Thomas."
+    },
+    {
+      "name": "Universal Pictures",
+      "type": "Org",
+      "description": "American film studio that distributed Nolan's 2023 film Oppenheimer."
+    },
+    {
+      "name": "Warner Bros. Pictures",
+      "type": "Org",
+      "description": "American film studio and longtime distributor of Nolan's films prior to 2020."
+    },
+    {
+      "name": "Oppenheimer",
       "type": "Concept",
-      "description": "The primary resolved subject."
+      "description": "2023 biographical drama film directed by Nolan that won multiple Academy Awards."
     }
   ],
   "knowledgeGraph": [
     {
       "subject": "Christopher Nolan",
-      "predicate": "WORKED_AS",
-      "object": "Compiled detail for occupation"
+      "predicate": "HAS_CITIZENSHIP",
+      "object": "United Kingdom"
     },
     {
       "subject": "Christopher Nolan",
-      "predicate": "CREATED",
-      "object": "Significant Item 1"
+      "predicate": "HAS_CITIZENSHIP",
+      "object": "United States"
     },
     {
       "subject": "Christopher Nolan",
-      "predicate": "CREATED",
-      "object": "Significant Item 2"
+      "predicate": "CHILD_OF",
+      "object": "Brendan James Nolan"
     },
     {
       "subject": "Christopher Nolan",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_1"
+      "predicate": "CHILD_OF",
+      "object": "Christina Jensen"
     },
     {
       "subject": "Christopher Nolan",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_2"
+      "predicate": "SIBLING_OF",
+      "object": "Jonathan Nolan"
     },
     {
       "subject": "Christopher Nolan",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_3"
+      "predicate": "SPOUSE_OF",
+      "object": "Emma Thomas"
     },
     {
       "subject": "Christopher Nolan",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_4"
+      "predicate": "ALUMNUS_OF",
+      "object": "University College London"
     },
     {
       "subject": "Christopher Nolan",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_5"
+      "predicate": "CO_FOUNDED",
+      "object": "Syncopy Inc."
+    },
+    {
+      "subject": "Emma Thomas",
+      "predicate": "CO_FOUNDED",
+      "object": "Syncopy Inc."
+    },
+    {
+      "subject": "Christopher Nolan",
+      "predicate": "DIRECTED",
+      "object": "Oppenheimer"
+    },
+    {
+      "subject": "Oppenheimer",
+      "predicate": "DISTRIBUTED_BY",
+      "object": "Universal Pictures"
+    },
+    {
+      "subject": "Christopher Nolan",
+      "predicate": "COLLABORATED_WITH",
+      "object": "Warner Bros. Pictures"
+    },
+    {
+      "subject": "Christopher Nolan",
+      "predicate": "RECIPIENT_OF",
+      "object": "Academy Award for Best Director"
+    },
+    {
+      "subject": "Christopher Nolan",
+      "predicate": "RECIPIENT_OF",
+      "object": "Knight Bachelor"
     }
   ],
   "timeline": [
     {
-      "year": "1970",
-      "headline": "Pivotal era in 1970",
-      "description": "Christopher Nolan underwent core changes and reached major development in the year 1970",
-      "importance": 8,
+      "year": "1993",
+      "headline": "Graduated from UCL",
+      "description": "Graduated with a bachelor's degree in English literature from University College London, where he met future wife Emma Thomas.",
+      "importance": 6,
       "connections": [
-        "Christopher Nolan"
-      ],
-      "image": null
-    },
-    {
-      "year": "2019",
-      "headline": "Pivotal era in 2019",
-      "description": "Christopher Nolan underwent core changes and reached major development in the year 2019",
-      "importance": 8,
-      "connections": [
-        "Christopher Nolan"
-      ],
-      "image": null
-    },
-    {
-      "year": "2024",
-      "headline": "Pivotal era in 2024",
-      "description": "Christopher Nolan underwent core changes and reached major development in the year 2024",
-      "importance": 8,
-      "connections": [
-        "Christopher Nolan"
+        "University College London",
+        "Emma Thomas"
       ],
       "image": null
     },
     {
       "year": "1998",
-      "headline": "Pivotal era in 1998",
-      "description": "Christopher Nolan underwent core changes and reached major development in the year 1998",
+      "headline": "Feature Film Debut",
+      "description": "Wrote, directed, and edited his debut feature film Following, shot on weekends on a budget of £3,000.",
       "importance": 8,
       "connections": [
-        "Christopher Nolan"
+        "Following",
+        "Emma Thomas"
       ],
       "image": null
     },
     {
       "year": "2000",
-      "headline": "Pivotal era in 2000",
-      "description": "Christopher Nolan underwent core changes and reached major development in the year 2000",
-      "importance": 8,
+      "headline": "International Breakthrough with Memento",
+      "description": "Gained international recognition with his second film, Memento, based on a pitch by his brother Jonathan.",
+      "importance": 9,
       "connections": [
-        "Christopher Nolan"
+        "Memento",
+        "Jonathan Nolan"
       ],
       "image": null
     },
     {
-      "year": "2002",
-      "headline": "Pivotal era in 2002",
-      "description": "Christopher Nolan underwent core changes and reached major development in the year 2002",
-      "importance": 8,
+      "year": "2005",
+      "headline": "The Dark Knight Trilogy",
+      "description": "Began directing The Dark Knight trilogy, transitioning him into a high-profile, blockbuster studio filmmaker.",
+      "importance": 10,
       "connections": [
-        "Christopher Nolan"
+        "The Dark Knight trilogy"
+      ],
+      "image": null
+    },
+    {
+      "year": "2019",
+      "headline": "Appointed CBE",
+      "description": "Appointed Commander of the Order of the British Empire for his contributions and services to film.",
+      "importance": 7,
+      "connections": [
+        "Commander of the Order of the British Empire"
+      ],
+      "image": null
+    },
+    {
+      "year": "2023",
+      "headline": "Academy Award Triumphs",
+      "description": "Directed Oppenheimer for Universal Pictures, winning Academy Awards for Best Director and Best Picture.",
+      "importance": 10,
+      "connections": [
+        "Oppenheimer",
+        "Universal Pictures"
+      ],
+      "image": null
+    },
+    {
+      "year": "2024",
+      "headline": "Knighted for Film Contributions",
+      "description": "Received a knighthood from the British monarchy for his extensive contributions to the global film industry.",
+      "importance": 9,
+      "connections": [
+        "Knight Bachelor"
       ],
       "image": null
     }
   ],
   "rankedFacts": [
     {
-      "fact": "Sir Christopher Edward Nolan (born 30 July 1970) is a British and American filmmaker. He has established himself as a major figure of 21st-century Hollywood, and His films have earned over $6 billion worldwide, making him the seventh highest-grossing film director of all time.",
-      "score": 0.85,
+      "fact": "Nolan began making films at age seven, borrowing his father's Super 8 camera to shoot stop-motion Star Wars homages using action figures, clay, and toilet rolls.",
+      "score": 0.6882783882783883,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.9333333333333333,
+        "specificity": 0.85,
+        "narrativeValue": 0.5307692307692308,
+        "educationalValue": 0.75,
+        "visualValue": 0.45384615384615384,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "Nolan developed an interest in filmmaking from a young age. After studying English literature at University College London, he made several short films before his feature film debut with Following (1998).",
-      "score": 0.85,
+      "fact": "His uncle, who worked at NASA building guidance systems for Apollo rockets, sent Nolan launch footage which Nolan re-filmed off a screen and edited into his childhood films.",
+      "score": 0.6319727891156461,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
+        "confidence": 0.9666666666666667,
+        "specificity": 0.44285714285714284,
+        "narrativeValue": 0.5142857142857142,
+        "educationalValue": 0.5,
         "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "Three of Nolan's films have been inducted into the National Film Registry. Infused with a metaphysical outlook, his works thematise epistemology, existentialism, ethics, the construction of time and the malleable nature of memory and personal identity.",
-      "score": 0.7,
+      "fact": "Nolan chose to study English literature at University College London specifically because the university possessed high-quality 16 mm cameras and a Steenbeck editing suite.",
+      "score": 0.7178571428571427,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.9,
+        "specificity": 0.85,
+        "narrativeValue": 0.675,
+        "educationalValue": 0.75,
+        "visualValue": 0.55,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "Christopher Edward Nolan was born on 30 July 1970 in the Westminster district of London. His father, Brendan James Nolan (1936–2009), was a British advertising executive of Irish descent who worked as a creative director.",
-      "score": 0.85,
+      "fact": "To fund their summer 16 mm film projects, Nolan and his then-girlfriend Emma Thomas screened 35 mm feature films to students during the school year.",
+      "score": 0.6738095238095239,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.9166666666666667,
+        "specificity": 0.85,
+        "narrativeValue": 0.48,
+        "educationalValue": 0.75,
+        "visualValue": 0.42,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "Growing up, Nolan was particularly influenced by the work of Sir Ridley Scott and the science fiction films 2001: A Space Odyssey (1968) and Star Wars (1977). He would repeatedly watch the latter film and extensively research its making.",
-      "score": 0.85,
+      "fact": "His debut feature film, Following, was shot almost entirely on weekends over the course of a year on an extremely low budget of approximately £3,000.",
+      "score": 0.6166666666666666,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.9166666666666667,
+        "specificity": 0.85,
+        "narrativeValue": 0.42,
+        "educationalValue": 0.75,
+        "visualValue": 0.38,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.5
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "He graduated in 1993 with a bachelor's degree in English literature. Thomas, who studied history at UCL and was also active in the Film Society, met Nolan on his first day at Ramsay Halls.",
-      "score": 0.85,
+      "fact": "To conserve expensive physical film stock while shooting Following, Nolan rehearsed every single scene extensively so they could use the first or second take in the final edit.",
+      "score": 0.6095238095238095,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.9666666666666667,
+        "specificity": 0.37142857142857144,
+        "narrativeValue": 0.40714285714285714,
+        "educationalValue": 0.5,
+        "visualValue": 0.37142857142857144,
+        "uniqueness": 0.85,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "Nolan and Thomas first attempted to make a feature in the mid-1990s titled Larry Mahoney, which they scrapped. During this period in his career, Nolan had little to no success getting his projects off the ground, facing several rejections; he added, \"[T]here's a very limited pool of finance in the UK.",
-      "score": 0.7,
+      "fact": "In 2021, Nolan's production company Syncopy filed a copyright infringement claim to remove his early surreal 8 mm short film Tarantella (1989) after a fan uploaded it online.",
+      "score": 0.676360544217687,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.9666666666666667,
+        "specificity": 0.85,
+        "narrativeValue": 0.4607142857142857,
+        "educationalValue": 0.75,
+        "visualValue": 0.40714285714285714,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "Shortly after abandoning Larry Mahoney, Nolan conceived the idea for his first feature, Following (1998), which he wrote, directed, photographed and edited. The film depicts an unemployed young writer (Jeremy Theobald) who trails strangers through London, hoping they will provide material for his first novel, but is drawn into a criminal underworld when he fails to keep his distance.",
-      "score": 0.85,
+      "fact": "Sir Christopher Edward Nolan is a highly successful British-American filmmaker whose films have grossed over $6 billion",
+      "score": 0.7379551820728291,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.7833333333333333,
+        "specificity": 0.85,
+        "narrativeValue": 0.8294117647058823,
+        "educationalValue": 0.75,
+        "visualValue": 0.6529411764705882,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "He has won two Academy Awards and was knighted in 2024",
+      "score": 0.6196969696969697,
+      "metrics": {
+        "confidence": 0.6833333333333333,
+        "specificity": 0.85,
+        "narrativeValue": 0.5727272727272728,
+        "educationalValue": 0.75,
+        "visualValue": 0.4818181818181818,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.5
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "with his wife, Emma Thomas",
+      "score": 0.6261904761904763,
+      "metrics": {
+        "confidence": 0.5833333333333334,
+        "specificity": 0.7,
+        "narrativeValue": 0.9000000000000001,
+        "educationalValue": 0.5,
+        "visualValue": 0.7,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.5
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "Born in Westminster, London in 1970 to a British father and American mother, holding dual citizenship",
+      "score": 0.6782738095238096,
+      "metrics": {
+        "confidence": 0.7666666666666666,
+        "specificity": 0.85,
+        "narrativeValue": 0.76875,
+        "educationalValue": 0.75,
+        "visualValue": 0.6125,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.5
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "Worked as a script reader and corporate film director after graduating in 1993",
+      "score": 0.586996336996337,
+      "metrics": {
+        "confidence": 0.7166666666666667,
+        "specificity": 0.85,
+        "narrativeValue": 0.41538461538461535,
+        "educationalValue": 0.75,
+        "visualValue": 0.3769230769230769,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.5
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "Directed early short films Larceny (1996) and Doodlebug (1997)",
+      "score": 0.6690476190476191,
+      "metrics": {
+        "confidence": 0.65,
+        "specificity": 0.85,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.75,
+        "visualValue": 0.6333333333333333,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.5
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "Made his feature debut with Following (1998) on a £3,000 budget, which led to his breakthrough film Memento (2000)",
+      "score": 0.6302005012531328,
+      "metrics": {
+        "confidence": 0.8166666666666667,
+        "specificity": 0.85,
+        "narrativeValue": 0.5368421052631579,
+        "educationalValue": 0.75,
+        "visualValue": 0.45789473684210524,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.5
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     }
   ],
   "visualModules": [
@@ -424,16 +636,55 @@
       "type": "person",
       "title": "Person Blueprint Snapshot",
       "data": {
-        "birth": "Compiled detail for birth",
-        "death": "Compiled detail for death",
-        "occupation": "Compiled detail for occupation",
-        "majorWorks": [
-          "Significant Item 1",
-          "Significant Item 2"
+        "birth": {
+          "date": "30 July 1970",
+          "location": "Westminster, London, England",
+          "citizenship": [
+            "British",
+            "American"
+          ]
+        },
+        "death": null,
+        "occupation": [
+          "Filmmaker",
+          "Film director",
+          "Screenwriter",
+          "Producer",
+          "Cinematographer",
+          "Editor"
         ],
-        "awards": "Compiled detail for awards",
-        "legacy": "Compiled detail for legacy",
-        "controversies": "Compiled detail for controversies"
+        "majorWorks": [
+          "Following (1998)",
+          "Memento (2000)",
+          "Insomnia (2002)",
+          "The Dark Knight trilogy (2005–2012)",
+          "The Prestige (2006)",
+          "Inception (2010)",
+          "Interstellar (2014)",
+          "Dunkirk (2017)",
+          "Tenet (2020)",
+          "Oppenheimer (2023)",
+          "The Odyssey (2026)"
+        ],
+        "awards": [
+          "Academy Award for Best Director (Oppenheimer)",
+          "Academy Award for Best Picture (Oppenheimer)",
+          "Golden Globe Award",
+          "Two British Academy Film Awards",
+          "Commander of the Order of the British Empire (CBE) (2019)",
+          "Knight Bachelor (2024)"
+        ],
+        "legacy": [
+          "Three films inducted into the National Film Registry",
+          "Over $6 billion worldwide box office earnings",
+          "Considered a leading filmmaker of the 21st century",
+          "Known for advocating the use and preservation of traditional film stock",
+          "Honorary Fellow of University College London (2006)",
+          "Honorary Doctorate from University College London (2017)"
+        ],
+        "controversies": [
+          "Nolan's production company filed a copyright infringement claim in 2021 to remove his early surreal 8 mm film Tarantella (1989) after a fan posted it online"
+        ]
       }
     }
   ],
@@ -441,160 +692,508 @@
     "chapters": [
       {
         "chapterIndex": 0,
-        "title": "Christopher Nolan's Early Life",
-        "referenceLabel": "Early",
-        "readerQuestion": "What represents the starting motivation behind Early Life?",
+        "title": "Super 8 and English Literature",
+        "referenceLabel": "Origins",
+        "readerQuestion": "How did a young boy with a borrowed camera develop his early passion for filmmaking?",
         "objectives": [
-          "Explore the relationship with Early Life"
+          "Explore Nolan's childhood experiments with his father's Super 8 camera and NASA footage.",
+          "Examine his decision to study English literature at University College London to access filmmaking equipment."
         ],
         "approvedFacts": [
-          "Sir Christopher Edward Nolan (born 30 July 1970) is a British and American filmmaker. He has established himself as a major figure of 21st-century Hollywood, and His films have earned over $6 billion worldwide, making him the seventh highest-grossing film director of all time.",
-          "Nolan developed an interest in filmmaking from a young age. After studying English literature at University College London, he made several short films before his feature film debut with Following (1998)."
+          "Nolan began making films at age seven, borrowing his father's Super 8 camera to shoot stop-motion Star Wars homages using action figures, clay, and toilet rolls.",
+          "His uncle, who worked at NASA building guidance systems for Apollo rockets, sent Nolan launch footage which Nolan re-filmed off a screen and edited into his childhood films.",
+          "Nolan chose to study English literature at University College London specifically because the university possessed high-quality 16 mm cameras and a Steenbeck editing suite."
         ],
         "anchors": [
-          "Christopher Nolan",
-          "foundation origin"
+          "University College London",
+          "1993"
         ]
       },
       {
         "chapterIndex": 1,
-        "title": "The Rise of Christopher Nolan",
-        "referenceLabel": "Rise",
-        "readerQuestion": "Which factors influenced early discoveries of Rise?",
+        "title": "The Weekend No-Budget Breakthrough",
+        "referenceLabel": "Breakthrough",
+        "readerQuestion": "How did Nolan transition from student screenings to his first feature-length film?",
         "objectives": [
-          "Explore the relationship with Rise"
+          "Detail how Nolan and Emma Thomas funded their early film projects.",
+          "Analyze the extreme budget constraints and filming techniques used to complete his debut feature."
         ],
         "approvedFacts": [
-          "Three of Nolan's films have been inducted into the National Film Registry. Infused with a metaphysical outlook, his works thematise epistemology, existentialism, ethics, the construction of time and the malleable nature of memory and personal identity.",
-          "Christopher Edward Nolan was born on 30 July 1970 in the Westminster district of London. His father, Brendan James Nolan (1936–2009), was a British advertising executive of Irish descent who worked as a creative director."
+          "To fund their summer 16 mm film projects, Nolan and his then-girlfriend Emma Thomas screened 35 mm feature films to students during the school year.",
+          "His debut feature film, Following, was shot almost entirely on weekends over the course of a year on an extremely low budget of approximately £3,000.",
+          "To conserve expensive physical film stock while shooting Following, Nolan rehearsed every single scene extensively so they could use the first or second take in the final edit."
         ],
         "anchors": [
-          "Christopher Nolan",
-          "historical timeline"
+          "Emma Thomas",
+          "Following",
+          "1998"
         ]
       },
       {
         "chapterIndex": 2,
-        "title": "Christopher Nolan at the Peak",
-        "referenceLabel": "Peak",
-        "readerQuestion": "How do key chemical processes behave during Peak?",
+        "title": "From Memento to Global Blockbusters",
+        "referenceLabel": "Ascent",
+        "readerQuestion": "How did Nolan establish himself as a leading force in Hollywood cinema?",
         "objectives": [
-          "Explore the relationship with Peak"
+          "Trace Nolan's career progression from his early short films to his international breakthrough.",
+          "Highlight his transition into high-profile studio filmmaking and massive commercial success."
         ],
         "approvedFacts": [
-          "Growing up, Nolan was particularly influenced by the work of Sir Ridley Scott and the science fiction films 2001: A Space Odyssey (1968) and Star Wars (1977). He would repeatedly watch the latter film and extensively research its making.",
-          "He graduated in 1993 with a bachelor's degree in English literature. Thomas, who studied history at UCL and was also active in the Film Society, met Nolan on his first day at Ramsay Halls."
+          "Made his feature debut with Following (1998) on a £3,000 budget, which led to his breakthrough film Memento (2000)",
+          "Directed early short films Larceny (1996) and Doodlebug (1997)",
+          "Sir Christopher Edward Nolan is a highly successful British-American filmmaker whose films have grossed over $6 billion"
         ],
         "anchors": [
-          "Christopher Nolan",
-          "reaction mechanism"
+          "Jonathan Nolan",
+          "The Dark Knight trilogy",
+          "2005"
         ]
       },
       {
         "chapterIndex": 3,
-        "title": "Challenges Faced by Christopher Nolan",
-        "referenceLabel": "Challenges",
-        "readerQuestion": "Why do light steps trigger under Challenges?",
+        "title": "The Fight for Film Preservation",
+        "referenceLabel": "Controversies",
+        "readerQuestion": "What challenges and controversies arose during Nolan's rise to industry dominance?",
         "objectives": [
-          "Explore the relationship with Challenges"
+          "Examine the legal actions taken by Nolan's production company to protect his early creative works.",
+          "Explore his dual citizenship and early professional struggles before achieving mainstream fame."
         ],
         "approvedFacts": [
-          "Nolan and Thomas first attempted to make a feature in the mid-1990s titled Larry Mahoney, which they scrapped. During this period in his career, Nolan had little to no success getting his projects off the ground, facing several rejections; he added, \"[T]here's a very limited pool of finance in the UK.",
-          "Shortly after abandoning Larry Mahoney, Nolan conceived the idea for his first feature, Following (1998), which he wrote, directed, photographed and edited. The film depicts an unemployed young writer (Jeremy Theobald) who trails strangers through London, hoping they will provide material for his first novel, but is drawn into a criminal underworld when he fails to keep his distance."
+          "In 2021, Nolan's production company Syncopy filed a copyright infringement claim to remove his early surreal 8 mm short film Tarantella (1989) after a fan uploaded it online.",
+          "Born in Westminster, London in 1970 to a British father and American mother, holding dual citizenship",
+          "Worked as a script reader and corporate film director after graduating in 1993"
         ],
         "anchors": [
-          "Christopher Nolan",
-          "energy transition"
+          "Syncopy Inc.",
+          "2021"
         ]
       },
       {
         "chapterIndex": 4,
-        "title": "The Enduring Legacy of Christopher Nolan",
-        "referenceLabel": "Legacy",
-        "readerQuestion": "Who validates the final outcomes regarding Legacy?",
+        "title": "Academy Triumphs and Royal Knighthood",
+        "referenceLabel": "Accolades",
+        "readerQuestion": "How was Nolan's contribution to global cinema officially recognized at the highest levels?",
         "objectives": [
-          "Explore the relationship with Legacy"
+          "Celebrate Nolan's major Academy Award wins for his historical epic.",
+          "Highlight his receipt of a knighthood and his collaborative partnership with his wife."
         ],
         "approvedFacts": [
-          "Concluding analysis confirms modern legacy values of Christopher Nolan"
+          "He has won two Academy Awards and was knighted in 2024",
+          "with his wife, Emma Thomas"
         ],
         "anchors": [
-          "Christopher Nolan",
-          "modern application"
+          "Oppenheimer",
+          "Universal Pictures",
+          "2023",
+          "2024"
         ]
       }
     ]
   },
   "triviaCandidates": [
     {
-      "fact": "Sir Christopher Edward Nolan (born 30 July 1970) is a British and American filmmaker. He has established himself as a major figure of 21st-century Hollywood, and His films have earned over $6 billion worldwide, making him the seventh highest-grossing film director of all time.",
-      "surpriseScore": 10,
-      "readMoreTopic": "/Film"
-    },
-    {
-      "fact": "Nolan developed an interest in filmmaking from a young age. After studying English literature at University College London, he made several short films before his feature film debut with Following (1998).",
-      "surpriseScore": 9,
-      "readMoreTopic": "12 Years a Slave (film)"
-    },
-    {
-      "fact": "Three of Nolan's films have been inducted into the National Film Registry. Infused with a metaphysical outlook, his works thematise epistemology, existentialism, ethics, the construction of time and the malleable nature of memory and personal identity.",
+      "fact": "Nolan began making films at age seven, borrowing his father's Super 8 camera to shoot stop-motion Star Wars homages using action figures, clay, and toilet rolls.",
       "surpriseScore": 8,
-      "readMoreTopic": "16 mm film"
+      "readMoreTopic": "Super 8 film"
     },
     {
-      "fact": "Christopher Edward Nolan was born on 30 July 1970 in the Westminster district of London. His father, Brendan James Nolan (1936–2009), was a British advertising executive of Irish descent who worked as a creative director.",
+      "fact": "His uncle, who worked at NASA building guidance systems for Apollo rockets, sent Nolan launch footage which Nolan re-filmed off a screen and edited into his childhood films.",
+      "surpriseScore": 9,
+      "readMoreTopic": "Apollo program"
+    },
+    {
+      "fact": "Nolan chose to study English literature at University College London specifically because the university possessed high-quality 16 mm cameras and a Steenbeck editing suite.",
       "surpriseScore": 7,
-      "readMoreTopic": "1917 (2019 film)"
+      "readMoreTopic": "University College London"
     },
     {
-      "fact": "Growing up, Nolan was particularly influenced by the work of Sir Ridley Scott and the science fiction films 2001: A Space Odyssey (1968) and Star Wars (1977). He would repeatedly watch the latter film and extensively research its making.",
-      "surpriseScore": 6,
-      "readMoreTopic": "2000X"
+      "fact": "To fund their summer 16 mm film projects, Nolan and his then-girlfriend Emma Thomas screened 35 mm feature films to students during the school year.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Emma Thomas"
     },
     {
-      "fact": "Nolan was educated at Haileybury and Imperial Service College, an independent school in Hertford Heath, Hertfordshire, and later studied English literature at University College London (UCL). Opting out of a traditional film education, he pursued \"a degree in something unrelated\", which his father suggested \"gives a different take on things\".",
-      "surpriseScore": 5,
-      "readMoreTopic": "2000s in film"
+      "fact": "His debut feature film, Following, was shot almost entirely on weekends over the course of a year on an extremely low budget of approximately £3,000.",
+      "surpriseScore": 9,
+      "readMoreTopic": "Following (film)"
     },
     {
-      "fact": "He graduated in 1993 with a bachelor's degree in English literature. Thomas, who studied history at UCL and was also active in the Film Society, met Nolan on his first day at Ramsay Halls.",
-      "surpriseScore": 4,
-      "readMoreTopic": "2001: A Space Odyssey"
+      "fact": "To conserve expensive physical film stock while shooting Following, Nolan rehearsed every single scene extensively so they could use the first or second take in the final edit.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Following (film)"
     },
     {
-      "fact": "After earning his bachelor's degree in English literature in 1993, Nolan worked as a script reader, camera operator and director of corporate films and industrial films. He directed, wrote and edited the short film Larceny (1996), which was filmed over a weekend in black and white with limited equipment and a small cast and crew.",
-      "surpriseScore": 3,
-      "readMoreTopic": "2012 Aurora theater shooting"
+      "fact": "In 2021, Nolan's production company Syncopy filed a copyright infringement claim to remove his early surreal 8 mm short film Tarantella (1989) after a fan uploaded it online.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Syncopy Inc."
     },
     {
-      "fact": "Nolan and Thomas first attempted to make a feature in the mid-1990s titled Larry Mahoney, which they scrapped. During this period in his career, Nolan had little to no success getting his projects off the ground, facing several rejections; he added, \"[T]here's a very limited pool of finance in the UK.",
-      "surpriseScore": 2,
-      "readMoreTopic": "2018 Cannes Film Festival"
-    },
-    {
-      "fact": "Shortly after abandoning Larry Mahoney, Nolan conceived the idea for his first feature, Following (1998), which he wrote, directed, photographed and edited. The film depicts an unemployed young writer (Jeremy Theobald) who trails strangers through London, hoping they will provide material for his first novel, but is drawn into a criminal underworld when he fails to keep his distance.",
-      "surpriseScore": 1,
-      "readMoreTopic": "2019 New Year Honours"
+      "fact": "Nolan and his wife Emma Thomas attempted to make a feature film in the mid-1990s titled Larry Mahoney, but they ultimately scrapped the project entirely.",
+      "surpriseScore": 7,
+      "readMoreTopic": "Emma Thomas"
     }
   ],
   "relatedTopics": [
-    "/Film",
-    "12 Years a Slave (film)",
-    "16 mm film",
-    "1917 (2019 film)",
-    "2000X",
-    "2000s in film",
-    "2001: A Space Odyssey",
-    "2012 Aurora theater shooting"
+    "Following (film)",
+    "Memento (film)",
+    "The Dark Knight trilogy",
+    "Inception (film)",
+    "Interstellar (film)",
+    "Oppenheimer (film)",
+    "Syncopy Inc.",
+    "Emma Thomas",
+    "Jonathan Nolan",
+    "National Film Registry"
   ],
   "confidenceScores": {
-    "resolver": 0.96,
-    "compiler": 0.95,
-    "grader": 0.85,
-    "overall": 0.92
+    "resolver": 1,
+    "compiler": 0.8571428571428571,
+    "grader": 0.7760204081632651,
+    "overall": 0.95
   },
-  "checksum": "d8ce197bed1cd5a565d94dc2a665e949c57757bf1e97f1b3be4278983f24986c",
-  "dependencyHash": "e415e5066c496c45f76ee3a727338eea5dcd7668657bdeaca66c15dc6ca5cb02",
+  "qualityAssessment": {
+    "generationMode": "mixed",
+    "fallbackRatio": 0.058823529411764705,
+    "provenanceCoverage": 1,
+    "placeholderCount": 0,
+    "verifiedFactRatio": 0.5,
+    "qualityScore": 95,
+    "confidenceBreakdown": {
+      "provenanceCoverage": 1,
+      "fieldCoverage": 0.8571428571428571,
+      "placeholderPenalty": 1,
+      "fallbackPenalty": 0.9411764705882353,
+      "sourceAgreement": 1,
+      "extractionCompleteness": 1,
+      "factSpecificity": 0.7760204081632651,
+      "graphValidity": 1,
+      "timelineValidity": 1,
+      "validationPenalty": 1
+    },
+    "status": "PARTIAL",
+    "modulesPassing": [
+      "timeline",
+      "cards",
+      "didYouKnow",
+      "relatedTopics",
+      "structuredFactsData",
+      "knowledgeGraph"
+    ],
+    "modulesHidden": [],
+    "reasons": [
+      "all signals above threshold, no placeholder contamination, majority primary generation",
+      "downgraded because lintArtifact() reported validation errors"
+    ]
+  },
+  "stageDiagnostics": [
+    {
+      "stage": "entityResolver.pass1",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1321
+    },
+    {
+      "stage": "compiler",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 9186
+    },
+    {
+      "stage": "knowledgeGraph",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2433
+    },
+    {
+      "stage": "factEvaluator",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": null,
+      "modelValidationAttempted": false,
+      "modelValidationSucceeded": false,
+      "supportedGenerationMethod": false,
+      "requestAttempted": true,
+      "requestSucceeded": false,
+      "failureReason": "Expected ',' or '}' after property value in JSON at position 6852 (line 169 column 131)",
+      "errorCategory": "parser_failure",
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": true,
+      "durationMs": 7582
+    },
+    {
+      "stage": "narrativePlanner",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 5354
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2361
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2921
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2763
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2585
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2162
+    },
+    {
+      "stage": "documentaryWriter.summary",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1516
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1792
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1648
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1735
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1634
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1846
+    },
+    {
+      "stage": "stylePolish",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 8824
+    }
+  ],
+  "checksum": "dc54812b85e50249c25e3faef3d8e469e01125114b0a5710c0c01c85e4e56a40",
+  "dependencyHash": "3b6f7fb5cbf611ca9fc637ed6d2b55ecfa16586063b1315036a90ebe14853fae",
   "sourceReferences": [
     {
       "url": "https://en.wikipedia.org/wiki/Christopher%20Nolan",
@@ -604,169 +1203,278 @@
   "factScript": {
     "chapters": [
       {
-        "chapterTitle": "Christopher Nolan's Early Life",
-        "questionAnswered": "What represents the starting motivation behind Early Life?",
+        "chapterTitle": "Super 8 and English Literature",
+        "referenceLabel": "Origins",
+        "questionAnswered": "How did a young boy with a borrowed camera develop his early passion for filmmaking?",
         "chronologicalPosition": 1,
         "entities": [
-          "Christopher Nolan"
+          "Super 8 camera",
+          "16 mm camera",
+          "Steenbeck editing suite",
+          "Apollo rockets",
+          "Star Wars action figures"
         ],
         "dates": [
           "1970",
-          "2019"
+          "1993"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "motivating factors behind early phases of development",
-        "effect": "initial events showing transition in the subject",
+        "locations": [
+          "University College London",
+          "NASA"
+        ],
+        "people": [
+          "Christopher Nolan",
+          "Nolan's father",
+          "Nolan's uncle"
+        ],
+        "events": [
+          "Nolan's childhood filmmaking experiments",
+          "Nolan's enrollment at University College London"
+        ],
+        "cause": "A childhood fascination with his father's Super 8 camera and NASA footage sparked Christopher Nolan's early passion for filmmaking.",
+        "effect": "Nolan strategically chose to study English literature at University College London to gain access to professional filmmaking equipment.",
         "keyFacts": [
-          "Sir Christopher Edward Nolan (born 30 July 1970) is a British and American filmmaker. He has established himself as a major figure of 21st-century Hollywood, and His films have earned over $6 billion worldwide, making him the seventh highest-grossing film director of all time.",
-          "Nolan developed an interest in filmmaking from a young age. After studying English literature at University College London, he made several short films before his feature film debut with Following (1998)."
+          "Nolan began making films at age seven, borrowing his father's Super 8 camera to shoot stop-motion Star Wars homages using action figures, clay, and toilet rolls.",
+          "His uncle, who worked at NASA building guidance systems for Apollo rockets, sent Nolan launch footage which Nolan re-filmed off a screen and edited into his childhood films.",
+          "Nolan chose to study English literature at University College London specifically because the university possessed high-quality 16 mm cameras and a Steenbeck editing suite."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "fundamental lessons from this period"
+        "connections": [
+          "University College London",
+          "Following (1998)"
+        ],
+        "takeaway": "Resourcefulness and strategic academic choices launched Nolan's filmmaking career.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "The Rise of Christopher Nolan",
-        "questionAnswered": "Which factors influenced early discoveries of Rise?",
+        "chapterTitle": "The Weekend No-Budget Breakthrough",
+        "referenceLabel": "Breakthrough",
+        "questionAnswered": "How did Nolan transition from student screenings to his first feature-length film?",
         "chronologicalPosition": 2,
         "entities": [
-          "Christopher Nolan"
+          "Following",
+          "University College London",
+          "16 mm film",
+          "35 mm feature films"
         ],
         "dates": [
-          "2019",
-          "2024"
-        ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "key drivers behind the rising influence",
-        "effect": "consequent progress seen during this phase",
-        "keyFacts": [
-          "Three of Nolan's films have been inducted into the National Film Registry. Infused with a metaphysical outlook, his works thematise epistemology, existentialism, ethics, the construction of time and the malleable nature of memory and personal identity.",
-          "Christopher Edward Nolan was born on 30 July 1970 in the Westminster district of London. His father, Brendan James Nolan (1936–2009), was a British advertising executive of Irish descent who worked as a creative director."
-        ],
-        "quotes": [],
-        "connections": [],
-        "takeaway": "primary insights on the rise"
-      },
-      {
-        "chapterTitle": "Christopher Nolan at the Peak",
-        "questionAnswered": "How do key chemical processes behave during Peak?",
-        "chronologicalPosition": 3,
-        "entities": [
-          "Christopher Nolan"
-        ],
-        "dates": [
-          "2024",
+          "1993",
           "1998"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "pivotal elements supporting the peak achievements",
-        "effect": "resultant breakthroughs related directly to these successes",
+        "locations": [
+          "London",
+          "England"
+        ],
+        "people": [
+          "Christopher Nolan",
+          "Emma Thomas"
+        ],
+        "events": [
+          "Release of Following (1998)",
+          "Graduation from University College London (1993)"
+        ],
+        "cause": "To overcome a lack of traditional industry backing, Christopher Nolan and Emma Thomas self-funded their early projects through student film screenings and adopted extreme cost-saving measures.",
+        "effect": "These resource-constrained methods enabled the successful completion of Nolan's debut feature film, Following, which launched his professional filmmaking career.",
         "keyFacts": [
-          "Growing up, Nolan was particularly influenced by the work of Sir Ridley Scott and the science fiction films 2001: A Space Odyssey (1968) and Star Wars (1977). He would repeatedly watch the latter film and extensively research its making.",
-          "He graduated in 1993 with a bachelor's degree in English literature. Thomas, who studied history at UCL and was also active in the Film Society, met Nolan on his first day at Ramsay Halls."
+          "Nolan and his then-girlfriend Emma Thomas funded their summer 16 mm film projects by screening 35 mm feature films to students during the school year.",
+          "His debut feature film, Following, was shot almost entirely on weekends over the course of a year on an extremely low budget of approximately £3,000.",
+          "To conserve expensive physical film stock while shooting Following, Nolan rehearsed every single scene extensively so they could use the first or second take in the final edit."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "core takeaways regarding this era"
+        "connections": [
+          "Transitioned from the ultra-low-budget Following (1998) to his international breakthrough film Memento (2000)."
+        ],
+        "takeaway": "Extreme constraints forced creative efficiency, launching Nolan's feature career.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "Challenges Faced by Christopher Nolan",
-        "questionAnswered": "Why do light steps trigger under Challenges?",
+        "chapterTitle": "From Memento to Global Blockbusters",
+        "referenceLabel": "Ascent",
+        "questionAnswered": "How did Nolan establish himself as a leading force in Hollywood cinema?",
+        "chronologicalPosition": 3,
+        "entities": [
+          "Following",
+          "Memento",
+          "The Dark Knight trilogy",
+          "Larceny",
+          "Doodlebug"
+        ],
+        "dates": [
+          "1996",
+          "1997",
+          "1998",
+          "2000",
+          "2005"
+        ],
+        "locations": [
+          "London",
+          "Hollywood"
+        ],
+        "people": [
+          "Christopher Nolan",
+          "Emma Thomas",
+          "Jonathan Nolan"
+        ],
+        "events": [
+          "Release of Following",
+          "Release of Memento",
+          "Launch of The Dark Knight trilogy"
+        ],
+        "cause": "Nolan leveraged ultra-low-budget independent filmmaking and innovative non-linear storytelling to capture the attention of major Hollywood studios.",
+        "effect": "He successfully transitioned into a high-profile studio director capable of helming massive commercial blockbusters and critically acclaimed cinematic trilogies.",
+        "keyFacts": [
+          "Directed early short films Larceny in 1996 and Doodlebug in 1997",
+          "Made his feature debut with Following in 1998 on a budget of 3,000 pounds sterling",
+          "Achieved his international breakthrough with his second feature film Memento in 2000",
+          "Began directing The Dark Knight trilogy in 2005, cementing his status as a leading blockbuster filmmaker",
+          "Accumulated over 6 billion dollars in worldwide box office earnings across his filmmaking career"
+        ],
+        "quotes": [],
+        "connections": [
+          "Transition from independent British cinema to major Hollywood studio partnerships with Warner Bros. Pictures",
+          "Evolution of collaborative partnerships with producer Emma Thomas and screenwriter Jonathan Nolan"
+        ],
+        "takeaway": "Nolan leveraged independent breakthroughs into historic global blockbuster success.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "The Fight for Film Preservation",
+        "referenceLabel": "Controversies",
+        "questionAnswered": "What challenges and controversies arose during Nolan's rise to industry dominance?",
         "chronologicalPosition": 4,
         "entities": [
-          "Christopher Nolan"
+          "Syncopy",
+          "Tarantella",
+          "University College London"
         ],
         "dates": [
-          "1998",
-          "2000"
+          "1970",
+          "1989",
+          "1993",
+          "2021"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "underlying issues prompting the challenges faced",
-        "effect": "resulting shifts that defined the response taken",
+        "locations": [
+          "Westminster, London, England"
+        ],
+        "people": [
+          "Christopher Nolan"
+        ],
+        "events": [
+          "Graduation from University College London",
+          "Release of Tarantella",
+          "Syncopy copyright infringement claim filing"
+        ],
+        "cause": "Christopher Nolan navigated early career struggles as a dual citizen in London before his production company later sought to strictly control the public availability of his earliest creative works.",
+        "effect": "These actions successfully restricted public access to his amateur filmography while highlighting the tension between fan-led digital preservation and creator-controlled copyright enforcement.",
         "keyFacts": [
-          "Nolan and Thomas first attempted to make a feature in the mid-1990s titled Larry Mahoney, which they scrapped. During this period in his career, Nolan had little to no success getting his projects off the ground, facing several rejections; he added, \"[T]here's a very limited pool of finance in the UK.",
-          "Shortly after abandoning Larry Mahoney, Nolan conceived the idea for his first feature, Following (1998), which he wrote, directed, photographed and edited. The film depicts an unemployed young writer (Jeremy Theobald) who trails strangers through London, hoping they will provide material for his first novel, but is drawn into a criminal underworld when he fails to keep his distance."
+          "Born in Westminster, London in 1970 to a British father and American mother, holding dual citizenship",
+          "Worked as a script reader and corporate film director after graduating from college in 1993",
+          "In 2021, Nolan's production company Syncopy filed a copyright infringement claim to remove his early surreal 8 mm short film Tarantella (1989) after a fan uploaded it online"
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "crucial lessons on these struggles"
+        "connections": [
+          "Transition from early amateur 8 mm filmmaking to major studio releases like Following (1998)"
+        ],
+        "takeaway": "Early struggles shaped Nolan's strict control over his film legacy.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "The Enduring Legacy of Christopher Nolan",
-        "questionAnswered": "Who validates the final outcomes regarding Legacy?",
+        "chapterTitle": "Academy Triumphs and Royal Knighthood",
+        "referenceLabel": "Accolades",
+        "questionAnswered": "How was Nolan's contribution to global cinema officially recognized at the highest levels?",
         "chronologicalPosition": 5,
         "entities": [
-          "Christopher Nolan"
+          "Oppenheimer",
+          "Knight Bachelor",
+          "Academy Awards"
         ],
         "dates": [
-          "2000",
-          "2002"
+          "2023",
+          "2024"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "lasting forces establishing the legacy left behind",
-        "effect": "long-term outcomes that shaped the memory of the subject",
+        "locations": [
+          "London",
+          "Los Angeles"
+        ],
+        "people": [
+          "Christopher Nolan",
+          "Emma Thomas"
+        ],
+        "events": [
+          "96th Academy Awards",
+          "2024 Imperial Honours"
+        ],
+        "cause": "Christopher Nolan directed and produced the critically acclaimed historical epic Oppenheimer, which achieved massive global box office and critical success.",
+        "effect": "Nolan secured his first Academy Awards and was subsequently awarded a knighthood by the British monarchy for his services to film.",
         "keyFacts": [
-          "Concluding analysis confirms modern legacy values of Christopher Nolan"
+          "Won two Academy Awards for Best Director and Best Picture for the 2023 film Oppenheimer",
+          "Received a knighthood as a Knight Bachelor from the British monarchy in 2024",
+          "Collaborated throughout his career with his wife and producing partner, Emma Thomas"
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "final summary explaining the legacy"
+        "connections": [
+          "Emma Thomas",
+          "Oppenheimer"
+        ],
+        "takeaway": "Nolan achieved peak cinematic recognition through Oscar triumphs and knighthood.",
+        "insufficientData": false
       }
     ]
   },
   "briefSummaryProvenance": [
     {
-      "sentence": "Christopher Nolan records confirm that Sir Christopher Edward Nolan (born 30 July 1970) is a British.",
-      "fact": "Sir Christopher Edward Nolan (born 30 July 1970) is a British"
+      "sentence": "At just seven years old, Christopher Nolan began his filmmaking journey by borrowing his father's Super 8 camera to shoot stop-motion Star Wars homages.",
+      "fact": "Chapter 1: Nolan began making films at age seven, borrowing his father's Super 8 camera to shoot stop-motion Star Wars homages using action figures, clay, and toilet rolls."
     },
     {
-      "sentence": "Christopher Nolan records confirm that Three of Nolan's films have been inducted into the National Film.",
-      "fact": "Three of Nolan's films have been inducted into the National Film"
+      "sentence": "These childhood projects even featured real rocket launch footage, sent to him by an uncle working at NASA.",
+      "fact": "Chapter 1: His uncle, who worked at NASA building guidance systems for Apollo rockets, sent Nolan launch footage which Nolan re-filmed off a screen and edited into his childhood films."
     },
     {
-      "sentence": "Christopher Nolan records confirm that Growing up, Nolan was particularly influenced by the work of Sir.",
-      "fact": "Growing up, Nolan was particularly influenced by the work of Sir"
+      "sentence": "Nolan later chose to study English literature at University College London for one specific reason: to gain access to the university's 16 mm cameras and editing suite.",
+      "fact": "Chapter 1: Nolan chose to study English literature at University College London specifically because the university possessed high-quality 16 mm cameras and a Steenbeck editing suite."
     },
     {
-      "sentence": "Christopher Nolan remains study topic showing that final summary explaining the legacy.",
-      "fact": "final summary explaining the legacy"
+      "sentence": "To fund their own summer film projects, he and his future wife, Emma Thomas, screened 35 mm features for fellow students.",
+      "fact": "Chapter 2: Nolan and his then-girlfriend Emma Thomas funded their summer 16 mm film projects by screening 35 mm feature films to students during the school year."
+    },
+    {
+      "sentence": "This resourcefulness eventually led to Nolan's 1998 feature debut, Following, shot on a shoestring budget of just 3,000 pounds sterling.",
+      "fact": "Chapter 3: Made his feature debut with Following in 1998 on a budget of 3,000 pounds sterling"
+    },
+    {
+      "sentence": "Today, his cinematic works have grossed more than 6 billion dollars at the global box office.",
+      "fact": "Chapter 3: Accumulated over 6 billion dollars in worldwide box office earnings across his filmmaking career"
     }
   ],
   "validationStatus": {
-    "passed": true,
-    "errors": [],
-    "warnings": [
-      "Timeline is not in strict chronological order"
+    "passed": false,
+    "errors": [
+      "Missing required ontology field: \"death\" for ontology \"Person\"",
+      "Artifact contains a paragraph exceeding 130 words"
     ],
+    "warnings": [],
     "checkedRules": {
       "ontology_match": true,
-      "required_fields_exist": true,
+      "required_fields_exist": false,
       "timeline_non_empty": true,
       "timeline_count_bounds": true,
-      "timeline_chronological": false,
+      "timeline_chronological": true,
       "graph_has_triples": true,
       "graph_connected": true,
+      "graph_no_synthetic_nodes": true,
       "named_entities_non_empty": true,
       "no_weak_facts": true,
       "no_duplicate_facts": true,
       "no_duplicate_sentences": true,
       "no_placeholder_wording": true,
       "generic_wording_check": true,
-      "paragraph_length_limit": true,
+      "paragraph_length_limit": false,
       "unique_chapter_titles": true,
       "concrete_dates_names_present": true,
       "no_repeated_phrases": true,
       "no_timeline_milestone_placeholder": true,
+      "reader_question_quality": true,
       "did_you_know_length_ok": true,
       "sentence_provenance_ok": true,
       "no_abstract_writing": true,
@@ -778,6 +1486,6 @@
       "compiler_confidence_ok": true,
       "overall_confidence_ok": true
     },
-    "timestamp": "2026-07-10T06:47:16.490Z"
+    "timestamp": "2026-07-11T07:53:41.855Z"
   }
 }

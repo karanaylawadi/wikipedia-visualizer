@@ -1,18 +1,24 @@
-import type { ResolvedEntity, PerspectiveCard } from "@/types/knowledge";
+import type { ResolvedEntity, PerspectiveCard, StageDiagnostic } from "@/types/knowledge";
+import { containsPlaceholder } from "./placeholderDetector";
+import { recordFallback, recordGeminiSuccess, recordGeminiFailure } from "./diagnostics";
+import { callGeminiModel } from "@/lib/ai/geminiConfig";
 
 export async function polishDocumentary(
   resolved: ResolvedEntity,
   summary: string,
-  cards: PerspectiveCard[]
+  cards: PerspectiveCard[],
+  diagnostics: StageDiagnostic[] = []
 ): Promise<{ summary: string; cards: PerspectiveCard[] }> {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
+    recordFallback(diagnostics, "stylePolish", "no API key configured");
     return { summary, cards };
   }
 
   const { GoogleGenAI } = await import("@google/genai");
   const ai = new GoogleGenAI({ apiKey });
 
+  const start = Date.now();
   try {
     // 1. Polish the brief summary
     const summaryPrompt = `You are a Style Editor. Polish this brief summary to improve sentence variation, rhythm, and transitions.
@@ -32,8 +38,7 @@ Return a JSON object with:
 }
 Only return raw JSON. Start with { and end with }. Do not wrap in markdown.`;
 
-    const summaryResponse = await ai.models.generateContent({
-      model: "gemini-2.0-flash",
+    const { response: summaryResponse, meta } = await callGeminiModel(ai, {
       contents: summaryPrompt,
       config: { temperature: 0.15, maxOutputTokens: 500 }
     });
@@ -62,8 +67,7 @@ Return a JSON object with:
 }
 Only return raw JSON. Start with { and end with }. Do not wrap in markdown.`;
 
-      const cardResponse = await ai.models.generateContent({
-        model: "gemini-2.0-flash",
+      const { response: cardResponse } = await callGeminiModel(ai, {
         contents: cardPrompt,
         config: { temperature: 0.15, maxOutputTokens: 300 }
       });
@@ -92,12 +96,18 @@ Only return raw JSON. Start with { and end with }. Do not wrap in markdown.`;
       }
     }
 
+    const finalSummary = containsPlaceholder(summaryParsed.polishedSummary) ? summary : summaryParsed.polishedSummary || summary;
+    const finalCards = polishedCards.map((c, i) => (containsPlaceholder(c.summary) ? cards[i] : c));
+
+    recordGeminiSuccess(diagnostics, "stylePolish", meta, Date.now() - start);
+
     return {
-      summary: summaryParsed.polishedSummary || summary,
-      cards: polishedCards
+      summary: finalSummary,
+      cards: finalCards
     };
   } catch (error) {
     console.warn("polishDocumentary failed, using unpolished drafts", error);
+    recordGeminiFailure(diagnostics, "stylePolish", error, Date.now() - start);
     return { summary, cards };
   }
 }

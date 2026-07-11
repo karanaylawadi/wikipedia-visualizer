@@ -1,0 +1,1564 @@
+{
+  "version": "18.0",
+  "compilerVersion": "v18.0",
+  "ontologyVersion": "v18.0",
+  "wikipediaRevision": "rev-1.0",
+  "wikidataRevision": "Q1133779",
+  "ontology": {
+    "name": "Art Movement",
+    "labels": [
+      "Artwork",
+      "Art Movement"
+    ]
+  },
+  "structuredFacts": {
+    "origins": {
+      "timePeriod": "1350 – 1620",
+      "geographicalOrigin": "Italy (specifically Florence)",
+      "foundationalInfluences": [
+        "Art of Classical antiquity",
+        "Art of Northern Europe",
+        "Renaissance humanist philosophy",
+        "Increased awareness of nature",
+        "Revival of classical learning",
+        "Individualistic view of man"
+      ],
+      "socioCulturalFactors": [
+        "Availability of lost Classical texts (philosophy, prose, poetry, drama, science, arts thesis, early Christian theology)",
+        "Access to advanced mathematics from Islamic scholars",
+        "Advent of movable type printing in the 15th century",
+        "Establishment of the Medici Bank bringing wealth to Florence",
+        "Patronage of the arts by Cosimo de' Medici independent of church or monarchy",
+        "First archaeological study of Roman remains by Brunelleschi and Donatello"
+      ]
+    },
+    "artists": [
+      "Nicola Pisano",
+      "Giovanni Pisano",
+      "Giotto",
+      "Cimabue",
+      "Brunelleschi",
+      "Donatello",
+      "Lorenzo Ghiberti",
+      "Masaccio",
+      "Masolino",
+      "Michelangelo",
+      "Fra Angelico",
+      "Uccello",
+      "Piero della Francesca",
+      "Michelozzo",
+      "Robert Campin",
+      "Jan van Eyck",
+      "Rogier van der Weyden",
+      "Hugo van der Goes",
+      "Bellini family",
+      "Mantegna",
+      "Giorgione",
+      "Titian",
+      "Tintoretto",
+      "Leone Battista Alberti"
+    ],
+    "techniques": [
+      "Linear perspective",
+      "Scientific study of light",
+      "Oil painting on panels (developed by Belgian and French artists, adopted in Italy)",
+      "Naturalistic, three-dimensional figurative representation",
+      "Classicism in sculpture and painting based on Roman precedents",
+      "Anatomical realism and naturalism of face and gesture"
+    ],
+    "majorWorks": [
+      "Pulpits of the Baptistery and Cathedral of Pisa (Nicola and Giovanni Pisano)",
+      "Life of Christ fresco cycle at the Arena Chapel in Padua (Giotto)",
+      "Bronze doors of the Baptistery of Florence Cathedral (Lorenzo Ghiberti)",
+      "Life-sized crucifix in Santa Maria Novella (Brunelleschi)",
+      "Bronze statue of David (Donatello)",
+      "Equestrian monument to Gattamelata (Donatello)",
+      "Brancacci Chapel fresco cycle (Masaccio and Masolino)",
+      "Frescos at the Convent of San Marco (Fra Angelico)",
+      "Battle of San Romano (Uccello)",
+      "The History of the True Cross fresco cycle (Piero della Francesca)",
+      "De pictura (Leone Battista Alberti treatise)",
+      "De re aedificatoria (Leone Battista Alberti treatise)"
+    ],
+    "influence": [
+      "Marked the transition of Europe from the medieval period to the Early Modern age",
+      "Spread throughout Europe, affecting artists, patrons, techniques, and artistic sensibilities",
+      "Inspired a corresponding classicism in painting and sculpture from architectural precedents",
+      "Belgian and French oil-painting developments permanently altered global painting practices from 1475 onward",
+      "Fostered an artistic ethos in Florence that produced the great masters of the High Renaissance"
+    ],
+    "title": "Renaissance art",
+    "subtitle": "Visual arts produced during the European Renaissance",
+    "leadParagraph": "Renaissance art (1350 – 1620) is the painting, sculpture, and decorative arts of the period of European history known as the Renaissance, which emerged as a distinct style in Italy in about AD 1400, in parallel with developments which occurred in philosophy, literature, music, science, and technology. Renaissance art took as its foundation the art of Classical antiquity, perceived as the noblest of ancient traditions, but transformed that tradition by absorbing recent developments in the art of Northern Europe and by applying contemporary scientific knowledge. Along with Renaissance humanist philosophy, it spread throughout Europe, affecting both artists and their patrons with the development of new techniques and new artistic sensibilities. For art historians, Renaissance art marks the transition of Europe from the medieval period to the Early Modern age.",
+    "briefSummary": "Lorenzo Ghiberti won the Florence Baptistery door competition in 1401, initiating the Early Renaissance. This new artistic movement emerged in Italy by combining Classical foundations with Northern European developments and scientific knowledge. Soon after, Filippo Brunelleschi and Donatello conducted the first archaeological study of Roman remains, establishing a physical basis for a classical revival in Italian art. Meanwhile, the financial success of the Medici Bank brought immense wealth to Florence. This prosperity directly enabled art patronage outside of the church, as Cosimo de' Medici funded artists independently of the monarchy to establish a new model of private support.",
+    "cards": [
+      {
+        "title": "The Cradle of Renaissance Wealth",
+        "summary": "By embracing recovered Classical texts and advanced Islamic mathematics, Florence sparked a bold intellectual movement. This convergence of ancient wisdom and new science fostered a unique, highly sophisticated financial environment. As the Medici Bank generated immense wealth, capital flooded the city and enabled unprecedented artistic patronage. Consequently, affluent merchants began funding secular art outside of traditional religious or monarchical control. By personally financing artists independently, Cosimo de' Medici established a revolutionary model of private sponsorship. Ultimately, this combination of Medici wealth and classical recovery birthed Florentine Renaissance art.",
+        "referenceLabel": "Origins",
+        "readerQuestion": "What socio-cultural and financial forces triggered the birth of Renaissance art in Florence?",
+        "keyTakeaway": "Medici wealth and classical recovery birthed Florentine Renaissance art.",
+        "provenance": [
+          {
+            "sentence": "By embracing recovered Classical texts and advanced Islamic mathematics, Florence sparked a bold intellectual movement.",
+            "fact": "The recovery of lost Classical texts and access to advanced mathematics from Islamic scholars fueled a new intellectual movement in Florence."
+          },
+          {
+            "sentence": "This convergence of ancient wisdom and new science fostered a unique, highly sophisticated financial environment.",
+            "fact": "The recovery of lost Classical texts and access to advanced mathematics from Islamic scholars fueled a new intellectual movement in Florence."
+          },
+          {
+            "sentence": "As the Medici Bank generated immense wealth, capital flooded the city and enabled unprecedented artistic patronage.",
+            "fact": "The convergence of recovered classical texts, advanced Islamic mathematics, and the immense wealth generated by the Medici Bank created a unique intellectual and financial environment in Florence."
+          },
+          {
+            "sentence": "Consequently, affluent merchants began funding secular art outside of traditional religious or monarchical control.",
+            "fact": "The financial success of the Medici Bank brought immense wealth to Florence, directly enabling non-church art patronage."
+          },
+          {
+            "sentence": "By personally financing artists independently, Cosimo de' Medici established a revolutionary model of private sponsorship.",
+            "fact": "This combination of factors fueled a new humanist intellectual movement and enabled wealthy patrons to fund non-church art independent of traditional religious or monarchical institutions."
+          },
+          {
+            "sentence": "Ultimately, this combination of Medici wealth and classical recovery birthed Florentine Renaissance art.",
+            "fact": "Cosimo de' Medici funded arts and artists independently of the church or monarchy, establishing a new model of private patronage."
+          }
+        ]
+      },
+      {
+        "title": "The Geometry of Life",
+        "summary": "The integration of naturalism, linear perspective, and anatomical realism was first pioneered by the Florentine masters Brunelleschi, Donatello, and Masaccio. This breakthrough emerged from a potent combination of classical Roman studies, advanced mathematics, and direct scientific observation. Applying these principles of perspective and physical solidity, Masaccio created his monumental 1425 fresco cycle in the Brancacci Chapel. By shifting representation from flat medieval symbolism to convincing, lifelike realism, these mathematical and anatomical innovations permanently transformed European art. The scientific rules of linear perspective were later mathematically codified by Leone Battista Alberti in his 1435 treatise De pictura. Ultimately, the twin forces of mathematical perspective and anatomical study revolutionized visual representation forever.",
+        "referenceLabel": "Characteristics",
+        "readerQuestion": "How did early masters combine scientific observation with artistic techniques to revolutionize representation?",
+        "keyTakeaway": "Mathematical perspective and anatomical study revolutionized visual representation forever.",
+        "provenance": [
+          {
+            "sentence": "The integration of naturalism, linear perspective, and anatomical realism was first pioneered by the Florentine masters Brunelleschi, Donatello, and Masaccio.",
+            "fact": "Brunelleschi, Donatello, and Masaccio pioneered the integration of naturalism, linear perspective, and anatomical realism in early Renaissance painting and sculpture."
+          },
+          {
+            "sentence": "This breakthrough emerged from a potent combination of classical Roman studies, advanced mathematics, and direct scientific observation.",
+            "fact": "The integration of classical Roman studies, advanced mathematics, and scientific observation drove Florentine artists to seek a precise, rational system for representing three-dimensional space and the human form."
+          },
+          {
+            "sentence": "Applying these principles of perspective and physical solidity, Masaccio created his monumental 1425 fresco cycle in the Brancacci Chapel.",
+            "fact": "Masaccio applied these groundbreaking principles of perspective and physical solidity in his 1425 Brancacci Chapel fresco cycle."
+          },
+          {
+            "sentence": "By shifting representation from flat medieval symbolism to convincing, lifelike realism, these mathematical and anatomical innovations permanently transformed European art.",
+            "fact": "These mathematical and anatomical innovations permanently transformed European art, shifting representation from flat medieval symbolism to convincing, lifelike realism."
+          },
+          {
+            "sentence": "The scientific rules of linear perspective were later mathematically codified by Leone Battista Alberti in his 1435 treatise De pictura.",
+            "fact": "Leone Battista Alberti mathematically codified these scientific rules of linear perspective in his 1435 treatise De pictura."
+          },
+          {
+            "sentence": "Ultimately, the twin forces of mathematical perspective and anatomical study revolutionized visual representation forever.",
+            "fact": "Mathematical perspective and anatomical study revolutionized visual representation forever."
+          }
+        ]
+      },
+      {
+        "title": "The Dawn of Florentine Realism",
+        "summary": "Lorenzo Ghiberti won the Florence Baptistery door competition in 1401, initiating the Early Renaissance. Seeking to revitalize public pride and artistic expression, civic leaders had organized this landmark contest. The sculptor Donatello later created a bronze David imbued with highly unusual humanist and erotic qualities. These pioneering commissions established a new standard that prioritized classical naturalism over rigid medieval conventions. By reviving freestanding nude sculpture and anatomical realism, this bronze masterpiece departed from medieval traditions. Ultimately, these Florentine breakthroughs permanently replaced medieval styling with classical humanism.",
+        "referenceLabel": "Masterpieces",
+        "readerQuestion": "Which breakthrough works of art defined the early shift away from medieval traditions?",
+        "keyTakeaway": "Florentine breakthroughs replaced medieval styling with classical humanism.",
+        "provenance": [
+          {
+            "sentence": "Lorenzo Ghiberti won the Florence Baptistery door competition in 1401, initiating the Early Renaissance.",
+            "fact": "The Early Renaissance was initiated by the 1401 Florence Baptistery door competition, which was won by Lorenzo Ghiberti."
+          },
+          {
+            "sentence": "Seeking to revitalize public pride and artistic expression, civic leaders had organized this landmark contest.",
+            "fact": "The desire to revitalize civic pride and artistic expression in Florence led to a landmark public competition for the cathedral baptistery doors."
+          },
+          {
+            "sentence": "The sculptor Donatello later created a bronze David imbued with highly unusual humanist and erotic qualities.",
+            "fact": "The sculptor Donatello created a bronze statue of David that was highly unusual for its time due to its overtly humanist and erotic qualities."
+          },
+          {
+            "sentence": "These pioneering commissions established a new standard that prioritized classical naturalism over rigid medieval conventions.",
+            "fact": "These pioneering commissions established a new artistic standard that prioritized classical naturalism, humanism, and anatomical realism over medieval conventions."
+          },
+          {
+            "sentence": "By reviving freestanding nude sculpture and anatomical realism, this bronze masterpiece departed from medieval traditions.",
+            "fact": "Donatello's bronze David departed from medieval traditions by reviving classical freestanding nude sculpture and emphasizing anatomical realism."
+          },
+          {
+            "sentence": "Ultimately, these Florentine breakthroughs permanently replaced medieval styling with classical humanism.",
+            "fact": "Florentine breakthroughs replaced medieval styling with classical humanism."
+          }
+        ]
+      },
+      {
+        "title": "Northern Oil and Classical Revival",
+        "summary": "Italian Renaissance art emerged in 1400 through a blend of classical foundations and Northern European scientific developments. This dramatic transformation occurred as Italian archaeological studies of Roman ruins merged with imported Northern technical innovations. When improved techniques from Belgian and French artists arrived in Italy around 1475, they sparked a swift transition to oil painting. Consequently, Italian painters permanently adopted oil-on-panel methods, merging scientific realism with Northern material sophistication. To establish this classical revival, Filippo Brunelleschi and Donatello conducted the first organized archaeological study of Roman ruins. Ultimately, these Northern oil techniques and classical archaeology revolutionized Italian Renaissance painting.",
+        "referenceLabel": "Spread",
+        "readerQuestion": "How did Northern European techniques and classical archaeological studies spread and transform Italian painting?",
+        "keyTakeaway": "Northern techniques and classical archaeology revolutionized Italian Renaissance painting.",
+        "provenance": [
+          {
+            "sentence": "Italian Renaissance art emerged in 1400 through a blend of classical foundations and Northern European scientific developments.",
+            "fact": "Renaissance art emerged in Italy around 1400, combining Classical antiquity foundations with Northern European developments and scientific knowledge."
+          },
+          {
+            "sentence": "This dramatic transformation occurred as Italian archaeological studies of Roman ruins merged with imported Northern technical innovations.",
+            "fact": "The combination of Italian archaeological studies of classical Roman ruins and the importation of technical innovations from Northern European artists sparked a dramatic transformation in Southern European art."
+          },
+          {
+            "sentence": "When improved techniques from Belgian and French artists arrived in Italy around 1475, they sparked a swift transition to oil painting.",
+            "fact": "The transition to oil painting in Italy was sparked by Belgian and French artists whose technical improvements were imported around 1475."
+          },
+          {
+            "sentence": "Consequently, Italian painters permanently adopted oil-on-panel methods, merging scientific realism with Northern material sophistication.",
+            "fact": "Italian painters permanently adopted oil-on-panel techniques and classical design principles, merging scientific realism with Northern material sophistication."
+          },
+          {
+            "sentence": "To establish this classical revival, Filippo Brunelleschi and Donatello conducted the first organized archaeological study of Roman ruins.",
+            "fact": "Brunelleschi and Donatello conducted the first archaeological study of Roman remains, establishing a physical foundation for classical revival in Italian art."
+          },
+          {
+            "sentence": "Ultimately, these Northern oil techniques and classical archaeology revolutionized Italian Renaissance painting.",
+            "fact": "Northern oil techniques and classical archaeology revolutionized Italian Renaissance painting."
+          }
+        ]
+      },
+      {
+        "title": "The Dawn of Modern Art",
+        "summary": "The Renaissance definitively ushered Europe out of the medieval era and into the Early Modern age. This shift away from medieval traditions was driven by the gradual integration of classical learning, scientific observation, and novel artistic techniques. However, early Renaissance art did not instantly displace medieval styles at its onset. Instead, European art permanently transitioned into the Early Modern era through a prolonged co-existence that eventually saw Renaissance approaches become dominant. For an extended period, early Renaissance art developed in parallel with Late Medieval art across the continent. Ultimately, these Renaissance innovations steadily guided Europe into the modern artistic age.",
+        "referenceLabel": "Legacy",
+        "readerQuestion": "How did the innovations of the Renaissance permanently reshape the trajectory of European art history?",
+        "keyTakeaway": "Renaissance innovations gradually ushered Europe into the modern artistic age.",
+        "provenance": [
+          {
+            "sentence": "The Renaissance definitively ushered Europe out of the medieval era and into the Early Modern age.",
+            "fact": "The Renaissance marked the definitive transition of Europe from the medieval period to the Early Modern age."
+          },
+          {
+            "sentence": "This shift away from medieval traditions was driven by the gradual integration of classical learning, scientific observation, and novel artistic techniques.",
+            "fact": "The gradual integration of classical learning, scientific observation, and new artistic techniques prompted a shift away from medieval traditions."
+          },
+          {
+            "sentence": "However, early Renaissance art did not instantly displace medieval styles at its onset.",
+            "fact": "Early Renaissance art did not instantly replace medieval styles upon its inception."
+          },
+          {
+            "sentence": "Instead, European art permanently transitioned into the Early Modern era through a prolonged co-existence that eventually saw Renaissance approaches become dominant.",
+            "fact": "European art permanently transitioned into the Early Modern age through a long-term co-existence and eventual dominance of Renaissance approaches."
+          },
+          {
+            "sentence": "For an extended period, early Renaissance art developed in parallel with Late Medieval art across the continent.",
+            "fact": "Early Renaissance art developed in parallel with Late Medieval art across Europe for an extended period."
+          },
+          {
+            "sentence": "Ultimately, these Renaissance innovations steadily guided Europe into the modern artistic age.",
+            "fact": "Renaissance innovations gradually ushered Europe into the modern artistic age."
+          }
+        ]
+      }
+    ]
+  },
+  "namedEntities": [
+    {
+      "name": "Renaissance",
+      "type": "Concept",
+      "description": "A period in European history marking the transition from the Middle Ages to modernity."
+    },
+    {
+      "name": "Florence",
+      "type": "Place",
+      "description": "An Italian city-state regarded as the birthplace of the Renaissance."
+    },
+    {
+      "name": "Giotto",
+      "type": "Person",
+      "description": "An early Italian painter who pioneered naturalistic figurative representation."
+    },
+    {
+      "name": "Donatello",
+      "type": "Person",
+      "description": "An influential Early Renaissance sculptor famous for his bronze David."
+    },
+    {
+      "name": "Filippo Brunelleschi",
+      "type": "Person",
+      "description": "An architect and sculptor who formulated the mathematical laws of perspective."
+    },
+    {
+      "name": "Masaccio",
+      "type": "Person",
+      "description": "A revolutionary painter who initiated the Early Renaissance in Italian painting."
+    },
+    {
+      "name": "Cosimo de' Medici",
+      "type": "Person",
+      "description": "A wealthy Florentine banker and major patron of Renaissance art."
+    },
+    {
+      "name": "Leone Battista Alberti",
+      "type": "Person",
+      "description": "An Italian humanist author and architect who wrote key treatises on painting and architecture."
+    }
+  ],
+  "knowledgeGraph": [
+    {
+      "subject": "Renaissance art",
+      "predicate": "ORIGINATED_IN",
+      "object": "Florence"
+    },
+    {
+      "subject": "Renaissance art",
+      "predicate": "INFLUENCED_BY",
+      "object": "Renaissance humanist philosophy"
+    },
+    {
+      "subject": "Cosimo de' Medici",
+      "predicate": "PATRONIZED",
+      "object": "Renaissance art"
+    },
+    {
+      "subject": "Filippo Brunelleschi",
+      "predicate": "DEVELOPED",
+      "object": "Linear perspective"
+    },
+    {
+      "subject": "Donatello",
+      "predicate": "CREATED",
+      "object": "Bronze statue of David"
+    },
+    {
+      "subject": "Giotto",
+      "predicate": "PIONEERED",
+      "object": "Naturalistic, three-dimensional figurative representation"
+    },
+    {
+      "subject": "Masaccio",
+      "predicate": "COLLABORATED_WITH",
+      "object": "Masolino"
+    },
+    {
+      "subject": "Leone Battista Alberti",
+      "predicate": "AUTHORED",
+      "object": "De pictura"
+    },
+    {
+      "subject": "Renaissance art",
+      "predicate": "FACILITATED_TRANSITION_TO",
+      "object": "Early Modern age"
+    },
+    {
+      "subject": "Filippo Brunelleschi",
+      "predicate": "CONDUCTED_ARCHAEOLOGICAL_STUDY_OF",
+      "object": "Roman remains"
+    },
+    {
+      "subject": "Donatello",
+      "predicate": "CONDUCTED_ARCHAEOLOGICAL_STUDY_OF",
+      "object": "Roman remains"
+    },
+    {
+      "subject": "Renaissance art",
+      "predicate": "ADOPTED_TECHNIQUE",
+      "object": "Oil painting on panels"
+    }
+  ],
+  "timeline": [
+    {
+      "year": "c. 1280",
+      "headline": "Pisanos Pioneer Classicising Sculpture",
+      "description": "Nicola and Giovanni Pisano sculpt the Pisa pulpits, showing marked classicising tendencies influenced by Roman sarcophagi.",
+      "importance": 8,
+      "connections": [
+        "Nicola Pisano",
+        "Giovanni Pisano"
+      ],
+      "image": null
+    },
+    {
+      "year": "c. 1305",
+      "headline": "Giotto Paints Arena Chapel",
+      "description": "Giotto completes the naturalistic Life of Christ fresco cycle in Padua, breaking from traditional Byzantine style.",
+      "importance": 9,
+      "connections": [
+        "Giotto"
+      ],
+      "image": null
+    },
+    {
+      "year": "1401",
+      "headline": "Florence Baptistery Door Competition",
+      "description": "A competition for the Florence Baptistery bronze doors launches, won by Ghiberti, marking the Early Renaissance.",
+      "importance": 9,
+      "connections": [
+        "Lorenzo Ghiberti",
+        "Brunelleschi",
+        "Donatello"
+      ],
+      "image": null
+    },
+    {
+      "year": "1425",
+      "headline": "Masaccio Begins Brancacci Frescos",
+      "description": "Masaccio starts the Brancacci Chapel frescos, introducing unprecedented solidity of form, perspective, and naturalism.",
+      "importance": 10,
+      "connections": [
+        "Masaccio",
+        "Masolino"
+      ],
+      "image": null
+    },
+    {
+      "year": "1435",
+      "headline": "Alberti Publishes De Pictura",
+      "description": "Leone Battista Alberti publishes his influential treatise codifying the scientific rules of linear perspective in painting.",
+      "importance": 8,
+      "connections": [
+        "Leone Battista Alberti"
+      ],
+      "image": null
+    },
+    {
+      "year": "c. 1460",
+      "headline": "Uccello Completes Battle Paintings",
+      "description": "Uccello completes the Battle of San Romano, demonstrating his obsessive, groundbreaking application of linear perspective.",
+      "importance": 7,
+      "connections": [
+        "Uccello"
+      ],
+      "image": null
+    },
+    {
+      "year": "c. 1475",
+      "headline": "Oil Painting Reaches Italy",
+      "description": "Northern European oil-painting techniques are adopted in Italy, permanently transforming Southern European painting practices.",
+      "importance": 9,
+      "connections": [
+        "Jan van Eyck",
+        "Robert Campin"
+      ],
+      "image": null
+    }
+  ],
+  "rankedFacts": [
+    {
+      "fact": "Donatello's monument to Gattamelata was the very first large-scale bronze equestrian statue cast since the fall of the Roman Empire.",
+      "score": 0.91,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.95,
+        "narrativeValue": 0.85,
+        "educationalValue": 0.9,
+        "visualValue": 0.9,
+        "uniqueness": 0.85,
+        "ontologyRelevance": 0.95
+      },
+      "reasoning": "An exceptionally strong fact with high specificity and ontology relevance, marking a major milestone in the history of sculpture."
+    },
+    {
+      "fact": "The sculptor Donatello created a bronze statue of David that was highly unusual for its time due to its overtly humanist and erotic qualities.",
+      "score": 0.89,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.9,
+        "narrativeValue": 0.95,
+        "educationalValue": 0.9,
+        "visualValue": 0.85,
+        "uniqueness": 0.8,
+        "ontologyRelevance": 0.95
+      },
+      "reasoning": "Highly specific to a seminal artwork, combining strong historical relevance with compelling narrative and visual qualities."
+    },
+    {
+      "fact": "Architect Brunelleschi and sculptor Donatello conducted the first systematic archaeological studies of ancient Roman ruins to revive classical styles.",
+      "score": 0.89,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.85,
+        "educationalValue": 0.9,
+        "visualValue": 0.85,
+        "uniqueness": 0.8,
+        "ontologyRelevance": 0.9
+      },
+      "reasoning": "Strongly connects key historical figures to the physical and methodological origins of the Renaissance style."
+    },
+    {
+      "fact": "The transition to oil painting in Italy was sparked by Belgian and French artists whose technical improvements were imported around 1475.",
+      "score": 0.88,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.9,
+        "visualValue": 0.85,
+        "uniqueness": 0.8,
+        "ontologyRelevance": 0.95
+      },
+      "reasoning": "Excellent technical specificity regarding medium transition, directly impacting the material ontology of Renaissance painting."
+    },
+    {
+      "fact": "Initiated by the 1401 Florence Baptistery door competition",
+      "score": 0.88,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.95,
+        "narrativeValue": 0.85,
+        "educationalValue": 0.9,
+        "visualValue": 0.8,
+        "uniqueness": 0.75,
+        "ontologyRelevance": 0.9
+      },
+      "reasoning": "Extremely specific, pinpointing a precise historical event widely considered the catalyst for Renaissance sculpture."
+    },
+    {
+      "fact": "Key figures like Brunelleschi, Donatello, and Masaccio advanced naturalism, linear perspective, and anatomical realism in painting and sculpture",
+      "score": 0.87,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.85,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.9,
+        "visualValue": 0.85,
+        "uniqueness": 0.6,
+        "ontologyRelevance": 0.95
+      },
+      "reasoning": "A foundational synthesis of the key innovators and technical breakthroughs that defined early Renaissance art."
+    },
+    {
+      "fact": "The famous 16th-century biographer Giorgio Vasari credited Giotto with single-handedly rescuing Italian art from the 'crude' Byzantine style.",
+      "score": 0.86,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.85,
+        "narrativeValue": 0.9,
+        "educationalValue": 0.85,
+        "visualValue": 0.7,
+        "uniqueness": 0.75,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Captures a foundational historiographical narrative of art history with high confidence and clear attribution."
+    },
+    {
+      "fact": "Giotto developed an unprecedentedly naturalistic, three-dimensional style of painting, breaking away from Byzantine traditions",
+      "score": 0.86,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.8,
+        "narrativeValue": 0.85,
+        "educationalValue": 0.9,
+        "visualValue": 0.85,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.95
+      },
+      "reasoning": "Crucial stylistic milestone that directly addresses the core ontological shifts in painting techniques."
+    },
+    {
+      "fact": "The rise of Renaissance art in Florence was directly fueled by the financial success of the Medici Bank, which funded non-church art patronage.",
+      "score": 0.84,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.8,
+        "narrativeValue": 0.85,
+        "educationalValue": 0.9,
+        "visualValue": 0.8,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "Provides crucial socio-economic context for art production, linking financial systems directly to the evolution of patronage."
+    },
+    {
+      "fact": "The Florentine painter Uccello was so obsessed with mastering the mathematics of perspective that he reportedly let it disturb his sleep.",
+      "score": 0.83,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.85,
+        "narrativeValue": 0.95,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.9,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "An engaging, unique historical anecdote that highlights the technical and mathematical evolution of Renaissance painting techniques."
+    },
+    {
+      "fact": "Nicola and Giovanni Pisano introduced classicising tendencies in sculpture",
+      "score": 0.83,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.85,
+        "narrativeValue": 0.75,
+        "educationalValue": 0.85,
+        "visualValue": 0.75,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.9
+      },
+      "reasoning": "Highly accurate and specific to proto-Renaissance sculptural developments, identifying key transitional figures."
+    },
+    {
+      "fact": "The movement was driven by the recovery of classical texts, access to Islamic mathematics, the printing press, and Medici patronage",
+      "score": 0.82,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.8,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.9,
+        "visualValue": 0.8,
+        "uniqueness": 0.75,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "Provides excellent interdisciplinary context, linking scientific and literary developments directly to artistic evolution."
+    },
+    {
+      "fact": "Renaissance art emerged in Italy around 1400, combining Classical antiquity foundations with Northern European developments and scientific knowledge",
+      "score": 0.81,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.75,
+        "narrativeValue": 0.75,
+        "educationalValue": 0.85,
+        "visualValue": 0.85,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "A solid, comprehensive introductory fact that serves as an excellent anchor for visual timelines and educational overviews."
+    },
+    {
+      "fact": "Early Renaissance art did not instantly replace medieval styles; instead, it developed in parallel with Late Medieval art across Europe.",
+      "score": 0.76,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.6,
+        "narrativeValue": 0.7,
+        "educationalValue": 0.85,
+        "visualValue": 0.8,
+        "uniqueness": 0.6,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "Highly educational and accurate for timeline mapping, though slightly more generalized in its phrasing."
+    },
+    {
+      "fact": "It marked Europe's transition from the medieval period to the Early Modern age",
+      "score": 0.68,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.4,
+        "narrativeValue": 0.6,
+        "educationalValue": 0.8,
+        "visualValue": 0.75,
+        "uniqueness": 0.4,
+        "ontologyRelevance": 0.75
+      },
+      "reasoning": "While historically undeniable, this statement is highly macro-level and lacks the specific artistic focus of other candidates."
+    }
+  ],
+  "visualModules": [
+    {
+      "type": "art_movement",
+      "title": "Art Movement Blueprint Snapshot",
+      "data": {
+        "origins": {
+          "timePeriod": "1350 – 1620",
+          "geographicalOrigin": "Italy (specifically Florence)",
+          "foundationalInfluences": [
+            "Art of Classical antiquity",
+            "Art of Northern Europe",
+            "Renaissance humanist philosophy",
+            "Increased awareness of nature",
+            "Revival of classical learning",
+            "Individualistic view of man"
+          ],
+          "socioCulturalFactors": [
+            "Availability of lost Classical texts (philosophy, prose, poetry, drama, science, arts thesis, early Christian theology)",
+            "Access to advanced mathematics from Islamic scholars",
+            "Advent of movable type printing in the 15th century",
+            "Establishment of the Medici Bank bringing wealth to Florence",
+            "Patronage of the arts by Cosimo de' Medici independent of church or monarchy",
+            "First archaeological study of Roman remains by Brunelleschi and Donatello"
+          ]
+        },
+        "artists": [
+          "Nicola Pisano",
+          "Giovanni Pisano",
+          "Giotto",
+          "Cimabue",
+          "Brunelleschi",
+          "Donatello",
+          "Lorenzo Ghiberti",
+          "Masaccio",
+          "Masolino",
+          "Michelangelo",
+          "Fra Angelico",
+          "Uccello",
+          "Piero della Francesca",
+          "Michelozzo",
+          "Robert Campin",
+          "Jan van Eyck",
+          "Rogier van der Weyden",
+          "Hugo van der Goes",
+          "Bellini family",
+          "Mantegna",
+          "Giorgione",
+          "Titian",
+          "Tintoretto",
+          "Leone Battista Alberti"
+        ],
+        "techniques": [
+          "Linear perspective",
+          "Scientific study of light",
+          "Oil painting on panels (developed by Belgian and French artists, adopted in Italy)",
+          "Naturalistic, three-dimensional figurative representation",
+          "Classicism in sculpture and painting based on Roman precedents",
+          "Anatomical realism and naturalism of face and gesture"
+        ],
+        "majorWorks": [
+          "Pulpits of the Baptistery and Cathedral of Pisa (Nicola and Giovanni Pisano)",
+          "Life of Christ fresco cycle at the Arena Chapel in Padua (Giotto)",
+          "Bronze doors of the Baptistery of Florence Cathedral (Lorenzo Ghiberti)",
+          "Life-sized crucifix in Santa Maria Novella (Brunelleschi)",
+          "Bronze statue of David (Donatello)",
+          "Equestrian monument to Gattamelata (Donatello)",
+          "Brancacci Chapel fresco cycle (Masaccio and Masolino)",
+          "Frescos at the Convent of San Marco (Fra Angelico)",
+          "Battle of San Romano (Uccello)",
+          "The History of the True Cross fresco cycle (Piero della Francesca)",
+          "De pictura (Leone Battista Alberti treatise)",
+          "De re aedificatoria (Leone Battista Alberti treatise)"
+        ],
+        "influence": [
+          "Marked the transition of Europe from the medieval period to the Early Modern age",
+          "Spread throughout Europe, affecting artists, patrons, techniques, and artistic sensibilities",
+          "Inspired a corresponding classicism in painting and sculpture from architectural precedents",
+          "Belgian and French oil-painting developments permanently altered global painting practices from 1475 onward",
+          "Fostered an artistic ethos in Florence that produced the great masters of the High Renaissance"
+        ]
+      }
+    }
+  ],
+  "narrativePlan": {
+    "chapters": [
+      {
+        "chapterIndex": 0,
+        "title": "The Florentine Banking and Humanism",
+        "referenceLabel": "Origins",
+        "readerQuestion": "What socio-cultural and financial forces triggered the birth of Renaissance art in Florence?",
+        "objectives": [
+          "Explain how the recovery of classical texts and Islamic mathematics fueled a new intellectual movement.",
+          "Detail how the financial success of the Medici Bank enabled non-church art patronage."
+        ],
+        "approvedFacts": [
+          "The movement was driven by the recovery of classical texts, access to Islamic mathematics, the printing press, and Medici patronage",
+          "The rise of Renaissance art in Florence was directly fueled by the financial success of the Medici Bank, which funded non-church art patronage."
+        ],
+        "anchors": [
+          "Florence",
+          "Cosimo de' Medici",
+          "Renaissance"
+        ]
+      },
+      {
+        "chapterIndex": 1,
+        "title": "Scientific Perspective and Anatomical Realism",
+        "referenceLabel": "Characteristics",
+        "readerQuestion": "How did early masters combine scientific observation with artistic techniques to revolutionize representation?",
+        "objectives": [
+          "Examine how Brunelleschi, Donatello, and Masaccio advanced naturalism and linear perspective.",
+          "Highlight the obsessive mathematical pursuit of perspective through artists like Uccello."
+        ],
+        "approvedFacts": [
+          "Key figures like Brunelleschi, Donatello, and Masaccio advanced naturalism, linear perspective, and anatomical realism in painting and sculpture",
+          "The Florentine painter Uccello was so obsessed with mastering the mathematics of perspective that he reportedly let it disturb his sleep."
+        ],
+        "anchors": [
+          "Filippo Brunelleschi",
+          "Masaccio",
+          "c. 1460"
+        ]
+      },
+      {
+        "chapterIndex": 2,
+        "title": "Pioneering Masterpieces of Early Florence",
+        "referenceLabel": "Masterpieces",
+        "readerQuestion": "Which breakthrough works of art defined the early shift away from medieval traditions?",
+        "objectives": [
+          "Explore how the 1401 Baptistery door competition initiated the Early Renaissance.",
+          "Analyze the classical and erotic qualities of Donatello's bronze David."
+        ],
+        "approvedFacts": [
+          "Initiated by the 1401 Florence Baptistery door competition",
+          "The sculptor Donatello created a bronze statue of David that was highly unusual for its time due to its overtly humanist and erotic qualities."
+        ],
+        "anchors": [
+          "1401",
+          "Donatello",
+          "Leone Battista Alberti"
+        ]
+      },
+      {
+        "chapterIndex": 3,
+        "title": "Northern Oil and Classical Revival",
+        "referenceLabel": "Spread",
+        "approvedFacts": [
+          "Renaissance art emerged in Italy around 1400, combining Classical antiquity foundations with Northern European developments and scientific knowledge",
+          "The transition to oil painting in Italy was sparked by Belgian and French artists whose technical improvements were imported around 1475."
+        ],
+        "objectives": [
+          "Trace how Italian Renaissance art combined classical foundations with Northern European developments.",
+          "Explain how the importation of Belgian and French oil painting techniques transformed Southern European practices."
+        ],
+        "readerQuestion": "How did Northern European techniques and classical archaeological studies spread and transform Italian painting?",
+        "anchors": [
+          "c. 1475",
+          "Brunelleschi and Donatello"
+        ]
+      },
+      {
+        "chapterIndex": 4,
+        "title": "Transitioning to the Modern Age",
+        "referenceLabel": "Legacy",
+        "readerQuestion": "How did the innovations of the Renaissance permanently reshape the trajectory of European art history?",
+        "objectives": [
+          "Examine how the Renaissance marked Europe's transition from the medieval period to the Early Modern age.",
+          "Discuss how early Renaissance art developed in parallel with Late Medieval art rather than instantly replacing it."
+        ],
+        "approvedFacts": [
+          "It marked Europe's transition from the medieval period to the Early Modern age",
+          "Early Renaissance art did not instantly replace medieval styles; instead, it developed in parallel with Late Medieval art across Europe."
+        ],
+        "anchors": [
+          "Giotto",
+          "c. 1305",
+          "c. 1280"
+        ]
+      }
+    ]
+  },
+  "triviaCandidates": [
+    {
+      "fact": "The sculptor Donatello created a bronze statue of David that was highly unusual for its time due to its overtly humanist and erotic qualities.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Donatello"
+    },
+    {
+      "fact": "The Florentine painter Uccello was so obsessed with mastering the mathematics of perspective that he reportedly let it disturb his sleep.",
+      "surpriseScore": 7,
+      "readMoreTopic": "Uccello"
+    },
+    {
+      "fact": "Donatello's monument to Gattamelata was the very first large-scale bronze equestrian statue cast since the fall of the Roman Empire.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Gattamelata (Donatello)"
+    },
+    {
+      "fact": "The rise of Renaissance art in Florence was directly fueled by the financial success of the Medici Bank, which funded non-church art patronage.",
+      "surpriseScore": 7,
+      "readMoreTopic": "House of Medici"
+    },
+    {
+      "fact": "Early Renaissance art did not instantly replace medieval styles; instead, it developed in parallel with Late Medieval art across Europe.",
+      "surpriseScore": 6,
+      "readMoreTopic": "Early Renaissance"
+    },
+    {
+      "fact": "The transition to oil painting in Italy was sparked by Belgian and French artists whose technical improvements were imported around 1475.",
+      "surpriseScore": 7,
+      "readMoreTopic": "Oil painting"
+    },
+    {
+      "fact": "Architect Brunelleschi and sculptor Donatello conducted the first systematic archaeological studies of ancient Roman ruins to revive classical styles.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Filippo Brunelleschi"
+    },
+    {
+      "fact": "The famous 16th-century biographer Giorgio Vasari credited Giotto with single-handedly rescuing Italian art from the 'crude' Byzantine style.",
+      "surpriseScore": 7,
+      "readMoreTopic": "Giotto"
+    }
+  ],
+  "relatedTopics": [
+    "Italian Renaissance painting",
+    "Early Renaissance",
+    "High Renaissance",
+    "Renaissance humanism",
+    "Florentine painting",
+    "Byzantine art",
+    "Classical antiquity",
+    "Northern Renaissance",
+    "History of painting",
+    "Giorgio Vasari"
+  ],
+  "confidenceScores": {
+    "resolver": 0.85,
+    "compiler": 1,
+    "grader": 0.8099999999999999,
+    "overall": 0.96
+  },
+  "qualityAssessment": {
+    "generationMode": "primary",
+    "fallbackRatio": 0,
+    "provenanceCoverage": 0.8857142857142857,
+    "placeholderCount": 0,
+    "verifiedFactRatio": 1,
+    "qualityScore": 96,
+    "confidenceBreakdown": {
+      "provenanceCoverage": 0.8857142857142857,
+      "fieldCoverage": 1,
+      "placeholderPenalty": 1,
+      "fallbackPenalty": 1,
+      "sourceAgreement": 0.85,
+      "extractionCompleteness": 1,
+      "factSpecificity": 0.8099999999999999,
+      "graphValidity": 1,
+      "timelineValidity": 1,
+      "validationPenalty": 1
+    },
+    "status": "PARTIAL",
+    "modulesPassing": [
+      "timeline",
+      "cards",
+      "didYouKnow",
+      "relatedTopics",
+      "structuredFactsData",
+      "knowledgeGraph"
+    ],
+    "modulesHidden": [],
+    "reasons": [
+      "all signals above threshold, no placeholder contamination, majority primary generation",
+      "downgraded because lintArtifact() reported validation errors"
+    ]
+  },
+  "stageDiagnostics": [
+    {
+      "stage": "entityResolver.pass1",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1685
+    },
+    {
+      "stage": "entityResolver.pass2",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1333
+    },
+    {
+      "stage": "compiler",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 10336
+    },
+    {
+      "stage": "knowledgeGraph",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2628
+    },
+    {
+      "stage": "factEvaluator",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 9018
+    },
+    {
+      "stage": "narrativePlanner",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 5083
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2619
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 3076
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2448
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2937
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2533
+    },
+    {
+      "stage": "documentaryWriter.summary",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1732
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2081
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1646
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1547
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1871
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1629
+    },
+    {
+      "stage": "stylePolish",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 8699
+    }
+  ],
+  "checksum": "f06ac4871e534f188915ec2e36d17b04efd2b2cda20357a5e45181126498b15c",
+  "dependencyHash": "f20cb167fc49bdd647937946d99ceed616803805ba4d548bf4d99fb0c411392a",
+  "sourceReferences": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Renaissance%20art",
+      "title": "Renaissance art"
+    }
+  ],
+  "factScript": {
+    "chapters": [
+      {
+        "chapterTitle": "The Florentine Banking and Humanism",
+        "referenceLabel": "Origins",
+        "questionAnswered": "What socio-cultural and financial forces triggered the birth of Renaissance art in Florence?",
+        "chronologicalPosition": 1,
+        "entities": [
+          "Medici Bank",
+          "Renaissance humanist philosophy",
+          "Classical texts",
+          "Islamic mathematics",
+          "Movable type printing"
+        ],
+        "dates": [
+          "1350 - 1620",
+          "15th century"
+        ],
+        "locations": [
+          "Florence",
+          "Italy"
+        ],
+        "people": [
+          "Cosimo de' Medici",
+          "Brunelleschi",
+          "Donatello"
+        ],
+        "events": [
+          "Establishment of the Medici Bank",
+          "First archaeological study of Roman remains by Brunelleschi and Donatello",
+          "Advent of movable type printing"
+        ],
+        "cause": "The convergence of recovered classical texts, advanced Islamic mathematics, and the immense wealth generated by the Medici Bank created a unique intellectual and financial environment in Florence.",
+        "effect": "This combination of factors fueled a new humanist intellectual movement and enabled wealthy patrons to fund non-church art independent of traditional religious or monarchical institutions.",
+        "keyFacts": [
+          "The recovery of lost Classical texts and access to advanced mathematics from Islamic scholars fueled a new intellectual movement in Florence.",
+          "The financial success of the Medici Bank brought immense wealth to Florence, directly enabling non-church art patronage.",
+          "Cosimo de' Medici funded arts and artists independently of the church or monarchy, establishing a new model of private patronage.",
+          "The advent of movable type printing in the 15th century accelerated the spread of humanist philosophy and classical learning."
+        ],
+        "quotes": [],
+        "connections": [
+          "Brunelleschi and Donatello's archaeological study of Roman remains directly influenced the development of linear perspective and classicism in sculpture."
+        ],
+        "takeaway": "Medici wealth and classical recovery birthed Florentine Renaissance art.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "Scientific Perspective and Anatomical Realism",
+        "referenceLabel": "Characteristics",
+        "questionAnswered": "How did early masters combine scientific observation with artistic techniques to revolutionize representation?",
+        "chronologicalPosition": 2,
+        "entities": [
+          "Linear perspective",
+          "Anatomical realism",
+          "Naturalism",
+          "De pictura"
+        ],
+        "dates": [
+          "1401",
+          "1425",
+          "1435",
+          "c. 1460"
+        ],
+        "locations": [
+          "Florence",
+          "Italy",
+          "Brancacci Chapel"
+        ],
+        "people": [
+          "Brunelleschi",
+          "Donatello",
+          "Masaccio",
+          "Uccello",
+          "Leone Battista Alberti"
+        ],
+        "events": [
+          "First archaeological study of Roman remains by Brunelleschi and Donatello",
+          "Masaccio begins Brancacci Chapel frescos",
+          "Alberti publishes De Pictura",
+          "Uccello completes Battle of San Romano"
+        ],
+        "cause": "The integration of classical Roman studies, advanced mathematics, and scientific observation drove Florentine artists to seek a precise, rational system for representing three-dimensional space and the human form.",
+        "effect": "These mathematical and anatomical innovations permanently transformed European art, shifting representation from flat medieval symbolism to convincing, lifelike realism.",
+        "keyFacts": [
+          "Brunelleschi, Donatello, and Masaccio pioneered the integration of naturalism, linear perspective, and anatomical realism in early Renaissance painting and sculpture.",
+          "Masaccio applied these groundbreaking principles of perspective and physical solidity in his 1425 Brancacci Chapel fresco cycle.",
+          "Leone Battista Alberti mathematically codified these scientific rules of linear perspective in his 1435 treatise De pictura.",
+          "The Florentine painter Uccello was so obsessed with mastering the mathematics of perspective that it reportedly disturbed his sleep."
+        ],
+        "quotes": [],
+        "connections": [
+          "The mathematical perspective codified by Alberti laid the structural foundation for the complex compositions of High Renaissance masters like Michelangelo.",
+          "The anatomical realism championed by Donatello in Florence parallelled the detailed physical observation occurring in Northern European painting."
+        ],
+        "takeaway": "Mathematical perspective and anatomical study revolutionized visual representation forever.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "Pioneering Masterpieces of Early Florence",
+        "referenceLabel": "Masterpieces",
+        "questionAnswered": "Which breakthrough works of art defined the early shift away from medieval traditions?",
+        "chronologicalPosition": 3,
+        "entities": [
+          "Renaissance",
+          "Florence",
+          "Donatello",
+          "Filippo Brunelleschi"
+        ],
+        "dates": [
+          "1401"
+        ],
+        "locations": [
+          "Florence",
+          "Florence Baptistery"
+        ],
+        "people": [
+          "Donatello",
+          "Lorenzo Ghiberti",
+          "Brunelleschi"
+        ],
+        "events": [
+          "Florence Baptistery door competition"
+        ],
+        "cause": "The desire to revitalize civic pride and artistic expression in Florence led to a landmark public competition for the cathedral baptistery doors.",
+        "effect": "These pioneering commissions established a new artistic standard that prioritized classical naturalism, humanism, and anatomical realism over medieval conventions.",
+        "keyFacts": [
+          "The Early Renaissance was initiated by the 1401 Florence Baptistery door competition, which was won by Lorenzo Ghiberti.",
+          "The sculptor Donatello created a bronze statue of David that was highly unusual for its time due to its overtly humanist and erotic qualities.",
+          "Donatello's bronze David departed from medieval traditions by reviving classical freestanding nude sculpture and emphasizing anatomical realism."
+        ],
+        "quotes": [],
+        "connections": [
+          "The archaeological studies of Roman remains by Brunelleschi and Donatello directly informed the classical revival seen in early Florentine masterpieces."
+        ],
+        "takeaway": "Florentine breakthroughs replaced medieval styling with classical humanism.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "Northern Oil and Classical Revival",
+        "referenceLabel": "Spread",
+        "questionAnswered": "How did Northern European techniques and classical archaeological studies spread and transform Italian painting?",
+        "chronologicalPosition": 4,
+        "entities": [
+          "Renaissance art",
+          "Oil painting",
+          "Classicism",
+          "Linear perspective",
+          "Roman remains"
+        ],
+        "dates": [
+          "1400",
+          "1475"
+        ],
+        "locations": [
+          "Italy",
+          "Florence",
+          "Rome",
+          "Belgium",
+          "France"
+        ],
+        "people": [
+          "Filippo Brunelleschi",
+          "Donatello",
+          "Jan van Eyck",
+          "Robert Campin"
+        ],
+        "events": [
+          "First archaeological study of Roman remains by Brunelleschi and Donatello",
+          "Importation of Northern European oil painting techniques to Italy"
+        ],
+        "cause": "The combination of Italian archaeological studies of classical Roman ruins and the importation of technical innovations from Northern European artists sparked a dramatic transformation in Southern European art.",
+        "effect": "Italian painters permanently adopted oil-on-panel techniques and classical design principles, merging scientific realism with Northern material sophistication.",
+        "keyFacts": [
+          "Renaissance art emerged in Italy around 1400, combining Classical antiquity foundations with Northern European developments and scientific knowledge.",
+          "The transition to oil painting in Italy was sparked by Belgian and French artists whose technical improvements were imported around 1475.",
+          "Brunelleschi and Donatello conducted the first archaeological study of Roman remains, establishing a physical foundation for classical revival in Italian art.",
+          "The adoption of Northern oil-painting developments permanently altered Southern European painting practices from 1475 onward."
+        ],
+        "quotes": [],
+        "connections": [
+          "The transition from medieval tempera to Northern oil techniques directly enabled the high-contrast realism of the High Renaissance masters.",
+          "Brunelleschi's archaeological studies of Roman ruins directly informed the mathematical codification of linear perspective."
+        ],
+        "takeaway": "Northern oil techniques and classical archaeology revolutionized Italian Renaissance painting.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "Transitioning to the Modern Age",
+        "referenceLabel": "Legacy",
+        "questionAnswered": "How did the innovations of the Renaissance permanently reshape the trajectory of European art history?",
+        "chronologicalPosition": 5,
+        "entities": [
+          "Renaissance",
+          "Early Renaissance art",
+          "Late Medieval art"
+        ],
+        "dates": [
+          "1350",
+          "1620"
+        ],
+        "locations": [
+          "Europe",
+          "Italy"
+        ],
+        "people": [
+          "Renaissance artists",
+          "Medieval artists"
+        ],
+        "events": [
+          "Transition from the medieval period to the Early Modern age"
+        ],
+        "cause": "The gradual integration of classical learning, scientific observation, and new artistic techniques prompted a shift away from medieval traditions.",
+        "effect": "European art permanently transitioned into the Early Modern age through a long-term co-existence and eventual dominance of Renaissance methodologies.",
+        "keyFacts": [
+          "The Renaissance marked the definitive transition of Europe from the medieval period to the Early Modern age.",
+          "Early Renaissance art did not instantly replace medieval styles upon its inception.",
+          "Early Renaissance art developed in parallel with Late Medieval art across Europe for an extended period."
+        ],
+        "quotes": [],
+        "connections": [
+          "The parallel development of Late Medieval and Early Renaissance styles",
+          "The transition of European art into the Early Modern age"
+        ],
+        "takeaway": "Renaissance innovations gradually ushered Europe into the modern artistic age.",
+        "insufficientData": false
+      }
+    ]
+  },
+  "briefSummaryProvenance": [
+    {
+      "sentence": "In 1401, Lorenzo Ghiberti won the Florence Baptistery door competition, initiating the Early Renaissance .",
+      "fact": "Chapter 3: The Early Renaissance was initiated by the 1401 Florence Baptistery door competition, which was won by Lorenzo Ghiberti."
+    },
+    {
+      "sentence": "This artistic movement emerged in Italy by combining Classical foundations with Northern European developments and scientific knowledge .",
+      "fact": "Chapter 4: Renaissance art emerged in Italy around 1400, combining Classical antiquity foundations with Northern European developments and scientific knowledge."
+    },
+    {
+      "sentence": "Soon after, Filippo Brunelleschi and Donatello conducted the first archaeological study of Roman remains .",
+      "fact": "Chapter 4: Brunelleschi and Donatello conducted the first archaeological study of Roman remains, establishing a physical foundation for classical revival in Italian art."
+    },
+    {
+      "sentence": "Their work established a physical foundation for a classical revival in Italian art .",
+      "fact": "Chapter 4: Brunelleschi and Donatello conducted the first archaeological study of Roman remains, establishing a physical foundation for classical revival in Italian art."
+    },
+    {
+      "sentence": "In Florence, the financial success of the Medici Bank brought immense wealth to the city .",
+      "fact": "Chapter 1: The financial success of the Medici Bank brought immense wealth to Florence, directly enabling non-church art patronage."
+    },
+    {
+      "sentence": "This wealth directly enabled art patronage outside of the church .",
+      "fact": "Chapter 1: The financial success of the Medici Bank brought immense wealth to Florence, directly enabling non-church art patronage."
+    },
+    {
+      "sentence": "Cosimo de' Medici funded artists independently of the monarchy, establishing a new model of private patronage .",
+      "fact": "Chapter 1: Cosimo de' Medici funded arts and artists independently of the church or monarchy, establishing a new model of private patronage."
+    }
+  ],
+  "validationStatus": {
+    "passed": false,
+    "errors": [
+      "Identical 4-word phrases must not repeat across chapters",
+      "Sentence provenance is incomplete: only 84% of sentences are mapped to facts"
+    ],
+    "warnings": [],
+    "checkedRules": {
+      "ontology_match": true,
+      "required_fields_exist": true,
+      "timeline_non_empty": true,
+      "timeline_count_bounds": true,
+      "timeline_chronological": true,
+      "graph_has_triples": true,
+      "graph_connected": true,
+      "graph_no_synthetic_nodes": true,
+      "named_entities_non_empty": true,
+      "no_weak_facts": true,
+      "no_duplicate_facts": true,
+      "no_duplicate_sentences": true,
+      "no_placeholder_wording": true,
+      "generic_wording_check": true,
+      "paragraph_length_limit": true,
+      "unique_chapter_titles": true,
+      "concrete_dates_names_present": true,
+      "no_repeated_phrases": false,
+      "no_timeline_milestone_placeholder": true,
+      "reader_question_quality": true,
+      "did_you_know_length_ok": true,
+      "sentence_provenance_ok": false,
+      "no_abstract_writing": true,
+      "documentary_alternating_rule": true,
+      "fact_density_met": true,
+      "curiosity_score_ok": true,
+      "documentary_score_ok": true,
+      "resolver_confidence_ok": true,
+      "compiler_confidence_ok": true,
+      "overall_confidence_ok": true
+    },
+    "timestamp": "2026-07-11T08:32:52.398Z"
+  }
+}

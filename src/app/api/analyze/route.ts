@@ -1,10 +1,8 @@
 import { NextResponse } from "next/server";
-import { getArticleIntelligence, searchWikipedia, ArticleIntelligence } from "@/lib/editorial/wikipedia";
+import { getArticleIntelligence, searchWikipedia } from "@/lib/editorial/wikipedia";
 import { createCacheKey, getCachedAnalysis, setCachedAnalysis } from "@/lib/editorial/cache";
 import { processKnowledgeDAG } from "@/lib/knowledge/dag";
 import { curateRelatedExploration } from "@/lib/editorial/related";
-import { mapEntityTypeToOntology } from "@/lib/ontology/ontologyEngine";
-import type { PerspectiveCard } from "@/lib/knowledge/geminiWriter";
 
 interface BreadcrumbItem {
   label: string;
@@ -21,9 +19,9 @@ interface SEOMetadata {
   jsonLdSchema: Record<string, unknown>;
 }
 
-function buildStage15SEO(topic: string, shortSummary: string, category: string): SEOMetadata {
+function buildStage15SEO(topic: string, descriptionSource: string, category: string): SEOMetadata {
   const metaTitle = `${topic} — Premium Editorial Briefing | Visualizer.wiki`;
-  const metaDescription = shortSummary.slice(0, 155) + "...";
+  const metaDescription = descriptionSource.slice(0, 155) + (descriptionSource.length > 155 ? "..." : "");
   const openGraphTitle = `${topic} Explained in 5 Minutes`;
   const openGraphDescription = `Read the Visualizer.wiki briefing on ${topic}. Discover key insights, timelines, and facts.`;
   const canonicalUrl = `https://visualizer.wiki/results?topic=${encodeURIComponent(topic)}`;
@@ -103,6 +101,16 @@ export async function POST(request: Request) {
     // 2. Compile and compile-check via Stage 7 DAG Pipeline
     const artifact = await processKnowledgeDAG(topic, articleSource);
 
+    // 2b. Module hiding: a module the quality gate marked hidden is never
+    // sent to the frontend as if it were validated content. The existing
+    // components already guard on empty/undefined props
+    // (FactCards/KnowledgeJourney/DiscoveryCarousel in results/page.tsx,
+    // EditorialCarousel returning null on an empty cards array), so hiding
+    // a module here requires no frontend change — see
+    // reports/releases/V18_PHASE1_IMPLEMENTATION_PLAN.md.
+    const hidden = new Set(artifact.qualityAssessment.modulesHidden);
+    const isFail = artifact.qualityAssessment.status === "FAIL";
+
     // 3. Process compatibility mapping for VisualSnapshot.tsx rendering
     const ontologyName = artifact.ontology.name;
     const mappedStructuredFacts: any = {
@@ -111,29 +119,33 @@ export async function POST(request: Request) {
       leadParagraph: artifact.structuredFacts.leadParagraph,
       categories: artifact.ontology.labels,
       majorSections: artifact.sourceReferences.map(r => r.title),
-      relatedArticles: artifact.relatedTopics,
-      importantDates: artifact.timeline.map((t) => `${t.year}: ${t.headline}`),
+      relatedArticles: hidden.has("relatedTopics") ? [] : artifact.relatedTopics,
+      importantDates: hidden.has("timeline") ? [] : artifact.timeline.map((t) => `${t.year}: ${t.headline}`),
       extractSummary: artifact.structuredFacts.briefSummary,
       statistics: artifact.rankedFacts.filter((f) => /\d/.test(f.fact)).map((f) => f.fact),
       keyPeople: artifact.namedEntities.filter((e) => e.type === "Person").map((e) => e.name),
       locations: artifact.namedEntities.filter((e) => e.type === "Place").map((e) => e.name),
       organizations: artifact.namedEntities.filter((e) => e.type === "Org").map((e) => e.name),
-      
+
       // Inject ontology metadata
       entityType: artifact.ontology.labels[0],
       ontologyLabels: artifact.ontology.labels
     };
 
-    // Inject ontology specific block data
-    if (ontologyName === "Movie") mappedStructuredFacts.movieData = artifact.structuredFacts;
-    else if (ontologyName === "Person") mappedStructuredFacts.personData = artifact.structuredFacts;
-    else if (ontologyName === "Technology") mappedStructuredFacts.technologyData = artifact.structuredFacts;
-    else if (ontologyName === "Country") mappedStructuredFacts.countryData = artifact.structuredFacts;
-    else if (ontologyName === "Company") mappedStructuredFacts.companyData = artifact.structuredFacts;
-    else if (ontologyName === "Art Movement") mappedStructuredFacts.bookData = artifact.structuredFacts;
-    else if (ontologyName === "Science") mappedStructuredFacts.scienceData = artifact.structuredFacts;
-    else if (ontologyName === "Organization") mappedStructuredFacts.organizationData = artifact.structuredFacts;
-    else if (ontologyName === "Historical Event") mappedStructuredFacts.historyData = artifact.structuredFacts;
+    // Inject ontology specific block data — only when the quality gate
+    // considers required-field coverage sufficient. A block with mostly
+    // absent/placeholder fields is omitted rather than rendered half-empty.
+    if (!hidden.has("structuredFactsData")) {
+      if (ontologyName === "Movie") mappedStructuredFacts.movieData = artifact.structuredFacts;
+      else if (ontologyName === "Person") mappedStructuredFacts.personData = artifact.structuredFacts;
+      else if (ontologyName === "Technology") mappedStructuredFacts.technologyData = artifact.structuredFacts;
+      else if (ontologyName === "Country") mappedStructuredFacts.countryData = artifact.structuredFacts;
+      else if (ontologyName === "Company") mappedStructuredFacts.companyData = artifact.structuredFacts;
+      else if (ontologyName === "Art Movement") mappedStructuredFacts.bookData = artifact.structuredFacts;
+      else if (ontologyName === "Science") mappedStructuredFacts.scienceData = artifact.structuredFacts;
+      else if (ontologyName === "Organization") mappedStructuredFacts.organizationData = artifact.structuredFacts;
+      else if (ontologyName === "Historical Event") mappedStructuredFacts.historyData = artifact.structuredFacts;
+    }
 
     // 4. Related journeys mapping
     const topicKnowledgeCompat: any = {
@@ -145,14 +157,24 @@ export async function POST(request: Request) {
         relatedTopics: artifact.relatedTopics
       }
     };
-    const explored = await curateRelatedExploration(topicKey, topicKnowledgeCompat);
+    const explored = hidden.has("relatedTopics") ? [] : await curateRelatedExploration(topicKey, topicKnowledgeCompat);
 
-    // 5. SEO Metadata Builder
+    // 5. SEO Metadata Builder — never built from a summary the quality
+    // gate didn't trust. A low-quality/fallback-heavy briefSummary falls
+    // back to the real Wikipedia extract instead, so a search-result
+    // snippet never reads "Topic records confirm that..."
+    // (V17_FORENSIC_AUDIT.md, Bug #16).
+    const trustedSummary =
+      artifact.qualityAssessment.status !== "FAIL" && artifact.structuredFacts.briefSummary
+        ? artifact.structuredFacts.briefSummary
+        : articleSource.extract;
     const seo = buildStage15SEO(
       artifact.structuredFacts.title,
-      artifact.structuredFacts.briefSummary,
+      trustedSummary,
       artifact.ontology.labels[0]
     );
+
+    const includeDiagnostics = process.env.NODE_ENV !== "production" || process.env.DEBUG_QUALITY === "1";
 
     const responseData = {
       article: {
@@ -166,16 +188,23 @@ export async function POST(request: Request) {
       topicSubcategory: "General",
       ontologyLabels: artifact.ontology.labels,
       entityType: artifact.ontology.labels[0],
-      shortSummary: artifact.structuredFacts.briefSummary,
-      resultCards: artifact.structuredFacts.cards || [],
-      didYouKnow: artifact.triviaCandidates.slice(0, 5),
+      shortSummary: isFail ? "" : artifact.structuredFacts.briefSummary,
+      resultCards: hidden.has("cards") ? [] : artifact.structuredFacts.cards || [],
+      didYouKnow: hidden.has("didYouKnow") ? [] : artifact.triviaCandidates.slice(0, 5),
       exploredTopics: explored,
-      timeline: artifact.timeline,
+      timeline: hidden.has("timeline") ? [] : artifact.timeline,
       seo,
       structuredFacts: mappedStructuredFacts,
-      relatedList: artifact.relatedTopics,
+      relatedList: hidden.has("relatedTopics") ? [] : artifact.relatedTopics,
       generatedAt: new Date().toISOString(),
-      cacheVersion: "results-v15-knowledge-os",
+      cacheVersion: "results-v18-trustworthy-artifacts",
+      // Minimal, always-present status field — safe to expose in
+      // production. Full diagnostics (per-stage LLM/fallback breakdown)
+      // are developer-facing only, per requirement 8.
+      qualityStatus: artifact.qualityAssessment.status,
+      ...(includeDiagnostics
+        ? { qualityAssessment: artifact.qualityAssessment, stageDiagnostics: artifact.stageDiagnostics }
+        : {}),
     };
 
     // Cache the resolved API response payload in Redis

@@ -22,8 +22,6 @@ function computeSimilarityScore(
   item: RelatedTopic,
   knowledge: TopicKnowledge
 ): number {
-  const text = `${item.title} ${item.description}`.toLowerCase();
-  
   // 1. entity_overlap: shares words/entities
   const topicTitleWords = cleanAndTokenize(knowledge.common.title);
   const itemTitleWords = cleanAndTokenize(item.title);
@@ -33,20 +31,33 @@ function computeSimilarityScore(
   });
   const entity_overlap = matchingTitleWords > 0 ? 1.0 : 0.0;
 
-  // 2. graph_proximity: check if title matches any related topic list or keywords
-  const graph_proximity = (knowledge.common.relatedTopics || []).some(t => t.toLowerCase() === item.title.toLowerCase()) ? 1.0 : 0.0;
-
-  // 3. wikipedia_links_overlap: if it's linked in the main topic's text
+  // 2. wikipedia_links_overlap: if it's linked in the main topic's text
   const isLinked = (knowledge.common.description || "").toLowerCase().includes(item.title.toLowerCase());
   const wikipedia_links_overlap = isLinked ? 1.0 : 0.0;
+
+  // 3. description_overlap: does the candidate's own description share
+  // vocabulary with the source topic's description — a real signal about
+  // subject-matter closeness, independent of list position.
+  const topicDescWords = cleanAndTokenize(knowledge.common.description || "");
+  const itemDescWords = cleanAndTokenize(item.description || "");
+  let matchingDescWords = 0;
+  itemDescWords.forEach((w) => {
+    if (w.length > 3 && topicDescWords.has(w)) matchingDescWords++;
+  });
+  const description_overlap = Math.min(1.0, matchingDescWords / 3);
 
   // 4. popularity: length of description as proxy for content depth
   const popularity = Math.min(1.0, item.description.length / 100);
 
-  // V17 Score formula:
-  // score = entity_overlap * 0.3 + graph_proximity * 0.3 + wikipedia_links_overlap * 0.2 + popularity * 0.2
-  const score = entity_overlap * 0.3 + graph_proximity * 0.3 + wikipedia_links_overlap * 0.2 + popularity * 0.2;
-  
+  // Previous formula included a `graph_proximity` term that checked
+  // whether a candidate's title appeared in the same list it was drawn
+  // from — true by construction for every candidate, contributing a
+  // constant to every score and providing zero differentiation
+  // (V17_FORENSIC_AUDIT.md, Bug #10). Replaced with description_overlap,
+  // a real signal, and weights rebalanced across the three genuine
+  // differentiators plus popularity.
+  const score = entity_overlap * 0.35 + wikipedia_links_overlap * 0.25 + description_overlap * 0.25 + popularity * 0.15;
+
   return score * 100;
 }
 
@@ -137,7 +148,15 @@ export async function curateRelatedExploration(
 
   scoredExplored.sort((a, b) => b.similarity - a.similarity);
 
-  const result = scoredExplored.slice(0, 10).map((r) => r.item);
+  // Do not fill recommendation slots with weak matches — a topic with no
+  // signal above the minimum bar is dropped rather than padded in to reach
+  // a target count (CLAUDE.md related-topic rules; NON_NEGOTIABLES.md).
+  const MIN_SCORE = 15;
+  const result = scoredExplored
+    .filter((r) => r.similarity >= MIN_SCORE)
+    .slice(0, 10)
+    .map((r) => r.item);
+
   await setCachedStage(topicKey, "stage11-explored", { explored: result });
   return result;
 }

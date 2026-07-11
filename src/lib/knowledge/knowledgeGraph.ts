@@ -1,12 +1,41 @@
-import type { ResolvedEntity, GraphTriple } from "@/types/knowledge";
+import type { ResolvedEntity, GraphTriple, StageDiagnostic } from "@/types/knowledge";
 import type { CompiledOutput } from "./compiler";
+import { containsPlaceholder } from "./placeholderDetector";
+import { recordFallback, recordGeminiSuccess, recordGeminiFailure } from "./diagnostics";
+import { callGeminiModel } from "@/lib/ai/geminiConfig";
+
+// Rejects a triple before it can enter the graph. The V17 forensic audit's
+// sharpest finding: the old fallback graph builder trusted structured-fact
+// values as real entity names without checking whether they were
+// placeholder text, producing triples like
+// `"Compiled detail for director" DIRECTED Inception`
+// (V17_FORENSIC_AUDIT.md, Bug #2). This gate is applied to every triple
+// regardless of whether it came from the LLM or the heuristic fallback.
+export function validateTriple(triple: GraphTriple, seen: Set<string>): boolean {
+  const subject = triple.subject?.trim();
+  const object = triple.object?.trim();
+  const predicate = triple.predicate?.trim();
+
+  if (!subject || !object || !predicate) return false; // empty labels
+  if (subject.length < 2 || object.length < 2) return false; // minimum specificity
+  if (containsPlaceholder(subject) || containsPlaceholder(object)) return false; // placeholder nodes
+  if (subject.toLowerCase() === object.toLowerCase()) return false; // self-relation
+  if (predicate === "HAS_PROPERTY" && /^Detail_Aspect_\d+$/i.test(object)) return false; // unsupported synthetic edge
+
+  const key = `${subject.toLowerCase()}|${predicate.toLowerCase()}|${object.toLowerCase()}`;
+  if (seen.has(key)) return false; // duplicate node/edge
+  seen.add(key);
+  return true;
+}
 
 export async function buildKnowledgeGraph(
   resolved: ResolvedEntity,
-  compiled: CompiledOutput
+  compiled: CompiledOutput,
+  diagnostics: StageDiagnostic[] = []
 ): Promise<GraphTriple[]> {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
+    recordFallback(diagnostics, "knowledgeGraph", "no API key configured");
     return getFallbackGraph(resolved, compiled);
   }
 
@@ -38,28 +67,42 @@ Return a valid JSON object matching this schema:
 
 Only return raw JSON. Start with { and end with }. Do not wrap in markdown.`;
 
+  const start = Date.now();
   try {
-    const response = await ai.models.generateContent({
-      model: "gemini-2.0-flash",
+    const { response, meta } = await callGeminiModel(ai, {
       contents: prompt,
       config: { temperature: 0.15, maxOutputTokens: 800 }
     });
 
     const text = typeof response.text === "string" ? response.text.replace(/```json|```/g, "").trim() : "";
     const parsed = JSON.parse(text) as { triples: GraphTriple[] };
-    return parsed.triples || [];
+    const seen = new Set<string>();
+    const validated = (parsed.triples || []).filter((t) => validateTriple(t, seen));
+
+    recordGeminiSuccess(diagnostics, "knowledgeGraph", meta, Date.now() - start);
+
+    return validated;
   } catch (error) {
     console.warn("buildKnowledgeGraph failed, using fallback heuristic graph", error);
+    recordGeminiFailure(diagnostics, "knowledgeGraph", error, Date.now() - start);
     return getFallbackGraph(resolved, compiled);
   }
 }
 
+// Derives triples only from real, ontology-mapped structured-fact values.
+// A field compiler.ts could not fill (see getFallbackCompilation) is simply
+// absent from `sf`, so no triple is generated for it here — this recovery
+// path never invents a subject/object to keep a count target, and no
+// longer pads short graphs with synthetic `HAS_PROPERTY -> Detail_Aspect_N`
+// filler (removed outright; that branch never carried information — see
+// V17_FORENSIC_AUDIT.md, Bugs #2 and #15). An honestly short or empty graph
+// is the correct output when there is no real data, and the quality gate
+// hides the graph module rather than render a padded one.
 function getFallbackGraph(resolved: ResolvedEntity, compiled: CompiledOutput): GraphTriple[] {
   const triples: GraphTriple[] = [];
   const title = resolved.canonicalTitle;
   const sf = compiled.structuredFacts;
 
-  // Add standard relationships based on ontology fields
   if (resolved.entityType === "Movie" || resolved.entityType === "TV Series") {
     if (sf.director) triples.push({ subject: sf.director, predicate: "DIRECTED", object: title });
     if (sf.composer) triples.push({ subject: sf.composer, predicate: "COMPOSED", object: title });
@@ -97,24 +140,14 @@ function getFallbackGraph(resolved: ResolvedEntity, compiled: CompiledOutput): G
     if (sf.discoverer) triples.push({ subject: sf.discoverer, predicate: "DISCOVERED", object: title });
   }
 
-  // Ensure we have at least 8 triples to pass the linter minimum count (>= 5)
-  let attemptIdx = 0;
-  while (triples.length < 8 && attemptIdx < compiled.namedEntities.length) {
-    const ent = compiled.namedEntities[attemptIdx++];
-    if (ent && ent.name && ent.name !== title) {
+  // Real (non-self) named entities the compiler actually resolved can add
+  // a genuine, if generic, association — still gated by validateTriple.
+  for (const ent of compiled.namedEntities) {
+    if (ent?.name && ent.name.toLowerCase() !== title.toLowerCase()) {
       triples.push({ subject: ent.name, predicate: "ASSOCIATED_WITH", object: title });
     }
   }
 
-  // Backup simple nodes if still short
-  let safetyIdx = 1;
-  while (triples.length < 8) {
-    triples.push({
-      subject: title,
-      predicate: "HAS_PROPERTY",
-      object: `Detail_Aspect_${safetyIdx++}`
-    });
-  }
-
-  return triples;
+  const seen = new Set<string>();
+  return triples.filter((t) => validateTriple(t, seen));
 }

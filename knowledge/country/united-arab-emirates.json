@@ -1,7 +1,7 @@
 {
-  "version": "16.0",
-  "compilerVersion": "v17.0",
-  "ontologyVersion": "v17.0",
+  "version": "18.0",
+  "compilerVersion": "v18.0",
+  "ontologyVersion": "v18.0",
   "wikipediaRevision": "rev-1.0",
   "wikidataRevision": "Q878",
   "ontology": {
@@ -12,179 +12,291 @@
     ]
   },
   "structuredFacts": {
-    "government": "Compiled detail for government",
-    "geography": "Compiled detail for geography",
-    "economy": "Compiled detail for economy",
-    "culture": "Compiled detail for culture",
-    "population": "Compiled detail for population",
-    "tourism": "Compiled detail for tourism",
+    "government": {
+      "systemType": "Federal semi-constitutional monarchy",
+      "highestStateAuthority": "Federal Supreme Council",
+      "composition": "Seven ruling emirs",
+      "keyPositions": [
+        "Federal President (appointed by the Federal Supreme Council)",
+        "Prime Minister (appointed by the President)",
+        "Cabinet (formed and led by the Prime Minister)"
+      ],
+      "politicalClassification": "Authoritarian state",
+      "memberEmirates": [
+        "Emirate of Abu Dhabi",
+        "Emirate of Dubai",
+        "Emirate of Ajman",
+        "Emirate of Sharjah",
+        "Emirate of Ras Al Khaimah",
+        "Emirate of Umm Al Quwain",
+        "Emirate of Fujairah"
+      ],
+      "internationalMemberships": [
+        "United Nations",
+        "Arab League",
+        "Organisation of Islamic Cooperation",
+        "Non-Aligned Movement",
+        "World Trade Organization",
+        "BRICS",
+        "Shanghai Cooperation Organisation (dialogue partner)",
+        "Gulf Cooperation Council (GCC)"
+      ]
+    },
+    "geography": {
+      "region": "West Asia",
+      "location": "Eastern end of the Arabian Peninsula",
+      "nationalCapital": "Abu Dhabi",
+      "largestCity": "Dubai",
+      "landBorders": [
+        {
+          "country": "Oman",
+          "direction": "East and northeast"
+        },
+        {
+          "country": "Saudi Arabia",
+          "direction": "South and southwest"
+        }
+      ],
+      "maritimeBorders": [
+        {
+          "bodyOfWater": "Persian Gulf",
+          "countries": [
+            "Saudi Arabia",
+            "Qatar",
+            "Iran"
+          ]
+        },
+        {
+          "bodyOfWater": "Gulf of Oman",
+          "countries": [
+            "Oman"
+          ]
+        }
+      ],
+      "keyGeographicalFeatures": [
+        "Hajar Mountains",
+        "Al Ain/Buraimi Oasis",
+        "Sir Bani Yas Island",
+        "Liwa"
+      ]
+    },
+    "economy": {
+      "status": "Middle power",
+      "diversification": "Most diversified economy among GCC members, increasingly focusing on tourism and business",
+      "globalReservesRankings": {
+        "oilReserves": "7th-largest",
+        "naturalGasReserves": "7th-largest"
+      },
+      "economicHubs": {
+        "Dubai": "International hub of finance, tourism, and commerce"
+      },
+      "historicalEconomicActivities": [
+        "Maritime trade",
+        "Seafaring",
+        "Pearling",
+        "Copper trade (historical, from Hajar Mountains)"
+      ]
+    },
+    "culture": {
+      "stateReligion": "Islam",
+      "officialLanguage": "Arabic",
+      "businessAndMostSpokenLanguage": "English",
+      "historicalPeriods": [
+        "Hafit period (3,200–2,600 BCE)",
+        "Umm Al Nar culture (2,600–2,000 BCE)",
+        "Wadi Suq culture (2,000–1,300 BCE)",
+        "Three Iron Ages",
+        "Mleiha period"
+      ],
+      "historicalTribalGroupings": [
+        "Bani Yas",
+        "Al Bu Falah",
+        "Dhawahir",
+        "Awamir",
+        "Al Ali",
+        "Manasir",
+        "Sharqiyin",
+        "Qawasim"
+      ]
+    },
+    "population": {
+      "totalEstimatedPopulation": "Over 11 million (2024)",
+      "demographics": {
+        "nativeEmiratis": "11%",
+        "expatriatesAndMigrantWorkers": "89% (majority from South Asia)"
+      }
+    },
+    "tourism": {
+      "status": "Major economic focus in the 21st century",
+      "primaryHub": "Dubai (international hub of tourism)"
+    },
     "title": "United Arab Emirates",
     "subtitle": "Country in West Asia",
     "leadParagraph": "The United Arab Emirates (UAE), also known simply as the Emirates, is a country in West Asia, situated at the eastern end of the Arabian Peninsula. It is a federal semi-constitutional monarchy made up of seven emirates, with Abu Dhabi serving as its national capital. The UAE borders Oman to the east and northeast, and Saudi Arabia to the south and southwest. It shares maritime borders with Saudi Arabia, Qatar, and Iran in the Persian Gulf, and with Oman in the Gulf of Oman. In 2024, the UAE had an estimated population of over 11 million. Dubai is the country's largest city. Islam is the state religion. Arabic is the official language while English remains the most spoken language and the language of business.\nThe present-day United Arab Emirates is located within the historical region of Eastern Arabia, which was oriented to maritime trade and seafaring. The Portuguese arrived in the region around 1500 and set up bases on the territory while waging wars against the Persians. After their expulsion in 1622 the Dutch controlled the straits and established global maritime dominance. By the 19th century, with pearling becoming a major economic activity, piracy became rampant in the gulf, prompting British intervention. Local sheikhdoms formed a pact with the United Kingdom to create the Trucial States, a British protectorate that was effectively shielded from attempted Saudi and Omani suzerainty. The Trucial States remained under British influence until full independence as the United Arab Emirates in 1971. Zayed bin Sultan Al Nahyan, ruler of Abu Dhabi and the country's first president (1971–2004), oversaw rapid development of the Emirates by investing revenues from newly found oil into healthcare, education, and infrastructure.\nThe United Arab Emirates is considered a middle power in global affairs; Dubai serves as an international hub of finance, tourism, and commerce. Only 11% of the population are native Emiratis; the vast majority of inhabitants are expatriates and migrant workers, most of whom are from South Asia. The UAE has the world's seventh-largest oil reserves and seventh-largest natural gas reserves. The UAE has the most diversified economy among the members of the Gulf Cooperation Council (GCC), having become less reliant on natural resources in the 21st century and increasingly focusing on tourism and business. The UAE is a member of the United Nations, Arab League, Organisation of Islamic Cooperation, Non-Aligned Movement, World Trade Organization, and BRICS; it is also a dialogue partner of the Shanghai Cooperation Organisation.\nThe Federal Supreme Council, made up of the seven ruling emirs, is the highest state authority. It jointly appoints one member as federal president, who appoints a prime minister, who forms and leads the cabinet. The UAE is an authoritarian state but generally liberal by regional standards. It ranks highly in several social indicators such as housing, healthcare, education and personal safety, as well as the highest regionally in the Human Development Index. Human rights organisations consider the UAE substandard on human rights, ranking low in the human freedom index due to reports of government critics being imprisoned and tortured, families harassed by the state security apparatus, and cases of forced disappearances. Individual rights such as the freedoms of assembly, association, expression, and the freedom of the press are severely repressed.",
-    "briefSummary": "United Arab Emirates records confirm that The United Arab Emirates (UAE), also known simply as the Emirates,. United Arab Emirates records confirm that The Federal Supreme Council, made up of the seven ruling emirs,. United Arab Emirates records confirm that There are six periods of human settlement with distinctive behaviours in. United Arab Emirates remains study topic showing that final summary explaining the legacy.",
+    "briefSummary": "Archaeological evidence traces the earliest human habitation in the region back 130,000 years. By 3000 BCE, lively trading links had developed as copper extracted from the Hajar Mountains was exported to Mesopotamia. The regional landscape shifted again in 630 CE, when Islam arrived following a letter sent by the prophet Muhammad to the rulers of Oman. Centuries later, local sheikhdoms signed a 19th-century treaty with the United Kingdom to form the Trucial States protectorate. Today, the United Arab Emirates is composed of seven constituent emirates. Within this modern nation of over 11 million people, native Emiratis constitute only 11% of the total population, while expatriates and migrant workers, primarily from South Asia, make up the remaining 89%.",
     "cards": [
       {
-        "title": "The Origins of United Arab Emirates",
-        "summary": "United Arab Emirates records verify that The United Arab Emirates (UAE), also known simply as the Emirates,. This motivated early research explaining why motivating factors behind early phases of development. Subsequent investigations established that The present-day United Arab Emirates is located within the historical region. Because of these dynamics, details show initial events showing transition in the subject. United Arab Emirates data confirms that early outcomes and related findings. These changes established the basis for fundamental lessons from this period.",
-        "referenceLabel": "The",
-        "readerQuestion": "What represents the starting motivation behind Origins?",
-        "keyTakeaway": "fundamental lessons from this period",
+        "title": "The Dawn of Magan",
+        "summary": "Archaeological evidence traces the earliest human habitation in the region back 130,000 years. Drawn by abundant copper deposits in the Hajar Mountains and early migration routes, ancient populations and regional traders flocked to the Arabian Peninsula. Sumerian historical sources identify the ancient, copper-rich civilization of Magan as encompassing the modern UAE and Oman. By connecting Mesopotamia and the Indus Valley, the region became a vital maritime trading hub that established some of the earliest global commercial networks. These lively trading links flourished around 3000 BCE, driven by copper extracted from the Hajar Mountains for export to Mesopotamia. Ultimately, this ancient copper trade positioned the early Emirates as a global crossroads.",
+        "referenceLabel": "Origins",
+        "readerQuestion": "How did prehistoric trade and early human settlements shape the dawn of the Emirates?",
+        "keyTakeaway": "Ancient copper trade positioned the early Emirates as a global crossroads.",
         "provenance": [
           {
-            "sentence": "United Arab Emirates records verify that The United Arab Emirates (UAE), also known simply as the Emirates,.",
-            "fact": "The United Arab Emirates (UAE), also known simply as the Emirates,"
+            "sentence": "Archaeological evidence traces the earliest human habitation in the region back 130,000 years.",
+            "fact": "Archaeological evidence traces the earliest human habitation in the region back 130,000 years"
           },
           {
-            "sentence": "This motivated early research explaining why motivating factors behind early phases of development.",
-            "fact": "motivating factors behind early phases of development"
+            "sentence": "Drawn by abundant copper deposits in the Hajar Mountains and early migration routes, ancient populations and regional traders flocked to the Arabian Peninsula.",
+            "fact": "Abundant copper deposits in the Hajar Mountains and early human migration routes drew ancient populations and regional traders to the Arabian Peninsula."
           },
           {
-            "sentence": "Subsequent investigations established that The present-day United Arab Emirates is located within the historical region.",
-            "fact": "The present-day United Arab Emirates is located within the historical region"
+            "sentence": "Sumerian historical sources identify the ancient, copper-rich civilization of Magan as encompassing the modern UAE and Oman.",
+            "fact": "Sumerian historical sources identify the ancient copper-rich civilization of Magan as encompassing the modern UAE and Oman"
           },
           {
-            "sentence": "Because of these dynamics, details show initial events showing transition in the subject.",
-            "fact": "initial events showing transition in the subject"
+            "sentence": "By connecting Mesopotamia and the Indus Valley, the region became a vital maritime trading hub that established some of the earliest global commercial networks.",
+            "fact": "The region became a vital maritime trading hub connecting Mesopotamia and the Indus Valley, establishing some of the earliest global commercial networks."
           },
           {
-            "sentence": "United Arab Emirates data confirms that early outcomes and related findings.",
-            "fact": "early outcomes and related findings"
+            "sentence": "These lively trading links flourished around 3000 BCE, driven by copper extracted from the Hajar Mountains for export to Mesopotamia.",
+            "fact": "Lively trading links developed around 3000 BCE, driven by copper extraction from the Hajar Mountains for export to Mesopotamia"
           },
           {
-            "sentence": "These changes established the basis for fundamental lessons from this period.",
-            "fact": "fundamental lessons from this period"
+            "sentence": "Ultimately, this ancient copper trade positioned the early Emirates as a global crossroads.",
+            "fact": "Ancient copper trade positioned the early Emirates as a global crossroads."
           }
         ]
       },
       {
-        "title": "United Arab Emirates's History",
-        "summary": "Historical records confirm that The Federal Supreme Council, made up of the seven ruling emirs,. This inspired further exploration showing why key drivers behind the rising influence. Later studies verified that Stone tools recovered reveal a settlement of people from Africa some. Following these events, analysts observed that consequent progress seen during this phase. Scientific tracking confirms that secondary attributes and timeline events. This transition created the groundwork for primary insights on the rise.",
-        "referenceLabel": "United",
-        "readerQuestion": "Which factors influenced early discoveries of History?",
-        "keyTakeaway": "primary insights on the rise",
+        "title": "The Path to Trucial Peace",
+        "summary": "Islam arrived in the region in 630 CE following a letter sent by the Prophet Muhammad to the rulers of Oman. Driven by its strategic maritime location, the Persian Gulf soon attracted early religious transformations and intense competition among European colonial powers seeking trade dominance. In the 1990s, the discovery of a 7th-century Nestorian monastic complex on Sir Bani Yas Island revealed the oldest physical evidence of Christianity in the UAE. Local sheikhdoms eventually signed a protective pact with the United Kingdom, establishing the Trucial States and setting the geopolitical groundwork for the modern federation. This followed centuries of conflict, as Portuguese, English, and Dutch forces had competed for maritime dominance in the Persian Gulf since the 16th century. Ultimately, these foreign maritime rivalries directly shaped the UAE's path to protectorate status.",
+        "referenceLabel": "History",
+        "readerQuestion": "How did foreign empires and maritime rivalries pave the way for the Trucial States?",
+        "keyTakeaway": "Foreign maritime rivalries directly shaped the UAE's protectorate status.",
         "provenance": [
           {
-            "sentence": "Historical records confirm that The Federal Supreme Council, made up of the seven ruling emirs,.",
-            "fact": "The Federal Supreme Council, made up of the seven ruling emirs,"
+            "sentence": "Islam arrived in the region in 630 CE following a letter sent by the Prophet Muhammad to the rulers of Oman.",
+            "fact": "Islam arrived in the region in 630 CE following a letter sent by the prophet Muhammad to the rulers of Oman."
           },
           {
-            "sentence": "This inspired further exploration showing why key drivers behind the rising influence.",
-            "fact": "key drivers behind the rising influence"
+            "sentence": "Driven by its strategic maritime location, the Persian Gulf soon attracted early religious transformations and intense competition among European colonial powers seeking trade dominance.",
+            "fact": "The strategic maritime location of the Persian Gulf attracted early religious transformations and intense competition among European colonial powers seeking trade dominance."
           },
           {
-            "sentence": "Later studies verified that Stone tools recovered reveal a settlement of people from Africa some.",
-            "fact": "Stone tools recovered reveal a settlement of people from Africa some"
+            "sentence": "In the 1990s, the discovery of a 7th-century Nestorian monastic complex on Sir Bani Yas Island revealed the oldest physical evidence of Christianity in the UAE.",
+            "fact": "The oldest physical evidence of Christianity in the UAE is a 7th-century Nestorian monastic complex discovered on Sir Bani Yas Island in the 1990s."
           },
           {
-            "sentence": "Following these events, analysts observed that consequent progress seen during this phase.",
-            "fact": "consequent progress seen during this phase"
+            "sentence": "Local sheikhdoms eventually signed a protective pact with the United Kingdom, establishing the Trucial States and setting the geopolitical groundwork for the modern federation.",
+            "fact": "Local sheikhdoms signed a protective pact with the United Kingdom, establishing the Trucial States and setting the geopolitical foundation for the modern federation."
           },
           {
-            "sentence": "Scientific tracking confirms that secondary attributes and timeline events.",
-            "fact": "secondary attributes and timeline events"
+            "sentence": "This followed centuries of conflict, as Portuguese, English, and Dutch forces had competed for maritime dominance in the Persian Gulf since the 16th century.",
+            "fact": "Portuguese, English, and Dutch forces competed for maritime dominance in the Persian Gulf starting in the 16th century."
           },
           {
-            "sentence": "This transition created the groundwork for primary insights on the rise.",
-            "fact": "primary insights on the rise"
+            "sentence": "Ultimately, these foreign maritime rivalries directly shaped the UAE's path to protectorate status.",
+            "fact": "Foreign maritime rivalries directly shaped the UAE's path to protectorate status."
           }
         ]
       },
       {
-        "title": "Governing United Arab Emirates",
-        "summary": "Primary documentation reveals that There are six periods of human settlement with distinctive behaviours in. This led observers to trace why pivotal elements supporting the peak achievements. Archival reviews showed that In 637, Julfar—situated within the geographic boundaries of modern-day Ras Al. With these developments, researchers saw that resultant breakthroughs related directly to these successes. Detailed observations show that peak milestones and direct connections. This structure formed the design for core takeaways regarding this era.",
-        "referenceLabel": "Governing",
-        "readerQuestion": "How do key chemical processes behave during Government?",
-        "keyTakeaway": "core takeaways regarding this era",
+        "title": "The Seven Emirates Union",
+        "summary": "Spanning from Abu Dhabi to Fujairah, the United Arab Emirates comprises seven distinct constituent territories. When Britain suddenly withdrew its military from the Trucial States, these local sheikhdoms were forced to unite for their own survival. Today, the highest state authority is wielded by the Federal Supreme Council, which contains the seven ruling emirs. This structural design created a highly centralized yet federally divided authoritarian state that balances local dynastic rule. Politically, the nation operates as an authoritarian federal semi-constitutional monarchy. Ultimately, these seven absolute monarchies govern jointly through a single federal authoritarian council.",
+        "referenceLabel": "Government",
+        "readerQuestion": "How does the unique federal monarchy govern its seven distinct constituent territories?",
+        "keyTakeaway": "Seven absolute monarchies govern jointly through one federal council.",
         "provenance": [
           {
-            "sentence": "Primary documentation reveals that There are six periods of human settlement with distinctive behaviours in.",
-            "fact": "There are six periods of human settlement with distinctive behaviours in"
+            "sentence": "Spanning from Abu Dhabi to Fujairah, the United Arab Emirates comprises seven distinct constituent territories.",
+            "fact": "The United Arab Emirates is named after and composed of seven constituent emirates: Abu Dhabi, Dubai, Ajman, Sharjah, Ras Al Khaimah, Umm Al Quwain, and Fujairah."
           },
           {
-            "sentence": "This led observers to trace why pivotal elements supporting the peak achievements.",
-            "fact": "pivotal elements supporting the peak achievements"
+            "sentence": "When Britain suddenly withdrew its military from the Trucial States, these local sheikhdoms were forced to unite for their own survival.",
+            "fact": "The withdrawal of British protectorate status from the Trucial States prompted the local sheikhdoms to unite for mutual security and governance."
           },
           {
-            "sentence": "Archival reviews showed that In 637, Julfar—situated within the geographic boundaries of modern-day Ras Al.",
-            "fact": "In 637, Julfar—situated within the geographic boundaries of modern-day Ras Al"
+            "sentence": "Today, the highest state authority is wielded by the Federal Supreme Council, which contains the seven ruling emirs.",
+            "fact": "The highest state authority is the Federal Supreme Council, which is composed of the seven ruling emirs of each constituent territory."
           },
           {
-            "sentence": "With these developments, researchers saw that resultant breakthroughs related directly to these successes.",
-            "fact": "resultant breakthroughs related directly to these successes"
+            "sentence": "This structural design created a highly centralized yet federally divided authoritarian state that balances local dynastic rule.",
+            "fact": "A highly centralized yet federally divided authoritarian state emerged, balancing local dynastic rule with a supreme federal council."
           },
           {
-            "sentence": "Detailed observations show that peak milestones and direct connections.",
-            "fact": "peak milestones and direct connections"
+            "sentence": "Politically, the nation operates as an authoritarian federal semi-constitutional monarchy.",
+            "fact": "The political structure is classified as an authoritarian state operating under a federal semi-constitutional monarchy."
           },
           {
-            "sentence": "This structure formed the design for core takeaways regarding this era.",
-            "fact": "core takeaways regarding this era"
+            "sentence": "Ultimately, these seven absolute monarchies govern jointly through a single federal authoritarian council.",
+            "fact": "Seven absolute monarchies govern jointly through one federal authoritarian council."
           }
         ]
       },
       {
-        "title": "United Arab Emirates's Culture",
-        "summary": "Factual chronicles state that The earliest Christian site in the UAE was first discovered in. This drove thorough inquiries explaining why underlying issues prompting the challenges faced. Recent compilations proved that observed difficulties and response actions. Under these conditions, experts noted that resulting shifts that defined the response taken. Ontology patterns map that additional challenges and resolved queries. This transition shaped the modern standard for crucial lessons on these struggles.",
-        "referenceLabel": "United",
-        "readerQuestion": "Why do light steps trigger under Culture?",
-        "keyTakeaway": "crucial lessons on these struggles",
+        "title": "The Minority Majority",
+        "summary": "Out of a national population exceeding eleven million people, native Emiratis account for just eleven percent. Rapid economic diversification and development transformed the nation into a global hub, drawing in a massive international workforce. Expatriates and migrant workers, primarily from South Asia, now comprise the remaining eighty-nine percent of the population. To counter this demographic shift, locals have made deliberate efforts to preserve their Islamic and tribal traditions. While Islam remains the official state religion and Arabic the official language, English dominates daily business. Ultimately, native traditions endure alongside a massive, diverse global workforce.",
+        "referenceLabel": "Culture",
+        "readerQuestion": "How does native Emirati culture coexist with a massive global expatriate population?",
+        "keyTakeaway": "Native traditions endure alongside a massive, diverse global workforce.",
         "provenance": [
           {
-            "sentence": "Factual chronicles state that The earliest Christian site in the UAE was first discovered in.",
-            "fact": "The earliest Christian site in the UAE was first discovered in"
+            "sentence": "Out of a national population exceeding eleven million people, native Emiratis account for just eleven percent.",
+            "fact": "Native Emiratis constitute only 11% of the total national population of over 11 million people."
           },
           {
-            "sentence": "This drove thorough inquiries explaining why underlying issues prompting the challenges faced.",
-            "fact": "underlying issues prompting the challenges faced"
+            "sentence": "Rapid economic diversification and development transformed the nation into a global hub, drawing in a massive international workforce.",
+            "fact": "Rapid economic diversification and development transformed the nation into a global hub for finance, tourism, and commerce, attracting a massive international workforce."
           },
           {
-            "sentence": "Recent compilations proved that observed difficulties and response actions.",
-            "fact": "observed difficulties and response actions"
+            "sentence": "Expatriates and migrant workers, primarily from South Asia, now comprise the remaining eighty-nine percent of the population.",
+            "fact": "Expatriates and migrant workers, primarily from South Asia, make up the remaining 89% of the population."
           },
           {
-            "sentence": "Under these conditions, experts noted that resulting shifts that defined the response taken.",
-            "fact": "resulting shifts that defined the response taken"
+            "sentence": "To counter this demographic shift, locals have made deliberate efforts to preserve their Islamic and tribal traditions.",
+            "fact": "The native Emirati population became a distinct demographic minority within their own country, necessitating deliberate efforts to preserve local Islamic and tribal traditions."
           },
           {
-            "sentence": "Ontology patterns map that additional challenges and resolved queries.",
-            "fact": "additional challenges and resolved queries"
+            "sentence": "While Islam remains the official state religion and Arabic the official language, English dominates daily business.",
+            "fact": "Islam remains the official state religion and Arabic the official language, while English serves as the dominant language for business and daily communication."
           },
           {
-            "sentence": "This transition shaped the modern standard for crucial lessons on these struggles.",
-            "fact": "crucial lessons on these struggles"
+            "sentence": "Ultimately, native traditions endure alongside a massive, diverse global workforce.",
+            "fact": "Native traditions endure alongside a massive, diverse global workforce."
           }
         ]
       },
       {
-        "title": "United Arab Emirates as a Modern Nation",
-        "summary": "Verified sources show that Concluding analysis confirms modern legacy values of United Arab Emirates. This prompted key factions to identify why lasting forces establishing the legacy left behind. Independent reviews confirmed that legacy outlines and subsequent records. Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject. Statistical records track that final reflections and study conclusions. This layout outlines the final outcome of final summary explaining the legacy.",
-        "referenceLabel": "United",
-        "readerQuestion": "Who validates the final outcomes regarding Modern Nation?",
-        "keyTakeaway": "final summary explaining the legacy",
+        "title": "Desert Empires of the Gulf",
+        "summary": "While Abu Dhabi serves as the political capital, Dubai operates as the primary international hub of finance and commerce. This massive modernization was initiated by the unification of the emirates in 1971 alongside the strategic installation of oil wealth. Today, the United Arab Emirates holds the seventh-largest global reserves of both oil and natural gas. By successfully transitioning the nation into a highly diversified global hub, this immense wealth now attracts millions of expatriates. Moving far beyond its historical pearling roots, the country has built the most diversified economy among Gulf Cooperation Council members. Ultimately, it was this oil wealth that built the foundation for global commercial empires.",
+        "referenceLabel": "Modernity",
+        "readerQuestion": "How did Abu Dhabi and Dubai transform into global hubs of commerce and tourism?",
+        "keyTakeaway": "Oil wealth built the foundation for global commercial empires.",
         "provenance": [
           {
-            "sentence": "Verified sources show that Concluding analysis confirms modern legacy values of United Arab Emirates.",
-            "fact": "Concluding analysis confirms modern legacy values of United Arab Emirates"
+            "sentence": "While Abu Dhabi serves as the political capital, Dubai operates as the primary international hub of finance and commerce.",
+            "fact": "Abu Dhabi serves as the political capital and federal seat of power, while Dubai operates as the largest city and primary international hub of finance, tourism, and commerce."
           },
           {
-            "sentence": "This prompted key factions to identify why lasting forces establishing the legacy left behind.",
-            "fact": "lasting forces establishing the legacy left behind"
+            "sentence": "This massive modernization was initiated by the unification of the emirates in 1971 alongside the strategic installation of oil wealth.",
+            "fact": "The unification of the emirates in 1971 and the strategic installations of oil wealth initiated a massive modernization drive."
           },
           {
-            "sentence": "Independent reviews confirmed that legacy outlines and subsequent records.",
-            "fact": "legacy outlines and subsequent records"
+            "sentence": "Today, the United Arab Emirates holds the seventh-largest global reserves of both oil and natural gas.",
+            "fact": "The United Arab Emirates holds the 7th-largest global reserves of both oil and natural gas, providing the initial capital for rapid infrastructure development."
           },
           {
-            "sentence": "Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject.",
-            "fact": "long-term outcomes that shaped the memory of the subject"
+            "sentence": "By successfully transitioning the nation into a highly diversified global hub, this immense wealth now attracts millions of expatriates.",
+            "fact": "The nation successfully transitioned into a highly diversified global hub, attracting millions of expatriates and international tourists."
           },
           {
-            "sentence": "Statistical records track that final reflections and study conclusions.",
-            "fact": "final reflections and study conclusions"
+            "sentence": "Moving far beyond its historical pearling roots, the country has built the most diversified economy among Gulf Cooperation Council members.",
+            "fact": "The country has built the most diversified economy among Gulf Cooperation Council members by transitioning from historical pearling and maritime trade to modern tourism and business."
           },
           {
-            "sentence": "This layout outlines the final outcome of final summary explaining the legacy.",
-            "fact": "final summary explaining the legacy"
+            "sentence": "Ultimately, it was this oil wealth that built the foundation for global commercial empires.",
+            "fact": "Oil wealth built the foundation for global commercial empires."
           }
         ]
       }
@@ -192,213 +304,303 @@
   },
   "namedEntities": [
     {
-      "name": "United Arab Emirates",
+      "name": "Zayed bin Sultan Al Nahyan",
+      "type": "Person",
+      "description": "The ruler of Abu Dhabi and the first president of the United Arab Emirates from 1971 to 2004."
+    },
+    {
+      "name": "Abu Dhabi",
+      "type": "Place",
+      "description": "The national capital of the United Arab Emirates and its largest emirate by area."
+    },
+    {
+      "name": "Dubai",
+      "type": "Place",
+      "description": "The largest city in the United Arab Emirates and a global hub of finance, tourism, and commerce."
+    },
+    {
+      "name": "Trucial States",
       "type": "Concept",
-      "description": "The primary resolved subject."
+      "description": "A group of sheikhdoms under British protection that preceded the formation of the UAE."
+    },
+    {
+      "name": "Federal Supreme Council",
+      "type": "Org",
+      "description": "The highest constitutional authority in the UAE, composed of the rulers of the seven emirates."
+    },
+    {
+      "name": "Magan",
+      "type": "Concept",
+      "description": "An ancient region mentioned in Sumerian texts, identified with modern-day UAE and Oman."
     }
   ],
   "knowledgeGraph": [
     {
       "subject": "United Arab Emirates",
-      "predicate": "GOVERNED_AS",
-      "object": "Compiled detail for government"
+      "predicate": "HAS_TYPE",
+      "object": "Country"
     },
     {
       "subject": "United Arab Emirates",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_1"
+      "predicate": "GOVERNED_BY",
+      "object": "Federal Supreme Council"
     },
     {
       "subject": "United Arab Emirates",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_2"
+      "predicate": "CONTAINS_EMIRATE",
+      "object": "Emirate of Abu Dhabi"
     },
     {
       "subject": "United Arab Emirates",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_3"
+      "predicate": "CONTAINS_EMIRATE",
+      "object": "Emirate of Dubai"
+    },
+    {
+      "subject": "Abu Dhabi",
+      "predicate": "CAPITAL_OF",
+      "object": "United Arab Emirates"
+    },
+    {
+      "subject": "Dubai",
+      "predicate": "LARGEST_CITY_OF",
+      "object": "United Arab Emirates"
     },
     {
       "subject": "United Arab Emirates",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_4"
+      "predicate": "MEMBER_OF",
+      "object": "Gulf Cooperation Council"
     },
     {
       "subject": "United Arab Emirates",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_5"
+      "predicate": "MEMBER_OF",
+      "object": "United Nations"
     },
     {
       "subject": "United Arab Emirates",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_6"
+      "predicate": "SHARED_LAND_BORDER_WITH",
+      "object": "Oman"
     },
     {
       "subject": "United Arab Emirates",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_7"
+      "predicate": "SHARED_LAND_BORDER_WITH",
+      "object": "Saudi Arabia"
+    },
+    {
+      "subject": "Zayed bin Sultan Al Nahyan",
+      "predicate": "FIRST_PRESIDENT_OF",
+      "object": "United Arab Emirates"
+    },
+    {
+      "subject": "Trucial States",
+      "predicate": "PRECEDED",
+      "object": "United Arab Emirates"
+    },
+    {
+      "subject": "Magan",
+      "predicate": "HISTORICALLY_IDENTIFIED_WITH",
+      "object": "United Arab Emirates"
     }
   ],
   "timeline": [
     {
-      "year": "2024",
-      "headline": "Pivotal era in 2024",
-      "description": "United Arab Emirates underwent core changes and reached major development in the year 2024",
+      "year": "3000 BCE",
+      "headline": "Copper Trade Begins",
+      "description": "Lively trading links develop with Mesopotamia and Indus Valley, motivated by copper trade from the Hajar Mountains.",
+      "importance": 6,
+      "connections": [
+        "Magan"
+      ],
+      "image": null
+    },
+    {
+      "year": "630 CE",
+      "headline": "Islam Spreads to Region",
+      "description": "Islamic prophet Muhammad sends a letter to the rulers of Oman, leading to their conversion and Sassanid expulsion.",
       "importance": 8,
       "connections": [
-        "United Arab Emirates"
+        "Muhammad",
+        "Sasanian Empire"
       ],
       "image": null
     },
     {
       "year": "1500",
-      "headline": "Pivotal era in 1500",
-      "description": "United Arab Emirates underwent core changes and reached major development in the year 1500",
-      "importance": 8,
+      "headline": "Portuguese Arrive in Gulf",
+      "description": "Portuguese forces arrive in the region, setting up military bases and waging wars against the Persians.",
+      "importance": 7,
       "connections": [
-        "United Arab Emirates"
+        "Portuguese Empire"
       ],
       "image": null
     },
     {
       "year": "1622",
-      "headline": "Pivotal era in 1622",
-      "description": "United Arab Emirates underwent core changes and reached major development in the year 1622",
-      "importance": 8,
+      "headline": "Dutch Control the Straits",
+      "description": "Following the expulsion of the Portuguese, Dutch forces take control of the straits to establish maritime dominance.",
+      "importance": 6,
       "connections": [
-        "United Arab Emirates"
+        "Dutch Empire"
+      ],
+      "image": null
+    },
+    {
+      "year": "19th Century",
+      "headline": "Trucial States Established",
+      "description": "Local sheikhdoms sign a pact with the United Kingdom to form the Trucial States protectorate, curbing piracy.",
+      "importance": 9,
+      "connections": [
+        "United Kingdom",
+        "Trucial States"
       ],
       "image": null
     },
     {
       "year": "1971",
-      "headline": "Pivotal era in 1971",
-      "description": "United Arab Emirates underwent core changes and reached major development in the year 1971",
-      "importance": 8,
+      "headline": "Independence and Federation",
+      "description": "The Trucial States gain full independence from British influence, uniting to form the United Arab Emirates.",
+      "importance": 10,
       "connections": [
-        "United Arab Emirates"
+        "Zayed bin Sultan Al Nahyan"
       ],
       "image": null
     },
     {
       "year": "2004",
-      "headline": "Pivotal era in 2004",
-      "description": "United Arab Emirates underwent core changes and reached major development in the year 2004",
+      "headline": "Zayed Al Nahyan Dies",
+      "description": "Zayed bin Sultan Al Nahyan, the country's founding president who oversaw rapid oil-funded development, passes away.",
       "importance": 8,
       "connections": [
-        "United Arab Emirates"
-      ],
-      "image": null
-    },
-    {
-      "year": "1986",
-      "headline": "Pivotal era in 1986",
-      "description": "United Arab Emirates underwent core changes and reached major development in the year 1986",
-      "importance": 8,
-      "connections": [
-        "United Arab Emirates"
+        "Zayed bin Sultan Al Nahyan"
       ],
       "image": null
     }
   ],
   "rankedFacts": [
     {
-      "fact": "The United Arab Emirates (UAE), also known simply as the Emirates, is a country in West Asia, situated at the eastern end of the Arabian Peninsula. It is a federal semi-constitutional monarchy made up of seven emirates, with Abu Dhabi serving as its national capital.",
-      "score": 0.7,
+      "fact": "Only 11% of the population of the United Arab Emirates are native Emiratis, with the remaining 89% consisting of expatriates and migrant workers.",
+      "score": 0.92,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
+        "confidence": 1,
+        "specificity": 0.95,
         "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "educationalValue": 0.9,
+        "visualValue": 0.95,
+        "uniqueness": 0.9,
+        "ontologyRelevance": 0.95
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Highly specific demographic data that is highly relevant to the country's modern identity, offering excellent visual potential through population charts."
     },
     {
-      "fact": "The present-day United Arab Emirates is located within the historical region of Eastern Arabia, which was oriented to maritime trade and seafaring. The Portuguese arrived in the region around 1500 and set up bases on the territory while waging wars against the Persians.",
-      "score": 0.85,
+      "fact": "The country is named after its seven constituent emirates: Abu Dhabi, Dubai, Ajman, Sharjah, Ras Al Khaimah, Umm Al Quwain, and Fujairah",
+      "score": 0.91,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.95,
+        "narrativeValue": 0.7,
+        "educationalValue": 0.85,
+        "visualValue": 0.9,
+        "uniqueness": 0.6,
+        "ontologyRelevance": 1
+      },
+      "reasoning": "Crucial ontological data detailing the exact administrative divisions and etymology of the nation with high specificity."
+    },
+    {
+      "fact": "The oldest physical evidence of Christianity in the UAE is a 7th-century Nestorian monastic complex discovered on Sir Bani Yas Island in the 1990s.",
+      "score": 0.88,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.95,
+        "narrativeValue": 0.85,
+        "educationalValue": 0.9,
+        "visualValue": 0.8,
+        "uniqueness": 0.95,
+        "ontologyRelevance": 0.75
+      },
+      "reasoning": "Extremely specific archaeological and historical fact with high uniqueness, though slightly less central to the core modern political ontology of a country."
+    },
+    {
+      "fact": "Sumerian historical sources refer to an ancient copper-rich civilization named Magan, which historians have identified as encompassing the modern UAE and Oman.",
+      "score": 0.86,
       "metrics": {
         "confidence": 0.95,
         "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "narrativeValue": 0.85,
+        "educationalValue": 0.9,
+        "visualValue": 0.75,
+        "uniqueness": 0.8,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Strong historical and geographical specificity linking ancient civilizations to the modern territory of the state."
     },
     {
-      "fact": "The Federal Supreme Council, made up of the seven ruling emirs, is the highest state authority. It jointly appoints one member as federal president, who appoints a prime minister, who forms and leads the cabinet.",
-      "score": 0.7,
+      "fact": "Abu Dhabi is the capital, and Dubai is the largest city",
+      "score": 0.85,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 1,
+        "specificity": 0.8,
+        "narrativeValue": 0.5,
+        "educationalValue": 0.7,
+        "visualValue": 0.6,
+        "uniqueness": 0.4,
+        "ontologyRelevance": 1
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "A fundamental, highly accurate ontological fact about the country's political geography, though it lacks narrative uniqueness."
     },
     {
-      "fact": "Stone tools recovered reveal a settlement of people from Africa some 127,000 years ago and a stone tool used for butchering animals discovered on the Arabian coast suggests an even older habitation from 130,000 years ago. In time, lively trading links developed with civilisations in Mesopotamia, Iran, and the Harappan culture of the Indus Valley.",
-      "score": 0.7,
+      "fact": "Islam arrived in 630 CE following a letter from Muhammad",
+      "score": 0.83,
       "metrics": {
         "confidence": 0.95,
-        "specificity": 0.6,
+        "specificity": 0.85,
         "narrativeValue": 0.8,
-        "educationalValue": 0.8,
+        "educationalValue": 0.85,
         "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "uniqueness": 0.75,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Highly specific historical milestone detailing the exact year and mechanism of religious transition in the region."
     },
     {
-      "fact": "There are six periods of human settlement with distinctive behaviours in the region before Islam, which include the Hafit period from 3,200 to 2,600 BCE, the Umm Al Nar culture from 2,600 to 2,000 BCE, and the Wadi Suq culture from 2,000 to 1,300 BCE. From 1,200 BCE to the advent of Islam in Eastern Arabia, through three distinctive Iron Ages and the Mleiha period, the area was variously occupied by the Achaemenids and other forces, and saw the construction of fortified settlements and extensive husbandry thanks to the development of the falaj irrigation system.",
-      "score": 0.7,
+      "fact": "The region was known as Magan in Sumerian times and was a major source of copper trade",
+      "score": 0.79,
       "metrics": {
         "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
+        "specificity": 0.75,
+        "narrativeValue": 0.75,
         "educationalValue": 0.8,
         "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "uniqueness": 0.75,
+        "ontologyRelevance": 0.75
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "A solid historical fact, though it slightly duplicates the more detailed information found in Fact 3."
     },
     {
-      "fact": "In 637, Julfar—situated within the geographic boundaries of modern-day Ras Al Khaimah—was an important port that was used as a staging post for the Islamic invasion of the Sasanian Empire. The area of the Al Ain/Buraimi Oasis was known as Tu'am and was an important trading post for camel routes between the coast and the Arabian interior.",
-      "score": 0.7,
+      "fact": "Portuguese, English, and Dutch forces competed for maritime dominance in the Persian Gulf",
+      "score": 0.76,
       "metrics": {
         "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
+        "specificity": 0.7,
+        "narrativeValue": 0.75,
         "educationalValue": 0.8,
         "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "uniqueness": 0.65,
+        "ontologyRelevance": 0.75
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Good historical context regarding colonial-era geopolitics in the region, though it lacks specific dates or treaty names."
     },
     {
-      "fact": "The earliest Christian site in the UAE was first discovered in the 1990s, an extensive monastic complex on what is now known as Sir Bani Yas Island and which dates back to the seventh century. Thought to be Nestorian and built in 600 CE, the church appears to have been abandoned peacefully in 750 CE.",
-      "score": 0.7,
+      "fact": "Human habitation dates back 130,000 years",
+      "score": 0.68,
       "metrics": {
-        "confidence": 0.95,
+        "confidence": 0.9,
         "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "narrativeValue": 0.6,
+        "educationalValue": 0.7,
+        "visualValue": 0.5,
+        "uniqueness": 0.6,
+        "ontologyRelevance": 0.7
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Provides a useful timeline anchor, but lacks the deep specificity of named cultures or archaeological sites."
     }
   ],
   "visualModules": [
@@ -406,12 +608,124 @@
       "type": "country",
       "title": "Country Blueprint Snapshot",
       "data": {
-        "government": "Compiled detail for government",
-        "geography": "Compiled detail for geography",
-        "economy": "Compiled detail for economy",
-        "culture": "Compiled detail for culture",
-        "population": "Compiled detail for population",
-        "tourism": "Compiled detail for tourism"
+        "government": {
+          "systemType": "Federal semi-constitutional monarchy",
+          "highestStateAuthority": "Federal Supreme Council",
+          "composition": "Seven ruling emirs",
+          "keyPositions": [
+            "Federal President (appointed by the Federal Supreme Council)",
+            "Prime Minister (appointed by the President)",
+            "Cabinet (formed and led by the Prime Minister)"
+          ],
+          "politicalClassification": "Authoritarian state",
+          "memberEmirates": [
+            "Emirate of Abu Dhabi",
+            "Emirate of Dubai",
+            "Emirate of Ajman",
+            "Emirate of Sharjah",
+            "Emirate of Ras Al Khaimah",
+            "Emirate of Umm Al Quwain",
+            "Emirate of Fujairah"
+          ],
+          "internationalMemberships": [
+            "United Nations",
+            "Arab League",
+            "Organisation of Islamic Cooperation",
+            "Non-Aligned Movement",
+            "World Trade Organization",
+            "BRICS",
+            "Shanghai Cooperation Organisation (dialogue partner)",
+            "Gulf Cooperation Council (GCC)"
+          ]
+        },
+        "geography": {
+          "region": "West Asia",
+          "location": "Eastern end of the Arabian Peninsula",
+          "nationalCapital": "Abu Dhabi",
+          "largestCity": "Dubai",
+          "landBorders": [
+            {
+              "country": "Oman",
+              "direction": "East and northeast"
+            },
+            {
+              "country": "Saudi Arabia",
+              "direction": "South and southwest"
+            }
+          ],
+          "maritimeBorders": [
+            {
+              "bodyOfWater": "Persian Gulf",
+              "countries": [
+                "Saudi Arabia",
+                "Qatar",
+                "Iran"
+              ]
+            },
+            {
+              "bodyOfWater": "Gulf of Oman",
+              "countries": [
+                "Oman"
+              ]
+            }
+          ],
+          "keyGeographicalFeatures": [
+            "Hajar Mountains",
+            "Al Ain/Buraimi Oasis",
+            "Sir Bani Yas Island",
+            "Liwa"
+          ]
+        },
+        "economy": {
+          "status": "Middle power",
+          "diversification": "Most diversified economy among GCC members, increasingly focusing on tourism and business",
+          "globalReservesRankings": {
+            "oilReserves": "7th-largest",
+            "naturalGasReserves": "7th-largest"
+          },
+          "economicHubs": {
+            "Dubai": "International hub of finance, tourism, and commerce"
+          },
+          "historicalEconomicActivities": [
+            "Maritime trade",
+            "Seafaring",
+            "Pearling",
+            "Copper trade (historical, from Hajar Mountains)"
+          ]
+        },
+        "culture": {
+          "stateReligion": "Islam",
+          "officialLanguage": "Arabic",
+          "businessAndMostSpokenLanguage": "English",
+          "historicalPeriods": [
+            "Hafit period (3,200–2,600 BCE)",
+            "Umm Al Nar culture (2,600–2,000 BCE)",
+            "Wadi Suq culture (2,000–1,300 BCE)",
+            "Three Iron Ages",
+            "Mleiha period"
+          ],
+          "historicalTribalGroupings": [
+            "Bani Yas",
+            "Al Bu Falah",
+            "Dhawahir",
+            "Awamir",
+            "Al Ali",
+            "Manasir",
+            "Sharqiyin",
+            "Qawasim"
+          ]
+        },
+        "population": {
+          "totalEstimatedPopulation": "Over 11 million (2024)",
+          "demographics": {
+            "nativeEmiratis": "11%",
+            "expatriatesAndMigrantWorkers": "89% (majority from South Asia)"
+          }
+        },
+        "tourism": {
+          "status": "Major economic focus in the 21st century",
+          "primaryHub": "Dubai (international hub of tourism)"
+        }
       }
     }
   ],
@@ -419,159 +733,483 @@
     "chapters": [
       {
         "chapterIndex": 0,
-        "title": "The Origins of United Arab Emirates",
+        "title": "Ancient Magan and Early Habitation",
         "referenceLabel": "Origins",
-        "readerQuestion": "What represents the starting motivation behind Origins?",
+        "readerQuestion": "How did prehistoric trade and early human settlements shape the dawn of the Emirates?",
         "objectives": [
-          "Explore the relationship with Origins"
+          "Explore the earliest evidence of human habitation dating back 130,000 years in the region.",
+          "Examine the copper-rich civilization of Magan and its ancient trade links with Mesopotamia."
         ],
         "approvedFacts": [
-          "The United Arab Emirates (UAE), also known simply as the Emirates, is a country in West Asia, situated at the eastern end of the Arabian Peninsula. It is a federal semi-constitutional monarchy made up of seven emirates, with Abu Dhabi serving as its national capital.",
-          "The present-day United Arab Emirates is located within the historical region of Eastern Arabia, which was oriented to maritime trade and seafaring. The Portuguese arrived in the region around 1500 and set up bases on the territory while waging wars against the Persians."
+          "Human habitation dates back 130,000 years",
+          "Sumerian historical sources refer to an ancient copper-rich civilization named Magan, which historians have identified as encompassing the modern UAE and Oman.",
+          "The region was known as Magan in Sumerian times and was a major source of copper trade"
         ],
         "anchors": [
-          "United Arab Emirates",
-          "foundation origin"
+          "Magan",
+          "3000 BCE"
         ]
       },
       {
         "chapterIndex": 1,
-        "title": "United Arab Emirates's History",
+        "title": "From Islamic Conversion to Protectorate",
         "referenceLabel": "History",
-        "readerQuestion": "Which factors influenced early discoveries of History?",
+        "readerQuestion": "How did foreign empires and maritime rivalries pave the way for the Trucial States?",
         "objectives": [
-          "Explore the relationship with History"
+          "Trace the arrival of Islam in 630 CE and the discovery of early Christian monastic sites.",
+          "Analyze the maritime competition between European powers and the eventual establishment of the British protectorate."
         ],
         "approvedFacts": [
-          "The Federal Supreme Council, made up of the seven ruling emirs, is the highest state authority. It jointly appoints one member as federal president, who appoints a prime minister, who forms and leads the cabinet.",
-          "Stone tools recovered reveal a settlement of people from Africa some 127,000 years ago and a stone tool used for butchering animals discovered on the Arabian coast suggests an even older habitation from 130,000 years ago. In time, lively trading links developed with civilisations in Mesopotamia, Iran, and the Harappan culture of the Indus Valley."
+          "Islam arrived in 630 CE following a letter from Muhammad",
+          "The oldest physical evidence of Christianity in the UAE is a 7th-century Nestorian monastic complex discovered on Sir Bani Yas Island in the 1990s.",
+          "Portuguese, English, and Dutch forces competed for maritime dominance in the Persian Gulf"
         ],
         "anchors": [
-          "United Arab Emirates",
-          "historical timeline"
+          "Trucial States",
+          "1500",
+          "19th Century"
         ]
       },
       {
         "chapterIndex": 2,
-        "title": "Governing United Arab Emirates",
+        "title": "The Seven Emirates Union",
         "referenceLabel": "Government",
-        "readerQuestion": "How do key chemical processes behave during Government?",
+        "readerQuestion": "How does the unique federal monarchy govern its seven distinct constituent territories?",
         "objectives": [
-          "Explore the relationship with Government"
+          "Detail the political structure of the Federal Supreme Council and its authoritarian classification.",
+          "Explain the geographical and political division of the seven constituent emirates."
         ],
         "approvedFacts": [
-          "There are six periods of human settlement with distinctive behaviours in the region before Islam, which include the Hafit period from 3,200 to 2,600 BCE, the Umm Al Nar culture from 2,600 to 2,000 BCE, and the Wadi Suq culture from 2,000 to 1,300 BCE. From 1,200 BCE to the advent of Islam in Eastern Arabia, through three distinctive Iron Ages and the Mleiha period, the area was variously occupied by the Achaemenids and other forces, and saw the construction of fortified settlements and extensive husbandry thanks to the development of the falaj irrigation system.",
-          "In 637, Julfar—situated within the geographic boundaries of modern-day Ras Al Khaimah—was an important port that was used as a staging post for the Islamic invasion of the Sasanian Empire. The area of the Al Ain/Buraimi Oasis was known as Tu'am and was an important trading post for camel routes between the coast and the Arabian interior."
+          "The country is named after its seven constituent emirates: Abu Dhabi, Dubai, Ajman, Sharjah, Ras Al Khaimah, Umm Al Quwain, and Fujairah"
         ],
         "anchors": [
-          "United Arab Emirates",
-          "reaction mechanism"
+          "Federal Supreme Council",
+          "1971"
         ]
       },
       {
         "chapterIndex": 3,
-        "title": "United Arab Emirates's Culture",
+        "title": "Cultural Identity and Demographics",
         "referenceLabel": "Culture",
-        "readerQuestion": "Why do light steps trigger under Culture?",
+        "readerQuestion": "How does native Emirati culture coexist with a massive global expatriate population?",
         "objectives": [
-          "Explore the relationship with Culture"
+          "Examine the demographic contrast between native Emiratis and the expatriate majority.",
+          "Highlight the preservation of local Islamic traditions alongside a highly diverse international workforce."
         ],
         "approvedFacts": [
-          "The earliest Christian site in the UAE was first discovered in the 1990s, an extensive monastic complex on what is now known as Sir Bani Yas Island and which dates back to the seventh century. Thought to be Nestorian and built in 600 CE, the church appears to have been abandoned peacefully in 750 CE."
+          "Only 11% of the population of the United Arab Emirates are native Emiratis, with the remaining 89% consisting of expatriates and migrant workers."
         ],
         "anchors": [
-          "United Arab Emirates",
-          "energy transition"
+          "Zayed bin Sultan Al Nahyan",
+          "2004"
         ]
       },
       {
         "chapterIndex": 4,
-        "title": "United Arab Emirates as a Modern Nation",
-        "referenceLabel": "Modern",
-        "readerQuestion": "Who validates the final outcomes regarding Modern Nation?",
+        "title": "Metropolises of the Desert",
+        "referenceLabel": "Modernity",
+        "readerQuestion": "How did Abu Dhabi and Dubai transform into global hubs of commerce and tourism?",
         "objectives": [
-          "Explore the relationship with Modern Nation"
+          "Contrast the roles of Abu Dhabi as the political capital and Dubai as the largest commercial city.",
+          "Analyze the transition from oil dependency to a diversified, tourism-focused modern economy."
         ],
         "approvedFacts": [
-          "Concluding analysis confirms modern legacy values of United Arab Emirates"
+          "Abu Dhabi is the capital, and Dubai is the largest city"
         ],
         "anchors": [
-          "United Arab Emirates",
-          "modern application"
+          "Abu Dhabi",
+          "Dubai"
         ]
       }
     ]
   },
   "triviaCandidates": [
     {
-      "fact": "The United Arab Emirates (UAE), also known simply as the Emirates, is a country in West Asia, situated at the eastern end of the Arabian Peninsula. It is a federal semi-constitutional monarchy made up of seven emirates, with Abu Dhabi serving as its national capital.",
-      "surpriseScore": 10,
-      "readMoreTopic": ".ae"
-    },
-    {
-      "fact": "The present-day United Arab Emirates is located within the historical region of Eastern Arabia, which was oriented to maritime trade and seafaring. The Portuguese arrived in the region around 1500 and set up bases on the territory while waging wars against the Persians.",
+      "fact": "Only 11% of the population of the United Arab Emirates are native Emiratis, with the remaining 89% consisting of expatriates and migrant workers.",
       "surpriseScore": 9,
-      "readMoreTopic": "10th BRICS summit"
+      "readMoreTopic": "Demographics of the United Arab Emirates"
     },
     {
-      "fact": "The United Arab Emirates is considered a middle power in global affairs; Dubai serves as an international hub of finance, tourism, and commerce. Only 11% of the population are native Emiratis; the vast majority of inhabitants are expatriates and migrant workers, most of whom are from South Asia.",
+      "fact": "The oldest physical evidence of Christianity in the UAE is a 7th-century Nestorian monastic complex discovered on Sir Bani Yas Island in the 1990s.",
       "surpriseScore": 8,
-      "readMoreTopic": "11th BRICS summit"
+      "readMoreTopic": "Sir Bani Yas"
     },
     {
-      "fact": "The Federal Supreme Council, made up of the seven ruling emirs, is the highest state authority. It jointly appoints one member as federal president, who appoints a prime minister, who forms and leads the cabinet.",
+      "fact": "Stone tools discovered on the Arabian coast suggest human habitation in the UAE dating back 130,000 years, indicating early migration from Africa.",
       "surpriseScore": 7,
-      "readMoreTopic": "12th BRICS summit"
+      "readMoreTopic": "Archaeology of the United Arab Emirates"
     },
     {
-      "fact": "The United Arab Emirates is named after the seven emirates that formed a federation: the Emirate of Abu Dhabi, the Emirate of Dubai, the Emirate of Ajman, the Emirate of Sharjah, the Emirate of Ras Al Khaimah, the Emirate of Umm Al Quwain, and the Emirate of Fujairah.",
-      "surpriseScore": 6,
-      "readMoreTopic": "13th BRICS summit"
+      "fact": "Sumerian historical sources refer to an ancient copper-rich civilization named Magan, which historians have identified as encompassing the modern UAE and Oman.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Magan (civilization)"
     },
     {
-      "fact": "Stone tools recovered reveal a settlement of people from Africa some 127,000 years ago and a stone tool used for butchering animals discovered on the Arabian coast suggests an even older habitation from 130,000 years ago. In time, lively trading links developed with civilisations in Mesopotamia, Iran, and the Harappan culture of the Indus Valley.",
-      "surpriseScore": 5,
-      "readMoreTopic": "14th BRICS summit"
-    },
-    {
-      "fact": "There are six periods of human settlement with distinctive behaviours in the region before Islam, which include the Hafit period from 3,200 to 2,600 BCE, the Umm Al Nar culture from 2,600 to 2,000 BCE, and the Wadi Suq culture from 2,000 to 1,300 BCE. From 1,200 BCE to the advent of Islam in Eastern Arabia, through three distinctive Iron Ages and the Mleiha period, the area was variously occupied by the Achaemenids and other forces, and saw the construction of fortified settlements and extensive husbandry thanks to the development of the falaj irrigation system.",
-      "surpriseScore": 4,
-      "readMoreTopic": "15th BRICS summit"
-    },
-    {
-      "fact": "The spread of Islam to the northeastern tip of the Arabian Peninsula is thought to have followed directly from a letter sent by the Islamic prophet Muhammad to the rulers of Oman in 630 CE. This led to a group of rulers travelling to Medina, converting to Islam, and subsequently driving a successful uprising against the unpopular Sassanids, who dominated the coast at the time.",
-      "surpriseScore": 3,
-      "readMoreTopic": "16th BRICS summit"
-    },
-    {
-      "fact": "In 637, Julfar—situated within the geographic boundaries of modern-day Ras Al Khaimah—was an important port that was used as a staging post for the Islamic invasion of the Sasanian Empire. The area of the Al Ain/Buraimi Oasis was known as Tu'am and was an important trading post for camel routes between the coast and the Arabian interior.",
-      "surpriseScore": 2,
-      "readMoreTopic": "17th BRICS summit"
-    },
-    {
-      "fact": "The earliest Christian site in the UAE was first discovered in the 1990s, an extensive monastic complex on what is now known as Sir Bani Yas Island and which dates back to the seventh century. Thought to be Nestorian and built in 600 CE, the church appears to have been abandoned peacefully in 750 CE.",
-      "surpriseScore": 1,
-      "readMoreTopic": "18th BRICS summit"
+      "fact": "English is the most spoken language and the primary language of business in the UAE, despite Arabic being the sole official language.",
+      "surpriseScore": 7,
+      "readMoreTopic": "Languages of the United Arab Emirates"
     }
   ],
   "relatedTopics": [
-    ".ae",
-    "10th BRICS summit",
-    "11th BRICS summit",
-    "12th BRICS summit",
-    "13th BRICS summit",
-    "14th BRICS summit",
-    "15th BRICS summit",
-    "16th BRICS summit"
+    "Trucial States",
+    "History of the United Arab Emirates",
+    "Zayed bin Sultan Al Nahyan",
+    "Demographics of the United Arab Emirates",
+    "Economy of the United Arab Emirates",
+    "Abu Dhabi",
+    "Dubai",
+    "Magan (civilization)"
   ],
   "confidenceScores": {
-    "resolver": 0.96,
-    "compiler": 0.95,
-    "grader": 0.7,
-    "overall": 0.92
+    "resolver": 1,
+    "compiler": 1,
+    "grader": 0.8277777777777777,
+    "overall": 0.98
   },
+  "qualityAssessment": {
+    "generationMode": "primary",
+    "fallbackRatio": 0,
+    "provenanceCoverage": 0.9444444444444444,
+    "placeholderCount": 0,
+    "verifiedFactRatio": 1,
+    "qualityScore": 98,
+    "confidenceBreakdown": {
+      "provenanceCoverage": 0.9444444444444444,
+      "fieldCoverage": 1,
+      "placeholderPenalty": 1,
+      "fallbackPenalty": 1,
+      "sourceAgreement": 1,
+      "extractionCompleteness": 1,
+      "factSpecificity": 0.8277777777777777,
+      "graphValidity": 1,
+      "timelineValidity": 1,
+      "validationPenalty": 1
+    },
+    "status": "PARTIAL",
+    "modulesPassing": [
+      "timeline",
+      "cards",
+      "didYouKnow",
+      "relatedTopics",
+      "structuredFactsData",
+      "knowledgeGraph"
+    ],
+    "modulesHidden": [],
+    "reasons": [
+      "all signals above threshold, no placeholder contamination, majority primary generation",
+      "downgraded because lintArtifact() reported validation errors"
+    ]
+  },
+  "stageDiagnostics": [
+    {
+      "stage": "entityResolver.pass1",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1192
+    },
+    {
+      "stage": "compiler",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 9777
+    },
+    {
+      "stage": "knowledgeGraph",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2765
+    },
+    {
+      "stage": "factEvaluator",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 5909
+    },
+    {
+      "stage": "narrativePlanner",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 4133
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2458
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2572
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2634
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2424
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 3192
+    },
+    {
+      "stage": "documentaryWriter.summary",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1552
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1442
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1497
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1562
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1396
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1413
+    },
+    {
+      "stage": "stylePolish",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 8320
+    }
+  ],
   "checksum": "49450d0ae8cf45614dacaf14502f567aded1360996055cd89e8f08d774880ad3",
-  "dependencyHash": "46a56651ef676a1b70d2dfa06070ada500de585ae727b86820b820c4b74b859a",
+  "dependencyHash": "40a9db2e3f9dcedc5ee82f388d70431f4eb22728892e28df39ed08b7c8cf12ee",
   "sourceReferences": [
     {
       "url": "https://en.wikipedia.org/wiki/United%20Arab%20Emirates",
@@ -581,149 +1219,262 @@
   "factScript": {
     "chapters": [
       {
-        "chapterTitle": "The Origins of United Arab Emirates",
-        "questionAnswered": "What represents the starting motivation behind Origins?",
+        "chapterTitle": "Ancient Magan and Early Habitation",
+        "referenceLabel": "Origins",
+        "questionAnswered": "How did prehistoric trade and early human settlements shape the dawn of the Emirates?",
         "chronologicalPosition": 1,
         "entities": [
-          "United Arab Emirates"
+          "Magan",
+          "Sumerian Empire",
+          "Mesopotamia",
+          "Indus Valley"
         ],
         "dates": [
-          "2024",
-          "1500"
+          "130,000 years ago",
+          "3000 BCE"
         ],
-        "locations": [],
+        "locations": [
+          "Hajar Mountains",
+          "United Arab Emirates",
+          "Oman"
+        ],
         "people": [],
-        "events": [],
-        "cause": "motivating factors behind early phases of development",
-        "effect": "initial events showing transition in the subject",
+        "events": [
+          "Establishment of copper trade routes with Mesopotamia"
+        ],
+        "cause": "Abundant copper deposits in the Hajar Mountains and early human migration routes drew ancient populations and regional traders to the Arabian Peninsula.",
+        "effect": "The region became a vital maritime trading hub connecting Mesopotamia and the Indus Valley, establishing some of the earliest global commercial networks.",
         "keyFacts": [
-          "The United Arab Emirates (UAE), also known simply as the Emirates, is a country in West Asia, situated at the eastern end of the Arabian Peninsula. It is a federal semi-constitutional monarchy made up of seven emirates, with Abu Dhabi serving as its national capital.",
-          "The present-day United Arab Emirates is located within the historical region of Eastern Arabia, which was oriented to maritime trade and seafaring. The Portuguese arrived in the region around 1500 and set up bases on the territory while waging wars against the Persians."
+          "Archaeological evidence traces the earliest human habitation in the region back 130,000 years",
+          "Sumerian historical sources identify the ancient copper-rich civilization of Magan as encompassing the modern UAE and Oman",
+          "Lively trading links developed around 3000 BCE, driven by copper extraction from the Hajar Mountains for export to Mesopotamia"
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "fundamental lessons from this period"
+        "connections": [
+          "The maritime trade routes established by Magan laid the foundation for the region's long-term seafaring and pearling economy"
+        ],
+        "takeaway": "Ancient copper trade positioned the early Emirates as a global crossroads.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "United Arab Emirates's History",
-        "questionAnswered": "Which factors influenced early discoveries of History?",
+        "chapterTitle": "From Islamic Conversion to Protectorate",
+        "referenceLabel": "History",
+        "questionAnswered": "How did foreign empires and maritime rivalries pave the way for the Trucial States?",
         "chronologicalPosition": 2,
         "entities": [
-          "United Arab Emirates"
+          "Sasanian Empire",
+          "Portuguese Empire",
+          "Dutch Empire",
+          "United Kingdom",
+          "Trucial States"
         ],
         "dates": [
+          "630 CE",
           "1500",
-          "1622"
+          "1622",
+          "19th Century"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "key drivers behind the rising influence",
-        "effect": "consequent progress seen during this phase",
+        "locations": [
+          "Sir Bani Yas Island",
+          "Persian Gulf",
+          "Hajar Mountains"
+        ],
+        "people": [
+          "Muhammad"
+        ],
+        "events": [
+          "Arrival of Islam",
+          "Expulsion of the Sassanids",
+          "Portuguese arrival in the Gulf",
+          "Dutch control of the straits",
+          "Establishment of the Trucial States protectorate"
+        ],
+        "cause": "The strategic maritime location of the Persian Gulf attracted early religious transformations and intense competition among European colonial powers seeking trade dominance.",
+        "effect": "Local sheikhdoms signed a protective pact with the United Kingdom, establishing the Trucial States and setting the geopolitical foundation for the modern federation.",
         "keyFacts": [
-          "The Federal Supreme Council, made up of the seven ruling emirs, is the highest state authority. It jointly appoints one member as federal president, who appoints a prime minister, who forms and leads the cabinet.",
-          "Stone tools recovered reveal a settlement of people from Africa some 127,000 years ago and a stone tool used for butchering animals discovered on the Arabian coast suggests an even older habitation from 130,000 years ago. In time, lively trading links developed with civilisations in Mesopotamia, Iran, and the Harappan culture of the Indus Valley."
+          "Islam arrived in the region in 630 CE following a letter sent by the prophet Muhammad to the rulers of Oman.",
+          "The oldest physical evidence of Christianity in the UAE is a 7th-century Nestorian monastic complex discovered on Sir Bani Yas Island in the 1990s.",
+          "Portuguese, English, and Dutch forces competed for maritime dominance in the Persian Gulf starting in the 16th century.",
+          "In the 19th century, local sheikhdoms signed a treaty with the United Kingdom to form the Trucial States protectorate to curb piracy."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "primary insights on the rise"
+        "connections": [
+          "Transition from the ancient copper trade of Magan to medieval maritime trade routes",
+          "The evolution of the Trucial States protectorate into the independent United Arab Emirates in 1971"
+        ],
+        "takeaway": "Foreign maritime rivalries directly shaped the UAE's path to protectorate status.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "Governing United Arab Emirates",
-        "questionAnswered": "How do key chemical processes behave during Government?",
+        "chapterTitle": "The Seven Emirates Union",
+        "referenceLabel": "Government",
+        "questionAnswered": "How does the unique federal monarchy govern its seven distinct constituent territories?",
         "chronologicalPosition": 3,
         "entities": [
-          "United Arab Emirates"
+          "Federal Supreme Council",
+          "Trucial States"
         ],
         "dates": [
-          "1622",
           "1971"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "pivotal elements supporting the peak achievements",
-        "effect": "resultant breakthroughs related directly to these successes",
+        "locations": [
+          "Abu Dhabi",
+          "Dubai",
+          "Ajman",
+          "Sharjah",
+          "Ras Al Khaimah",
+          "Umm Al Quwain",
+          "Fujairah"
+        ],
+        "people": [
+          "Zayed bin Sultan Al Nahyan"
+        ],
+        "events": [
+          "Independence and Federation"
+        ],
+        "cause": "The withdrawal of British protectorate status from the Trucial States prompted the local sheikhdoms to unite for mutual security and governance.",
+        "effect": "A highly centralized yet federally divided authoritarian state emerged, balancing local dynastic rule with a supreme federal council.",
         "keyFacts": [
-          "There are six periods of human settlement with distinctive behaviours in the region before Islam, which include the Hafit period from 3,200 to 2,600 BCE, the Umm Al Nar culture from 2,600 to 2,000 BCE, and the Wadi Suq culture from 2,000 to 1,300 BCE. From 1,200 BCE to the advent of Islam in Eastern Arabia, through three distinctive Iron Ages and the Mleiha period, the area was variously occupied by the Achaemenids and other forces, and saw the construction of fortified settlements and extensive husbandry thanks to the development of the falaj irrigation system.",
-          "In 637, Julfar—situated within the geographic boundaries of modern-day Ras Al Khaimah—was an important port that was used as a staging post for the Islamic invasion of the Sasanian Empire. The area of the Al Ain/Buraimi Oasis was known as Tu'am and was an important trading post for camel routes between the coast and the Arabian interior."
+          "The United Arab Emirates is named after and composed of seven constituent emirates: Abu Dhabi, Dubai, Ajman, Sharjah, Ras Al Khaimah, Umm Al Quwain, and Fujairah.",
+          "The highest state authority is the Federal Supreme Council, which is composed of the seven ruling emirs of each constituent territory.",
+          "The political structure is classified as an authoritarian state operating under a federal semi-constitutional monarchy.",
+          "The Federal Supreme Council appoints the Federal President, who in turn appoints the Prime Minister to form and lead the Cabinet."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "core takeaways regarding this era"
+        "connections": [
+          "The transition of the Trucial States protectorate into a unified sovereign federation in 1971."
+        ],
+        "takeaway": "Seven absolute monarchies govern jointly through one federal authoritarian council.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "United Arab Emirates's Culture",
-        "questionAnswered": "Why do light steps trigger under Culture?",
+        "chapterTitle": "Cultural Identity and Demographics",
+        "referenceLabel": "Culture",
+        "questionAnswered": "How does native Emirati culture coexist with a massive global expatriate population?",
         "chronologicalPosition": 4,
         "entities": [
-          "United Arab Emirates"
+          "Bani Yas",
+          "Al Bu Falah",
+          "Dhawahir",
+          "Awamir",
+          "Al Ali",
+          "Manasir",
+          "Sharqiyin",
+          "Qawasim"
+        ],
+        "dates": [
+          "2024"
+        ],
+        "locations": [
+          "United Arab Emirates",
+          "Abu Dhabi",
+          "Dubai"
+        ],
+        "people": [],
+        "events": [],
+        "cause": "Rapid economic diversification and development transformed the nation into a global hub for finance, tourism, and commerce, attracting a massive international workforce.",
+        "effect": "The native Emirati population became a distinct demographic minority within their own country, necessitating deliberate efforts to preserve local Islamic and tribal traditions.",
+        "keyFacts": [
+          "Native Emiratis constitute only 11% of the total national population of over 11 million people.",
+          "Expatriates and migrant workers, primarily from South Asia, make up the remaining 89% of the population.",
+          "Islam remains the official state religion and Arabic the official language, while English serves as the dominant language for business and daily communication.",
+          "Local cultural identity is rooted in historical tribal groupings, including the Bani Yas, Al Bu Falah, and Qawasim."
+        ],
+        "quotes": [],
+        "connections": [
+          "Economic diversification and the rise of Dubai as an international tourism and financial hub",
+          "The historical transition from the Trucial States to a modern federal semi-constitutional monarchy"
+        ],
+        "takeaway": "Native traditions endure alongside a massive, diverse global workforce.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "Metropolises of the Desert",
+        "referenceLabel": "Modernity",
+        "questionAnswered": "How did Abu Dhabi and Dubai transform into global hubs of commerce and tourism?",
+        "chronologicalPosition": 5,
+        "entities": [
+          "Bani Yas",
+          "Federal Supreme Council",
+          "Trucial States"
         ],
         "dates": [
           "1971",
-          "2004"
-        ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "underlying issues prompting the challenges faced",
-        "effect": "resulting shifts that defined the response taken",
-        "keyFacts": [
-          "The earliest Christian site in the UAE was first discovered in the 1990s, an extensive monastic complex on what is now known as Sir Bani Yas Island and which dates back to the seventh century. Thought to be Nestorian and built in 600 CE, the church appears to have been abandoned peacefully in 750 CE."
-        ],
-        "quotes": [],
-        "connections": [],
-        "takeaway": "crucial lessons on these struggles"
-      },
-      {
-        "chapterTitle": "United Arab Emirates as a Modern Nation",
-        "questionAnswered": "Who validates the final outcomes regarding Modern Nation?",
-        "chronologicalPosition": 5,
-        "entities": [
-          "United Arab Emirates"
-        ],
-        "dates": [
           "2004",
-          "1986"
+          "2024"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "lasting forces establishing the legacy left behind",
-        "effect": "long-term outcomes that shaped the memory of the subject",
+        "locations": [
+          "Abu Dhabi",
+          "Dubai",
+          "Persian Gulf",
+          "Hajar Mountains"
+        ],
+        "people": [
+          "Zayed bin Sultan Al Nahyan"
+        ],
+        "events": [
+          "Establishment of the Trucial States protectorate",
+          "Independence and Federation of the United Arab Emirates",
+          "Death of Zayed bin Sultan Al Nahyan"
+        ],
+        "cause": "The unification of the emirates in 1971 and the strategic deployment of oil wealth initiated a massive modernization drive.",
+        "effect": "The nation successfully transitioned into a highly diversified global hub, attracting millions of expatriates and international tourists.",
         "keyFacts": [
-          "Concluding analysis confirms modern legacy values of United Arab Emirates"
+          "Abu Dhabi serves as the political capital and federal seat of power, while Dubai operates as the largest city and primary international hub of finance, tourism, and commerce.",
+          "The United Arab Emirates holds the 7th-largest global reserves of both oil and natural gas, providing the initial capital for rapid infrastructure development.",
+          "The country has built the most diversified economy among Gulf Cooperation Council members by transitioning from historical pearling and maritime trade to modern tourism and business.",
+          "The population has grown to over 11 million residents as of 2024, with native Emiratis comprising 11% and expatriates making up 89% of the demographic makeup."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "final summary explaining the legacy"
+        "connections": [
+          "The historical copper trade from the Hajar Mountains to Mesopotamia",
+          "The transition from the British-administered Trucial States to a sovereign federal monarchy"
+        ],
+        "takeaway": "Oil wealth built the foundation for global commercial empires.",
+        "insufficientData": false
       }
     ]
   },
   "briefSummaryProvenance": [
     {
-      "sentence": "United Arab Emirates records confirm that The United Arab Emirates (UAE), also known simply as the Emirates,.",
-      "fact": "The United Arab Emirates (UAE), also known simply as the Emirates,"
+      "sentence": "Archaeological evidence traces the earliest human habitation in the region back 130,000 years .",
+      "fact": "Chapter 1: Archaeological evidence traces the earliest human habitation in the region back 130,000 years"
     },
     {
-      "sentence": "United Arab Emirates records confirm that The Federal Supreme Council, made up of the seven ruling emirs,.",
-      "fact": "The Federal Supreme Council, made up of the seven ruling emirs,"
+      "sentence": "Around 3000 BCE, lively trading links developed as copper extracted from the Hajar Mountains was exported to Mesopotamia .",
+      "fact": "Chapter 1: Lively trading links developed around 3000 BCE, driven by copper extraction from the Hajar Mountains for export to Mesopotamia"
     },
     {
-      "sentence": "United Arab Emirates records confirm that There are six periods of human settlement with distinctive behaviours in.",
-      "fact": "There are six periods of human settlement with distinctive behaviours in"
+      "sentence": "In 630 CE, Islam arrived in the region following a letter sent by the prophet Muhammad to the rulers of Oman .",
+      "fact": "Chapter 2: Islam arrived in the region in 630 CE following a letter sent by the prophet Muhammad to the rulers of Oman."
     },
     {
-      "sentence": "United Arab Emirates remains study topic showing that final summary explaining the legacy.",
-      "fact": "final summary explaining the legacy"
+      "sentence": "Centuries later, local sheikhdoms signed a 19th-century treaty with the United Kingdom to form the Trucial States protectorate .",
+      "fact": "Chapter 2: In the 19th century, local sheikhdoms signed a treaty with the United Kingdom to form the Trucial States protectorate to curb piracy."
+    },
+    {
+      "sentence": "Today, the United Arab Emirates is composed of seven constituent emirates .",
+      "fact": "Chapter 3: The United Arab Emirates is named after and composed of seven constituent emirates: Abu Dhabi, Dubai, Ajman, Sharjah, Ras Al Khaimah, Umm Al Quwain, and Fujairah."
+    },
+    {
+      "sentence": "Native Emiratis constitute only 11% of the total national population of over 11 million people .",
+      "fact": "Chapter 4: Native Emiratis constitute only 11% of the total national population of over 11 million people."
+    },
+    {
+      "sentence": "Expatriates and migrant workers, primarily from South Asia, make up the remaining 89% .",
+      "fact": "Chapter 4: Expatriates and migrant workers, primarily from South Asia, make up the remaining 89% of the population."
     }
   ],
   "validationStatus": {
-    "passed": true,
-    "errors": [],
-    "warnings": [
-      "Timeline is not in strict chronological order"
+    "passed": false,
+    "errors": [
+      "Timeline is not in strict chronological order",
+      "Artifact contains a paragraph exceeding 130 words",
+      "Identical 4-word phrases must not repeat across chapters",
+      "Sentence provenance is incomplete: only 92% of sentences are mapped to facts",
+      "Documentary score is too low: 70/100"
     ],
+    "warnings": [],
     "checkedRules": {
       "ontology_match": true,
       "required_fields_exist": true,
@@ -732,28 +1483,30 @@
       "timeline_chronological": false,
       "graph_has_triples": true,
       "graph_connected": true,
+      "graph_no_synthetic_nodes": true,
       "named_entities_non_empty": true,
       "no_weak_facts": true,
       "no_duplicate_facts": true,
       "no_duplicate_sentences": true,
       "no_placeholder_wording": true,
       "generic_wording_check": true,
-      "paragraph_length_limit": true,
+      "paragraph_length_limit": false,
       "unique_chapter_titles": true,
       "concrete_dates_names_present": true,
-      "no_repeated_phrases": true,
+      "no_repeated_phrases": false,
       "no_timeline_milestone_placeholder": true,
+      "reader_question_quality": true,
       "did_you_know_length_ok": true,
-      "sentence_provenance_ok": true,
+      "sentence_provenance_ok": false,
       "no_abstract_writing": true,
       "documentary_alternating_rule": true,
       "fact_density_met": true,
       "curiosity_score_ok": true,
-      "documentary_score_ok": true,
+      "documentary_score_ok": false,
       "resolver_confidence_ok": true,
       "compiler_confidence_ok": true,
       "overall_confidence_ok": true
     },
-    "timestamp": "2026-07-10T06:48:19.744Z"
+    "timestamp": "2026-07-11T08:24:48.627Z"
   }
 }

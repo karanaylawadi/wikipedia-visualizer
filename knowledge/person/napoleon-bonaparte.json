@@ -1,0 +1,1453 @@
+{
+  "version": "18.0",
+  "compilerVersion": "v18.0",
+  "ontologyVersion": "v18.0",
+  "wikipediaRevision": "rev-1.0",
+  "wikidataRevision": "Q517",
+  "ontology": {
+    "name": "Person",
+    "labels": [
+      "Person",
+      "Person"
+    ]
+  },
+  "structuredFacts": {
+    "birth": {
+      "date": "15 August 1769",
+      "place": "Ajaccio, Corsica",
+      "birthName": "Napoleone di Buonaparte",
+      "parents": {
+        "father": "Carlo Maria Buonaparte",
+        "mother": "Maria Letizia Ramolino"
+      },
+      "siblings": [
+        "Joseph",
+        "Lucien",
+        "Elisa",
+        "Louis",
+        "Pauline",
+        "Caroline",
+        "Jérôme"
+      ]
+    },
+    "death": {
+      "date": "5 May 1821",
+      "age": 51,
+      "place": "Saint Helena",
+      "cause": "Stomach cancer"
+    },
+    "occupation": [
+      "Military officer",
+      "General",
+      "Statesman",
+      "First Consul of the French Republic",
+      "Emperor of the French"
+    ],
+    "majorWorks": [
+      "Napoleonic Code (French Civil Code)",
+      "Establishment of a public education system",
+      "Abolition of feudalism",
+      "Centralization of French state power"
+    ],
+    "awards": [
+      "Commissioned Officer in the French Royal Army",
+      "First Corsican graduate of the École militaire in Paris"
+    ],
+    "legacy": [
+      "Napoleonic tactics studied globally in military schools",
+      "Spread of legal and administrative reforms across Western Europe",
+      "Emancipation of Jews and religious minorities",
+      "Abolition of the Spanish Inquisition",
+      "Catalyst for the development of modern nation-states"
+    ],
+    "controversies": [
+      "Instigation of devastating European wars",
+      "Looting of conquered territories",
+      "Abolition of the free press and representative government",
+      "Reinstatement of slavery in French colonies",
+      "Banning of black and mulatto people from entering France",
+      "Reduction of civil rights for women and children",
+      "Reintroduction of hereditary monarchy and nobility",
+      "Violent repression of popular uprisings"
+    ],
+    "title": "Napoleon Bonaparte",
+    "subtitle": "French general and emperor (1769–1821)",
+    "leadParagraph": "Napoleon Bonaparte (born Napoleone di Buonaparte; 15 August 1769 – 5 May 1821), later known by his regnal name Napoleon I, was Emperor of the French from 18 May 1804 until his first abdication in 1814, with a brief restoration during the Hundred Days in 1815. He rose to prominence as a general during the French Revolution and led a series of military campaigns across Europe and the Middle East during the French Revolutionary and Napoleonic Wars. As a statesman, he implemented numerous legal and administrative reforms in France and Europe.\nBorn on the island of Corsica to a family of Italian origin, Napoleon moved to mainland France in 1779 and was commissioned as an officer in the French Royal Army in 1785. He supported the French Revolution in 1789 and promoted its cause in Corsica. He rose rapidly through the ranks after winning the siege of Toulon in 1793 and defeating royalist insurgents in Paris on 13 Vendémiaire in 1795. In 1796 he commanded a military campaign against the Austrians and their Italian allies in the War of the First Coalition, scoring decisive victories and becoming a national hero. He led an invasion of Egypt and Syria in 1798, which served as a springboard for his rise to political power. In November 1799 Napoleon engineered the Coup of 18 Brumaire against the French Directory and became First Consul of the Republic. He won the Battle of Marengo in 1800, which secured France's victory in the War of the Second Coalition, and in 1803, he sold the territory of Louisiana to the United States. In December 1804 Napoleon crowned himself Emperor of the French, further consolidating his power.\nThe breakdown of the Treaty of Amiens led to the War of the Third Coalition by 1805. Napoleon shattered the coalition with a decisive victory at the Battle of Austerlitz, which led to the dissolution of the Holy Roman Empire. In the War of the Fourth Coalition, Napoleon defeated Prussia at the Battle of Jena–Auerstedt in 1806, marched his Grande Armée into Eastern Europe, and defeated the Russians in 1807 at the Battle of Friedland. Seeking to extend his trade embargo against Britain, Napoleon invaded the Iberian Peninsula and installed his brother Joseph as King of Spain in 1808, provoking the Peninsular War. In 1809 the Austrians again challenged France in the War of the Fifth Coalition, during which Napoleon consolidated his dominance over Europe after winning the Battle of Wagram. In the summer of 1812 he launched an invasion of Russia. After forcing the Russians to abandon Moscow following the Battle of Borodino, Napoleon briefly occupied the city before conducting a catastrophic retreat of his army that winter. In 1813 Prussia and Austria joined Russia in the War of the Sixth Coalition, in which Napoleon was decisively defeated at the Battle of Leipzig. The coalition invaded France and captured Paris, forcing Napoleon to abdicate in April 1814. He was exiled to the Mediterranean island of Elba and the House of Bourbons was restored to power. Ten months later Napoleon escaped from Elba with around a thousand men and marched on Paris, reclaiming control of the country. His opponents responded by forming a Seventh Coalition, which defeated him at the Battle of Waterloo in June 1815. Napoleon was exiled to the remote island of Saint Helena in the South Atlantic, where he died of stomach cancer in 1821, aged 51.\nNapoleon is considered one of the greatest military commanders in history, and Napoleonic tactics are still studied at military schools worldwide. His legacy endures through the legal and administrative reforms he enacted in France and Western Europe, most notably the Napoleonic Code. He established a system of public education, abolished the vestiges of feudalism, emancipated Jews and other religious minorities, abolished the Spanish Inquisition, enacted the principle of equality before the law for an emerging middle class, and centralized state power at the expense of religious authorities. His conquests also acted as a catalyst for political change and the development of nation-states. However, he remains controversial because of his role in wars that devastated Europe, his looting of conquered territories, and his mixed record on civil rights. He abolished the free press, ended directly elected representative government, exiled and imprisoned critics of his regime, reinstated slavery in French colonies, banned the entry of black people and mulattos into France, reduced the civil rights of women and children, reintroduced a hereditary monarchy and nobility, and violently repressed popular uprisings against his rule.",
+    "briefSummary": "Born in Ajaccio, Corsica, to parents of Italian noble descent, Napoleon Bonaparte faced a difficult youth. Classmates at Brienne-le-Château routinely bullied him for his short stature, Corsican accent, and poor French spelling. Later, severe financial strain forced him to condense his two-year course at Paris's École militaire into just twelve months, yet he still graduated as the first Corsican to finish at the prestigious academy. Upon graduation, Napoleon returned to his home island to begin his military career. By 1799, he engineered the Coup of 18 Brumaire against the French Directory to become First Consul, ultimately consolidating absolute rule by crowning himself Emperor of the French in 1804.",
+    "cards": [
+      {
+        "title": "The Making of Bonaparte",
+        "summary": "Born in Ajaccio, Corsica, in 1769, Napoleon Bonaparte was the son of noble Italian parents. To secure their social advancement after France annexed the island, his family sent him to French military academies. At Brienne-le-Château, classmates routinely bullied the young outsider for his short stature, thick accent, and poor spelling. This harsh isolation only drove him to complete his elite education rapidly and secure an artillery commission. By finishing the course in just one year, he graduated as the first Corsican from the prestigious École militaire in Paris. Ultimately, this relentless resilience through early adversity forged France's most formidable military commander.",
+        "referenceLabel": "Origins",
+        "readerQuestion": "How did a boy from a Mediterranean island become a French military officer?",
+        "keyTakeaway": "Adversity and elite training forged France's greatest military commander.",
+        "provenance": [
+          {
+            "sentence": "Born in Ajaccio, Corsica, in 1769, Napoleon Bonaparte was the son of noble Italian parents.",
+            "fact": "Born in Ajaccio, Corsica, to parents of Italian noble descent, Carlo Maria Buonaparte and Maria Letizia Ramolino."
+          },
+          {
+            "sentence": "To secure their social advancement after France annexed the island, his family sent him to French military academies.",
+            "fact": "Born to Corsican nobility of Italian descent, Napoleon was sent to French military schools to secure his family's advancement following the French annexation of Corsica."
+          },
+          {
+            "sentence": "At Brienne-le-Château, classmates routinely bullied the young outsider for his short stature, thick accent, and poor spelling.",
+            "fact": "Endured routine bullying by classmates at Brienne-le-Château due to his short stature, Corsican accent, and poor French spelling."
+          },
+          {
+            "sentence": "This harsh isolation only drove him to complete his elite education rapidly and secure an artillery commission.",
+            "fact": "Despite severe bullying and financial hardship, he rapidly completed his elite military education to become the first Corsican artillery officer in the French army."
+          },
+          {
+            "sentence": "By finishing the course in just one year, he graduated as the first Corsican from the prestigious École militaire in Paris.",
+            "fact": "Graduated as the first Corsican from the prestigious École militaire in Paris, completing the two-year course in just one year due to financial strain."
+          },
+          {
+            "sentence": "Ultimately, this relentless resilience through early adversity forged France's most formidable military commander.",
+            "fact": "Resilience through adversity forged France's most formidable military commander."
+          }
+        ]
+      },
+      {
+        "title": "The Rise of Napoleon Bonaparte",
+        "summary": "Napoleon Bonaparte returned to Corsica in 1786, eager to launch his ambitious military career. Amid the chaotic instability of revolutionary France, this determined outsider capitalized on his elite training and tactical brilliance. Years earlier, the legendary scientist Pierre-Simon Laplace had personally examined the young cadet during his final academy trials. Building on these early triumphs, Napoleon eventually overthrew the Directory in a swift coup to become the absolute ruler of France. Yet, despite wielding supreme power, the emperor spoke French with a heavy, native Corsican accent throughout his entire life. In the end, an accented outsider had weaponized sheer military genius to seize total control of the French Republic.",
+        "referenceLabel": "Ascension",
+        "readerQuestion": "How did an outsider rise through the ranks to seize absolute political power?",
+        "keyTakeaway": "An accented outsider weaponized military genius to seize French rule.",
+        "provenance": [
+          {
+            "sentence": "Napoleon Bonaparte returned to Corsica in 1786, eager to launch his ambitious military career.",
+            "fact": "Napoleon returned to his home island of Corsica after graduation to begin his military career."
+          },
+          {
+            "sentence": "Amid the chaotic instability of revolutionary France, this determined outsider capitalized on his elite training and tactical brilliance.",
+            "fact": "An ambitious Corsican outsider used his elite military training and tactical brilliance during a period of extreme political instability in revolutionary France."
+          },
+          {
+            "sentence": "Years earlier, the legendary scientist Pierre-Simon Laplace had personally examined the young cadet during his final academy trials.",
+            "fact": "He was examined during his final military academy trials by the legendary French scientist Pierre-Simon Laplace."
+          },
+          {
+            "sentence": "Building on these early triumphs, Napoleon eventually overthrew the Directory in a swift coup to become the absolute ruler of France.",
+            "fact": "Napoleon successfully overthrew the French Directory in a coup, establishing himself as the First Consul and absolute ruler of the Republic."
+          },
+          {
+            "sentence": "Yet, despite wielding supreme power, the emperor spoke French with a heavy, native Corsican accent throughout his entire life.",
+            "fact": "Though he became the ruler of France, Napoleon's native languages were Corsican and Italian, and he spoke French with a heavy accent his entire life."
+          },
+          {
+            "sentence": "In the end, an accented outsider had weaponized sheer military genius to seize total control of the French Republic.",
+            "fact": "An accented outsider weaponized military genius to seize French rule."
+          }
+        ]
+      },
+      {
+        "title": "The Price of Empire",
+        "summary": "In 1804, Napoleon Bonaparte seized absolute control of France and crowned himself Emperor. To wage his planned military campaigns across Europe, he urgently required both absolute domestic authority and financial capital. He thus sold the massive territory of Louisiana to the United States in 1803. By liquidating these vast North American lands, the French ruler successfully secured the wealth needed to finance his grand army. This strategic transaction was executed specifically to fund his global conquests. Ultimately, Napoleon financed his imperial expansion by transferring Louisiana to American hands.",
+        "referenceLabel": "Zenith",
+        "readerQuestion": "How did Napoleon consolidate his rule and fund his global military ambitions?",
+        "keyTakeaway": "Napoleon funded his imperial expansion by selling Louisiana to America.",
+        "provenance": [
+          {
+            "sentence": "In 1804, Napoleon Bonaparte seized absolute control of France and crowned himself Emperor.",
+            "fact": "Napoleon rose to power during the French Revolution and consolidated absolute rule by crowning himself Emperor of the French in 1804."
+          },
+          {
+            "sentence": "To wage his planned military campaigns across Europe, he urgently required both absolute domestic authority and financial capital.",
+            "fact": "Napoleon sought absolute domestic authority and urgent financial capital to wage his planned military campaigns across Europe."
+          },
+          {
+            "sentence": "He thus sold the massive territory of Louisiana to the United States in 1803.",
+            "fact": "In 1803, Napoleon sold the massive territory of Louisiana to the United States."
+          },
+          {
+            "sentence": "By liquidating these vast North American lands, the French ruler successfully secured the wealth needed to finance his grand army.",
+            "fact": "Napoleon established a hereditary empire in France and successfully financed his grand military campaigns by selling vast North American territories to the United States."
+          },
+          {
+            "sentence": "This strategic transaction was executed specifically to fund his global conquests.",
+            "fact": "The strategic sale of the Louisiana territory was executed specifically to fund his global military campaigns."
+          },
+          {
+            "sentence": "Ultimately, Napoleon financed his imperial expansion by transferring Louisiana to American hands.",
+            "fact": "Napoleon funded his imperial expansion by selling Louisiana to America."
+          }
+        ]
+      },
+      {
+        "title": "The Fall and Return",
+        "summary": "In 1812, Napoleon launched a massive invasion of Russia and briefly occupied Moscow, only to suffer a catastrophic winter retreat. This disastrous campaign decimated his military strength, leaving him highly vulnerable to the Sixth Coalition. Forced to abdicate his throne in 1814, the defeated emperor was exiled to the island of Elba. He soon escaped this first exile with only about a thousand men, successfully marching on Paris to reclaim his empire. Yet following his final defeat at Waterloo, Napoleon was permanently banished to the remote island of Saint Helena. Ultimately, it was that disastrous Russian campaign that had set his final downfall in motion.",
+        "referenceLabel": "Downfall",
+        "readerQuestion": "What led to the collapse of his empire and his final defeat?",
+        "keyTakeaway": "A disastrous Russian campaign led to Napoleon's final downfall.",
+        "provenance": [
+          {
+            "sentence": "In 1812, Napoleon launched a massive invasion of Russia and briefly occupied Moscow, only to suffer a catastrophic winter retreat.",
+            "fact": "Napoleon launched a massive invasion of Russia in 1812, briefly occupying Moscow before suffering a catastrophic winter retreat."
+          },
+          {
+            "sentence": "This disastrous campaign decimated his military strength, leaving him highly vulnerable to the Sixth Coalition.",
+            "fact": "Napoleon's disastrous invasion of Russia in 1812 decimated his military strength, leaving him vulnerable to the Sixth Coalition."
+          },
+          {
+            "sentence": "Forced to abdicate his throne in 1814, the defeated emperor was exiled to the island of Elba.",
+            "fact": "Following the War of the Sixth Coalition, Napoleon abdicated the throne in 1814 and was exiled to the island of Elba."
+          },
+          {
+            "sentence": "He soon escaped this first exile with only about a thousand men, successfully marching on Paris to reclaim his empire.",
+            "fact": "Following his final defeat at Waterloo, Napoleon was permanently exiled to the remote island of Saint Helena."
+          },
+          {
+            "sentence": "Yet following his final defeat at Waterloo, Napoleon was permanently banished to the remote island of Saint Helena.",
+            "fact": "Napoleon escaped his first exile on Elba with only about a thousand men and successfully marched on Paris to reclaim his empire."
+          },
+          {
+            "sentence": "Ultimately, it was that disastrous Russian campaign that had set his final downfall in motion.",
+            "fact": "A disastrous Russian campaign led to Napoleon's final downfall."
+          }
+        ]
+      },
+      {
+        "title": "The Contradictory Imperial Shadow",
+        "summary": "To centralize French state power and establish civil reforms, Napoleon introduced the Napoleonic Code. He sought to consolidate absolute power and stabilize his empire through these centralized legal measures alongside colonial economic control. Across Western Europe, he abolished the Spanish Inquisition and emancipated religious minorities. Yet, his actions created a deeply polarized legacy that paired progressive European legal reforms with brutal colonial subjugation and systemic racism. Specifically, he reinstated slavery in French colonies and banned black and mulatto people from entering France. Ultimately, Napoleon's progressive reforms coexisted with brutal, authoritarian oppression.",
+        "referenceLabel": "Assessment",
+        "readerQuestion": "Why does Napoleon's legal and social legacy remain deeply polarized?",
+        "keyTakeaway": "Napoleon's progressive reforms coexisted with brutal, authoritarian oppression.",
+        "provenance": [
+          {
+            "sentence": "To centralize French state power and establish civil reforms, Napoleon introduced the Napoleonic Code.",
+            "fact": "Napoleon introduced the Napoleonic Code to centralize French state power and establish civil reforms."
+          },
+          {
+            "sentence": "He sought to consolidate absolute power and stabilize his empire through these centralized legal measures alongside colonial economic control.",
+            "fact": "Napoleon sought to consolidate absolute power and stabilize the French empire through centralized legal reforms and colonial economic control."
+          },
+          {
+            "sentence": "Across Western Europe, he abolished the Spanish Inquisition and emancipated religious minorities.",
+            "fact": "He abolished the Spanish Inquisition and emancipated religious minorities across Western Europe."
+          },
+          {
+            "sentence": "Yet, his actions created a deeply polarized legacy that paired progressive European legal reforms with brutal colonial subjugation and systemic racism.",
+            "fact": "His actions created a deeply polarized legacy that paired progressive European legal reforms with brutal colonial subjugation and systemic racism."
+          },
+          {
+            "sentence": "Specifically, he reinstated slavery in French colonies and banned black and mulatto people from entering France.",
+            "fact": "He reinstated slavery in French colonies and banned black and mulatto people from entering France."
+          },
+          {
+            "sentence": "Ultimately, Napoleon's progressive reforms coexisted with brutal, authoritarian oppression.",
+            "fact": "Napoleon's progressive reforms coexisted with brutal, authoritarian oppression."
+          }
+        ]
+      }
+    ]
+  },
+  "namedEntities": [
+    {
+      "name": "Napoleon Bonaparte",
+      "type": "Person",
+      "description": "Emperor of the French and military commander who dominated European affairs for over a decade."
+    },
+    {
+      "name": "Carlo Maria Buonaparte",
+      "type": "Person",
+      "description": "Napoleon's father, a Corsican representative to the court of Louis XVI."
+    },
+    {
+      "name": "Maria Letizia Ramolino",
+      "type": "Person",
+      "description": "Napoleon's mother, known for her firm discipline and dominant influence on his childhood."
+    },
+    {
+      "name": "Pasquale Paoli",
+      "type": "Person",
+      "description": "Corsican patriot and leader of the island's war of independence."
+    },
+    {
+      "name": "Pierre-Simon Laplace",
+      "type": "Person",
+      "description": "Famous French scientist who examined Napoleon at the École militaire."
+    },
+    {
+      "name": "Corsica",
+      "type": "Place",
+      "description": "Mediterranean island where Napoleon was born, ceded by Genoa to France in 1768."
+    },
+    {
+      "name": "Saint Helena",
+      "type": "Place",
+      "description": "Remote South Atlantic island where Napoleon was exiled for the second time and died."
+    },
+    {
+      "name": "Napoleonic Code",
+      "type": "Concept",
+      "description": "French civil code established under Napoleon, forming the basis of many modern legal systems."
+    },
+    {
+      "name": "Grande Armée",
+      "type": "Org",
+      "description": "The primary military force commanded by Napoleon during the Napoleonic Wars."
+    }
+  ],
+  "knowledgeGraph": [
+    {
+      "subject": "Napoleon Bonaparte",
+      "predicate": "BORN_IN",
+      "object": "Corsica"
+    },
+    {
+      "subject": "Napoleon Bonaparte",
+      "predicate": "CHILD_OF",
+      "object": "Carlo Maria Buonaparte"
+    },
+    {
+      "subject": "Napoleon Bonaparte",
+      "predicate": "CHILD_OF",
+      "object": "Maria Letizia Ramolino"
+    },
+    {
+      "subject": "Napoleon Bonaparte",
+      "predicate": "DIED_IN",
+      "object": "Saint Helena"
+    },
+    {
+      "subject": "Napoleon Bonaparte",
+      "predicate": "ESTABLISHED",
+      "object": "Napoleonic Code"
+    },
+    {
+      "subject": "Napoleon Bonaparte",
+      "predicate": "COMMANDED",
+      "object": "Grande Armée"
+    },
+    {
+      "subject": "Napoleon Bonaparte",
+      "predicate": "INFLUENCED_BY",
+      "object": "Pasquale Paoli"
+    },
+    {
+      "subject": "Pierre-Simon Laplace",
+      "predicate": "EXAMINED",
+      "object": "Napoleon Bonaparte"
+    },
+    {
+      "subject": "Napoleon Bonaparte",
+      "predicate": "ABOLISHED",
+      "object": "Abolition of the Spanish Inquisition"
+    },
+    {
+      "subject": "Napoleon Bonaparte",
+      "predicate": "REINSTATED",
+      "object": "Reinstatement of slavery in French colonies"
+    },
+    {
+      "subject": "Napoleon Bonaparte",
+      "predicate": "SIBLING_OF",
+      "object": "Joseph"
+    },
+    {
+      "subject": "Napoleon Bonaparte",
+      "predicate": "SIBLING_OF",
+      "object": "Louis"
+    }
+  ],
+  "timeline": [
+    {
+      "year": "1769",
+      "headline": "Born in Corsica",
+      "description": "Born Napoleone di Buonaparte in Ajaccio, Corsica, to a family of Italian noble origin.",
+      "importance": 8,
+      "connections": [
+        "Carlo Maria Buonaparte",
+        "Maria Letizia Ramolino"
+      ],
+      "image": null
+    },
+    {
+      "year": "1785",
+      "headline": "Graduates Military Academy",
+      "description": "Graduates from the École militaire in Paris, becoming the first Corsican commissioned as an artillery officer.",
+      "importance": 7,
+      "connections": [
+        "Pierre-Simon Laplace",
+        "École militaire"
+      ],
+      "image": null
+    },
+    {
+      "year": "1799",
+      "headline": "Seizes Political Power",
+      "description": "Engineers the Coup of 18 Brumaire against the French Directory and becomes First Consul of the Republic.",
+      "importance": 10,
+      "connections": [
+        "French Directory",
+        "First Consul"
+      ],
+      "image": null
+    },
+    {
+      "year": "1804",
+      "headline": "Crowned Emperor of France",
+      "description": "Crowns himself Emperor of the French, consolidating absolute power and establishing the First French Empire.",
+      "importance": 10,
+      "connections": [
+        "Emperor of the French"
+      ],
+      "image": null
+    },
+    {
+      "year": "1812",
+      "headline": "Disastrous Invasion of Russia",
+      "description": "Launches a massive invasion of Russia, briefly occupying Moscow before suffering a catastrophic winter retreat.",
+      "importance": 9,
+      "connections": [
+        "Grande Armée",
+        "Moscow"
+      ],
+      "image": null
+    },
+    {
+      "year": "1814",
+      "headline": "First Abdication and Exile",
+      "description": "Abdicates the throne after the War of the Sixth Coalition and is exiled to Elba.",
+      "importance": 9,
+      "connections": [
+        "Elba",
+        "House of Bourbon"
+      ],
+      "image": null
+    },
+    {
+      "year": "1815",
+      "headline": "Defeat at Waterloo",
+      "description": "Escapes Elba, reclaims power, but is permanently defeated at Waterloo and exiled to Saint Helena.",
+      "importance": 10,
+      "connections": [
+        "Battle of Waterloo",
+        "Saint Helena"
+      ],
+      "image": null
+    }
+  ],
+  "rankedFacts": [
+    {
+      "fact": "Napoleon was the first Corsican to graduate from the prestigious École militaire in Paris, completing a two-year course in just one year due to financial strain.",
+      "score": 0.6267399267399268,
+      "metrics": {
+        "confidence": 0.9333333333333333,
+        "specificity": 0.41538461538461535,
+        "narrativeValue": 0.47307692307692306,
+        "educationalValue": 0.5,
+        "visualValue": 0.41538461538461535,
+        "uniqueness": 0.85,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "Though he became the ruler of France, Napoleon's native languages were Corsican and Italian, and he spoke French with a heavy accent his entire life.",
+      "score": 0.6366666666666667,
+      "metrics": {
+        "confidence": 0.9166666666666667,
+        "specificity": 0.54,
+        "narrativeValue": 0.6599999999999999,
+        "educationalValue": 0.5,
+        "visualValue": 0.54,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "In 1803, Napoleon sold the massive territory of Louisiana to the United States to fund his military campaigns.",
+      "score": 0.6936507936507936,
+      "metrics": {
+        "confidence": 0.8,
+        "specificity": 0.85,
+        "narrativeValue": 0.6333333333333333,
+        "educationalValue": 0.75,
+        "visualValue": 0.5222222222222221,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "Napoleon was routinely bullied by his classmates at Brienne-le-Château for his short stature, Corsican accent, and poor French spelling.",
+      "score": 0.6076441102756893,
+      "metrics": {
+        "confidence": 0.8166666666666667,
+        "specificity": 0.5105263157894737,
+        "narrativeValue": 0.6157894736842104,
+        "educationalValue": 0.5,
+        "visualValue": 0.5105263157894737,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "He was examined during his final military academy trials by the legendary French scientist Pierre-Simon Laplace.",
+      "score": 0.5773809523809524,
+      "metrics": {
+        "confidence": 0.7666666666666666,
+        "specificity": 0.55,
+        "narrativeValue": 0.675,
+        "educationalValue": 0.5,
+        "visualValue": 0.55,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.5
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "Despite his progressive reforms like abolishing the Spanish Inquisition, Napoleon reinstated slavery in French colonies and banned black people from entering France.",
+      "score": 0.645887445887446,
+      "metrics": {
+        "confidence": 0.8666666666666667,
+        "specificity": 0.5727272727272728,
+        "narrativeValue": 0.709090909090909,
+        "educationalValue": 0.5,
+        "visualValue": 0.5727272727272728,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "Napoleon escaped his first exile on the island of Elba with only about a thousand men and successfully marched on Paris to reclaim his empire.",
+      "score": 0.6666666666666667,
+      "metrics": {
+        "confidence": 0.9166666666666667,
+        "specificity": 0.42,
+        "narrativeValue": 0.48,
+        "educationalValue": 0.5,
+        "visualValue": 0.7,
+        "uniqueness": 0.85,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "Napoleon rose to power during the French Revolution and became Emperor of the French",
+      "score": 0.6690476190476191,
+      "metrics": {
+        "confidence": 0.7333333333333334,
+        "specificity": 0.6571428571428571,
+        "narrativeValue": 0.8357142857142856,
+        "educationalValue": 0.5,
+        "visualValue": 0.6571428571428571,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "He introduced the Napoleonic Code but remains controversial for his authoritarian rule and reinstatement of slavery",
+      "score": 0.5577380952380953,
+      "metrics": {
+        "confidence": 0.7666666666666666,
+        "specificity": 0.425,
+        "narrativeValue": 0.4875,
+        "educationalValue": 0.5,
+        "visualValue": 0.425,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "Born in Corsica to noble parents of Italian descent",
+      "score": 0.6023809523809524,
+      "metrics": {
+        "confidence": 0.65,
+        "specificity": 0.6333333333333333,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.5,
+        "visualValue": 0.6333333333333333,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.5
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "Napoleon returned to Corsica after graduation to begin his military career",
+      "score": 0.5742424242424242,
+      "metrics": {
+        "confidence": 0.6833333333333333,
+        "specificity": 0.4818181818181818,
+        "narrativeValue": 0.5727272727272728,
+        "educationalValue": 0.5,
+        "visualValue": 0.4818181818181818,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    }
+  ],
+  "visualModules": [
+    {
+      "type": "person",
+      "title": "Person Blueprint Snapshot",
+      "data": {
+        "birth": {
+          "date": "15 August 1769",
+          "place": "Ajaccio, Corsica",
+          "birthName": "Napoleone di Buonaparte",
+          "parents": {
+            "father": "Carlo Maria Buonaparte",
+            "mother": "Maria Letizia Ramolino"
+          },
+          "siblings": [
+            "Joseph",
+            "Lucien",
+            "Elisa",
+            "Louis",
+            "Pauline",
+            "Caroline",
+            "Jérôme"
+          ]
+        },
+        "death": {
+          "date": "5 May 1821",
+          "age": 51,
+          "place": "Saint Helena",
+          "cause": "Stomach cancer"
+        },
+        "occupation": [
+          "Military officer",
+          "General",
+          "Statesman",
+          "First Consul of the French Republic",
+          "Emperor of the French"
+        ],
+        "majorWorks": [
+          "Napoleonic Code (French Civil Code)",
+          "Establishment of a public education system",
+          "Abolition of feudalism",
+          "Centralization of French state power"
+        ],
+        "awards": [
+          "Commissioned Officer in the French Royal Army",
+          "First Corsican graduate of the École militaire in Paris"
+        ],
+        "legacy": [
+          "Napoleonic tactics studied globally in military schools",
+          "Spread of legal and administrative reforms across Western Europe",
+          "Emancipation of Jews and religious minorities",
+          "Abolition of the Spanish Inquisition",
+          "Catalyst for the development of modern nation-states"
+        ],
+        "controversies": [
+          "Instigation of devastating European wars",
+          "Looting of conquered territories",
+          "Abolition of the free press and representative government",
+          "Reinstatement of slavery in French colonies",
+          "Banning of black and mulatto people from entering France",
+          "Reduction of civil rights for women and children",
+          "Reintroduction of hereditary monarchy and nobility",
+          "Violent repression of popular uprisings"
+        ]
+      }
+    }
+  ],
+  "narrativePlan": {
+    "chapters": [
+      {
+        "chapterIndex": 0,
+        "title": "The Corsican Boyhood",
+        "referenceLabel": "Origins",
+        "readerQuestion": "How did a boy from a Mediterranean island become a French military officer?",
+        "objectives": [
+          "Explore Napoleon's birth in Corsica to parents of Italian noble descent.",
+          "Detail his struggles with bullying and language barriers during his early education.",
+          "Examine his rapid graduation from the military academy under financial pressure."
+        ],
+        "approvedFacts": [
+          "Born in Corsica to noble parents of Italian descent",
+          "Napoleon was routinely bullied by his classmates at Brienne-le-Château for his short stature, Corsican accent, and poor French spelling.",
+          "Napoleon was the first Corsican to graduate from the prestigious École militaire in Paris, completing a two-year course in just one year due to financial strain."
+        ],
+        "anchors": [
+          "1769",
+          "Carlo Maria Buonaparte",
+          "Maria Letizia Ramolino"
+        ]
+      },
+      {
+        "chapterIndex": 1,
+        "title": "Seizing the French Republic",
+        "referenceLabel": "Ascension",
+        "readerQuestion": "How did an outsider rise through the ranks to seize absolute political power?",
+        "objectives": [
+          "Trace his early military career returning to his home island after graduation.",
+          "Highlight his final academic evaluation by a legendary French scientist.",
+          "Explain his transition from a military officer to the First Consul of the Republic."
+        ],
+        "approvedFacts": [
+          "Napoleon returned to Corsica after graduation to begin his military career",
+          "He was examined during his final military academy trials by the legendary French scientist Pierre-Simon Laplace.",
+          "Though he became the ruler of France, Napoleon's native languages were Corsican and Italian, and he spoke French with a heavy accent his entire life."
+        ],
+        "anchors": [
+          "1785",
+          "1799",
+          "Pierre-Simon Laplace"
+        ]
+      },
+      {
+        "chapterIndex": 2,
+        "title": "The First French Empire",
+        "referenceLabel": "Zenith",
+        "readerQuestion": "How did Napoleon consolidate his rule and fund his global military ambitions?",
+        "objectives": [
+          "Examine his self-coronation as Emperor of the French during the Revolution.",
+          "Detail the strategic sale of North American territory to finance his European campaigns."
+        ],
+        "approvedFacts": [
+          "Napoleon rose to power during the French Revolution and became Emperor of the French",
+          "In 1803, Napoleon sold the massive territory of Louisiana to the United States to fund his military campaigns."
+        ],
+        "anchors": [
+          "1804",
+          "Napoleon Bonaparte",
+          "Napoleonic Code"
+        ]
+      },
+      {
+        "chapterIndex": 3,
+        "title": "The Fall and Return",
+        "referenceLabel": "Downfall",
+        "readerQuestion": "What led to the collapse of his empire and his final defeat?",
+        "objectives": [
+          "Analyze the disastrous invasion of Russia and his subsequent first exile.",
+          "Describe his daring escape from Elba and the final defeat at Waterloo."
+        ],
+        "approvedFacts": [
+          "Napoleon escaped his first exile on the island of Elba with only about a thousand men and successfully marched on Paris to reclaim his empire."
+        ],
+        "anchors": [
+          "1812",
+          "1814",
+          "1815"
+        ]
+      },
+      {
+        "chapterIndex": 4,
+        "title": "The Contradictory Imperial Shadow",
+        "referenceLabel": "Assessment",
+        "readerQuestion": "Why does Napoleon's legal and social legacy remain deeply polarized?",
+        "objectives": [
+          "Evaluate the introduction of the Napoleonic Code alongside his authoritarian policies.",
+          "Examine the dark reality of his colonial policies and the reinstatement of slavery."
+        ],
+        "approvedFacts": [
+          "He introduced the Napoleonic Code but remains controversial for his authoritarian rule and reinstatement of slavery",
+          "Despite his progressive reforms like abolishing the Spanish Inquisition, Napoleon reinstated slavery in French colonies and banned black people from entering France."
+        ],
+        "anchors": [
+          "Saint Helena",
+          "Grande Armée",
+          "Pasquale Paoli"
+        ]
+      }
+    ]
+  },
+  "triviaCandidates": [
+    {
+      "fact": "Napoleon was the first Corsican to graduate from the prestigious École militaire in Paris, completing a two-year course in just one year due to financial strain.",
+      "surpriseScore": 7,
+      "readMoreTopic": "École militaire"
+    },
+    {
+      "fact": "Though he became the ruler of France, Napoleon's native languages were Corsican and Italian, and he spoke French with a heavy accent his entire life.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Corsican language"
+    },
+    {
+      "fact": "In 1803, Napoleon sold the massive territory of Louisiana to the United States to fund his military campaigns.",
+      "surpriseScore": 7,
+      "readMoreTopic": "Louisiana Purchase"
+    },
+    {
+      "fact": "Napoleon was routinely bullied by his classmates at Brienne-le-Château for his short stature, Corsican accent, and poor French spelling.",
+      "surpriseScore": 6,
+      "readMoreTopic": "Brienne-le-Château"
+    },
+    {
+      "fact": "He was examined during his final military academy trials by the legendary French scientist Pierre-Simon Laplace.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Pierre-Simon Laplace"
+    },
+    {
+      "fact": "Despite his progressive reforms like abolishing the Spanish Inquisition, Napoleon reinstated slavery in French colonies and banned black people from entering France.",
+      "surpriseScore": 9,
+      "readMoreTopic": "Slavery in the French colonies"
+    },
+    {
+      "fact": "Napoleon escaped his first exile on the island of Elba with only about a thousand men and successfully marched on Paris to reclaim his empire.",
+      "surpriseScore": 9,
+      "readMoreTopic": "Hundred Days"
+    },
+    {
+      "fact": "A popular legend claims Napoleon demonstrated his early military genius by leading junior students to victory in a massive schoolyard snowball fight.",
+      "surpriseScore": 6,
+      "readMoreTopic": "Brienne-le-Château"
+    }
+  ],
+  "relatedTopics": [
+    "French Revolution",
+    "Napoleonic Wars",
+    "Coup of 18 Brumaire",
+    "Battle of Austerlitz",
+    "Battle of Waterloo",
+    "Congress of Vienna",
+    "First French Empire",
+    "Hundred Days",
+    "Treaty of Versailles (1768)"
+  ],
+  "confidenceScores": {
+    "resolver": 1,
+    "compiler": 1,
+    "grader": 0.5505393251087031,
+    "overall": 0.94
+  },
+  "qualityAssessment": {
+    "generationMode": "mixed",
+    "fallbackRatio": 0.058823529411764705,
+    "provenanceCoverage": 0.8571428571428571,
+    "placeholderCount": 0,
+    "verifiedFactRatio": 0.2727272727272727,
+    "qualityScore": 94,
+    "confidenceBreakdown": {
+      "provenanceCoverage": 0.8571428571428571,
+      "fieldCoverage": 1,
+      "placeholderPenalty": 1,
+      "fallbackPenalty": 0.9411764705882353,
+      "sourceAgreement": 1,
+      "extractionCompleteness": 1,
+      "factSpecificity": 0.5505393251087031,
+      "graphValidity": 1,
+      "timelineValidity": 1,
+      "validationPenalty": 1
+    },
+    "status": "PARTIAL",
+    "modulesPassing": [
+      "timeline",
+      "cards",
+      "didYouKnow",
+      "relatedTopics",
+      "structuredFactsData",
+      "knowledgeGraph"
+    ],
+    "modulesHidden": [],
+    "reasons": [
+      "all signals above threshold, no placeholder contamination, majority primary generation",
+      "downgraded because lintArtifact() reported validation errors"
+    ]
+  },
+  "stageDiagnostics": [
+    {
+      "stage": "entityResolver.pass1",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1506
+    },
+    {
+      "stage": "compiler",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 8514
+    },
+    {
+      "stage": "knowledgeGraph",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2098
+    },
+    {
+      "stage": "factEvaluator",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": null,
+      "modelValidationAttempted": false,
+      "modelValidationSucceeded": false,
+      "supportedGenerationMethod": false,
+      "requestAttempted": true,
+      "requestSucceeded": false,
+      "failureReason": "Expected ',' or '}' after property value in JSON at position 6913 (line 176 column 25)",
+      "errorCategory": "parser_failure",
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": true,
+      "durationMs": 7580
+    },
+    {
+      "stage": "narrativePlanner",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 4695
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2586
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2532
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2525
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2451
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2170
+    },
+    {
+      "stage": "documentaryWriter.summary",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1897
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1749
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1612
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1334
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1480
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1395
+    },
+    {
+      "stage": "stylePolish",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 8267
+    }
+  ],
+  "checksum": "f123d11ed376f320849071401fce06d777364bca11f54e83783dab3dcdf22158",
+  "dependencyHash": "917beb314837a8199df1f9d9e068bfeafe9a718a19c7b1f1c7b0980eac0dc713",
+  "sourceReferences": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Napoleon%20Bonaparte",
+      "title": "Napoleon Bonaparte"
+    }
+  ],
+  "factScript": {
+    "chapters": [
+      {
+        "chapterTitle": "The Corsican Boyhood",
+        "referenceLabel": "Origins",
+        "questionAnswered": "How did a boy from a Mediterranean island become a French military officer?",
+        "chronologicalPosition": 1,
+        "entities": [
+          "Napoleon Bonaparte",
+          "Carlo Maria Buonaparte",
+          "Maria Letizia Ramolino",
+          "École militaire"
+        ],
+        "dates": [
+          "15 August 1769",
+          "1785"
+        ],
+        "locations": [
+          "Ajaccio, Corsica",
+          "Brienne-le-Château",
+          "Paris, France"
+        ],
+        "people": [
+          "Napoleone di Buonaparte",
+          "Carlo Maria Buonaparte",
+          "Maria Letizia Ramolino"
+        ],
+        "events": [
+          "Birth of Napoleon Bonaparte",
+          "Graduation from the École militaire"
+        ],
+        "cause": "Born to Corsican nobility of Italian descent, Napoleon was sent to French military schools to secure his family's advancement following the French annexation of Corsica.",
+        "effect": "Despite severe bullying and financial hardship, he rapidly completed his elite military education to become the first Corsican artillery officer in the French army.",
+        "keyFacts": [
+          "Born in Ajaccio, Corsica, to parents of Italian noble descent, Carlo Maria Buonaparte and Maria Letizia Ramolino.",
+          "Endured routine bullying by classmates at Brienne-le-Château due to his short stature, Corsican accent, and poor French spelling.",
+          "Graduated as the first Corsican from the prestigious École militaire in Paris, completing the two-year course in just one year due to financial strain."
+        ],
+        "quotes": [],
+        "connections": [
+          "The military training and artillery specialization in Paris prepared him directly for his future role in the Coup of 18 Brumaire."
+        ],
+        "takeaway": "Resilience through adversity forged France's most formidable military commander.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "Seizing the French Republic",
+        "referenceLabel": "Ascension",
+        "questionAnswered": "How did an outsider rise through the ranks to seize absolute political power?",
+        "chronologicalPosition": 2,
+        "entities": [
+          "École militaire",
+          "French Directory",
+          "First Consul"
+        ],
+        "dates": [
+          "1769",
+          "1785",
+          "1799"
+        ],
+        "locations": [
+          "Corsica",
+          "Ajaccio",
+          "Paris"
+        ],
+        "people": [
+          "Napoleon Bonaparte",
+          "Pierre-Simon Laplace"
+        ],
+        "events": [
+          "Coup of 18 Brumaire",
+          "Graduation from École militaire"
+        ],
+        "cause": "An ambitious Corsican outsider leveraged his elite military training and tactical brilliance during a period of extreme political instability in revolutionary France.",
+        "effect": "Napoleon successfully overthrew the French Directory in a coup, establishing himself as the First Consul and absolute ruler of the Republic.",
+        "keyFacts": [
+          "Napoleon returned to his home island of Corsica after graduation to begin his military career.",
+          "He was examined during his final military academy trials by the legendary French scientist Pierre-Simon Laplace.",
+          "Though he became the ruler of France, Napoleon's native languages were Corsican and Italian, and he spoke French with a heavy accent his entire life.",
+          "In 1799, he engineered the Coup of 18 Brumaire against the French Directory to become the First Consul of the Republic."
+        ],
+        "quotes": [],
+        "connections": [
+          "Preceded by his early childhood in Corsica and birth in 1769.",
+          "Succeeded by his self-coronation as Emperor of the French in 1804."
+        ],
+        "takeaway": "An accented outsider weaponized military genius to seize French rule.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "The First French Empire",
+        "referenceLabel": "Zenith",
+        "questionAnswered": "How did Napoleon consolidate his rule and fund his global military ambitions?",
+        "chronologicalPosition": 3,
+        "entities": [
+          "First French Empire",
+          "Louisiana Territory"
+        ],
+        "dates": [
+          "1803",
+          "1804"
+        ],
+        "locations": [
+          "France",
+          "United States",
+          "Louisiana"
+        ],
+        "people": [
+          "Napoleon Bonaparte"
+        ],
+        "events": [
+          "Coup of 18 Brumaire",
+          "Self-coronation of Napoleon",
+          "Louisiana Purchase",
+          "French Revolution"
+        ],
+        "cause": "Napoleon sought absolute domestic authority and urgent financial capital to wage his planned military campaigns across Europe.",
+        "effect": "Napoleon established a hereditary empire in France and successfully financed his grand military campaigns by selling vast North American territories to the United States.",
+        "keyFacts": [
+          "Napoleon rose to power during the French Revolution and consolidated absolute rule by crowning himself Emperor of the French in 1804.",
+          "In 1803, Napoleon sold the massive territory of Louisiana to the United States.",
+          "The strategic sale of the Louisiana territory was executed specifically to fund his global military campaigns."
+        ],
+        "quotes": [],
+        "connections": [
+          "Consolidation of power links to the 1799 Coup of 18 Brumaire where he became First Consul.",
+          "The funding secured in 1803 directly enabled the expansion of the Grande Armée and subsequent European conflicts."
+        ],
+        "takeaway": "Napoleon funded his imperial expansion by selling Louisiana to America.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "The Fall and Return",
+        "referenceLabel": "Downfall",
+        "questionAnswered": "What led to the collapse of his empire and his final defeat?",
+        "chronologicalPosition": 4,
+        "entities": [
+          "Grande Armée"
+        ],
+        "dates": [
+          "1812",
+          "1814",
+          "1815"
+        ],
+        "locations": [
+          "Russia",
+          "Moscow",
+          "Elba",
+          "Paris",
+          "Waterloo",
+          "Saint Helena"
+        ],
+        "people": [
+          "Napoleon Bonaparte"
+        ],
+        "events": [
+          "Invasion of Russia",
+          "War of the Sixth Coalition",
+          "First Abdication",
+          "Escape from Elba",
+          "Battle of Waterloo"
+        ],
+        "cause": "Napoleon's disastrous invasion of Russia in 1812 decimated his military strength, leaving him vulnerable to the Sixth Coalition.",
+        "effect": "Following his final defeat at Waterloo, Napoleon was permanently exiled to the remote island of Saint Helena.",
+        "keyFacts": [
+          "Napoleon launched a massive invasion of Russia in 1812, briefly occupying Moscow before suffering a catastrophic winter retreat.",
+          "Following the War of the Sixth Coalition, Napoleon abdicated the throne in 1814 and was exiled to the island of Elba.",
+          "Napoleon escaped his first exile on Elba with only about a thousand men and successfully marched on Paris to reclaim his empire.",
+          "Napoleon was permanently defeated at the Battle of Waterloo in 1815, leading to his final exile to Saint Helena."
+        ],
+        "quotes": [],
+        "connections": [
+          "The rise of the First French Empire in 1804",
+          "The global study of Napoleonic military tactics"
+        ],
+        "takeaway": "A disastrous Russian campaign led to Napoleon's final downfall.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "The Contradictory Imperial Shadow",
+        "referenceLabel": "Assessment",
+        "questionAnswered": "Why does Napoleon's legal and social legacy remain deeply polarized?",
+        "chronologicalPosition": 5,
+        "entities": [
+          "Napoleonic Code",
+          "Spanish Inquisition"
+        ],
+        "dates": [
+          "1804"
+        ],
+        "locations": [
+          "France",
+          "French colonies"
+        ],
+        "people": [
+          "Napoleon Bonaparte"
+        ],
+        "events": [
+          "Reinstatement of slavery",
+          "Abolition of the Spanish Inquisition"
+        ],
+        "cause": "Napoleon sought to consolidate absolute power and stabilize the French empire through centralized legal reforms and colonial economic control.",
+        "effect": "His actions created a deeply polarized legacy that paired progressive European legal reforms with brutal colonial subjugation and systemic racism.",
+        "keyFacts": [
+          "Napoleon introduced the Napoleonic Code to centralize French state power and establish civil reforms.",
+          "He abolished the Spanish Inquisition and emancipated religious minorities across Western Europe.",
+          "He reinstated slavery in French colonies and banned black and mulatto people from entering France.",
+          "His authoritarian policies reduced civil rights for women and children and abolished the free press."
+        ],
+        "quotes": [],
+        "connections": [
+          "The transition from the Coup of 18 Brumaire to the consolidation of the First French Empire"
+        ],
+        "takeaway": "Napoleon's progressive reforms coexisted with brutal, authoritarian oppression.",
+        "insufficientData": false
+      }
+    ]
+  },
+  "briefSummaryProvenance": [
+    {
+      "sentence": "Ajaccio, Corsica, was the birthplace of Napoleon Bonaparte, born to parents of Italian noble descent .",
+      "fact": "Chapter 1: Born in Ajaccio, Corsica, to parents of Italian noble descent, Carlo Maria Buonaparte and Maria Letizia Ramolino."
+    },
+    {
+      "sentence": "At Brienne-le-Château, classmates routinely bullied him for his short stature, Corsican accent, and poor French spelling .",
+      "fact": "Chapter 1: Endured routine bullying by classmates at Brienne-le-Château due to his short stature, Corsican accent, and poor French spelling."
+    },
+    {
+      "sentence": "Financial strain forced him to complete his two-year course at Paris's École militaire in just one year .",
+      "fact": "Chapter 1: Graduated as the first Corsican from the prestigious École militaire in Paris, completing the two-year course in just one year due to financial strain."
+    },
+    {
+      "sentence": "He graduated as the first Corsican from the prestigious academy .",
+      "fact": "Chapter 1: Graduated as the first Corsican from the prestigious École militaire in Paris, completing the two-year course in just one year due to financial strain."
+    },
+    {
+      "sentence": "Napoleon returned to his home island of Corsica after graduation to begin his military career .",
+      "fact": "Chapter 2: Napoleon returned to his home island of Corsica after graduation to begin his military career."
+    },
+    {
+      "sentence": "In 1799, he engineered the Coup of 18 Brumaire against the French Directory to become First Consul .",
+      "fact": "Chapter 2: In 1799, he engineered the Coup of 18 Brumaire against the French Directory to become the First Consul of the Republic."
+    },
+    {
+      "sentence": "He consolidated absolute rule by crowning himself Emperor of the French in 1804 .",
+      "fact": "Chapter 3: Napoleon rose to power during the French Revolution and consolidated absolute rule by crowning himself Emperor of the French in 1804."
+    }
+  ],
+  "validationStatus": {
+    "passed": false,
+    "errors": [
+      "Sentence provenance is incomplete: only 81% of sentences are mapped to facts"
+    ],
+    "warnings": [],
+    "checkedRules": {
+      "ontology_match": true,
+      "required_fields_exist": true,
+      "timeline_non_empty": true,
+      "timeline_count_bounds": true,
+      "timeline_chronological": true,
+      "graph_has_triples": true,
+      "graph_connected": true,
+      "graph_no_synthetic_nodes": true,
+      "named_entities_non_empty": true,
+      "no_weak_facts": true,
+      "no_duplicate_facts": true,
+      "no_duplicate_sentences": true,
+      "no_placeholder_wording": true,
+      "generic_wording_check": true,
+      "paragraph_length_limit": true,
+      "unique_chapter_titles": true,
+      "concrete_dates_names_present": true,
+      "no_repeated_phrases": true,
+      "no_timeline_milestone_placeholder": true,
+      "reader_question_quality": true,
+      "did_you_know_length_ok": true,
+      "sentence_provenance_ok": false,
+      "no_abstract_writing": true,
+      "documentary_alternating_rule": true,
+      "fact_density_met": true,
+      "curiosity_score_ok": true,
+      "documentary_score_ok": true,
+      "resolver_confidence_ok": true,
+      "compiler_confidence_ok": true,
+      "overall_confidence_ok": true
+    },
+    "timestamp": "2026-07-11T08:06:06.535Z"
+  }
+}

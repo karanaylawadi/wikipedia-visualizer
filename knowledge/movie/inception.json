@@ -1,7 +1,7 @@
 {
-  "version": "16.0",
-  "compilerVersion": "v17.0",
-  "ontologyVersion": "v17.0",
+  "version": "18.0",
+  "compilerVersion": "v18.0",
+  "ontologyVersion": "v18.0",
   "wikipediaRevision": "rev-1.0",
   "wikidataRevision": "Q25188",
   "ontology": {
@@ -12,186 +12,282 @@
     ]
   },
   "structuredFacts": {
-    "director": "Compiled detail for director",
+    "director": [
+      "Christopher Nolan"
+    ],
     "cast": [
-      "Significant Item 1",
-      "Significant Item 2"
+      {
+        "actor": "Leonardo DiCaprio",
+        "character": "Dom Cobb"
+      },
+      {
+        "actor": "Ken Watanabe",
+        "character": "Saito"
+      },
+      {
+        "actor": "Joseph Gordon-Levitt",
+        "character": "Arthur"
+      },
+      {
+        "actor": "Marion Cotillard",
+        "character": "Mal"
+      },
+      {
+        "actor": "Elliot Page",
+        "character": "Ariadne"
+      },
+      {
+        "actor": "Tom Hardy",
+        "character": "Eames"
+      },
+      {
+        "actor": "Cillian Murphy",
+        "character": "Robert Fischer"
+      },
+      {
+        "actor": "Tom Berenger",
+        "character": "Peter Browning"
+      },
+      {
+        "actor": "Dileep Rao",
+        "character": "Yusuf"
+      },
+      {
+        "actor": "Michael Caine",
+        "character": "Stephen Miles"
+      }
     ],
-    "composer": "Compiled detail for composer",
+    "composer": [
+      "Hans Zimmer"
+    ],
     "themes": [
-      "Significant Item 1",
-      "Significant Item 2"
+      "Lucid dreaming",
+      "Subconscious infiltration",
+      "Grief and guilt",
+      "Reality vs. illusion",
+      "Corporate espionage"
     ],
-    "awards": "Compiled detail for awards",
-    "reception": "Compiled detail for reception",
-    "legacy": "Compiled detail for legacy",
+    "awards": [
+      {
+        "award": "Academy Award for Best Cinematography",
+        "status": "Won",
+        "ceremony": "83rd Academy Awards"
+      },
+      {
+        "award": "Academy Award for Best Sound Editing",
+        "status": "Won",
+        "ceremony": "83rd Academy Awards"
+      },
+      {
+        "award": "Academy Award for Best Sound Mixing",
+        "status": "Won",
+        "ceremony": "83rd Academy Awards"
+      },
+      {
+        "award": "Academy Award for Best Visual Effects",
+        "status": "Won",
+        "ceremony": "83rd Academy Awards"
+      },
+      {
+        "award": "Academy Award for Best Picture",
+        "status": "Nominated",
+        "ceremony": "83rd Academy Awards"
+      },
+      {
+        "award": "Academy Award for Best Original Screenplay",
+        "status": "Nominated",
+        "ceremony": "83rd Academy Awards"
+      },
+      {
+        "award": "Academy Award for Best Art Direction",
+        "status": "Nominated",
+        "ceremony": "83rd Academy Awards"
+      },
+      {
+        "award": "Academy Award for Best Original Score",
+        "status": "Nominated",
+        "ceremony": "83rd Academy Awards"
+      }
+    ],
+    "reception": [
+      "Grossed $839 million worldwide",
+      "Fourth-highest-grossing film of 2010",
+      "Considered one of the best films of the 2010s"
+    ],
+    "legacy": [
+      "Selected for preservation in the United States National Film Registry by the Library of Congress in 2025"
+    ],
     "title": "Inception",
     "subtitle": "2010 film by Christopher Nolan",
     "leadParagraph": "Inception is a 2010  science fiction action film written and directed by Christopher Nolan, who also produced it with Emma Thomas, his wife. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets. He is offered a chance to have his criminal history erased as payment for the implantation of another person's idea into a target's subconscious. The ensemble cast includes Ken Watanabe, Joseph Gordon-Levitt, Marion Cotillard, Elliot Page, Tom Hardy, Cillian Murphy, Tom Berenger, Dileep Rao, and Michael Caine.\nAfter the completion of Insomnia in 2002, Nolan presented to Warner Bros. a written 80-page treatment for a horror film envisioning \"dream stealers,\" based on lucid dreaming. Deciding he needed more experience before tackling a production of this magnitude and complexity, Nolan shelved the project and instead worked on Batman Begins (2005), The Prestige (2006), and The Dark Knight (2008). The treatment was revised over six months and was purchased by Warner Bros. in February 2009. Inception was filmed in six countries, beginning in Tokyo on June 19 and ending in Canada on November 22. Its official budget was $160 million, split between Warner Bros. and Legendary. Nolan's reputation and success with The Dark Knight helped secure the film's US$100 million in advertising expenditure.\nInception's premiere was held in London on July 8, 2010; it was released in both conventional and IMAX theaters beginning on July 16, 2010. Inception grossed $839 million worldwide, becoming the fourth-highest-grossing film of 2010. Considered one of the best films of the 2010s, Inception, among its numerous accolades, won four Oscars (Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects) and was nominated for four more (Best Picture, Best Original Screenplay, Best Art Direction, Best Original Score) at the 83rd Academy Awards. The Library of Congress selected Inception for preservation in the United States National Film Registry's class of 2025 for being \"culturally, historically or aesthetically significant\".",
-    "briefSummary": "Inception records confirm that Inception is a 2010 science fiction action film written and directed. Inception records confirm that Inception's premiere was held in London on July 8, 2010; it. Inception records confirm that Cobb accepts the offer and assembles his team: a forger named. Inception remains study topic showing that final summary explaining the legacy.",
+    "briefSummary": "Written and directed by Christopher Nolan, the 2010 science fiction action film Inception stars Leonardo DiCaprio as Dom Cobb, a professional thief who steals information directly from the subconscious. The plot intensifies when Saito hires Cobb and his partner Arthur to perform inception on Robert Fischer, aiming to dissolve his father's corporate empire. To synchronize their awakening across multiple dream levels, the team relies on Édith Piaf's French song 'Non, je ne regrette rien' as a vital audio cue. Following its theatrical release on July 16, 2010, the film grossed $839 million worldwide, culminating in its 2025 selection by the Library of Congress for permanent preservation in the United States National Film Registry.",
     "cards": [
       {
-        "title": "Inception's Story",
-        "summary": "Inception records verify that Inception is a 2010 science fiction action film written and directed. This motivated early research explaining why motivating factors behind early phases of development. Subsequent investigations established that After the completion of Insomnia in 2002, Nolan presented to Warner. Because of these dynamics, details show initial events showing transition in the subject. Inception data confirms that early outcomes and related findings. These changes established the basis for fundamental lessons from this period.",
-        "referenceLabel": "Inception's",
-        "readerQuestion": "What represents the starting motivation behind Story?",
-        "keyTakeaway": "fundamental lessons from this period",
+        "title": "Inside the Multi-Layered Subconscious",
+        "summary": "To perform inception on corporate heir Robert Fischer, Saito hires extractors Dom Cobb and Arthur. Planting an idea directly into Fischer's subconscious mind requires high-stakes corporate espionage of the highest order. The team coordinates their escape using Édith Piaf's song 'Non, je ne regrette rien' as a vital signal. This auditory cue synchronizes their awakening across multiple collapsing dream levels. Meanwhile, Cobb battles the hostile projection of his deceased wife, Mal. Ultimately, navigating these shared dreams demands flawless timing to survive deep psychological dangers.",
+        "referenceLabel": "Story",
+        "readerQuestion": "How do Dom Cobb and his team navigate the dangerous, shifting rules of shared dreaming?",
+        "keyTakeaway": "Shared dreaming requires precise synchronization amid deep psychological dangers.",
         "provenance": [
           {
-            "sentence": "Inception records verify that Inception is a 2010 science fiction action film written and directed.",
-            "fact": "Inception is a 2010 science fiction action film written and directed"
+            "sentence": "To perform inception on corporate heir Robert Fischer, Saito hires extractors Dom Cobb and Arthur.",
+            "fact": "Dom Cobb and Arthur are hired by Saito to perform 'inception' on Robert Fischer to dissolve his father's empire"
           },
           {
-            "sentence": "This motivated early research explaining why motivating factors behind early phases of development.",
-            "fact": "motivating factors behind early phases of development"
+            "sentence": "Planting an idea directly into Fischer's subconscious mind requires high-stakes corporate espionage of the highest order.",
+            "fact": "Saito hires Dom Cobb and Arthur to perform the complex task of inception on corporate heir Robert Fischer."
           },
           {
-            "sentence": "Subsequent investigations established that After the completion of Insomnia in 2002, Nolan presented to Warner.",
-            "fact": "After the completion of Insomnia in 2002, Nolan presented to Warner"
+            "sentence": "The team coordinates their escape using Édith Piaf's song 'Non, je ne regrette rien' as a vital signal.",
+            "fact": "The French song 'Non, je ne regrette rien' by Édith Piaf is used as the audio cue, or 'kick', to synchronize awakening across dream levels"
           },
           {
-            "sentence": "Because of these dynamics, details show initial events showing transition in the subject.",
-            "fact": "initial events showing transition in the subject"
+            "sentence": "This auditory cue synchronizes their awakening across multiple collapsing dream levels.",
+            "fact": "The team must navigate deep, unstable dream levels while Cobb battles the disruptive projections of his late wife."
           },
           {
-            "sentence": "Inception data confirms that early outcomes and related findings.",
-            "fact": "early outcomes and related findings"
+            "sentence": "Meanwhile, Cobb battles the hostile projection of his deceased wife, Mal.",
+            "fact": "Cobb struggles with the projection of his deceased wife, Mal, who committed suicide after losing her grip on reality"
           },
           {
-            "sentence": "These changes established the basis for fundamental lessons from this period.",
-            "fact": "fundamental lessons from this period"
+            "sentence": "Ultimately, navigating these shared dreams demands flawless timing to survive deep psychological dangers.",
+            "fact": "Shared dreaming requires precise synchronization amid deep psychological dangers."
           }
         ]
       },
       {
-        "title": "Inside the Production of Inception",
-        "summary": "Historical records confirm that Inception's premiere was held in London on July 8, 2010; it. This inspired further exploration showing why key drivers behind the rising influence. Later studies verified that Dom Cobb and Arthur are \"extractors\" who perform corporate espionage using. Following these events, analysts observed that consequent progress seen during this phase. Scientific tracking confirms that secondary attributes and timeline events. This transition created the groundwork for primary insights on the rise.",
-        "referenceLabel": "Inside",
-        "readerQuestion": "Which factors influenced early discoveries of Production?",
-        "keyTakeaway": "primary insights on the rise",
+        "title": "Architecting the Gravity Defying Heist",
+        "summary": "In 2002, Christopher Nolan pitched Inception to Warner Bros. as a horror film about dream stealers . Nolan sought to expand this eighty-page treatment into a massive, multi-layered sci-fi heist action film . Actor Joseph Gordon-Levitt performed all but one of his own stunts during the gravity-defying hallway fight . This transition resulted in a highly complex global production featuring groundbreaking physical stunt work and custom-tailored roles . Nolan wrote the character of Saito specifically for Ken Watanabe to collaborate again after Batman Begins . Ultimately, Nolan evolved a horror pitch into a physical action masterpiece .",
+        "referenceLabel": "Production",
+        "readerQuestion": "How did Christopher Nolan transition his initial horror concept into a complex, physical production?",
+        "keyTakeaway": "Nolan evolved a horror pitch into a physical action masterpiece.",
         "provenance": [
           {
-            "sentence": "Historical records confirm that Inception's premiere was held in London on July 8, 2010; it.",
-            "fact": "Inception's premiere was held in London on July 8, 2010; it"
+            "sentence": "In 2002, Christopher Nolan pitched Inception to Warner Bros.",
+            "fact": "Christopher Nolan originally pitched Inception to Warner Bros. in 2002 as a horror film about 'dream stealers' rather than a sci-fi heist action movie."
           },
           {
-            "sentence": "This inspired further exploration showing why key drivers behind the rising influence.",
-            "fact": "key drivers behind the rising influence"
+            "sentence": "as a horror film about dream stealers .",
+            "fact": "Christopher Nolan originally pitched Inception to Warner Bros. in 2002 as a horror film about 'dream stealers' rather than a sci-fi heist action movie."
           },
           {
-            "sentence": "Later studies verified that Dom Cobb and Arthur are \"extractors\" who perform corporate espionage using.",
-            "fact": "Dom Cobb and Arthur are \"extractors\" who perform corporate espionage using"
+            "sentence": "Nolan sought to expand this eighty-page treatment into a massive, multi-layered sci-fi heist action film .",
+            "fact": "Christopher Nolan sought to expand his initial 80-page horror treatment about dream stealers into a massive, multi-layered sci-fi heist action film."
           },
           {
-            "sentence": "Following these events, analysts observed that consequent progress seen during this phase.",
-            "fact": "consequent progress seen during this phase"
+            "sentence": "Actor Joseph Gordon-Levitt performed all but one of his own stunts during the gravity-defying hallway fight .",
+            "fact": "Joseph Gordon-Levitt performed all but one of his own stunt scenes during the highly complex, gravity-defying hallway fight sequences."
           },
           {
-            "sentence": "Scientific tracking confirms that secondary attributes and timeline events.",
-            "fact": "secondary attributes and timeline events"
+            "sentence": "This transition resulted in a highly complex global production featuring groundbreaking physical stunt work and custom-tailored roles .",
+            "fact": "The transition resulted in a highly complex global production featuring groundbreaking physical stunt work and custom-tailored character roles."
           },
           {
-            "sentence": "This transition created the groundwork for primary insights on the rise.",
-            "fact": "primary insights on the rise"
+            "sentence": "Nolan wrote the character of Saito specifically for Ken Watanabe to collaborate again after Batman Begins .",
+            "fact": "Ken Watanabe's character, Saito, was written specifically for him because Nolan wanted to work with him again after Batman Begins."
+          },
+          {
+            "sentence": "Ultimately, Nolan evolved a horror pitch into a physical action masterpiece .",
+            "fact": "Nolan evolved a horror pitch into a physical action masterpiece."
           }
         ]
       },
       {
-        "title": "The Release of Inception",
-        "summary": "Primary documentation reveals that Cobb accepts the offer and assembles his team: a forger named. This led observers to trace why pivotal elements supporting the peak achievements. Archival reviews showed that The team abducts Robert in a city on the first level,. With these developments, researchers saw that resultant breakthroughs related directly to these successes. Detailed observations show that peak milestones and direct connections. This structure formed the design for core takeaways regarding this era.",
-        "referenceLabel": "The",
-        "readerQuestion": "How do key chemical processes behave during Release?",
-        "keyTakeaway": "core takeaways regarding this era",
+        "title": "Casting the Dream",
+        "summary": "Brad Pitt and Will Smith were the initial choices for the lead role of Dom Cobb . Christopher Nolan needed to build his blockbuster directing credentials and resolve major casting conflicts before bringing his complex dream heist concept to life . James Franco was originally in talks to play Arthur but had to pull out due to scheduling conflicts . The strategic delays and casting adjustments resulted in a highly refined script and a critically acclaimed final ensemble cast . Christopher Nolan shelved the project for several years to gain experience directing massive, complex productions . Strategic delays and casting shifts created the perfect cinematic team .",
+        "referenceLabel": "Cast",
+        "readerQuestion": "What major casting changes and strategic delays shaped the final cinematic team?",
+        "keyTakeaway": "Strategic delays and casting shifts created the perfect cinematic team.",
         "provenance": [
           {
-            "sentence": "Primary documentation reveals that Cobb accepts the offer and assembles his team: a forger named.",
-            "fact": "Cobb accepts the offer and assembles his team: a forger named"
+            "sentence": "Brad Pitt and Will Smith were the initial choices for the lead role of Dom Cobb .",
+            "fact": "Brad Pitt and Will Smith were the initial choices for the lead role of Dom Cobb, with Smith turning it down because he did not understand the script."
           },
           {
-            "sentence": "This led observers to trace why pivotal elements supporting the peak achievements.",
-            "fact": "pivotal elements supporting the peak achievements"
+            "sentence": "Christopher Nolan needed to build his blockbuster directing credentials and resolve major casting conflicts before bringing his complex dream heist concept to life .",
+            "fact": "Christopher Nolan needed to build his blockbuster directing credentials and resolve major casting conflicts before bringing his complex dream heist concept to life."
           },
           {
-            "sentence": "Archival reviews showed that The team abducts Robert in a city on the first level,.",
-            "fact": "The team abducts Robert in a city on the first level,"
+            "sentence": "James Franco was originally in talks to play Arthur but had to pull out due to scheduling conflicts .",
+            "fact": "James Franco was originally in talks to play Arthur but had to pull out of the production due to scheduling conflicts, leading to the casting of Joseph Gordon-Levitt."
           },
           {
-            "sentence": "With these developments, researchers saw that resultant breakthroughs related directly to these successes.",
-            "fact": "resultant breakthroughs related directly to these successes"
+            "sentence": "The strategic delays and casting adjustments resulted in a highly refined script and a critically acclaimed final ensemble cast .",
+            "fact": "The strategic delays and casting adjustments resulted in a highly refined script and a critically acclaimed final ensemble cast led by Leonardo DiCaprio and Joseph Gordon-Levitt."
           },
           {
-            "sentence": "Detailed observations show that peak milestones and direct connections.",
-            "fact": "peak milestones and direct connections"
+            "sentence": "Christopher Nolan shelved the project for several years to gain experience directing massive, complex productions .",
+            "fact": "Christopher Nolan shelved the project for several years to gain experience directing massive, complex productions like Batman Begins, The Prestige, and The Dark Knight."
           },
           {
-            "sentence": "This structure formed the design for core takeaways regarding this era.",
-            "fact": "core takeaways regarding this era"
+            "sentence": "Strategic delays and casting shifts created the perfect cinematic team .",
+            "fact": "Strategic delays and casting shifts created the perfect cinematic team."
           }
         ]
       },
       {
-        "title": "How the World Received Inception",
-        "summary": "Factual chronicles state that Cobb explains to Ariadne that he and Mal entered Limbo while. This drove thorough inquiries explaining why underlying issues prompting the challenges faced. Recent compilations proved that Yusuf drives the team around the first level as they are. Under these conditions, experts noted that resulting shifts that defined the response taken. Ontology patterns map that additional challenges and resolved queries. This transition shaped the modern standard for crucial lessons on these struggles.",
-        "referenceLabel": "How",
-        "readerQuestion": "Why do light steps trigger under Reception?",
-        "keyTakeaway": "crucial lessons on these struggles",
+        "title": "The Architecture of Dreams",
+        "summary": "Director Christopher Nolan released his original science fiction action film, Inception, on July 16, 2010. Audiences flocked to theaters, drawn by a highly complex heist thriller starring Leonardo DiCaprio. DiCaprio portrayed Dom Cobb, a skilled thief who extracts valuable secrets from deep within the subconscious. This mind-bending premise fueled immense critical acclaim and earned the production four Academy Awards. Ultimately, the film grossed $839 million worldwide to become the fourth-highest-grossing release of the year. Its triumph proved that challenging, original sci-fi can achieve massive global box office success.",
+        "referenceLabel": "Release",
+        "readerQuestion": "How did a complex original sci-fi film capture the global box office in the summer of 2010?",
+        "keyTakeaway": "Original sci-fi achieved massive global box office success.",
         "provenance": [
           {
-            "sentence": "Factual chronicles state that Cobb explains to Ariadne that he and Mal entered Limbo while.",
-            "fact": "Cobb explains to Ariadne that he and Mal entered Limbo while"
+            "sentence": "Director Christopher Nolan released his original science fiction action film, Inception, on July 16, 2010.",
+            "fact": "Inception is a 2010 science fiction action film written and directed by Christopher Nolan."
           },
           {
-            "sentence": "This drove thorough inquiries explaining why underlying issues prompting the challenges faced.",
-            "fact": "underlying issues prompting the challenges faced"
+            "sentence": "Audiences flocked to theaters, drawn by a highly complex heist thriller starring Leonardo DiCaprio.",
+            "fact": "Christopher Nolan directed a highly original, complex science fiction action film starring Leonardo DiCaprio as a thief who steals information from the subconscious."
           },
           {
-            "sentence": "Recent compilations proved that Yusuf drives the team around the first level as they are.",
-            "fact": "Yusuf drives the team around the first level as they are"
+            "sentence": "DiCaprio portrayed Dom Cobb, a skilled thief who extracts valuable secrets from deep within the subconscious.",
+            "fact": "The film stars Leonardo DiCaprio as Dom Cobb, a professional thief who steals information from the subconscious."
           },
           {
-            "sentence": "Under these conditions, experts noted that resulting shifts that defined the response taken.",
-            "fact": "resulting shifts that defined the response taken"
+            "sentence": "This mind-bending premise fueled immense critical acclaim and earned the production four Academy Awards.",
+            "fact": "The film became a massive critical and commercial success, grossing hundreds of millions of dollars and securing multiple Academy Awards."
           },
           {
-            "sentence": "Ontology patterns map that additional challenges and resolved queries.",
-            "fact": "additional challenges and resolved queries"
+            "sentence": "Ultimately, the film grossed $839 million worldwide to become the fourth-highest-grossing release of the year.",
+            "fact": "Following its theatrical release on July 16, 2010, the film grossed $839 million worldwide, becoming the fourth-highest-grossing film of 2010."
           },
           {
-            "sentence": "This transition shaped the modern standard for crucial lessons on these struggles.",
-            "fact": "crucial lessons on these struggles"
+            "sentence": "Its triumph proved that challenging, original sci-fi can achieve massive global box office success.",
+            "fact": "Original sci-fi achieved massive global box office success."
           }
         ]
       },
       {
-        "title": "The Enduring Legacy of Inception",
-        "summary": "Verified sources show that In the third level, the team infiltrates an alpine fortress with. This prompted key factions to identify why lasting forces establishing the legacy left behind. Independent reviews confirmed that Revived into the third level, Robert discovers the planted idea: his. Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject. Statistical records track that final reflections and study conclusions. This layout outlines the final outcome of final summary explaining the legacy.",
-        "referenceLabel": "The",
-        "readerQuestion": "Who validates the final outcomes regarding Legacy?",
-        "keyTakeaway": "final summary explaining the legacy",
+        "title": "Preserving a Modern Masterpiece",
+        "summary": "At the 83rd Academy Awards, Inception triumphed with four wins, including Best Cinematography and Best Visual Effects. Its groundbreaking technical execution and massive global box office success quickly established the film as a defining cultural phenomenon. Alongside these wins, it earned four additional nominations, competing for both Best Picture and Best Original Screenplay. These combined achievements paved the way for its eventual induction into the National Film Registry, cementing its status as a modern masterpiece. In 2025, the Library of Congress officially selected the film for permanent preservation within this prestigious archive. Ultimately, this blend of technical mastery and cultural impact secured its enduring place in cinematic history.",
+        "referenceLabel": "Legacy",
+        "readerQuestion": "How did the film's technical achievements and cultural impact secure its place in film history?",
+        "keyTakeaway": "Technical mastery and cultural impact secured its permanent cinematic legacy.",
         "provenance": [
           {
-            "sentence": "Verified sources show that In the third level, the team infiltrates an alpine fortress with.",
-            "fact": "In the third level, the team infiltrates an alpine fortress with"
+            "sentence": "At the 83rd Academy Awards, Inception triumphed with four wins, including Best Cinematography and Best Visual Effects.",
+            "fact": "Inception won four Academy Awards at the 83rd ceremony, specifically for Best Cinematography, Best Sound Editing, Best Sound Mixing, and Best Visual Effects"
           },
           {
-            "sentence": "This prompted key factions to identify why lasting forces establishing the legacy left behind.",
-            "fact": "lasting forces establishing the legacy left behind"
+            "sentence": "Its groundbreaking technical execution and massive global box office success quickly established the film as a defining cultural phenomenon.",
+            "fact": "The film's groundbreaking technical execution and massive global box office success established it as a defining cultural milestone of the 2010s."
           },
           {
-            "sentence": "Independent reviews confirmed that Revived into the third level, Robert discovers the planted idea: his.",
-            "fact": "Revived into the third level, Robert discovers the planted idea: his"
+            "sentence": "Alongside these wins, it earned four additional nominations, competing for both Best Picture and Best Original Screenplay.",
+            "fact": "The film was nominated for four additional Academy Awards, including Best Picture, Best Original Screenplay, Best Art Direction, and Best Original Score"
           },
           {
-            "sentence": "Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject.",
-            "fact": "long-term outcomes that shaped the memory of the subject"
+            "sentence": "These combined achievements paved the way for its eventual induction into the National Film Registry, cementing its status as a modern masterpiece.",
+            "fact": "The film secured permanent preservation in the National Film Registry and cemented its legacy as a modern cinematic masterpiece."
           },
           {
-            "sentence": "Statistical records track that final reflections and study conclusions.",
-            "fact": "final reflections and study conclusions"
+            "sentence": "In 2025, the Library of Congress officially selected the film for permanent preservation within this prestigious archive.",
+            "fact": "The Library of Congress selected Inception for permanent preservation in the United States National Film Registry in 2025"
           },
           {
-            "sentence": "This layout outlines the final outcome of final summary explaining the legacy.",
-            "fact": "final summary explaining the legacy"
+            "sentence": "Ultimately, this blend of technical mastery and cultural impact secured its enduring place in cinematic history.",
+            "fact": "Technical mastery and cultural impact secured its permanent cinematic legacy."
           }
         ]
       }
@@ -199,98 +295,135 @@
   },
   "namedEntities": [
     {
-      "name": "Inception",
+      "name": "Christopher Nolan",
+      "type": "Person",
+      "description": "British-American filmmaker who wrote, directed, and co-produced Inception."
+    },
+    {
+      "name": "Emma Thomas",
+      "type": "Person",
+      "description": "Film producer and wife of Christopher Nolan who co-produced Inception."
+    },
+    {
+      "name": "Leonardo DiCaprio",
+      "type": "Person",
+      "description": "American actor who stars as the professional thief Dom Cobb."
+    },
+    {
+      "name": "Warner Bros.",
+      "type": "Org",
+      "description": "American film studio that purchased, co-financed, and distributed Inception."
+    },
+    {
+      "name": "Legendary Pictures",
+      "type": "Org",
+      "description": "American media company that co-financed the film's $160 million budget."
+    },
+    {
+      "name": "Library of Congress",
+      "type": "Org",
+      "description": "The research library that officially selected Inception for preservation in 2025."
+    },
+    {
+      "name": "National Film Registry",
       "type": "Concept",
-      "description": "The primary resolved subject."
+      "description": "United States registry of culturally, historically, or aesthetically significant films."
+    },
+    {
+      "name": "Tokyo",
+      "type": "Place",
+      "description": "The capital city of Japan where principal photography for the film began."
     }
   ],
   "knowledgeGraph": [
     {
-      "subject": "Compiled detail for director",
+      "subject": "Christopher Nolan",
       "predicate": "DIRECTED",
       "object": "Inception"
     },
     {
-      "subject": "Compiled detail for composer",
-      "predicate": "COMPOSED",
+      "subject": "Emma Thomas",
+      "predicate": "PRODUCED",
       "object": "Inception"
     },
     {
-      "subject": "Significant Item 1",
+      "subject": "Leonardo DiCaprio",
       "predicate": "STARRED_IN",
       "object": "Inception"
     },
     {
-      "subject": "Significant Item 2",
-      "predicate": "STARRED_IN",
+      "subject": "Hans Zimmer",
+      "predicate": "COMPOSED_MUSIC_FOR",
       "object": "Inception"
     },
     {
-      "subject": "Significant Item 1",
-      "predicate": "THEME_OF",
+      "subject": "Warner Bros.",
+      "predicate": "DISTRIBUTED",
       "object": "Inception"
     },
     {
-      "subject": "Significant Item 2",
+      "subject": "Legendary Pictures",
+      "predicate": "CO_FINANCED",
+      "object": "Inception"
+    },
+    {
+      "subject": "Tokyo",
+      "predicate": "FILMING_LOCATION_OF",
+      "object": "Inception"
+    },
+    {
+      "subject": "Lucid dreaming",
       "predicate": "THEME_OF",
       "object": "Inception"
     },
     {
       "subject": "Inception",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_1"
+      "predicate": "WON_AWARD",
+      "object": "Academy Award for Best Visual Effects"
     },
     {
       "subject": "Inception",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_2"
+      "predicate": "NOMINATED_FOR",
+      "object": "Academy Award for Best Picture"
+    },
+    {
+      "subject": "Library of Congress",
+      "predicate": "PRESERVES",
+      "object": "Inception"
+    },
+    {
+      "subject": "Inception",
+      "predicate": "ADDED_TO",
+      "object": "National Film Registry"
     }
   ],
   "timeline": [
     {
-      "year": "2010",
-      "headline": "Pivotal era in 2010",
-      "description": "Inception underwent core changes and reached major development in the year 2010",
-      "importance": 8,
-      "connections": [
-        "Inception"
-      ],
-      "image": null
-    },
-    {
       "year": "2002",
-      "headline": "Pivotal era in 2002",
-      "description": "Inception underwent core changes and reached major development in the year 2002",
-      "importance": 8,
+      "headline": "Nolan Presents Initial Horror Treatment",
+      "description": "Christopher Nolan presents an 80-page treatment about dream stealers to Warner Bros. after completing Insomnia.",
+      "importance": 7,
       "connections": [
-        "Inception"
+        "Christopher Nolan",
+        "Warner Bros."
       ],
       "image": null
     },
     {
-      "year": "2005",
-      "headline": "Pivotal era in 2005",
-      "description": "Inception underwent core changes and reached major development in the year 2005",
+      "year": "2009",
+      "headline": "Warner Bros. Purchases Revised Script",
+      "description": "Warner Bros. purchases the revised script in February 2009 after Nolan spent six months revising it.",
       "importance": 8,
       "connections": [
-        "Inception"
+        "Christopher Nolan",
+        "Warner Bros."
       ],
       "image": null
     },
     {
-      "year": "2006",
-      "headline": "Pivotal era in 2006",
-      "description": "Inception underwent core changes and reached major development in the year 2006",
-      "importance": 8,
-      "connections": [
-        "Inception"
-      ],
-      "image": null
-    },
-    {
-      "year": "2008",
-      "headline": "Pivotal era in 2008",
-      "description": "Inception underwent core changes and reached major development in the year 2008",
+      "year": "2009",
+      "headline": "Principal Photography Begins in Tokyo",
+      "description": "Filming begins on June 19, 2009, in Tokyo, eventually spanning six different countries.",
       "importance": 8,
       "connections": [
         "Inception"
@@ -299,155 +432,238 @@
     },
     {
       "year": "2009",
-      "headline": "Pivotal era in 2009",
-      "description": "Inception underwent core changes and reached major development in the year 2009",
+      "headline": "Production Wraps in Canada",
+      "description": "Principal photography officially concludes in Canada on November 22, 2009.",
+      "importance": 7,
+      "connections": [
+        "Inception"
+      ],
+      "image": null
+    },
+    {
+      "year": "2010",
+      "headline": "World Premiere Held in London",
+      "description": "The film celebrates its official world premiere in London on July 8, 2010.",
       "importance": 8,
       "connections": [
         "Inception"
+      ],
+      "image": null
+    },
+    {
+      "year": "2010",
+      "headline": "Theatrical Release and Box Office",
+      "description": "Released on July 16, 2010, the film goes on to gross $839 million worldwide.",
+      "importance": 9,
+      "connections": [
+        "Inception"
+      ],
+      "image": null
+    },
+    {
+      "year": "2011",
+      "headline": "Four Academy Award Wins Secured",
+      "description": "Inception wins four Oscars at the 83rd Academy Awards, including Best Cinematography and Best Visual Effects.",
+      "importance": 9,
+      "connections": [
+        "Academy Awards"
+      ],
+      "image": null
+    },
+    {
+      "year": "2025",
+      "headline": "National Film Registry Preservation Selection",
+      "description": "The Library of Congress selects Inception for preservation in the United States National Film Registry.",
+      "importance": 9,
+      "connections": [
+        "Library of Congress",
+        "National Film Registry"
       ],
       "image": null
     }
   ],
   "rankedFacts": [
     {
-      "fact": "Inception is a 2010  science fiction action film written and directed by Christopher Nolan, who also produced it with Emma Thomas, his wife. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets.",
+      "fact": "Inception is a 2010 science fiction action film written and directed by Christopher Nolan",
+      "score": 0.94,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.95,
+        "narrativeValue": 0.5,
+        "educationalValue": 0.6,
+        "visualValue": 0.6,
+        "uniqueness": 0.3,
+        "ontologyRelevance": 1
+      },
+      "reasoning": "The foundational metadata of the film, scoring maximum points for confidence, specificity, and ontological relevance despite low uniqueness."
+    },
+    {
+      "fact": "Dom Cobb and Arthur are hired by Saito to perform 'inception' on Robert Fischer to dissolve his father's empire",
+      "score": 0.93,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.95,
+        "narrativeValue": 0.85,
+        "educationalValue": 0.5,
+        "visualValue": 0.7,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 1
+      },
+      "reasoning": "An extremely accurate and highly specific summary of the film's primary narrative inciting incident."
+    },
+    {
+      "fact": "It stars Leonardo DiCaprio as a professional thief who steals information from the subconscious",
+      "score": 0.92,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.9,
+        "narrativeValue": 0.75,
+        "educationalValue": 0.5,
+        "visualValue": 0.6,
+        "uniqueness": 0.4,
+        "ontologyRelevance": 1
+      },
+      "reasoning": "Core plot and casting metadata that is highly accurate and essential to the movie's ontological description."
+    },
+    {
+      "fact": "The French song 'Non, je ne regrette rien' by Édith Piaf is used as the audio cue, or 'kick', to synchronize awakening across dream levels.",
+      "score": 0.91,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.95,
+        "narrativeValue": 0.85,
+        "educationalValue": 0.75,
+        "visualValue": 0.7,
+        "uniqueness": 0.8,
+        "ontologyRelevance": 0.95
+      },
+      "reasoning": "An indisputable, highly specific plot and audio design detail that is central to the film's identity."
+    },
+    {
+      "fact": "Cobb struggles with the projection of his deceased wife, Mal, who committed suicide after losing her grip on reality",
+      "score": 0.91,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.9,
+        "narrativeValue": 0.95,
+        "educationalValue": 0.5,
+        "visualValue": 0.6,
+        "uniqueness": 0.6,
+        "ontologyRelevance": 0.95
+      },
+      "reasoning": "An accurate and highly specific description of the emotional core and primary conflict of the main character."
+    },
+    {
+      "fact": "The team enters a multi-layered shared dream where time dilates significantly",
+      "score": 0.88,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.8,
+        "narrativeValue": 0.9,
+        "educationalValue": 0.7,
+        "visualValue": 0.9,
+        "uniqueness": 0.6,
+        "ontologyRelevance": 0.95
+      },
+      "reasoning": "An accurate description of the film's core sci-fi premise, offering excellent visual and narrative value."
+    },
+    {
+      "fact": "Joseph Gordon-Levitt performed all but one of his own stunt scenes during the highly complex, gravity-defying hallway fight sequences.",
+      "score": 0.86,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.85,
+        "narrativeValue": 0.9,
+        "educationalValue": 0.7,
+        "visualValue": 0.8,
+        "uniqueness": 0.85,
+        "ontologyRelevance": 0.9
+      },
+      "reasoning": "An exceptionally strong trivia fact with high specificity regarding the physical production and stunt work of the film."
+    },
+    {
+      "fact": "Ken Watanabe's character, Saito, was written specifically for him because Nolan wanted to work with him again after Batman Begins.",
       "score": 0.85,
+      "metrics": {
+        "confidence": 0.98,
+        "specificity": 0.9,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.5,
+        "visualValue": 0.4,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.95
+      },
+      "reasoning": "An accurate, highly specific casting fact that highlights the creative relationship between the director and actor."
+    },
+    {
+      "fact": "Nolan shelved the project for several years to gain experience directing massive productions like Batman Begins, The Prestige, and The Dark Knight.",
+      "score": 0.84,
+      "metrics": {
+        "confidence": 0.98,
+        "specificity": 0.85,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.7,
+        "visualValue": 0.75,
+        "uniqueness": 0.65,
+        "ontologyRelevance": 0.9
+      },
+      "reasoning": "A highly accurate and specific historical fact about the director's career timeline that directly relates to the production ontology of the movie."
+    },
+    {
+      "fact": "Christopher Nolan originally pitched Inception to Warner Bros. as a horror film about 'dream stealers' rather than a sci-fi heist action movie.",
+      "score": 0.82,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.8,
+        "narrativeValue": 0.9,
+        "educationalValue": 0.6,
+        "visualValue": 0.5,
+        "uniqueness": 0.9,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "This highly unique trivia fact is well-documented, highly relevant to the film's development history, and offers strong narrative value."
+    },
+    {
+      "fact": "James Franco was originally in talks with Christopher Nolan to play Arthur, but had to pull out due to scheduling conflicts.",
+      "score": 0.81,
       "metrics": {
         "confidence": 0.95,
         "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "narrativeValue": 0.75,
+        "educationalValue": 0.4,
+        "visualValue": 0.4,
+        "uniqueness": 0.75,
+        "ontologyRelevance": 0.9
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "A well-documented casting fact with high specificity and direct relevance to the movie's production history."
     },
     {
-      "fact": "After the completion of Insomnia in 2002, Nolan presented to Warner Bros. a written 80-page treatment for a horror film envisioning \"dream stealers,\" based on lucid dreaming.",
-      "score": 0.85,
+      "fact": "The film won four Academy Awards and was selected for preservation in the National Film Registry in 2025",
+      "score": 0.72,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
+        "confidence": 0.5,
+        "specificity": 0.95,
+        "narrativeValue": 0.7,
+        "educationalValue": 0.6,
+        "visualValue": 0.6,
         "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "ontologyRelevance": 0.95
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "While the Academy Awards detail is correct, the claim about the National Film Registry in 2025 cannot be verified with certainty, lowering the confidence score."
     },
     {
-      "fact": "Inception's premiere was held in London on July 8, 2010; it was released in both conventional and IMAX theaters beginning on July 16, 2010. Inception grossed $839 million worldwide, becoming the fourth-highest-grossing film of 2010.",
-      "score": 0.85,
+      "fact": "Brad Pitt and Will Smith were the first choices for the role of Dom Cobb. Smith turned it down because he did not understand the script.",
+      "score": 0.68,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
+        "confidence": 0.6,
+        "specificity": 0.85,
+        "narrativeValue": 0.85,
+        "educationalValue": 0.4,
+        "visualValue": 0.4,
+        "uniqueness": 0.8,
         "ontologyRelevance": 0.85
       },
-      "reasoning": "Standard programmatic metric evaluation."
-    },
-    {
-      "fact": "Dom Cobb and Arthur are \"extractors\" who perform corporate espionage using experimental dream-sharing technology to infiltrate their targets' subconscious and extract information. Their latest target, Saito, is impressed with Cobb's ability to layer multiple dreams within each other.",
-      "score": 0.7,
-      "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
-      },
-      "reasoning": "Standard programmatic metric evaluation."
-    },
-    {
-      "fact": "Cobb accepts the offer and assembles his team: a forger named Eames, a chemist named Yusuf, and a college student named Ariadne. Ariadne is tasked with designing the dream's architecture, something Cobb himself cannot do for fear of being sabotaged by his mind's projection of his late wife, Mal.",
-      "score": 0.7,
-      "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
-      },
-      "reasoning": "Standard programmatic metric evaluation."
-    },
-    {
-      "fact": "The team abducts Robert in a city on the first level, but unknown to any team member, his subconscious projections, trained to anticipate such a scenario, attack them. After Saito is wounded, Cobb reveals that while dying in the dream would usually awaken dreamers, Yusuf's sedatives will instead send them into \"Limbo\": a world of infinite subconscious.",
-      "score": 0.7,
-      "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
-      },
-      "reasoning": "Standard programmatic metric evaluation."
-    },
-    {
-      "fact": "Cobb explains to Ariadne that he and Mal entered Limbo while experimenting with dream-sharing, experiencing fifty years in one night due to the time dilation with reality. After waking up, Mal still believed she was dreaming.",
-      "score": 0.7,
-      "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
-      },
-      "reasoning": "Standard programmatic metric evaluation."
-    },
-    {
-      "fact": "Yusuf drives the team around the first level as they are sedated into the second level, a hotel dreamed by Arthur. Cobb persuades Robert that Browning has kidnapped him to stop the dissolution and that Cobb is a defensive projection, leading Robert to another third level deeper as part of a ruse to enter Robert's subconscious.",
-      "score": 0.7,
-      "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
-      },
-      "reasoning": "Standard programmatic metric evaluation."
-    },
-    {
-      "fact": "In the third level, the team infiltrates an alpine fortress with a projection of Maurice inside, where the inception itself can be performed. However, Yusuf performs his kick too soon by driving off a bridge, forcing Arthur and Eames to improvise a new set of kicks synchronized with them hitting the water by rigging an elevator and the fortress, respectively, with explosives.",
-      "score": 0.7,
-      "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
-      },
-      "reasoning": "Standard programmatic metric evaluation."
-    },
-    {
-      "fact": "Revived into the third level, Robert discovers the planted idea: his dying father telling him to create something for himself. While Cobb searches for Saito in Limbo, the others ride the synced kicks back to reality.",
-      "score": 0.7,
-      "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
-      },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "While highly specific and engaging, the confidence score is lower as casting rumors regarding Will Smith's specific reason for turning it down are not fully verified."
     }
   ],
   "visualModules": [
@@ -455,19 +671,111 @@
       "type": "movie",
       "title": "Movie Blueprint Snapshot",
       "data": {
-        "director": "Compiled detail for director",
+        "director": [
+          "Christopher Nolan"
+        ],
         "cast": [
-          "Significant Item 1",
-          "Significant Item 2"
+          {
+            "actor": "Leonardo DiCaprio",
+            "character": "Dom Cobb"
+          },
+          {
+            "actor": "Ken Watanabe",
+            "character": "Saito"
+          },
+          {
+            "actor": "Joseph Gordon-Levitt",
+            "character": "Arthur"
+          },
+          {
+            "actor": "Marion Cotillard",
+            "character": "Mal"
+          },
+          {
+            "actor": "Elliot Page",
+            "character": "Ariadne"
+          },
+          {
+            "actor": "Tom Hardy",
+            "character": "Eames"
+          },
+          {
+            "actor": "Cillian Murphy",
+            "character": "Robert Fischer"
+          },
+          {
+            "actor": "Tom Berenger",
+            "character": "Peter Browning"
+          },
+          {
+            "actor": "Dileep Rao",
+            "character": "Yusuf"
+          },
+          {
+            "actor": "Michael Caine",
+            "character": "Stephen Miles"
+          }
         ],
-        "composer": "Compiled detail for composer",
+        "composer": [
+          "Hans Zimmer"
+        ],
         "themes": [
-          "Significant Item 1",
-          "Significant Item 2"
+          "Lucid dreaming",
+          "Subconscious infiltration",
+          "Grief and guilt",
+          "Reality vs. illusion",
+          "Corporate espionage"
         ],
-        "awards": "Compiled detail for awards",
-        "reception": "Compiled detail for reception",
-        "legacy": "Compiled detail for legacy"
+        "awards": [
+          {
+            "award": "Academy Award for Best Cinematography",
+            "status": "Won",
+            "ceremony": "83rd Academy Awards"
+          },
+          {
+            "award": "Academy Award for Best Sound Editing",
+            "status": "Won",
+            "ceremony": "83rd Academy Awards"
+          },
+          {
+            "award": "Academy Award for Best Sound Mixing",
+            "status": "Won",
+            "ceremony": "83rd Academy Awards"
+          },
+          {
+            "award": "Academy Award for Best Visual Effects",
+            "status": "Won",
+            "ceremony": "83rd Academy Awards"
+          },
+          {
+            "award": "Academy Award for Best Picture",
+            "status": "Nominated",
+            "ceremony": "83rd Academy Awards"
+          },
+          {
+            "award": "Academy Award for Best Original Screenplay",
+            "status": "Nominated",
+            "ceremony": "83rd Academy Awards"
+          },
+          {
+            "award": "Academy Award for Best Art Direction",
+            "status": "Nominated",
+            "ceremony": "83rd Academy Awards"
+          },
+          {
+            "award": "Academy Award for Best Original Score",
+            "status": "Nominated",
+            "ceremony": "83rd Academy Awards"
+          }
+        ],
+        "reception": [
+          "Grossed $839 million worldwide",
+          "Fourth-highest-grossing film of 2010",
+          "Considered one of the best films of the 2010s"
+        ],
+        "legacy": [
+          "Selected for preservation in the United States National Film Registry by the Library of Congress in 2025"
+        ]
       }
     }
   ],
@@ -475,161 +783,507 @@
     "chapters": [
       {
         "chapterIndex": 0,
-        "title": "Inception's Story",
+        "title": "Inside the Multi-Layered Subconscious",
         "referenceLabel": "Story",
-        "readerQuestion": "What represents the starting motivation behind Story?",
+        "readerQuestion": "How do Dom Cobb and his team navigate the dangerous, shifting rules of shared dreaming?",
         "objectives": [
-          "Explore the relationship with Story"
+          "Explain the core heist mission targeting Robert Fischer to dissolve his father's corporate empire.",
+          "Detail the mechanics of time dilation and the auditory 'kick' used to synchronize awakening.",
+          "Explore Cobb's psychological struggle with the projection of his deceased wife, Mal."
         ],
         "approvedFacts": [
-          "Inception is a 2010  science fiction action film written and directed by Christopher Nolan, who also produced it with Emma Thomas, his wife. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets.",
-          "After the completion of Insomnia in 2002, Nolan presented to Warner Bros. a written 80-page treatment for a horror film envisioning \"dream stealers,\" based on lucid dreaming."
+          "Dom Cobb and Arthur are hired by Saito to perform 'inception' on Robert Fischer to dissolve his father's empire",
+          "The French song 'Non, je ne regrette rien' by Édith Piaf is used as the audio cue, or 'kick', to synchronize awakening across dream levels.",
+          "Cobb struggles with the projection of his deceased wife, Mal, who committed suicide after losing her grip on reality"
         ],
         "anchors": [
-          "Inception",
-          "foundation origin"
+          "Leonardo DiCaprio",
+          "Christopher Nolan"
         ]
       },
       {
         "chapterIndex": 1,
-        "title": "Inside the Production of Inception",
+        "title": "Architecting the Gravity Defying Heist",
         "referenceLabel": "Production",
-        "readerQuestion": "Which factors influenced early discoveries of Production?",
+        "readerQuestion": "How did Christopher Nolan transition his initial horror concept into a complex, physical production?",
         "objectives": [
-          "Explore the relationship with Production"
+          "Trace the evolution of the script from an initial horror pitch to a massive sci-fi heist action movie.",
+          "Highlight the physical stunt work and gravity-defying choreography executed during production.",
+          "Examine the casting decisions and how specific roles were tailored for the actors."
         ],
         "approvedFacts": [
-          "Inception's premiere was held in London on July 8, 2010; it was released in both conventional and IMAX theaters beginning on July 16, 2010. Inception grossed $839 million worldwide, becoming the fourth-highest-grossing film of 2010.",
-          "Dom Cobb and Arthur are \"extractors\" who perform corporate espionage using experimental dream-sharing technology to infiltrate their targets' subconscious and extract information. Their latest target, Saito, is impressed with Cobb's ability to layer multiple dreams within each other."
+          "Christopher Nolan originally pitched Inception to Warner Bros. as a horror film about 'dream stealers' rather than a sci-fi heist action movie.",
+          "Joseph Gordon-Levitt performed all but one of his own stunt scenes during the highly complex, gravity-defying hallway fight sequences.",
+          "Ken Watanabe's character, Saito, was written specifically for him because Nolan wanted to work with him again after Batman Begins."
         ],
         "anchors": [
-          "Inception",
-          "historical timeline"
+          "Warner Bros.",
+          "Tokyo",
+          "2009"
         ]
       },
       {
         "chapterIndex": 2,
-        "title": "The Release of Inception",
-        "referenceLabel": "Release",
-        "readerQuestion": "How do key chemical processes behave during Release?",
+        "title": "Assembling the Dream Team",
+        "referenceLabel": "Cast",
+        "readerQuestion": "What major casting changes and strategic delays shaped the final cinematic team?",
         "objectives": [
-          "Explore the relationship with Release"
+          "Reveal the high-profile actors who were originally considered for the lead role of Dom Cobb.",
+          "Explain how scheduling conflicts and alternative casting shaped the character of Arthur.",
+          "Detail why Nolan shelved the project for years to build his blockbuster directing credentials."
         ],
         "approvedFacts": [
-          "Cobb accepts the offer and assembles his team: a forger named Eames, a chemist named Yusuf, and a college student named Ariadne. Ariadne is tasked with designing the dream's architecture, something Cobb himself cannot do for fear of being sabotaged by his mind's projection of his late wife, Mal.",
-          "The team abducts Robert in a city on the first level, but unknown to any team member, his subconscious projections, trained to anticipate such a scenario, attack them. After Saito is wounded, Cobb reveals that while dying in the dream would usually awaken dreamers, Yusuf's sedatives will instead send them into \"Limbo\": a world of infinite subconscious."
+          "Brad Pitt and Will Smith were the first choices for the role of Dom Cobb. Smith turned it down because he did not understand the script.",
+          "James Franco was originally in talks with Christopher Nolan to play Arthur, but had to pull out due to scheduling conflicts.",
+          "Nolan shelved the project for several years to gain experience directing massive productions like Batman Begins, The Prestige, and The Dark Knight."
         ],
         "anchors": [
-          "Inception",
-          "reaction mechanism"
+          "Emma Thomas",
+          "Legendary Pictures"
         ]
       },
       {
         "chapterIndex": 3,
-        "title": "How the World Received Inception",
-        "referenceLabel": "Reception",
-        "readerQuestion": "Why do light steps trigger under Reception?",
+        "title": "A Global Box Office Phenomenon",
+        "referenceLabel": "Release",
+        "readerQuestion": "How did a complex original sci-fi film capture the global box office in the summer of 2010?",
         "objectives": [
-          "Explore the relationship with Reception"
+          "Detail the film's global theatrical release and its massive $839 million box office run.",
+          "Establish its standing as one of the highest-grossing and most critically acclaimed films of 2010.",
+          "Introduce the film's core identity as a groundbreaking science fiction action film."
         ],
         "approvedFacts": [
-          "Cobb explains to Ariadne that he and Mal entered Limbo while experimenting with dream-sharing, experiencing fifty years in one night due to the time dilation with reality. After waking up, Mal still believed she was dreaming.",
-          "Yusuf drives the team around the first level as they are sedated into the second level, a hotel dreamed by Arthur. Cobb persuades Robert that Browning has kidnapped him to stop the dissolution and that Cobb is a defensive projection, leading Robert to another third level deeper as part of a ruse to enter Robert's subconscious."
+          "Inception is a 2010 science fiction action film written and directed by Christopher Nolan",
+          "It stars Leonardo DiCaprio as a professional thief who steals information from the subconscious"
         ],
         "anchors": [
-          "Inception",
-          "energy transition"
+          "2010",
+          "July 16, 2010"
         ]
       },
       {
         "chapterIndex": 4,
-        "title": "The Enduring Legacy of Inception",
+        "title": "Preserving a Modern Cinematic Masterpiece",
         "referenceLabel": "Legacy",
-        "readerQuestion": "Who validates the final outcomes regarding Legacy?",
+        "readerQuestion": "How did the film's technical achievements and cultural impact secure its place in film history?",
         "objectives": [
-          "Explore the relationship with Legacy"
+          "Highlight the film's success at the 83rd Academy Awards, winning four technical Oscars.",
+          "Examine the film's selection for permanent preservation by the Library of Congress.",
+          "Reflect on its enduring status as one of the definitive films of its decade."
         ],
         "approvedFacts": [
-          "In the third level, the team infiltrates an alpine fortress with a projection of Maurice inside, where the inception itself can be performed. However, Yusuf performs his kick too soon by driving off a bridge, forcing Arthur and Eames to improvise a new set of kicks synchronized with them hitting the water by rigging an elevator and the fortress, respectively, with explosives.",
-          "Revived into the third level, Robert discovers the planted idea: his dying father telling him to create something for himself. While Cobb searches for Saito in Limbo, the others ride the synced kicks back to reality."
+          "The film won four Academy Awards and was selected for preservation in the National Film Registry in 2025"
         ],
         "anchors": [
-          "Inception",
-          "modern application"
+          "Library of Congress",
+          "National Film Registry",
+          "2025"
         ]
       }
     ]
   },
   "triviaCandidates": [
     {
-      "fact": "Inception is a 2010  science fiction action film written and directed by Christopher Nolan, who also produced it with Emma Thomas, his wife. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets.",
-      "surpriseScore": 10,
-      "readMoreTopic": "12 Monkeys"
-    },
-    {
-      "fact": "After the completion of Insomnia in 2002, Nolan presented to Warner Bros. a written 80-page treatment for a horror film envisioning \"dream stealers,\" based on lucid dreaming.",
-      "surpriseScore": 9,
-      "readMoreTopic": "1917 (2019 film)"
-    },
-    {
-      "fact": "Inception's premiere was held in London on July 8, 2010; it was released in both conventional and IMAX theaters beginning on July 16, 2010. Inception grossed $839 million worldwide, becoming the fourth-highest-grossing film of 2010.",
+      "fact": "Christopher Nolan originally pitched Inception to Warner Bros. as a horror film about 'dream stealers' rather than a sci-fi heist action movie.",
       "surpriseScore": 8,
-      "readMoreTopic": "2000X"
+      "readMoreTopic": "Christopher Nolan"
     },
     {
-      "fact": "Dom Cobb and Arthur are \"extractors\" who perform corporate espionage using experimental dream-sharing technology to infiltrate their targets' subconscious and extract information. Their latest target, Saito, is impressed with Cobb's ability to layer multiple dreams within each other.",
+      "fact": "Nolan shelved the project for several years to gain experience directing massive productions like Batman Begins, The Prestige, and The Dark Knight.",
       "surpriseScore": 7,
-      "readMoreTopic": "2001: A Space Odyssey"
+      "readMoreTopic": "Christopher Nolan"
     },
     {
-      "fact": "Cobb accepts the offer and assembles his team: a forger named Eames, a chemist named Yusuf, and a college student named Ariadne. Ariadne is tasked with designing the dream's architecture, something Cobb himself cannot do for fear of being sabotaged by his mind's projection of his late wife, Mal.",
+      "fact": "Brad Pitt and Will Smith were the first choices for the role of Dom Cobb. Smith turned it down because he did not understand the script.",
+      "surpriseScore": 9,
+      "readMoreTopic": "Will Smith"
+    },
+    {
+      "fact": "James Franco was originally in talks with Christopher Nolan to play Arthur, but had to pull out due to scheduling conflicts.",
+      "surpriseScore": 7,
+      "readMoreTopic": "James Franco"
+    },
+    {
+      "fact": "Ken Watanabe's character, Saito, was written specifically for him because Nolan wanted to work with him again after Batman Begins.",
       "surpriseScore": 6,
-      "readMoreTopic": "2001: A Space Odyssey (film)"
+      "readMoreTopic": "Ken Watanabe"
     },
     {
-      "fact": "The team abducts Robert in a city on the first level, but unknown to any team member, his subconscious projections, trained to anticipate such a scenario, attack them. After Saito is wounded, Cobb reveals that while dying in the dream would usually awaken dreamers, Yusuf's sedatives will instead send them into \"Limbo\": a world of infinite subconscious.",
-      "surpriseScore": 5,
-      "readMoreTopic": "2010 in film"
+      "fact": "Joseph Gordon-Levitt performed all but one of his own stunt scenes during the highly complex, gravity-defying hallway fight sequences.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Joseph Gordon-Levitt"
     },
     {
-      "fact": "Cobb explains to Ariadne that he and Mal entered Limbo while experimenting with dream-sharing, experiencing fifty years in one night due to the time dilation with reality. After waking up, Mal still believed she was dreaming.",
-      "surpriseScore": 4,
-      "readMoreTopic": "2D to 3D conversion"
+      "fact": "The film's advertising budget alone was US$100 million, secured largely due to Nolan's massive success with The Dark Knight.",
+      "surpriseScore": 7,
+      "readMoreTopic": "The Dark Knight"
     },
     {
-      "fact": "Yusuf drives the team around the first level as they are sedated into the second level, a hotel dreamed by Arthur. Cobb persuades Robert that Browning has kidnapped him to stop the dissolution and that Cobb is a defensive projection, leading Robert to another third level deeper as part of a ruse to enter Robert's subconscious.",
-      "surpriseScore": 3,
-      "readMoreTopic": "35 mm movie film"
-    },
-    {
-      "fact": "In the third level, the team infiltrates an alpine fortress with a projection of Maurice inside, where the inception itself can be performed. However, Yusuf performs his kick too soon by driving off a bridge, forcing Arthur and Eames to improvise a new set of kicks synchronized with them hitting the water by rigging an elevator and the fortress, respectively, with explosives.",
-      "surpriseScore": 2,
-      "readMoreTopic": "3D film"
-    },
-    {
-      "fact": "Revived into the third level, Robert discovers the planted idea: his dying father telling him to create something for himself. While Cobb searches for Saito in Limbo, the others ride the synced kicks back to reality.",
-      "surpriseScore": 1,
-      "readMoreTopic": "4K Blu-ray"
+      "fact": "The French song 'Non, je ne regrette rien' by Édith Piaf is used as the audio cue, or 'kick', to synchronize awakening across dream levels.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Non, je ne regrette rien"
     }
   ],
   "relatedTopics": [
-    "12 Monkeys",
-    "1917 (2019 film)",
-    "2000X",
-    "2001: A Space Odyssey",
-    "2001: A Space Odyssey (film)",
-    "2010 in film",
-    "2D to 3D conversion",
-    "35 mm movie film"
+    "Christopher Nolan",
+    "Lucid dreaming",
+    "The Dark Knight",
+    "Heist film",
+    "Science fiction film",
+    "83rd Academy Awards",
+    "National Film Registry",
+    "Hans Zimmer"
   ],
   "confidenceScores": {
-    "resolver": 0.96,
-    "compiler": 0.95,
-    "grader": 0.85,
-    "overall": 0.92
+    "resolver": 1,
+    "compiler": 1,
+    "grader": 0.8884615384615385,
+    "overall": 0.98
   },
+  "qualityAssessment": {
+    "generationMode": "primary",
+    "fallbackRatio": 0,
+    "provenanceCoverage": 0.9142857142857143,
+    "placeholderCount": 0,
+    "verifiedFactRatio": 1,
+    "qualityScore": 98,
+    "confidenceBreakdown": {
+      "provenanceCoverage": 0.9142857142857143,
+      "fieldCoverage": 1,
+      "placeholderPenalty": 1,
+      "fallbackPenalty": 1,
+      "sourceAgreement": 1,
+      "extractionCompleteness": 1,
+      "factSpecificity": 0.8884615384615385,
+      "graphValidity": 1,
+      "timelineValidity": 1,
+      "validationPenalty": 1
+    },
+    "status": "PARTIAL",
+    "modulesPassing": [
+      "timeline",
+      "cards",
+      "didYouKnow",
+      "relatedTopics",
+      "structuredFactsData",
+      "knowledgeGraph"
+    ],
+    "modulesHidden": [],
+    "reasons": [
+      "all signals above threshold, no placeholder contamination, majority primary generation",
+      "downgraded because lintArtifact() reported validation errors"
+    ]
+  },
+  "stageDiagnostics": [
+    {
+      "stage": "entityResolver.pass1",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 11519
+    },
+    {
+      "stage": "compiler",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 8791
+    },
+    {
+      "stage": "knowledgeGraph",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2163
+    },
+    {
+      "stage": "factEvaluator",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 8343
+    },
+    {
+      "stage": "narrativePlanner",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 5706
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2139
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2352
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2407
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2577
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2712
+    },
+    {
+      "stage": "documentaryWriter.summary",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1444
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1717
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1526
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1418
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1764
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1494
+    },
+    {
+      "stage": "stylePolish",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 9100
+    }
+  ],
   "checksum": "6c3930cd8c4cdd8a43ff085be29209434e78518d959c02cc5d4ac1f134571747",
-  "dependencyHash": "a68601ae8d7499ca6f09229882e6da8d0c8ddc798cb3e7cf4e85b63308248dd7",
+  "dependencyHash": "60ad5863b82d9d6309b2afac589bd6f35203f151c621b906efb5bdf37f0181c6",
   "sourceReferences": [
     {
       "url": "https://en.wikipedia.org/wiki/Inception",
@@ -639,159 +1293,266 @@
   "factScript": {
     "chapters": [
       {
-        "chapterTitle": "Inception's Story",
-        "questionAnswered": "What represents the starting motivation behind Story?",
+        "chapterTitle": "Inside the Multi-Layered Subconscious",
+        "referenceLabel": "Story",
+        "questionAnswered": "How do Dom Cobb and his team navigate the dangerous, shifting rules of shared dreaming?",
         "chronologicalPosition": 1,
         "entities": [
           "Inception"
         ],
         "dates": [
-          "2010",
-          "2002"
+          "2010"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "motivating factors behind early phases of development",
-        "effect": "initial events showing transition in the subject",
+        "locations": [
+          "Tokyo"
+        ],
+        "people": [
+          "Dom Cobb",
+          "Arthur",
+          "Saito",
+          "Robert Fischer",
+          "Mal",
+          "Édith Piaf"
+        ],
+        "events": [
+          "Theatrical Release of Inception"
+        ],
+        "cause": "Saito hires Dom Cobb and Arthur to perform the complex task of inception on corporate heir Robert Fischer.",
+        "effect": "The team must navigate deep, unstable dream levels while Cobb battles the disruptive projections of his late wife.",
         "keyFacts": [
-          "Inception is a 2010  science fiction action film written and directed by Christopher Nolan, who also produced it with Emma Thomas, his wife. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets.",
-          "After the completion of Insomnia in 2002, Nolan presented to Warner Bros. a written 80-page treatment for a horror film envisioning \"dream stealers,\" based on lucid dreaming."
+          "Dom Cobb and Arthur are hired by Saito to perform 'inception' on Robert Fischer to dissolve his father's empire",
+          "The French song 'Non, je ne regrette rien' by Édith Piaf is used as the audio cue, or 'kick', to synchronize awakening across dream levels",
+          "Cobb struggles with the projection of his deceased wife, Mal, who committed suicide after losing her grip on reality"
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "fundamental lessons from this period"
+        "connections": [
+          "The psychological themes of grief and guilt linked to Christopher Nolan's filmography"
+        ],
+        "takeaway": "Shared dreaming requires precise synchronization amid deep psychological dangers.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "Inside the Production of Inception",
-        "questionAnswered": "Which factors influenced early discoveries of Production?",
+        "chapterTitle": "Architecting the Gravity Defying Heist",
+        "referenceLabel": "Production",
+        "questionAnswered": "How did Christopher Nolan transition his initial horror concept into a complex, physical production?",
         "chronologicalPosition": 2,
         "entities": [
+          "Warner Bros.",
           "Inception"
         ],
         "dates": [
           "2002",
-          "2005"
+          "February 2009",
+          "June 19, 2009",
+          "November 22, 2009"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "key drivers behind the rising influence",
-        "effect": "consequent progress seen during this phase",
+        "locations": [
+          "Tokyo",
+          "Canada"
+        ],
+        "people": [
+          "Christopher Nolan",
+          "Joseph Gordon-Levitt",
+          "Ken Watanabe"
+        ],
+        "events": [
+          "Pitch of initial 80-page horror treatment",
+          "Purchase of revised script by Warner Bros.",
+          "Commencement of principal photography",
+          "Conclusion of principal photography"
+        ],
+        "cause": "Christopher Nolan sought to expand his initial 80-page horror treatment about dream stealers into a massive, multi-layered sci-fi heist action film.",
+        "effect": "The transition resulted in a highly complex global production featuring groundbreaking physical stunt work and custom-tailored character roles.",
         "keyFacts": [
-          "Inception's premiere was held in London on July 8, 2010; it was released in both conventional and IMAX theaters beginning on July 16, 2010. Inception grossed $839 million worldwide, becoming the fourth-highest-grossing film of 2010.",
-          "Dom Cobb and Arthur are \"extractors\" who perform corporate espionage using experimental dream-sharing technology to infiltrate their targets' subconscious and extract information. Their latest target, Saito, is impressed with Cobb's ability to layer multiple dreams within each other."
+          "Christopher Nolan originally pitched Inception to Warner Bros. in 2002 as a horror film about 'dream stealers' rather than a sci-fi heist action movie.",
+          "Joseph Gordon-Levitt performed all but one of his own stunt scenes during the highly complex, gravity-defying hallway fight sequences.",
+          "Ken Watanabe's character, Saito, was written specifically for him because Nolan wanted to work with him again after Batman Begins."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "primary insights on the rise"
+        "connections": [
+          "Batman Begins",
+          "Insomnia"
+        ],
+        "takeaway": "Nolan evolved a horror pitch into a physical action masterpiece.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "The Release of Inception",
-        "questionAnswered": "How do key chemical processes behave during Release?",
+        "chapterTitle": "Assembling the Dream Team",
+        "referenceLabel": "Cast",
+        "questionAnswered": "What major casting changes and strategic delays shaped the final cinematic team?",
         "chronologicalPosition": 3,
         "entities": [
-          "Inception"
+          "Warner Bros.",
+          "Batman Begins",
+          "The Prestige",
+          "The Dark Knight"
         ],
         "dates": [
-          "2005",
-          "2006"
-        ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "pivotal elements supporting the peak achievements",
-        "effect": "resultant breakthroughs related directly to these successes",
-        "keyFacts": [
-          "Cobb accepts the offer and assembles his team: a forger named Eames, a chemist named Yusuf, and a college student named Ariadne. Ariadne is tasked with designing the dream's architecture, something Cobb himself cannot do for fear of being sabotaged by his mind's projection of his late wife, Mal.",
-          "The team abducts Robert in a city on the first level, but unknown to any team member, his subconscious projections, trained to anticipate such a scenario, attack them. After Saito is wounded, Cobb reveals that while dying in the dream would usually awaken dreamers, Yusuf's sedatives will instead send them into \"Limbo\": a world of infinite subconscious."
-        ],
-        "quotes": [],
-        "connections": [],
-        "takeaway": "core takeaways regarding this era"
-      },
-      {
-        "chapterTitle": "How the World Received Inception",
-        "questionAnswered": "Why do light steps trigger under Reception?",
-        "chronologicalPosition": 4,
-        "entities": [
-          "Inception"
-        ],
-        "dates": [
-          "2006",
-          "2008"
-        ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "underlying issues prompting the challenges faced",
-        "effect": "resulting shifts that defined the response taken",
-        "keyFacts": [
-          "Cobb explains to Ariadne that he and Mal entered Limbo while experimenting with dream-sharing, experiencing fifty years in one night due to the time dilation with reality. After waking up, Mal still believed she was dreaming.",
-          "Yusuf drives the team around the first level as they are sedated into the second level, a hotel dreamed by Arthur. Cobb persuades Robert that Browning has kidnapped him to stop the dissolution and that Cobb is a defensive projection, leading Robert to another third level deeper as part of a ruse to enter Robert's subconscious."
-        ],
-        "quotes": [],
-        "connections": [],
-        "takeaway": "crucial lessons on these struggles"
-      },
-      {
-        "chapterTitle": "The Enduring Legacy of Inception",
-        "questionAnswered": "Who validates the final outcomes regarding Legacy?",
-        "chronologicalPosition": 5,
-        "entities": [
-          "Inception"
-        ],
-        "dates": [
-          "2008",
+          "2002",
           "2009"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "lasting forces establishing the legacy left behind",
-        "effect": "long-term outcomes that shaped the memory of the subject",
+        "locations": [
+          "Hollywood"
+        ],
+        "people": [
+          "Christopher Nolan",
+          "Brad Pitt",
+          "Will Smith",
+          "Leonardo DiCaprio",
+          "James Franco",
+          "Joseph Gordon-Levitt"
+        ],
+        "events": [
+          "Inception development",
+          "Batman Begins production",
+          "The Prestige production",
+          "The Dark Knight production"
+        ],
+        "cause": "Christopher Nolan needed to build his blockbuster directing credentials and resolve major casting conflicts before bringing his complex dream heist concept to life.",
+        "effect": "The strategic delays and casting adjustments resulted in a highly refined script and a critically acclaimed final ensemble cast led by Leonardo DiCaprio and Joseph Gordon-Levitt.",
         "keyFacts": [
-          "In the third level, the team infiltrates an alpine fortress with a projection of Maurice inside, where the inception itself can be performed. However, Yusuf performs his kick too soon by driving off a bridge, forcing Arthur and Eames to improvise a new set of kicks synchronized with them hitting the water by rigging an elevator and the fortress, respectively, with explosives.",
-          "Revived into the third level, Robert discovers the planted idea: his dying father telling him to create something for himself. While Cobb searches for Saito in Limbo, the others ride the synced kicks back to reality."
+          "Brad Pitt and Will Smith were the initial choices for the lead role of Dom Cobb, with Smith turning it down because he did not understand the script.",
+          "James Franco was originally in talks to play Arthur but had to pull out of the production due to scheduling conflicts, leading to the casting of Joseph Gordon-Levitt.",
+          "Christopher Nolan shelved the project for several years to gain experience directing massive, complex productions like Batman Begins, The Prestige, and The Dark Knight."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "final summary explaining the legacy"
+        "connections": [
+          "Nolan's initial 2002 horror treatment pitch to Warner Bros.",
+          "The final 2009 casting and start of principal photography in Tokyo"
+        ],
+        "takeaway": "Strategic delays and casting shifts created the perfect cinematic team.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "A Global Box Office Phenomenon",
+        "referenceLabel": "Release",
+        "questionAnswered": "How did a complex original sci-fi film capture the global box office in the summer of 2010?",
+        "chronologicalPosition": 4,
+        "entities": [
+          "Warner Bros.",
+          "Academy Awards"
+        ],
+        "dates": [
+          "July 8, 2010",
+          "July 16, 2010",
+          "2010",
+          "2011"
+        ],
+        "locations": [
+          "London"
+        ],
+        "people": [
+          "Christopher Nolan",
+          "Leonardo DiCaprio"
+        ],
+        "events": [
+          "World Premiere in London",
+          "Theatrical Release of Inception",
+          "83rd Academy Awards"
+        ],
+        "cause": "Christopher Nolan directed a highly original, complex science fiction action film starring Leonardo DiCaprio as a thief who steals information from the subconscious.",
+        "effect": "The film became a massive critical and commercial success, grossing hundreds of millions of dollars and securing multiple Academy Awards.",
+        "keyFacts": [
+          "Inception is a 2010 science fiction action film written and directed by Christopher Nolan.",
+          "The film stars Leonardo DiCaprio as Dom Cobb, a professional thief who steals information from the subconscious.",
+          "Following its theatrical release on July 16, 2010, the film grossed $839 million worldwide, becoming the fourth-highest-grossing film of 2010.",
+          "The film won four Academy Awards at the 83rd Academy Awards, including Best Cinematography, Best Sound Editing, Best Sound Mixing, and Best Visual Effects."
+        ],
+        "quotes": [],
+        "connections": [
+          "Inception production phase",
+          "Inception legacy and National Film Registry preservation"
+        ],
+        "takeaway": "Original sci-fi achieved massive global box office success.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "Preserving a Modern Cinematic Masterpiece",
+        "referenceLabel": "Legacy",
+        "questionAnswered": "How did the film's technical achievements and cultural impact secure its place in film history?",
+        "chronologicalPosition": 5,
+        "entities": [
+          "Library of Congress",
+          "National Film Registry",
+          "Academy of Motion Picture Arts and Sciences"
+        ],
+        "dates": [
+          "2010",
+          "2011",
+          "2025"
+        ],
+        "locations": [
+          "United States"
+        ],
+        "people": [
+          "Christopher Nolan"
+        ],
+        "events": [
+          "83rd Academy Awards",
+          "National Film Registry Selection"
+        ],
+        "cause": "The film's groundbreaking technical execution and massive global box office success established it as a defining cultural milestone of the 2010s.",
+        "effect": "The film secured permanent preservation in the National Film Registry and cemented its legacy as a modern cinematic masterpiece.",
+        "keyFacts": [
+          "Inception won four Academy Awards at the 83rd ceremony, specifically for Best Cinematography, Best Sound Editing, Best Sound Mixing, and Best Visual Effects",
+          "The film was nominated for four additional Academy Awards, including Best Picture, Best Original Screenplay, Best Art Direction, and Best Original Score",
+          "The Library of Congress selected Inception for permanent preservation in the United States National Film Registry in 2025",
+          "The film grossed $839 million worldwide, becoming the fourth-highest-grossing film of 2010 and one of the most critically acclaimed films of its decade"
+        ],
+        "quotes": [],
+        "connections": [
+          "The transition from the 2010 theatrical release to the 2011 Academy Awards success",
+          "The evolution of Christopher Nolan's filmography leading to national preservation status"
+        ],
+        "takeaway": "Technical mastery and cultural impact secured its permanent cinematic legacy.",
+        "insufficientData": false
       }
     ]
   },
   "briefSummaryProvenance": [
     {
-      "sentence": "Inception records confirm that Inception is a 2010 science fiction action film written and directed.",
-      "fact": "Inception is a 2010 science fiction action film written and directed"
+      "sentence": "Christopher Nolan wrote and directed the 2010 science fiction action film Inception .",
+      "fact": "Chapter 4: Inception is a 2010 science fiction action film written and directed by Christopher Nolan."
     },
     {
-      "sentence": "Inception records confirm that Inception's premiere was held in London on July 8, 2010; it.",
-      "fact": "Inception's premiere was held in London on July 8, 2010; it"
+      "sentence": "The movie stars Leonardo DiCaprio as Dom Cobb, a professional thief who steals information from the subconscious .",
+      "fact": "Chapter 4: The film stars Leonardo DiCaprio as Dom Cobb, a professional thief who steals information from the subconscious."
     },
     {
-      "sentence": "Inception records confirm that Cobb accepts the offer and assembles his team: a forger named.",
-      "fact": "Cobb accepts the offer and assembles his team: a forger named"
+      "sentence": "Saito hires Cobb and Arthur to perform inception on Robert Fischer to dissolve his father's empire .",
+      "fact": "Chapter 1: Dom Cobb and Arthur are hired by Saito to perform 'inception' on Robert Fischer to dissolve his father's empire"
     },
     {
-      "sentence": "Inception remains study topic showing that final summary explaining the legacy.",
-      "fact": "final summary explaining the legacy"
+      "sentence": "To synchronize awakening across dream levels, the team uses Édith Piaf's French song 'Non, je ne regrette rien' as an audio cue .",
+      "fact": "Chapter 1: The French song 'Non, je ne regrette rien' by Édith Piaf is used as the audio cue, or 'kick', to synchronize awakening across dream levels"
+    },
+    {
+      "sentence": "Following its theatrical release on July 16, 2010, the film grossed $839 million worldwide .",
+      "fact": "Chapter 4: Following its theatrical release on July 16, 2010, the film grossed $839 million worldwide, becoming the fourth-highest-grossing film of 2010."
+    },
+    {
+      "sentence": "Ultimately, the Library of Congress selected Inception for permanent preservation in the United States National Film Registry in 2025 .",
+      "fact": "Chapter 5: The Library of Congress selected Inception for permanent preservation in the United States National Film Registry in 2025"
     }
   ],
   "validationStatus": {
-    "passed": true,
-    "errors": [],
-    "warnings": [
-      "Timeline is not in strict chronological order"
+    "passed": false,
+    "errors": [
+      "Identical 4-word phrases must not repeat across chapters",
+      "Sentence provenance is incomplete: only 86% of sentences are mapped to facts",
+      "Card summaries must follow the alternating pattern: exactly 6 sentences per card summary. Violations: 1",
+      "Documentary score is too low: 65/100"
     ],
+    "warnings": [],
     "checkedRules": {
       "ontology_match": true,
       "required_fields_exist": true,
       "timeline_non_empty": true,
       "timeline_count_bounds": true,
-      "timeline_chronological": false,
+      "timeline_chronological": true,
       "graph_has_triples": true,
       "graph_connected": true,
+      "graph_no_synthetic_nodes": true,
       "named_entities_non_empty": true,
       "no_weak_facts": true,
       "no_duplicate_facts": true,
@@ -801,19 +1562,20 @@
       "paragraph_length_limit": true,
       "unique_chapter_titles": true,
       "concrete_dates_names_present": true,
-      "no_repeated_phrases": true,
+      "no_repeated_phrases": false,
       "no_timeline_milestone_placeholder": true,
+      "reader_question_quality": true,
       "did_you_know_length_ok": true,
-      "sentence_provenance_ok": true,
+      "sentence_provenance_ok": false,
       "no_abstract_writing": true,
-      "documentary_alternating_rule": true,
+      "documentary_alternating_rule": false,
       "fact_density_met": true,
       "curiosity_score_ok": true,
-      "documentary_score_ok": true,
+      "documentary_score_ok": false,
       "resolver_confidence_ok": true,
       "compiler_confidence_ok": true,
       "overall_confidence_ok": true
     },
-    "timestamp": "2026-07-10T06:47:31.842Z"
+    "timestamp": "2026-07-11T08:23:29.950Z"
   }
 }

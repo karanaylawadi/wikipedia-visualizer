@@ -94,7 +94,7 @@ function isAdministrativeTopic(title: string, description?: string) {
   );
 }
 
-function isRecognizableRelatedTopic(title: string, description?: string) {
+export function isRecognizableRelatedTopic(title: string, description?: string) {
   const normalizedTitle = normalizeTitleText(title);
   const combined = `${normalizedTitle} ${description || ""}`.toLowerCase();
 
