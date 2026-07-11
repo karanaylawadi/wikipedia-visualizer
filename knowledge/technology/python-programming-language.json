@@ -1,190 +1,213 @@
 {
-  "version": "16.0",
-  "compilerVersion": "v17.0",
-  "ontologyVersion": "v17.0",
+  "version": "18.0",
+  "compilerVersion": "v18.0",
+  "ontologyVersion": "v18.0",
   "wikipediaRevision": "rev-1.0",
   "wikidataRevision": "Q28865",
   "ontology": {
     "name": "Technology",
     "labels": [
-      "Technology",
+      "Programming Language",
       "Technology"
     ]
   },
   "structuredFacts": {
-    "inventor": "Compiled detail for inventor",
-    "launchYear": "Compiled detail for launchYear",
-    "industry": "Compiled detail for industry",
-    "architecture": "Compiled detail for architecture",
-    "competitors": "Compiled detail for competitors",
-    "adoption": "Compiled detail for adoption",
+    "inventor": [
+      "Guido van Rossum"
+    ],
+    "launchYear": "1991",
+    "industry": [
+      "Software development",
+      "Information technology",
+      "Computer programming"
+    ],
+    "architecture": [
+      "Multi-paradigm (object-oriented, structured, functional, aspect-oriented)",
+      "Dynamic typing",
+      "Dynamic name resolution (late binding)",
+      "Reference counting and cycle-detecting garbage collection",
+      "Extensible modular architecture"
+    ],
+    "competitors": [
+      "ABC",
+      "Perl",
+      "Lisp",
+      "Haskell",
+      "Standard ML"
+    ],
+    "adoption": [
+      "Widely taught as an introductory programming language",
+      "Popular for adding programmable interfaces to existing applications",
+      "Supported by the Python Software Foundation",
+      "Official downloadable executable available for Android"
+    ],
     "title": "Python (programming language)",
     "subtitle": "General-purpose programming language",
     "leadParagraph": "Python is a high-level, general-purpose programming language that emphasizes code readability, simplicity, and ease-of-writing with the use of significant indentation, an extensive (\"batteries-included\") standard library, and garbage collection. Python supports multiple programming paradigms but with an emphasis on object-oriented programming and dynamic typing.\nGuido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language. Python 3.0, released in 2008, was a major revision and not completely backward-compatible with earlier versions. Beginning with Python 3.5, capabilities and keywords for typing were added to the language, allowing optional static typing. As of 2026, the Python Software Foundation supports Python 3.10, 3.11, 3.12, 3.13, and 3.14, following the project's annual release cycle and five-year support policy. Python 3.15 is currently in the beta development phase, and the stable release is expected to launch in October 2026. Earlier versions in the 3.x series have reached end-of-life and no longer receive security updates. \nPython is widely taught as an introductory programming language.",
-    "briefSummary": "Python (programming language) records confirm that Python is a high-level, general-purpose programming language that emphasizes code readability,. Python (programming language) records confirm that Python is widely taught as an introductory programming language. Python (programming language) records confirm that Python 2 0 was released on 16 October 2000, featuring many. Python (programming language) remains study topic showing that final summary explaining the legacy.",
+    "briefSummary": "Conceived by Guido van Rossum at CWI in the Netherlands during the late 1980s, Python officially began development in 1989. Van Rossum designed it to succeed the ABC programming language, drawing its name from the British comedy series Monty Python's Flying Circus. He guided the community as its Benevolent Dictator for Life until he stepped down in 2018. To govern the language after his departure, the community elected a five-member Steering Council in 2019. Today, Python stands as a high-level, general-purpose language that prioritizes simplicity, readability, and significant indentation.",
     "cards": [
       {
-        "title": "The Need for Python (programming language)",
-        "summary": "Python (programming language) records verify that Python is a high-level, general-purpose programming language that emphasizes code readability,. Early motivation drove research explaining why motivating factors behind early phases of development. Subsequent investigations established that Guido van Rossum began working on Python in the late 1980s. Because of these dynamics, details show initial events showing transition in the subject. Python (programming language) data confirms that early outcomes and related findings. These changes established the basis for fundamental lessons from this period.",
-        "referenceLabel": "The",
-        "readerQuestion": "What represents the starting motivation behind Need?",
-        "keyTakeaway": "fundamental lessons from this period",
+        "title": "The Birth of Python",
+        "summary": "Conceived by Guido van Rossum in the late 1980s, Python was born at CWI in the Netherlands. His goal was to design a successor to the ABC programming language that could overcome its inherent limitations. Official development of the language began in 1989. This debut established a new programming tool that prioritized code readability over sheer execution speed. Indeed, Python was crafted specifically to succeed the ABC language. Ultimately, this new language emphasized clear readability to improve upon the shortcomings of its predecessor.",
+        "referenceLabel": "Inspiration",
+        "readerQuestion": "What drove the creation of a new programming language in the late 1980s?",
+        "keyTakeaway": "Python succeeded ABC by prioritizing code readability over execution speed.",
         "provenance": [
           {
-            "sentence": "Python (programming language) records verify that Python is a high-level, general-purpose programming language that emphasizes code readability,.",
-            "fact": "Python is a high-level, general-purpose programming language that emphasizes code readability,"
+            "sentence": "Conceived by Guido van Rossum in the late 1980s, Python was born at CWI in the Netherlands.",
+            "fact": "Python was conceived in the late 1980s at CWI in the Netherlands by Guido van Rossum"
           },
           {
-            "sentence": "Early motivation drove research explaining why motivating factors behind early phases of development.",
-            "fact": "motivating factors behind early phases of development"
+            "sentence": "His goal was to design a successor to the ABC programming language that could overcome its inherent limitations.",
+            "fact": "Guido van Rossum sought to design a successor to the ABC programming language to overcome its limitations."
           },
           {
-            "sentence": "Subsequent investigations established that Guido van Rossum began working on Python in the late 1980s.",
-            "fact": "Guido van Rossum began working on Python in the late 1980s"
+            "sentence": "Official development of the language began in 1989.",
+            "fact": "The versions of the Python programming language officially began in 1989"
           },
           {
-            "sentence": "Because of these dynamics, details show initial events showing transition in the subject.",
-            "fact": "initial events showing transition in the subject"
+            "sentence": "This debut established a new programming tool that prioritized code readability over sheer execution speed.",
+            "fact": "The versions of Python began in 1989, establishing a new language focused on readability over execution speed."
           },
           {
-            "sentence": "Python (programming language) data confirms that early outcomes and related findings.",
-            "fact": "early outcomes and related findings"
+            "sentence": "Indeed, Python was crafted specifically to succeed the ABC language.",
+            "fact": "Python was designed as a successor to the ABC programming language"
           },
           {
-            "sentence": "These changes established the basis for fundamental lessons from this period.",
-            "fact": "fundamental lessons from this period"
+            "sentence": "Ultimately, this new language emphasized clear readability to improve upon the shortcomings of its predecessor.",
+            "fact": "Python prioritized readability to improve upon the ABC language."
           }
         ]
       },
       {
-        "title": "The Invention of Python (programming language)",
-        "summary": "Historical records confirm that Python is widely taught as an introductory programming language. These revelations inspired further exploration showing why key drivers behind the rising influence. Later studies verified that The name Python derives from the British comedy series Monty Python's. Following these events, analysts observed that consequent progress seen during this phase. Scientific tracking confirms that secondary attributes and timeline events. This transition created the groundwork for primary insights on the rise.",
-        "referenceLabel": "The",
-        "readerQuestion": "Which factors influenced early discoveries of Invention?",
-        "keyTakeaway": "primary insights on the rise",
+        "title": "The Architect of Python",
+        "summary": "In 1989, Guido van Rossum designed Python's core architecture using dynamic typing, late binding, and reference-counting garbage collection . He wanted a highly readable, modular successor to the ABC language that prioritized developer simplicity . Van Rossum chose the name to honor the British comedy series Monty Python's Flying Circus . This playful branding fostered a unique, welcoming culture that propelled Python to global dominance . Van Rossum guided this community as its 'Benevolent Dictator for Life' until his resignation in 2018 . Ultimately, his dual focus on clean code and community governance shaped Python's enduring legacy .",
+        "referenceLabel": "Invention",
+        "readerQuestion": "How did Guido van Rossum design Python's core architecture and unique culture?",
+        "keyTakeaway": "Guido van Rossum's design choices shaped Python's enduring architecture.",
         "provenance": [
           {
-            "sentence": "Historical records confirm that Python is widely taught as an introductory programming language.",
-            "fact": "Python is widely taught as an introductory programming language"
+            "sentence": "In 1989, Guido van Rossum designed Python's core architecture using dynamic typing, late binding, and reference-counting garbage collection .",
+            "fact": "Python's core architecture utilizes dynamic typing, late binding, and a memory management system combining reference counting and cycle-detecting garbage collection."
           },
           {
-            "sentence": "These revelations inspired further exploration showing why key drivers behind the rising influence.",
-            "fact": "key drivers behind the rising influence"
+            "sentence": "He wanted a highly readable, modular successor to the ABC language that prioritized developer simplicity .",
+            "fact": "Guido van Rossum sought to design a successor to the ABC programming language that combined an extensible modular architecture with a highly readable, community-driven design philosophy."
           },
           {
-            "sentence": "Later studies verified that The name Python derives from the British comedy series Monty Python's.",
-            "fact": "The name Python derives from the British comedy series Monty Python's"
+            "sentence": "Van Rossum chose the name to honor the British comedy series Monty Python's Flying Circus .",
+            "fact": "The name of the language was inspired by the British comedy series Monty Python's Flying Circus rather than the snake."
           },
           {
-            "sentence": "Following these events, analysts observed that consequent progress seen during this phase.",
-            "fact": "consequent progress seen during this phase"
+            "sentence": "This playful branding fostered a unique, welcoming culture that propelled Python to global dominance .",
+            "fact": "Python established a unique culture and a robust architectural foundation that sustained its growth into one of the world's most popular programming languages."
           },
           {
-            "sentence": "Scientific tracking confirms that secondary attributes and timeline events.",
-            "fact": "secondary attributes and timeline events"
+            "sentence": "Van Rossum guided this community as its 'Benevolent Dictator for Life' until his resignation in 2018 .",
+            "fact": "Guido van Rossum served as the community's 'Benevolent Dictator for Life' (BDFL) from Python's inception until his resignation in 2018."
           },
           {
-            "sentence": "This transition created the groundwork for primary insights on the rise.",
-            "fact": "primary insights on the rise"
+            "sentence": "Ultimately, his dual focus on clean code and community governance shaped Python's enduring legacy .",
+            "fact": "Guido van Rossum's design choices shaped Python's enduring architecture and culture."
           }
         ]
       },
       {
-        "title": "The Adoption of Python (programming language)",
-        "summary": "Primary documentation reveals that Python 2 0 was released on 16 October 2000, featuring many. Such outcomes led observers to trace why pivotal elements supporting the peak achievements. Archival reviews showed that As of May 2026, Python 3 14. With these developments, researchers saw that resultant breakthroughs related directly to these successes. Detailed observations show that peak milestones and direct connections. This structure formed the design for core takeaways regarding this era.",
-        "referenceLabel": "The",
-        "readerQuestion": "How do key chemical processes behave during Adoption?",
-        "keyTakeaway": "core takeaways regarding this era",
+        "title": "The Evolution of Python",
+        "summary": "Supporting object-oriented, structured, functional, and aspect-oriented paradigms, Python is inherently versatile. Guido van Rossum designed this extensible architecture specifically to improve upon the ABC language. At the heart of this design lies a core philosophy summarized in the 'Zen of Python'. By prioritizing clarity and readability, this approach drove widespread global adoption across both software development and education. Even standard tutorials pay homage to this history, using 'spam' and 'eggs' as a tribute to Monty Python. Ultimately, it was this combination of flexible paradigm support and a clear philosophy that secured Python's global dominance.",
+        "referenceLabel": "Adoption",
+        "readerQuestion": "How did Python evolve to support diverse programming paradigms and gain widespread adoption?",
+        "keyTakeaway": "Flexible paradigms and clear philosophy drove Python's global adoption.",
         "provenance": [
           {
-            "sentence": "Primary documentation reveals that Python 2 0 was released on 16 October 2000, featuring many.",
-            "fact": "Python 2 0 was released on 16 October 2000, featuring many"
+            "sentence": "Supporting object-oriented, structured, functional, and aspect-oriented paradigms, Python is inherently versatile.",
+            "fact": "Python supports object-oriented, structured, functional, and aspect-oriented programming paradigms."
           },
           {
-            "sentence": "Such outcomes led observers to trace why pivotal elements supporting the peak achievements.",
-            "fact": "pivotal elements supporting the peak achievements"
+            "sentence": "Guido van Rossum designed this extensible architecture specifically to improve upon the ABC language.",
+            "fact": "Guido van Rossum designed Python with an extensible, multi-paradigm architecture to improve upon the ABC programming language."
           },
           {
-            "sentence": "Archival reviews showed that As of May 2026, Python 3 14.",
-            "fact": "As of May 2026, Python 3 14"
+            "sentence": "At the heart of this design lies a core philosophy summarized in the 'Zen of Python'.",
+            "fact": "The core design philosophy is summarized in the 'Zen of Python', which contains 19 written aphorisms out of 20 officially planned."
           },
           {
-            "sentence": "With these developments, researchers saw that resultant breakthroughs related directly to these successes.",
-            "fact": "resultant breakthroughs related directly to these successes"
+            "sentence": "By prioritizing clarity and readability, this approach drove widespread global adoption across both software development and education.",
+            "fact": "Python achieved widespread global adoption across software development, education, and programmable interfaces."
           },
           {
-            "sentence": "Detailed observations show that peak milestones and direct connections.",
-            "fact": "peak milestones and direct connections"
+            "sentence": "Even standard tutorials pay homage to this history, using 'spam' and 'eggs' as a tribute to Monty Python.",
+            "fact": "Python tutorials and reference materials use 'spam' and 'eggs' instead of 'foo' and 'bar' as a tribute to Monty Python."
           },
           {
-            "sentence": "This structure formed the design for core takeaways regarding this era.",
-            "fact": "core takeaways regarding this era"
+            "sentence": "Ultimately, it was this combination of flexible paradigm support and a clear philosophy that secured Python's global dominance.",
+            "fact": "Python's flexible paradigm support and clear philosophy drove global adoption."
           }
         ]
       },
       {
-        "title": "The Global Impact of Python (programming language)",
-        "summary": "Factual chronicles state that Operational results measure energy transitions across Python (programming language). Ongoing difficulties drove thorough inquiries explaining why underlying issues prompting the challenges faced. Recent compilations proved that observed difficulties and response actions. Under these conditions, experts noted that resulting shifts that defined the response taken. Ontology patterns map that additional challenges and resolved queries. This transition shaped the modern standard for crucial lessons on these struggles.",
-        "referenceLabel": "The",
-        "readerQuestion": "Why do light steps trigger under Impact?",
-        "keyTakeaway": "crucial lessons on these struggles",
+        "title": "The Great Version Divide",
+        "summary": "Python emerged as a high-level, general-purpose language that prioritized readability, simplicity, and significant indentation. This design philosophy faced a massive shift when Python 3.0 introduced backward-incompatible syntax and semantics. Earlier, in 2000, Python 2.0 had debuted with list comprehensions and garbage collection. Consequently, the community endured a prolonged transition until Python 2 officially retired in 2020. Python 3.0 arrived in 2008 as a major, backward-incompatible revision with changed syntax and new semantics. Ultimately, this painful backward incompatibility split the community but successfully modernized the language.",
+        "referenceLabel": "Impact",
+        "readerQuestion": "How did the transition from Python 2 to Python 3 reshape the community?",
+        "keyTakeaway": "Backward incompatibility split the community but ultimately modernized the language.",
         "provenance": [
           {
-            "sentence": "Factual chronicles state that Operational results measure energy transitions across Python (programming language).",
-            "fact": "Operational results measure energy transitions across Python (programming language)"
+            "sentence": "Python emerged as a high-level, general-purpose language that prioritized readability, simplicity, and significant indentation.",
+            "fact": "Python is a high-level, general-purpose language emphasizing readability, simplicity, and significant indentation."
           },
           {
-            "sentence": "Ongoing difficulties drove thorough inquiries explaining why underlying issues prompting the challenges faced.",
-            "fact": "underlying issues prompting the challenges faced"
+            "sentence": "This design philosophy faced a massive shift when Python 3.0 introduced backward-incompatible syntax and semantics.",
+            "fact": "The release of Python 3.0 as a major, backward-incompatible revision with changed syntax and new semantics forced a massive shift in the environment."
           },
           {
-            "sentence": "Recent compilations proved that observed difficulties and response actions.",
-            "fact": "observed difficulties and response actions"
+            "sentence": "Earlier, in 2000, Python 2.0 had debuted with list comprehensions and garbage collection.",
+            "fact": "Python 2.0 was released in 2000 with list comprehensions and garbage collection, reaching its official end-of-life in 2020."
           },
           {
-            "sentence": "Under these conditions, experts noted that resulting shifts that defined the response taken.",
-            "fact": "resulting shifts that defined the response taken"
+            "sentence": "Consequently, the community endured a prolonged transition until Python 2 officially retired in 2020.",
+            "fact": "The community experienced a prolonged transition period, resulting in Python 2 reaching its official end-of-life in 2020 while unofficial alternatives stepped in to maintain legacy support."
           },
           {
-            "sentence": "Ontology patterns map that additional challenges and resolved queries.",
-            "fact": "additional challenges and resolved queries"
+            "sentence": "Python 3.0 arrived in 2008 as a major, backward-incompatible revision with changed syntax and new semantics.",
+            "fact": "Python 3.0 was released in 2008 as a major, backward-incompatible revision with changed syntax and new semantics."
           },
           {
-            "sentence": "This transition shaped the modern standard for crucial lessons on these struggles.",
-            "fact": "crucial lessons on these struggles"
+            "sentence": "Ultimately, this painful backward incompatibility split the community but successfully modernized the language.",
+            "fact": "Backward incompatibility split the community but ultimately modernized the language."
           }
         ]
       },
       {
-        "title": "The Future of Python (programming language)",
-        "summary": "Verified sources show that Concluding analysis confirms modern legacy values of Python (programming language). The legacy prompted key factions to identify why lasting forces establishing the legacy left behind. Independent reviews confirmed that legacy outlines and subsequent records. Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject. Statistical records track that final reflections and study conclusions. This layout outlines the final outcome of final summary explaining the legacy.",
-        "referenceLabel": "The",
-        "readerQuestion": "Who validates the final outcomes regarding Future?",
-        "keyTakeaway": "final summary explaining the legacy",
+        "title": "Python After the Dictator",
+        "summary": "When Guido van Rossum stepped down as BDFL in 2018, it led to the election of a five-member Steering Council in 2019 to govern the language. His resignation as Benevolent Dictator for Life followed intense conflicts over assignment expressions. Interestingly, in Python culture, describing a piece of code or a solution as 'clever' is actually not considered a compliment. To guide its multi-paradigm architecture, Python transitioned to a decentralized governance model led by this elected five-member Steering Council. The language maintains a multi-paradigm architecture, primarily supporting object-oriented programming, dynamic typing, and structured programming. Today, Python thrives under collective governance while preserving its core philosophy.",
+        "referenceLabel": "Future",
+        "readerQuestion": "How does Python govern itself and maintain its philosophy in the post-BDFL era?",
+        "keyTakeaway": "Python thrives under collective governance while preserving its core philosophy.",
         "provenance": [
           {
-            "sentence": "Verified sources show that Concluding analysis confirms modern legacy values of Python (programming language).",
-            "fact": "Concluding analysis confirms modern legacy values of Python (programming language)"
+            "sentence": "When Guido van Rossum stepped down as BDFL in 2018, it led to the election of a five-member Steering Council in 2019 to govern the language.",
+            "fact": "Guido van Rossum stepped down as BDFL in 2018, leading to the election of a five-member Steering Council in 2019 to govern the language."
           },
           {
-            "sentence": "The legacy prompted key factions to identify why lasting forces establishing the legacy left behind.",
-            "fact": "lasting forces establishing the legacy left behind"
+            "sentence": "His resignation as Benevolent Dictator for Life followed intense conflicts over assignment expressions.",
+            "fact": "Guido van Rossum resigned as Benevolent Dictator for Life in 2018 following conflicts over assignment expressions."
           },
           {
-            "sentence": "Independent reviews confirmed that legacy outlines and subsequent records.",
-            "fact": "legacy outlines and subsequent records"
+            "sentence": "Interestingly, in Python culture, describing a piece of code or a solution as 'clever' is actually not considered a compliment.",
+            "fact": "In Python culture, describing a piece of code or a solution as 'clever' is actually not considered a compliment."
           },
           {
-            "sentence": "Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject.",
-            "fact": "long-term outcomes that shaped the memory of the subject"
+            "sentence": "To guide its multi-paradigm architecture, Python transitioned to a decentralized governance model led by this elected five-member Steering Council.",
+            "fact": "Python transitioned to a decentralized governance model led by an elected five-member Steering Council to guide its multi-paradigm architecture."
           },
           {
-            "sentence": "Statistical records track that final reflections and study conclusions.",
-            "fact": "final reflections and study conclusions"
+            "sentence": "The language maintains a multi-paradigm architecture, primarily supporting object-oriented programming, dynamic typing, and structured programming.",
+            "fact": "Python maintains a multi-paradigm architecture, primarily supporting object-oriented programming, dynamic typing, and structured programming."
           },
           {
-            "sentence": "This layout outlines the final outcome of final summary explaining the legacy.",
-            "fact": "final summary explaining the legacy"
+            "sentence": "Today, Python thrives under collective governance while preserving its core philosophy.",
+            "fact": "Python thrives under collective governance while preserving its core philosophy."
           }
         ]
       }
@@ -192,199 +215,351 @@
   },
   "namedEntities": [
     {
-      "name": "Python (programming language)",
+      "name": "Guido van Rossum",
+      "type": "Person",
+      "description": "Dutch programmer who created the Python programming language and served as its chief decision-maker until 2018."
+    },
+    {
+      "name": "Centrum Wiskunde & Informatica",
+      "type": "Org",
+      "description": "The national research institute for mathematics and computer science in the Netherlands where Python was conceived."
+    },
+    {
+      "name": "Python Software Foundation",
+      "type": "Org",
+      "description": "The non-profit organization that manages and supports the Python programming language."
+    },
+    {
+      "name": "ABC",
       "type": "Concept",
-      "description": "The primary resolved subject."
+      "description": "An imperative general-purpose programming language and environment developed at CWI that served as Python's predecessor."
+    },
+    {
+      "name": "Monty Python",
+      "type": "Org",
+      "description": "A British surreal comedy group whose television show inspired the name of the Python programming language."
+    },
+    {
+      "name": "Tim Peters",
+      "type": "Person",
+      "description": "A software developer and major contributor to the Python community who wrote the Zen of Python."
+    },
+    {
+      "name": "PyPy",
+      "type": "Concept",
+      "description": "An alternative, highly compatible implementation of the Python programming language that features a just-in-time compiler."
     }
   ],
   "knowledgeGraph": [
     {
-      "subject": "Compiled detail for inventor",
-      "predicate": "INVENTED",
+      "subject": "Python (programming language)",
+      "predicate": "INVENTED_BY",
+      "object": "Guido van Rossum"
+    },
+    {
+      "subject": "Python (programming language)",
+      "predicate": "ORIGINATED_AT",
+      "object": "Centrum Wiskunde & Informatica"
+    },
+    {
+      "subject": "Python (programming language)",
+      "predicate": "MANAGED_BY",
+      "object": "Python Software Foundation"
+    },
+    {
+      "subject": "Python (programming language)",
+      "predicate": "INFLUENCED_BY",
+      "object": "ABC"
+    },
+    {
+      "subject": "Python (programming language)",
+      "predicate": "NAMED_AFTER",
+      "object": "Monty Python"
+    },
+    {
+      "subject": "Tim Peters",
+      "predicate": "CONTRIBUTED_TO",
+      "object": "Python (programming language)"
+    },
+    {
+      "subject": "PyPy",
+      "predicate": "IMPLEMENTS",
       "object": "Python (programming language)"
     },
     {
       "subject": "Python (programming language)",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_1"
+      "predicate": "COMPETES_WITH",
+      "object": "Perl"
     },
     {
       "subject": "Python (programming language)",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_2"
+      "predicate": "COMPETES_WITH",
+      "object": "Lisp"
     },
     {
       "subject": "Python (programming language)",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_3"
+      "predicate": "HAS_PARADIGM",
+      "object": "Multi-paradigm (object-oriented, structured, functional, aspect-oriented)"
     },
     {
       "subject": "Python (programming language)",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_4"
+      "predicate": "USED_IN",
+      "object": "Software development"
     },
     {
       "subject": "Python (programming language)",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_5"
-    },
-    {
-      "subject": "Python (programming language)",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_6"
-    },
-    {
-      "subject": "Python (programming language)",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_7"
+      "predicate": "USED_IN",
+      "object": "Computer programming"
     }
   ],
   "timeline": [
     {
-      "year": "2008",
-      "headline": "Pivotal era in 2008",
-      "description": "Python (programming language) underwent core changes and reached major development in the year 2008",
-      "importance": 8,
+      "year": "Late 1980s",
+      "headline": "Python Conceived by Van Rossum",
+      "description": "Guido van Rossum conceived Python at CWI in the Netherlands as a successor to the ABC programming language.",
+      "importance": 9,
       "connections": [
-        "Python (programming language)"
-      ],
-      "image": null
-    },
-    {
-      "year": "2026",
-      "headline": "Pivotal era in 2026",
-      "description": "Python (programming language) underwent core changes and reached major development in the year 2026",
-      "importance": 8,
-      "connections": [
-        "Python (programming language)"
-      ],
-      "image": null
-    },
-    {
-      "year": "1989",
-      "headline": "Pivotal era in 1989",
-      "description": "Python (programming language) underwent core changes and reached major development in the year 1989",
-      "importance": 8,
-      "connections": [
-        "Python (programming language)"
+        "Guido van Rossum",
+        "Centrum Wiskunde & Informatica",
+        "ABC"
       ],
       "image": null
     },
     {
       "year": "1991",
-      "headline": "Pivotal era in 1991",
-      "description": "Python (programming language) underwent core changes and reached major development in the year 1991",
-      "importance": 8,
+      "headline": "First Public Release 0.9.0",
+      "description": "Guido van Rossum released Python version 0.9.0, featuring exception handling and Amoeba operating system interfacing.",
+      "importance": 10,
       "connections": [
-        "Python (programming language)"
+        "Guido van Rossum"
       ],
       "image": null
     },
     {
+      "year": "2000",
+      "headline": "Python 2.0 Released",
+      "description": "Python 2.0 introduced list comprehensions, cycle-detecting garbage collection, reference counting, and Unicode support.",
+      "importance": 8,
+      "connections": [],
+      "image": null
+    },
+    {
+      "year": "2008",
+      "headline": "Python 3.0 Major Revision",
+      "description": "Python 3.0 was released as a major, backward-incompatible revision with changed syntax and new semantics.",
+      "importance": 9,
+      "connections": [],
+      "image": null
+    },
+    {
       "year": "2018",
-      "headline": "Pivotal era in 2018",
-      "description": "Python (programming language) underwent core changes and reached major development in the year 2018",
+      "headline": "Van Rossum Steps Down",
+      "description": "Guido van Rossum resigned from his role as Benevolent Dictator for Life following conflicts over assignment expressions.",
       "importance": 8,
       "connections": [
-        "Python (programming language)"
+        "Guido van Rossum"
       ],
       "image": null
     },
     {
       "year": "2019",
-      "headline": "Pivotal era in 2019",
-      "description": "Python (programming language) underwent core changes and reached major development in the year 2019",
+      "headline": "Steering Council Formed",
+      "description": "Active Python core developers elected a five-member Steering Council to lead the project's governance.",
+      "importance": 7,
+      "connections": [],
+      "image": null
+    },
+    {
+      "year": "2020",
+      "headline": "Python 2 End of Life",
+      "description": "Python 2.7.18 was released as the final version, officially ending support and security updates for Python 2.",
       "importance": 8,
-      "connections": [
-        "Python (programming language)"
-      ],
+      "connections": [],
       "image": null
     }
   ],
   "rankedFacts": [
     {
-      "fact": "Python is a high-level, general-purpose programming language that emphasizes code readability, simplicity, and ease-of-writing with the use of significant indentation, an extensive (\"batteries-included\") standard library, and garbage collection. Python supports multiple programming paradigms but with an emphasis on object-oriented programming and dynamic typing.",
-      "score": 0.7,
+      "fact": "It uses dynamic typing, late binding, and a combination of reference counting and cycle-detecting garbage collection",
+      "score": 0.93,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
+        "confidence": 1,
+        "specificity": 0.95,
+        "narrativeValue": 0.4,
+        "educationalValue": 0.95,
         "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "uniqueness": 0.5,
+        "ontologyRelevance": 1
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Extremely high technical specificity and ontological relevance regarding memory management and type systems."
     },
     {
-      "fact": "Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language. Python 3.",
-      "score": 0.7,
+      "fact": "Python is a high-level, general-purpose language emphasizing readability, simplicity, and significant indentation",
+      "score": 0.89,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 1,
+        "specificity": 0.8,
+        "narrativeValue": 0.4,
+        "educationalValue": 0.9,
+        "visualValue": 0.6,
+        "uniqueness": 0.3,
+        "ontologyRelevance": 1
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Standard definitional fact with maximum relevance to programming language ontology, though low in narrative surprise."
     },
     {
-      "fact": "Python is widely taught as an introductory programming language.",
-      "score": 0.7,
+      "fact": "It supports multiple paradigms, primarily object-oriented programming and dynamic typing",
+      "score": 0.86,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 1,
+        "specificity": 0.8,
+        "narrativeValue": 0.3,
+        "educationalValue": 0.9,
+        "visualValue": 0.6,
+        "uniqueness": 0.3,
+        "ontologyRelevance": 1
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Highly accurate and ontologically relevant description of the language's paradigm support, despite being dry."
     },
     {
-      "fact": "The name Python derives from the British comedy series Monty Python's Flying Circus. (See § Naming.",
-      "score": 0.7,
-      "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
-      },
-      "reasoning": "Standard programmatic metric evaluation."
-    },
-    {
-      "fact": "Python 2. 0 was released on 16 October 2000, featuring many new features such as list comprehensions, cycle-detecting garbage collection, reference counting, and Unicode support.",
+      "fact": "Conceived in the late 1980s at CWI in the Netherlands, Python's implementation began in 1989",
       "score": 0.85,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.9,
+        "narrativeValue": 0.6,
+        "educationalValue": 0.8,
+        "visualValue": 0.7,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "Strong historical specificity and origin details that fit perfectly into a visual timeline of the language."
+    },
+    {
+      "fact": "Despite Python 2 being officially unsupported since 2020, an unofficial implementation called PyPy still maintains support for Python 2.7 with backported security updates.",
+      "score": 0.84,
       "metrics": {
         "confidence": 0.95,
         "specificity": 0.9,
-        "narrativeValue": 0.8,
+        "narrativeValue": 0.6,
         "educationalValue": 0.8,
-        "visualValue": 0.7,
+        "visualValue": 0.5,
         "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "ontologyRelevance": 0.9
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Highly specific technical fact addressing runtime implementations and version lifecycles, which are core to programming language ontology."
     },
     {
-      "fact": "As of May 2026, Python 3. 14.",
-      "score": 0.85,
+      "fact": "Its core philosophy is outlined in the Zen of Python, prioritizing readability over execution speed",
+      "score": 0.84,
       "metrics": {
-        "confidence": 0.95,
+        "confidence": 1,
+        "specificity": 0.8,
+        "narrativeValue": 0.7,
+        "educationalValue": 0.8,
+        "visualValue": 0.5,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.9
+      },
+      "reasoning": "Accurately captures the core design trade-offs of the language, which is highly relevant to its architectural ontology."
+    },
+    {
+      "fact": "Python supports object-oriented, structured, functional, and aspect-oriented programming",
+      "score": 0.83,
+      "metrics": {
+        "confidence": 0.9,
+        "specificity": 0.8,
+        "narrativeValue": 0.4,
+        "educationalValue": 0.8,
+        "visualValue": 0.5,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.9
+      },
+      "reasoning": "Strong ontological relevance regarding programming paradigms, though aspect-oriented support is typically library-driven rather than native."
+    },
+    {
+      "fact": "Python's creator, Guido van Rossum, held the official title of 'Benevolent Dictator for Life' (BDFL) from the community until his resignation in 2018.",
+      "score": 0.81,
+      "metrics": {
+        "confidence": 1,
         "specificity": 0.9,
         "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
+        "educationalValue": 0.7,
+        "visualValue": 0.5,
         "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "ontologyRelevance": 0.6
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Strong historical specificity regarding open-source governance, which is highly relevant to the language's ecosystem."
+    },
+    {
+      "fact": "Python's core design philosophy is officially summarized in a collection of 20 aphorisms called the 'Zen of Python', though only 19 of them were ever written down.",
+      "score": 0.79,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.8,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.7,
+        "visualValue": 0.4,
+        "uniqueness": 0.9,
+        "ontologyRelevance": 0.6
+      },
+      "reasoning": "Excellent blend of unique trivia and design philosophy, with solid specificity regarding the PEP 20 document."
+    },
+    {
+      "fact": "The name Python does not come from the snake, but was actually inspired by the British comedy series Monty Python's Flying Circus.",
+      "score": 0.72,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.8,
+        "narrativeValue": 0.9,
+        "educationalValue": 0.5,
+        "visualValue": 0.4,
+        "uniqueness": 0.8,
+        "ontologyRelevance": 0.4
+      },
+      "reasoning": "High historical accuracy and narrative appeal, though it has lower relevance to core programming language ontology."
+    },
+    {
+      "fact": "Python tutorials and reference materials often use the terms 'spam' and 'eggs' instead of the traditional 'foo' and 'bar' as a tribute to Monty Python.",
+      "score": 0.71,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.8,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.5,
+        "visualValue": 0.4,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.4
+      },
+      "reasoning": "An accurate and engaging cultural detail, though it functions primarily as trivia rather than core technical ontology."
+    },
+    {
+      "fact": "In Python culture, describing a piece of code or a solution as 'clever' is actually not considered a compliment.",
+      "score": 0.68,
+      "metrics": {
+        "confidence": 0.9,
+        "specificity": 0.6,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.7,
+        "visualValue": 0.3,
+        "uniqueness": 0.8,
+        "ontologyRelevance": 0.5
+      },
+      "reasoning": "Captures a unique cultural philosophy of readability over complexity, though it lacks highly specific technical metrics."
+    },
+    {
+      "fact": "0 was released in 2000 with list comprehensions and garbage collection, reaching end-of-life in 2020",
+      "score": 0.65,
+      "metrics": {
+        "confidence": 0.7,
+        "specificity": 0.7,
+        "narrativeValue": 0.5,
+        "educationalValue": 0.7,
+        "visualValue": 0.6,
+        "uniqueness": 0.4,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "The text contains a truncation error ('0' instead of 'Python 2.0'), which lowers confidence and specificity scores."
     }
   ],
   "visualModules": [
@@ -392,12 +567,35 @@
       "type": "technology",
       "title": "Technology Blueprint Snapshot",
       "data": {
-        "inventor": "Compiled detail for inventor",
-        "launchYear": "Compiled detail for launchYear",
-        "industry": "Compiled detail for industry",
-        "architecture": "Compiled detail for architecture",
-        "competitors": "Compiled detail for competitors",
-        "adoption": "Compiled detail for adoption"
+        "inventor": [
+          "Guido van Rossum"
+        ],
+        "launchYear": "1991",
+        "industry": [
+          "Software development",
+          "Information technology",
+          "Computer programming"
+        ],
+        "architecture": [
+          "Multi-paradigm (object-oriented, structured, functional, aspect-oriented)",
+          "Dynamic typing",
+          "Dynamic name resolution (late binding)",
+          "Reference counting and cycle-detecting garbage collection",
+          "Extensible modular architecture"
+        ],
+        "competitors": [
+          "ABC",
+          "Perl",
+          "Lisp",
+          "Haskell",
+          "Standard ML"
+        ],
+        "adoption": [
+          "Widely taught as an introductory programming language",
+          "Popular for adding programmable interfaces to existing applications",
+          "Supported by the Python Software Foundation",
+          "Official downloadable executable available for Android"
+        ]
       }
     }
   ],
@@ -405,159 +603,510 @@
     "chapters": [
       {
         "chapterIndex": 0,
-        "title": "The Need for Python (programming language)",
-        "referenceLabel": "Need",
-        "readerQuestion": "What represents the starting motivation behind Need?",
+        "title": "Beyond the ABC Language",
+        "referenceLabel": "Inspiration",
+        "readerQuestion": "What drove the creation of a new programming language in the late 1980s?",
         "objectives": [
-          "Explore the relationship with Need"
+          "Explore the limitations of existing languages like ABC that Python sought to improve upon",
+          "Examine the initial conception of Python at CWI in the Netherlands",
+          "Introduce the core philosophy of prioritizing readability over execution speed"
         ],
         "approvedFacts": [
-          "Python is a high-level, general-purpose programming language that emphasizes code readability, simplicity, and ease-of-writing with the use of significant indentation, an extensive (\"batteries-included\") standard library, and garbage collection. Python supports multiple programming paradigms but with an emphasis on object-oriented programming and dynamic typing.",
-          "Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language. Python 3."
+          "Conceived in the late 1980s at CWI in the Netherlands, Python's implementation began in 1989",
+          "Its core philosophy is outlined in the Zen of Python, prioritizing readability over execution speed"
         ],
         "anchors": [
-          "Python (programming language)",
-          "foundation origin"
+          "Late 1980s",
+          "ABC",
+          "Centrum Wiskunde & Informatica"
         ]
       },
       {
         "chapterIndex": 1,
-        "title": "The Invention of Python (programming language)",
+        "title": "The Benevolent Dictator's Blueprint",
         "referenceLabel": "Invention",
-        "readerQuestion": "Which factors influenced early discoveries of Invention?",
+        "readerQuestion": "How did Guido van Rossum design Python's core architecture and unique culture?",
         "objectives": [
-          "Explore the relationship with Invention"
+          "Detail the architectural choices of dynamic typing, late binding, and memory management",
+          "Explain the cultural influence of Monty Python on the language's naming and documentation",
+          "Highlight the role of Guido van Rossum as the Benevolent Dictator for Life"
         ],
         "approvedFacts": [
-          "Python is widely taught as an introductory programming language.",
-          "The name Python derives from the British comedy series Monty Python's Flying Circus. (See § Naming."
+          "It uses dynamic typing, late binding, and a combination of reference counting and cycle-detecting garbage collection",
+          "The name Python does not come from the snake, but was actually inspired by the British comedy series Monty Python's Flying Circus.",
+          "Python's creator, Guido van Rossum, held the official title of 'Benevolent Dictator for Life' (BDFL) from the community until his resignation in 2018."
         ],
         "anchors": [
-          "Python (programming language)",
-          "historical timeline"
+          "Guido van Rossum",
+          "1991",
+          "Monty Python"
         ]
       },
       {
         "chapterIndex": 2,
-        "title": "The Adoption of Python (programming language)",
+        "title": "A Multi Paradigm Evolution",
         "referenceLabel": "Adoption",
-        "readerQuestion": "How do key chemical processes behave during Adoption?",
+        "readerQuestion": "How did Python evolve to support diverse programming paradigms and gain widespread adoption?",
         "objectives": [
-          "Explore the relationship with Adoption"
+          "Analyze Python's support for object-oriented, structured, functional, and aspect-oriented programming",
+          "Understand the significance of the Zen of Python and its 19 written aphorisms",
+          "Examine the cultural norms of Python code, including the use of 'spam' and 'eggs'"
         ],
         "approvedFacts": [
-          "Python 2. 0 was released on 16 October 2000, featuring many new features such as list comprehensions, cycle-detecting garbage collection, reference counting, and Unicode support.",
-          "As of May 2026, Python 3. 14."
+          "Python supports object-oriented, structured, functional, and aspect-oriented programming",
+          "Python's core design philosophy is officially summarized in a collection of 20 aphorisms called the 'Zen of Python', though only 19 of them were ever written down.",
+          "Python tutorials and reference materials often use the terms 'spam' and 'eggs' instead of the traditional 'foo' and 'bar' as a tribute to Monty Python."
         ],
         "anchors": [
-          "Python (programming language)",
-          "reaction mechanism"
+          "Python Software Foundation",
+          "2000",
+          "Tim Peters"
         ]
       },
       {
         "chapterIndex": 3,
-        "title": "The Global Impact of Python (programming language)",
+        "title": "The Great Version Divide",
         "referenceLabel": "Impact",
-        "readerQuestion": "Why do light steps trigger under Impact?",
+        "readerQuestion": "How did the transition from Python 2 to Python 3 reshape the community?",
         "objectives": [
-          "Explore the relationship with Impact"
+          "Investigate the major, backward-incompatible changes introduced in Python 3.0",
+          "Detail the end-of-life transition of Python 2 and the unofficial support alternatives",
+          "Explore Python's emphasis on simplicity, readability, and significant indentation"
         ],
         "approvedFacts": [
-          "Operational results measure energy transitions across Python (programming language)"
+          "Python is a high-level, general-purpose language emphasizing readability, simplicity, and significant indentation",
+          "0 was released in 2000 with list comprehensions and garbage collection, reaching end-of-life in 2020",
+          "Despite Python 2 being officially unsupported since 2020, an unofficial implementation called PyPy still maintains support for Python 2.7 with backported security updates."
         ],
         "anchors": [
-          "Python (programming language)",
-          "energy transition"
+          "2008",
+          "2020",
+          "PyPy"
         ]
       },
       {
         "chapterIndex": 4,
-        "title": "The Future of Python (programming language)",
+        "title": "Governance Beyond the Creator",
         "referenceLabel": "Future",
-        "readerQuestion": "Who validates the final outcomes regarding Future?",
+        "readerQuestion": "How does Python govern itself and maintain its philosophy in the post-BDFL era?",
         "objectives": [
-          "Explore the relationship with Future"
+          "Examine the transition of power from Guido van Rossum to the Steering Council",
+          "Understand the cultural rejection of 'clever' code in favor of readable solutions",
+          "Discuss the future direction of Python's multi-paradigm architecture"
         ],
         "approvedFacts": [
-          "Concluding analysis confirms modern legacy values of Python (programming language)"
+          "In Python culture, describing a piece of code or a solution as 'clever' is actually not considered a compliment.",
+          "It supports multiple paradigms, primarily object-oriented programming and dynamic typing"
         ],
         "anchors": [
-          "Python (programming language)",
-          "modern application"
+          "2018",
+          "2019"
         ]
       }
     ]
   },
   "triviaCandidates": [
     {
-      "fact": "Python is a high-level, general-purpose programming language that emphasizes code readability, simplicity, and ease-of-writing with the use of significant indentation, an extensive (\"batteries-included\") standard library, and garbage collection. Python supports multiple programming paradigms but with an emphasis on object-oriented programming and dynamic typing.",
-      "surpriseScore": 10,
-      "readMoreTopic": "\"Hello, World!\" program"
-    },
-    {
-      "fact": "Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language. Python 3.",
-      "surpriseScore": 9,
-      "readMoreTopic": "?:"
-    },
-    {
-      "fact": "Python is widely taught as an introductory programming language.",
+      "fact": "The name Python does not come from the snake, but was actually inspired by the British comedy series Monty Python's Flying Circus.",
       "surpriseScore": 8,
-      "readMoreTopic": "ABC (programming language)"
+      "readMoreTopic": "Monty Python's Flying Circus"
     },
     {
-      "fact": "Python was conceived in the late 1980s by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands. It was designed as a successor to the ABC programming language, which was inspired by SETL, capable of exception handling and interfacing with the Amoeba operating system.",
+      "fact": "Python's creator, Guido van Rossum, held the official title of 'Benevolent Dictator for Life' (BDFL) from the community until his resignation in 2018.",
+      "surpriseScore": 9,
+      "readMoreTopic": "Guido van Rossum"
+    },
+    {
+      "fact": "In Python culture, describing a piece of code or a solution as 'clever' is actually not considered a compliment.",
       "surpriseScore": 7,
-      "readMoreTopic": "ADMB"
+      "readMoreTopic": "Zen of Python"
     },
     {
-      "fact": "The name Python derives from the British comedy series Monty Python's Flying Circus. (See § Naming.",
-      "surpriseScore": 6,
-      "readMoreTopic": "ALGOL"
+      "fact": "Python tutorials and reference materials often use the terms 'spam' and 'eggs' instead of the traditional 'foo' and 'bar' as a tribute to Monty Python.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Monty Python"
     },
     {
-      "fact": "Python 2. 0 was released on 16 October 2000, featuring many new features such as list comprehensions, cycle-detecting garbage collection, reference counting, and Unicode support.",
-      "surpriseScore": 5,
-      "readMoreTopic": "ALGOL 68"
+      "fact": "Guido van Rossum resigned as Benevolent Dictator for Life specifically due to the community conflict surrounding the addition of the assignment expression operator (walrus operator) in Python 3.8.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Guido van Rossum"
     },
     {
-      "fact": "Python 3. 0 was released on 3 December 2008, and was a major revision and not completely backward-compatible with earlier versions, with some new semantics and changed syntax.",
-      "surpriseScore": 4,
-      "readMoreTopic": "APL (programming language)"
+      "fact": "Python deliberately lacks 'do...while' loops because its creator, Guido van Rossum, considered them to be harmful.",
+      "surpriseScore": 7,
+      "readMoreTopic": "Guido van Rossum"
     },
     {
-      "fact": "As of May 2026, Python 3. 14.",
-      "surpriseScore": 3,
-      "readMoreTopic": "ATmega"
+      "fact": "Despite Python 2 being officially unsupported since 2020, an unofficial implementation called PyPy still maintains support for Python 2.7 with backported security updates.",
+      "surpriseScore": 7,
+      "readMoreTopic": "PyPy"
     },
     {
-      "fact": "Python is a multi-paradigm programming language. Object-oriented programming and structured programming are fully supported, and many of their features support functional programming and aspect-oriented programming – including metaprogramming and metaobjects.",
-      "surpriseScore": 2,
-      "readMoreTopic": "AVR microcontrollers"
-    },
-    {
-      "fact": "Python uses dynamic typing and a combination of reference counting and a cycle-detecting garbage collector for memory management. It uses dynamic name resolution (late binding), which binds method and variable names during program execution.",
-      "surpriseScore": 1,
-      "readMoreTopic": "Academic Free License"
+      "fact": "Python's core design philosophy is officially summarized in a collection of 20 aphorisms called the 'Zen of Python', though only 19 of them were ever written down.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Zen of Python"
     }
   ],
   "relatedTopics": [
-    "\"Hello, World!\" program",
-    "?:",
-    "ABC (programming language)",
-    "ADMB",
-    "ALGOL",
-    "ALGOL 68",
-    "APL (programming language)",
-    "ATmega"
+    "Object-oriented programming",
+    "Dynamic typing",
+    "Garbage collection",
+    "Zen of Python",
+    "CPython",
+    "Just-in-time compilation",
+    "Software design philosophy",
+    "Functional programming"
   ],
   "confidenceScores": {
-    "resolver": 0.96,
-    "compiler": 0.95,
-    "grader": 0.7,
-    "overall": 0.92
+    "resolver": 1,
+    "compiler": 1,
+    "grader": 0.8115384615384614,
+    "overall": 0.97
   },
+  "qualityAssessment": {
+    "generationMode": "primary",
+    "fallbackRatio": 0,
+    "provenanceCoverage": 0.8571428571428571,
+    "placeholderCount": 0,
+    "verifiedFactRatio": 1,
+    "qualityScore": 97,
+    "confidenceBreakdown": {
+      "provenanceCoverage": 0.8571428571428571,
+      "fieldCoverage": 1,
+      "placeholderPenalty": 1,
+      "fallbackPenalty": 1,
+      "sourceAgreement": 1,
+      "extractionCompleteness": 1,
+      "factSpecificity": 0.8115384615384614,
+      "graphValidity": 1,
+      "timelineValidity": 1,
+      "validationPenalty": 1
+    },
+    "status": "PARTIAL",
+    "modulesPassing": [
+      "timeline",
+      "cards",
+      "didYouKnow",
+      "relatedTopics",
+      "structuredFactsData",
+      "knowledgeGraph"
+    ],
+    "modulesHidden": [],
+    "reasons": [
+      "all signals above threshold, no placeholder contamination, majority primary generation",
+      "downgraded because lintArtifact() reported validation errors"
+    ]
+  },
+  "stageDiagnostics": [
+    {
+      "stage": "entityResolver.pass1",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1522
+    },
+    {
+      "stage": "compiler",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 9068
+    },
+    {
+      "stage": "knowledgeGraph",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2381
+    },
+    {
+      "stage": "factEvaluator",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 8127
+    },
+    {
+      "stage": "narrativePlanner",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 5373
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2095
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2402
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2251
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2453
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2367
+    },
+    {
+      "stage": "documentaryWriter.summary",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1464
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1315
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1682
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1460
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1459
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1671
+    },
+    {
+      "stage": "stylePolish",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 8347
+    }
+  ],
   "checksum": "e2c073d3282e42ba0e553410dcaeb21daf6a0020d90024a310d6080687ac445f",
-  "dependencyHash": "feeb94011827b5fbbddd36addda699a21d690d4f44b79bfac969d34ecd795520",
+  "dependencyHash": "25bc59eb09829a869087892d3bc1866351cb1952ec25c99974be733a6ab42465",
   "sourceReferences": [
     {
       "url": "https://en.wikipedia.org/wiki/Python%20(programming%20language)",
@@ -567,157 +1116,248 @@
   "factScript": {
     "chapters": [
       {
-        "chapterTitle": "The Need for Python (programming language)",
-        "questionAnswered": "What represents the starting motivation behind Need?",
+        "chapterTitle": "Beyond the ABC Language",
+        "referenceLabel": "Inspiration",
+        "questionAnswered": "What drove the creation of a new programming language in the late 1980s?",
         "chronologicalPosition": 1,
         "entities": [
-          "Python (programming language)"
+          "Python",
+          "ABC",
+          "Centrum Wiskunde & Informatica"
         ],
         "dates": [
-          "2008",
-          "2026"
-        ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "motivating factors behind early phases of development",
-        "effect": "initial events showing transition in the subject",
-        "keyFacts": [
-          "Python is a high-level, general-purpose programming language that emphasizes code readability, simplicity, and ease-of-writing with the use of significant indentation, an extensive (\"batteries-included\") standard library, and garbage collection. Python supports multiple programming paradigms but with an emphasis on object-oriented programming and dynamic typing.",
-          "Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language. Python 3."
-        ],
-        "quotes": [],
-        "connections": [],
-        "takeaway": "fundamental lessons from this period"
-      },
-      {
-        "chapterTitle": "The Invention of Python (programming language)",
-        "questionAnswered": "Which factors influenced early discoveries of Invention?",
-        "chronologicalPosition": 2,
-        "entities": [
-          "Python (programming language)"
-        ],
-        "dates": [
-          "2026",
+          "Late 1980s",
           "1989"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "key drivers behind the rising influence",
-        "effect": "consequent progress seen during this phase",
+        "locations": [
+          "Netherlands"
+        ],
+        "people": [
+          "Guido van Rossum"
+        ],
+        "events": [
+          "Conception of Python",
+          "Beginning of Python's implementation"
+        ],
+        "cause": "Guido van Rossum sought to design a successor to the ABC programming language to overcome its limitations.",
+        "effect": "The implementation of Python began in 1989, establishing a new language focused on readability over execution speed.",
         "keyFacts": [
-          "Python is widely taught as an introductory programming language.",
-          "The name Python derives from the British comedy series Monty Python's Flying Circus. (See § Naming."
+          "Python was conceived in the late 1980s at CWI in the Netherlands by Guido van Rossum",
+          "The implementation of the Python programming language officially began in 1989",
+          "Python was designed as a successor to the ABC programming language",
+          "The core philosophy of Python prioritizes code readability over execution speed, as outlined in the Zen of Python"
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "primary insights on the rise"
+        "connections": [
+          "Preceded the first public release of Python version 0.9.0 in 1991"
+        ],
+        "takeaway": "Python prioritized readability to improve upon the ABC language.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "The Adoption of Python (programming language)",
-        "questionAnswered": "How do key chemical processes behave during Adoption?",
-        "chronologicalPosition": 3,
+        "chapterTitle": "The Benevolent Dictator's Blueprint",
+        "referenceLabel": "Invention",
+        "questionAnswered": "How did Guido van Rossum design Python's core architecture and unique culture?",
+        "chronologicalPosition": 2,
         "entities": [
-          "Python (programming language)"
+          "Python",
+          "Monty Python's Flying Circus",
+          "ABC"
         ],
         "dates": [
-          "1989",
-          "1991"
-        ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "pivotal elements supporting the peak achievements",
-        "effect": "resultant breakthroughs related directly to these successes",
-        "keyFacts": [
-          "Python 2. 0 was released on 16 October 2000, featuring many new features such as list comprehensions, cycle-detecting garbage collection, reference counting, and Unicode support.",
-          "As of May 2026, Python 3. 14."
-        ],
-        "quotes": [],
-        "connections": [],
-        "takeaway": "core takeaways regarding this era"
-      },
-      {
-        "chapterTitle": "The Global Impact of Python (programming language)",
-        "questionAnswered": "Why do light steps trigger under Impact?",
-        "chronologicalPosition": 4,
-        "entities": [
-          "Python (programming language)"
-        ],
-        "dates": [
+          "Late 1980s",
           "1991",
           "2018"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "underlying issues prompting the challenges faced",
-        "effect": "resulting shifts that defined the response taken",
+        "locations": [
+          "Netherlands"
+        ],
+        "people": [
+          "Guido van Rossum"
+        ],
+        "events": [
+          "Conception of Python",
+          "First public release of Python 0.9.0",
+          "Resignation of Guido van Rossum as BDFL"
+        ],
+        "cause": "Guido van Rossum sought to design a successor to the ABC programming language that combined an extensible modular architecture with a highly readable, community-driven design philosophy.",
+        "effect": "Python established a unique culture and a robust architectural foundation that sustained its growth into one of the world's most popular programming languages.",
         "keyFacts": [
-          "Operational results measure energy transitions across Python (programming language)"
+          "Python's core architecture utilizes dynamic typing, late binding, and a memory management system combining reference counting and cycle-detecting garbage collection.",
+          "The name of the language was inspired by the British comedy series Monty Python's Flying Circus rather than the snake.",
+          "Guido van Rossum served as the community's 'Benevolent Dictator for Life' (BDFL) from Python's inception until his resignation in 2018."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "crucial lessons on these struggles"
+        "connections": [
+          "The transition of Python's governance from Guido van Rossum to the five-member Steering Council in 2019."
+        ],
+        "takeaway": "Guido van Rossum's design choices shaped Python's enduring architecture and culture.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "The Future of Python (programming language)",
-        "questionAnswered": "Who validates the final outcomes regarding Future?",
+        "chapterTitle": "A Multi Paradigm Evolution",
+        "referenceLabel": "Adoption",
+        "questionAnswered": "How did Python evolve to support diverse programming paradigms and gain widespread adoption?",
+        "chronologicalPosition": 3,
+        "entities": [
+          "Python Software Foundation",
+          "Monty Python"
+        ],
+        "dates": [
+          "1991",
+          "2000",
+          "2008",
+          "2020"
+        ],
+        "locations": [
+          "Netherlands"
+        ],
+        "people": [
+          "Guido van Rossum"
+        ],
+        "events": [
+          "Release of Python 0.9.0",
+          "Release of Python 2.0",
+          "Release of Python 3.0",
+          "Python 2 End of Life"
+        ],
+        "cause": "Guido van Rossum designed Python with an extensible, multi-paradigm architecture to improve upon the ABC programming language.",
+        "effect": "Python achieved widespread global adoption across software development, education, and programmable interfaces.",
+        "keyFacts": [
+          "Python supports object-oriented, structured, functional, and aspect-oriented programming paradigms.",
+          "The core design philosophy is summarized in the 'Zen of Python', which contains 19 written aphorisms out of 20 officially planned.",
+          "Python tutorials and reference materials use 'spam' and 'eggs' instead of 'foo' and 'bar' as a tribute to Monty Python."
+        ],
+        "quotes": [],
+        "connections": [
+          "Preceded by the ABC programming language as a conceptual predecessor",
+          "Succeeded by modern multi-paradigm languages utilizing dynamic typing and garbage collection"
+        ],
+        "takeaway": "Python's flexible paradigm support and clear philosophy drove global adoption.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "The Great Version Divide",
+        "referenceLabel": "Impact",
+        "questionAnswered": "How did the transition from Python 2 to Python 3 reshape the community?",
+        "chronologicalPosition": 4,
+        "entities": [
+          "Python Software Foundation",
+          "PyPy"
+        ],
+        "dates": [
+          "2000",
+          "2008",
+          "2020"
+        ],
+        "locations": [],
+        "people": [
+          "Guido van Rossum"
+        ],
+        "events": [
+          "Release of Python 2.0",
+          "Release of Python 3.0",
+          "Python 2 End of Life"
+        ],
+        "cause": "The release of Python 3.0 as a major, backward-incompatible revision with changed syntax and new semantics forced a massive shift in the ecosystem.",
+        "effect": "The community experienced a prolonged transition period, resulting in Python 2 reaching its official end-of-life in 2020 while unofficial alternatives stepped in to maintain legacy support.",
+        "keyFacts": [
+          "Python is a high-level, general-purpose language emphasizing readability, simplicity, and significant indentation.",
+          "Python 2.0 was released in 2000 with list comprehensions and garbage collection, reaching its official end-of-life in 2020.",
+          "Python 3.0 was released in 2008 as a major, backward-incompatible revision with changed syntax and new semantics.",
+          "Despite Python 2 being officially unsupported since 2020, an unofficial implementation called PyPy still maintains support for Python 2.7 with backported security updates."
+        ],
+        "quotes": [],
+        "connections": [
+          "The transition from the original design of Python conceived by Guido van Rossum in the late 1980s to a modern, Steering Council-led governance model."
+        ],
+        "takeaway": "Backward incompatibility split the community but ultimately modernized the language.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "Governance Beyond the Creator",
+        "referenceLabel": "Future",
+        "questionAnswered": "How does Python govern itself and maintain its philosophy in the post-BDFL era?",
         "chronologicalPosition": 5,
         "entities": [
-          "Python (programming language)"
+          "Python Software Foundation",
+          "Steering Council"
         ],
         "dates": [
           "2018",
           "2019"
         ],
         "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "lasting forces establishing the legacy left behind",
-        "effect": "long-term outcomes that shaped the memory of the subject",
+        "people": [
+          "Guido van Rossum"
+        ],
+        "events": [
+          "Resignation of Guido van Rossum as BDFL",
+          "Election of the five-member Steering Council"
+        ],
+        "cause": "Guido van Rossum resigned as Benevolent Dictator for Life in 2018 following conflicts over assignment expressions.",
+        "effect": "Python transitioned to a decentralized governance model led by an elected five-member Steering Council to guide its multi-paradigm architecture.",
         "keyFacts": [
-          "Concluding analysis confirms modern legacy values of Python (programming language)"
+          "Guido van Rossum stepped down as BDFL in 2018, leading to the election of a five-member Steering Council in 2019 to govern the language.",
+          "In Python culture, describing a piece of code or a solution as 'clever' is actually not considered a compliment.",
+          "Python maintains a multi-paradigm architecture, primarily supporting object-oriented programming, dynamic typing, and structured programming."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "final summary explaining the legacy"
+        "connections": [
+          "Transition from Guido van Rossum's 1991 launch to collective community governance",
+          "Evolution of Python's design philosophy from the original ABC language successor"
+        ],
+        "takeaway": "Python thrives under collective governance while preserving its core philosophy.",
+        "insufficientData": false
       }
     ]
   },
   "briefSummaryProvenance": [
     {
-      "sentence": "Python (programming language) records confirm that Python is a high-level, general-purpose programming language that emphasizes code readability,.",
-      "fact": "Python is a high-level, general-purpose programming language that emphasizes code readability,"
+      "sentence": "Guido van Rossum conceived Python in the late 1980s at CWI in the Netherlands .",
+      "fact": "Chapter 1: Python was conceived in the late 1980s at CWI in the Netherlands by Guido van Rossum"
     },
     {
-      "sentence": "Python (programming language) records confirm that Python is widely taught as an introductory programming language.",
-      "fact": "Python is widely taught as an introductory programming language"
+      "sentence": "versions of the new programming language officially began in 1989 .",
+      "fact": "Chapter 1: The versions of the Python programming language officially began in 1989"
     },
     {
-      "sentence": "Python (programming language) records confirm that Python 2 0 was released on 16 October 2000, featuring many.",
-      "fact": "Python 2 0 was released on 16 October 2000, featuring many"
+      "sentence": "Van Rossum designed Python as a successor to the ABC programming language .",
+      "fact": "Chapter 1: Python was designed as a successor to the ABC programming language"
     },
     {
-      "sentence": "Python (programming language) remains study topic showing that final summary explaining the legacy.",
-      "fact": "final summary explaining the legacy"
+      "sentence": "The creator named his language after the British comedy series Monty Python's Flying Circus .",
+      "fact": "Chapter 2: The name of the language was inspired by the British comedy series Monty Python's Flying Circus rather than the snake."
+    },
+    {
+      "sentence": "Van Rossum served as the community's Benevolent Dictator for Life until his resignation in 2018 .",
+      "fact": "Chapter 2: Guido van Rossum served as the community's 'Benevolent Dictator for Life' (BDFL) from Python's inception until his resignation in 2018."
+    },
+    {
+      "sentence": "Following his departure, the community elected a five-member Steering Council in 2019 to govern the language .",
+      "fact": "Chapter 5: Guido van Rossum stepped down as BDFL in 2018, leading to the election of a five-member Steering Council in 2019 to govern the language."
+    },
+    {
+      "sentence": "Today, Python operates as a high-level, general-purpose language emphasizing readability, simplicity, and significant indentation .",
+      "fact": "Chapter 4: Python is a high-level, general-purpose language emphasizing readability, simplicity, and significant indentation."
     }
   ],
   "validationStatus": {
-    "passed": true,
-    "errors": [],
-    "warnings": [
-      "Timeline is not in strict chronological order"
+    "passed": false,
+    "errors": [
+      "Identical 4-word phrases must not repeat across chapters",
+      "Sentence provenance is incomplete: only 81% of sentences are mapped to facts"
     ],
+    "warnings": [],
     "checkedRules": {
       "ontology_match": true,
       "required_fields_exist": true,
       "timeline_non_empty": true,
       "timeline_count_bounds": true,
-      "timeline_chronological": false,
+      "timeline_chronological": true,
       "graph_has_triples": true,
       "graph_connected": true,
+      "graph_no_synthetic_nodes": true,
       "named_entities_non_empty": true,
       "no_weak_facts": true,
       "no_duplicate_facts": true,
@@ -727,10 +1367,11 @@
       "paragraph_length_limit": true,
       "unique_chapter_titles": true,
       "concrete_dates_names_present": true,
-      "no_repeated_phrases": true,
+      "no_repeated_phrases": false,
       "no_timeline_milestone_placeholder": true,
+      "reader_question_quality": true,
       "did_you_know_length_ok": true,
-      "sentence_provenance_ok": true,
+      "sentence_provenance_ok": false,
       "no_abstract_writing": true,
       "documentary_alternating_rule": true,
       "fact_density_met": true,
@@ -740,6 +1381,6 @@
       "compiler_confidence_ok": true,
       "overall_confidence_ok": true
     },
-    "timestamp": "2026-07-10T06:52:46.680Z"
+    "timestamp": "2026-07-11T08:29:52.499Z"
   }
 }

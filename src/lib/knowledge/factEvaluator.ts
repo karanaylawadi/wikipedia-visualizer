@@ -1,5 +1,8 @@
-import type { ResolvedEntity, EvaluatedFact, EvaluationMetrics } from "@/types/knowledge";
+import type { ResolvedEntity, EvaluatedFact, EvaluationMetrics, StageDiagnostic } from "@/types/knowledge";
 import type { CompiledOutput } from "./compiler";
+import { containsPlaceholder } from "./placeholderDetector";
+import { recordFallback, recordGeminiSuccess, recordGeminiFailure } from "./diagnostics";
+import { callGeminiModel } from "@/lib/ai/geminiConfig";
 
 const FORBIDDEN_WEAK_PHRASES = [
   "is widely known",
@@ -32,7 +35,8 @@ export function isFactWeak(fact: string): boolean {
 
 export async function evaluateFacts(
   resolved: ResolvedEntity,
-  compiled: CompiledOutput
+  compiled: CompiledOutput,
+  diagnostics: StageDiagnostic[] = []
 ): Promise<EvaluatedFact[]> {
   const rawFactsList: string[] = [];
 
@@ -82,7 +86,8 @@ export async function evaluateFacts(
 
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey || candidateFacts.length === 0) {
-    return getFallbackEvaluation(candidateFacts);
+    recordFallback(diagnostics, "factEvaluator", !apiKey ? "no API key configured" : "no candidate facts");
+    return getFallbackEvaluation(candidateFacts, resolved.canonicalTitle);
   }
 
   const { GoogleGenAI } = await import("@google/genai");
@@ -128,29 +133,33 @@ Return a valid JSON object matching this schema:
 
 Only return raw JSON. Start with { and end with }. Do not wrap in markdown.`;
 
+  const start = Date.now();
   try {
-    const response = await ai.models.generateContent({
-      model: "gemini-2.0-flash",
+    const { response, meta } = await callGeminiModel(ai, {
       contents: prompt,
-      config: { temperature: 0.1, maxOutputTokens: 2000 }
+      config: { temperature: 0.1, maxOutputTokens: 4000 }
     });
 
     const text = typeof response.text === "string" ? response.text.replace(/```json|```/g, "").trim() : "";
     const parsed = JSON.parse(text) as { evaluations: EvaluatedFact[] };
-    
-    // Sort by overall score descending and filter out any with score < 0.65 or containing forbidden phrases
+
+    // Sort by overall score descending and filter out any with score < 0.65,
+    // forbidden phrases, or placeholder-contaminated text.
     const evaluated = (parsed.evaluations || [])
-      .filter(item => item.score >= 0.65 && !isFactWeak(item.fact))
+      .filter(item => item.score >= 0.65 && !isFactWeak(item.fact) && !containsPlaceholder(item.fact))
       .sort((a, b) => b.score - a.score);
 
+    recordGeminiSuccess(diagnostics, "factEvaluator", meta, Date.now() - start);
+
     if (evaluated.length === 0) {
-      return deduplicateEvaluatedFacts(getFallbackEvaluation(candidateFacts));
+      return deduplicateEvaluatedFacts(getFallbackEvaluation(candidateFacts, resolved.canonicalTitle));
     }
 
     return deduplicateEvaluatedFacts(evaluated);
   } catch (error) {
     console.warn("evaluateFacts failed, using fallback metrics", error);
-    return deduplicateEvaluatedFacts(getFallbackEvaluation(candidateFacts));
+    recordGeminiFailure(diagnostics, "factEvaluator", error, Date.now() - start);
+    return deduplicateEvaluatedFacts(getFallbackEvaluation(candidateFacts, resolved.canonicalTitle));
   }
 }
 
@@ -181,25 +190,66 @@ function deduplicateEvaluatedFacts(evaluated: EvaluatedFact[]): EvaluatedFact[] 
   return uniqueEvaluations;
 }
 
-function getFallbackEvaluation(facts: string[]): EvaluatedFact[] {
-  return facts.map((fact) => {
-    const specificity = fact.match(/\b(1\d{3}|2\d{3}|\d+%|\$\d+)\b/) ? 0.9 : 0.6;
-    const isWeak = isFactWeak(fact);
-    const score = isWeak ? 0.5 : (specificity === 0.9 ? 0.85 : 0.7);
-    
-    return {
-      fact,
-      score,
-      metrics: {
-        confidence: 0.95,
-        specificity,
-        narrativeValue: 0.8,
-        educationalValue: 0.8,
-        visualValue: 0.7,
-        uniqueness: 0.7,
-        ontologyRelevance: 0.85
-      },
-      reasoning: isWeak ? "Fact contains generic or weak phrases." : "Standard programmatic metric evaluation."
-    };
-  }).filter(item => item.score >= 0.65);
+const SUPERLATIVE_PATTERN = /\b(first|only|largest|smallest|youngest|oldest|tallest|deepest|rarest|fastest|earliest|last)\b/i;
+const LOCATION_PATTERN = /\b(city|country|nation|mountain|river|ocean|island|region|province|state|capital|building|palace|temple|theatre|studio)\b/i;
+
+function clamp01(n: number): number {
+  return Math.max(0, Math.min(1, n));
+}
+
+// Heuristic metrics computed from real, per-fact text signals — no two
+// facts get identical numbers unless they genuinely score the same on
+// every input signal. This replaces flat constants (confidence: 0.95,
+// narrativeValue: 0.8, ... identical for every fact, every topic) that the
+// V17 forensic audit found presented as if they were a measured
+// evaluation (V17_FORENSIC_AUDIT.md, part of Bug #1's pattern — invented
+// numbers presented as computed quality). These are still heuristics, not
+// an LLM judgment, and are capped below what an LLM-verified score could
+// reach.
+function getFallbackEvaluation(facts: string[], canonicalTitle: string): EvaluatedFact[] {
+  const titleTokens = canonicalTitle
+    .toLowerCase()
+    .split(/\s+/)
+    .filter((t) => t.length > 2);
+
+  return facts
+    .map((fact) => {
+      const hasPlaceholder = containsPlaceholder(fact);
+      const words = fact.split(/\s+/).filter(Boolean);
+      const wordCount = words.length;
+      const hasNumberOrDate = /\b(1\d{3}|2\d{3}|\d+%|\$\d+|\d+)\b/.test(fact);
+      const properNounCount = (fact.match(/\b[A-Z][a-z]{2,}\b/g) || []).length;
+      const properNounRatio = properNounCount / Math.max(1, wordCount);
+      const mentionsTopic = titleTokens.some((t) => fact.toLowerCase().includes(t));
+      const isWeak = isFactWeak(fact);
+
+      const confidence = hasPlaceholder ? 0.2 : clamp01(0.5 + Math.min(wordCount, 30) / 60);
+      const specificity = hasNumberOrDate ? 0.85 : clamp01(0.3 + properNounRatio);
+      const narrativeValue = clamp01(0.3 + properNounRatio * 1.5);
+      const educationalValue = hasNumberOrDate ? 0.75 : 0.5;
+      const visualValue = LOCATION_PATTERN.test(fact) ? 0.7 : clamp01(0.3 + properNounRatio);
+      const uniqueness = SUPERLATIVE_PATTERN.test(fact) ? 0.85 : 0.5;
+      const ontologyRelevance = mentionsTopic ? 0.8 : 0.5;
+
+      const metrics: EvaluationMetrics = {
+        confidence, specificity, narrativeValue, educationalValue, visualValue, uniqueness, ontologyRelevance,
+      };
+
+      const score =
+        isWeak || hasPlaceholder
+          ? 0.3
+          : clamp01((confidence + specificity + narrativeValue + educationalValue + visualValue + uniqueness + ontologyRelevance) / 7);
+
+      return {
+        fact,
+        score,
+        metrics,
+        reasoning: hasPlaceholder
+          ? "Fact contains placeholder text and was excluded."
+          : isWeak
+            ? "Fact contains generic or weak phrases."
+            : "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified.",
+      };
+    })
+    .filter((item) => item.score >= 0.55 && !containsPlaceholder(item.fact));
 }

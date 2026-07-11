@@ -1,18 +1,23 @@
-import type { ResolvedEntity, NarrativePlan, NarrativeChapter } from "@/types/knowledge";
+import type { ResolvedEntity, NarrativePlan, NarrativeChapter, StageDiagnostic } from "@/types/knowledge";
 import { mapEntityTypeToOntology } from "../ontology/ontologyEngine";
 import type { CompiledOutput } from "./compiler";
 import type { EvaluatedFact } from "@/types/knowledge";
+import { containsPlaceholder } from "./placeholderDetector";
+import { recordFallback, recordGeminiSuccess, recordGeminiFailure } from "./diagnostics";
+import { callGeminiModel } from "@/lib/ai/geminiConfig";
 
 export async function planNarrative(
   resolved: ResolvedEntity,
   compiled: CompiledOutput,
-  rankedFacts: EvaluatedFact[]
+  rankedFacts: EvaluatedFact[],
+  diagnostics: StageDiagnostic[] = []
 ): Promise<NarrativePlan> {
   const apiKey = process.env.GEMINI_API_KEY;
   const ontology = mapEntityTypeToOntology(resolved.entityType);
   const blueprint = ontology.documentaryBlueprint;
 
   if (!apiKey) {
+    recordFallback(diagnostics, "narrativePlanner", "no API key configured");
     return getFallbackPlan(resolved, blueprint, rankedFacts);
   }
 
@@ -56,48 +61,60 @@ Return a valid JSON object matching this schema:
 
 Only return raw JSON. Start with { and end with }. Do not wrap in markdown.`;
 
+  const start = Date.now();
   try {
-    const response = await ai.models.generateContent({
-      model: "gemini-2.0-flash",
+    const { response, meta } = await callGeminiModel(ai, {
       contents: prompt,
       config: { temperature: 0.15, maxOutputTokens: 1500 }
     });
 
     const text = typeof response.text === "string" ? response.text.replace(/```json|```/g, "").trim() : "";
     const parsed = JSON.parse(text) as NarrativePlan;
-    
-    // Validate chapters count
-    if (parsed.chapters && parsed.chapters.length === blueprint.length) {
+
+    // Validate chapters count and reject any chapter whose readerQuestion or
+    // title is placeholder-shaped — a malformed LLM response is treated the
+    // same as a failed call, not silently accepted.
+    const hasPlaceholderChapter = (parsed.chapters || []).some(
+      (c) => containsPlaceholder(c.readerQuestion) || containsPlaceholder(c.title)
+    );
+
+    if (parsed.chapters && parsed.chapters.length === blueprint.length && !hasPlaceholderChapter) {
+      recordGeminiSuccess(diagnostics, "narrativePlanner", meta, Date.now() - start);
       return parsed;
     }
+    recordGeminiSuccess(diagnostics, "narrativePlanner", meta, Date.now() - start, true);
     return getFallbackPlan(resolved, blueprint, rankedFacts);
   } catch (error) {
     console.warn("planNarrative failed, falling back to programmatic planner", error);
+    recordGeminiFailure(diagnostics, "narrativePlanner", error, Date.now() - start);
     return getFallbackPlan(resolved, blueprint, rankedFacts);
   }
 }
 
+// Deterministic recovery path. Two invented-content sources the V17
+// forensic audit identified here have been removed outright rather than
+// fixed:
+//   - `fallbackQuestions`, a 5-question array applied by chapter *index*
+//     with zero ontology awareness — this is the literal source of
+//     "How do key chemical processes behave during Release?" being asked
+//     about a film's release chapter (Bug #6).
+//   - `fallbackFacts`, a 5-template array substituted whenever the ranked
+//     facts pool ran out — the literal source of a chapter built entirely
+//     from "Concluding analysis confirms modern legacy values of Japan,"
+//     a sentence with no source basis at all (Bug #7 / Japan chapter 5
+//     case study).
+// When there are no real approved facts for a chapter, that chapter is
+// flagged `insufficientData: true` instead of being backfilled — it is
+// dropped before the documentary writer stage rather than rendered empty.
 function getFallbackPlan(resolved: ResolvedEntity, blueprint: string[], rankedFacts: EvaluatedFact[]): NarrativePlan {
   const chapters: NarrativeChapter[] = blueprint.map((chapterTitle, index) => {
     const start = index * 2;
     const end = start + 2;
-    const approvedFacts = rankedFacts.slice(start, end).map(rf => rf.fact);
-    
-    const fallbackQuestions = [
-      `What represents the starting motivation behind ${chapterTitle}?`,
-      `Which factors influenced early discoveries of ${chapterTitle}?`,
-      `How do key chemical processes behave during ${chapterTitle}?`,
-      `Why do light steps trigger under ${chapterTitle}?`,
-      `Who validates the final outcomes regarding ${chapterTitle}?`
-    ];
-
-    const fallbackFacts = [
-      `Primary foundational records list early temporal developments of ${resolved.canonicalTitle}`,
-      `Initial documentation validates scientific benchmarks defining ${resolved.canonicalTitle}`,
-      `Experimental findings trace molecular reactions within ${resolved.canonicalTitle}`,
-      `Operational results measure energy transitions across ${resolved.canonicalTitle}`,
-      `Concluding analysis confirms modern legacy values of ${resolved.canonicalTitle}`
-    ];
+    const approvedFacts = rankedFacts
+      .slice(start, end)
+      .map((rf) => rf.fact)
+      .filter((fact) => !containsPlaceholder(fact));
+    const insufficientData = approvedFacts.length === 0;
 
     const fallbackAnchors = [
       [resolved.canonicalTitle, "foundation origin"],
@@ -155,10 +172,17 @@ function getFallbackPlan(resolved: ResolvedEntity, blueprint: string[], rankedFa
       chapterIndex: index,
       title: topicSpecificTitle,
       referenceLabel: chapterTitle.split(" ")[0] || "Overview",
-      readerQuestion: fallbackQuestions[index] || `Why did ${chapterTitle} shape history?`,
+      // Ontology- and chapter-aware, anchored to the real blueprint label
+      // for this chapter (e.g. "Causes", "Production", "Government") —
+      // always topically coherent, never the fixed-by-index mismatch the
+      // forensic audit found (a chemistry question on a film's Release
+      // chapter). Still a plain template, not polished prose — Phase 2's
+      // job, not this phase's.
+      readerQuestion: `What defines the ${chapterTitle.toLowerCase()} of ${resolved.canonicalTitle}?`,
       objectives: [`Explore the relationship with ${chapterTitle}`],
-      approvedFacts: approvedFacts.length > 0 ? approvedFacts : [fallbackFacts[index] || fallbackFacts[0]],
-      anchors: fallbackAnchors[index] || fallbackAnchors[0]
+      approvedFacts,
+      anchors: fallbackAnchors[index] || fallbackAnchors[0],
+      insufficientData,
     };
   });
 

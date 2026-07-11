@@ -1,6 +1,7 @@
 import type { LintReport, KnowledgeArtifact } from "@/types/knowledge";
 import { validateOntologyFields, mapEntityTypeToOntology } from "../ontology/ontologyEngine";
 import { isFactWeak } from "./factEvaluator";
+import { containsPlaceholder, scanForPlaceholders } from "./placeholderDetector";
 
 export function lintArtifact(artifact: Omit<KnowledgeArtifact, "validationStatus">): LintReport {
   const errors: string[] = [];
@@ -47,7 +48,12 @@ export function lintArtifact(artifact: Omit<KnowledgeArtifact, "validationStatus
       lastYear = yrInt;
     }
   }
-  registerCheck("timeline_chronological", yearsAreOrdered, "Timeline is not in strict chronological order", true);
+  // Promoted from a warning to a hard error: this is the one rule the V17
+  // forensic audit found correctly detecting a real defect in practice
+  // (Inception's and Japan's timelines were genuinely out of order), but it
+  // could not affect `passed` while routed to warnings
+  // (V17_FORENSIC_AUDIT.md, Bug #18).
+  registerCheck("timeline_chronological", yearsAreOrdered, "Timeline is not in strict chronological order");
 
   // 3. Knowledge Graph Connectivity
   const graph = artifact.knowledgeGraph || [];
@@ -66,7 +72,26 @@ export function lintArtifact(artifact: Omit<KnowledgeArtifact, "validationStatus
       connectedTriples++;
     }
   }
-  registerCheck("graph_connected", connectedTriples > 0, "Knowledge graph triples are completely disconnected from the named entities");
+  registerCheck("graph_connected", graph.length === 0 || connectedTriples > 0, "Knowledge graph triples are completely disconnected from the named entities");
+
+  // Graph synthetic/placeholder node check — defense in depth. The graph
+  // builder (knowledgeGraph.ts) already rejects these before they can enter
+  // `artifact.knowledgeGraph`; this check exists so a regression there is
+  // still caught here rather than silently shipping (V17_FORENSIC_AUDIT.md,
+  // Bug #2: placeholder structured-fact values propagating into the graph
+  // as if they were real entities, e.g. "Compiled detail for director"
+  // DIRECTED Inception).
+  const syntheticOrPlaceholderTriples = graph.filter(
+    (t) =>
+      containsPlaceholder(t.subject) ||
+      containsPlaceholder(t.object) ||
+      (t.predicate === "HAS_PROPERTY" && /^Detail_Aspect_\d+$/i.test(t.object))
+  );
+  registerCheck(
+    "graph_no_synthetic_nodes",
+    syntheticOrPlaceholderTriples.length === 0,
+    `Knowledge graph contains ${syntheticOrPlaceholderTriples.length} placeholder or synthetic filler triple(s)`
+  );
 
   // 4. Named Entities Valid
   registerCheck("named_entities_non_empty", artifact.namedEntities.length > 0, "No named entities resolved in the artifact");
@@ -106,23 +131,18 @@ export function lintArtifact(artifact: Omit<KnowledgeArtifact, "validationStatus
   });
   registerCheck("no_duplicate_sentences", !duplicateSentenceFound, "Artifact contains duplicate sentences across different facts");
 
-  // 7. No Placeholder Wording
-  let hasPlaceholder = false;
-  const traverse = (obj: any): boolean => {
-    if (typeof obj === "string") {
-      const lower = obj.toLowerCase();
-      return lower.includes("placeholder") || lower.includes("tbd") || lower.includes("details are na") || lower.includes("details are n/a") || lower.includes("unknown director") || lower.includes("unknown founder");
-    }
-    if (Array.isArray(obj)) {
-      return obj.some(item => traverse(item));
-    }
-    if (obj && typeof obj === "object") {
-      return Object.values(obj).some(val => traverse(val));
-    }
-    return false;
-  };
-  hasPlaceholder = traverse(artifact.structuredFacts);
-  registerCheck("no_placeholder_wording", !hasPlaceholder, "Artifact contains placeholder wording ('TBD', 'placeholder', 'N/A', etc.)");
+  // 7. No Placeholder Wording — routed through the shared placeholderDetector
+  // (src/lib/knowledge/placeholderDetector.ts) instead of a narrow inline
+  // substring list. The old list here matched only "placeholder"/"tbd"/
+  // "n/a"/"unknown director"/"unknown founder" and missed the fallback
+  // compiler's actual placeholder text, "Compiled detail for {field}"
+  // (V17_FORENSIC_AUDIT.md, Bugs #9 and #13).
+  const placeholderHits = scanForPlaceholders(artifact.structuredFacts);
+  registerCheck(
+    "no_placeholder_wording",
+    placeholderHits.length === 0,
+    `Artifact contains placeholder wording at: ${placeholderHits.slice(0, 5).join(", ")}${placeholderHits.length > 5 ? ", ..." : ""}`
+  );
 
   // 8. V17 Editorial & Linter Validation rules
   const BANNED_AI_WORDS_PHRASES = [
@@ -213,15 +233,36 @@ export function lintArtifact(artifact: Omit<KnowledgeArtifact, "validationStatus
   });
   registerCheck("no_repeated_phrases", !hasRepeatedPhrases, "Identical 4-word phrases must not repeat across chapters");
 
-  // Timeline contains placeholder milestone check
+  // Timeline contains placeholder milestone check — previously matched only
+  // the substring "significant milestone" and missed the fallback
+  // timeline's actual text, "Pivotal era in {year}" / "underwent core
+  // changes and reached major development" (V17_FORENSIC_AUDIT.md, Bug
+  // #12), both of which are the literal banned examples in CLAUDE.md.
   let timelineMilestonePlaceholder = false;
   (artifact.timeline || []).forEach((e: any) => {
-    const desc = (e.description || e.headline || "").toLowerCase();
-    if (desc.includes("significant milestone")) {
+    if (containsPlaceholder(e.description) || containsPlaceholder(e.headline)) {
       timelineMilestonePlaceholder = true;
     }
   });
-  registerCheck("no_timeline_milestone_placeholder", !timelineMilestonePlaceholder, "Timeline must not contain generic 'significant milestone' descriptions");
+  registerCheck("no_timeline_milestone_placeholder", !timelineMilestonePlaceholder, "Timeline must not contain generic or placeholder milestone descriptions");
+
+  // Reader question quality check — previously readerQuestion was never
+  // scanned at all, so the fallback narrative planner's literal
+  // CLAUDE.md bad-example sentence ("What represents the starting
+  // motivation behind Causes?") passed validation every time
+  // (V17_FORENSIC_AUDIT.md, Bug #14).
+  let readerQuestionIssues = 0;
+  (artifact.narrativePlan?.chapters || []).forEach((c: any) => {
+    if (containsPlaceholder(c.readerQuestion)) readerQuestionIssues++;
+  });
+  (artifact.structuredFacts.cards || []).forEach((c: any) => {
+    if (containsPlaceholder(c.readerQuestion)) readerQuestionIssues++;
+  });
+  registerCheck(
+    "reader_question_quality",
+    readerQuestionIssues === 0,
+    `${readerQuestionIssues} chapter reader question(s) are placeholder-shaped or malformed`
+  );
 
   // Did You Know <= 3 sentences check
   let didYouKnowTooLong = false;

@@ -1,7 +1,7 @@
 {
-  "version": "16.0",
-  "compilerVersion": "v17.0",
-  "ontologyVersion": "v17.0",
+  "version": "18.0",
+  "compilerVersion": "v18.0",
+  "ontologyVersion": "v18.0",
   "wikipediaRevision": "rev-1.0",
   "wikidataRevision": "Q11982",
   "ontology": {
@@ -12,179 +12,199 @@
     ]
   },
   "structuredFacts": {
-    "formula": "Compiled detail for formula",
-    "discovery": "Compiled detail for discovery",
-    "discoverer": "Compiled detail for discoverer",
-    "applications": "Compiled detail for applications",
-    "limitations": "Compiled detail for limitations",
-    "currentResearch": "Compiled detail for currentResearch",
+    "formula": [
+      "General equation (Cornelis van Niel): CO2 + 2H2A + photons -> [CH2O] + 2A + H2O",
+      "Oxygenic photosynthesis (unbalanced): CO2 + 2H2O + photons -> [CH2O] + O2 + H2O",
+      "Oxygenic photosynthesis (net): CO2 + H2O + photons -> [CH2O] + O2",
+      "Arsenite-based photosynthesis: CO2 + (AsO3-3) + photons -> (AsO3-4) + CO"
+    ],
+    "discovery": "Discovered in 1779 by demonstrating that plants require light, not just soil and water, to carry out the process.",
+    "discoverer": "Jan Ingenhousz",
+    "applications": [
+      "Conversion of light energy into chemical energy to fuel metabolism",
+      "Production and maintenance of atmospheric oxygen",
+      "Biological carbon fixation into biomass",
+      "Synthesis of carbohydrates (glucose, fructose, sucrose, starches, phytoglycogen, cellulose)",
+      "Generation of ATP and NADPH"
+    ],
+    "limitations": [
+      "Requires specific light spectra (typically visible light, though some use far-red/shortwave infrared)",
+      "Dependent on availability of specific electron donors (such as water, hydrogen sulfide, or arsenite)",
+      "Inhibited in dark conditions (light-dependent reactions require photons)",
+      "Some shade-loving plants (sciophytes) produce oxygen levels so low they consume it all internally"
+    ],
+    "currentResearch": [
+      "Investigation of early evolutionary forms of photosynthesis (e.g., archaeal retinal-based systems)",
+      "Study of alternative electron donors like arsenite in microbial photosynthesis",
+      "Analysis of non-carbon-fixing anoxygenic pathways in Archaea"
+    ],
     "title": "Photosynthesis",
     "subtitle": "Biological process to convert light into chemical energy",
     "leadParagraph": "Photosynthesis is a system of biological processes by which photopigment-bearing autotrophic organisms, such as most plants, algae and cyanobacteria, convert light energy — typically from sunlight — into the chemical energy necessary to fuel their metabolism. The term photosynthesis usually refers to oxygenic photosynthesis, a process that releases oxygen as a byproduct of water splitting. Photosynthetic organisms store the converted chemical energy within the bonds of intracellular organic compounds (complex compounds containing carbon), typically carbohydrates like sugars (mainly glucose, fructose and sucrose), starches, phytoglycogen and cellulose. When needing to use this stored energy, an organism's cells then metabolize the organic compounds through cellular respiration. Photosynthesis plays a critical role in producing and maintaining the oxygen content of the Earth's atmosphere, and it supplies most of the biological energy necessary for complex life on Earth.\nSome organisms also perform anoxygenic photosynthesis, which does not produce oxygen. Some bacteria (e.g. purple bacteria) use bacteriochlorophyll to split hydrogen sulfide as a reductant instead of water, releasing sulfur instead of oxygen, which was a dominant form of photosynthesis in the euxinic Canfield oceans during the Boring Billion. Archaea such as Halobacterium also perform a type of non-carbon-fixing anoxygenic photosynthesis, where the simpler photopigment retinal and its microbial rhodopsin derivatives are used to absorb green light and produce a proton (hydron) gradient across the cell membrane, and the subsequent ion movement powers transmembrane proton pumps to directly synthesize adenosine triphosphate (ATP), the \"energy currency\" of cells. Such archaeal photosynthesis might have been the earliest form of photosynthesis that evolved on Earth, as far back as the Paleoarchean, preceding that of cyanobacteria (see Purple Earth hypothesis).\nWhile the details may differ between species, the process always begins when light energy is absorbed by the reaction centers, proteins that contain photosynthetic pigments or chromophores. In plants, these pigments are chlorophylls (a porphyrin derivative that absorbs the red and blue spectra of light, thus reflecting green) held inside chloroplasts, abundant in leaf cells. In cyanobacteria, they are embedded in the plasma membrane. In these light-dependent reactions, some energy is used to strip electrons from suitable substances, such as water, producing oxygen gas. The hydrogen freed by the splitting of water is used in the creation of two important molecules that participate in energetic processes: reduced nicotinamide adenine dinucleotide phosphate (NADPH) and ATP.\nIn plants, algae, and cyanobacteria, sugars are synthesized by a subsequent sequence of light-independent reactions called the Calvin cycle. In this process, atmospheric carbon dioxide is incorporated into already existing organic compounds, such as ribulose bisphosphate (RuBP). Using the ATP and NADPH produced by the light-dependent reactions, the resulting compounds are then reduced and removed to form further carbohydrates, such as glucose. In other bacteria, different mechanisms like the reverse Krebs cycle are used to achieve the same end.\nThe first photosynthetic organisms probably evolved early in the evolutionary history of life using reducing agents such as hydrogen or hydrogen sulfide, rather than water, as sources of electrons. Cyanobacteria appeared later; the excess oxygen they produced contributed directly to the oxygenation of the Earth, which rendered the evolution of complex life possible. The average rate of energy captured by global photosynthesis is approximately 130 terawatts, which is about eight times the total power consumption of human civilization. Photosynthetic organisms also convert around 100–115 billion tons (91–104 Pg petagrams, or billions of metric tons), of carbon into biomass per year. Photosynthesis was discovered in 1779 by Jan Ingenhousz who showed that plants need light, not just soil and water.",
-    "briefSummary": "Photosynthesis records confirm that Photosynthesis is a system of biological processes by which photopigment-bearing autotrophic. Photosynthesis records confirm that While the details may differ between species, the process always begins. Photosynthesis records confirm that Most photosynthetic organisms are photoautotrophs, which means that they are able. Photosynthesis remains study topic showing that final summary explaining the legacy.",
+    "briefSummary": "Jan Ingenhousz discovered photosynthesis in 1779, demonstrating that plants require light—not just soil and water—to fuel the process. Today, we know that photosynthetic organisms convert between 100 and 115 billion metric tons of carbon into biomass annually. This process captures energy at a global rate of approximately 130 terawatts, a capacity about eight times the total power consumption of human civilization. Long before this water-splitting systems evolved, however, early organisms relied on hydrogen sulfide as an electron donor, releasing elemental sulfur instead of oxygen.",
     "cards": [
       {
-        "title": "The Problem of Photosynthesis",
-        "summary": "Photosynthesis records verify that Photosynthesis is a system of biological processes by which photopigment-bearing autotrophic. Early motivation drove research explaining why motivating factors behind early phases of development. Subsequent investigations established that Some organisms also perform anoxygenic photosynthesis, which does not produce oxygen. Because of these dynamics, details show initial events showing transition in the subject. Photosynthesis data confirms that early outcomes and related findings. These changes established the basis for fundamental lessons from this period.",
-        "referenceLabel": "The",
-        "readerQuestion": "What represents the starting motivation behind Problem?",
-        "keyTakeaway": "fundamental lessons from this period",
+        "title": "The Dark Pre-Oxygenic World",
+        "summary": "Long before water-splitting photosynthesis evolved, early organisms relied on hydrogen sulfide as an electron donor, releasing elemental sulfur instead of oxygen. Because the early Earth lacked free atmospheric oxygen and water-splitting systems, these primitive organisms were forced to depend on alternative electron donors for metabolic energy. Certain microbes even performed photosynthesis by using sunlight to oxidize toxic arsenite into arsenate, yielding carbon monoxide as a byproduct to build other compounds. Through these diverse pathways, microbes successfully generated energy and biomass while releasing elemental sulfur, carbon monoxide, and arsenate into the primordial environment. Other early evolutionary forms of photosynthesis included retinal-based, non-carbon-fixing anoxygenic pathways in archaea like Halobacterium. Ultimately, early life thrived by photosynthesizing toxic compounds in a world completely devoid of oxygen.",
+        "referenceLabel": "Problem",
+        "readerQuestion": "How did early life generate energy before the atmosphere contained oxygen?",
+        "keyTakeaway": "Early life thrived by photosynthesizing toxic compounds without oxygen.",
         "provenance": [
           {
-            "sentence": "Photosynthesis records verify that Photosynthesis is a system of biological processes by which photopigment-bearing autotrophic.",
-            "fact": "Photosynthesis is a system of biological processes by which photopigment-bearing autotrophic"
+            "sentence": "Long before water-splitting photosynthesis evolved, early organisms relied on hydrogen sulfide as an electron donor, releasing elemental sulfur instead of oxygen.",
+            "fact": "Before water-splitting photosynthesis evolved, early organisms used hydrogen sulfide as an electron donor, releasing elemental sulfur instead of oxygen."
           },
           {
-            "sentence": "Early motivation drove research explaining why motivating factors behind early phases of development.",
-            "fact": "motivating factors behind early phases of development"
+            "sentence": "Because the early Earth lacked free atmospheric oxygen and water-splitting systems, these primitive organisms were forced to depend on alternative electron donors for metabolic energy.",
+            "fact": "Early Earth environments lacked free atmospheric oxygen and water-splitting systems, forcing primitive organisms to rely on alternative electron donors for metabolic energy."
           },
           {
-            "sentence": "Subsequent investigations established that Some organisms also perform anoxygenic photosynthesis, which does not produce oxygen.",
-            "fact": "Some organisms also perform anoxygenic photosynthesis, which does not produce oxygen"
+            "sentence": "Certain microbes even performed photosynthesis by using sunlight to oxidize toxic arsenite into arsenate, yielding carbon monoxide as a byproduct to build other compounds.",
+            "fact": "Some microbes perform photosynthesis by using sunlight to oxidize toxic arsenite into arsenate, producing carbon monoxide as a byproduct to build other compounds."
           },
           {
-            "sentence": "Because of these dynamics, details show initial events showing transition in the subject.",
-            "fact": "initial events showing transition in the subject"
+            "sentence": "Through these diverse pathways, microbes successfully generated energy and biomass while releasing elemental sulfur, carbon monoxide, and arsenate into the primordial environment.",
+            "fact": "Microbes successfully generated energy and biomass while releasing elemental sulfur, carbon monoxide, and arsenate as byproducts into the primordial environment."
           },
           {
-            "sentence": "Photosynthesis data confirms that early outcomes and related findings.",
-            "fact": "early outcomes and related findings"
+            "sentence": "Other early evolutionary forms of photosynthesis included retinal-based, non-carbon-fixing anoxygenic pathways in archaea like Halobacterium.",
+            "fact": "Early evolutionary forms of photosynthesis included retinal-based, non-carbon-fixing anoxygenic pathways in archaea like Halobacterium."
           },
           {
-            "sentence": "These changes established the basis for fundamental lessons from this period.",
-            "fact": "fundamental lessons from this period"
+            "sentence": "Ultimately, early life thrived by photosynthesizing toxic compounds in a world completely devoid of oxygen.",
+            "fact": "Early life thrived by photosynthesizing toxic compounds without oxygen."
           }
         ]
       },
       {
-        "title": "The Discovery of Photosynthesis",
-        "summary": "Historical records confirm that While the details may differ between species, the process always begins. These revelations inspired further exploration showing why key drivers behind the rising influence. Later studies verified that The first photosynthetic organisms probably evolved early in the evolutionary history. Following these events, analysts observed that consequent progress seen during this phase. Scientific tracking confirms that secondary attributes and timeline events. This transition created the groundwork for primary insights on the rise.",
-        "referenceLabel": "The",
-        "readerQuestion": "Which factors influenced early discoveries of Discovery?",
-        "keyTakeaway": "primary insights on the rise",
+        "title": "The Dawn of Photosynthesis",
+        "summary": "Dutch physician Jan Ingenhousz discovered photosynthesis in 1779. At the time, scientists were struggling to determine whether plants relied solely on soil and water for their growth. Through his experiments, Ingenhousz proved that plants actually require light to carry out this vital process. By demonstrating this relationship, he showed that plants need sunlight to generate oxygen, revealing the basic mechanics of photosynthesis. This breakthrough allowed late 18th-century researchers to finally grasp how plants convert light energy into chemical energy. Ultimately, it is sunlight, rather than soil alone, that powers plant life and oxygen production.",
+        "referenceLabel": "Discovery",
+        "readerQuestion": "How did humanity first uncover the secret relationship between plants and sunlight?",
+        "keyTakeaway": "Sunlight, not just soil, powers plant life and oxygen.",
         "provenance": [
           {
-            "sentence": "Historical records confirm that While the details may differ between species, the process always begins.",
-            "fact": "While the details may differ between species, the process always begins"
+            "sentence": "Dutch physician Jan Ingenhousz discovered photosynthesis in 1779.",
+            "fact": "Jan Ingenhousz discovered photosynthesis in 1779"
           },
           {
-            "sentence": "These revelations inspired further exploration showing why key drivers behind the rising influence.",
-            "fact": "key drivers behind the rising influence"
+            "sentence": "At the time, scientists were struggling to determine whether plants relied solely on soil and water for their growth.",
+            "fact": "The scientific community sought to understand how plants interact with their environment and whether they relied solely on soil and water for growth."
           },
           {
-            "sentence": "Later studies verified that The first photosynthetic organisms probably evolved early in the evolutionary history.",
-            "fact": "The first photosynthetic organisms probably evolved early in the evolutionary history"
+            "sentence": "Through his experiments, Ingenhousz proved that plants actually require light to carry out this vital process.",
+            "fact": "The discovery demonstrated that plants require light rather than just soil and water to carry out the process"
           },
           {
-            "sentence": "Following these events, analysts observed that consequent progress seen during this phase.",
-            "fact": "consequent progress seen during this phase"
+            "sentence": "By demonstrating this relationship, he showed that plants need sunlight to generate oxygen, revealing the basic mechanics of photosynthesis.",
+            "fact": "Jan Ingenhousz proved that plants require sunlight to generate oxygen, establishing the foundational systems of photosynthesis."
           },
           {
-            "sentence": "Scientific tracking confirms that secondary attributes and timeline events.",
-            "fact": "secondary attributes and timeline events"
+            "sentence": "This breakthrough allowed late 18th-century researchers to finally grasp how plants convert light energy into chemical energy.",
+            "fact": "This breakthrough established the late 18th-century foundation for understanding how plants convert light energy into chemical energy"
           },
           {
-            "sentence": "This transition created the groundwork for primary insights on the rise.",
-            "fact": "primary insights on the rise"
+            "sentence": "Ultimately, it is sunlight, rather than soil alone, that powers plant life and oxygen production.",
+            "fact": "Sunlight, not just soil, powers plant life and oxygen production."
           }
         ]
       },
       {
-        "title": "How Photosynthesis Works",
-        "summary": "Primary documentation reveals that Most photosynthetic organisms are photoautotrophs, which means that they are able. Such outcomes led observers to trace why pivotal elements supporting the peak achievements. Archival reviews showed that Carbon dioxide is converted into sugars in a process called carbon. With these developments, researchers saw that resultant breakthroughs related directly to these successes. Detailed observations show that peak milestones and direct connections. This structure formed the design for core takeaways regarding this era.",
-        "referenceLabel": "How",
-        "readerQuestion": "How do key chemical processes behave during Mechanism?",
-        "keyTakeaway": "core takeaways regarding this era",
+        "title": "The Chemical Blueprint of Light",
+        "summary": "By formulating the general photosynthetic equation, Cornelis van Niel explained how light-dependent and light-independent stages convert photons into chemical energy. Driven to map the exact chemical pathways of light absorption, researchers soon isolated the specific pigments and equations that power carbon fixation. This process can be oxygenic, which releases oxygen, or anoxygenic, relying instead on alternative electron donors like hydrogen sulfide or arsenite. Scientists eventually mapped both the light-dependent and light-independent reactions, revealing how chlorophyll selectively absorbs red and blue wavelengths while reflecting green. In plants, these chlorophyll pigments absorb only the red and blue spectra, meaning the green hue we perceive is actually reflected light. Ultimately, chlorophyll absorbs these red and blue wavelengths to drive chemical synthesis.",
+        "referenceLabel": "Mechanism",
+        "readerQuestion": "What chemical equations and light spectra govern the conversion of light into energy?",
+        "keyTakeaway": "Chlorophyll absorbs red and blue light to power chemical synthesis.",
         "provenance": [
           {
-            "sentence": "Primary documentation reveals that Most photosynthetic organisms are photoautotrophs, which means that they are able.",
-            "fact": "Most photosynthetic organisms are photoautotrophs, which means that they are able"
+            "sentence": "By formulating the general photosynthetic equation, Cornelis van Niel explained how light-dependent and light-independent stages convert photons into chemical energy.",
+            "fact": "Cornelis van Niel formulated the general photosynthetic equation (CO2 + 2H2A + photons -> [CH2O] + 2A + H2O), which occurs in light-dependent and light-independent stages."
           },
           {
-            "sentence": "Such outcomes led observers to trace why pivotal elements supporting the peak achievements.",
-            "fact": "pivotal elements supporting the peak achievements"
+            "sentence": "Driven to map the exact chemical pathways of light absorption, researchers soon isolated the specific pigments and equations that power carbon fixation.",
+            "fact": "The scientific drive to map the exact chemical pathways of light absorption led researchers to isolate the pigments and equations that drive carbon fixation."
           },
           {
-            "sentence": "Archival reviews showed that Carbon dioxide is converted into sugars in a process called carbon.",
-            "fact": "Carbon dioxide is converted into sugars in a process called carbon"
+            "sentence": "This process can be oxygenic, which releases oxygen, or anoxygenic, relying instead on alternative electron donors like hydrogen sulfide or arsenite.",
+            "fact": "Photosynthesis can be oxygenic (releasing oxygen) or anoxygenic (using alternative electron donors like hydrogen sulfide or arsenite)."
           },
           {
-            "sentence": "With these developments, researchers saw that resultant breakthroughs related directly to these successes.",
-            "fact": "resultant breakthroughs related directly to these successes"
+            "sentence": "Scientists eventually mapped both the light-dependent and light-independent reactions, revealing how chlorophyll selectively absorbs red and blue wavelengths while reflecting green.",
+            "fact": "Scientists successfully mapped the light-dependent and light-independent reactions, revealing how chlorophyll selectively absorbs red and blue light while reflecting green."
           },
           {
-            "sentence": "Detailed observations show that peak milestones and direct connections.",
-            "fact": "peak milestones and direct connections"
+            "sentence": "In plants, these chlorophyll pigments absorb only the red and blue spectra, meaning the green hue we perceive is actually reflected light.",
+            "fact": "In plants, chlorophyll pigments absorb only the red and blue spectra of light, while the green color we see is actually reflected light."
           },
           {
-            "sentence": "This structure formed the design for core takeaways regarding this era.",
-            "fact": "core takeaways regarding this era"
+            "sentence": "Ultimately, chlorophyll absorbs these red and blue wavelengths to drive chemical synthesis.",
+            "fact": "Chlorophyll absorbs red and blue light to power chemical synthesis."
           }
         ]
       },
       {
-        "title": "Scientific Evidence of Photosynthesis",
-        "summary": "Factual chronicles state that Photosynthesis and cellular respiration are distinct processes, as they take place. Ongoing difficulties drove thorough inquiries explaining why underlying issues prompting the challenges faced. Recent compilations proved that observed difficulties and response actions. Under these conditions, experts noted that resulting shifts that defined the response taken. Ontology patterns map that additional challenges and resolved queries. This transition shaped the modern standard for crucial lessons on these struggles.",
-        "referenceLabel": "Scientific",
-        "readerQuestion": "Why do light steps trigger under Evidence?",
-        "keyTakeaway": "crucial lessons on these struggles",
+        "title": "Shadows of the Sun",
+        "summary": "Archaea generate vital ATP using retinal, the very same light-sensitive pigment found in animal eyes. Driven by evolutionary pressures, these diverse organisms developed alternative pigments to capture energy in extreme environments. At least three known organisms rely on shortwave infrared or far-red radiation to power their light-dependent reactions. By using non-visible light spectra and internal gas recycling, life found a way to thrive through these unique adaptations. Sciophytes, for instance, produce such low oxygen levels during photosynthesis that they consume every bit of it themselves. Ultimately, these alternative pigments and extreme adaptations reveal the diverse evolutionary pathways of solar energy capture.",
+        "referenceLabel": "Evidence",
+        "readerQuestion": "What biological evidence reveals the diverse evolutionary paths of solar-powered life?",
+        "keyTakeaway": "Alternative pigments and extreme adaptations reveal diverse evolutionary solar pathways.",
         "provenance": [
           {
-            "sentence": "Factual chronicles state that Photosynthesis and cellular respiration are distinct processes, as they take place.",
-            "fact": "Photosynthesis and cellular respiration are distinct processes, as they take place"
+            "sentence": "Archaea generate vital ATP using retinal, the very same light-sensitive pigment found in animal eyes.",
+            "fact": "Some archaea perform a type of photosynthesis using retinal, the same pigment used for vision in animals, to generate a proton gradient and synthesize ATP."
           },
           {
-            "sentence": "Ongoing difficulties drove thorough inquiries explaining why underlying issues prompting the challenges faced.",
-            "fact": "underlying issues prompting the challenges faced"
+            "sentence": "Driven by evolutionary pressures, these diverse organisms developed alternative pigments to capture energy in extreme environments.",
+            "fact": "Evolutionary pressures drove diverse organisms to develop alternative pigments and metabolic adaptations to capture energy in extreme or low-light environments."
           },
           {
-            "sentence": "Recent compilations proved that observed difficulties and response actions.",
-            "fact": "observed difficulties and response actions"
+            "sentence": "At least three known organisms rely on shortwave infrared or far-red radiation to power their light-dependent reactions.",
+            "fact": "While most photosynthetic organisms rely on visible light, at least three known organisms can use shortwave infrared or far-red radiation for their light-dependent reactions."
           },
           {
-            "sentence": "Under these conditions, experts noted that resulting shifts that defined the response taken.",
-            "fact": "resulting shifts that defined the response taken"
+            "sentence": "By using non-visible light spectra and internal gas recycling, life found a way to thrive through these unique adaptations.",
+            "fact": "These adaptations allowed life to thrive using non-visible light spectra and internal gas recycling, bypassing the traditional limits of oxygenic photosynthesis."
           },
           {
-            "sentence": "Ontology patterns map that additional challenges and resolved queries.",
-            "fact": "additional challenges and resolved queries"
+            "sentence": "Sciophytes, for instance, produce such low oxygen levels during photosynthesis that they consume every bit of it themselves.",
+            "fact": "Certain shade-loving plants, known as sciophytes, produce such low levels of oxygen during photosynthesis that they consume all of it themselves rather than releasing it."
           },
           {
-            "sentence": "This transition shaped the modern standard for crucial lessons on these struggles.",
-            "fact": "crucial lessons on these struggles"
+            "sentence": "Ultimately, these alternative pigments and extreme adaptations reveal the diverse evolutionary pathways of solar energy capture.",
+            "fact": "Alternative pigments and extreme adaptations reveal diverse evolutionary solar pathways."
           }
         ]
       },
       {
-        "title": "Applications of Photosynthesis",
-        "summary": "Verified sources show that Concluding analysis confirms modern legacy values of Photosynthesis. The legacy prompted key factions to identify why lasting forces establishing the legacy left behind. Independent reviews confirmed that legacy outlines and subsequent records. Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject. Statistical records track that final reflections and study conclusions. This layout outlines the final outcome of final summary explaining the legacy.",
+        "title": "The Sun's Living Engine",
+        "summary": "Globally, photosynthetic organisms capture approximately 130 terawatts of solar energy, a figure that dwarfs human power consumption eight times over. This immense process begins the moment plant pigments absorb solar photons to initiate chemical conversion. Through this systems, these organisms transform up to 115 billion metric tons of carbon into biomass annually. This massive biological conversion drives the planetary carbon cycle, directly opposing cellular respiration. Ultimately, the process converts light energy into chemical energy stored in organic compounds like carbohydrates. By converting sunlight into massive biomass, photosynthesis fuels global life.",
         "referenceLabel": "Applications",
-        "readerQuestion": "Who validates the final outcomes regarding Applications?",
-        "keyTakeaway": "final summary explaining the legacy",
+        "readerQuestion": "How does the conversion of sunlight shape the energy budget and biomass of our planet?",
+        "keyTakeaway": "Photosynthesis fuels global life by converting sunlight into massive biomass.",
         "provenance": [
           {
-            "sentence": "Verified sources show that Concluding analysis confirms modern legacy values of Photosynthesis.",
-            "fact": "Concluding analysis confirms modern legacy values of Photosynthesis"
+            "sentence": "Globally, photosynthetic organisms capture approximately 130 terawatts of solar energy, a figure that dwarfs human power consumption eight times over.",
+            "fact": "The global rate of energy captured by photosynthesis is approximately 130 terawatts, which is about eight times the total power consumption of human civilization."
           },
           {
-            "sentence": "The legacy prompted key factions to identify why lasting forces establishing the legacy left behind.",
-            "fact": "lasting forces establishing the legacy left behind"
+            "sentence": "This immense process begins the moment plant pigments absorb solar photons to initiate chemical conversion.",
+            "fact": "The absorption of solar photons by photosynthetic organisms initiates the conversion of light energy into chemical energy."
           },
           {
-            "sentence": "Independent reviews confirmed that legacy outlines and subsequent records.",
-            "fact": "legacy outlines and subsequent records"
+            "sentence": "Through this systems, these organisms transform up to 115 billion metric tons of carbon into biomass annually.",
+            "fact": "Photosynthetic organisms convert between 100 and 115 billion metric tons of carbon into biomass every single year."
           },
           {
-            "sentence": "Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject.",
-            "fact": "long-term outcomes that shaped the memory of the subject"
+            "sentence": "This massive biological conversion drives the planetary carbon cycle, directly opposing cellular respiration.",
+            "fact": "This biological conversion generates massive global biomass and drives the planetary carbon cycle by opposing cellular respiration."
           },
           {
-            "sentence": "Statistical records track that final reflections and study conclusions.",
-            "fact": "final reflections and study conclusions"
+            "sentence": "Ultimately, the process converts light energy into chemical energy stored in organic compounds like carbohydrates.",
+            "fact": "Photosynthesis converts light energy into chemical energy stored in organic compounds such as carbohydrates."
           },
           {
-            "sentence": "This layout outlines the final outcome of final summary explaining the legacy.",
-            "fact": "final summary explaining the legacy"
+            "sentence": "By converting sunlight into massive biomass, photosynthesis fuels global life.",
+            "fact": "Photosynthesis fuels global life by converting sunlight into massive biomass."
           }
         ]
       }
@@ -192,213 +212,339 @@
   },
   "namedEntities": [
     {
-      "name": "Photosynthesis",
+      "name": "Jan Ingenhousz",
+      "type": "Person",
+      "description": "Dutch physiologist who discovered photosynthesis in 1779."
+    },
+    {
+      "name": "Cornelis van Niel",
+      "type": "Person",
+      "description": "Microbiologist who proposed the first generalized chemical equation for photosynthesis."
+    },
+    {
+      "name": "Halobacterium",
       "type": "Concept",
-      "description": "The primary resolved subject."
+      "description": "A genus of Archaea that performs a non-carbon-fixing type of anoxygenic photosynthesis using retinal."
+    },
+    {
+      "name": "Cyanobacteria",
+      "type": "Concept",
+      "description": "A phylum of gram-negative bacteria that obtain their energy through oxygenic photosynthesis."
+    },
+    {
+      "name": "Calvin cycle",
+      "type": "Concept",
+      "description": "A metabolic pathway of light-independent reactions where carbon dioxide is fixed into carbohydrates."
     }
   ],
   "knowledgeGraph": [
     {
-      "subject": "Compiled detail for discoverer",
-      "predicate": "DISCOVERED",
+      "subject": "Photosynthesis",
+      "predicate": "DISCOVERED_BY",
+      "object": "Jan Ingenhousz"
+    },
+    {
+      "subject": "Photosynthesis",
+      "predicate": "CONVERTS",
+      "object": "Light Energy"
+    },
+    {
+      "subject": "Photosynthesis",
+      "predicate": "PRODUCES",
+      "object": "Atmospheric Oxygen"
+    },
+    {
+      "subject": "Photosynthesis",
+      "predicate": "SYNTHESIZES",
+      "object": "Carbohydrates"
+    },
+    {
+      "subject": "Photosynthesis",
+      "predicate": "GENERATES",
+      "object": "ATP"
+    },
+    {
+      "subject": "Photosynthesis",
+      "predicate": "GENERATES",
+      "object": "NADPH"
+    },
+    {
+      "subject": "Cornelis van Niel",
+      "predicate": "FORMULATED",
+      "object": "Photosynthesis"
+    },
+    {
+      "subject": "Cyanobacteria",
+      "predicate": "PERFORMS",
+      "object": "Photosynthesis"
+    },
+    {
+      "subject": "Halobacterium",
+      "predicate": "PERFORMS",
+      "object": "Photosynthesis"
+    },
+    {
+      "subject": "Calvin cycle",
+      "predicate": "PART_OF",
       "object": "Photosynthesis"
     },
     {
       "subject": "Photosynthesis",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_1"
+      "predicate": "REQUIRES",
+      "object": "Photons"
     },
     {
       "subject": "Photosynthesis",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_2"
-    },
-    {
-      "subject": "Photosynthesis",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_3"
-    },
-    {
-      "subject": "Photosynthesis",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_4"
-    },
-    {
-      "subject": "Photosynthesis",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_5"
-    },
-    {
-      "subject": "Photosynthesis",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_6"
-    },
-    {
-      "subject": "Photosynthesis",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_7"
+      "predicate": "INCORPORATES",
+      "object": "Carbon Fixation"
     }
   ],
   "timeline": [
     {
+      "year": "Paleoarchean",
+      "headline": "Earliest Archaeal Photosynthesis",
+      "description": "Retinal-based, non-carbon-fixing anoxygenic photosynthesis potentially evolves in archaea like Halobacterium, preceding cyanobacteria.",
+      "importance": 9,
+      "connections": [
+        "Archaea",
+        "Halobacterium"
+      ],
+      "image": null
+    },
+    {
+      "year": "Early Evolutionary History",
+      "headline": "Anoxygenic Photosynthesis Emerges",
+      "description": "First photosynthetic organisms evolve using reducing agents like hydrogen or hydrogen sulfide instead of water.",
+      "importance": 8,
+      "connections": [
+        "Anoxygenic photosynthesis"
+      ],
+      "image": null
+    },
+    {
+      "year": "Boring Billion",
+      "headline": "Sulfur-Releasing Photosynthesis Dominates",
+      "description": "Purple bacteria splitting hydrogen sulfide dominate the euxinic Canfield oceans, releasing sulfur instead of oxygen.",
+      "connections": [
+        "Purple bacteria",
+        "Canfield oceans"
+      ],
+      "importance": 7,
+      "image": null
+    },
+    {
+      "year": "Pre-Complex Life Era",
+      "headline": "Cyanobacteria Oxygenate Earth",
+      "description": "Cyanobacteria develop oxygenic photosynthesis, releasing excess oxygen that drives the Great Oxidation Event.",
+      "importance": 10,
+      "connections": [
+        "Cyanobacteria"
+      ],
+      "image": null
+    },
+    {
       "year": "1779",
-      "headline": "Pivotal era in 1779",
-      "description": "Photosynthesis underwent core changes and reached major development in the year 1779",
-      "importance": 8,
+      "headline": "Discovery of Photosynthesis",
+      "description": "Jan Ingenhousz discovers photosynthesis by demonstrating that plants require sunlight to perform the process.",
+      "importance": 10,
       "connections": [
-        "Photosynthesis"
+        "Jan Ingenhousz"
       ],
       "image": null
     },
     {
-      "year": "2450",
-      "headline": "Pivotal era in 2450",
-      "description": "Photosynthesis underwent core changes and reached major development in the year 2450",
+      "year": "1930s",
+      "headline": "General Equation Proposed",
+      "description": "Cornelis van Niel proposes the generalized chemical equation for photosynthesis using an electron donor.",
       "importance": 8,
       "connections": [
-        "Photosynthesis"
-      ],
-      "image": null
-    },
-    {
-      "year": "2320",
-      "headline": "Pivotal era in 2320",
-      "description": "Photosynthesis underwent core changes and reached major development in the year 2320",
-      "importance": 8,
-      "connections": [
-        "Photosynthesis"
-      ],
-      "image": null
-    },
-    {
-      "year": "2500",
-      "headline": "Pivotal era in 2500",
-      "description": "Photosynthesis underwent core changes and reached major development in the year 2500",
-      "importance": 8,
-      "connections": [
-        "Photosynthesis"
-      ],
-      "image": null
-    },
-    {
-      "year": "2000",
-      "headline": "Pivotal era in 2000",
-      "description": "Photosynthesis underwent core changes and reached major development in the year 2000",
-      "importance": 8,
-      "connections": [
-        "Photosynthesis"
-      ],
-      "image": null
-    },
-    {
-      "year": "1796",
-      "headline": "Pivotal era in 1796",
-      "description": "Photosynthesis underwent core changes and reached major development in the year 1796",
-      "importance": 8,
-      "connections": [
-        "Photosynthesis"
+        "Cornelis van Niel"
       ],
       "image": null
     }
   ],
   "rankedFacts": [
     {
-      "fact": "Photosynthesis is a system of biological processes by which photopigment-bearing autotrophic organisms, such as most plants, algae and cyanobacteria, convert light energy — typically from sunlight — into the chemical energy necessary to fuel their metabolism. The term photosynthesis usually refers to oxygenic photosynthesis, a process that releases oxygen as a byproduct of water splitting.",
-      "score": 0.7,
+      "fact": "Some archaea perform a type of photosynthesis using retinal, the same pigment used for vision in animals, to generate a proton gradient and synthesize ATP.",
+      "score": 0.91,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 1,
+        "specificity": 0.95,
+        "narrativeValue": 0.85,
+        "educationalValue": 0.95,
+        "visualValue": 0.8,
+        "uniqueness": 0.9,
+        "ontologyRelevance": 0.95
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Highly specific biochemical details regarding non-chlorophyll phototrophy provide exceptional educational value and strong relevance to evolutionary biology."
     },
     {
-      "fact": "Some organisms also perform anoxygenic photosynthesis, which does not produce oxygen. Some bacteria (e.",
-      "score": 0.7,
+      "fact": "Some microbes perform photosynthesis by using sunlight to oxidize toxic arsenite into arsenate, producing carbon monoxide as a byproduct to build other compounds.",
+      "score": 0.89,
       "metrics": {
         "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
+        "specificity": 0.95,
+        "narrativeValue": 0.85,
+        "educationalValue": 0.9,
+        "visualValue": 0.75,
+        "uniqueness": 0.95,
         "ontologyRelevance": 0.85
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "An incredibly unique and highly specific biochemical pathway that challenges standard assumptions about photosynthetic byproducts."
     },
     {
-      "fact": "While the details may differ between species, the process always begins when light energy is absorbed by the reaction centers, proteins that contain photosynthetic pigments or chromophores. In plants, these pigments are chlorophylls (a porphyrin derivative that absorbs the red and blue spectra of light, thus reflecting green) held inside chloroplasts, abundant in leaf cells.",
-      "score": 0.7,
+      "fact": "Before water-splitting photosynthesis evolved, early organisms used hydrogen sulfide as an electron donor, releasing elemental sulfur instead of oxygen.",
+      "score": 0.89,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 1,
+        "specificity": 0.9,
+        "narrativeValue": 0.85,
+        "educationalValue": 0.95,
+        "visualValue": 0.8,
+        "uniqueness": 0.8,
+        "ontologyRelevance": 0.95
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Excellent evolutionary context with high specificity regarding electron donors in anoxygenic photosynthesis."
     },
     {
-      "fact": "The first photosynthetic organisms probably evolved early in the evolutionary history of life using reducing agents such as hydrogen or hydrogen sulfide, rather than water, as sources of electrons. Cyanobacteria appeared later; the excess oxygen they produced contributed directly to the oxygenation of the Earth, which rendered the evolution of complex life possible.",
-      "score": 0.7,
+      "fact": "The global rate of energy captured by photosynthesis is approximately 130 terawatts, which is about eight times the total power consumption of human civilization.",
+      "score": 0.88,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 1,
+        "specificity": 0.9,
+        "narrativeValue": 0.9,
+        "educationalValue": 0.9,
+        "visualValue": 0.8,
+        "uniqueness": 0.8,
+        "ontologyRelevance": 0.9
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "This fact combines highly specific global energy metrics with strong narrative and educational value, directly relating to the scale of the scientific concept."
     },
     {
-      "fact": "Most photosynthetic organisms are photoautotrophs, which means that they are able to synthesize food directly from carbon dioxide and water using energy from light. However, not all organisms use carbon dioxide as a source of carbon atoms to carry out photosynthesis; photoheterotrophs use organic compounds, rather than carbon dioxide, as a source of carbon.",
-      "score": 0.7,
+      "fact": "Photosynthetic organisms convert between 100 and 115 billion metric tons of carbon into biomass every single year.",
+      "score": 0.86,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
+        "confidence": 1,
+        "specificity": 0.9,
+        "narrativeValue": 0.75,
+        "educationalValue": 0.85,
+        "visualValue": 0.8,
         "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "ontologyRelevance": 0.95
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Features precise global carbon cycle metrics, making it highly relevant to the core scientific concept of biomass production."
     },
     {
-      "fact": "Carbon dioxide is converted into sugars in a process called carbon fixation; photosynthesis captures energy from sunlight to convert carbon dioxide into carbohydrates. Carbon fixation is an endothermic redox reaction.",
-      "score": 0.7,
+      "fact": "Cornelis van Niel formulated the general equation for the process, which occurs in light-dependent and light-independent stages",
+      "score": 0.86,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
+        "confidence": 1,
+        "specificity": 0.9,
+        "narrativeValue": 0.75,
+        "educationalValue": 0.9,
+        "visualValue": 0.8,
         "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "ontologyRelevance": 0.95
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Combines key historical attribution with the core structural division of the photosynthetic process."
     },
     {
-      "fact": "Photosynthesis and cellular respiration are distinct processes, as they take place through different sequences of chemical reactions and in different cellular compartments (cellular respiration in mitochondria).",
-      "score": 0.7,
+      "fact": "While most photosynthetic organisms rely on visible light, at least three known organisms can utilize shortwave infrared or far-red radiation for their light-dependent reactions.",
+      "score": 0.85,
       "metrics": {
         "confidence": 0.95,
-        "specificity": 0.6,
+        "specificity": 0.85,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.9,
+        "visualValue": 0.75,
+        "uniqueness": 0.85,
+        "ontologyRelevance": 0.9
+      },
+      "reasoning": "Provides strong educational value regarding the electromagnetic spectrum limits of light-dependent reactions."
+    },
+    {
+      "fact": "It was discovered by Jan Ingenhousz in 1779",
+      "score": 0.81,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.95,
+        "narrativeValue": 0.7,
+        "educationalValue": 0.8,
+        "visualValue": 0.6,
+        "uniqueness": 0.6,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "High historical specificity with precise names and dates, though less focused on the biological mechanism itself."
+    },
+    {
+      "fact": "Certain shade-loving plants, known as sciophytes, produce such low levels of oxygen during photosynthesis that they consume all of it themselves rather than releasing it.",
+      "score": 0.79,
+      "metrics": {
+        "confidence": 0.9,
+        "specificity": 0.75,
         "narrativeValue": 0.8,
         "educationalValue": 0.8,
         "visualValue": 0.7,
-        "uniqueness": 0.7,
+        "uniqueness": 0.85,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "An engaging ecological phenomenon with moderate specificity that highlights the balance between photosynthesis and respiration in specific plant types."
+    },
+    {
+      "fact": "In plants, the green color we see is actually reflected light; chlorophyll pigments absorb only the red and blue spectra of light.",
+      "score": 0.78,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.7,
+        "narrativeValue": 0.7,
+        "educationalValue": 0.85,
+        "visualValue": 0.9,
+        "uniqueness": 0.6,
         "ontologyRelevance": 0.85
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "A fundamental, highly visual concept with high confidence, though it is relatively common knowledge."
+    },
+    {
+      "fact": "It can be oxygenic (releasing oxygen) or anoxygenic",
+      "score": 0.78,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.7,
+        "narrativeValue": 0.5,
+        "educationalValue": 0.85,
+        "visualValue": 0.7,
+        "uniqueness": 0.6,
+        "ontologyRelevance": 0.95
+      },
+      "reasoning": "A crucial taxonomic distinction within the scientific concept that is highly relevant, though presented briefly."
+    },
+    {
+      "fact": "Photosynthesis converts light energy into chemical energy stored in organic compounds",
+      "score": 0.76,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.5,
+        "narrativeValue": 0.5,
+        "educationalValue": 0.8,
+        "visualValue": 0.8,
+        "uniqueness": 0.3,
+        "ontologyRelevance": 1
+      },
+      "reasoning": "The core definition of the scientific concept, yielding maximum ontology relevance but very low uniqueness and specificity."
+    },
+    {
+      "fact": "The process is chemically the opposite of cellular respiration",
+      "score": 0.74,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.6,
+        "narrativeValue": 0.6,
+        "educationalValue": 0.85,
+        "visualValue": 0.85,
+        "uniqueness": 0.4,
+        "ontologyRelevance": 0.9
+      },
+      "reasoning": "A classic educational comparison that is highly visual and relevant, though chemically simplified."
     }
   ],
   "visualModules": [
@@ -406,12 +552,32 @@
       "type": "science",
       "title": "Science Blueprint Snapshot",
       "data": {
-        "formula": "Compiled detail for formula",
-        "discovery": "Compiled detail for discovery",
-        "discoverer": "Compiled detail for discoverer",
-        "applications": "Compiled detail for applications",
-        "limitations": "Compiled detail for limitations",
-        "currentResearch": "Compiled detail for currentResearch"
+        "formula": [
+          "General equation (Cornelis van Niel): CO2 + 2H2A + photons -> [CH2O] + 2A + H2O",
+          "Oxygenic photosynthesis (unbalanced): CO2 + 2H2O + photons -> [CH2O] + O2 + H2O",
+          "Oxygenic photosynthesis (net): CO2 + H2O + photons -> [CH2O] + O2",
+          "Arsenite-based photosynthesis: CO2 + (AsO3-3) + photons -> (AsO3-4) + CO"
+        ],
+        "discovery": "Discovered in 1779 by demonstrating that plants require light, not just soil and water, to carry out the process.",
+        "discoverer": "Jan Ingenhousz",
+        "applications": [
+          "Conversion of light energy into chemical energy to fuel metabolism",
+          "Production and maintenance of atmospheric oxygen",
+          "Biological carbon fixation into biomass",
+          "Synthesis of carbohydrates (glucose, fructose, sucrose, starches, phytoglycogen, cellulose)",
+          "Generation of ATP and NADPH"
+        ],
+        "limitations": [
+          "Requires specific light spectra (typically visible light, though some use far-red/shortwave infrared)",
+          "Dependent on availability of specific electron donors (such as water, hydrogen sulfide, or arsenite)",
+          "Inhibited in dark conditions (light-dependent reactions require photons)",
+          "Some shade-loving plants (sciophytes) produce oxygen levels so low they consume it all internally"
+        ],
+        "currentResearch": [
+          "Investigation of early evolutionary forms of photosynthesis (e.g., archaeal retinal-based systems)",
+          "Study of alternative electron donors like arsenite in microbial photosynthesis",
+          "Analysis of non-carbon-fixing anoxygenic pathways in Archaea"
+        ]
       }
     }
   ],
@@ -419,159 +585,502 @@
     "chapters": [
       {
         "chapterIndex": 0,
-        "title": "The Problem of Photosynthesis",
+        "title": "The Dark Pre-Oxygenic World",
         "referenceLabel": "Problem",
-        "readerQuestion": "What represents the starting motivation behind Problem?",
+        "readerQuestion": "How did early life generate energy before the atmosphere contained oxygen?",
         "objectives": [
-          "Explore the relationship with Problem"
+          "Explore the limitations of early Earth environments and the reliance on alternative electron donors",
+          "Examine how early organisms utilized toxic compounds like hydrogen sulfide and arsenite to survive"
         ],
         "approvedFacts": [
-          "Photosynthesis is a system of biological processes by which photopigment-bearing autotrophic organisms, such as most plants, algae and cyanobacteria, convert light energy — typically from sunlight — into the chemical energy necessary to fuel their metabolism. The term photosynthesis usually refers to oxygenic photosynthesis, a process that releases oxygen as a byproduct of water splitting.",
-          "Some organisms also perform anoxygenic photosynthesis, which does not produce oxygen. Some bacteria (e."
+          "Before water-splitting photosynthesis evolved, early organisms used hydrogen sulfide as an electron donor, releasing elemental sulfur instead of oxygen.",
+          "Some microbes perform photosynthesis by using sunlight to oxidize toxic arsenite into arsenate, producing carbon monoxide as a byproduct to build other compounds."
         ],
         "anchors": [
-          "Photosynthesis",
-          "foundation origin"
+          "Paleoarchean",
+          "Boring Billion"
         ]
       },
       {
         "chapterIndex": 1,
-        "title": "The Discovery of Photosynthesis",
+        "title": "Illuminating the Plant Power",
         "referenceLabel": "Discovery",
-        "readerQuestion": "Which factors influenced early discoveries of Discovery?",
+        "readerQuestion": "How did humanity first uncover the secret relationship between plants and sunlight?",
         "objectives": [
-          "Explore the relationship with Discovery"
+          "Detail the historical breakthrough that proved plants require light rather than just soil and water",
+          "Establish the foundational discovery of the photosynthetic process in the late 18th century"
         ],
         "approvedFacts": [
-          "While the details may differ between species, the process always begins when light energy is absorbed by the reaction centers, proteins that contain photosynthetic pigments or chromophores. In plants, these pigments are chlorophylls (a porphyrin derivative that absorbs the red and blue spectra of light, thus reflecting green) held inside chloroplasts, abundant in leaf cells.",
-          "The first photosynthetic organisms probably evolved early in the evolutionary history of life using reducing agents such as hydrogen or hydrogen sulfide, rather than water, as sources of electrons. Cyanobacteria appeared later; the excess oxygen they produced contributed directly to the oxygenation of the Earth, which rendered the evolution of complex life possible."
+          "It was discovered by Jan Ingenhousz in 1779"
         ],
         "anchors": [
-          "Photosynthesis",
-          "historical timeline"
+          "Jan Ingenhousz",
+          "1779"
         ]
       },
       {
         "chapterIndex": 2,
-        "title": "How Photosynthesis Works",
+        "title": "The Chemical Blueprint of Light",
         "referenceLabel": "Mechanism",
-        "readerQuestion": "How do key chemical processes behave during Mechanism?",
+        "readerQuestion": "What chemical equations and light spectra govern the conversion of light into energy?",
         "objectives": [
-          "Explore the relationship with Mechanism"
+          "Explain the formulation of the general photosynthetic equation and its light-dependent stages",
+          "Contrast oxygenic and anoxygenic pathways and how chlorophyll interacts with the light spectrum"
         ],
         "approvedFacts": [
-          "Most photosynthetic organisms are photoautotrophs, which means that they are able to synthesize food directly from carbon dioxide and water using energy from light. However, not all organisms use carbon dioxide as a source of carbon atoms to carry out photosynthesis; photoheterotrophs use organic compounds, rather than carbon dioxide, as a source of carbon.",
-          "Carbon dioxide is converted into sugars in a process called carbon fixation; photosynthesis captures energy from sunlight to convert carbon dioxide into carbohydrates. Carbon fixation is an endothermic redox reaction."
+          "Cornelis van Niel formulated the general equation for the process, which occurs in light-dependent and light-independent stages",
+          "It can be oxygenic (releasing oxygen) or anoxygenic",
+          "In plants, the green color we see is actually reflected light; chlorophyll pigments absorb only the red and blue spectra of light."
         ],
         "anchors": [
-          "Photosynthesis",
-          "reaction mechanism"
+          "Cornelis van Niel",
+          "1930s"
         ]
       },
       {
         "chapterIndex": 3,
-        "title": "Scientific Evidence of Photosynthesis",
+        "title": "Evolutionary Clues and Extreme Adaptations",
         "referenceLabel": "Evidence",
-        "readerQuestion": "Why do light steps trigger under Evidence?",
+        "readerQuestion": "What biological evidence reveals the diverse evolutionary paths of solar-powered life?",
         "objectives": [
-          "Explore the relationship with Evidence"
+          "Analyze how ancient archaea used alternative pigments like retinal for energy generation",
+          "Examine modern organisms that push the boundaries of light absorption and oxygen consumption"
         ],
         "approvedFacts": [
-          "Photosynthesis and cellular respiration are distinct processes, as they take place through different sequences of chemical reactions and in different cellular compartments (cellular respiration in mitochondria)."
+          "Some archaea perform a type of photosynthesis using retinal, the same pigment used for vision in animals, to generate a proton gradient and synthesize ATP.",
+          "While most photosynthetic organisms rely on visible light, at least three known organisms can utilize shortwave infrared or far-red radiation for their light-dependent reactions.",
+          "Certain shade-loving plants, known as sciophytes, produce such low levels of oxygen during photosynthesis that they consume all of it themselves rather than releasing it."
         ],
         "anchors": [
-          "Photosynthesis",
-          "energy transition"
+          "Halobacterium",
+          "Cyanobacteria"
         ]
       },
       {
         "chapterIndex": 4,
-        "title": "Applications of Photosynthesis",
+        "title": "Fueling the Global Biosphere",
         "referenceLabel": "Applications",
-        "readerQuestion": "Who validates the final outcomes regarding Applications?",
+        "readerQuestion": "How does the conversion of sunlight shape the energy budget and biomass of our planet?",
         "objectives": [
-          "Explore the relationship with Applications"
+          "Quantify the massive scale of global energy captured by photosynthetic organisms",
+          "Illustrate how the synthesis of organic compounds drives the carbon cycle and opposes cellular respiration"
         ],
         "approvedFacts": [
-          "Concluding analysis confirms modern legacy values of Photosynthesis"
+          "The global rate of energy captured by photosynthesis is approximately 130 terawatts, which is about eight times the total power consumption of human civilization.",
+          "Photosynthetic organisms convert between 100 and 115 billion metric tons of carbon into biomass every single year.",
+          "Photosynthesis converts light energy into chemical energy stored in organic compounds"
         ],
         "anchors": [
-          "Photosynthesis",
-          "modern application"
+          "Calvin cycle",
+          "Pre-Complex Life Era"
         ]
       }
     ]
   },
   "triviaCandidates": [
     {
-      "fact": "Photosynthesis is a system of biological processes by which photopigment-bearing autotrophic organisms, such as most plants, algae and cyanobacteria, convert light energy — typically from sunlight — into the chemical energy necessary to fuel their metabolism. The term photosynthesis usually refers to oxygenic photosynthesis, a process that releases oxygen as a byproduct of water splitting.",
-      "surpriseScore": 10,
-      "readMoreTopic": "3-phosphoglycerate"
-    },
-    {
-      "fact": "Some organisms also perform anoxygenic photosynthesis, which does not produce oxygen. Some bacteria (e.",
+      "fact": "The global rate of energy captured by photosynthesis is approximately 130 terawatts, which is about eight times the total power consumption of human civilization.",
       "surpriseScore": 9,
-      "readMoreTopic": "3-phosphoglyceric acid"
+      "readMoreTopic": "Photosynthesis"
     },
     {
-      "fact": "While the details may differ between species, the process always begins when light energy is absorbed by the reaction centers, proteins that contain photosynthetic pigments or chromophores. In plants, these pigments are chlorophylls (a porphyrin derivative that absorbs the red and blue spectra of light, thus reflecting green) held inside chloroplasts, abundant in leaf cells.",
+      "fact": "Some archaea perform a type of photosynthesis using retinal, the same pigment used for vision in animals, to generate a proton gradient and synthesize ATP.",
+      "surpriseScore": 9,
+      "readMoreTopic": "Purple Earth hypothesis"
+    },
+    {
+      "fact": "Certain shade-loving plants, known as sciophytes, produce such low levels of oxygen during photosynthesis that they consume all of it themselves rather than releasing it.",
       "surpriseScore": 8,
-      "readMoreTopic": "ABC model of flower development"
+      "readMoreTopic": "Sciophytes"
     },
     {
-      "fact": "In plants, algae, and cyanobacteria, sugars are synthesized by a subsequent sequence of light-independent reactions called the Calvin cycle. In this process, atmospheric carbon dioxide is incorporated into already existing organic compounds, such as ribulose bisphosphate (RuBP).",
-      "surpriseScore": 7,
-      "readMoreTopic": "ATP synthase"
+      "fact": "Photosynthetic organisms convert between 100 and 115 billion metric tons of carbon into biomass every single year.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Biomass"
     },
     {
-      "fact": "The first photosynthetic organisms probably evolved early in the evolutionary history of life using reducing agents such as hydrogen or hydrogen sulfide, rather than water, as sources of electrons. Cyanobacteria appeared later; the excess oxygen they produced contributed directly to the oxygenation of the Earth, which rendered the evolution of complex life possible.",
+      "fact": "Some microbes perform photosynthesis by using sunlight to oxidize toxic arsenite into arsenate, producing carbon monoxide as a byproduct to build other compounds.",
+      "surpriseScore": 9,
+      "readMoreTopic": "Anoxygenic photosynthesis"
+    },
+    {
+      "fact": "While most photosynthetic organisms rely on visible light, at least three known organisms can utilize shortwave infrared or far-red radiation for their light-dependent reactions.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Photosynthetically active radiation"
+    },
+    {
+      "fact": "Before water-splitting photosynthesis evolved, early organisms used hydrogen sulfide as an electron donor, releasing elemental sulfur instead of oxygen.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Anoxygenic photosynthesis"
+    },
+    {
+      "fact": "In plants, the green color we see is actually reflected light; chlorophyll pigments absorb only the red and blue spectra of light.",
       "surpriseScore": 6,
-      "readMoreTopic": "ATP synthesis"
-    },
-    {
-      "fact": "Most photosynthetic organisms are photoautotrophs, which means that they are able to synthesize food directly from carbon dioxide and water using energy from light. However, not all organisms use carbon dioxide as a source of carbon atoms to carry out photosynthesis; photoheterotrophs use organic compounds, rather than carbon dioxide, as a source of carbon.",
-      "surpriseScore": 5,
-      "readMoreTopic": "A Greek–English Lexicon"
-    },
-    {
-      "fact": "In plants, algae, and cyanobacteria, photosynthesis releases oxygen. This oxygenic photosynthesis is by far the most common type of photosynthesis used by living organisms.",
-      "surpriseScore": 4,
-      "readMoreTopic": "Abiotic component"
-    },
-    {
-      "fact": "Although there are some differences between oxygenic photosynthesis in plants, algae, and cyanobacteria, the overall process is quite similar in these organisms. There are also many varieties of anoxygenic photosynthesis, used mostly by bacteria, which consume carbon dioxide but do not release oxygen or which produce elemental sulfur instead of molecular oxygen.",
-      "surpriseScore": 3,
-      "readMoreTopic": "Abiotic stress"
-    },
-    {
-      "fact": "Carbon dioxide is converted into sugars in a process called carbon fixation; photosynthesis captures energy from sunlight to convert carbon dioxide into carbohydrates. Carbon fixation is an endothermic redox reaction.",
-      "surpriseScore": 2,
-      "readMoreTopic": "Absorbance"
-    },
-    {
-      "fact": "Photosynthesis and cellular respiration are distinct processes, as they take place through different sequences of chemical reactions and in different cellular compartments (cellular respiration in mitochondria).",
-      "surpriseScore": 1,
-      "readMoreTopic": "Absorption spectrum"
+      "readMoreTopic": "Chlorophyll"
     }
   ],
   "relatedTopics": [
-    "3-phosphoglycerate",
-    "3-phosphoglyceric acid",
-    "ABC model of flower development",
-    "ATP synthase",
-    "ATP synthesis",
-    "A Greek–English Lexicon",
-    "Abiotic component",
-    "Abiotic stress"
+    "Oxygenic photosynthesis",
+    "Anoxygenic photosynthesis",
+    "Carbon fixation",
+    "Cellular respiration",
+    "Calvin cycle",
+    "Chloroplast",
+    "Bacteriorhodopsin",
+    "Purple Earth hypothesis",
+    "Great Oxidation Event",
+    "Light-dependent reactions"
   ],
   "confidenceScores": {
-    "resolver": 0.96,
-    "compiler": 0.95,
-    "grader": 0.7,
-    "overall": 0.92
+    "resolver": 1,
+    "compiler": 1,
+    "grader": 0.8115384615384614,
+    "overall": 0.97
   },
+  "qualityAssessment": {
+    "generationMode": "primary",
+    "fallbackRatio": 0,
+    "provenanceCoverage": 0.8823529411764706,
+    "placeholderCount": 0,
+    "verifiedFactRatio": 1,
+    "qualityScore": 97,
+    "confidenceBreakdown": {
+      "provenanceCoverage": 0.8823529411764706,
+      "fieldCoverage": 1,
+      "placeholderPenalty": 1,
+      "fallbackPenalty": 1,
+      "sourceAgreement": 1,
+      "extractionCompleteness": 1,
+      "factSpecificity": 0.8115384615384614,
+      "graphValidity": 1,
+      "timelineValidity": 1,
+      "validationPenalty": 1
+    },
+    "status": "PARTIAL",
+    "modulesPassing": [
+      "timeline",
+      "cards",
+      "didYouKnow",
+      "relatedTopics",
+      "structuredFactsData",
+      "knowledgeGraph"
+    ],
+    "modulesHidden": [],
+    "reasons": [
+      "all signals above threshold, no placeholder contamination, majority primary generation",
+      "downgraded because lintArtifact() reported validation errors"
+    ]
+  },
+  "stageDiagnostics": [
+    {
+      "stage": "entityResolver.pass1",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1373
+    },
+    {
+      "stage": "compiler",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 7193
+    },
+    {
+      "stage": "knowledgeGraph",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2094
+    },
+    {
+      "stage": "factEvaluator",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 8080
+    },
+    {
+      "stage": "narrativePlanner",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 4945
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2638
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1872
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2799
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2365
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2210
+    },
+    {
+      "stage": "documentaryWriter.summary",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1273
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1316
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1461
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1538
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1470
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1603
+    },
+    {
+      "stage": "stylePolish",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 8582
+    }
+  ],
   "checksum": "2f246ae6657868dcfb82f6796ab1838dba5dcb2c613d64c7387746fa39c5acae",
-  "dependencyHash": "460ec541f081f9a6988af16fa08489e9b787029dbb9c92a5a61aae2d912b088b",
+  "dependencyHash": "84f8809e7c1c1177cdb01c646a953a91ec7276d3fd2b2016b98c4acd921387d5",
   "sourceReferences": [
     {
       "url": "https://en.wikipedia.org/wiki/Photosynthesis",
@@ -581,157 +1090,240 @@
   "factScript": {
     "chapters": [
       {
-        "chapterTitle": "The Problem of Photosynthesis",
-        "questionAnswered": "What represents the starting motivation behind Problem?",
+        "chapterTitle": "The Dark Pre-Oxygenic World",
+        "referenceLabel": "Problem",
+        "questionAnswered": "How did early life generate energy before the atmosphere contained oxygen?",
         "chronologicalPosition": 1,
         "entities": [
-          "Photosynthesis"
+          "Halobacterium",
+          "Purple bacteria",
+          "Archaea"
+        ],
+        "dates": [
+          "Paleoarchean",
+          "Early Evolutionary History",
+          "Boring Billion"
+        ],
+        "locations": [
+          "Canfield oceans"
+        ],
+        "people": [
+          "Cornelis van Niel"
+        ],
+        "events": [
+          "Earliest Archaeal Photosynthesis",
+          "Anoxygenic Photosynthesis Emerges",
+          "Sulfur-Releasing Photosynthesis Dominates"
+        ],
+        "cause": "Early Earth environments lacked free atmospheric oxygen and water-splitting mechanisms, forcing primitive organisms to rely on alternative electron donors for metabolic energy.",
+        "effect": "Microbes successfully generated energy and biomass while releasing elemental sulfur, carbon monoxide, and arsenate as byproducts into the primordial environment.",
+        "keyFacts": [
+          "Before water-splitting photosynthesis evolved, early organisms used hydrogen sulfide as an electron donor, releasing elemental sulfur instead of oxygen.",
+          "Some microbes perform photosynthesis by using sunlight to oxidize toxic arsenite into arsenate, producing carbon monoxide as a byproduct to build other compounds.",
+          "Early evolutionary forms of photosynthesis included retinal-based, non-carbon-fixing anoxygenic pathways in archaea like Halobacterium.",
+          "The general chemical equation proposed by Cornelis van Niel (CO2 + 2H2A + photons -> [CH2O] + 2A + H2O) establishes how alternative electron donors function in place of water."
+        ],
+        "quotes": [],
+        "connections": [
+          "Transition to oxygenic photosynthesis driven by Cyanobacteria",
+          "The Great Oxidation Event"
+        ],
+        "takeaway": "Early life thrived by photosynthesizing toxic compounds without oxygen.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "Illuminating the Plant Power",
+        "referenceLabel": "Discovery",
+        "questionAnswered": "How did humanity first uncover the secret relationship between plants and sunlight?",
+        "chronologicalPosition": 2,
+        "entities": [
+          "Photosynthesis",
+          "Oxygenic photosynthesis"
+        ],
+        "dates": [
+          "1779"
+        ],
+        "locations": [],
+        "people": [
+          "Jan Ingenhousz"
+        ],
+        "events": [
+          "Discovery of photosynthesis"
+        ],
+        "cause": "The scientific community sought to understand how plants interact with their environment and whether they relied solely on soil and water for growth.",
+        "effect": "Jan Ingenhousz proved that plants require sunlight to generate oxygen, establishing the foundational mechanism of photosynthesis.",
+        "keyFacts": [
+          "Jan Ingenhousz discovered photosynthesis in 1779",
+          "The discovery demonstrated that plants require light rather than just soil and water to carry out the process",
+          "This breakthrough established the late 18th-century foundation for understanding how plants convert light energy into chemical energy"
+        ],
+        "quotes": [],
+        "connections": [
+          "Cornelis van Niel's 1930s generalized chemical equation for photosynthesis"
+        ],
+        "takeaway": "Sunlight, not just soil, powers plant life and oxygen production.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "The Chemical Blueprint of Light",
+        "referenceLabel": "Mechanism",
+        "questionAnswered": "What chemical equations and light spectra govern the conversion of light into energy?",
+        "chronologicalPosition": 3,
+        "entities": [
+          "Cyanobacteria",
+          "Purple bacteria",
+          "Halobacterium",
+          "Chlorophyll"
         ],
         "dates": [
           "1779",
-          "2450"
+          "1930s"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "motivating factors behind early phases of development",
-        "effect": "initial events showing transition in the subject",
+        "locations": [
+          "Canfield oceans"
+        ],
+        "people": [
+          "Cornelis van Niel",
+          "Jan Ingenhousz"
+        ],
+        "events": [
+          "Discovery of Photosynthesis",
+          "General Equation Proposed"
+        ],
+        "cause": "The scientific drive to map the exact chemical pathways of light absorption led researchers to isolate the pigments and equations that drive carbon fixation.",
+        "effect": "Scientists successfully mapped the light-dependent and light-independent reactions, revealing how chlorophyll selectively absorbs red and blue light while reflecting green.",
         "keyFacts": [
-          "Photosynthesis is a system of biological processes by which photopigment-bearing autotrophic organisms, such as most plants, algae and cyanobacteria, convert light energy — typically from sunlight — into the chemical energy necessary to fuel their metabolism. The term photosynthesis usually refers to oxygenic photosynthesis, a process that releases oxygen as a byproduct of water splitting.",
-          "Some organisms also perform anoxygenic photosynthesis, which does not produce oxygen. Some bacteria (e."
+          "Cornelis van Niel formulated the general photosynthetic equation (CO2 + 2H2A + photons -> [CH2O] + 2A + H2O), which occurs in light-dependent and light-independent stages.",
+          "Photosynthesis can be oxygenic (releasing oxygen) or anoxygenic (using alternative electron donors like hydrogen sulfide or arsenite).",
+          "In plants, chlorophyll pigments absorb only the red and blue spectra of light, while the green color we see is actually reflected light."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "fundamental lessons from this period"
+        "connections": [
+          "The Great Oxidation Event driven by early Cyanobacteria",
+          "The evolution of retinal-based systems in Archaea"
+        ],
+        "takeaway": "Chlorophyll absorbs red and blue light to power chemical synthesis.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "The Discovery of Photosynthesis",
-        "questionAnswered": "Which factors influenced early discoveries of Discovery?",
-        "chronologicalPosition": 2,
-        "entities": [
-          "Photosynthesis"
-        ],
-        "dates": [
-          "2450",
-          "2320"
-        ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "key drivers behind the rising influence",
-        "effect": "consequent progress seen during this phase",
-        "keyFacts": [
-          "While the details may differ between species, the process always begins when light energy is absorbed by the reaction centers, proteins that contain photosynthetic pigments or chromophores. In plants, these pigments are chlorophylls (a porphyrin derivative that absorbs the red and blue spectra of light, thus reflecting green) held inside chloroplasts, abundant in leaf cells.",
-          "The first photosynthetic organisms probably evolved early in the evolutionary history of life using reducing agents such as hydrogen or hydrogen sulfide, rather than water, as sources of electrons. Cyanobacteria appeared later; the excess oxygen they produced contributed directly to the oxygenation of the Earth, which rendered the evolution of complex life possible."
-        ],
-        "quotes": [],
-        "connections": [],
-        "takeaway": "primary insights on the rise"
-      },
-      {
-        "chapterTitle": "How Photosynthesis Works",
-        "questionAnswered": "How do key chemical processes behave during Mechanism?",
-        "chronologicalPosition": 3,
-        "entities": [
-          "Photosynthesis"
-        ],
-        "dates": [
-          "2320",
-          "2500"
-        ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "pivotal elements supporting the peak achievements",
-        "effect": "resultant breakthroughs related directly to these successes",
-        "keyFacts": [
-          "Most photosynthetic organisms are photoautotrophs, which means that they are able to synthesize food directly from carbon dioxide and water using energy from light. However, not all organisms use carbon dioxide as a source of carbon atoms to carry out photosynthesis; photoheterotrophs use organic compounds, rather than carbon dioxide, as a source of carbon.",
-          "Carbon dioxide is converted into sugars in a process called carbon fixation; photosynthesis captures energy from sunlight to convert carbon dioxide into carbohydrates. Carbon fixation is an endothermic redox reaction."
-        ],
-        "quotes": [],
-        "connections": [],
-        "takeaway": "core takeaways regarding this era"
-      },
-      {
-        "chapterTitle": "Scientific Evidence of Photosynthesis",
-        "questionAnswered": "Why do light steps trigger under Evidence?",
+        "chapterTitle": "Evolutionary Clues and Extreme Adaptations",
+        "referenceLabel": "Evidence",
+        "questionAnswered": "What biological evidence reveals the diverse evolutionary paths of solar-powered life?",
         "chronologicalPosition": 4,
         "entities": [
-          "Photosynthesis"
+          "Archaea",
+          "Halobacterium",
+          "Sciophytes",
+          "Retinal",
+          "Proton gradient",
+          "ATP"
         ],
         "dates": [
-          "2500",
-          "2000"
+          "Paleoarchean"
         ],
-        "locations": [],
+        "locations": [
+          "Euxinic oceans"
+        ],
         "people": [],
-        "events": [],
-        "cause": "underlying issues prompting the challenges faced",
-        "effect": "resulting shifts that defined the response taken",
+        "events": [
+          "Evolution of retinal-based non-carbon-fixing anoxygenic photosynthesis in archaea"
+        ],
+        "cause": "Evolutionary pressures drove diverse organisms to develop alternative pigments and metabolic adaptations to capture energy in extreme or low-light environments.",
+        "effect": "These adaptations allowed life to thrive using non-visible light spectra and internal gas recycling, bypassing the traditional limits of oxygenic photosynthesis.",
         "keyFacts": [
-          "Photosynthesis and cellular respiration are distinct processes, as they take place through different sequences of chemical reactions and in different cellular compartments (cellular respiration in mitochondria)."
+          "Some archaea perform a type of photosynthesis using retinal, the same pigment used for vision in animals, to generate a proton gradient and synthesize ATP.",
+          "While most photosynthetic organisms rely on visible light, at least three known organisms can utilize shortwave infrared or far-red radiation for their light-dependent reactions.",
+          "Certain shade-loving plants, known as sciophytes, produce such low levels of oxygen during photosynthesis that they consume all of it themselves rather than releasing it."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "crucial lessons on these struggles"
+        "connections": [
+          "Pre-Complex Life Era cyanobacteria oxygenation",
+          "Jan Ingenhousz 1779 light requirement discovery"
+        ],
+        "takeaway": "Alternative pigments and extreme adaptations reveal diverse evolutionary solar pathways.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "Applications of Photosynthesis",
-        "questionAnswered": "Who validates the final outcomes regarding Applications?",
+        "chapterTitle": "Fueling the Global Biosphere",
+        "referenceLabel": "Applications",
+        "questionAnswered": "How does the conversion of sunlight shape the energy budget and biomass of our planet?",
         "chronologicalPosition": 5,
         "entities": [
-          "Photosynthesis"
+          "Biomass",
+          "Carbohydrates",
+          "Atmospheric oxygen"
         ],
         "dates": [
-          "2000",
-          "1796"
+          "1779"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "lasting forces establishing the legacy left behind",
-        "effect": "long-term outcomes that shaped the memory of the subject",
+        "locations": [
+          "Global biosphere"
+        ],
+        "people": [
+          "Jan Ingenhousz"
+        ],
+        "events": [
+          "Discovery of photosynthesis in 1779"
+        ],
+        "cause": "The absorption of solar photons by photosynthetic organisms initiates the conversion of light energy into chemical energy.",
+        "effect": "This biological conversion generates massive global biomass and drives the planetary carbon cycle by opposing cellular respiration.",
         "keyFacts": [
-          "Concluding analysis confirms modern legacy values of Photosynthesis"
+          "The global rate of energy captured by photosynthesis is approximately 130 terawatts, which is about eight times the total power consumption of human civilization.",
+          "Photosynthetic organisms convert between 100 and 115 billion metric tons of carbon into biomass every single year.",
+          "Photosynthesis converts light energy into chemical energy stored in organic compounds such as carbohydrates."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "final summary explaining the legacy"
+        "connections": [
+          "The Great Oxidation Event driven by early cyanobacteria",
+          "The carbon cycle and cellular respiration pathways"
+        ],
+        "takeaway": "Photosynthesis fuels global life by converting sunlight into massive biomass.",
+        "insufficientData": false
       }
     ]
   },
   "briefSummaryProvenance": [
     {
-      "sentence": "Photosynthesis records confirm that Photosynthesis is a system of biological processes by which photopigment-bearing autotrophic.",
-      "fact": "Photosynthesis is a system of biological processes by which photopigment-bearing autotrophic"
+      "sentence": "In 1779, Jan Ingenhousz discovered photosynthesis .",
+      "fact": "Chapter 2: Jan Ingenhousz discovered photosynthesis in 1779"
     },
     {
-      "sentence": "Photosynthesis records confirm that While the details may differ between species, the process always begins.",
-      "fact": "While the details may differ between species, the process always begins"
+      "sentence": "His breakthrough demonstrated that plants require light rather than just soil and water to carry out the process .",
+      "fact": "Chapter 2: The discovery demonstrated that plants require light rather than just soil and water to carry out the process"
     },
     {
-      "sentence": "Photosynthesis records confirm that Most photosynthetic organisms are photoautotrophs, which means that they are able.",
-      "fact": "Most photosynthetic organisms are photoautotrophs, which means that they are able"
+      "sentence": "Today, we know photosynthetic organisms convert between 100 and 115 billion metric tons of carbon into biomass every single year .",
+      "fact": "Chapter 5: Photosynthetic organisms convert between 100 and 115 billion metric tons of carbon into biomass every single year."
     },
     {
-      "sentence": "Photosynthesis remains study topic showing that final summary explaining the legacy.",
-      "fact": "final summary explaining the legacy"
+      "sentence": "The global rate of energy captured by this process is approximately 130 terawatts .",
+      "fact": "Chapter 5: The global rate of energy captured by photosynthesis is approximately 130 terawatts, which is about eight times the total power consumption of human civilization."
+    },
+    {
+      "sentence": "This capacity is about eight times the total power consumption of human civilization .",
+      "fact": "Chapter 5: The global rate of energy captured by photosynthesis is approximately 130 terawatts, which is about eight times the total power consumption of human civilization."
+    },
+    {
+      "sentence": "Before water-splitting photosynthesis evolved, early organisms used hydrogen sulfide as an electron donor, releasing elemental sulfur instead of oxygen .",
+      "fact": "Chapter 1: Before water-splitting photosynthesis evolved, early organisms used hydrogen sulfide as an electron donor, releasing elemental sulfur instead of oxygen."
     }
   ],
   "validationStatus": {
-    "passed": true,
-    "errors": [],
-    "warnings": [
-      "Timeline is not in strict chronological order"
+    "passed": false,
+    "errors": [
+      "Identical 4-word phrases must not repeat across chapters",
+      "Sentence provenance is incomplete: only 83% of sentences are mapped to facts"
     ],
+    "warnings": [],
     "checkedRules": {
       "ontology_match": true,
       "required_fields_exist": true,
       "timeline_non_empty": true,
       "timeline_count_bounds": true,
-      "timeline_chronological": false,
+      "timeline_chronological": true,
       "graph_has_triples": true,
       "graph_connected": true,
+      "graph_no_synthetic_nodes": true,
       "named_entities_non_empty": true,
       "no_weak_facts": true,
       "no_duplicate_facts": true,
@@ -741,10 +1333,11 @@
       "paragraph_length_limit": true,
       "unique_chapter_titles": true,
       "concrete_dates_names_present": true,
-      "no_repeated_phrases": true,
+      "no_repeated_phrases": false,
       "no_timeline_milestone_placeholder": true,
+      "reader_question_quality": true,
       "did_you_know_length_ok": true,
-      "sentence_provenance_ok": true,
+      "sentence_provenance_ok": false,
       "no_abstract_writing": true,
       "documentary_alternating_rule": true,
       "fact_density_met": true,
@@ -754,6 +1347,6 @@
       "compiler_confidence_ok": true,
       "overall_confidence_ok": true
     },
-    "timestamp": "2026-07-10T06:53:40.087Z"
+    "timestamp": "2026-07-11T08:31:43.541Z"
   }
 }

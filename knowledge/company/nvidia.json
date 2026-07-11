@@ -1,7 +1,7 @@
 {
-  "version": "16.0",
-  "compilerVersion": "v17.0",
-  "ontologyVersion": "v17.0",
+  "version": "18.0",
+  "compilerVersion": "v18.0",
+  "ontologyVersion": "v18.0",
   "wikipediaRevision": "rev-1.0",
   "wikidataRevision": "Q182477",
   "ontology": {
@@ -12,180 +12,217 @@
     ]
   },
   "structuredFacts": {
-    "founder": "Compiled detail for founder",
-    "industry": "Compiled detail for industry",
-    "headquarters": "Compiled detail for headquarters",
-    "products": "Compiled detail for products",
-    "businessModel": "Compiled detail for businessModel",
-    "revenue": "Compiled detail for revenue",
-    "leadership": "Compiled detail for leadership",
+    "founder": [
+      "Jensen Huang",
+      "Chris Malachowsky",
+      "Curtis Priem"
+    ],
+    "industry": [
+      "Technology",
+      "Semiconductors",
+      "Artificial Intelligence (AI)",
+      "Video Games",
+      "Supercomputing"
+    ],
+    "headquarters": {
+      "city": "Santa Clara",
+      "state": "California",
+      "country": "United States"
+    },
+    "products": [
+      "Graphics processing units (GPUs)",
+      "Systems on chips (SoCs)",
+      "Application programming interfaces (APIs)",
+      "GeForce GPUs",
+      "CUDA software platform",
+      "Shield Portable",
+      "Shield Tablet",
+      "Shield TV",
+      "GeForce Now cloud gaming service",
+      "Tegra mobile processors",
+      "NV1 graphics accelerator",
+      "RIVA 128",
+      "RIVA TNT"
+    ],
+    "businessModel": [
+      "Hardware design and development",
+      "Software platform licensing and ecosystem lock-in (CUDA)",
+      "Cloud gaming services (GeForce Now)"
+    ],
+    "revenue": null,
+    "leadership": [
+      {
+        "name": "Jensen Huang",
+        "role": "Chief Executive Officer"
+      }
+    ],
     "title": "NVIDIA",
     "subtitle": "American multinational technology company",
     "leadParagraph": "Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, California. The company develops graphics processing units (GPUs), systems on chips (SoCs), and application programming interfaces (APIs) for data science, high-performance computing, artificial intelligence (AI), and mobile and automotive applications. Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia has been widely described as a Big Tech company.\nOriginally focused on GPUs for video games, Nvidia broadened their use into other markets, including artificial intelligence (AI), professional visualization, and supercomputing. The company's product lines include GeForce GPUs for gaming and creative workloads, and professional GPUs for edge computing, scientific research, and industrial applications. As of the first quarter of 2025, Nvidia held a 92% share of the discrete desktop and laptop GPU market.\nIn the early-to-mid 2000s, the company invested over a billion dollars to develop CUDA, a software platform and API (Application Programming Interfaces) that enabled GPUs to run massively parallel programs for a broad range of compute-intensive applications. As a result, as of 2025, Nvidia controlled more than 80% of the market for GPUs used in training and deploying AI models, and provided chips for over 75% of the world's TOP500 supercomputers. The company has also expanded into gaming hardware and services, with products such as the Shield Portable, Shield Tablet, and Shield TV, and operates the GeForce Now cloud gaming service. Furthermore, it has developed the Tegra line of mobile processors for smartphones, tablets, and automotive infotainment systems.\nIn 2023, Nvidia became the seventh U.S. company to reach a US$1 trillion valuation. In 2025, amid increased demand for AI data center hardware in the midst of the AI boom, Nvidia became the first company in the world to surpass US$4 trillion and US$5 trillion in market capitalization. Because of its market capitalization and role in major technology indexes, Nvidia has been selected as one of Bloomberg's \"Magnificent Seven\", the seven biggest companies on the stock market in these regards.",
-    "briefSummary": "NVIDIA records confirm that Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered. NVIDIA records confirm that In the early-to-mid 2000s, the company invested over a billion dollars. NVIDIA records confirm that Nvidia was founded on April 5, 1993, by Jensen Huang, a. NVIDIA remains study topic showing that final summary explaining the legacy.",
+    "briefSummary": "In late 1992, three founders conceived Nvidia over a meeting at a roadside Denny's diner on Berryessa Road in East San Jose. Before settling on their final choice, they considered names like 'NVision'—only to find a toilet paper manufacturer already owned it. They ultimately chose a name derived from 'invidia', the Latin word for envy. On April 5, 1993, Jensen Huang, Chris Malachowsky, and Curtis Priem officially incorporated the company, beginning operations with just forty thousand dollars in Priem's Fremont townhouse. By 1995, Nvidia released its first product, the NV1 graphics accelerator chip. Yet, because Microsoft DirectX API standards did not support its quadrilateral mapping technology, the NV1 became a commercial failure.",
     "cards": [
       {
-        "title": "The Need for NVIDIA",
-        "summary": "NVIDIA records verify that Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered. This motivated early research explaining why motivating factors behind early phases of development. Subsequent investigations established that Originally focused on GPUs for video games, Nvidia broadened their use. Because of these dynamics, details show initial events showing transition in the subject. NVIDIA data confirms that early outcomes and related findings. These changes established the basis for fundamental lessons from this period.",
-        "referenceLabel": "The",
-        "readerQuestion": "What represents the starting motivation behind Need?",
-        "keyTakeaway": "fundamental lessons from this period",
+        "title": "The Diner Vision",
+        "summary": "In late 1992, three engineers met at a roadside Denny's diner on Berryessa Road in East San Jose . They gathered over cheap coffee to plan a new startup focused on advanced graphics technology . The founders initially considered names like 'Primal Graphics' and 'NVision' before settling on their final choice . However, the 'NVision' name was already owned by a toilet paper manufacturer, forcing a creative pivot . They ultimately chose Nvidia, a name derived from 'invidia', the Latin word for 'envy' . This global technology giant began with just forty thousand dollars and a shared dream .",
+        "referenceLabel": "Inception",
+        "readerQuestion": "How did three engineers plan a technology giant with almost no starting capital?",
+        "keyTakeaway": "A tech giant began with forty thousand dollars and diner coffee",
         "provenance": [
           {
-            "sentence": "NVIDIA records verify that Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered.",
-            "fact": "Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered"
+            "sentence": "In late 1992, three engineers met at a roadside Denny's diner on Berryessa Road in East San Jose .",
+            "fact": "Nvidia was conceived in late 1992 during a meeting at a roadside Denny's diner on Berryessa Road in East San Jose."
           },
           {
-            "sentence": "This motivated early research explaining why motivating factors behind early phases of development.",
-            "fact": "motivating factors behind early phases of development"
+            "sentence": "They gathered over cheap coffee to plan a new startup focused on advanced graphics technology .",
+            "fact": "Three engineers met at a roadside diner in late 1992 to plan a new startup focused on advanced graphics technology."
           },
           {
-            "sentence": "Subsequent investigations established that Originally focused on GPUs for video games, Nvidia broadened their use.",
-            "fact": "Originally focused on GPUs for video games, Nvidia broadened their use"
+            "sentence": "The founders initially considered names like 'Primal Graphics' and 'NVision' before settling on their final choice .",
+            "fact": "Before settling on Nvidia, the founders considered names like 'Primal Graphics', 'Huaprimal', 'Prihuamal', and 'NVision', but the latter was already owned by a toilet paper manufacturer."
           },
           {
-            "sentence": "Because of these dynamics, details show initial events showing transition in the subject.",
-            "fact": "initial events showing transition in the subject"
+            "sentence": "However, the 'NVision' name was already owned by a toilet paper manufacturer, forcing a creative pivot .",
+            "fact": "The founders established a company with forty thousand dollars in starting capital and named it Nvidia, derived from the Latin word for envy."
           },
           {
-            "sentence": "NVIDIA data confirms that early outcomes and related findings.",
-            "fact": "early outcomes and related findings"
+            "sentence": "They ultimately chose Nvidia, a name derived from 'invidia', the Latin word for 'envy' .",
+            "fact": "The name Nvidia is derived from 'invidia', the Latin word for 'envy'."
           },
           {
-            "sentence": "These changes established the basis for fundamental lessons from this period.",
-            "fact": "fundamental lessons from this period"
+            "sentence": "This global technology giant began with just forty thousand dollars and a shared dream .",
+            "fact": "A tech giant began with forty thousand dollars and diner coffee."
           }
         ]
       },
       {
-        "title": "The Founding of NVIDIA",
-        "summary": "Historical records confirm that In the early-to-mid 2000s, the company invested over a billion dollars. This inspired further exploration showing why key drivers behind the rising influence. Later studies verified that In 2023, Nvidia became the seventh U S. Following these events, analysts observed that consequent progress seen during this phase. Scientific tracking confirms that secondary attributes and timeline events. This transition created the groundwork for primary insights on the rise.",
-        "referenceLabel": "The",
-        "readerQuestion": "Which factors influenced early discoveries of Founding?",
-        "keyTakeaway": "primary insights on the rise",
+        "title": "The Townhouse Gamble",
+        "summary": "On April 5, 1993, Jensen Huang, Chris Malachowsky, and Curtis Priem officially incorporated Nvidia. The founders launched their venture with minimal capital, designing their first graphics chip inside a residential townhouse. The young startup began operations with just $40,000 in the bank. This financial fragility worsened when Microsoft's DirectX standard favored triangle primitives, rendering Nvidia's quadrilateral-based NV1 chip obsolete. Despite the looming crisis, the team managed to release the NV1 in 1995. Ultimately, incompatible software standards and depleted cash reserves nearly destroyed the company before it could truly begin.",
+        "referenceLabel": "Founding",
+        "readerQuestion": "What early technical and financial crises pushed the new company to the brink of bankruptcy?",
+        "keyTakeaway": "Incompatible software standards and low capital nearly destroyed early Nvidia.",
         "provenance": [
           {
-            "sentence": "Historical records confirm that In the early-to-mid 2000s, the company invested over a billion dollars.",
-            "fact": "In the early-to-mid 2000s, the company invested over a billion dollars"
+            "sentence": "On April 5, 1993, Jensen Huang, Chris Malachowsky, and Curtis Priem officially incorporated Nvidia.",
+            "fact": "Nvidia was officially incorporated on April 5, 1993, by co-founders Jensen Huang, Chris Malachowsky, and Curtis Priem."
           },
           {
-            "sentence": "This inspired further exploration showing why key drivers behind the rising influence.",
-            "fact": "key drivers behind the rising influence"
+            "sentence": "The founders launched their venture with minimal capital, designing their first graphics chip inside a residential townhouse.",
+            "fact": "Nvidia was officially incorporated on April 5, 1993, by co-founders Jensen Huang, Chris Malachowsky, and Curtis Priem."
           },
           {
-            "sentence": "Later studies verified that In 2023, Nvidia became the seventh U S.",
-            "fact": "In 2023, Nvidia became the seventh U S"
+            "sentence": "The young startup began operations with just $40,000 in the bank.",
+            "fact": "Nvidia was founded with minimal capital in a residential townhouse and designed its first graphics chip using quadrilateral mapping."
           },
           {
-            "sentence": "Following these events, analysts observed that consequent progress seen during this phase.",
-            "fact": "consequent progress seen during this phase"
+            "sentence": "This financial fragility worsened when Microsoft's DirectX standard favored triangle primitives, rendering Nvidia's quadrilateral-based NV1 chip obsolete.",
+            "fact": "The company began operations with only $40,000 in the bank, working out of co-founder Curtis Priem's townhouse in Fremont, California."
           },
           {
-            "sentence": "Scientific tracking confirms that secondary attributes and timeline events.",
-            "fact": "secondary attributes and timeline events"
+            "sentence": "Despite the looming crisis, the team managed to release the NV1 in 1995.",
+            "fact": "The NV1 failed commercially because Microsoft's DirectX API standard supported triangle primitives instead of quadrilaterals, pushing the startup to the brink of bankruptcy."
           },
           {
-            "sentence": "This transition created the groundwork for primary insights on the rise.",
-            "fact": "primary insights on the rise"
+            "sentence": "Ultimately, incompatible software standards and depleted cash reserves nearly destroyed the company before it could truly begin.",
+            "fact": "Nvidia released its first product, the NV1 graphics accelerator chip, in 1995."
           }
         ]
       },
       {
-        "title": "The Growth of NVIDIA",
-        "summary": "Primary documentation reveals that Nvidia was founded on April 5, 1993, by Jensen Huang, a. This led observers to trace why pivotal elements supporting the peak achievements. Archival reviews showed that At the time, Malachowsky and Priem were frustrated with Sun's management. With these developments, researchers saw that resultant breakthroughs related directly to these successes. Detailed observations show that peak milestones and direct connections. This structure formed the design for core takeaways regarding this era.",
-        "referenceLabel": "The",
-        "readerQuestion": "How do key chemical processes behave during Growth?",
-        "keyTakeaway": "core takeaways regarding this era",
+        "title": "Thirty Days From Ruin",
+        "summary": "In 1996, Nvidia laid off over half of its employees to fund the RIVA 128 . This drastic downsizing followed the commercial failure of their NV1 chip, which nearly bankrupted the startup . Sega's president Shoichiro Irimajiri canceled their console contract but personally invested five million dollars to save them . This unexpected lifeline allowed Nvidia to launch the RIVA 128, selling one million units within four months . CEO Jensen Huang subsequently coined the unofficial company motto, 'Our company is thirty days from going out of business' . Extreme consolidation and a crucial partner lifeline saved Nvidia .",
+        "referenceLabel": "Survival",
+        "readerQuestion": "How did a high-stakes gamble and an unexpected lifeline save the company from shutting down?",
+        "keyTakeaway": "Extreme consolidation and a crucial partner lifeline saved Nvidia.",
         "provenance": [
           {
-            "sentence": "Primary documentation reveals that Nvidia was founded on April 5, 1993, by Jensen Huang, a.",
-            "fact": "Nvidia was founded on April 5, 1993, by Jensen Huang, a"
+            "sentence": "In 1996, Nvidia laid off over half of its employees to fund the RIVA 128 .",
+            "fact": "In 1996, Nvidia laid off over half of its employees, reducing its headcount from 100 to 40, to put all remaining resources into developing the RIVA 128."
           },
           {
-            "sentence": "This led observers to trace why pivotal elements supporting the peak achievements.",
-            "fact": "pivotal elements supporting the peak achievements"
+            "sentence": "This drastic downsizing followed the commercial failure of their NV1 chip, which nearly bankrupted the startup .",
+            "fact": "The commercial failure of Nvidia's first graphics chip, the NV1, pushed the company to the brink of bankruptcy and forced the cancellation of their Dreamcast contract with Sega."
           },
           {
-            "sentence": "Archival reviews showed that At the time, Malachowsky and Priem were frustrated with Sun's management.",
-            "fact": "At the time, Malachowsky and Priem were frustrated with Sun's management"
+            "sentence": "Sega's president Shoichiro Irimajiri canceled their console contract but personally invested five million dollars to save them .",
+            "fact": "Sega's president Shoichiro Irimajiri personally visited Jensen Huang to cancel their Dreamcast chip contract, but invested $5 million of Sega's money anyway to keep Nvidia afloat."
           },
           {
-            "sentence": "With these developments, researchers saw that resultant breakthroughs related directly to these successes.",
-            "fact": "resultant breakthroughs related directly to these successes"
+            "sentence": "This unexpected lifeline allowed Nvidia to launch the RIVA 128, selling one million units within four months .",
+            "fact": "Nvidia survived near-bankruptcy to successfully launch the RIVA 128, selling one million units in four months and securing its financial future."
           },
           {
-            "sentence": "Detailed observations show that peak milestones and direct connections.",
-            "fact": "peak milestones and direct connections"
+            "sentence": "CEO Jensen Huang subsequently coined the unofficial company motto, 'Our company is thirty days from going out of business' .",
+            "fact": "Nvidia's unofficial company motto for many years was 'Our company is thirty days from going out of business,' coined by CEO Jensen Huang during this period of near-bankruptcy."
           },
           {
-            "sentence": "This structure formed the design for core takeaways regarding this era.",
-            "fact": "core takeaways regarding this era"
+            "sentence": "Extreme consolidation and a crucial partner lifeline saved Nvidia .",
+            "fact": "Extreme consolidation and a crucial partner lifeline saved Nvidia."
           }
         ]
       },
       {
-        "title": "Competition for NVIDIA",
-        "summary": "Factual chronicles state that The three co-founders envisioned graphics-based processing as the best trajectory for. This drove thorough inquiries explaining why underlying issues prompting the challenges faced. Recent compilations proved that The first problem was who would quit first Huang's wife, Lori,. Under these conditions, experts noted that resulting shifts that defined the response taken. Ontology patterns map that additional challenges and resolved queries. This transition shaped the modern standard for crucial lessons on these struggles.",
-        "referenceLabel": "Competition",
-        "readerQuestion": "Why do light steps trigger under Competition?",
-        "keyTakeaway": "crucial lessons on these struggles",
+        "title": "The Public Ascent of Nvidia",
+        "summary": "In 1993, Jensen Huang, Chris Malachowsky, and Curtis Priem founded Nvidia to pioneer graphics processing technologies. To fund the development and scaling of their advanced graphics hardware, the founders sought public capital. The company officially transitioned into a public entity by launching its initial public offering on January 22, 1999. This successful debut provided the financial resources needed to expand its GPU, SoC, and API product lines. By developing these technologies, the company significantly broadened its market footprint. Ultimately, public capital accelerated Nvidia's hardware and software expansion.",
+        "referenceLabel": "Growth",
+        "readerQuestion": "How did the company transition into a public entity while expanding its core hardware and software technologies?",
+        "keyTakeaway": "Public capital accelerated Nvidia's core hardware and software expansion.",
         "provenance": [
           {
-            "sentence": "Factual chronicles state that The three co-founders envisioned graphics-based processing as the best trajectory for.",
-            "fact": "The three co-founders envisioned graphics-based processing as the best trajectory for"
+            "sentence": "In 1993, Jensen Huang, Chris Malachowsky, and Curtis Priem founded Nvidia to pioneer graphics processing technologies.",
+            "fact": "Nvidia was founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem to develop graphics processing technologies."
           },
           {
-            "sentence": "This drove thorough inquiries explaining why underlying issues prompting the challenges faced.",
-            "fact": "underlying issues prompting the challenges faced"
+            "sentence": "To fund the development and scaling of their advanced graphics hardware, the founders sought public capital.",
+            "fact": "Nvidia sought to secure public capital to fund the development and scaling of its advanced graphics hardware and software technologies."
           },
           {
-            "sentence": "Recent compilations proved that The first problem was who would quit first Huang's wife, Lori,.",
-            "fact": "The first problem was who would quit first Huang's wife, Lori,"
+            "sentence": "The company officially transitioned into a public entity by launching its initial public offering on January 22, 1999.",
+            "fact": "Nvidia officially transitioned into a public company by launching its initial public offering (IPO) on January 22, 1999."
           },
           {
-            "sentence": "Under these conditions, experts noted that resulting shifts that defined the response taken.",
-            "fact": "resulting shifts that defined the response taken"
+            "sentence": "This successful debut provided the financial resources needed to expand its GPU, SoC, and API product lines.",
+            "fact": "The successful transition to a public company provided the financial foundation to expand its core GPU, SoC, and API product lines."
           },
           {
-            "sentence": "Ontology patterns map that additional challenges and resolved queries.",
-            "fact": "additional challenges and resolved queries"
+            "sentence": "By developing these technologies, the company significantly broadened its market footprint.",
+            "fact": "The company expanded its market footprint through the development of core technologies including GPUs, SoCs, and APIs."
           },
           {
-            "sentence": "This transition shaped the modern standard for crucial lessons on these struggles.",
-            "fact": "crucial lessons on these struggles"
+            "sentence": "Ultimately, public capital accelerated Nvidia's hardware and software expansion.",
+            "fact": "Public capital accelerated Nvidia's core hardware and software expansion."
           }
         ]
       },
       {
-        "title": "The Future of NVIDIA",
-        "summary": "Verified sources show that With $40,000 in the bank (equivalent to $89,000 in 2025), the. This prompted key factions to identify why lasting forces establishing the legacy left behind. Independent reviews confirmed that During the late 1990s, Nvidia was one of 70 startup companies. Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject. Statistical records track that final reflections and study conclusions. This layout outlines the final outcome of final summary explaining the legacy.",
-        "referenceLabel": "The",
-        "readerQuestion": "Who validates the final outcomes regarding Future?",
-        "keyTakeaway": "final summary explaining the legacy",
+        "title": "The Five Trillion Dollar Era",
+        "summary": "In 2025, Nvidia surpassed a five trillion dollar market capitalization. This dramatic surge was driven by a global artificial intelligence boom that created an unprecedented demand for high-performance graphics processing units. Today, the company's chips power over seventy-five percent of the world's TOP500 supercomputers. By achieving this historic financial valuation, Nvidia established near-total dominance over global supercomputing systems. Its hardware design and CUDA software platform created a powerful lock-in effect that solidified this market position. Ultimately, it was this surging AI demand that propelled Nvidia to its historic five trillion dollar valuation.",
+        "referenceLabel": "Future",
+        "readerQuestion": "How did the global demand for artificial intelligence propel the company to unprecedented financial heights?",
+        "keyTakeaway": "AI demand propelled Nvidia to a historic five trillion valuation",
         "provenance": [
           {
-            "sentence": "Verified sources show that With $40,000 in the bank (equivalent to $89,000 in 2025), the.",
-            "fact": "With $40,000 in the bank (equivalent to $89,000 in 2025), the"
+            "sentence": "In 2025, Nvidia surpassed a five trillion dollar market capitalization.",
+            "fact": "Nvidia surpassed a US$5 trillion market capitalization in 2025, driven by the global artificial intelligence boom."
           },
           {
-            "sentence": "This prompted key factions to identify why lasting forces establishing the legacy left behind.",
-            "fact": "lasting forces establishing the legacy left behind"
+            "sentence": "This dramatic surge was driven by a global artificial intelligence boom that created an unprecedented demand for high-performance graphics processing units.",
+            "fact": "The global boom in artificial intelligence created an unprecedented demand for high-performance graphics processing units and specialized software environment."
           },
           {
-            "sentence": "Independent reviews confirmed that During the late 1990s, Nvidia was one of 70 startup companies.",
-            "fact": "During the late 1990s, Nvidia was one of 70 startup companies"
+            "sentence": "Today, the company's chips power over seventy-five percent of the world's TOP500 supercomputers.",
+            "fact": "As of 2025, Nvidia chips power over 75% of the world's TOP500 supercomputers."
           },
           {
-            "sentence": "Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject.",
-            "fact": "long-term outcomes that shaped the memory of the subject"
+            "sentence": "By achieving this historic financial valuation, Nvidia established near-total dominance over global supercomputing systems.",
+            "fact": "Nvidia achieved a historic financial valuation and established near-total dominance over the infrastructure powering global supercomputing."
           },
           {
-            "sentence": "Statistical records track that final reflections and study conclusions.",
-            "fact": "final reflections and study conclusions"
+            "sentence": "Its hardware design and CUDA software platform created a powerful lock-in effect that solidified this market position.",
+            "fact": "The company's hardware design and CUDA software platform created an environment lock-in that solidified its market dominance."
           },
           {
-            "sentence": "This layout outlines the final outcome of final summary explaining the legacy.",
-            "fact": "final summary explaining the legacy"
+            "sentence": "Ultimately, it was this surging AI demand that propelled Nvidia to its historic five trillion dollar valuation.",
+            "fact": "AI demand propelled Nvidia to a historic five trillion dollar valuation."
           }
         ]
       }
@@ -193,255 +230,381 @@
   },
   "namedEntities": [
     {
-      "name": "NVIDIA",
+      "name": "Nvidia Corporation",
+      "type": "Org",
+      "description": "An American multinational technology company specializing in GPUs, APIs, and AI hardware."
+    },
+    {
+      "name": "Jensen Huang",
+      "type": "Person",
+      "description": "Co-founder and CEO of Nvidia, formerly of LSI Logic and AMD."
+    },
+    {
+      "name": "Chris Malachowsky",
+      "type": "Person",
+      "description": "Co-founder of Nvidia who previously worked as an engineer at Sun Microsystems."
+    },
+    {
+      "name": "Curtis Priem",
+      "type": "Person",
+      "description": "Co-founder of Nvidia and former graphics chip designer at IBM and Sun Microsystems."
+    },
+    {
+      "name": "Sega",
+      "type": "Org",
+      "description": "A Japanese video game company that partnered with Nvidia and provided a critical $5 million investment."
+    },
+    {
+      "name": "Shoichiro Irimajiri",
+      "type": "Person",
+      "description": "The president of Sega who authorized a crucial $5 million investment in Nvidia in 1996."
+    },
+    {
+      "name": "Santa Clara",
+      "type": "Place",
+      "description": "The city in California where Nvidia is currently headquartered."
+    },
+    {
+      "name": "CUDA",
       "type": "Concept",
-      "description": "The primary resolved subject."
+      "description": "A software platform and API developed by Nvidia that enables GPUs to run massively parallel programs."
     }
   ],
   "knowledgeGraph": [
     {
-      "subject": "Compiled detail for founder",
-      "predicate": "FOUNDED",
-      "object": "NVIDIA"
+      "subject": "Nvidia Corporation",
+      "predicate": "FOUNDED_BY",
+      "object": "Jensen Huang"
     },
     {
-      "subject": "NVIDIA",
+      "subject": "Nvidia Corporation",
+      "predicate": "FOUNDED_BY",
+      "object": "Chris Malachowsky"
+    },
+    {
+      "subject": "Nvidia Corporation",
+      "predicate": "FOUNDED_BY",
+      "object": "Curtis Priem"
+    },
+    {
+      "subject": "Nvidia Corporation",
       "predicate": "HEADQUARTERED_IN",
-      "object": "Compiled detail for headquarters"
+      "object": "Santa Clara"
     },
     {
-      "subject": "NVIDIA",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_1"
+      "subject": "Nvidia Corporation",
+      "predicate": "OPERATES_IN_INDUSTRY",
+      "object": "Artificial Intelligence (AI)"
     },
     {
-      "subject": "NVIDIA",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_2"
+      "subject": "Nvidia Corporation",
+      "predicate": "OPERATES_IN_INDUSTRY",
+      "object": "Semiconductors"
     },
     {
-      "subject": "NVIDIA",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_3"
+      "subject": "Nvidia Corporation",
+      "predicate": "DEVELOPED",
+      "object": "CUDA"
     },
     {
-      "subject": "NVIDIA",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_4"
+      "subject": "Nvidia Corporation",
+      "predicate": "DEVELOPED",
+      "object": "GeForce GPUs"
     },
     {
-      "subject": "NVIDIA",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_5"
+      "subject": "Jensen Huang",
+      "predicate": "LEADS_AS_CEO",
+      "object": "Nvidia Corporation"
     },
     {
-      "subject": "NVIDIA",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_6"
+      "subject": "Sega",
+      "predicate": "INVESTED_IN",
+      "object": "Nvidia Corporation"
+    },
+    {
+      "subject": "Shoichiro Irimajiri",
+      "predicate": "AUTHORIZED_INVESTMENT_IN",
+      "object": "Nvidia Corporation"
+    },
+    {
+      "subject": "Santa Clara",
+      "predicate": "LOCATED_IN",
+      "object": "California"
     }
   ],
   "timeline": [
     {
-      "year": "1993",
-      "headline": "Pivotal era in 1993",
-      "description": "NVIDIA underwent core changes and reached major development in the year 1993",
-      "importance": 8,
-      "connections": [
-        "NVIDIA"
-      ],
-      "image": null
-    },
-    {
-      "year": "2025",
-      "headline": "Pivotal era in 2025",
-      "description": "NVIDIA underwent core changes and reached major development in the year 2025",
-      "importance": 8,
-      "connections": [
-        "NVIDIA"
-      ],
-      "image": null
-    },
-    {
-      "year": "2023",
-      "headline": "Pivotal era in 2023",
-      "description": "NVIDIA underwent core changes and reached major development in the year 2023",
-      "importance": 8,
-      "connections": [
-        "NVIDIA"
-      ],
-      "image": null
-    },
-    {
       "year": "1992",
-      "headline": "Pivotal era in 1992",
-      "description": "NVIDIA underwent core changes and reached major development in the year 1992",
+      "headline": "Founders Plan New Startup",
+      "description": "Jensen Huang, Chris Malachowsky, and Curtis Priem agree to start Nvidia during a meeting at a Denny's diner.",
       "importance": 8,
       "connections": [
-        "NVIDIA"
+        "Jensen Huang",
+        "Chris Malachowsky",
+        "Curtis Priem"
       ],
       "image": null
     },
     {
-      "year": "1996",
-      "headline": "Pivotal era in 1996",
-      "description": "NVIDIA underwent core changes and reached major development in the year 1996",
-      "importance": 8,
+      "year": "1993",
+      "headline": "Nvidia Officially Founded",
+      "description": "The company is incorporated on April 5, 1993, starting operations in Curtis Priem's townhouse with $40,000.",
+      "importance": 10,
       "connections": [
-        "NVIDIA"
+        "Jensen Huang",
+        "Chris Malachowsky",
+        "Curtis Priem"
+      ],
+      "image": null
+    },
+    {
+      "year": "1995",
+      "headline": "First Graphics Chip Released",
+      "description": "Nvidia launches the NV1, which fails commercially due to Microsoft DirectX choosing triangle primitives over quadrilaterals.",
+      "importance": 7,
+      "connections": [
+        "Microsoft",
+        "Sega"
       ],
       "image": null
     },
     {
       "year": "1997",
-      "headline": "Pivotal era in 1997",
-      "description": "NVIDIA underwent core changes and reached major development in the year 1997",
+      "headline": "RIVA 128 Saves Company",
+      "description": "Nvidia releases the RIVA 128, selling one million units in four months and avoiding imminent bankruptcy.",
+      "importance": 9,
+      "connections": [
+        "RIVA 128"
+      ],
+      "image": null
+    },
+    {
+      "year": "1999",
+      "headline": "Nvidia Goes Public",
+      "description": "Nvidia launches its initial public offering (IPO) on January 22, 1999, transitioning into a public company.",
       "importance": 8,
       "connections": [
-        "NVIDIA"
+        "Nvidia"
+      ],
+      "image": null
+    },
+    {
+      "year": "2023",
+      "headline": "Trillion Dollar Valuation Reached",
+      "description": "Nvidia becomes the seventh U.S. company to reach a market capitalization of US$1 trillion.",
+      "importance": 9,
+      "connections": [
+        "Nvidia"
+      ],
+      "image": null
+    },
+    {
+      "year": "2025",
+      "headline": "Five Trillion Dollar Milestone",
+      "description": "Driven by AI demand, Nvidia becomes the first company globally to surpass US$5 trillion in market capitalization.",
+      "importance": 10,
+      "connections": [
+        "Nvidia"
       ],
       "image": null
     }
   ],
   "rankedFacts": [
     {
-      "fact": "Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, California. The company develops graphics processing units (GPUs), systems on chips (SoCs), and application programming interfaces (APIs) for data science, high-performance computing, artificial intelligence (AI), and mobile and automotive applications.",
-      "score": 0.7,
+      "fact": "Nvidia was conceived in late 1992 during a meeting at a roadside Denny's diner on Berryessa Road in East San Jose.",
+      "score": 0.7404761904761904,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
+        "confidence": 0.85,
+        "specificity": 0.85,
         "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "educationalValue": 0.75,
+        "visualValue": 0.6333333333333333,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "Originally focused on GPUs for video games, Nvidia broadened their use into other markets, including artificial intelligence (AI), professional visualization, and supercomputing. The company's product lines include GeForce GPUs for gaming and creative workloads, and professional GPUs for edge computing, scientific research, and industrial applications.",
-      "score": 0.7,
+      "fact": "The company was started with only $40,000 in the bank, operating initially out of co-founder Curtis Priem's townhouse in Fremont, California.",
+      "score": 0.7136054421768706,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.85,
+        "specificity": 0.85,
+        "narrativeValue": 0.657142857142857,
+        "educationalValue": 0.75,
+        "visualValue": 0.5380952380952381,
+        "uniqueness": 0.85,
+        "ontologyRelevance": 0.5
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "In the early-to-mid 2000s, the company invested over a billion dollars to develop CUDA, a software platform and API (Application Programming Interfaces) that enabled GPUs to run massively parallel programs for a broad range of compute-intensive applications. As a result, as of 2025, Nvidia controlled more than 80% of the market for GPUs used in training and deploying AI models, and provided chips for over 75% of the world's TOP500 supercomputers.",
-      "score": 0.85,
+      "fact": "Nvidia's unofficial company motto for many years was 'Our company is thirty days from going out of business,' coined by CEO Jensen Huang during a period of near-bankruptcy.",
+      "score": 0.5952380952380951,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.9666666666666667,
+        "specificity": 0.44285714285714284,
+        "narrativeValue": 0.5142857142857142,
+        "educationalValue": 0.5,
+        "visualValue": 0.44285714285714284,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "In 2023, Nvidia became the seventh U. S.",
-      "score": 0.85,
+      "fact": "The name Nvidia is derived from 'invidia', the Latin word for 'envy'.",
+      "score": 0.6107142857142857,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.7,
+        "specificity": 0.55,
+        "narrativeValue": 0.675,
+        "educationalValue": 0.5,
+        "visualValue": 0.55,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "Nvidia was founded on April 5, 1993, by Jensen Huang, a Taiwanese-American electrical engineer who was previously the director of CoreWare at LSI Logic and a microprocessor designer at AMD; Chris Malachowsky, an engineer who worked at Sun Microsystems; and Curtis Priem, who was previously a senior staff engineer and graphics chip designer at IBM and Sun Microsystems. In late 1992, the three men agreed to start the company in a meeting at a Denny's roadside diner on Berryessa Road in East San Jose.",
-      "score": 0.85,
+      "fact": "Before settling on Nvidia, the founders considered names like 'Primal Graphics', 'Huaprimal', 'Prihuamal', and 'NVision', but the latter was already owned by a toilet paper manufacturer.",
+      "score": 0.6344322344322345,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.9333333333333333,
+        "specificity": 0.5307692307692308,
+        "narrativeValue": 0.6461538461538461,
+        "educationalValue": 0.5,
+        "visualValue": 0.5307692307692308,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "At the time, Malachowsky and Priem were frustrated with Sun's management and were looking to leave, but Huang was on \"firmer ground\", in that he was already running his own division at LSI. The three co-founders discussed a vision of the future which was so compelling that Huang decided to leave LSI and become the chief executive officer of their new startup.",
-      "score": 0.7,
+      "fact": "Sega's president Shoichiro Irimajiri personally visited Jensen Huang to cancel their Dreamcast chip contract, but invested $5 million of Sega's money anyway to keep Nvidia afloat.",
+      "score": 0.7432234432234432,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.9333333333333333,
+        "specificity": 0.85,
+        "narrativeValue": 0.7615384615384615,
+        "educationalValue": 0.75,
+        "visualValue": 0.6076923076923078,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "The three co-founders envisioned graphics-based processing as the best trajectory for tackling challenges that had eluded general-purpose computing methods. As Huang later explained: \"We also observed that video games were simultaneously one of the most computationally challenging problems and would have incredibly high sales volume.",
-      "score": 0.7,
+      "fact": "In 1996, Nvidia laid off over half of its employees, reducing its headcount from 100 to 40, to put all remaining resources into developing the RIVA 128.",
+      "score": 0.6489417989417989,
       "metrics": {
         "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "specificity": 0.85,
+        "narrativeValue": 0.3555555555555555,
+        "educationalValue": 0.75,
+        "visualValue": 0.337037037037037,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "The first problem was who would quit first. Huang's wife, Lori, did not want him to resign from LSI unless Malachowsky resigned from Sun at the same time, and Malachowsky's wife, Melody, felt the same way about Huang.",
-      "score": 0.7,
+      "fact": "As of 2025, Nvidia chips power over 75% of the world's TOP500 supercomputers.",
+      "score": 0.62985347985348,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.7166666666666667,
+        "specificity": 0.85,
+        "narrativeValue": 0.41538461538461535,
+        "educationalValue": 0.75,
+        "visualValue": 0.3769230769230769,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "With $40,000 in the bank (equivalent to $89,000 in 2025), the company was born. The company subsequently received $20 million of venture capital funding from Sequoia Capital, Sutter Hill Ventures, and others.",
-      "score": 0.85,
+      "fact": "Nvidia was founded in 1993 and develops GPUs, SoCs, and APIs",
+      "score": 0.63008658008658,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.6833333333333333,
+        "specificity": 0.85,
+        "narrativeValue": 0.43636363636363634,
+        "educationalValue": 0.75,
+        "visualValue": 0.3909090909090909,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "During the late 1990s, Nvidia was one of 70 startup companies pursuing the idea that graphics acceleration for video games was the path to the future. Only two survived: Nvidia and ATI Technologies, the latter of which merged into AMD.",
-      "score": 0.7,
+      "fact": "The company surpassed a US$5 trillion valuation in 2025 due to the AI boom",
+      "score": 0.5874149659863946,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.7333333333333334,
+        "specificity": 0.85,
+        "narrativeValue": 0.40714285714285714,
+        "educationalValue": 0.75,
+        "visualValue": 0.37142857142857144,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.5
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "Founded on April 5, 1993, by Jensen Huang, Chris Malachowsky, and Curtis Priem",
+      "score": 0.7474358974358974,
+      "metrics": {
+        "confidence": 0.7166666666666667,
+        "specificity": 0.85,
+        "narrativeValue": 1,
+        "educationalValue": 0.75,
+        "visualValue": 0.9153846153846155,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.5
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "Conceived in a San Jose Denny's diner",
+      "score": 0.6942176870748299,
+      "metrics": {
+        "confidence": 0.6166666666666667,
+        "specificity": 0.8714285714285714,
+        "narrativeValue": 1,
+        "educationalValue": 0.5,
+        "visualValue": 0.8714285714285714,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.5
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "The first product, NV1, failed because Microsoft DirectX did not support its quadrilateral mapping",
+      "score": 0.5690476190476191,
+      "metrics": {
+        "confidence": 0.7333333333333334,
+        "specificity": 0.44285714285714284,
+        "narrativeValue": 0.5142857142857142,
+        "educationalValue": 0.5,
+        "visualValue": 0.44285714285714284,
+        "uniqueness": 0.85,
+        "ontologyRelevance": 0.5
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "Nvidia transitioned into a public company, launching its IPO on January 22, 1999",
+      "score": 0.6573260073260074,
+      "metrics": {
+        "confidence": 0.7166666666666667,
+        "specificity": 0.85,
+        "narrativeValue": 0.5307692307692308,
+        "educationalValue": 0.75,
+        "visualValue": 0.45384615384615384,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     }
   ],
   "visualModules": [
@@ -449,13 +612,50 @@
       "type": "company",
       "title": "Company Blueprint Snapshot",
       "data": {
-        "founder": "Compiled detail for founder",
-        "industry": "Compiled detail for industry",
-        "headquarters": "Compiled detail for headquarters",
-        "products": "Compiled detail for products",
-        "businessModel": "Compiled detail for businessModel",
-        "revenue": "Compiled detail for revenue",
-        "leadership": "Compiled detail for leadership"
+        "founder": [
+          "Jensen Huang",
+          "Chris Malachowsky",
+          "Curtis Priem"
+        ],
+        "industry": [
+          "Technology",
+          "Semiconductors",
+          "Artificial Intelligence (AI)",
+          "Video Games",
+          "Supercomputing"
+        ],
+        "headquarters": {
+          "city": "Santa Clara",
+          "state": "California",
+          "country": "United States"
+        },
+        "products": [
+          "Graphics processing units (GPUs)",
+          "Systems on chips (SoCs)",
+          "Application programming interfaces (APIs)",
+          "GeForce GPUs",
+          "CUDA software platform",
+          "Shield Portable",
+          "Shield Tablet",
+          "Shield TV",
+          "GeForce Now cloud gaming service",
+          "Tegra mobile processors",
+          "NV1 graphics accelerator",
+          "RIVA 128",
+          "RIVA TNT"
+        ],
+        "businessModel": [
+          "Hardware design and development",
+          "Software platform licensing and ecosystem lock-in (CUDA)",
+          "Cloud gaming services (GeForce Now)"
+        ],
+        "revenue": null,
+        "leadership": [
+          {
+            "name": "Jensen Huang",
+            "role": "Chief Executive Officer"
+          }
+        ]
       }
     }
   ],
@@ -463,161 +663,508 @@
     "chapters": [
       {
         "chapterIndex": 0,
-        "title": "The Need for NVIDIA",
-        "referenceLabel": "Need",
-        "readerQuestion": "What represents the starting motivation behind Need?",
+        "title": "The Roadside Diner Vision",
+        "referenceLabel": "Inception",
+        "readerQuestion": "How did three engineers plan a technology giant with almost no starting capital?",
         "objectives": [
-          "Explore the relationship with Need"
+          "Explore the late 1992 meeting where the concept of Nvidia was born.",
+          "Detail the humble beginnings and the creative naming process of the startup."
         ],
         "approvedFacts": [
-          "Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, California. The company develops graphics processing units (GPUs), systems on chips (SoCs), and application programming interfaces (APIs) for data science, high-performance computing, artificial intelligence (AI), and mobile and automotive applications.",
-          "Originally focused on GPUs for video games, Nvidia broadened their use into other markets, including artificial intelligence (AI), professional visualization, and supercomputing. The company's product lines include GeForce GPUs for gaming and creative workloads, and professional GPUs for edge computing, scientific research, and industrial applications."
+          "Nvidia was conceived in late 1992 during a meeting at a roadside Denny's diner on Berryessa Road in East San Jose.",
+          "Before settling on Nvidia, the founders considered names like 'Primal Graphics', 'Huaprimal', 'Prihuamal', and 'NVision', but the latter was already owned by a toilet paper manufacturer.",
+          "The name Nvidia is derived from 'invidia', the Latin word for 'envy'."
         ],
         "anchors": [
-          "NVIDIA",
-          "foundation origin"
+          "1992",
+          "Jensen Huang",
+          "Chris Malachowsky"
         ]
       },
       {
         "chapterIndex": 1,
-        "title": "The Founding of NVIDIA",
+        "title": "Townhouse Operations and Initial Failure",
         "referenceLabel": "Founding",
-        "readerQuestion": "Which factors influenced early discoveries of Founding?",
+        "readerQuestion": "What early technical and financial crises pushed the new company to the brink of bankruptcy?",
         "objectives": [
-          "Explore the relationship with Founding"
+          "Examine the official incorporation and the initial $40,000 setup in a residential townhouse.",
+          "Analyze the commercial failure of the NV1 graphics chip due to Microsoft's API standards."
         ],
         "approvedFacts": [
-          "In the early-to-mid 2000s, the company invested over a billion dollars to develop CUDA, a software platform and API (Application Programming Interfaces) that enabled GPUs to run massively parallel programs for a broad range of compute-intensive applications. As a result, as of 2025, Nvidia controlled more than 80% of the market for GPUs used in training and deploying AI models, and provided chips for over 75% of the world's TOP500 supercomputers.",
-          "In 2023, Nvidia became the seventh U. S."
+          "Founded on April 5, 1993, by Jensen Huang, Chris Malachowsky, and Curtis Priem",
+          "The company was started with only $40,000 in the bank, operating initially out of co-founder Curtis Priem's townhouse in Fremont, California.",
+          "The first product, NV1, failed because Microsoft DirectX did not support its quadrilateral mapping"
         ],
         "anchors": [
-          "NVIDIA",
-          "historical timeline"
+          "1993",
+          "Curtis Priem",
+          "1995"
         ]
       },
       {
         "chapterIndex": 2,
-        "title": "The Growth of NVIDIA",
-        "referenceLabel": "Growth",
-        "readerQuestion": "How do key chemical processes behave during Growth?",
+        "title": "Thirty Days From Business Exit",
+        "referenceLabel": "Survival",
+        "readerQuestion": "How did a high-stakes gamble and an unexpected lifeline save the company from shutting down?",
         "objectives": [
-          "Explore the relationship with Growth"
+          "Detail the massive layoffs and resource consolidation required to build the RIVA 128.",
+          "Explain the critical financial support from Sega and the origin of the CEO's survival motto."
         ],
         "approvedFacts": [
-          "Nvidia was founded on April 5, 1993, by Jensen Huang, a Taiwanese-American electrical engineer who was previously the director of CoreWare at LSI Logic and a microprocessor designer at AMD; Chris Malachowsky, an engineer who worked at Sun Microsystems; and Curtis Priem, who was previously a senior staff engineer and graphics chip designer at IBM and Sun Microsystems. In late 1992, the three men agreed to start the company in a meeting at a Denny's roadside diner on Berryessa Road in East San Jose.",
-          "At the time, Malachowsky and Priem were frustrated with Sun's management and were looking to leave, but Huang was on \"firmer ground\", in that he was already running his own division at LSI. The three co-founders discussed a vision of the future which was so compelling that Huang decided to leave LSI and become the chief executive officer of their new startup."
+          "Nvidia's unofficial company motto for many years was 'Our company is thirty days from going out of business,' coined by CEO Jensen Huang during a period of near-bankruptcy.",
+          "Sega's president Shoichiro Irimajiri personally visited Jensen Huang to cancel their Dreamcast chip contract, but invested $5 million of Sega's money anyway to keep Nvidia afloat.",
+          "In 1996, Nvidia laid off over half of its employees, reducing its headcount from 100 to 40, to put all remaining resources into developing the RIVA 128."
         ],
         "anchors": [
-          "NVIDIA",
-          "reaction mechanism"
+          "1997",
+          "Sega",
+          "Shoichiro Irimajiri"
         ]
       },
       {
         "chapterIndex": 3,
-        "title": "Competition for NVIDIA",
-        "referenceLabel": "Competition",
-        "readerQuestion": "Why do light steps trigger under Competition?",
+        "title": "Going Public and Market Expansion",
+        "referenceLabel": "Growth",
+        "readerQuestion": "How did the company transition into a public entity while expanding its core hardware and software technologies?",
         "objectives": [
-          "Explore the relationship with Competition"
+          "Trace the transition of the company to the public market in 1999.",
+          "Identify the core technologies, including GPUs, SoCs, and APIs, that drove market expansion."
         ],
         "approvedFacts": [
-          "The three co-founders envisioned graphics-based processing as the best trajectory for tackling challenges that had eluded general-purpose computing methods. As Huang later explained: \"We also observed that video games were simultaneously one of the most computationally challenging problems and would have incredibly high sales volume.",
-          "The first problem was who would quit first. Huang's wife, Lori, did not want him to resign from LSI unless Malachowsky resigned from Sun at the same time, and Malachowsky's wife, Melody, felt the same way about Huang."
+          "Nvidia transitioned into a public company, launching its IPO on January 22, 1999",
+          "Nvidia was founded in 1993 and develops GPUs, SoCs, and APIs"
         ],
         "anchors": [
-          "NVIDIA",
-          "energy transition"
+          "1999",
+          "Santa Clara",
+          "CUDA"
         ]
       },
       {
         "chapterIndex": 4,
-        "title": "The Future of NVIDIA",
+        "title": "The Five Trillion Dollar Era",
         "referenceLabel": "Future",
-        "readerQuestion": "Who validates the final outcomes regarding Future?",
+        "callout": "AI Boom",
+        "readerQuestion": "How did the global demand for artificial intelligence propel the company to unprecedented financial heights?",
         "objectives": [
-          "Explore the relationship with Future"
+          "Highlight the milestone of surpassing a five trillion dollar valuation driven by AI demand.",
+          "Examine the company's dominance in powering the world's most advanced supercomputers."
         ],
         "approvedFacts": [
-          "With $40,000 in the bank (equivalent to $89,000 in 2025), the company was born. The company subsequently received $20 million of venture capital funding from Sequoia Capital, Sutter Hill Ventures, and others.",
-          "During the late 1990s, Nvidia was one of 70 startup companies pursuing the idea that graphics acceleration for video games was the path to the future. Only two survived: Nvidia and ATI Technologies, the latter of which merged into AMD."
+          "The company surpassed a US$5 trillion valuation in 2025 due to the AI boom",
+          "As of 2025, Nvidia chips power over 75% of the world's TOP500 supercomputers."
         ],
         "anchors": [
-          "NVIDIA",
-          "modern application"
+          "2023",
+          "2025",
+          "Nvidia Corporation"
         ]
       }
     ]
   },
   "triviaCandidates": [
     {
-      "fact": "Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, California. The company develops graphics processing units (GPUs), systems on chips (SoCs), and application programming interfaces (APIs) for data science, high-performance computing, artificial intelligence (AI), and mobile and automotive applications.",
-      "surpriseScore": 10,
-      "readMoreTopic": "10-foot user interface"
-    },
-    {
-      "fact": "Originally focused on GPUs for video games, Nvidia broadened their use into other markets, including artificial intelligence (AI), professional visualization, and supercomputing. The company's product lines include GeForce GPUs for gaming and creative workloads, and professional GPUs for edge computing, scientific research, and industrial applications.",
+      "fact": "Nvidia was conceived in late 1992 during a meeting at a roadside Denny's diner on Berryessa Road in East San Jose.",
       "surpriseScore": 9,
-      "readMoreTopic": "1X Technologies"
+      "readMoreTopic": "Jensen Huang"
     },
     {
-      "fact": "In the early-to-mid 2000s, the company invested over a billion dollars to develop CUDA, a software platform and API (Application Programming Interfaces) that enabled GPUs to run massively parallel programs for a broad range of compute-intensive applications. As a result, as of 2025, Nvidia controlled more than 80% of the market for GPUs used in training and deploying AI models, and provided chips for over 75% of the world's TOP500 supercomputers.",
+      "fact": "The company was started with only $40,000 in the bank, operating initially out of co-founder Curtis Priem's townhouse in Fremont, California.",
       "surpriseScore": 8,
-      "readMoreTopic": "3M"
+      "readMoreTopic": "Curtis Priem"
     },
     {
-      "fact": "In 2023, Nvidia became the seventh U. S.",
-      "surpriseScore": 7,
-      "readMoreTopic": "3dfx"
+      "fact": "Nvidia's unofficial company motto for many years was 'Our company is thirty days from going out of business,' coined by CEO Jensen Huang during a period of near-bankruptcy.",
+      "surpriseScore": 9,
+      "readMoreTopic": "Jensen Huang"
     },
     {
-      "fact": "Nvidia was founded on April 5, 1993, by Jensen Huang, a Taiwanese-American electrical engineer who was previously the director of CoreWare at LSI Logic and a microprocessor designer at AMD; Chris Malachowsky, an engineer who worked at Sun Microsystems; and Curtis Priem, who was previously a senior staff engineer and graphics chip designer at IBM and Sun Microsystems. In late 1992, the three men agreed to start the company in a meeting at a Denny's roadside diner on Berryessa Road in East San Jose.",
-      "surpriseScore": 6,
-      "readMoreTopic": "3dfx Interactive"
+      "fact": "The name Nvidia is derived from 'invidia', the Latin word for 'envy'.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Nvidia"
     },
     {
-      "fact": "At the time, Malachowsky and Priem were frustrated with Sun's management and were looking to leave, but Huang was on \"firmer ground\", in that he was already running his own division at LSI. The three co-founders discussed a vision of the future which was so compelling that Huang decided to leave LSI and become the chief executive officer of their new startup.",
-      "surpriseScore": 5,
-      "readMoreTopic": "A. O. Smith"
+      "fact": "Before settling on Nvidia, the founders considered names like 'Primal Graphics', 'Huaprimal', 'Prihuamal', and 'NVision', but the latter was already owned by a toilet paper manufacturer.",
+      "surpriseScore": 9,
+      "readMoreTopic": "Chris Malachowsky"
     },
     {
-      "fact": "The three co-founders envisioned graphics-based processing as the best trajectory for tackling challenges that had eluded general-purpose computing methods. As Huang later explained: \"We also observed that video games were simultaneously one of the most computationally challenging problems and would have incredibly high sales volume.",
-      "surpriseScore": 4,
-      "readMoreTopic": "ADP (company)"
+      "fact": "Sega's president Shoichiro Irimajiri personally visited Jensen Huang to cancel their Dreamcast chip contract, but invested $5 million of Sega's money anyway to keep Nvidia afloat.",
+      "surpriseScore": 9,
+      "readMoreTopic": "Sega"
     },
     {
-      "fact": "The first problem was who would quit first. Huang's wife, Lori, did not want him to resign from LSI unless Malachowsky resigned from Sun at the same time, and Malachowsky's wife, Melody, felt the same way about Huang.",
-      "surpriseScore": 3,
-      "readMoreTopic": "AES Corporation"
+      "fact": "In 1996, Nvidia laid off over half of its employees, reducing its headcount from 100 to 40, to put all remaining resources into developing the RIVA 128.",
+      "surpriseScore": 8,
+      "readMoreTopic": "RIVA 128"
     },
     {
-      "fact": "With $40,000 in the bank (equivalent to $89,000 in 2025), the company was born. The company subsequently received $20 million of venture capital funding from Sequoia Capital, Sutter Hill Ventures, and others.",
-      "surpriseScore": 2,
-      "readMoreTopic": "AI21 Labs"
-    },
-    {
-      "fact": "During the late 1990s, Nvidia was one of 70 startup companies pursuing the idea that graphics acceleration for video games was the path to the future. Only two survived: Nvidia and ATI Technologies, the latter of which merged into AMD.",
-      "surpriseScore": 1,
-      "readMoreTopic": "AI boom"
+      "fact": "As of 2025, Nvidia chips power over 75% of the world's TOP500 supercomputers.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Supercomputing"
     }
   ],
   "relatedTopics": [
-    "10-foot user interface",
-    "1X Technologies",
-    "3M",
-    "3dfx",
-    "3dfx Interactive",
-    "A. O. Smith",
-    "ADP (company)",
-    "AES Corporation"
+    "Graphics processing unit",
+    "Artificial intelligence",
+    "CUDA",
+    "GeForce",
+    "Supercomputing",
+    "Silicon Valley",
+    "Semiconductor industry",
+    "Sega Dreamcast",
+    "Magnificent Seven (tech stocks)"
   ],
   "confidenceScores": {
-    "resolver": 0.96,
-    "compiler": 0.95,
-    "grader": 0.7,
-    "overall": 0.92
+    "resolver": 1,
+    "compiler": 0.8571428571428571,
+    "grader": 0.7491365777080061,
+    "overall": 0.93
   },
+  "qualityAssessment": {
+    "generationMode": "mixed",
+    "fallbackRatio": 0.058823529411764705,
+    "provenanceCoverage": 0.8611111111111112,
+    "placeholderCount": 0,
+    "verifiedFactRatio": 0.42857142857142855,
+    "qualityScore": 93,
+    "confidenceBreakdown": {
+      "provenanceCoverage": 0.8611111111111112,
+      "fieldCoverage": 0.8571428571428571,
+      "placeholderPenalty": 1,
+      "fallbackPenalty": 0.9411764705882353,
+      "sourceAgreement": 1,
+      "extractionCompleteness": 1,
+      "factSpecificity": 0.7491365777080061,
+      "graphValidity": 1,
+      "timelineValidity": 1,
+      "validationPenalty": 1
+    },
+    "status": "PARTIAL",
+    "modulesPassing": [
+      "timeline",
+      "cards",
+      "didYouKnow",
+      "relatedTopics",
+      "structuredFactsData",
+      "knowledgeGraph"
+    ],
+    "modulesHidden": [],
+    "reasons": [
+      "all signals above threshold, no placeholder contamination, majority primary generation",
+      "downgraded because lintArtifact() reported validation errors"
+    ]
+  },
+  "stageDiagnostics": [
+    {
+      "stage": "entityResolver.pass1",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1581
+    },
+    {
+      "stage": "compiler",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 8904
+    },
+    {
+      "stage": "knowledgeGraph",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2079
+    },
+    {
+      "stage": "factEvaluator",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": null,
+      "modelValidationAttempted": false,
+      "modelValidationSucceeded": false,
+      "supportedGenerationMethod": false,
+      "requestAttempted": true,
+      "requestSucceeded": false,
+      "failureReason": "Unterminated string in JSON at position 6415 (line 169 column 113)",
+      "errorCategory": "parser_failure",
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": true,
+      "durationMs": 7511
+    },
+    {
+      "stage": "narrativePlanner",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 5065
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2961
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2504
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2772
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2414
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2235
+    },
+    {
+      "stage": "documentaryWriter.summary",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1540
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1598
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1890
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1753
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1362
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1509
+    },
+    {
+      "stage": "stylePolish",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 8661
+    }
+  ],
   "checksum": "4f1fddfe9233eb20f8a462a2eacfd6bced5339ad997440f771b7a3af2d49d6a0",
-  "dependencyHash": "807ef506dfbc5e6744d75b0746fa2d0a95aa1e0171957d5f7ac14f243ea399f3",
+  "dependencyHash": "c52f440066919a6f87c0e206cf08aa844a2ac148dabcfe6d59615bf292d6445a",
   "sourceReferences": [
     {
       "url": "https://en.wikipedia.org/wiki/NVIDIA",
@@ -627,159 +1174,265 @@
   "factScript": {
     "chapters": [
       {
-        "chapterTitle": "The Need for NVIDIA",
-        "questionAnswered": "What represents the starting motivation behind Need?",
+        "chapterTitle": "The Roadside Diner Vision",
+        "referenceLabel": "Inception",
+        "questionAnswered": "How did three engineers plan a technology giant with almost no starting capital?",
         "chronologicalPosition": 1,
         "entities": [
-          "NVIDIA"
+          "Nvidia Corporation",
+          "Primal Graphics",
+          "Huaprimal",
+          "Prihuamal",
+          "NVision"
         ],
         "dates": [
-          "1993",
-          "2025"
+          "Late 1992",
+          "April 5, 1993"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "motivating factors behind early phases of development",
-        "effect": "initial events showing transition in the subject",
+        "locations": [
+          "Denny's diner on Berryessa Road",
+          "East San Jose",
+          "Curtis Priem's townhouse"
+        ],
+        "people": [
+          "Jensen Huang",
+          "Chris Malachowsky",
+          "Curtis Priem"
+        ],
+        "events": [
+          "Late 1992 founding meeting",
+          "April 5, 1993 official incorporation"
+        ],
+        "cause": "Three engineers met at a roadside diner in late 1992 to plan a new startup focused on advanced graphics technology.",
+        "effect": "The founders established a company with forty thousand dollars in starting capital and named it Nvidia, derived from the Latin word for envy.",
         "keyFacts": [
-          "Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, California. The company develops graphics processing units (GPUs), systems on chips (SoCs), and application programming interfaces (APIs) for data science, high-performance computing, artificial intelligence (AI), and mobile and automotive applications.",
-          "Originally focused on GPUs for video games, Nvidia broadened their use into other markets, including artificial intelligence (AI), professional visualization, and supercomputing. The company's product lines include GeForce GPUs for gaming and creative workloads, and professional GPUs for edge computing, scientific research, and industrial applications."
+          "Nvidia was conceived in late 1992 during a meeting at a roadside Denny's diner on Berryessa Road in East San Jose.",
+          "Before settling on Nvidia, the founders considered names like 'Primal Graphics', 'Huaprimal', 'Prihuamal', and 'NVision', but the latter was already owned by a toilet paper manufacturer.",
+          "The name Nvidia is derived from 'invidia', the Latin word for 'envy'.",
+          "The company officially incorporated on April 5, 1993, starting operations in Curtis Priem's townhouse with forty thousand dollars."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "fundamental lessons from this period"
+        "connections": [
+          "The transition from Curtis Priem's townhouse to the release of their first graphics chip, the NV1, in 1995."
+        ],
+        "takeaway": "A tech giant began with forty thousand dollars and diner coffee.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "The Founding of NVIDIA",
-        "questionAnswered": "Which factors influenced early discoveries of Founding?",
+        "chapterTitle": "Townhouse Operations and Initial Failure",
+        "referenceLabel": "Founding",
+        "questionAnswered": "What early technical and financial crises pushed the new company to the brink of bankruptcy?",
         "chronologicalPosition": 2,
         "entities": [
-          "NVIDIA"
+          "Nvidia Corporation",
+          "Microsoft",
+          "Microsoft DirectX"
         ],
         "dates": [
-          "2025",
-          "2023"
+          "April 5, 1993",
+          "1995"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "key drivers behind the rising influence",
-        "effect": "consequent progress seen during this phase",
+        "locations": [
+          "Fremont, California",
+          "Curtis Priem's townhouse"
+        ],
+        "people": [
+          "Jensen Huang",
+          "Chris Malachowsky",
+          "Curtis Priem"
+        ],
+        "events": [
+          "Official incorporation of Nvidia",
+          "Launch of the NV1 graphics chip"
+        ],
+        "cause": "Nvidia was founded with minimal capital in a residential townhouse and designed its first graphics chip using quadrilateral mapping.",
+        "effect": "The NV1 failed commercially because Microsoft's DirectX API standard supported triangle primitives instead of quadrilaterals, pushing the startup to the brink of bankruptcy.",
         "keyFacts": [
-          "In the early-to-mid 2000s, the company invested over a billion dollars to develop CUDA, a software platform and API (Application Programming Interfaces) that enabled GPUs to run massively parallel programs for a broad range of compute-intensive applications. As a result, as of 2025, Nvidia controlled more than 80% of the market for GPUs used in training and deploying AI models, and provided chips for over 75% of the world's TOP500 supercomputers.",
-          "In 2023, Nvidia became the seventh U. S."
+          "Nvidia was officially incorporated on April 5, 1993, by co-founders Jensen Huang, Chris Malachowsky, and Curtis Priem.",
+          "The company began operations with only $40,000 in the bank, working out of co-founder Curtis Priem's townhouse in Fremont, California.",
+          "Nvidia released its first product, the NV1 graphics accelerator chip, in 1995.",
+          "The NV1 became a commercial failure because Microsoft DirectX API standards did not support its quadrilateral mapping technology."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "primary insights on the rise"
+        "connections": [
+          "Preceded by the founders planning the startup at a Denny's diner in 1992.",
+          "Succeeded by the 1997 release of the RIVA 128, which saved the company from imminent bankruptcy."
+        ],
+        "takeaway": "Incompatible API standards and low capital nearly destroyed early Nvidia.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "The Growth of NVIDIA",
-        "questionAnswered": "How do key chemical processes behave during Growth?",
+        "chapterTitle": "Thirty Days From Business Exit",
+        "referenceLabel": "Survival",
+        "questionAnswered": "How did a high-stakes gamble and an unexpected lifeline save the company from shutting down?",
         "chronologicalPosition": 3,
         "entities": [
-          "NVIDIA"
-        ],
-        "dates": [
-          "2023",
-          "1992"
-        ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "pivotal elements supporting the peak achievements",
-        "effect": "resultant breakthroughs related directly to these successes",
-        "keyFacts": [
-          "Nvidia was founded on April 5, 1993, by Jensen Huang, a Taiwanese-American electrical engineer who was previously the director of CoreWare at LSI Logic and a microprocessor designer at AMD; Chris Malachowsky, an engineer who worked at Sun Microsystems; and Curtis Priem, who was previously a senior staff engineer and graphics chip designer at IBM and Sun Microsystems. In late 1992, the three men agreed to start the company in a meeting at a Denny's roadside diner on Berryessa Road in East San Jose.",
-          "At the time, Malachowsky and Priem were frustrated with Sun's management and were looking to leave, but Huang was on \"firmer ground\", in that he was already running his own division at LSI. The three co-founders discussed a vision of the future which was so compelling that Huang decided to leave LSI and become the chief executive officer of their new startup."
-        ],
-        "quotes": [],
-        "connections": [],
-        "takeaway": "core takeaways regarding this era"
-      },
-      {
-        "chapterTitle": "Competition for NVIDIA",
-        "questionAnswered": "Why do light steps trigger under Competition?",
-        "chronologicalPosition": 4,
-        "entities": [
-          "NVIDIA"
-        ],
-        "dates": [
-          "1992",
-          "1996"
-        ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "underlying issues prompting the challenges faced",
-        "effect": "resulting shifts that defined the response taken",
-        "keyFacts": [
-          "The three co-founders envisioned graphics-based processing as the best trajectory for tackling challenges that had eluded general-purpose computing methods. As Huang later explained: \"We also observed that video games were simultaneously one of the most computationally challenging problems and would have incredibly high sales volume.",
-          "The first problem was who would quit first. Huang's wife, Lori, did not want him to resign from LSI unless Malachowsky resigned from Sun at the same time, and Malachowsky's wife, Melody, felt the same way about Huang."
-        ],
-        "quotes": [],
-        "connections": [],
-        "takeaway": "crucial lessons on these struggles"
-      },
-      {
-        "chapterTitle": "The Future of NVIDIA",
-        "questionAnswered": "Who validates the final outcomes regarding Future?",
-        "chronologicalPosition": 5,
-        "entities": [
-          "NVIDIA"
+          "Nvidia",
+          "Sega",
+          "RIVA 128",
+          "NV1"
         ],
         "dates": [
           "1996",
           "1997"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "lasting forces establishing the legacy left behind",
-        "effect": "long-term outcomes that shaped the memory of the subject",
+        "locations": [
+          "Santa Clara, California"
+        ],
+        "people": [
+          "Jensen Huang",
+          "Shoichiro Irimajiri"
+        ],
+        "events": [
+          "1996 Nvidia mass layoffs",
+          "Sega contract cancellation and investment",
+          "RIVA 128 product development and release"
+        ],
+        "cause": "The commercial failure of Nvidia's first graphics chip, the NV1, pushed the company to the brink of bankruptcy and forced the cancellation of their Dreamcast contract with Sega.",
+        "effect": "Nvidia survived near-bankruptcy to successfully launch the RIVA 128, selling one million units in four months and securing its financial future.",
         "keyFacts": [
-          "With $40,000 in the bank (equivalent to $89,000 in 2025), the company was born. The company subsequently received $20 million of venture capital funding from Sequoia Capital, Sutter Hill Ventures, and others.",
-          "During the late 1990s, Nvidia was one of 70 startup companies pursuing the idea that graphics acceleration for video games was the path to the future. Only two survived: Nvidia and ATI Technologies, the latter of which merged into AMD."
+          "In 1996, Nvidia laid off over half of its employees, reducing its headcount from 100 to 40, to put all remaining resources into developing the RIVA 128.",
+          "Sega's president Shoichiro Irimajiri personally visited Jensen Huang to cancel their Dreamcast chip contract, but invested $5 million of Sega's money anyway to keep Nvidia afloat.",
+          "Nvidia's unofficial company motto for many years was 'Our company is thirty days from going out of business,' coined by CEO Jensen Huang during this period of near-bankruptcy."
+        ],
+        "quotes": [
+          "Our company is thirty days from going out of business."
+        ],
+        "connections": [
+          "The transition from the failed NV1 architecture to the industry-standard DirectX support used in the RIVA 128.",
+          "How this early survival mentality shaped Nvidia's aggressive development strategy for the future GeForce and CUDA platforms."
+        ],
+        "takeaway": "Extreme consolidation and a crucial partner lifeline saved Nvidia.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "Going Public and Market Expansion",
+        "referenceLabel": "Growth",
+        "questionAnswered": "How did the company transition into a public entity while expanding its core hardware and software technologies?",
+        "chronologicalPosition": 4,
+        "entities": [
+          "Nvidia Corporation",
+          "Graphics processing units (GPUs)",
+          "Systems on chips (SoCs)",
+          "Application programming interfaces (APIs)"
+        ],
+        "dates": [
+          "1993",
+          "January 22, 1999"
+        ],
+        "locations": [
+          "Santa Clara, California, United States"
+        ],
+        "people": [
+          "Jensen Huang",
+          "Chris Malachowsky",
+          "Curtis Priem"
+        ],
+        "events": [
+          "Nvidia Initial Public Offering (IPO)"
+        ],
+        "cause": "Nvidia sought to secure public capital to fund the development and scaling of its advanced graphics hardware and software technologies.",
+        "effect": "The successful transition to a public company provided the financial foundation to expand its core GPU, SoC, and API product lines.",
+        "keyFacts": [
+          "Nvidia was founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem to develop graphics processing technologies.",
+          "Nvidia officially transitioned into a public company by launching its initial public offering (IPO) on January 22, 1999.",
+          "The company expanded its market footprint through the development of core technologies including GPUs, SoCs, and APIs."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "final summary explaining the legacy"
+        "connections": [
+          "The transition to a public entity in 1999 set the stage for Nvidia's massive valuation milestones in 2023 and 2025.",
+          "The capital raised from the IPO supported the development of subsequent hardware lines like GeForce and the CUDA software platform."
+        ],
+        "takeaway": "Public capital accelerated Nvidia's core hardware and software expansion.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "The Five Trillion Dollar Era",
+        "referenceLabel": "Future",
+        "questionAnswered": "How did the global demand for artificial intelligence propel the company to unprecedented financial heights?",
+        "chronologicalPosition": 5,
+        "entities": [
+          "Nvidia Corporation",
+          "TOP500 supercomputers",
+          "CUDA"
+        ],
+        "dates": [
+          "2025"
+        ],
+        "locations": [
+          "Santa Clara",
+          "California"
+        ],
+        "people": [
+          "Jensen Huang"
+        ],
+        "events": [
+          "Surpassing US$5 trillion market capitalization",
+          "Powering over 75% of TOP500 supercomputers"
+        ],
+        "cause": "The global boom in artificial intelligence created an unprecedented demand for high-performance graphics processing units and specialized software ecosystems.",
+        "effect": "Nvidia achieved a historic financial valuation and established near-total dominance over the infrastructure powering global supercomputing.",
+        "keyFacts": [
+          "Nvidia surpassed a US$5 trillion market capitalization in 2025, driven by the global artificial intelligence boom.",
+          "As of 2025, Nvidia chips power over 75% of the world's TOP500 supercomputers.",
+          "The company's hardware design and CUDA software platform created an ecosystem lock-in that solidified its market dominance."
+        ],
+        "quotes": [],
+        "connections": [
+          "Trillion Dollar Valuation Reached (2023)"
+        ],
+        "takeaway": "AI demand propelled Nvidia to a historic five trillion dollar valuation.",
+        "insufficientData": false
       }
     ]
   },
   "briefSummaryProvenance": [
     {
-      "sentence": "NVIDIA records confirm that Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered.",
-      "fact": "Nvidia Corporation ( en-VID-ee-ə) is an American multinational technology company headquartered"
+      "sentence": "In late 1992, three founders conceived Nvidia during a meeting at a roadside Denny's diner on Berryessa Road in East San Jose .",
+      "fact": "Chapter 1: Nvidia was conceived in late 1992 during a meeting at a roadside Denny's diner on Berryessa Road in East San Jose."
     },
     {
-      "sentence": "NVIDIA records confirm that In the early-to-mid 2000s, the company invested over a billion dollars.",
-      "fact": "In the early-to-mid 2000s, the company invested over a billion dollars"
+      "sentence": "Before settling on Nvidia, they considered names like 'NVision', but a toilet paper manufacturer already owned it .",
+      "fact": "Chapter 1: Before settling on Nvidia, the founders considered names like 'Primal Graphics', 'Huaprimal', 'Prihuamal', and 'NVision', but the latter was already owned by a toilet paper manufacturer."
     },
     {
-      "sentence": "NVIDIA records confirm that Nvidia was founded on April 5, 1993, by Jensen Huang, a.",
-      "fact": "Nvidia was founded on April 5, 1993, by Jensen Huang, a"
+      "sentence": "The chosen name derives from 'invidia', the Latin word for envy .",
+      "fact": "Chapter 1: The name Nvidia is derived from 'invidia', the Latin word for 'envy'."
     },
     {
-      "sentence": "NVIDIA remains study topic showing that final summary explaining the legacy.",
-      "fact": "final summary explaining the legacy"
+      "sentence": "Jensen Huang, Chris Malachowsky, and Curtis Priem officially incorporated the company on April 5, 1993 .",
+      "fact": "Chapter 2: Nvidia was officially incorporated on April 5, 1993, by co-founders Jensen Huang, Chris Malachowsky, and Curtis Priem."
+    },
+    {
+      "sentence": "They began operations with just forty thousand dollars in Priem's Fremont townhouse .",
+      "fact": "Chapter 2: The company began operations with only $40,000 in the bank, working out of co-founder Curtis Priem's townhouse in Fremont, California."
+    },
+    {
+      "sentence": "By 1995, Nvidia released its first product, the NV1 graphics accelerator chip .",
+      "fact": "Chapter 2: Nvidia released its first product, the NV1 graphics accelerator chip, in 1995."
+    },
+    {
+      "sentence": "However, the NV1 became a commercial failure because Microsoft DirectX API standards did not support its quadrilateral mapping technology .",
+      "fact": "Chapter 2: The NV1 became a commercial failure because Microsoft DirectX API standards did not support its quadrilateral mapping technology."
     }
   ],
   "validationStatus": {
-    "passed": true,
-    "errors": [],
-    "warnings": [
-      "Timeline is not in strict chronological order"
+    "passed": false,
+    "errors": [
+      "Missing required ontology field: \"revenue\" for ontology \"Company\"",
+      "Identical 4-word phrases must not repeat across chapters",
+      "Sentence provenance is incomplete: only 84% of sentences are mapped to facts"
     ],
+    "warnings": [],
     "checkedRules": {
       "ontology_match": true,
-      "required_fields_exist": true,
+      "required_fields_exist": false,
       "timeline_non_empty": true,
       "timeline_count_bounds": true,
-      "timeline_chronological": false,
+      "timeline_chronological": true,
       "graph_has_triples": true,
       "graph_connected": true,
+      "graph_no_synthetic_nodes": true,
       "named_entities_non_empty": true,
       "no_weak_facts": true,
       "no_duplicate_facts": true,
@@ -789,10 +1442,11 @@
       "paragraph_length_limit": true,
       "unique_chapter_titles": true,
       "concrete_dates_names_present": true,
-      "no_repeated_phrases": true,
+      "no_repeated_phrases": false,
       "no_timeline_milestone_placeholder": true,
+      "reader_question_quality": true,
       "did_you_know_length_ok": true,
-      "sentence_provenance_ok": true,
+      "sentence_provenance_ok": false,
       "no_abstract_writing": true,
       "documentary_alternating_rule": true,
       "fact_density_met": true,
@@ -802,6 +1456,6 @@
       "compiler_confidence_ok": true,
       "overall_confidence_ok": true
     },
-    "timestamp": "2026-07-10T06:48:06.958Z"
+    "timestamp": "2026-07-11T07:55:39.111Z"
   }
 }

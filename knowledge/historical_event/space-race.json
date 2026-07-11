@@ -1,7 +1,7 @@
 {
-  "version": "16.0",
-  "compilerVersion": "v17.0",
-  "ontologyVersion": "v17.0",
+  "version": "18.0",
+  "compilerVersion": "v18.0",
+  "ontologyVersion": "v18.0",
   "wikipediaRevision": "rev-1.0",
   "wikidataRevision": "Q1932",
   "ontology": {
@@ -12,179 +12,229 @@
     ]
   },
   "structuredFacts": {
-    "causes": "Compiled detail for causes",
-    "timeline": "Compiled detail for timeline",
-    "participants": "Compiled detail for participants",
-    "turningPoints": "Compiled detail for turningPoints",
-    "outcome": "Compiled detail for outcome",
-    "impact": "Compiled detail for impact",
+    "causes": [
+      "Post-World War II ballistic missile-based nuclear arms race",
+      "Onset of the Cold War and geopolitical rivalry between the United States and the Soviet Union",
+      "National security requirements for intercontinental ballistic missiles (ICBMs) and satellite reconnaissance",
+      "Acquisition of German rocket development assets and V-2 technology by both the US and USSR after World War II",
+      "Ideological and cultural competition for technological superiority"
+    ],
+    "timeline": [
+      "July 29, 1955: US announces intent to launch artificial satellites.",
+      "August 3, 1955: USSR declares intent to launch a satellite in the near future.",
+      "October 4, 1957: USSR launches Sputnik 1, the first artificial satellite.",
+      "April 12, 1961: Yuri Gagarin completes the first human spaceflight in Vostok 1.",
+      "May 25, 1961: US President John F. Kennedy proposes the goal of landing a man on the Moon.",
+      "July 1969: US Apollo 11 mission successfully lands humans on the Moon.",
+      "April 1972: US and USSR sign agreement for the cooperative Apollo–Soyuz Test Project.",
+      "July 1975: US and Soviet crews conduct a joint rendezvous in Earth orbit during the Apollo–Soyuz Test Project."
+    ],
+    "participants": [
+      "United States",
+      "Soviet Union",
+      "John F. Kennedy",
+      "Sergey Korolev",
+      "Yuri Gagarin",
+      "Wernher von Braun",
+      "Mikhail Tikhonravov",
+      "Valentin Glushko",
+      "Nikolai Tikhomirov",
+      "Friedrich Zander",
+      "Leonid Dushkin"
+    ],
+    "turningPoints": [
+      "Sputnik crisis (October 4, 1957): The successful launch of Sputnik 1 triggers Western public anxiety and accelerates US space efforts.",
+      "Vostok 1 flight (April 12, 1961): Yuri Gagarin becomes the first human in space, prompting the US to escalate the race to a lunar landing goal.",
+      "Apollo 11 Moon landing (July 1969): The US successfully lands astronauts on the Moon, achieving President Kennedy's goal and surpassing Soviet lunar efforts.",
+      "Apollo–Soyuz Test Project (July 1975): The first joint US-Soviet space flight, marking a transition from competition to cooperation."
+    ],
+    "outcome": [
+      "US successfully landed six crewed Apollo missions on the Moon.",
+      "USSR failed to land a human on the Moon due to N1 rocket failures and canceled its crewed lunar program.",
+      "USSR shifted focus to Salyut space stations and robotic planetary exploration of Venus and Mars.",
+      "Gradual transition from competition to space cooperation, culminating in the 1993 Shuttle–Mir and International Space Station agreements."
+    ],
+    "impact": [
+      "Rapid technological advancement in rocketry, telecommunications, and computing.",
+      "Establishment of permanent human presence in space via space stations.",
+      "Creation of international docking standards (APAS-75).",
+      "Deep cultural influence, shaping public interest, media, and national ideologies during the Cold War."
+    ],
     "title": "Space Race",
     "subtitle": "US–USSR spaceflight capability rivalry",
     "leadParagraph": "The Space Race (Russian: космическая гонка, romanized: kosmicheskaya gonka, IPA: [kɐsˈmʲitɕɪskəjə ˈɡonkə]) was a 20th-century competition between the Cold War rivals, the United States and the Soviet Union, to achieve superior spaceflight capability. It had its origins in the ballistic missile-based nuclear arms race between the two nations following World War II and the onset of the Cold War. The technological advantage demonstrated by spaceflight achievement was seen as necessary for national security, particularly in regard to intercontinental ballistic missile and satellite reconnaissance capability, but also became part of the cultural symbolism and ideology of the time. The Space Race brought pioneering launches of artificial satellites, robotic landers to the Moon, Venus, and Mars, and human spaceflight in low Earth orbit and ultimately to the Moon.\nPublic interest in space travel originated in the 1951 publication of a Soviet youth magazine and was promptly picked up by US magazines. The competition began on July 29, 1955, when the United States announced its intent to launch artificial satellites for the International Geophysical Year. Five days later, the Soviet Union responded by declaring they would also launch a satellite \"in the near future\". The launching of satellites was enabled by developments in ballistic missile capabilities since the end of World War II. The competition gained Western public attention with the \"Sputnik crisis\", when the USSR achieved the first successful satellite launch, Sputnik 1, on October 4, 1957. It gained momentum when the USSR sent the first human, Yuri Gagarin, into space with the orbital flight of Vostok 1 on April 12, 1961. These were followed by a string of other firsts achieved by the Soviets over the next few years.\nGagarin's flight led US president John F. Kennedy to raise the stakes on May 25, 1961, by asking the US Congress to commit to the goal of \"landing a man on the Moon and returning him safely to the Earth\" before the end of the decade. Both countries began developing super heavy-lift launch vehicles, with the US successfully deploying the Saturn V, which was large enough to send a three-person orbiter and two-person lander to the Moon. Kennedy's Moon landing goal was achieved in July 1969, with the flight of Apollo 11. The USSR continued to pursue crewed lunar programs to launch and land on the Moon before the US with its N1 rocket but did not succeed, and eventually canceled it to concentrate on Salyut, the first space station program, and the first landings on Venus and on Mars. Meanwhile, the US landed five more Apollo crews on the Moon, and continued exploration of other extraterrestrial bodies robotically.\nA period of détente followed with the April 1972 agreement on a cooperative Apollo–Soyuz Test Project (ASTP), resulting in the July 1975 rendezvous in Earth orbit of a US astronaut crew with a Soviet cosmonaut crew and joint development of an international docking standard APAS-75. Being considered as the final act of the Space Race by many observers, the competition was however only gradually replaced with cooperation. The collapse of the Soviet Union eventually allowed the US and the newly reconstituted Russian Federation to end their Cold War competition also in space, by agreeing in 1993 on the Shuttle–Mir and International Space Station programs.",
-    "briefSummary": "Space Race records confirm that The Space Race (Russian: космическая гонка, romanized: kosmicheskaya gonka, IPA: [kɐsˈmʲitɕɪskəjə. Space Race records confirm that Gagarin's flight led US president John F Kennedy to raise the. Space Race records confirm that Although Germans, Americans and Soviets experimented with small liquid-fuel rockets before. Space Race remains study topic showing that final summary explaining the legacy.",
+    "briefSummary": "Born from the ashes of World War II, the Space Race began with the nuclear arms race and the acquisition of German V-2 rocket technology. The Soviet Union quickly capitalized on these captured designs, entering the R-1 rocket—a direct copy of the V-2—into service by 1950. Despite surviving political purges, pioneering researchers Sergey Korolev and Valentin Glushko rose to lead this early Soviet program. Their efforts culminated in 1957 with the successful test of the R-7 Semyorka, the world's first intercontinental ballistic missile. This breakthrough sparked fear of a missile gap in the United States, prompting an American response with the testing of the Atlas missile in 1958. This intense technological rivalry culminated in July 1969, when the United States successfully landed astronauts on the Moon during the Apollo 11 mission.",
     "cards": [
       {
-        "title": "The Causes of Space Race",
-        "summary": "Space Race records verify that The Space Race (Russian: космическая гонка, romanized: kosmicheskaya gonka, IPA: [kɐsˈmʲitɕɪskəjə. This motivated early research explaining why motivating factors behind early phases of development. Subsequent investigations established that Public interest in space travel originated in the 1951 publication of. Because of these dynamics, details show initial events showing transition in the subject. Space Race data confirms that early outcomes and related findings. These changes established the basis for fundamental lessons from this period.",
-        "referenceLabel": "The",
-        "readerQuestion": "What represents the starting motivation behind Causes?",
-        "keyTakeaway": "fundamental lessons from this period",
+        "title": "Foundations of the Space Race",
+        "summary": "To launch their rivalry in 1945, the United States and the Soviet Union seized advanced German V-2 rocket technology. The end of World War II had left both superpowers in possession of these weapons amidst escalating geopolitical tensions. Entering service in 1950, the Soviet R-1 rocket was a direct copy of that captured German design. Adapting these military ballistic missiles for nuclear payloads established the direct technological and organizational basis for orbital spaceflight. Pioneering researchers Sergey Korolev and Valentin Glushko survived brutal political purges to lead the early Soviet rocket program. Ultimately, this intense military missile development set the stage for the historic Space Race.",
+        "referenceLabel": "Causes",
+        "readerQuestion": "How did post-World War II military rivalries and captured German technology spark the competition for space?",
+        "keyTakeaway": "Military missile development laid the foundation for the Space Race.",
         "provenance": [
           {
-            "sentence": "Space Race records verify that The Space Race (Russian: космическая гонка, romanized: kosmicheskaya gonka, IPA: [kɐsˈmʲitɕɪskəjə.",
-            "fact": "The Space Race (Russian: космическая гонка, romanized: kosmicheskaya gonka, IPA: [kɐsˈmʲitɕɪskəjə"
+            "sentence": "To launch their rivalry in 1945, the United States and the Soviet Union seized advanced German V-2 rocket technology.",
+            "fact": "The Space Race originated directly from the post-WWII nuclear arms race and the acquisition of German V-2 rocket technology by both superpowers."
           },
           {
-            "sentence": "This motivated early research explaining why motivating factors behind early phases of development.",
-            "fact": "motivating factors behind early phases of development"
+            "sentence": "The end of World War II had left both superpowers in possession of these weapons amidst escalating geopolitical tensions.",
+            "fact": "The end of World War II left the United States and the Soviet Union in possession of advanced German rocket technology amidst an escalating geopolitical rivalry."
           },
           {
-            "sentence": "Subsequent investigations established that Public interest in space travel originated in the 1951 publication of.",
-            "fact": "Public interest in space travel originated in the 1951 publication of"
+            "sentence": "Entering service in 1950, the Soviet R-1 rocket was a direct copy of that captured German design.",
+            "fact": "The Soviet R-1 rocket, which entered service in 1950, was a direct copy of the captured German V-2 rocket."
           },
           {
-            "sentence": "Because of these dynamics, details show initial events showing transition in the subject.",
-            "fact": "initial events showing transition in the subject"
+            "sentence": "Adapting these military ballistic missiles for nuclear payloads established the direct technological and organizational basis for orbital spaceflight.",
+            "fact": "The adaptation of military ballistic missiles for nuclear payloads laid the direct technological and organizational foundations for orbital spaceflight."
           },
           {
-            "sentence": "Space Race data confirms that early outcomes and related findings.",
-            "fact": "early outcomes and related findings"
+            "sentence": "Pioneering researchers Sergey Korolev and Valentin Glushko survived brutal political purges to lead the early Soviet rocket program.",
+            "fact": "Early Soviet rocket development was shaped by pioneering researchers like Sergey Korolev and Valentin Glushko, who survived political purges to lead the program."
           },
           {
-            "sentence": "These changes established the basis for fundamental lessons from this period.",
-            "fact": "fundamental lessons from this period"
+            "sentence": "Ultimately, this intense military missile development set the stage for the historic Space Race.",
+            "fact": "Military missile development laid the foundation for the Space Race."
           }
         ]
       },
       {
-        "title": "Early Battles of Space Race",
-        "summary": "Historical records confirm that Gagarin's flight led US president John F Kennedy to raise the. This inspired further exploration showing why key drivers behind the rising influence. Later studies verified that A period of détente followed with the April 1972 agreement on. Following these events, analysts observed that consequent progress seen during this phase. Scientific tracking confirms that secondary attributes and timeline events. This transition created the groundwork for primary insights on the rise.",
-        "referenceLabel": "Early",
-        "readerQuestion": "Which factors influenced early discoveries of Early Battles?",
-        "keyTakeaway": "primary insights on the rise",
+        "title": "The Dawn of Orbit Battles",
+        "summary": "On October 4, 1957, the Soviet Union launched Sputnik 1 using the R-7 Semyorka rocket . This breakthrough sparked intense Western fears of a severe technological and military deficit . The United States quickly tested its Atlas ICBM in 1958 to counter the perceived Soviet missile gap . In response, Washington accelerated its space programs, shifting public policy and mobilizing national resources . Earlier, a 1955 Disneyland episode watched by 40 million people had fueled American interest in spaceflight . Ultimately, Sputnik's launch transformed rocket technology into an urgent geopolitical crisis .",
+        "referenceLabel": "Early Battles",
+        "readerQuestion": "How did the launch of the first artificial satellite trigger a global crisis and accelerate the race?",
+        "keyTakeaway": "Sputnik's launch transformed rocket technology into an urgent geopolitical crisis.",
         "provenance": [
           {
-            "sentence": "Historical records confirm that Gagarin's flight led US president John F Kennedy to raise the.",
-            "fact": "Gagarin's flight led US president John F Kennedy to raise the"
+            "sentence": "On October 4, 1957, the Soviet Union launched Sputnik 1 using the R-7 Semyorka rocket .",
+            "fact": "The Soviet Union's R-7 Semyorka was the world's first successful ICBM and the rocket used to launch Sputnik 1 on October 4, 1957."
           },
           {
-            "sentence": "This inspired further exploration showing why key drivers behind the rising influence.",
-            "fact": "key drivers behind the rising influence"
+            "sentence": "This breakthrough sparked intense Western fears of a severe technological and military deficit .",
+            "fact": "The Soviet Union's successful development of the R-7 Semyorka as both the first operational ICBM and the launcher for Sputnik 1 sparked intense Western fears of a technological and military deficit."
           },
           {
-            "sentence": "Later studies verified that A period of détente followed with the April 1972 agreement on.",
-            "fact": "A period of détente followed with the April 1972 agreement on"
+            "sentence": "The United States quickly tested its Atlas ICBM in 1958 to counter the perceived Soviet missile gap .",
+            "fact": "The USSR tested the first ICBM in 1957, creating a perceived 'missile gap' in the US, which subsequently tested its Atlas ICBM in 1958."
           },
           {
-            "sentence": "Following these events, analysts observed that consequent progress seen during this phase.",
-            "fact": "consequent progress seen during this phase"
+            "sentence": "In response, Washington accelerated its space programs, shifting public policy and mobilizing national resources .",
+            "fact": "The United States accelerated its own missile and space programs, shifting public policy and mobilizing national resources to close the perceived missile gap."
           },
           {
-            "sentence": "Scientific tracking confirms that secondary attributes and timeline events.",
-            "fact": "secondary attributes and timeline events"
+            "sentence": "Earlier, a 1955 Disneyland episode watched by 40 million people had fueled American interest in spaceflight .",
+            "fact": "A 1955 Disneyland animated episode titled 'Man in Space' was watched by 40 million people and helped fuel US public and government interest in spaceflight."
           },
           {
-            "sentence": "This transition created the groundwork for primary insights on the rise.",
-            "fact": "primary insights on the rise"
+            "sentence": "Ultimately, Sputnik's launch transformed rocket technology into an urgent geopolitical crisis .",
+            "fact": "Sputnik's launch transformed rocket technology into an urgent geopolitical crisis."
           }
         ]
       },
       {
-        "title": "The Turning Point of Space Race",
-        "summary": "Primary documentation reveals that Although Germans, Americans and Soviets experimented with small liquid-fuel rockets before. This led observers to trace why pivotal elements supporting the peak achievements. Archival reviews showed that Soon after the end of World War II, the two former. With these developments, researchers saw that resultant breakthroughs related directly to these successes. Detailed observations show that peak milestones and direct connections. This structure formed the design for core takeaways regarding this era.",
-        "referenceLabel": "The",
-        "readerQuestion": "How do key chemical processes behave during Turning Point?",
-        "keyTakeaway": "core takeaways regarding this era",
+        "title": "The Race to the Moon",
+        "summary": "Yuri Gagarin completed the first human spaceflight aboard Vostok 1 on April 12, 1961 . This historic launch secured a major geopolitical milestone for the Soviet Union . President John F. Kennedy proposed landing a man on the Moon on May 25, 1961 . This bold proposal escalated the Cold War technological competition . Earlier, a 1951 Soviet youth magazine sparked public interest in space travel . Ultimately, Soviet orbital success drove America to target the Moon .",
+        "referenceLabel": "Turning Point",
+        "readerQuestion": "What pivotal events pushed the United States to commit to a lunar landing before the end of the 1960s?",
+        "keyTakeaway": "Soviet orbital success drove America to target the Moon.",
         "provenance": [
           {
-            "sentence": "Primary documentation reveals that Although Germans, Americans and Soviets experimented with small liquid-fuel rockets before.",
-            "fact": "Although Germans, Americans and Soviets experimented with small liquid-fuel rockets before"
+            "sentence": "Yuri Gagarin completed the first human spaceflight aboard Vostok 1 on April 12, 1961 .",
+            "fact": "Soviet cosmonaut Yuri Gagarin completed the first human spaceflight aboard Vostok 1 on April 12, 1961."
           },
           {
-            "sentence": "This led observers to trace why pivotal elements supporting the peak achievements.",
-            "fact": "pivotal elements supporting the peak achievements"
+            "sentence": "This historic launch secured a major geopolitical milestone for the Soviet Union .",
+            "fact": "The Soviet Union achieved a major geopolitical milestone by successfully launching the first human into Earth orbit."
           },
           {
-            "sentence": "Archival reviews showed that Soon after the end of World War II, the two former.",
-            "fact": "Soon after the end of World War II, the two former"
+            "sentence": "President John F.",
+            "fact": "Soviet cosmonaut Yuri Gagarin completed the first human spaceflight aboard Vostok 1 on April 12, 1961."
           },
           {
-            "sentence": "With these developments, researchers saw that resultant breakthroughs related directly to these successes.",
-            "fact": "resultant breakthroughs related directly to these successes"
+            "sentence": "Kennedy proposed landing a man on the Moon on May 25, 1961 .",
+            "fact": "President John F. Kennedy proposed the strategic goal of landing a man on the Moon during a speech on May 25, 1961."
           },
           {
-            "sentence": "Detailed observations show that peak milestones and direct connections.",
-            "fact": "peak milestones and direct connections"
+            "sentence": "This bold proposal escalated the Cold War technological competition .",
+            "fact": "The United States escalated the Cold War technological competition by committing to land a man on the Moon before the end of the decade."
           },
           {
-            "sentence": "This structure formed the design for core takeaways regarding this era.",
-            "fact": "core takeaways regarding this era"
+            "sentence": "Earlier, a 1951 Soviet youth magazine sparked public interest in space travel .",
+            "fact": "Public interest in space travel was sparked in the USSR by a 1951 youth magazine article, which was quickly countered by US magazines."
+          },
+          {
+            "sentence": "Ultimately, Soviet orbital success drove America to target the Moon .",
+            "fact": "Soviet orbital success drove America to target the Moon."
           }
         ]
       },
       {
-        "title": "The Outcome of Space Race",
-        "summary": "Factual chronicles state that In August 1949, the Soviet Union became the second nuclear power. This drove thorough inquiries explaining why underlying issues prompting the challenges faced. Recent compilations proved that ICBMs presented the ability to strike targets on the other side. Under these conditions, experts noted that resulting shifts that defined the response taken. Ontology patterns map that additional challenges and resolved queries. This transition shaped the modern standard for crucial lessons on these struggles.",
-        "referenceLabel": "The",
-        "readerQuestion": "Why do light steps trigger under Outcome?",
-        "keyTakeaway": "crucial lessons on these struggles",
+        "title": "The Race for the Moon",
+        "summary": "President John F. Kennedy initiated the Apollo program in 1961 to secure American dominance in space . This bold move was driven by intense Cold War rivalry and early Soviet orbital triumphs . The Soviet Union ultimately failed to land a human because their massive N1 rocket repeatedly exploded during testing . Consequently, America achieved the historic lunar landing while the Soviets quietly abandoned their crewed moon program . Moscow subsequently redirected its space efforts toward launching Salyut orbital stations and robotic planetary probes . These divergent paths permanently reshaped the geopolitical landscape of space exploration .",
+        "referenceLabel": "Outcome",
+        "readerQuestion": "How did the United States achieve the first lunar landing while the Soviet program faltered?",
+        "keyTakeaway": "American lunar success and Soviet rocket failures reshaped space exploration.",
         "provenance": [
           {
-            "sentence": "Factual chronicles state that In August 1949, the Soviet Union became the second nuclear power.",
-            "fact": "In August 1949, the Soviet Union became the second nuclear power"
+            "sentence": "President John F.",
+            "fact": "The United States successfully landed astronauts on the Moon during the July 1969 Apollo 11 mission, fulfilling the national goal set by President John F. Kennedy in 1961."
           },
           {
-            "sentence": "This drove thorough inquiries explaining why underlying issues prompting the challenges faced.",
-            "fact": "underlying issues prompting the challenges faced"
+            "sentence": "Kennedy initiated the Apollo program in 1961 to secure American dominance in space .",
+            "fact": "The United States successfully landed astronauts on the Moon during the July 1969 Apollo 11 mission, fulfilling the national goal set by President John F. Kennedy in 1961."
           },
           {
-            "sentence": "Recent compilations proved that ICBMs presented the ability to strike targets on the other side.",
-            "fact": "ICBMs presented the ability to strike targets on the other side"
+            "sentence": "This bold move was driven by intense Cold War rivalry and early Soviet orbital triumphs .",
+            "fact": "The intense geopolitical rivalry of the Cold War drove the United States to aggressively pursue a crewed lunar landing after early Soviet space triumphs."
           },
           {
-            "sentence": "Under these conditions, experts noted that resulting shifts that defined the response taken.",
-            "fact": "resulting shifts that defined the response taken"
+            "sentence": "The Soviet Union ultimately failed to land a human because their massive N1 rocket repeatedly exploded during testing .",
+            "fact": "The Soviet Union failed to land a human on the Moon due to repeated technical failures of its massive N1 rocket, leading to the eventual cancellation of its crewed lunar program."
           },
           {
-            "sentence": "Ontology patterns map that additional challenges and resolved queries.",
-            "fact": "additional challenges and resolved queries"
+            "sentence": "Consequently, America achieved the historic lunar landing while the Soviets quietly abandoned their crewed moon program .",
+            "fact": "The United States successfully landed humans on the Moon, while the Soviet Union canceled its crewed lunar program and pivoted to space stations and robotic planetary probes."
           },
           {
-            "sentence": "This transition shaped the modern standard for crucial lessons on these struggles.",
-            "fact": "crucial lessons on these struggles"
+            "sentence": "Moscow subsequently redirected its space efforts toward launching Salyut orbital stations and robotic planetary probes .",
+            "fact": "Following the cancellation of their crewed lunar effort, the Soviets shifted focus to pioneering Salyut space stations and robotic planetary exploration of Venus and Mars."
+          },
+          {
+            "sentence": "These divergent paths permanently reshaped the geopolitical landscape of space exploration .",
+            "fact": "US lunar success and Soviet rocket failures reshaped space exploration."
           }
         ]
       },
       {
-        "title": "The Enduring Legacy of Space Race",
-        "summary": "Verified sources show that The first Soviet development of artillery rockets was in 1921 when. This prompted key factions to identify why lasting forces establishing the legacy left behind. Independent reviews confirmed that legacy outlines and subsequent records. Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject. Statistical records track that final reflections and study conclusions. This layout outlines the final outcome of final summary explaining the legacy.",
-        "referenceLabel": "The",
-        "readerQuestion": "Who validates the final outcomes regarding Legacy?",
-        "keyTakeaway": "final summary explaining the legacy",
+        "title": "Orbits of Shared Cooperation",
+        "summary": "In July 1975, the Apollo-Soyuz Test Project made history as the first joint US-Soviet space flight. This historic mission stemmed from a 1972 bilateral cooperative agreement, which prompted both nations to design compatible docking systems. To bridge their technological differences, engineers developed APAS-75, a brand-new international and gender-neutral docking standard. Their successful docking in orbit established a vital precedent for future international engineering standards. Decades later, this early cooperation paved the way for the 1993 Shuttle-Mir agreements and the International Space Station. Ultimately, these geopolitical rivals united in space, establishing a legacy of lasting international cooperation.",
+        "referenceLabel": "Legacy",
+        "readerQuestion": "How did intense geopolitical competition eventually transform into international space cooperation?",
+        "keyTakeaway": "Rivals united in orbit, establishing lasting international space cooperation.",
         "provenance": [
           {
-            "sentence": "Verified sources show that The first Soviet development of artillery rockets was in 1921 when.",
-            "fact": "The first Soviet development of artillery rockets was in 1921 when"
+            "sentence": "In July 1975, the Apollo-Soyuz Test Project made history as the first joint US-Soviet space flight.",
+            "fact": "The Apollo-Soyuz Test Project in July 1975 served as the first joint US-Soviet space flight, symbolizing the end of the active Space Race."
           },
           {
-            "sentence": "This prompted key factions to identify why lasting forces establishing the legacy left behind.",
-            "fact": "lasting forces establishing the legacy left behind"
+            "sentence": "This historic mission stemmed from a 1972 bilateral cooperative agreement, which prompted both nations to design compatible docking systems.",
+            "fact": "The signing of a bilateral cooperative agreement in 1972 prompted the United States and the Soviet Union to design compatible docking systems to enable joint orbital missions."
           },
           {
-            "sentence": "Independent reviews confirmed that legacy outlines and subsequent records.",
-            "fact": "legacy outlines and subsequent records"
+            "sentence": "To bridge their technological differences, engineers developed APAS-75, a brand-new international and gender-neutral docking standard.",
+            "fact": "The mission required the joint development of APAS-75, a brand-new international and gender-neutral docking standard."
           },
           {
-            "sentence": "Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject.",
-            "fact": "long-term outcomes that shaped the memory of the subject"
+            "sentence": "Their successful docking in orbit established a vital precedent for future international engineering standards.",
+            "fact": "The successful joint docking established a precedent for international engineering standards and paved the way for the International Space Station."
           },
           {
-            "sentence": "Statistical records track that final reflections and study conclusions.",
-            "fact": "final reflections and study conclusions"
+            "sentence": "Decades later, this early cooperation paved the way for the 1993 Shuttle-Mir agreements and the International Space Station.",
+            "fact": "The legacy of this cooperation led to the 1993 Shuttle-Mir agreements and the eventual establishment of the International Space Station."
           },
           {
-            "sentence": "This layout outlines the final outcome of final summary explaining the legacy.",
-            "fact": "final summary explaining the legacy"
+            "sentence": "Ultimately, these geopolitical rivals united in space, establishing a legacy of lasting international cooperation.",
+            "fact": "Geopolitical rivals united in orbit, establishing lasting international space cooperation."
           }
         ]
       }
@@ -192,241 +242,342 @@
   },
   "namedEntities": [
     {
-      "name": "Space Race",
+      "name": "United States",
+      "type": "Place",
+      "description": "North American nation and major Cold War superpower competitor in the Space Race."
+    },
+    {
+      "name": "Soviet Union",
+      "type": "Place",
+      "description": "Eurasian socialist state and major Cold War superpower competitor in the Space Race."
+    },
+    {
+      "name": "John F. Kennedy",
+      "type": "Person",
+      "description": "35th President of the United States who committed the nation to landing a man on the Moon."
+    },
+    {
+      "name": "Yuri Gagarin",
+      "type": "Person",
+      "description": "Soviet cosmonaut who became the first human in space in 1961."
+    },
+    {
+      "name": "Sergey Korolev",
+      "type": "Person",
+      "description": "Lead Soviet rocket engineer and spacecraft designer during the Space Race."
+    },
+    {
+      "name": "Wernher von Braun",
+      "type": "Person",
+      "description": "German-American aerospace engineer who developed the V-2 and later the Saturn V rocket."
+    },
+    {
+      "name": "Sputnik 1",
       "type": "Concept",
-      "description": "The primary resolved subject."
+      "description": "The first artificial satellite, launched by the Soviet Union in 1957."
+    },
+    {
+      "name": "Apollo 11",
+      "type": "Concept",
+      "description": "The US spaceflight mission that landed the first humans on the Moon in 1969."
+    },
+    {
+      "name": "N1 rocket",
+      "type": "Concept",
+      "description": "The unsuccessful super heavy-lift launch vehicle developed by the Soviet Union for its crewed lunar program."
     }
   ],
   "knowledgeGraph": [
     {
       "subject": "Space Race",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_1"
+      "predicate": "INFLUENCED_BY",
+      "object": "Cold War"
     },
     {
-      "subject": "Space Race",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_2"
+      "subject": "United States",
+      "predicate": "PARTICIPATED_IN",
+      "object": "Space Race"
     },
     {
-      "subject": "Space Race",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_3"
+      "subject": "Soviet Union",
+      "predicate": "PARTICIPATED_IN",
+      "object": "Space Race"
     },
     {
-      "subject": "Space Race",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_4"
+      "subject": "Soviet Union",
+      "predicate": "LAUNCHED",
+      "object": "Sputnik 1"
     },
     {
-      "subject": "Space Race",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_5"
+      "subject": "Sputnik 1",
+      "predicate": "ACCELERATED",
+      "object": "Space Race"
     },
     {
-      "subject": "Space Race",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_6"
+      "subject": "Yuri Gagarin",
+      "predicate": "EMPLOYED_BY",
+      "object": "Soviet Union"
     },
     {
-      "subject": "Space Race",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_7"
+      "subject": "Sergey Korolev",
+      "predicate": "DEVELOPED",
+      "object": "Sputnik 1"
     },
     {
-      "subject": "Space Race",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_8"
+      "subject": "Wernher von Braun",
+      "predicate": "DEVELOPED",
+      "object": "Apollo 11"
+    },
+    {
+      "subject": "John F. Kennedy",
+      "predicate": "COMMITTED",
+      "object": "United States"
+    },
+    {
+      "subject": "United States",
+      "predicate": "LAUNCHED",
+      "object": "Apollo 11"
+    },
+    {
+      "subject": "Soviet Union",
+      "predicate": "DEVELOPED",
+      "object": "N1 rocket"
+    },
+    {
+      "subject": "N1 rocket",
+      "predicate": "HINDERED",
+      "object": "Soviet Union"
+    },
+    {
+      "subject": "Apollo 11",
+      "predicate": "COMPLETED",
+      "object": "Space Race"
     }
   ],
   "timeline": [
     {
-      "year": "1951",
-      "headline": "Pivotal era in 1951",
-      "description": "Space Race underwent core changes and reached major development in the year 1951",
-      "importance": 8,
-      "connections": [
-        "Space Race"
-      ],
-      "image": null
-    },
-    {
       "year": "1955",
-      "headline": "Pivotal era in 1955",
-      "description": "Space Race underwent core changes and reached major development in the year 1955",
-      "importance": 8,
+      "headline": "Satellite Plans Announced",
+      "description": "The US and USSR announce plans to launch artificial satellites for the International Geophysical Year.",
+      "importance": 7,
       "connections": [
-        "Space Race"
+        "United States",
+        "Soviet Union"
       ],
       "image": null
     },
     {
       "year": "1957",
-      "headline": "Pivotal era in 1957",
-      "description": "Space Race underwent core changes and reached major development in the year 1957",
-      "importance": 8,
+      "headline": "Sputnik 1 Launches",
+      "description": "The Soviet Union launches the first artificial satellite, triggering the Sputnik crisis in the West.",
+      "importance": 10,
       "connections": [
-        "Space Race"
+        "Sputnik 1",
+        "Soviet Union"
       ],
       "image": null
     },
     {
       "year": "1961",
-      "headline": "Pivotal era in 1961",
-      "description": "Space Race underwent core changes and reached major development in the year 1961",
-      "importance": 8,
+      "headline": "First Human in Space",
+      "description": "Soviet cosmonaut Yuri Gagarin completes a single orbit of Earth aboard Vostok 1.",
+      "importance": 10,
       "connections": [
-        "Space Race"
+        "Yuri Gagarin",
+        "Vostok 1",
+        "Soviet Union"
+      ],
+      "image": null
+    },
+    {
+      "year": "1961",
+      "headline": "Kennedy Sets Moon Goal",
+      "description": "President John F. Kennedy proposes landing a man on the Moon before the decade ends.",
+      "importance": 9,
+      "connections": [
+        "John F. Kennedy",
+        "United States"
       ],
       "image": null
     },
     {
       "year": "1969",
-      "headline": "Pivotal era in 1969",
-      "description": "Space Race underwent core changes and reached major development in the year 1969",
-      "importance": 8,
+      "headline": "Apollo 11 Moon Landing",
+      "description": "US astronauts Neil Armstrong and Buzz Aldrin land on the Moon, fulfilling Kennedy's goal.",
+      "importance": 10,
       "connections": [
-        "Space Race"
+        "Apollo 11",
+        "United States"
       ],
       "image": null
     },
     {
-      "year": "1972",
-      "headline": "Pivotal era in 1972",
-      "description": "Space Race underwent core changes and reached major development in the year 1972",
+      "year": "1975",
+      "headline": "Apollo–Soyuz Test Project",
+      "description": "US and Soviet spacecraft dock in orbit, symbolizing the end of the active Space Race.",
       "importance": 8,
       "connections": [
-        "Space Race"
+        "Apollo–Soyuz Test Project",
+        "United States",
+        "Soviet Union"
       ],
       "image": null
     }
   ],
   "rankedFacts": [
     {
-      "fact": "The Space Race (Russian: космическая гонка, romanized: kosmicheskaya gonka, IPA: [kɐsˈmʲitɕɪskəjə ˈɡonkə]) was a 20th-century competition between the Cold War rivals, the United States and the Soviet Union, to achieve superior spaceflight capability. It had its origins in the ballistic missile-based nuclear arms race between the two nations following World War II and the onset of the Cold War.",
-      "score": 0.7,
+      "fact": "The Soviet Union's R-7 Semyorka was not only the world's first successful ICBM but also the rocket used to launch Sputnik 1.",
+      "score": 0.93,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 1,
+        "specificity": 0.95,
+        "narrativeValue": 0.85,
+        "educationalValue": 0.95,
+        "visualValue": 0.9,
+        "uniqueness": 0.75,
+        "ontologyRelevance": 0.98
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "An essential, highly specific, and technically accurate milestone that directly links military ICBM development to the opening event of the Space Race."
     },
     {
-      "fact": "Public interest in space travel originated in the 1951 publication of a Soviet youth magazine and was promptly picked up by US magazines. The competition began on July 29, 1955, when the United States announced its intent to launch artificial satellites for the International Geophysical Year.",
-      "score": 0.85,
+      "fact": "The USSR tested the first ICBM (R-7) in 1957, creating a perceived 'missile gap' in the US, which tested its Atlas ICBM in 1958",
+      "score": 0.92,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.95,
+        "narrativeValue": 0.85,
+        "educationalValue": 0.9,
+        "visualValue": 0.85,
+        "uniqueness": 0.75,
+        "ontologyRelevance": 0.95
+      },
+      "reasoning": "An outstanding historical fact that perfectly bridges the military-technological timeline, geopolitical perceptions, and specific rocket systems of both nations."
+    },
+    {
+      "fact": "The Apollo-Soyuz Test Project in 1975 required the joint development of a brand-new international docking standard called APAS-75.",
+      "score": 0.91,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.95,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.9,
+        "visualValue": 0.85,
+        "uniqueness": 0.8,
+        "ontologyRelevance": 0.95
+      },
+      "reasoning": "Excellent technical specificity and high relevance to the symbolic conclusion of the Space Race, highlighting international engineering collaboration."
+    },
+    {
+      "fact": "The Soviet R-1 rocket, which entered service in 1950, was a direct copy of the captured German V-2 rocket.",
+      "score": 0.88,
+      "metrics": {
+        "confidence": 0.98,
+        "specificity": 0.9,
+        "narrativeValue": 0.75,
+        "educationalValue": 0.9,
+        "visualValue": 0.8,
+        "uniqueness": 0.7,
+        "ontologyRelevance": 0.9
+      },
+      "reasoning": "A highly specific and accurate technological link demonstrating how post-WWII technology transfers directly initiated the early hardware of the Space Race."
+    },
+    {
+      "fact": "A 1955 Disneyland animated episode titled 'Man in Space' was watched by 40 million people and helped fuel US public and government interest in spaceflight.",
+      "score": 0.84,
+      "metrics": {
+        "confidence": 0.98,
+        "specificity": 0.9,
+        "narrativeValue": 0.85,
+        "educationalValue": 0.75,
+        "visualValue": 0.7,
+        "uniqueness": 0.8,
+        "ontologyRelevance": 0.85
+      },
+      "reasoning": "An exceptionally specific and highly accurate historical fact that highlights the intersection of pop culture, media, and government mobilization during the Space Race."
+    },
+    {
+      "fact": "Joseph Stalin's Great Purge from 1936 to 1938 severely damaged Soviet rocket development by targeting key scientific personnel.",
+      "score": 0.83,
+      "metrics": {
+        "confidence": 0.98,
+        "specificity": 0.85,
+        "narrativeValue": 0.85,
+        "educationalValue": 0.85,
+        "visualValue": 0.6,
+        "uniqueness": 0.75,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "Crucial historical context showing how political events directly impacted the scientific infrastructure and key figures (like Sergei Korolev) who later led the Space Race."
+    },
+    {
+      "fact": "The first Soviet solid-fuel rocket research began as early as 1921 under the Gas Dynamics Laboratory, with a patent for self-propelled mines dating back to 1915.",
+      "score": 0.79,
       "metrics": {
         "confidence": 0.95,
         "specificity": 0.9,
-        "narrativeValue": 0.8,
+        "narrativeValue": 0.6,
         "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "visualValue": 0.65,
+        "uniqueness": 0.75,
+        "ontologyRelevance": 0.7
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Highly specific and accurate pre-history of Soviet rocketry, though its relevance to the active 'Space Race' era is somewhat peripheral."
     },
     {
-      "fact": "Gagarin's flight led US president John F. Kennedy to raise the stakes on May 25, 1961, by asking the US Congress to commit to the goal of \"landing a man on the Moon and returning him safely to the Earth\" before the end of the decade.",
-      "score": 0.85,
+      "fact": "It resulted in pioneering satellite launches, robotic planetary landers, and human spaceflight to the Moon",
+      "score": 0.75,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
+        "confidence": 1,
+        "specificity": 0.5,
+        "narrativeValue": 0.65,
+        "educationalValue": 0.75,
         "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "uniqueness": 0.3,
+        "ontologyRelevance": 0.95
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "A solid summary of the major technological outcomes of the Space Race, though it functions more as an overview than a highly specific data point."
     },
     {
-      "fact": "A period of détente followed with the April 1972 agreement on a cooperative Apollo–Soyuz Test Project (ASTP), resulting in the July 1975 rendezvous in Earth orbit of a US astronaut crew with a Soviet cosmonaut crew and joint development of an international docking standard APAS-75. Being considered as the final act of the Space Race by many observers, the competition was however only gradually replaced with cooperation.",
-      "score": 0.85,
+      "fact": "The Space Race was a 20th-century competition between the US and USSR for spaceflight capability",
+      "score": 0.74,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 1,
+        "specificity": 0.4,
+        "narrativeValue": 0.5,
+        "educationalValue": 0.6,
+        "visualValue": 0.4,
+        "uniqueness": 0.2,
+        "ontologyRelevance": 1
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "This is the core definition of the historical event; while highly relevant and accurate, it lacks the specificity and uniqueness of more detailed facts."
     },
     {
-      "fact": "Although Germans, Americans and Soviets experimented with small liquid-fuel rockets before World War II, launching satellites and humans into space required the development of larger ballistic missiles such as Wernher von Braun's Aggregat-4 (A-4), which became known as the Vergeltungswaffe 2 (V-2) developed by Nazi Germany to bomb the Allies in the war. After the war, both the US and USSR acquired custody of German rocket development assets which they used to leverage the development of their own missiles.",
-      "score": 0.7,
+      "fact": "It originated from the post-WWII nuclear arms race",
+      "score": 0.71,
       "metrics": {
         "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "specificity": 0.45,
+        "narrativeValue": 0.6,
+        "educationalValue": 0.75,
+        "visualValue": 0.5,
+        "uniqueness": 0.3,
+        "ontologyRelevance": 0.9
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Provides essential geopolitical context for the origin of the event, though it is phrased somewhat generically."
     },
     {
-      "fact": "Soon after the end of World War II, the two former allies became engaged in a state of political conflict and military tension known as the Cold War (1947–1991), which polarized Europe between the Soviet Union's satellite states (often referred to as the Eastern Bloc) and the states of the Western world allied with the U. S.",
-      "score": 0.85,
+      "fact": "Public interest in space travel was sparked in the USSR by a 1951 youth magazine article, which was quickly countered by US magazines.",
+      "score": 0.68,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
+        "confidence": 0.8,
+        "specificity": 0.65,
+        "narrativeValue": 0.75,
+        "educationalValue": 0.6,
+        "visualValue": 0.5,
         "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "ontologyRelevance": 0.75
       },
-      "reasoning": "Standard programmatic metric evaluation."
-    },
-    {
-      "fact": "In August 1949, the Soviet Union became the second nuclear power after the United States with the successful RDS-1 nuclear weapon test. In October 1957, the Soviet Union conducted the world's first successful test of an intercontinental ballistic missile (ICBM), this was the R-7 Semyorka (also known as SS-6 by NATO) and was seen as capable of striking U.",
-      "score": 0.85,
-      "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
-      },
-      "reasoning": "Standard programmatic metric evaluation."
-    },
-    {
-      "fact": "ICBMs presented the ability to strike targets on the other side of the globe in a very short amount of time and in a manner which was impervious to air interception such as bombers might have been. The value which ICBMs presented in a nuclear standoff were very substantial, and this fact greatly accelerated efforts to develop rocket and rocket interception technology.",
-      "score": 0.7,
-      "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
-      },
-      "reasoning": "Standard programmatic metric evaluation."
-    },
-    {
-      "fact": "The first Soviet development of artillery rockets was in 1921 when the Soviet military sanctioned the Gas Dynamics Laboratory, a small research laboratory to explore solid-fuel rockets, led by Nikolai Tikhomirov, who had begun studying solid and liquid-fueled rockets in 1894, and obtained a patent in 1915 for \"self-propelled aerial and water-surface mines. The first test-firing of a solid fuel rocket was carried out in 1928.",
-      "score": 0.85,
-      "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
-      },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "While it captures the cultural propaganda battle of the early Space Race, the claim about a single 1951 article 'sparking' the entire Soviet interest is slightly oversimplified and lacks precise naming."
     }
   ],
   "visualModules": [
@@ -434,12 +585,54 @@
       "type": "historical_event",
       "title": "Historical Event Blueprint Snapshot",
       "data": {
-        "causes": "Compiled detail for causes",
-        "timeline": "Compiled detail for timeline",
-        "participants": "Compiled detail for participants",
-        "turningPoints": "Compiled detail for turningPoints",
-        "outcome": "Compiled detail for outcome",
-        "impact": "Compiled detail for impact"
+        "causes": [
+          "Post-World War II ballistic missile-based nuclear arms race",
+          "Onset of the Cold War and geopolitical rivalry between the United States and the Soviet Union",
+          "National security requirements for intercontinental ballistic missiles (ICBMs) and satellite reconnaissance",
+          "Acquisition of German rocket development assets and V-2 technology by both the US and USSR after World War II",
+          "Ideological and cultural competition for technological superiority"
+        ],
+        "timeline": [
+          "July 29, 1955: US announces intent to launch artificial satellites.",
+          "August 3, 1955: USSR declares intent to launch a satellite in the near future.",
+          "October 4, 1957: USSR launches Sputnik 1, the first artificial satellite.",
+          "April 12, 1961: Yuri Gagarin completes the first human spaceflight in Vostok 1.",
+          "May 25, 1961: US President John F. Kennedy proposes the goal of landing a man on the Moon.",
+          "July 1969: US Apollo 11 mission successfully lands humans on the Moon.",
+          "April 1972: US and USSR sign agreement for the cooperative Apollo–Soyuz Test Project.",
+          "July 1975: US and Soviet crews conduct a joint rendezvous in Earth orbit during the Apollo–Soyuz Test Project."
+        ],
+        "participants": [
+          "United States",
+          "Soviet Union",
+          "John F. Kennedy",
+          "Sergey Korolev",
+          "Yuri Gagarin",
+          "Wernher von Braun",
+          "Mikhail Tikhonravov",
+          "Valentin Glushko",
+          "Nikolai Tikhomirov",
+          "Friedrich Zander",
+          "Leonid Dushkin"
+        ],
+        "turningPoints": [
+          "Sputnik crisis (October 4, 1957): The successful launch of Sputnik 1 triggers Western public anxiety and accelerates US space efforts.",
+          "Vostok 1 flight (April 12, 1961): Yuri Gagarin becomes the first human in space, prompting the US to escalate the race to a lunar landing goal.",
+          "Apollo 11 Moon landing (July 1969): The US successfully lands astronauts on the Moon, achieving President Kennedy's goal and surpassing Soviet lunar efforts.",
+          "Apollo–Soyuz Test Project (July 1975): The first joint US-Soviet space flight, marking a transition from competition to cooperation."
+        ],
+        "outcome": [
+          "US successfully landed six crewed Apollo missions on the Moon.",
+          "USSR failed to land a human on the Moon due to N1 rocket failures and canceled its crewed lunar program.",
+          "USSR shifted focus to Salyut space stations and robotic planetary exploration of Venus and Mars.",
+          "Gradual transition from competition to space cooperation, culminating in the 1993 Shuttle–Mir and International Space Station agreements."
+        ],
+        "impact": [
+          "Rapid technological advancement in rocketry, telecommunications, and computing.",
+          "Establishment of permanent human presence in space via space stations.",
+          "Creation of international docking standards (APAS-75).",
+          "Deep cultural influence, shaping public interest, media, and national ideologies during the Cold War."
+        ]
       }
     }
   ],
@@ -447,160 +640,510 @@
     "chapters": [
       {
         "chapterIndex": 0,
-        "title": "The Causes of Space Race",
+        "title": "Cold War Missile Foundations",
         "referenceLabel": "Causes",
-        "readerQuestion": "What represents the starting motivation behind Causes?",
+        "readerQuestion": "How did post-World War II military rivalries and captured German technology spark the competition for space?",
         "objectives": [
-          "Explore the relationship with Causes"
+          "Examine the transition from World War II V-2 technology to early Cold War ballistic missile development.",
+          "Analyze how early Soviet rocket research and political purges shaped their initial technological capabilities.",
+          "Explore how media and public interest in both nations began fueling the drive for spaceflight."
         ],
         "approvedFacts": [
-          "The Space Race (Russian: космическая гонка, romanized: kosmicheskaya gonka, IPA: [kɐsˈmʲitɕɪskəjə ˈɡonkə]) was a 20th-century competition between the Cold War rivals, the United States and the Soviet Union, to achieve superior spaceflight capability. It had its origins in the ballistic missile-based nuclear arms race between the two nations following World War II and the onset of the Cold War.",
-          "Public interest in space travel originated in the 1951 publication of a Soviet youth magazine and was promptly picked up by US magazines. The competition began on July 29, 1955, when the United States announced its intent to launch artificial satellites for the International Geophysical Year."
+          "The Space Race was a 20th-century competition between the US and USSR for spaceflight capability",
+          "It originated from the post-WWII nuclear arms race",
+          "The Soviet R-1 rocket, which entered service in 1950, was a direct copy of the captured German V-2 rocket."
         ],
         "anchors": [
-          "Space Race",
-          "foundation origin"
+          "United States",
+          "Soviet Union",
+          "Wernher von Braun"
         ]
       },
       {
         "chapterIndex": 1,
-        "title": "Early Battles of Space Race",
-        "referenceLabel": "Early",
-        "readerQuestion": "Which factors influenced early discoveries of Early Battles?",
+        "title": "Sputnik and Early Orbit Battles",
+        "referenceLabel": "Early Battles",
+        "readerQuestion": "How did the launch of the first artificial satellite trigger a global crisis and accelerate the race?",
         "objectives": [
-          "Explore the relationship with Early Battles"
+          "Detail the development of the R-7 Semyorka as the world's first successful ICBM and satellite launcher.",
+          "Explain the public anxiety and political shift in the United States following the Sputnik 1 launch.",
+          "Highlight the role of early public media, such as Disneyland broadcasts, in building American support for space exploration."
         ],
         "approvedFacts": [
-          "Gagarin's flight led US president John F. Kennedy to raise the stakes on May 25, 1961, by asking the US Congress to commit to the goal of \"landing a man on the Moon and returning him safely to the Earth\" before the end of the decade.",
-          "A period of détente followed with the April 1972 agreement on a cooperative Apollo–Soyuz Test Project (ASTP), resulting in the July 1975 rendezvous in Earth orbit of a US astronaut crew with a Soviet cosmonaut crew and joint development of an international docking standard APAS-75. Being considered as the final act of the Space Race by many observers, the competition was however only gradually replaced with cooperation."
+          "The Soviet Union's R-7 Semyorka was not only the world's first successful ICBM but also the rocket used to launch Sputnik 1.",
+          "The USSR tested the first ICBM (R-7) in 1957, creating a perceived 'missile gap' in the US, which tested its Atlas ICBM in 1958",
+          "A 1955 Disneyland animated episode titled 'Man in Space' was watched by 40 million people and helped fuel US public and government interest in spaceflight."
         ],
         "anchors": [
-          "Space Race",
-          "historical timeline"
+          "Sputnik 1",
+          "1955",
+          "1957"
         ]
       },
       {
         "chapterIndex": 2,
-        "title": "The Turning Point of Space Race",
-        "referenceLabel": "Turning",
-        "readerQuestion": "How do key chemical processes behave during Turning Point?",
+        "title": "Vostok to Apollo Moon Goal",
+        "referenceLabel": "Turning Point",
+        "readerQuestion": "What pivotal events pushed the United States to commit to a lunar landing before the end of the 1960s?",
         "objectives": [
-          "Explore the relationship with Turning Point"
+          "Describe Yuri Gagarin's historic first human spaceflight aboard Vostok 1 and its impact on the global stage.",
+          "Analyze President John F. Kennedy's strategic decision to propose the goal of landing a man on the Moon.",
+          "Contrast the early Soviet spaceflight successes with the escalating American response."
         ],
         "approvedFacts": [
-          "Although Germans, Americans and Soviets experimented with small liquid-fuel rockets before World War II, launching satellites and humans into space required the development of larger ballistic missiles such as Wernher von Braun's Aggregat-4 (A-4), which became known as the Vergeltungswaffe 2 (V-2) developed by Nazi Germany to bomb the Allies in the war. After the war, both the US and USSR acquired custody of German rocket development assets which they used to leverage the development of their own missiles.",
-          "Soon after the end of World War II, the two former allies became engaged in a state of political conflict and military tension known as the Cold War (1947–1991), which polarized Europe between the Soviet Union's satellite states (often referred to as the Eastern Bloc) and the states of the Western world allied with the U. S."
+          "Joseph Stalin's Great Purge from 1936 to 1938 severely damaged Soviet rocket development by targeting key scientific personnel.",
+          "Public interest in space travel was sparked in the USSR by a 1951 youth magazine article, which was quickly countered by US magazines."
         ],
         "anchors": [
-          "Space Race",
-          "reaction mechanism"
+          "Yuri Gagarin",
+          "John F. Kennedy",
+          "1961"
         ]
       },
       {
         "chapterIndex": 3,
-        "title": "The Outcome of Space Race",
+        "title": "Apollo Eleven Lunar Triumph",
         "referenceLabel": "Outcome",
-        "readerQuestion": "Why do light steps trigger under Outcome?",
+        "readerQuestion": "How did the United States achieve the first lunar landing while the Soviet program faltered?",
         "objectives": [
-          "Explore the relationship with Outcome"
+          "Detail the successful Apollo 11 mission that landed the first humans on the Moon.",
+          "Explain the technical failures of the Soviet N1 rocket that led to the cancellation of their crewed lunar program.",
+          "Showcase the transition of the Soviet space program toward robotic planetary exploration and early space stations."
         ],
         "approvedFacts": [
-          "In August 1949, the Soviet Union became the second nuclear power after the United States with the successful RDS-1 nuclear weapon test. In October 1957, the Soviet Union conducted the world's first successful test of an intercontinental ballistic missile (ICBM), this was the R-7 Semyorka (also known as SS-6 by NATO) and was seen as capable of striking U.",
-          "ICBMs presented the ability to strike targets on the other side of the globe in a very short amount of time and in a manner which was impervious to air interception such as bombers might have been. The value which ICBMs presented in a nuclear standoff were very substantial, and this fact greatly accelerated efforts to develop rocket and rocket interception technology."
+          "It resulted in pioneering satellite launches, robotic planetary landers, and human spaceflight to the Moon"
         ],
         "anchors": [
-          "Space Race",
-          "energy transition"
+          "Apollo 11",
+          "N1 rocket",
+          "1969"
         ]
       },
       {
         "chapterIndex": 4,
-        "title": "The Enduring Legacy of Space Race",
+        "title": "Orbits of Shared Cooperation",
         "referenceLabel": "Legacy",
-        "readerQuestion": "Who validates the final outcomes regarding Legacy?",
+        "readerQuestion": "How did intense geopolitical competition eventually transform into international space cooperation?",
         "objectives": [
-          "Explore the relationship with Legacy"
+          "Explore the historic docking of the Apollo-Soyuz Test Project as the symbolic end of the Space Race.",
+          "Explain the engineering significance of developing the APAS-75 international docking standard.",
+          "Trace the legacy of the Space Race to the establishment of the International Space Station."
         ],
         "approvedFacts": [
-          "The first Soviet development of artillery rockets was in 1921 when the Soviet military sanctioned the Gas Dynamics Laboratory, a small research laboratory to explore solid-fuel rockets, led by Nikolai Tikhomirov, who had begun studying solid and liquid-fueled rockets in 1894, and obtained a patent in 1915 for \"self-propelled aerial and water-surface mines. The first test-firing of a solid fuel rocket was carried out in 1928."
+          "The Apollo-Soyuz Test Project in 1975 required the joint development of a brand-new international docking standard called APAS-75.",
+          "The first Soviet solid-fuel rocket research began as early as 1921 under the Gas Dynamics Laboratory, with a patent for self-propelled mines dating back to 1915."
         ],
         "anchors": [
-          "Space Race",
-          "modern application"
+          "Sergey Korolev",
+          "1975"
         ]
       }
     ]
   },
   "triviaCandidates": [
     {
-      "fact": "The Space Race (Russian: космическая гонка, romanized: kosmicheskaya gonka, IPA: [kɐsˈmʲitɕɪskəjə ˈɡonkə]) was a 20th-century competition between the Cold War rivals, the United States and the Soviet Union, to achieve superior spaceflight capability. It had its origins in the ballistic missile-based nuclear arms race between the two nations following World War II and the onset of the Cold War.",
-      "surpriseScore": 10,
-      "readMoreTopic": "12-3 incident"
-    },
-    {
-      "fact": "Public interest in space travel originated in the 1951 publication of a Soviet youth magazine and was promptly picked up by US magazines. The competition began on July 29, 1955, when the United States announced its intent to launch artificial satellites for the International Geophysical Year.",
-      "surpriseScore": 9,
-      "readMoreTopic": "14 July Revolution"
-    },
-    {
-      "fact": "Gagarin's flight led US president John F. Kennedy to raise the stakes on May 25, 1961, by asking the US Congress to commit to the goal of \"landing a man on the Moon and returning him safely to the Earth\" before the end of the decade.",
-      "surpriseScore": 8,
-      "readMoreTopic": "15 August 1975 Bangladeshi coup d'état"
-    },
-    {
-      "fact": "A period of détente followed with the April 1972 agreement on a cooperative Apollo–Soyuz Test Project (ASTP), resulting in the July 1975 rendezvous in Earth orbit of a US astronaut crew with a Soviet cosmonaut crew and joint development of an international docking standard APAS-75. Being considered as the final act of the Space Race by many observers, the competition was however only gradually replaced with cooperation.",
+      "fact": "Public interest in space travel was sparked in the USSR by a 1951 youth magazine article, which was quickly countered by US magazines.",
       "surpriseScore": 7,
-      "readMoreTopic": "17 July Revolution"
+      "readMoreTopic": "Pionerskaya pravda"
     },
     {
-      "fact": "Although Germans, Americans and Soviets experimented with small liquid-fuel rockets before World War II, launching satellites and humans into space required the development of larger ballistic missiles such as Wernher von Braun's Aggregat-4 (A-4), which became known as the Vergeltungswaffe 2 (V-2) developed by Nazi Germany to bomb the Allies in the war. After the war, both the US and USSR acquired custody of German rocket development assets which they used to leverage the development of their own missiles.",
-      "surpriseScore": 6,
-      "readMoreTopic": "1860 United States presidential election"
+      "fact": "A 1955 Disneyland animated episode titled 'Man in Space' was watched by 40 million people and helped fuel US public and government interest in spaceflight.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Man in Space"
     },
     {
-      "fact": "Public interest in space flight was first aroused in October 1951 when the Soviet rocketry engineer Mikhail Tikhonravov published \"Flight to the Moon\" in the newspaper Pionerskaya pravda for young readers. He described a two-person interplanetary spaceship of the future and the industrial and technological processes required to create it.",
-      "surpriseScore": 5,
-      "readMoreTopic": "1947 Polish parliamentary election"
+      "fact": "The Soviet Union's R-7 Semyorka was not only the world's first successful ICBM but also the rocket used to launch Sputnik 1.",
+      "surpriseScore": 8,
+      "readMoreTopic": "R-7 Semyorka"
     },
     {
-      "fact": "Soon after the end of World War II, the two former allies became engaged in a state of political conflict and military tension known as the Cold War (1947–1991), which polarized Europe between the Soviet Union's satellite states (often referred to as the Eastern Bloc) and the states of the Western world allied with the U. S.",
-      "surpriseScore": 4,
-      "readMoreTopic": "1947–1948 civil war in Mandatory Palestine"
+      "fact": "The first Soviet solid-fuel rocket research began as early as 1921 under the Gas Dynamics Laboratory, with a patent for self-propelled mines dating back to 1915.",
+      "surpriseScore": 7,
+      "readMoreTopic": "Gas Dynamics Laboratory"
     },
     {
-      "fact": "In August 1949, the Soviet Union became the second nuclear power after the United States with the successful RDS-1 nuclear weapon test. In October 1957, the Soviet Union conducted the world's first successful test of an intercontinental ballistic missile (ICBM), this was the R-7 Semyorka (also known as SS-6 by NATO) and was seen as capable of striking U.",
-      "surpriseScore": 3,
-      "readMoreTopic": "1948 Arab–Israeli War"
+      "fact": "Joseph Stalin's Great Purge from 1936 to 1938 severely damaged Soviet rocket development by targeting key scientific personnel.",
+      "surpriseScore": 9,
+      "readMoreTopic": "Great Purge"
     },
     {
-      "fact": "ICBMs presented the ability to strike targets on the other side of the globe in a very short amount of time and in a manner which was impervious to air interception such as bombers might have been. The value which ICBMs presented in a nuclear standoff were very substantial, and this fact greatly accelerated efforts to develop rocket and rocket interception technology.",
-      "surpriseScore": 2,
-      "readMoreTopic": "1948 Czechoslovak coup d'état"
+      "fact": "The Soviet R-1 rocket, which entered service in 1950, was a direct copy of the captured German V-2 rocket.",
+      "surpriseScore": 8,
+      "readMoreTopic": "R-1 (missile)"
     },
     {
-      "fact": "The first Soviet development of artillery rockets was in 1921 when the Soviet military sanctioned the Gas Dynamics Laboratory, a small research laboratory to explore solid-fuel rockets, led by Nikolai Tikhomirov, who had begun studying solid and liquid-fueled rockets in 1894, and obtained a patent in 1915 for \"self-propelled aerial and water-surface mines. The first test-firing of a solid fuel rocket was carried out in 1928.",
-      "surpriseScore": 1,
-      "readMoreTopic": "1948 Palestine war"
+      "fact": "The Apollo-Soyuz Test Project in 1975 required the joint development of a brand-new international docking standard called APAS-75.",
+      "surpriseScore": 7,
+      "readMoreTopic": "APAS-75"
+    },
+    {
+      "fact": "After failing to land a human on the Moon with the N1 rocket, the USSR canceled its lunar program to focus on Salyut, the world's first space station program.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Salyut program"
     }
   ],
   "relatedTopics": [
-    "12-3 incident",
-    "14 July Revolution",
-    "15 August 1975 Bangladeshi coup d'état",
-    "17 July Revolution",
-    "1860 United States presidential election",
-    "1947 Polish parliamentary election",
-    "1947–1948 civil war in Mandatory Palestine",
-    "1948 Arab–Israeli War"
+    "Cold War",
+    "Sputnik crisis",
+    "Apollo program",
+    "Vostok program",
+    "Apollo–Soyuz Test Project",
+    "Saturn V",
+    "V-2 rocket",
+    "International Space Station",
+    "Salyut program",
+    "R-7 Semyorka"
   ],
   "confidenceScores": {
-    "resolver": 0.96,
-    "compiler": 0.95,
-    "grader": 0.7,
-    "overall": 0.92
+    "resolver": 1,
+    "compiler": 1,
+    "grader": 0.7636363636363637,
+    "overall": 0.98
   },
+  "qualityAssessment": {
+    "generationMode": "primary",
+    "fallbackRatio": 0,
+    "provenanceCoverage": 1,
+    "placeholderCount": 0,
+    "verifiedFactRatio": 1,
+    "qualityScore": 98,
+    "confidenceBreakdown": {
+      "provenanceCoverage": 1,
+      "fieldCoverage": 1,
+      "placeholderPenalty": 1,
+      "fallbackPenalty": 1,
+      "sourceAgreement": 1,
+      "extractionCompleteness": 1,
+      "factSpecificity": 0.7636363636363637,
+      "graphValidity": 1,
+      "timelineValidity": 1,
+      "validationPenalty": 1
+    },
+    "status": "PARTIAL",
+    "modulesPassing": [
+      "timeline",
+      "cards",
+      "didYouKnow",
+      "relatedTopics",
+      "structuredFactsData",
+      "knowledgeGraph"
+    ],
+    "modulesHidden": [],
+    "reasons": [
+      "all signals above threshold, no placeholder contamination, majority primary generation",
+      "downgraded because lintArtifact() reported validation errors"
+    ]
+  },
+  "stageDiagnostics": [
+    {
+      "stage": "entityResolver.pass1",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1584
+    },
+    {
+      "stage": "compiler",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 10408
+    },
+    {
+      "stage": "knowledgeGraph",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2211
+    },
+    {
+      "stage": "factEvaluator",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 8118
+    },
+    {
+      "stage": "narrativePlanner",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 5693
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2846
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2695
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2447
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 3124
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 3203
+    },
+    {
+      "stage": "documentaryWriter.summary",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1941
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1548
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1748
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1389
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1493
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1494
+    },
+    {
+      "stage": "stylePolish",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 8501
+    }
+  ],
   "checksum": "72c5882b86ec5e5710b03d2217e7f2cecaf95191628d37cac2ba2ddf16be2a3d",
-  "dependencyHash": "2b631675d4a6281e55f471161a6932f33798d94fe784baa2bade5cb1e842106d",
+  "dependencyHash": "2255531850327fd4a016e716ebbfb3edceba12ca337f515a114f6b0bcc581687",
   "sourceReferences": [
     {
       "url": "https://en.wikipedia.org/wiki/Space%20Race",
@@ -610,147 +1153,271 @@
   "factScript": {
     "chapters": [
       {
-        "chapterTitle": "The Causes of Space Race",
-        "questionAnswered": "What represents the starting motivation behind Causes?",
+        "chapterTitle": "Cold War Missile Foundations",
+        "referenceLabel": "Causes",
+        "questionAnswered": "How did post-World War II military rivalries and captured German technology spark the competition for space?",
         "chronologicalPosition": 1,
         "entities": [
-          "Space Race"
+          "V-2 rocket",
+          "R-1 rocket",
+          "ICBM"
         ],
         "dates": [
-          "1951",
-          "1955"
+          "1945",
+          "1950"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "motivating factors behind early phases of development",
-        "effect": "initial events showing transition in the subject",
+        "locations": [
+          "Germany",
+          "United States",
+          "Soviet Union"
+        ],
+        "people": [
+          "Wernher von Braun",
+          "Sergey Korolev",
+          "Valentin Glushko"
+        ],
+        "events": [
+          "World War II",
+          "Cold War",
+          "Nuclear arms race"
+        ],
+        "cause": "The end of World War II left the United States and the Soviet Union in possession of advanced German rocket technology amidst an escalating geopolitical rivalry.",
+        "effect": "The adaptation of military ballistic missiles for nuclear payloads laid the direct technological and organizational foundations for orbital spaceflight.",
         "keyFacts": [
-          "The Space Race (Russian: космическая гонка, romanized: kosmicheskaya gonka, IPA: [kɐsˈmʲitɕɪskəjə ˈɡonkə]) was a 20th-century competition between the Cold War rivals, the United States and the Soviet Union, to achieve superior spaceflight capability. It had its origins in the ballistic missile-based nuclear arms race between the two nations following World War II and the onset of the Cold War.",
-          "Public interest in space travel originated in the 1951 publication of a Soviet youth magazine and was promptly picked up by US magazines. The competition began on July 29, 1955, when the United States announced its intent to launch artificial satellites for the International Geophysical Year."
+          "The Space Race originated directly from the post-WWII nuclear arms race and the acquisition of German V-2 rocket technology by both superpowers.",
+          "The Soviet R-1 rocket, which entered service in 1950, was a direct copy of the captured German V-2 rocket.",
+          "Early Soviet rocket development was shaped by pioneering researchers like Sergey Korolev and Valentin Glushko, who survived political purges to lead the program.",
+          "Post-war public interest and media coverage of rocket technology in both nations began shifting the focus from military destruction to the possibility of space exploration."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "fundamental lessons from this period"
+        "connections": [
+          "The development of early ballistic missiles directly enabled the launch of Sputnik 1 in 1957."
+        ],
+        "takeaway": "Military missile development laid the foundation for the Space Race.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "Early Battles of Space Race",
-        "questionAnswered": "Which factors influenced early discoveries of Early Battles?",
+        "chapterTitle": "Sputnik and Early Orbit Battles",
+        "referenceLabel": "Early Battles",
+        "questionAnswered": "How did the launch of the first artificial satellite trigger a global crisis and accelerate the race?",
         "chronologicalPosition": 2,
         "entities": [
-          "Space Race"
+          "R-7 Semyorka",
+          "Sputnik 1",
+          "Atlas ICBM",
+          "Disneyland"
         ],
         "dates": [
           "1955",
-          "1957"
+          "1957",
+          "1958"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "key drivers behind the rising influence",
-        "effect": "consequent progress seen during this phase",
+        "locations": [
+          "Soviet Union",
+          "United States"
+        ],
+        "people": [
+          "Sergey Korolev",
+          "Wernher von Braun"
+        ],
+        "events": [
+          "Sputnik 1 launch",
+          "R-7 Semyorka ICBM test",
+          "Atlas ICBM test",
+          "Disneyland 'Man in Space' broadcast"
+        ],
+        "cause": "The Soviet Union's successful development of the R-7 Semyorka as both the first operational ICBM and the launcher for Sputnik 1 sparked intense Western fears of a technological and military deficit.",
+        "effect": "The United States accelerated its own missile and space programs, shifting public policy and mobilizing national resources to close the perceived missile gap.",
         "keyFacts": [
-          "Gagarin's flight led US president John F. Kennedy to raise the stakes on May 25, 1961, by asking the US Congress to commit to the goal of \"landing a man on the Moon and returning him safely to the Earth\" before the end of the decade.",
-          "A period of détente followed with the April 1972 agreement on a cooperative Apollo–Soyuz Test Project (ASTP), resulting in the July 1975 rendezvous in Earth orbit of a US astronaut crew with a Soviet cosmonaut crew and joint development of an international docking standard APAS-75. Being considered as the final act of the Space Race by many observers, the competition was however only gradually replaced with cooperation."
+          "The Soviet Union's R-7 Semyorka was the world's first successful ICBM and the rocket used to launch Sputnik 1 on October 4, 1957.",
+          "The USSR tested the first ICBM in 1957, creating a perceived 'missile gap' in the US, which subsequently tested its Atlas ICBM in 1958.",
+          "A 1955 Disneyland animated episode titled 'Man in Space' was watched by 40 million people and helped fuel US public and government interest in spaceflight."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "primary insights on the rise"
+        "connections": [
+          "Preceded by the post-WWII acquisition of German V-2 rocket technology by both superpowers.",
+          "Succeeded by the escalation of the space race toward crewed orbital flights and the lunar landing goal."
+        ],
+        "takeaway": "Sputnik's launch transformed rocket technology into an urgent geopolitical crisis.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "The Turning Point of Space Race",
-        "questionAnswered": "How do key chemical processes behave during Turning Point?",
+        "chapterTitle": "Vostok to Apollo Moon Goal",
+        "referenceLabel": "Turning Point",
+        "questionAnswered": "What pivotal events pushed the United States to commit to a lunar landing before the end of the 1960s?",
         "chronologicalPosition": 3,
         "entities": [
-          "Space Race"
+          "Vostok 1",
+          "United States",
+          "Soviet Union"
         ],
         "dates": [
-          "1957",
-          "1961"
+          "1951",
+          "April 12, 1961",
+          "May 25, 1961"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "pivotal elements supporting the peak achievements",
-        "effect": "resultant breakthroughs related directly to these successes",
+        "locations": [
+          "Earth orbit",
+          "Moon"
+        ],
+        "people": [
+          "Yuri Gagarin",
+          "John F. Kennedy"
+        ],
+        "events": [
+          "Vostok 1 flight",
+          "John F. Kennedy's Moon goal proposal"
+        ],
+        "cause": "The Soviet Union achieved a major geopolitical milestone by successfully launching the first human into Earth orbit.",
+        "effect": "The United States escalated the Cold War technological competition by committing to land a man on the Moon before the end of the decade.",
         "keyFacts": [
-          "Although Germans, Americans and Soviets experimented with small liquid-fuel rockets before World War II, launching satellites and humans into space required the development of larger ballistic missiles such as Wernher von Braun's Aggregat-4 (A-4), which became known as the Vergeltungswaffe 2 (V-2) developed by Nazi Germany to bomb the Allies in the war. After the war, both the US and USSR acquired custody of German rocket development assets which they used to leverage the development of their own missiles.",
-          "Soon after the end of World War II, the two former allies became engaged in a state of political conflict and military tension known as the Cold War (1947–1991), which polarized Europe between the Soviet Union's satellite states (often referred to as the Eastern Bloc) and the states of the Western world allied with the U. S."
+          "Soviet cosmonaut Yuri Gagarin completed the first human spaceflight aboard Vostok 1 on April 12, 1961.",
+          "President John F. Kennedy proposed the strategic goal of landing a man on the Moon during a speech on May 25, 1961.",
+          "Public interest in space travel was sparked in the USSR by a 1951 youth magazine article, which was quickly countered by US magazines."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "core takeaways regarding this era"
+        "connections": [
+          "Sputnik 1 launch in 1957",
+          "Apollo 11 Moon landing in July 1969"
+        ],
+        "takeaway": "Soviet orbital success drove America to target the Moon.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "The Outcome of Space Race",
-        "questionAnswered": "Why do light steps trigger under Outcome?",
+        "chapterTitle": "Apollo Eleven Lunar Triumph",
+        "referenceLabel": "Outcome",
+        "questionAnswered": "How did the United States achieve the first lunar landing while the Soviet program faltered?",
         "chronologicalPosition": 4,
         "entities": [
-          "Space Race"
+          "Apollo 11",
+          "N1 rocket",
+          "Salyut space stations",
+          "Vostok 1",
+          "Sputnik 1"
         ],
         "dates": [
-          "1961",
-          "1969"
+          "May 25, 1961",
+          "July 1969",
+          "July 1975"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "underlying issues prompting the challenges faced",
-        "effect": "resulting shifts that defined the response taken",
+        "locations": [
+          "Moon",
+          "United States",
+          "Soviet Union",
+          "Venus",
+          "Mars"
+        ],
+        "people": [
+          "John F. Kennedy",
+          "Yuri Gagarin",
+          "Sergey Korolev",
+          "Wernher von Braun"
+        ],
+        "events": [
+          "Apollo 11 Moon landing",
+          "N1 rocket failures",
+          "Apollo–Soyuz Test Project"
+        ],
+        "cause": "The intense geopolitical rivalry of the Cold War drove the United States to aggressively pursue a crewed lunar landing after early Soviet space triumphs.",
+        "effect": "The United States successfully landed humans on the Moon, while the Soviet Union canceled its crewed lunar program and pivoted to space stations and robotic planetary probes.",
         "keyFacts": [
-          "In August 1949, the Soviet Union became the second nuclear power after the United States with the successful RDS-1 nuclear weapon test. In October 1957, the Soviet Union conducted the world's first successful test of an intercontinental ballistic missile (ICBM), this was the R-7 Semyorka (also known as SS-6 by NATO) and was seen as capable of striking U.",
-          "ICBMs presented the ability to strike targets on the other side of the globe in a very short amount of time and in a manner which was impervious to air interception such as bombers might have been. The value which ICBMs presented in a nuclear standoff were very substantial, and this fact greatly accelerated efforts to develop rocket and rocket interception technology."
+          "The United States successfully landed astronauts on the Moon during the July 1969 Apollo 11 mission, fulfilling the national goal set by President John F. Kennedy in 1961.",
+          "The Soviet Union failed to land a human on the Moon due to repeated technical failures of its massive N1 rocket, leading to the eventual cancellation of its crewed lunar program.",
+          "Following the cancellation of their crewed lunar effort, the Soviets shifted focus to pioneering Salyut space stations and robotic planetary exploration of Venus and Mars.",
+          "The Space Race resulted in pioneering satellite launches, robotic planetary landers, and human spaceflight to the Moon before transitioning toward cooperative missions like the Apollo-Soyuz Test Project."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "crucial lessons on these struggles"
+        "connections": [
+          "Transitioned from competitive national programs to the cooperative Apollo–Soyuz Test Project in July 1975.",
+          "Laid the technical foundation for the 1993 Shuttle–Mir and International Space Station agreements."
+        ],
+        "takeaway": "US lunar success and Soviet rocket failures reshaped space exploration.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "The Enduring Legacy of Space Race",
-        "questionAnswered": "Who validates the final outcomes regarding Legacy?",
+        "chapterTitle": "Orbits of Shared Cooperation",
+        "referenceLabel": "Legacy",
+        "questionAnswered": "How did intense geopolitical competition eventually transform into international space cooperation?",
         "chronologicalPosition": 5,
         "entities": [
-          "Space Race"
+          "Apollo-Soyuz Test Project",
+          "APAS-75",
+          "International Space Station",
+          "Salyut",
+          "Shuttle-Mir"
         ],
         "dates": [
-          "1969",
-          "1972"
+          "1915",
+          "1921",
+          "April 1972",
+          "July 1975",
+          "1993"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "lasting forces establishing the legacy left behind",
-        "effect": "long-term outcomes that shaped the memory of the subject",
+        "locations": [
+          "Earth orbit",
+          "United States",
+          "Soviet Union"
+        ],
+        "people": [
+          "Nikolai Tikhomirov"
+        ],
+        "events": [
+          "Apollo-Soyuz Test Project docking",
+          "Shuttle-Mir program",
+          "Establishment of the International Space Station"
+        ],
+        "cause": "The signing of a bilateral cooperative agreement in 1972 prompted the United States and the Soviet Union to design compatible docking systems to enable joint orbital missions.",
+        "effect": "The successful joint docking established a precedent for international engineering standards and paved the way for the International Space Station.",
         "keyFacts": [
-          "The first Soviet development of artillery rockets was in 1921 when the Soviet military sanctioned the Gas Dynamics Laboratory, a small research laboratory to explore solid-fuel rockets, led by Nikolai Tikhomirov, who had begun studying solid and liquid-fueled rockets in 1894, and obtained a patent in 1915 for \"self-propelled aerial and water-surface mines. The first test-firing of a solid fuel rocket was carried out in 1928."
+          "The Apollo-Soyuz Test Project in July 1975 served as the first joint US-Soviet space flight, symbolizing the end of the active Space Race.",
+          "The mission required the joint development of APAS-75, a brand-new international and gender-neutral docking standard.",
+          "The legacy of this cooperation led to the 1993 Shuttle-Mir agreements and the eventual establishment of the International Space Station.",
+          "Early Soviet rocketry foundations date back to 1921 under the Gas Dynamics Laboratory, with a self-propelled mine patent dating to 1915."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "final summary explaining the legacy"
+        "connections": [
+          "Apollo 11 Moon Landing",
+          "Sputnik 1 Launch"
+        ],
+        "takeaway": "Geopolitical rivals united in orbit, establishing lasting international space cooperation.",
+        "insufficientData": false
       }
     ]
   },
   "briefSummaryProvenance": [
     {
-      "sentence": "Space Race records confirm that The Space Race (Russian: космическая гонка, romanized: kosmicheskaya gonka, IPA: [kɐsˈmʲitɕɪskəjə.",
-      "fact": "The Space Race (Russian: космическая гонка, romanized: kosmicheskaya gonka, IPA: [kɐsˈmʲitɕɪskəjə"
+      "sentence": "Born from the ashes of World War II, the Space Race began with the nuclear arms race and the acquisition of German V-2 rocket technology.",
+      "fact": "Chapter 1: The Space Race originated directly from the post-WWII nuclear arms race and the acquisition of German V-2 rocket technology by both superpowers."
     },
     {
-      "sentence": "Space Race records confirm that Gagarin's flight led US president John F Kennedy to raise the.",
-      "fact": "Gagarin's flight led US president John F Kennedy to raise the"
+      "sentence": "The Soviet Union quickly capitalized on these captured designs, entering the R-1 rocket—a direct copy of the V-2—into service by 1950.",
+      "fact": "Chapter 1: The Soviet R-1 rocket, which entered service in 1950, was a direct copy of the captured German V-2 rocket."
     },
     {
-      "sentence": "Space Race records confirm that Although Germans, Americans and Soviets experimented with small liquid-fuel rockets before.",
-      "fact": "Although Germans, Americans and Soviets experimented with small liquid-fuel rockets before"
+      "sentence": "Despite surviving political purges, pioneering researchers Sergey Korolev and Valentin Glushko rose to lead this early Soviet program.",
+      "fact": "Chapter 1: Early Soviet rocket development was shaped by pioneering researchers like Sergey Korolev and Valentin Glushko, who survived political purges to lead the program."
     },
     {
-      "sentence": "Space Race remains study topic showing that final summary explaining the legacy.",
-      "fact": "final summary explaining the legacy"
+      "sentence": "Their efforts culminated in 1957 with the successful test of the R-7 Semyorka, the world's first intercontinental ballistic missile.",
+      "fact": "Chapter 2: The Soviet Union's R-7 Semyorka was the world's first successful ICBM and the rocket used to launch Sputnik 1 on October 4, 1957."
+    },
+    {
+      "sentence": "This breakthrough sparked fear of a missile gap in the United States, prompting an American response with the testing of the Atlas missile in 1958.",
+      "fact": "Chapter 2: The USSR tested the first ICBM in 1957, creating a perceived 'missile gap' in the US, which subsequently tested its Atlas ICBM in 1958."
+    },
+    {
+      "sentence": "This intense technological rivalry culminated in July 1969, when the United States successfully landed astronauts on the Moon during the Apollo 11 mission.",
+      "fact": "Chapter 4: The United States successfully landed astronauts on the Moon during the July 1969 Apollo 11 mission, fulfilling the national goal set by President John F. Kennedy in 1961."
     }
   ],
   "validationStatus": {
-    "passed": true,
-    "errors": [],
+    "passed": false,
+    "errors": [
+      "Artifact contains a paragraph exceeding 130 words",
+      "Identical 4-word phrases must not repeat across chapters",
+      "Card summaries must follow the alternating pattern: exactly 6 sentences per card summary. Violations: 2",
+      "Documentary score is too low: 70/100"
+    ],
     "warnings": [],
     "checkedRules": {
       "ontology_match": true,
@@ -760,28 +1427,30 @@
       "timeline_chronological": true,
       "graph_has_triples": true,
       "graph_connected": true,
+      "graph_no_synthetic_nodes": true,
       "named_entities_non_empty": true,
       "no_weak_facts": true,
       "no_duplicate_facts": true,
       "no_duplicate_sentences": true,
       "no_placeholder_wording": true,
       "generic_wording_check": true,
-      "paragraph_length_limit": true,
+      "paragraph_length_limit": false,
       "unique_chapter_titles": true,
       "concrete_dates_names_present": true,
-      "no_repeated_phrases": true,
+      "no_repeated_phrases": false,
       "no_timeline_milestone_placeholder": true,
+      "reader_question_quality": true,
       "did_you_know_length_ok": true,
       "sentence_provenance_ok": true,
       "no_abstract_writing": true,
-      "documentary_alternating_rule": true,
+      "documentary_alternating_rule": false,
       "fact_density_met": true,
       "curiosity_score_ok": true,
-      "documentary_score_ok": true,
+      "documentary_score_ok": false,
       "resolver_confidence_ok": true,
       "compiler_confidence_ok": true,
       "overall_confidence_ok": true
     },
-    "timestamp": "2026-07-10T06:48:29.236Z"
+    "timestamp": "2026-07-11T08:26:52.628Z"
   }
 }

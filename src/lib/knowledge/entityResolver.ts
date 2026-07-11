@@ -1,4 +1,6 @@
-import type { ResolvedEntity } from "@/types/knowledge";
+import type { ResolvedEntity, StageDiagnostic } from "@/types/knowledge";
+import { callGeminiModel } from "@/lib/ai/geminiConfig";
+import { recordFallback, recordGeminiSuccess, recordGeminiFailure } from "./diagnostics";
 
 const SUPPORTED_ENTITIES = [
   "Movie",
@@ -101,6 +103,16 @@ async function fetchWikiMetadata(title: string): Promise<{
   }
 }
 
+// Heuristic classification confidence is deliberately capped well below the
+// LLM path's plausible range. This function only ever runs when no working
+// LLM call is available (no key, or the LLM call already failed once), so
+// its output must never claim LLM-tier certainty. The V17 forensic audit
+// found this previously hardcoded to 0.96 "to bypass pass 2 retry" — i.e.
+// specifically to look more certain than it was; see
+// reports/audits/V17_FORENSIC_AUDIT.md, Bug #4.
+const DIRECT_MATCH_CONFIDENCE = 0.8; // a hardcoded per-topic string match, still unverified
+const KEYWORD_SCAN_CONFIDENCE = 0.55; // a single keyword hit against a long candidate list
+
 function runHeuristicClassification(
   title: string,
   article: {
@@ -111,28 +123,31 @@ function runHeuristicClassification(
 ): { entityType: string; confidence: number; reasoning: string; canonicalTitle: string; aliases: string[] } {
   const t = title.toLowerCase();
   if (t.includes("inception") || t.includes("interstellar")) {
-    return { entityType: "Movie", confidence: 0.96, reasoning: "Direct title match.", canonicalTitle: title, aliases: [] };
+    return { entityType: "Movie", confidence: DIRECT_MATCH_CONFIDENCE, reasoning: "Direct title match.", canonicalTitle: title, aliases: [] };
   }
   if (t.includes("einstein") || t.includes("nolan")) {
-    return { entityType: "Person", confidence: 0.96, reasoning: "Direct title match.", canonicalTitle: title, aliases: [] };
+    return { entityType: "Person", confidence: DIRECT_MATCH_CONFIDENCE, reasoning: "Direct title match.", canonicalTitle: title, aliases: [] };
   }
   if (t.includes("apple inc") || t.includes("nvidia")) {
-    return { entityType: "Company", confidence: 0.96, reasoning: "Direct title match.", canonicalTitle: title, aliases: [] };
+    return { entityType: "Company", confidence: DIRECT_MATCH_CONFIDENCE, reasoning: "Direct title match.", canonicalTitle: title, aliases: [] };
   }
   if (t === "japan" || t.includes("united arab emirates")) {
-    return { entityType: "Country", confidence: 0.96, reasoning: "Direct title match.", canonicalTitle: title, aliases: [] };
+    return { entityType: "Country", confidence: DIRECT_MATCH_CONFIDENCE, reasoning: "Direct title match.", canonicalTitle: title, aliases: [] };
   }
   if (t.includes("world war") || t.includes("space race")) {
-    return { entityType: "Historical Event", confidence: 0.96, reasoning: "Direct title match.", canonicalTitle: title, aliases: [] };
+    return { entityType: "Historical Event", confidence: DIRECT_MATCH_CONFIDENCE, reasoning: "Direct title match.", canonicalTitle: title, aliases: [] };
   }
   if (t.includes("renaissance") || t.includes("mona lisa")) {
-    return { entityType: "Art Movement", confidence: 0.96, reasoning: "Direct title match.", canonicalTitle: title, aliases: [] };
+    return { entityType: "Art Movement", confidence: DIRECT_MATCH_CONFIDENCE, reasoning: "Direct title match.", canonicalTitle: title, aliases: [] };
   }
   if (t.includes("python") || t.includes("kubernetes")) {
-    return { entityType: "Technology", confidence: 0.96, reasoning: "Direct title match.", canonicalTitle: title, aliases: [] };
+    return { entityType: "Technology", confidence: DIRECT_MATCH_CONFIDENCE, reasoning: "Direct title match.", canonicalTitle: title, aliases: [] };
   }
   if (t === "dna" || t.includes("photosynthesis")) {
-    return { entityType: "Scientific Concept", confidence: 0.96, reasoning: "Direct title match.", canonicalTitle: title, aliases: [] };
+    return { entityType: "Scientific Concept", confidence: DIRECT_MATCH_CONFIDENCE, reasoning: "Direct title match.", canonicalTitle: title, aliases: [] };
+  }
+  if (t.includes("napoleon")) {
+    return { entityType: "Person", confidence: DIRECT_MATCH_CONFIDENCE, reasoning: "Direct title match.", canonicalTitle: title, aliases: [] };
   }
 
   const combinedText = `${title} ${article.description || ""} ${article.categories.join(" ")} ${article.extract.slice(0, 1000)}`.toLowerCase();
@@ -205,14 +220,17 @@ function runHeuristicClassification(
 
   return {
     entityType,
-    confidence: 0.96, // Heuristic default is high enough to bypass pass 2 retry,
+    confidence: KEYWORD_SCAN_CONFIDENCE,
     reasoning,
     canonicalTitle: title,
     aliases: []
   };
 }
 
-export async function resolveEntity(topic: string): Promise<ResolvedEntity> {
+export async function resolveEntity(
+  topic: string,
+  diagnostics: StageDiagnostic[] = []
+): Promise<ResolvedEntity> {
   // Initial candidate lookup
   let currentTargetTitle = topic;
   let metadata = await fetchWikiMetadata(currentTargetTitle);
@@ -232,6 +250,7 @@ export async function resolveEntity(topic: string): Promise<ResolvedEntity> {
 
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
+    recordFallback(diagnostics, "entityResolver", "no API key configured");
     const heuristic = runHeuristicClassification(currentTargetTitle, metadata);
     return {
       ...heuristic,
@@ -240,6 +259,7 @@ export async function resolveEntity(topic: string): Promise<ResolvedEntity> {
     };
   }
 
+  const start = Date.now();
   try {
     const { GoogleGenAI } = await import("@google/genai");
     const ai = new GoogleGenAI({ apiKey });
@@ -270,11 +290,11 @@ Return a valid JSON object matching this schema:
 }
 Do not return markdown formatting blocks. Just return raw JSON starting with { and ending with }.`;
 
-    const response1 = await ai.models.generateContent({
-      model: "gemini-2.0-flash",
+    const { response: response1, meta: meta1 } = await callGeminiModel(ai, {
       contents: prompt1,
       config: { temperature: 0.1, maxOutputTokens: 500 }
     });
+    recordGeminiSuccess(diagnostics, "entityResolver.pass1", meta1, Date.now() - start);
 
     const text1 = typeof response1.text === "string" ? response1.text.replace(/```json|```/g, "").trim() : "";
     let resolved = JSON.parse(text1) as {
@@ -314,11 +334,12 @@ Return a valid JSON object matching this schema:
 }
 Only output raw JSON.`;
 
-      const response2 = await ai.models.generateContent({
-        model: "gemini-2.0-flash",
+      const pass2Start = Date.now();
+      const { response: response2, meta: meta2 } = await callGeminiModel(ai, {
         contents: prompt2,
         config: { temperature: 0.1, maxOutputTokens: 500 }
       });
+      recordGeminiSuccess(diagnostics, "entityResolver.pass2", meta2, Date.now() - pass2Start);
 
       const text2 = typeof response2.text === "string" ? response2.text.replace(/```json|```/g, "").trim() : "";
       const resolved2 = JSON.parse(text2) as typeof resolved;
@@ -344,6 +365,7 @@ Only output raw JSON.`;
     };
   } catch (error) {
     console.warn("[EntityResolver] Gemini call failed, falling back to heuristics.", error);
+    recordGeminiFailure(diagnostics, "entityResolver", error, Date.now() - start);
     const heuristic = runHeuristicClassification(currentTargetTitle, metadata);
     return {
       ...heuristic,

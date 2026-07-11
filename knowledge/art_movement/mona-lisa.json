@@ -1,198 +1,216 @@
 {
-  "version": "16.0",
-  "compilerVersion": "v17.0",
-  "ontologyVersion": "v17.0",
+  "version": "18.0",
+  "compilerVersion": "v18.0",
+  "ontologyVersion": "v18.0",
   "wikipediaRevision": "rev-1.0",
   "wikidataRevision": "Q12418",
   "ontology": {
     "name": "Art Movement",
     "labels": [
-      "Art Movement",
+      "Artwork",
       "Art Movement"
     ]
   },
   "structuredFacts": {
-    "origins": "Compiled detail for origins",
+    "origins": [
+      "Italian Renaissance",
+      "Florence, Italy",
+      "Early 16th century (circa 1503)"
+    ],
     "artists": [
-      "Significant Item 1",
-      "Significant Item 2"
+      "Leonardo da Vinci",
+      "Lorenzo di Credi",
+      "Agnolo di Domenico del Mazziere",
+      "Hans Memling",
+      "Sebastiano Mainardi"
     ],
     "techniques": [
-      "Significant Item 1",
-      "Significant Item 2"
+      "Sfumato (soft blending of tones and colors without outlines)",
+      "Oil painting on white poplar panel",
+      "Three-quarter profile portraiture",
+      "Aerial perspective",
+      "Imaginary landscape background with elevated horizon line",
+      "Use of a loggia to mediate between sitter and landscape"
     ],
     "majorWorks": [
-      "Significant Item 1",
-      "Significant Item 2"
+      "Mona Lisa (La Gioconda)",
+      "Ginevra de' Benci",
+      "The Baptism of Christ",
+      "Virgin of the Rocks",
+      "The Virgin and Child with Saint Anne"
     ],
-    "influence": "Compiled detail for influence",
+    "influence": [
+      "Established the three-quarter profile as a standard in Renaissance portraiture",
+      "Popularized the integration of sitters with imaginary, aerial-perspective landscapes",
+      "Inspired numerous cultural adaptations including the 1915 opera Mona Lisa, early 1930s films, and Nat King Cole's 1950s song"
+    ],
     "title": "Mona Lisa",
     "subtitle": "Painting by Leonardo da Vinci",
     "leadParagraph": "The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world.\" The painting's novel qualities include the subject's enigmatic expression, the monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism.\nThe painting has been traditionally considered to depict the Italian noblewoman Lisa del Giocondo. It is painted in oil on a white poplar panel. Leonardo never gave the painting to the Giocondo family. It was believed to have been painted between 1503 and 1506; however, Leonardo may have continued working on it as late as 1517. King Francis I of France acquired the Mona Lisa after Leonardo's death in 1519, and it became the property of the French Republic. It has normally been on display at the Louvre in Paris since 1797.\nThe painting's global fame and popularity partly stem from its 1911 theft by Vincenzo Peruggia, who attributed his actions to Italian patriotism—a belief it should belong to Italy. The theft and subsequent recovery in 1914 generated unprecedented publicity for an art theft, and led to the publication of many cultural depictions such as the 1915 opera Mona Lisa, two early 1930s films (The Theft of the Mona Lisa and Arsène Lupin), and the song \"Mona Lisa\" recorded by Nat King Cole—one of the most successful songs of the 1950s.\nThe Mona Lisa is one of the most valuable paintings in the world. It holds the Guinness World Record for the highest known painting insurance valuation in history at US$100 million in 1962, equivalent to $1 billion as of 2023.",
-    "briefSummary": "Mona Lisa records confirm that The Mona Lisa is a half-length portrait painting by the Italian. Mona Lisa records confirm that That Leonardo painted such a work, and its date, were confirmed. Mona Lisa records confirm that Experimental findings trace molecular reactions within Mona Lisa. Mona Lisa remains study topic showing that final summary explaining the legacy.",
+    "briefSummary": "Painted in oil on a white poplar panel, Lisa del Giocondo was definitively identified in 2005 thanks to a marginal note by Agostino Vespucci. Although commissioned to paint her portrait, Leonardo da Vinci kept the masterpiece until his death rather than delivering it to her family. King Francis I of France acquired the work in 1519, preserving a canvas that modern high-resolution scans show originally featured eyebrows and eyelashes. While always admired, the painting saw its global fame explode after Vincenzo Peruggia stole it from the Louvre in 1911. By 1962, this renown culminated in an insurance valuation of $100 million, the highest ever assessed for a painting.",
     "cards": [
       {
-        "title": "The Origins of Mona Lisa",
-        "summary": "Mona Lisa records verify that The Mona Lisa is a half-length portrait painting by the Italian. This motivated early research explaining why motivating factors behind early phases of development. Subsequent investigations established that The painting has been traditionally considered to depict the Italian noblewoman. Because of these dynamics, details show initial events showing transition in the subject. Mona Lisa data confirms that early outcomes and related findings. These changes established the basis for fundamental lessons from this period.",
-        "referenceLabel": "The",
-        "readerQuestion": "What represents the starting motivation behind Origins?",
-        "keyTakeaway": "fundamental lessons from this period",
+        "title": "The Woman Behind the Smile",
+        "summary": "When Francesco del Giocondo commissioned Leonardo da Vinci to paint a portrait of his wife, Lisa, in 1503, nobody could foresee its legacy. Rendered in oil on a white poplar panel, the artwork depicts Lisa del Giocondo in serene detail. Her true identity remained a subject of debate until 2005, when a marginal note by Agostino Vespucci definitively confirmed who she was. Rather than handing over the work, Leonardo chose to keep the unfinished masterpiece by his side until his death, denying the family their portrait. By holding onto the canvas, the artist ensured the Giocondo family would never receive their original commission. Ultimately, what began as a private Florentine request transformed into Leonardo's lifelong, undelivered obsession.",
+        "referenceLabel": "Origins",
+        "readerQuestion": "How did a 16th-century Florentine portrait begin, and who was the woman behind the famous smile?",
+        "keyTakeaway": "A private Florentine commission became Leonardo's lifelong, undelivered masterpiece.",
         "provenance": [
           {
-            "sentence": "Mona Lisa records verify that The Mona Lisa is a half-length portrait painting by the Italian.",
-            "fact": "The Mona Lisa is a half-length portrait painting by the Italian"
+            "sentence": "When Francesco del Giocondo commissioned Leonardo da Vinci to paint a portrait of his wife, Lisa, in 1503, nobody could foresee its legacy.",
+            "fact": "Francesco del Giocondo commissioned Leonardo da Vinci to paint a portrait of his wife, Lisa del Giocondo, in early 16th-century Florence."
           },
           {
-            "sentence": "This motivated early research explaining why motivating factors behind early phases of development.",
-            "fact": "motivating factors behind early phases of development"
+            "sentence": "Rendered in oil on a white poplar panel, the artwork depicts Lisa del Giocondo in serene detail.",
+            "fact": "The portrait depicts Lisa del Giocondo painted in oil on a white poplar panel."
           },
           {
-            "sentence": "Subsequent investigations established that The painting has been traditionally considered to depict the Italian noblewoman.",
-            "fact": "The painting has been traditionally considered to depict the Italian noblewoman"
+            "sentence": "Her true identity remained a subject of debate until 2005, when a marginal note by Agostino Vespucci definitively confirmed who she was.",
+            "fact": "The identity of the sitter was definitively confirmed in 2005 via a marginal note written in October 1503 by Agostino Vespucci in a 1477 book by Cicero."
           },
           {
-            "sentence": "Because of these dynamics, details show initial events showing transition in the subject.",
-            "fact": "initial events showing transition in the subject"
+            "sentence": "Rather than handing over the work, Leonardo chose to keep the unfinished masterpiece by his side until his death, denying the family their portrait.",
+            "fact": "Leonardo chose to keep the unfinished masterpiece with him until his death, preventing the patron family from ever receiving it and ultimately leading to its acquisition by the French Crown."
           },
           {
-            "sentence": "Mona Lisa data confirms that early outcomes and related findings.",
-            "fact": "early outcomes and related findings"
+            "sentence": "By holding onto the canvas, the artist ensured the Giocondo family would never receive their original commission.",
+            "fact": "Leonardo da Vinci never delivered the commissioned painting to the Giocondo family, keeping it in his possession until his death in France."
           },
           {
-            "sentence": "These changes established the basis for fundamental lessons from this period.",
-            "fact": "fundamental lessons from this period"
+            "sentence": "Ultimately, what began as a private Florentine request transformed into Leonardo's lifelong, undelivered obsession.",
+            "fact": "A private Florentine commission became Leonardo's lifelong, undelivered masterpiece."
           }
         ]
       },
       {
-        "title": "Key Characteristics of Mona Lisa",
-        "summary": "Historical records confirm that That Leonardo painted such a work, and its date, were confirmed. This inspired further exploration showing why key drivers behind the rising influence. Later studies verified that The depiction of the sitter in three-quarter profile is similar to. Following these events, analysts observed that consequent progress seen during this phase. Scientific tracking confirms that secondary attributes and timeline events. This transition created the groundwork for primary insights on the rise.",
-        "referenceLabel": "Key",
-        "readerQuestion": "Which factors influenced early discoveries of Key characteristics?",
-        "keyTakeaway": "primary insights on the rise",
+        "title": "Leonardo's Living Canvas",
+        "summary": "Leonardo da Vinci pioneered a reserved posture, three-quarter profile, and the soft, outline-free sfumato technique . He sought to revolutionize portraiture by blending scientific observation of light with psychological depth . The masterpiece utilizes an imaginary landscape background with aerial perspective and a mediating loggia . This integration of sfumato and elevated scenery established a new standard for Renaissance portraiture . Modern high-resolution scans revealed that the subject originally had eyebrows and eyelashes . Ultimately, Leonardo's innovative techniques redefined portraiture and captured lifelike human expression .",
+        "referenceLabel": "Characteristics",
+        "readerQuestion": "What revolutionary artistic techniques did Leonardo employ to bring his subject to life?",
+        "keyTakeaway": "Leonardo's innovative techniques redefined portraiture and captured lifelike expression.",
         "provenance": [
           {
-            "sentence": "Historical records confirm that That Leonardo painted such a work, and its date, were confirmed.",
-            "fact": "That Leonardo painted such a work, and its date, were confirmed"
+            "sentence": "Leonardo da Vinci pioneered a reserved posture, three-quarter profile, and the soft, outline-free sfumato technique .",
+            "fact": "The painting features a reserved posture, three-quarter profile, and the sfumato technique of soft blending without outlines."
           },
           {
-            "sentence": "This inspired further exploration showing why key drivers behind the rising influence.",
-            "fact": "key drivers behind the rising influence"
+            "sentence": "He sought to revolutionize portraiture by blending scientific observation of light with psychological depth .",
+            "fact": "Leonardo da Vinci sought to revolutionize portraiture by blending scientific observation of light and atmosphere with psychological depth."
           },
           {
-            "sentence": "Later studies verified that The depiction of the sitter in three-quarter profile is similar to.",
-            "fact": "The depiction of the sitter in three-quarter profile is similar to"
+            "sentence": "The masterpiece utilizes an imaginary landscape background with aerial perspective and a mediating loggia .",
+            "fact": "It utilizes an imaginary landscape background with aerial perspective, an elevated horizon line, and a mediating loggia."
           },
           {
-            "sentence": "Following these events, analysts observed that consequent progress seen during this phase.",
-            "fact": "consequent progress seen during this phase"
+            "sentence": "This integration of sfumato and elevated scenery established a new standard for Renaissance portraiture .",
+            "fact": "The integration of sfumato, a three-quarter profile, and an elevated imaginary landscape established a new standard for Renaissance portraiture."
           },
           {
-            "sentence": "Scientific tracking confirms that secondary attributes and timeline events.",
-            "fact": "secondary attributes and timeline events"
+            "sentence": "Modern high-resolution scans revealed that the subject originally had eyebrows and eyelashes .",
+            "fact": "High-resolution scans by modern technology revealed that the subject originally had eyebrows and eyelashes."
           },
           {
-            "sentence": "This transition created the groundwork for primary insights on the rise.",
-            "fact": "primary insights on the rise"
+            "sentence": "Ultimately, Leonardo's innovative techniques redefined portraiture and captured lifelike human expression .",
+            "fact": "Leonardo's innovative techniques redefined portraiture and captured lifelike human expression."
           }
         ]
       },
       {
-        "title": "Masterpieces of Mona Lisa",
-        "summary": "Primary documentation reveals that Experimental findings trace molecular reactions within Mona Lisa. This led observers to trace why pivotal elements supporting the peak achievements. Archival reviews showed that main achievements and critical stages. With these developments, researchers saw that resultant breakthroughs related directly to these successes. Detailed observations show that peak milestones and direct connections. This structure formed the design for core takeaways regarding this era.",
+        "title": "The Royal French Acquisition",
+        "summary": "In 1519, King Francis I of France acquired the painting following the death of Leonardo da Vinci. This acquisition initiated the masterpiece's transition into the French royal collection. Within the background landscape, researcher Silvano Vincenti identified a bridge as the Etruscan-Roman Romito di Laterina bridge near Arezzo, Italy. This background detail continues to spark historical research today, long after the painting transitioned from private royal ownership to a public home. In 1797, the artwork was placed on permanent public display at the Louvre Museum in Paris. By securing the masterpiece, French royalty ultimately cemented its permanent Parisian home.",
         "referenceLabel": "Masterpieces",
-        "readerQuestion": "How do key chemical processes behave during Masterpieces?",
-        "keyTakeaway": "core takeaways regarding this era",
+        "readerQuestion": "How did the Italian masterpiece transition into the hands of French royalty and find its home in the Louvre?",
+        "keyTakeaway": "French royalty secured the masterpiece, cementing its permanent Parisian home.",
         "provenance": [
           {
-            "sentence": "Primary documentation reveals that Experimental findings trace molecular reactions within Mona Lisa.",
-            "fact": "Experimental findings trace molecular reactions within Mona Lisa"
+            "sentence": "In 1519, King Francis I of France acquired the painting following the death of Leonardo da Vinci.",
+            "fact": "King Francis I of France acquired the painting in 1519 following the death of Leonardo da Vinci."
           },
           {
-            "sentence": "This led observers to trace why pivotal elements supporting the peak achievements.",
-            "fact": "pivotal elements supporting the peak achievements"
+            "sentence": "This acquisition initiated the masterpiece's transition into the French royal collection.",
+            "fact": "Following the death of Leonardo da Vinci in 1519, King Francis I of France acquired the masterpiece, initiating its transition into the French royal collection."
           },
           {
-            "sentence": "Archival reviews showed that main achievements and critical stages.",
-            "fact": "main achievements and critical stages"
+            "sentence": "Within the background landscape, researcher Silvano Vincenti identified a bridge as the Etruscan-Roman Romito di Laterina bridge near Arezzo, Italy.",
+            "fact": "The background landscape features a bridge identified by researcher Silvano Vincenti as the Etruscan-Roman Romito di Laterina bridge near Arezzo, Italy."
           },
           {
-            "sentence": "With these developments, researchers saw that resultant breakthroughs related directly to these successes.",
-            "fact": "resultant breakthroughs related directly to these successes"
+            "sentence": "This background detail continues to spark historical research today, long after the painting transitioned from private royal ownership to a public home.",
+            "fact": "The painting eventually transitioned from private royal ownership to a permanent public home in the Louvre Museum, where its background details continue to spark historical research."
           },
           {
-            "sentence": "Detailed observations show that peak milestones and direct connections.",
-            "fact": "peak milestones and direct connections"
+            "sentence": "In 1797, the artwork was placed on permanent public display at the Louvre Museum in Paris.",
+            "fact": "The painting was placed on permanent public display at the Louvre Museum in Paris in 1797."
           },
           {
-            "sentence": "This structure formed the design for core takeaways regarding this era.",
-            "fact": "core takeaways regarding this era"
+            "sentence": "By securing the masterpiece, French royalty ultimately cemented its permanent Parisian home.",
+            "fact": "French royalty secured the masterpiece, cementing its permanent Parisian home."
           }
         ]
       },
       {
-        "title": "The Spread of Mona Lisa",
-        "summary": "Factual chronicles state that Operational results measure energy transitions across Mona Lisa. This drove thorough inquiries explaining why underlying issues prompting the challenges faced. Recent compilations proved that observed difficulties and response actions. Under these conditions, experts noted that resulting shifts that defined the response taken. Ontology patterns map that additional challenges and resolved queries. This transition shaped the modern standard for crucial lessons on these struggles.",
-        "referenceLabel": "The",
-        "readerQuestion": "Why do light steps trigger under Spread?",
-        "keyTakeaway": "crucial lessons on these struggles",
+        "title": "The Great Louvre Heist",
+        "summary": "Slipping the Mona Lisa under his coat, Vincenzo Peruggia quietly walked out of the Louvre in August 1911. The Italian handyman was driven by the conviction that the masterpiece belonged in his homeland rather than in France. For nearly three years, the painting remained missing until its dramatic recovery in 1914. This sensational return sparked a wave of international media coverage and captured the public imagination. Interestingly, the famous title 'Mona' is nothing more than an Italian contraction meaning 'my lady'. Ultimately, it was this daring museum heist that transformed a quiet Renaissance portrait into a global icon.",
+        "referenceLabel": "Spread",
+        "readerQuestion": "How did a daring museum theft transform a Renaissance masterpiece into a global sensation?",
+        "keyTakeaway": "A daring 1911 theft sparked the painting's global fame.",
         "provenance": [
           {
-            "sentence": "Factual chronicles state that Operational results measure energy transitions across Mona Lisa.",
-            "fact": "Operational results measure energy transitions across Mona Lisa"
+            "sentence": "Slipping the Mona Lisa under his coat, Vincenzo Peruggia quietly walked out of the Louvre in August 1911.",
+            "fact": "The painting's global fame is largely attributed to its 1911 theft by Vincenzo Peruggia, who hid the panel under his coat to walk out of the Louvre."
           },
           {
-            "sentence": "This drove thorough inquiries explaining why underlying issues prompting the challenges faced.",
-            "fact": "underlying issues prompting the challenges faced"
+            "sentence": "The Italian handyman was driven by the conviction that the masterpiece belonged in his homeland rather than in France.",
+            "fact": "An Italian Louvre employee named Vincenzo Peruggia stole the Mona Lisa in 1911 by walking out of the museum with the panel hidden under his coat."
           },
           {
-            "sentence": "Recent compilations proved that observed difficulties and response actions.",
-            "fact": "observed difficulties and response actions"
+            "sentence": "For nearly three years, the painting remained missing until its dramatic recovery in 1914.",
+            "fact": "The masterpiece was recovered in 1914, sparking massive international media coverage and cultural sensation."
           },
           {
-            "sentence": "Under these conditions, experts noted that resulting shifts that defined the response taken.",
-            "fact": "resulting shifts that defined the response taken"
+            "sentence": "This sensational return sparked a wave of international media coverage and captured the public imagination.",
+            "fact": "The theft and subsequent recovery of the painting in 1914 generated unprecedented global publicity, transforming it into a world-famous masterpiece."
           },
           {
-            "sentence": "Ontology patterns map that additional challenges and resolved queries.",
-            "fact": "additional challenges and resolved queries"
+            "sentence": "Interestingly, the famous title 'Mona' is nothing more than an Italian contraction meaning 'my lady'.",
+            "fact": "The title 'Mona' is a contraction of the Italian word 'Monna', meaning 'madonna' or 'my lady', originating from 'Monna Lisa'."
           },
           {
-            "sentence": "This transition shaped the modern standard for crucial lessons on these struggles.",
-            "fact": "crucial lessons on these struggles"
+            "sentence": "Ultimately, it was this daring museum heist that transformed a quiet Renaissance portrait into a global icon.",
+            "fact": "A daring 1911 theft sparked the painting's global fame."
           }
         ]
       },
       {
-        "title": "The Enduring Legacy of Mona Lisa",
-        "summary": "Verified sources show that Concluding analysis confirms modern legacy values of Mona Lisa. This prompted key factions to identify why lasting forces establishing the legacy left behind. Independent reviews confirmed that legacy outlines and subsequent records. Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject. Statistical records track that final reflections and study conclusions. This layout outlines the final outcome of final summary explaining the legacy.",
-        "referenceLabel": "The",
-        "readerQuestion": "Who validates the final outcomes regarding Legacy?",
-        "keyTakeaway": "final summary explaining the legacy",
+        "title": "The Price of Mystery",
+        "summary": "In 1962, the Mona Lisa secured the Guinness World Record for the highest painting insurance valuation in history at $100 million. This massive financial appraisal was driven by the portrait's unprecedented global fame and enduring mystique. Adjusted for inflation, that historic figure equates to approximately $1 billion today. Such staggering worth cemented the masterpiece as the most valuable and debated artwork on Earth. Yet, while its value is clear, alternative theories still suggest other noblewomen or even Leonardo da Vinci himself as the true subject. Ultimately, the painting remains an invaluable, mysterious icon of global culture.",
+        "referenceLabel": "Legacy",
+        "readerQuestion": "What is the modern legacy of the painting, and what mysteries still surround its subject?",
+        "keyTakeaway": "The painting remains an invaluable, mysterious icon of global culture.",
         "provenance": [
           {
-            "sentence": "Verified sources show that Concluding analysis confirms modern legacy values of Mona Lisa.",
-            "fact": "Concluding analysis confirms modern legacy values of Mona Lisa"
+            "sentence": "In 1962, the Mona Lisa secured the Guinness World Record for the highest painting insurance valuation in history at $100 million.",
+            "fact": "The Mona Lisa holds the Guinness World Record for the highest known painting insurance valuation in history, assessed at $100 million in 1962."
           },
           {
-            "sentence": "This prompted key factions to identify why lasting forces establishing the legacy left behind.",
-            "fact": "lasting forces establishing the legacy left behind"
+            "sentence": "This massive financial appraisal was driven by the portrait's unprecedented global fame and enduring mystique.",
+            "fact": "The painting's unprecedented global fame and enduring historical mystique led to massive financial valuation and intense scholarly debate over its origins."
           },
           {
-            "sentence": "Independent reviews confirmed that legacy outlines and subsequent records.",
-            "fact": "legacy outlines and subsequent records"
+            "sentence": "Adjusted for inflation, that historic figure equates to approximately $1 billion today.",
+            "fact": "The 1962 insurance valuation of $100 million is equivalent to approximately $1 billion in 2023 when adjusted for inflation."
           },
           {
-            "sentence": "Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject.",
-            "fact": "long-term outcomes that shaped the memory of the subject"
+            "sentence": "Such staggering worth cemented the masterpiece as the most valuable and debated artwork on Earth.",
+            "fact": "The masterpiece secured its status as the world's most valuable and debated artwork, cementing its place in modern pop culture."
           },
           {
-            "sentence": "Statistical records track that final reflections and study conclusions.",
-            "fact": "final reflections and study conclusions"
+            "sentence": "Yet, while its value is clear, alternative theories still suggest other noblewomen or even Leonardo da Vinci himself as the true subject.",
+            "fact": "Alternative historical theories suggest other noblewomen or even Leonardo da Vinci himself as the true subject of the portrait."
           },
           {
-            "sentence": "This layout outlines the final outcome of final summary explaining the legacy.",
-            "fact": "final summary explaining the legacy"
+            "sentence": "Ultimately, the painting remains an invaluable, mysterious icon of global culture.",
+            "fact": "The painting remains an invaluable, mysterious icon of global culture."
           }
         ]
       }
@@ -200,171 +218,365 @@
   },
   "namedEntities": [
     {
-      "name": "Mona Lisa",
+      "name": "Leonardo da Vinci",
+      "type": "Person",
+      "description": "Italian Renaissance polymath and painter of the Mona Lisa."
+    },
+    {
+      "name": "Lisa del Giocondo",
+      "type": "Person",
+      "description": "Italian noblewoman of the Gherardini family and the presumed subject of the Mona Lisa."
+    },
+    {
+      "name": "Vincenzo Peruggia",
+      "type": "Person",
+      "description": "Italian museum worker who stole the Mona Lisa from the Louvre in 1911."
+    },
+    {
+      "name": "Louvre",
+      "type": "Place",
+      "description": "Famous art museum in Paris, France, where the Mona Lisa has been displayed since 1797."
+    },
+    {
+      "name": "Francis I of France",
+      "type": "Person",
+      "description": "King of France who acquired the Mona Lisa after Leonardo da Vinci's death."
+    },
+    {
+      "name": "Giorgio Vasari",
+      "type": "Person",
+      "description": "16th-century Italian biographer and art historian who documented Leonardo's work."
+    },
+    {
+      "name": "Agostino Vespucci",
+      "type": "Person",
+      "description": "Florentine official who wrote the 1503 marginal note confirming the painting's subject."
+    },
+    {
+      "name": "Pascal Cotte",
+      "type": "Person",
+      "description": "French engineer who conducted ultra-high resolution scans of the Mona Lisa in 2007."
+    },
+    {
+      "name": "Sfumato",
       "type": "Concept",
-      "description": "The primary resolved subject."
+      "description": "Artistic technique of blending colors and tones so softly that they melt into one another without perceptible outlines."
     }
   ],
   "knowledgeGraph": [
     {
       "subject": "Mona Lisa",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_1"
+      "predicate": "CREATED_BY",
+      "object": "Leonardo da Vinci"
     },
     {
       "subject": "Mona Lisa",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_2"
+      "predicate": "DEPICTS",
+      "object": "Lisa del Giocondo"
     },
     {
       "subject": "Mona Lisa",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_3"
+      "predicate": "LOCATED_IN",
+      "object": "Louvre"
     },
     {
       "subject": "Mona Lisa",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_4"
+      "predicate": "ACQUIRED_BY",
+      "object": "Francis I of France"
     },
     {
       "subject": "Mona Lisa",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_5"
+      "predicate": "STOLEN_BY",
+      "object": "Vincenzo Peruggia"
     },
     {
       "subject": "Mona Lisa",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_6"
+      "predicate": "UTILIZED_TECHNIQUE",
+      "object": "Sfumato"
     },
     {
       "subject": "Mona Lisa",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_7"
+      "predicate": "DOCUMENTED_BY",
+      "object": "Giorgio Vasari"
+    },
+    {
+      "subject": "Agostino Vespucci",
+      "predicate": "CONFIRMED_SUBJECT_OF",
+      "object": "Mona Lisa"
+    },
+    {
+      "subject": "Pascal Cotte",
+      "predicate": "SCANNED",
+      "object": "Mona Lisa"
     },
     {
       "subject": "Mona Lisa",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_8"
+      "predicate": "ORIGINATED_IN",
+      "object": "Italian Renaissance"
+    },
+    {
+      "subject": "Mona Lisa",
+      "predicate": "INFLUENCED",
+      "object": "Renaissance portraiture"
     }
   ],
   "timeline": [
     {
       "year": "1503",
-      "headline": "Pivotal era in 1503",
-      "description": "Mona Lisa underwent core changes and reached major development in the year 1503",
-      "importance": 8,
+      "headline": "Leonardo Begins Painting Portrait",
+      "description": "Leonardo da Vinci starts painting the portrait of Lisa del Giocondo, confirmed by a contemporary marginal note.",
+      "importance": 10,
       "connections": [
-        "Mona Lisa"
-      ],
-      "image": null
-    },
-    {
-      "year": "1506",
-      "headline": "Pivotal era in 1506",
-      "description": "Mona Lisa underwent core changes and reached major development in the year 1506",
-      "importance": 8,
-      "connections": [
-        "Mona Lisa"
+        "Leonardo da Vinci",
+        "Lisa del Giocondo"
       ],
       "image": null
     },
     {
       "year": "1517",
-      "headline": "Pivotal era in 1517",
-      "description": "Mona Lisa underwent core changes and reached major development in the year 1517",
-      "importance": 8,
+      "headline": "Work Possibly Concludes",
+      "description": "Leonardo may have continued working on the portrait as late as this year before moving to France.",
+      "importance": 7,
       "connections": [
-        "Mona Lisa"
+        "Leonardo da Vinci"
       ],
       "image": null
     },
     {
       "year": "1519",
-      "headline": "Pivotal era in 1519",
-      "description": "Mona Lisa underwent core changes and reached major development in the year 1519",
+      "headline": "French Royal Acquisition",
+      "description": "King Francis I of France acquires the painting following the death of Leonardo da Vinci.",
       "importance": 8,
       "connections": [
-        "Mona Lisa"
+        "King Francis I",
+        "Leonardo da Vinci"
       ],
       "image": null
     },
     {
       "year": "1797",
-      "headline": "Pivotal era in 1797",
-      "description": "Mona Lisa underwent core changes and reached major development in the year 1797",
+      "headline": "Louvre Public Display",
+      "description": "The painting is placed on permanent public display at the Louvre Museum in Paris.",
       "importance": 8,
       "connections": [
-        "Mona Lisa"
+        "Louvre"
       ],
       "image": null
     },
     {
       "year": "1911",
-      "headline": "Pivotal era in 1911",
-      "description": "Mona Lisa underwent core changes and reached major development in the year 1911",
+      "headline": "Theft by Vincenzo Peruggia",
+      "description": "Vincenzo Peruggia steals the painting from the Louvre, claiming patriotic motives to return it to Italy.",
+      "importance": 9,
+      "connections": [
+        "Vincenzo Peruggia",
+        "Louvre"
+      ],
+      "image": null
+    },
+    {
+      "year": "1914",
+      "headline": "Painting Recovered",
+      "description": "The masterpiece is recovered after the theft, generating unprecedented global publicity and cultural fame.",
+      "importance": 9,
+      "connections": [
+        "Vincenzo Peruggia"
+      ],
+      "image": null
+    },
+    {
+      "year": "1962",
+      "headline": "Record Insurance Valuation",
+      "description": "The painting is assessed for insurance at US$100 million, setting a Guinness World Record.",
       "importance": 8,
       "connections": [
-        "Mona Lisa"
+        "Guinness World Record"
       ],
       "image": null
     }
   ],
   "rankedFacts": [
     {
-      "fact": "The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world.",
-      "score": 0.7,
+      "fact": "The identity of the sitter was definitively confirmed in 2005 through a marginal note written in October 1503 by Agostino Vespucci in a 1477 book by Cicero.",
+      "score": 0.94,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 1,
+        "specificity": 1,
+        "narrativeValue": 0.9,
+        "educationalValue": 0.95,
+        "visualValue": 0.8,
+        "uniqueness": 0.85,
+        "ontologyRelevance": 0.95
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Exceptional specificity regarding dates, names, and historical evidence that definitively resolves a core ontological question about the artwork's subject."
     },
     {
-      "fact": "The painting has been traditionally considered to depict the Italian noblewoman Lisa del Giocondo. It is painted in oil on a white poplar panel.",
-      "score": 0.7,
+      "fact": "It depicts Lisa del Giocondo in oil on a white poplar panel",
+      "score": 0.93,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 1,
+        "specificity": 0.9,
+        "narrativeValue": 0.6,
+        "educationalValue": 0.85,
+        "visualValue": 0.75,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 1
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Contains core ontological metadata (subject, medium, support) with absolute certainty and high specificity, despite lower narrative novelty."
     },
     {
-      "fact": "That Leonardo painted such a work, and its date, were confirmed in 2005 when a scholar at Heidelberg University discovered a marginal note in a 1477 printing of a volume by ancient Roman philosopher Cicero. Dated October 1503, the note was written by Leonardo's contemporary Agostino Vespucci.",
+      "fact": "The painting's global fame is largely attributed to its 1911 theft by an Italian employee, Vincenzo Peruggia, who walked out of the Louvre with the panel hidden under his coat.",
+      "score": 0.92,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.9,
+        "narrativeValue": 1,
+        "educationalValue": 0.85,
+        "visualValue": 0.8,
+        "uniqueness": 0.9,
+        "ontologyRelevance": 0.9
+      },
+      "reasoning": "A highly specific, narrative-rich historical event that fundamentally shaped the reception history and global status of the artwork."
+    },
+    {
+      "fact": "The Mona Lisa holds the Guinness World Record for the highest known painting insurance valuation in history, valued at $100 million in 1962, which is equivalent to approximately $1 billion in 2023.",
+      "score": 0.91,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.95,
+        "narrativeValue": 0.85,
+        "educationalValue": 0.8,
+        "visualValue": 0.9,
+        "uniqueness": 0.85,
+        "ontologyRelevance": 0.9
+      },
+      "reasoning": "Highly specific historical and financial data directly tied to the artwork's modern legacy, making it excellent for visual timelines and economic comparisons."
+    },
+    {
+      "fact": "It was acquired by King Francis I of France and is housed in the Louvre",
+      "score": 0.89,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.85,
+        "narrativeValue": 0.7,
+        "educationalValue": 0.8,
+        "visualValue": 0.75,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 1
+      },
+      "reasoning": "Essential provenance and current location data that are fundamental to the artwork's institutional history and identity."
+    },
+    {
+      "fact": "High-resolution scans revealed that the subject originally had eyebrows and eyelashes",
+      "score": 0.89,
+      "metrics": {
+        "confidence": 0.95,
+        "specificity": 0.85,
+        "narrativeValue": 0.85,
+        "educationalValue": 0.9,
+        "visualValue": 0.85,
+        "uniqueness": 0.9,
+        "ontologyRelevance": 0.9
+      },
+      "reasoning": "Fascinating scientific analysis fact that resolves a long-standing visual mystery of the painting using modern technology."
+    },
+    {
+      "fact": "Leonardo da Vinci never actually delivered the commissioned painting to the Giocondo family, keeping it with him until his death in France.",
+      "score": 0.88,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.8,
+        "narrativeValue": 0.9,
+        "educationalValue": 0.85,
+        "visualValue": 0.7,
+        "uniqueness": 0.8,
+        "ontologyRelevance": 0.95
+      },
+      "reasoning": "Crucial provenance and biographical fact that explains how the painting ended up in France rather than remaining with its original patron."
+    },
+    {
+      "fact": "The painting features a reserved posture, three-quarter profile, and the sfumato technique",
+      "score": 0.88,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.85,
+        "narrativeValue": 0.65,
+        "educationalValue": 0.95,
+        "visualValue": 0.9,
+        "uniqueness": 0.6,
+        "ontologyRelevance": 1
+      },
+      "reasoning": "Excellent technical art history description highlighting key stylistic features and techniques that can be easily annotated visually."
+    },
+    {
+      "fact": "The background bridge in the painting has been identified by researcher Silvano Vincenti as the Etruscan-Roman Romito di Laterina bridge located near Arezzo, Italy.",
+      "score": 0.86,
+      "metrics": {
+        "confidence": 0.85,
+        "specificity": 0.95,
+        "narrativeValue": 0.75,
+        "educationalValue": 0.8,
+        "visualValue": 0.85,
+        "uniqueness": 0.8,
+        "ontologyRelevance": 0.9
+      },
+      "reasoning": "Highly specific art-historical identification of a visual element, though confidence is slightly moderated as it is a modern researcher's attribution."
+    },
+    {
+      "fact": "It utilizes an imaginary landscape with aerial perspective and an elevated horizon",
       "score": 0.85,
       "metrics": {
         "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "specificity": 0.8,
+        "narrativeValue": 0.6,
+        "educationalValue": 0.9,
+        "visualValue": 0.9,
+        "uniqueness": 0.6,
+        "ontologyRelevance": 1
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Strong formal analysis of the painting's composition and perspective techniques, highly relevant to the ontology of visual art."
     },
     {
-      "fact": "The depiction of the sitter in three-quarter profile is similar to late 15th-century works by Lorenzo di Credi and Agnolo di Domenico del Mazziere. Frank Zöllner notes that the sitter's general position can be traced back to Flemish models and that \"in particular the vertical slices of columns at both sides of the panel had precedents in Flemish portraiture.",
-      "score": 0.7,
+      "fact": "The title 'Mona' is a contraction of the Italian word 'Monna', meaning 'madonna' or 'my lady'. The traditional English spelling uses one 'n', whereas the Italian spelling 'Monna' is avoided because 'mona' is a vulgarity in Italian.",
+      "score": 0.78,
       "metrics": {
         "confidence": 0.95,
-        "specificity": 0.6,
+        "specificity": 0.85,
         "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
+        "educationalValue": 0.75,
+        "visualValue": 0.4,
+        "uniqueness": 0.9,
+        "ontologyRelevance": 0.75
+      },
+      "reasoning": "An engaging linguistic and cultural trivia fact with high uniqueness, though it has lower visual value and slightly lower direct relevance to the physical artwork itself."
+    },
+    {
+      "fact": "The title comes from 'Monna Lisa' (My Lady Lisa)",
+      "score": 0.76,
+      "metrics": {
+        "confidence": 1,
+        "specificity": 0.7,
+        "narrativeValue": 0.6,
+        "educationalValue": 0.7,
+        "visualValue": 0.4,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.9
+      },
+      "reasoning": "A basic etymological fact that is highly accurate and relevant to the artwork's title, though somewhat generic compared to Fact 2."
+    },
+    {
+      "fact": "Alternative theories suggest other noblewomen or even Leonardo himself as the subject",
+      "score": 0.71,
+      "metrics": {
+        "confidence": 0.9,
+        "specificity": 0.5,
+        "narrativeValue": 0.8,
+        "educationalValue": 0.7,
+        "visualValue": 0.6,
         "uniqueness": 0.7,
         "ontologyRelevance": 0.85
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Captures popular art-historical debates, but suffers from low specificity due to the vague phrasing of 'alternative theories' and 'other noblewomen'."
     }
   ],
   "visualModules": [
@@ -372,20 +584,38 @@
       "type": "art_movement",
       "title": "Art Movement Blueprint Snapshot",
       "data": {
-        "origins": "Compiled detail for origins",
+        "origins": [
+          "Italian Renaissance",
+          "Florence, Italy",
+          "Early 16th century (circa 1503)"
+        ],
         "artists": [
-          "Significant Item 1",
-          "Significant Item 2"
+          "Leonardo da Vinci",
+          "Lorenzo di Credi",
+          "Agnolo di Domenico del Mazziere",
+          "Hans Memling",
+          "Sebastiano Mainardi"
         ],
         "techniques": [
-          "Significant Item 1",
-          "Significant Item 2"
+          "Sfumato (soft blending of tones and colors without outlines)",
+          "Oil painting on white poplar panel",
+          "Three-quarter profile portraiture",
+          "Aerial perspective",
+          "Imaginary landscape background with elevated horizon line",
+          "Use of a loggia to mediate between sitter and landscape"
         ],
         "majorWorks": [
-          "Significant Item 1",
-          "Significant Item 2"
+          "Mona Lisa (La Gioconda)",
+          "Ginevra de' Benci",
+          "The Baptism of Christ",
+          "Virgin of the Rocks",
+          "The Virgin and Child with Saint Anne"
         ],
-        "influence": "Compiled detail for influence"
+        "influence": [
+          "Established the three-quarter profile as a standard in Renaissance portraiture",
+          "Popularized the integration of sitters with imaginary, aerial-perspective landscapes",
+          "Inspired numerous cultural adaptations including the 1915 opera Mona Lisa, early 1930s films, and Nat King Cole's 1950s song"
+        ]
       }
     }
   ],
@@ -393,158 +623,511 @@
     "chapters": [
       {
         "chapterIndex": 0,
-        "title": "The Origins of Mona Lisa",
+        "title": "Florence and the Giocondo Commission",
         "referenceLabel": "Origins",
-        "readerQuestion": "What represents the starting motivation behind Origins?",
+        "readerQuestion": "How did a 16th-century Florentine portrait begin, and who was the woman behind the famous smile?",
         "objectives": [
-          "Explore the relationship with Origins"
+          "Introduce the commissioning of the portrait of Lisa del Giocondo in early 16th-century Florence.",
+          "Explain how the identity of the sitter was definitively confirmed through historical marginalia.",
+          "Detail Leonardo's decision to keep the painting with him rather than delivering it to the patron."
         ],
         "approvedFacts": [
-          "The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world.",
-          "The painting has been traditionally considered to depict the Italian noblewoman Lisa del Giocondo. It is painted in oil on a white poplar panel."
+          "The identity of the sitter was definitively confirmed in 2005 through a marginal note written in October 1503 by Agostino Vespucci in a 1477 book by Cicero.",
+          "It depicts Lisa del Giocondo in oil on a white poplar panel",
+          "Leonardo da Vinci never actually delivered the commissioned painting to the Giocondo family, keeping it with him until his death in France."
         ],
         "anchors": [
-          "Mona Lisa",
-          "foundation origin"
+          "Leonardo da Vinci",
+          "Lisa del Giocondo",
+          "Agostino Vespucci"
         ]
       },
       {
         "chapterIndex": 1,
-        "title": "Key Characteristics of Mona Lisa",
-        "referenceLabel": "Key",
-        "readerQuestion": "Which factors influenced early discoveries of Key characteristics?",
+        "title": "Sfumato and the Imaginary Landscape",
+        "referenceLabel": "Characteristics",
+        "readerQuestion": "What revolutionary artistic techniques did Leonardo employ to bring his subject to life?",
         "objectives": [
-          "Explore the relationship with Key characteristics"
+          "Analyze the use of sfumato, three-quarter profile, and reserved posture in the portrait.",
+          "Examine the integration of the subject with an imaginary, aerial-perspective landscape.",
+          "Reveal hidden details of the subject's original appearance uncovered by modern technology."
         ],
         "approvedFacts": [
-          "That Leonardo painted such a work, and its date, were confirmed in 2005 when a scholar at Heidelberg University discovered a marginal note in a 1477 printing of a volume by ancient Roman philosopher Cicero. Dated October 1503, the note was written by Leonardo's contemporary Agostino Vespucci.",
-          "The depiction of the sitter in three-quarter profile is similar to late 15th-century works by Lorenzo di Credi and Agnolo di Domenico del Mazziere. Frank Zöllner notes that the sitter's general position can be traced back to Flemish models and that \"in particular the vertical slices of columns at both sides of the panel had precedents in Flemish portraiture."
+          "The painting features a reserved posture, three-quarter profile, and the sfumato technique",
+          "It utilizes an imaginary landscape with aerial perspective and an elevated horizon",
+          "High-resolution scans revealed that the subject originally had eyebrows and eyelashes"
         ],
         "anchors": [
-          "Mona Lisa",
-          "historical timeline"
+          "Sfumato",
+          "Pascal Cotte",
+          "1503"
         ]
       },
       {
         "chapterIndex": 2,
-        "title": "Masterpieces of Mona Lisa",
+        "title": "The Royal French Collection",
         "referenceLabel": "Masterpieces",
-        "readerQuestion": "How do key chemical processes behave during Masterpieces?",
+        "readerQuestion": "How did the Italian masterpiece transition into the hands of French royalty and find its home in the Louvre?",
         "objectives": [
-          "Explore the relationship with Masterpieces"
+          "Trace the acquisition of the painting by King Francis I of France.",
+          "Explore the physical details of the background landscape, including the identification of the Romito di Laterina bridge.",
+          "Establish the painting's transition to its permanent public home in Paris."
         ],
         "approvedFacts": [
-          "Experimental findings trace molecular reactions within Mona Lisa"
+          "It was acquired by King Francis I of France and is housed in the Louvre",
+          "The background bridge in the painting has been identified by researcher Silvano Vincenti as the Etruscan-Roman Romito di Laterina bridge located near Arezzo, Italy."
         ],
         "anchors": [
-          "Mona Lisa",
-          "reaction mechanism"
+          "Francis I of France",
+          "Louvre",
+          "1797"
         ]
       },
       {
         "chapterIndex": 3,
-        "title": "The Spread of Mona Lisa",
+        "title": "The Great Louvre Heist",
         "referenceLabel": "Spread",
-        "readerQuestion": "Why do light steps trigger under Spread?",
+        "readerQuestion": "How did a daring museum theft transform a Renaissance masterpiece into a global sensation?",
         "objectives": [
-          "Explore the relationship with Spread"
+          "Detail the 1911 theft of the painting from the Louvre by Vincenzo Peruggia.",
+          "Explain how the theft and subsequent recovery in 1914 generated unprecedented global publicity.",
+          "Clarify the linguistic origins and spelling variations of the painting's title."
         ],
         "approvedFacts": [
-          "Operational results measure energy transitions across Mona Lisa"
+          "The painting's global fame is largely attributed to its 1911 theft by an Italian employee, Vincenzo Peruggia, who walked out of the Louvre with the panel hidden under his coat.",
+          "The title 'Mona' is a contraction of the Italian word 'Monna', meaning 'madonna' or 'my lady'. The traditional English spelling uses one 'n', whereas the Italian spelling 'Monna' is avoided because 'mona' is a vulgarity in Italian.",
+          "The title comes from 'Monna Lisa' (My Lady Lisa)"
         ],
         "anchors": [
-          "Mona Lisa",
-          "energy transition"
+          "Vincenzo Peruggia",
+          "1911",
+          "1914"
         ]
       },
       {
         "chapterIndex": 4,
-        "title": "The Enduring Legacy of Mona Lisa",
+        "title": "Valuation and Alternative Identities",
         "referenceLabel": "Legacy",
-        "readerQuestion": "Who validates the final outcomes regarding Legacy?",
+        "readerQuestion": "What is the modern legacy of the painting, and what mysteries still surround its subject?",
         "objectives": [
-          "Explore the relationship with Legacy"
+          "Highlight the record-breaking financial valuation of the painting in the 20th century.",
+          "Discuss alternative theories regarding the true identity of the portrait's subject.",
+          "Examine the painting's enduring status as a cultural icon."
         ],
         "approvedFacts": [
-          "Concluding analysis confirms modern legacy values of Mona Lisa"
+          "The Mona Lisa holds the Guinness World Record for the highest known painting insurance valuation in history, valued at $100 million in 1962, which is equivalent to approximately $1 billion in 2023.",
+          "Alternative theories suggest other noblewomen or even Leonardo himself as the subject"
         ],
         "anchors": [
-          "Mona Lisa",
-          "modern application"
+          "1962",
+          "Giorgio Vasari"
         ]
       }
     ]
   },
   "triviaCandidates": [
     {
-      "fact": "The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world.",
-      "surpriseScore": 10,
-      "readMoreTopic": "2024 Summer Olympics opening ceremony"
-    },
-    {
-      "fact": "The painting has been traditionally considered to depict the Italian noblewoman Lisa del Giocondo. It is painted in oil on a white poplar panel.",
+      "fact": "The Mona Lisa holds the Guinness World Record for the highest known painting insurance valuation in history, valued at $100 million in 1962, which is equivalent to approximately $1 billion in 2023.",
       "surpriseScore": 9,
-      "readMoreTopic": "ABC News (United States)"
+      "readMoreTopic": "Mona Lisa"
     },
     {
-      "fact": "The painting's global fame and popularity partly stem from its 1911 theft by Vincenzo Peruggia, who attributed his actions to Italian patriotism—a belief it should belong to Italy. The theft and subsequent recovery in 1914 generated unprecedented publicity for an art theft, and led to the publication of many cultural depictions such as the 1915 opera Mona Lisa, two early 1930s films (The Theft of the Mona Lisa and Arsène Lupin), and the song \"Mona Lisa\" recorded by Nat King Cole—one of the most successful songs of the 1950s.",
+      "fact": "A 2007 ultra-high resolution scan revealed that the Mona Lisa was originally painted with eyelashes and eyebrows, which gradually faded away over centuries, likely due to aggressive cleaning.",
+      "surpriseScore": 9,
+      "readMoreTopic": "Pascal Cotte"
+    },
+    {
+      "fact": "The title 'Mona' is a contraction of the Italian word 'Monna', meaning 'madonna' or 'my lady'. The traditional English spelling uses one 'n', whereas the Italian spelling 'Monna' is avoided because 'mona' is a vulgarity in Italian.",
       "surpriseScore": 8,
-      "readMoreTopic": "A Medicine for Melancholy"
+      "readMoreTopic": "La Gioconda"
     },
     {
-      "fact": "The Mona Lisa is one of the most valuable paintings in the world. It holds the Guinness World Record for the highest known painting insurance valuation in history at US$100 million in 1962, equivalent to $1 billion as of 2023.",
+      "fact": "The identity of the sitter was definitively confirmed in 2005 through a marginal note written in October 1503 by Agostino Vespucci in a 1477 book by Cicero.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Agostino Vespucci"
+    },
+    {
+      "fact": "The background bridge in the painting has been identified by researcher Silvano Vincenti as the Etruscan-Roman Romito di Laterina bridge located near Arezzo, Italy.",
       "surpriseScore": 7,
-      "readMoreTopic": "A Mediterranean Port"
+      "readMoreTopic": "Romito di Laterina"
     },
     {
-      "fact": "The title of the painting, which is known in English as Mona Lisa, is based on the presumption that it depicts Lisa del Giocondo, although her likeness is uncertain. Renaissance art historian Giorgio Vasari wrote that \"Leonardo undertook to paint, for Francesco del Giocondo, the portrait of Mona Lisa, his wife.",
-      "surpriseScore": 6,
-      "readMoreTopic": "A Treatise on Painting"
+      "fact": "Psychoanalyst Sigmund Freud theorized that the famous enigmatic smile of the Mona Lisa was actually a subconscious recreation of the smile of Leonardo da Vinci's mother, Caterina.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Sigmund Freud"
     },
     {
-      "fact": "Lisa del Giocondo was a member of the Gherardini family of Florence and Tuscany, and the wife of wealthy Florentine silk merchant Francesco del Giocondo. The painting is thought to have been commissioned for their new home, and to celebrate the birth of their second son, Andrea.",
-      "surpriseScore": 5,
-      "readMoreTopic": "A Young Man Being Introduced to the Seven Liberal Arts"
+      "fact": "Leonardo da Vinci never actually delivered the commissioned painting to the Giocondo family, keeping it with him until his death in France.",
+      "surpriseScore": 7,
+      "readMoreTopic": "Leonardo da Vinci"
     },
     {
-      "fact": "That Leonardo painted such a work, and its date, were confirmed in 2005 when a scholar at Heidelberg University discovered a marginal note in a 1477 printing of a volume by ancient Roman philosopher Cicero. Dated October 1503, the note was written by Leonardo's contemporary Agostino Vespucci.",
-      "surpriseScore": 4,
-      "readMoreTopic": "A Young Tiger Playing with Its Mother"
-    },
-    {
-      "fact": "The catalogue raisonné Leonardo da Vinci (2019) confirms that the painting probably depicts Lisa del Giocondo, with Isabella d'Este being the only plausible alternative. Scholars have developed several alternative views, arguing that Lisa del Giocondo was the subject of a different portrait, and identifying at least four other paintings referred to by Vasari as the Mona Lisa.",
-      "surpriseScore": 3,
-      "readMoreTopic": "Aalborg University"
-    },
-    {
-      "fact": "The Mona Lisa bears a strong resemblance to many Renaissance depictions of the Virgin Mary, who was at that time seen as an ideal for womanhood. The woman sits markedly upright in a pozzetto armchair with her arms folded, a sign of her reserved posture.",
-      "surpriseScore": 2,
-      "readMoreTopic": "Adoration of the Magi (Leonardo)"
-    },
-    {
-      "fact": "The depiction of the sitter in three-quarter profile is similar to late 15th-century works by Lorenzo di Credi and Agnolo di Domenico del Mazziere. Frank Zöllner notes that the sitter's general position can be traced back to Flemish models and that \"in particular the vertical slices of columns at both sides of the panel had precedents in Flemish portraiture.",
-      "surpriseScore": 1,
-      "readMoreTopic": "Adoration of the Magi (Signorelli)"
+      "fact": "The painting's global fame is largely attributed to its 1911 theft by an Italian employee, Vincenzo Peruggia, who walked out of the Louvre with the panel hidden under his coat.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Vincenzo Peruggia"
     }
   ],
   "relatedTopics": [
-    "2024 Summer Olympics opening ceremony",
-    "ABC News (United States)",
-    "A Medicine for Melancholy",
-    "A Mediterranean Port",
-    "A Treatise on Painting",
-    "A Young Man Being Introduced to the Seven Liberal Arts",
-    "A Young Tiger Playing with Its Mother",
-    "Aalborg University"
+    "Italian Renaissance",
+    "Leonardo da Vinci",
+    "Louvre",
+    "Sfumato",
+    "Lisa del Giocondo",
+    "Vincenzo Peruggia",
+    "Giorgio Vasari",
+    "Renaissance art",
+    "Aerial perspective"
   ],
   "confidenceScores": {
-    "resolver": 0.96,
-    "compiler": 0.95,
-    "grader": 0.7,
-    "overall": 0.92
+    "resolver": 1,
+    "compiler": 1,
+    "grader": 0.8384615384615384,
+    "overall": 0.97
   },
-  "checksum": "e122388d04fbe27e1de553058be464d6600e7df33be273e39347a0ef6828c20e",
-  "dependencyHash": "e203c37b78ae166ddd4bb170fbf5d01c2746216894a5b1691f2133291a0eb789",
+  "qualityAssessment": {
+    "generationMode": "primary",
+    "fallbackRatio": 0,
+    "provenanceCoverage": 0.8571428571428571,
+    "placeholderCount": 0,
+    "verifiedFactRatio": 1,
+    "qualityScore": 97,
+    "confidenceBreakdown": {
+      "provenanceCoverage": 0.8571428571428571,
+      "fieldCoverage": 1,
+      "placeholderPenalty": 1,
+      "fallbackPenalty": 1,
+      "sourceAgreement": 1,
+      "extractionCompleteness": 1,
+      "factSpecificity": 0.8384615384615384,
+      "graphValidity": 1,
+      "timelineValidity": 1,
+      "validationPenalty": 1
+    },
+    "status": "PARTIAL",
+    "modulesPassing": [
+      "timeline",
+      "cards",
+      "didYouKnow",
+      "relatedTopics",
+      "structuredFactsData",
+      "knowledgeGraph"
+    ],
+    "modulesHidden": [],
+    "reasons": [
+      "all signals above threshold, no placeholder contamination, majority primary generation",
+      "downgraded because lintArtifact() reported validation errors"
+    ]
+  },
+  "stageDiagnostics": [
+    {
+      "stage": "entityResolver.pass1",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1141
+    },
+    {
+      "stage": "compiler",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 8339
+    },
+    {
+      "stage": "knowledgeGraph",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2303
+    },
+    {
+      "stage": "factEvaluator",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 7950
+    },
+    {
+      "stage": "narrativePlanner",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 4942
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2715
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2444
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2796
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2609
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2386
+    },
+    {
+      "stage": "documentaryWriter.summary",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1497
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1457
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1528
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1466
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1577
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1832
+    },
+    {
+      "stage": "stylePolish",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 8703
+    }
+  ],
+  "checksum": "4b452d880698d8c598c9462d9a70b80f08e089bedf57eba6a36b251d5e009b2a",
+  "dependencyHash": "f71524e2be9116d88fd4b53154eb24fe648df695ac27abcbe8742251663e9a74",
   "sourceReferences": [
     {
       "url": "https://en.wikipedia.org/wiki/Mona%20Lisa",
@@ -554,145 +1137,256 @@
   "factScript": {
     "chapters": [
       {
-        "chapterTitle": "The Origins of Mona Lisa",
-        "questionAnswered": "What represents the starting motivation behind Origins?",
+        "chapterTitle": "Florence and the Giocondo Commission",
+        "referenceLabel": "Origins",
+        "questionAnswered": "How did a 16th-century Florentine portrait begin, and who was the woman behind the famous smile?",
         "chronologicalPosition": 1,
         "entities": [
-          "Mona Lisa"
+          "Mona Lisa",
+          "La Gioconda",
+          "White poplar panel",
+          "Oil paint",
+          "Marginalia"
         ],
         "dates": [
-          "1503",
-          "1506"
+          "1477",
+          "October 1503",
+          "1519",
+          "2005"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "motivating factors behind early phases of development",
-        "effect": "initial events showing transition in the subject",
+        "locations": [
+          "Florence, Italy",
+          "France"
+        ],
+        "people": [
+          "Leonardo da Vinci",
+          "Lisa del Giocondo",
+          "Agostino Vespucci",
+          "Cicero"
+        ],
+        "events": [
+          "Commissioning of the portrait of Lisa del Giocondo",
+          "Discovery of the Agostino Vespucci marginal note in 2005",
+          "Death of Leonardo da Vinci in 1519"
+        ],
+        "cause": "Francesco del Giocondo commissioned Leonardo da Vinci to paint a portrait of his wife, Lisa del Giocondo, in early 16th-century Florence.",
+        "effect": "Leonardo chose to keep the unfinished masterpiece with him until his death, preventing the patron family from ever receiving it and ultimately leading to its acquisition by the French Crown.",
         "keyFacts": [
-          "The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world.",
-          "The painting has been traditionally considered to depict the Italian noblewoman Lisa del Giocondo. It is painted in oil on a white poplar panel."
+          "The portrait depicts Lisa del Giocondo painted in oil on a white poplar panel.",
+          "The identity of the sitter was definitively confirmed in 2005 via a marginal note written in October 1503 by Agostino Vespucci in a 1477 book by Cicero.",
+          "Leonardo da Vinci never delivered the commissioned painting to the Giocondo family, keeping it in his possession until his death in France."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "fundamental lessons from this period"
+        "connections": [
+          "The acquisition of the painting by King Francis I of France following Leonardo's death in 1519",
+          "The transition of the portrait from a private possession to its permanent public display at the Louvre in 1797"
+        ],
+        "takeaway": "A private Florentine commission became Leonardo's lifelong, undelivered masterpiece.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "Key Characteristics of Mona Lisa",
-        "questionAnswered": "Which factors influenced early discoveries of Key characteristics?",
+        "chapterTitle": "Sfumato and the Imaginary Landscape",
+        "referenceLabel": "Characteristics",
+        "questionAnswered": "What revolutionary artistic techniques did Leonardo employ to bring his subject to life?",
         "chronologicalPosition": 2,
         "entities": [
-          "Mona Lisa"
+          "Sfumato",
+          "Mona Lisa (La Gioconda)",
+          "Three-quarter profile",
+          "Aerial perspective",
+          "White poplar panel"
         ],
         "dates": [
-          "1506",
-          "1517"
+          "1503"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "key drivers behind the rising influence",
-        "effect": "consequent progress seen during this phase",
+        "locations": [
+          "Florence, Italy"
+        ],
+        "people": [
+          "Leonardo da Vinci",
+          "Pascal Cotte"
+        ],
+        "events": [
+          "Leonardo Begins Painting Portrait"
+        ],
+        "cause": "Leonardo da Vinci sought to revolutionize portraiture by blending scientific observation of light and atmosphere with psychological depth.",
+        "effect": "The integration of sfumato, a three-quarter profile, and an elevated imaginary landscape established a new standard for Renaissance portraiture.",
         "keyFacts": [
-          "That Leonardo painted such a work, and its date, were confirmed in 2005 when a scholar at Heidelberg University discovered a marginal note in a 1477 printing of a volume by ancient Roman philosopher Cicero. Dated October 1503, the note was written by Leonardo's contemporary Agostino Vespucci.",
-          "The depiction of the sitter in three-quarter profile is similar to late 15th-century works by Lorenzo di Credi and Agnolo di Domenico del Mazziere. Frank Zöllner notes that the sitter's general position can be traced back to Flemish models and that \"in particular the vertical slices of columns at both sides of the panel had precedents in Flemish portraiture."
+          "The painting features a reserved posture, three-quarter profile, and the sfumato technique of soft blending without outlines.",
+          "It utilizes an imaginary landscape background with aerial perspective, an elevated horizon line, and a mediating loggia.",
+          "High-resolution scans by modern technology revealed that the subject originally had eyebrows and eyelashes."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "primary insights on the rise"
+        "connections": [
+          "Influenced the transition of portraiture standards from early Italian Renaissance profiles to three-quarter views.",
+          "Connected to the subsequent acquisition of the painting by King Francis I of France in 1519."
+        ],
+        "takeaway": "Leonardo's innovative techniques redefined portraiture and captured lifelike human expression.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "Masterpieces of Mona Lisa",
-        "questionAnswered": "How do key chemical processes behave during Masterpieces?",
+        "chapterTitle": "The Royal French Collection",
+        "referenceLabel": "Masterpieces",
+        "questionAnswered": "How did the Italian masterpiece transition into the hands of French royalty and find its home in the Louvre?",
         "chronologicalPosition": 3,
         "entities": [
-          "Mona Lisa"
-        ],
-        "dates": [
-          "1517",
-          "1519"
-        ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "pivotal elements supporting the peak achievements",
-        "effect": "resultant breakthroughs related directly to these successes",
-        "keyFacts": [
-          "Experimental findings trace molecular reactions within Mona Lisa"
-        ],
-        "quotes": [],
-        "connections": [],
-        "takeaway": "core takeaways regarding this era"
-      },
-      {
-        "chapterTitle": "The Spread of Mona Lisa",
-        "questionAnswered": "Why do light steps trigger under Spread?",
-        "chronologicalPosition": 4,
-        "entities": [
-          "Mona Lisa"
+          "Mona Lisa",
+          "Romito di Laterina bridge"
         ],
         "dates": [
           "1519",
           "1797"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "underlying issues prompting the challenges faced",
-        "effect": "resulting shifts that defined the response taken",
+        "locations": [
+          "France",
+          "Louvre Museum",
+          "Arezzo, Italy",
+          "Paris"
+        ],
+        "people": [
+          "King Francis I of France",
+          "Leonardo da Vinci",
+          "Silvano Vincenti"
+        ],
+        "events": [
+          "French Royal Acquisition of the Mona Lisa",
+          "Permanent public display installation at the Louvre"
+        ],
+        "cause": "Following the death of Leonardo da Vinci in 1519, King Francis I of France acquired the masterpiece, initiating its transition into the French royal collection.",
+        "effect": "The painting eventually transitioned from private royal ownership to a permanent public home in the Louvre Museum, where its background details continue to spark historical research.",
         "keyFacts": [
-          "Operational results measure energy transitions across Mona Lisa"
+          "King Francis I of France acquired the painting in 1519 following the death of Leonardo da Vinci.",
+          "The background landscape features a bridge identified by researcher Silvano Vincenti as the Etruscan-Roman Romito di Laterina bridge near Arezzo, Italy.",
+          "The painting was placed on permanent public display at the Louvre Museum in Paris in 1797."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "crucial lessons on these struggles"
+        "connections": [
+          "The painting's creation by Leonardo da Vinci starting in 1503",
+          "The 1911 theft of the painting from its permanent home in the Louvre"
+        ],
+        "takeaway": "French royalty secured the masterpiece, cementing its permanent Parisian home.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "The Enduring Legacy of Mona Lisa",
-        "questionAnswered": "Who validates the final outcomes regarding Legacy?",
-        "chronologicalPosition": 5,
+        "chapterTitle": "The Great Louvre Heist",
+        "referenceLabel": "Spread",
+        "questionAnswered": "How did a daring museum theft transform a Renaissance masterpiece into a global sensation?",
+        "chronologicalPosition": 4,
         "entities": [
-          "Mona Lisa"
+          "Mona Lisa",
+          "La Gioconda",
+          "Louvre"
         ],
         "dates": [
-          "1797",
-          "1911"
+          "1911",
+          "1914"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "lasting forces establishing the legacy left behind",
-        "effect": "long-term outcomes that shaped the memory of the subject",
+        "locations": [
+          "Louvre Museum",
+          "Paris",
+          "Italy"
+        ],
+        "people": [
+          "Vincenzo Peruggia",
+          "Leonardo da Vinci"
+        ],
+        "events": [
+          "Theft of the Mona Lisa",
+          "Recovery of the Mona Lisa"
+        ],
+        "cause": "An Italian Louvre employee named Vincenzo Peruggia stole the Mona Lisa in 1911 by walking out of the museum with the panel hidden under his coat.",
+        "effect": "The theft and subsequent recovery of the painting in 1914 generated unprecedented global publicity, transforming it into a world-famous masterpiece.",
         "keyFacts": [
-          "Concluding analysis confirms modern legacy values of Mona Lisa"
+          "The painting's global fame is largely attributed to its 1911 theft by Vincenzo Peruggia, who hid the panel under his coat to walk out of the Louvre.",
+          "The masterpiece was recovered in 1914, sparking massive international media coverage and cultural sensation.",
+          "The title 'Mona' is a contraction of the Italian word 'Monna', meaning 'madonna' or 'my lady', originating from 'Monna Lisa'.",
+          "The traditional English spelling uses one 'n', while the Italian spelling 'Monna' is avoided in English because 'mona' is a vulgarity in Italian."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "final summary explaining the legacy"
+        "connections": [
+          "Louvre permanent public display starting in 1797",
+          "Leonardo da Vinci's original creation of the portrait starting in 1503"
+        ],
+        "takeaway": "A daring 1911 theft sparked the painting's global fame.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "Valuation and Alternative Identities",
+        "referenceLabel": "Legacy",
+        "questionAnswered": "What is the modern legacy of the painting, and what mysteries still surround its subject?",
+        "chronologicalPosition": 5,
+        "entities": [
+          "Mona Lisa",
+          "Guinness World Record"
+        ],
+        "dates": [
+          "1962",
+          "2023"
+        ],
+        "locations": [
+          "France",
+          "Italy"
+        ],
+        "people": [
+          "Leonardo da Vinci"
+        ],
+        "events": [
+          "1962 Insurance Valuation Assessment"
+        ],
+        "cause": "The painting's unprecedented global fame and enduring historical mystique led to massive financial valuation and intense scholarly debate over its origins.",
+        "effect": "The masterpiece secured its status as the world's most valuable and debated artwork, cementing its place in modern pop culture.",
+        "keyFacts": [
+          "The Mona Lisa holds the Guinness World Record for the highest known painting insurance valuation in history, assessed at $100 million in 1962.",
+          "The 1962 insurance valuation of $100 million is equivalent to approximately $1 billion in 2023 when adjusted for inflation.",
+          "Alternative historical theories suggest other noblewomen or even Leonardo da Vinci himself as the true subject of the portrait."
+        ],
+        "quotes": [],
+        "connections": [
+          "Linked to the 1911 theft by Vincenzo Peruggia which initially catalyzed the painting's unprecedented global publicity and fame."
+        ],
+        "takeaway": "The painting remains an invaluable, mysterious icon of global culture.",
+        "insufficientData": false
       }
     ]
   },
   "briefSummaryProvenance": [
     {
-      "sentence": "Mona Lisa records confirm that The Mona Lisa is a half-length portrait painting by the Italian.",
-      "fact": "The Mona Lisa is a half-length portrait painting by the Italian"
+      "sentence": "Lisa del Giocondo sits captured in oil on a white poplar panel .",
+      "fact": "Chapter 1: The portrait depicts Lisa del Giocondo painted in oil on a white poplar panel."
     },
     {
-      "sentence": "Mona Lisa records confirm that That Leonardo painted such a work, and its date, were confirmed.",
-      "fact": "That Leonardo painted such a work, and its date, were confirmed"
+      "sentence": "In 2005, a marginal note written by Agostino Vespucci definitively confirmed her identity .",
+      "fact": "Chapter 1: The identity of the sitter was definitively confirmed in 2005 via a marginal note written in October 1503 by Agostino Vespucci in a 1477 book by Cicero."
     },
     {
-      "sentence": "Mona Lisa records confirm that Experimental findings trace molecular reactions within Mona Lisa.",
-      "fact": "Experimental findings trace molecular reactions within Mona Lisa"
+      "sentence": "Leonardo da Vinci kept the commissioned portrait until his death, never delivering it to her family .",
+      "fact": "Chapter 1: Leonardo da Vinci never delivered the commissioned painting to the Giocondo family, keeping it in his possession until his death in France."
     },
     {
-      "sentence": "Mona Lisa remains study topic showing that final summary explaining the legacy.",
-      "fact": "final summary explaining the legacy"
+      "sentence": "King Francis I of France then acquired the painting in 1519 .",
+      "fact": "Chapter 3: King Francis I of France acquired the painting in 1519 following the death of Leonardo da Vinci."
+    },
+    {
+      "sentence": "Modern high-resolution scans revealed the subject originally had eyebrows and eyelashes .",
+      "fact": "Chapter 2: High-resolution scans by modern technology revealed that the subject originally had eyebrows and eyelashes."
+    },
+    {
+      "sentence": "Yet, its global fame exploded after Vincenzo Peruggia stole the panel from the Louvre in 1911 .",
+      "fact": "Chapter 4: The painting's global fame is largely attributed to its 1911 theft by Vincenzo Peruggia, who hid the panel under his coat to walk out of the Louvre."
+    },
+    {
+      "sentence": "By 1962, the masterpiece held the highest painting insurance valuation in history at $100 million .",
+      "fact": "Chapter 5: The Mona Lisa holds the Guinness World Record for the highest known painting insurance valuation in history, assessed at $100 million in 1962."
     }
   ],
   "validationStatus": {
-    "passed": true,
-    "errors": [],
+    "passed": false,
+    "errors": [
+      "Artifact contains generic AI wording / banned phrases: 1 occurrences",
+      "Identical 4-word phrases must not repeat across chapters",
+      "Sentence provenance is incomplete: only 81% of sentences are mapped to facts",
+      "Documentary score is too low: 65/100"
+    ],
     "warnings": [],
     "checkedRules": {
       "ontology_match": true,
@@ -702,28 +1396,30 @@
       "timeline_chronological": true,
       "graph_has_triples": true,
       "graph_connected": true,
+      "graph_no_synthetic_nodes": true,
       "named_entities_non_empty": true,
       "no_weak_facts": true,
       "no_duplicate_facts": true,
       "no_duplicate_sentences": true,
       "no_placeholder_wording": true,
-      "generic_wording_check": true,
+      "generic_wording_check": false,
       "paragraph_length_limit": true,
       "unique_chapter_titles": true,
       "concrete_dates_names_present": true,
-      "no_repeated_phrases": true,
+      "no_repeated_phrases": false,
       "no_timeline_milestone_placeholder": true,
+      "reader_question_quality": true,
       "did_you_know_length_ok": true,
-      "sentence_provenance_ok": true,
+      "sentence_provenance_ok": false,
       "no_abstract_writing": true,
       "documentary_alternating_rule": true,
       "fact_density_met": true,
       "curiosity_score_ok": true,
-      "documentary_score_ok": true,
+      "documentary_score_ok": false,
       "resolver_confidence_ok": true,
       "compiler_confidence_ok": true,
       "overall_confidence_ok": true
     },
-    "timestamp": "2026-07-10T06:50:48.991Z"
+    "timestamp": "2026-07-11T08:28:54.877Z"
   }
 }

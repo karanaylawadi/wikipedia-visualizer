@@ -1,21 +1,30 @@
-import type { ResolvedEntity, FactScript, FactScriptChapter, PerspectiveCard } from "@/types/knowledge";
+import type { ResolvedEntity, FactScript, FactScriptChapter, PerspectiveCard, StageDiagnostic } from "@/types/knowledge";
+import { containsPlaceholder } from "./placeholderDetector";
+import { cleanFragment } from "./sentenceCleaner";
+import { recordFallback, recordGeminiSuccess, recordGeminiFailure } from "./diagnostics";
+import { callGeminiModel } from "@/lib/ai/geminiConfig";
 
 export async function writeDocumentarySummary(
   resolved: ResolvedEntity,
-  script: FactScript
+  script: FactScript,
+  diagnostics: StageDiagnostic[] = []
 ): Promise<{ summary: string; provenance: Array<{ sentence: string; fact: string }> }> {
   const apiKey = process.env.GEMINI_API_KEY;
 
-  // Flatten keyFacts for summary reference
+  // Flatten keyFacts for summary reference. Chapters with no real facts
+  // (insufficientData) contribute nothing rather than a placeholder line.
   const allFacts: string[] = [];
   script.chapters.forEach((ch, chIdx) => {
-    ch.keyFacts.forEach((fact, fIdx) => {
+    if (ch.insufficientData) return;
+    ch.keyFacts.forEach((fact) => {
+      if (containsPlaceholder(fact)) return;
       allFacts.push(`[Fact ${allFacts.length + 1}] Chapter ${chIdx + 1}: ${fact}`);
     });
   });
 
   if (!apiKey) {
-    return getFallbackSummary(resolved, script, allFacts);
+    recordFallback(diagnostics, "documentaryWriter.summary", "no API key configured");
+    return getFallbackSummary(resolved, script);
   }
 
   const { GoogleGenAI } = await import("@google/genai");
@@ -50,9 +59,9 @@ Return a JSON object with:
 }
 Only return raw JSON. Start with { and end with }. Do not wrap in markdown.`;
 
+  const start = Date.now();
   try {
-    const response = await ai.models.generateContent({
-      model: "gemini-2.0-flash",
+    const { response, meta } = await callGeminiModel(ai, {
       contents: prompt,
       config: { temperature: 0.15, maxOutputTokens: 500 }
     });
@@ -60,38 +69,50 @@ Only return raw JSON. Start with { and end with }. Do not wrap in markdown.`;
     const text = typeof response.text === "string" ? response.text.replace(/```json|```/g, "").trim() : "";
     const parsed = JSON.parse(text) as { summary: string };
     const processed = parseProvenanceAndClean(parsed.summary, allFacts);
-    if (processed.summary.split(/\s+/).filter(Boolean).length >= 80) {
+    const wordCount = processed.summary.split(/\s+/).filter(Boolean).length;
+
+    if (wordCount >= 80 && !containsPlaceholder(processed.summary)) {
+      recordGeminiSuccess(diagnostics, "documentaryWriter.summary", meta, Date.now() - start);
       return processed;
     }
+    recordGeminiSuccess(diagnostics, "documentaryWriter.summary", meta, Date.now() - start, true);
   } catch (error) {
     console.warn("writeDocumentarySummary failed, using fallback", error);
+    recordGeminiFailure(diagnostics, "documentaryWriter.summary", error, Date.now() - start);
   }
 
-  return getFallbackSummary(resolved, script, allFacts);
+  return getFallbackSummary(resolved, script);
 }
 
+// Returns null when a chapter cannot be honestly written — the caller
+// (dag.ts) drops that chapter from the final card list rather than
+// rendering a filled-in placeholder (V17_FORENSIC_AUDIT.md, Japan chapter
+// 5: a chapter built entirely from a fact-free template).
 export async function writeDocumentaryCard(
   resolved: ResolvedEntity,
   chapterScript: FactScriptChapter,
   cardIndex: number,
-  otherCards: PerspectiveCard[]
-): Promise<PerspectiveCard> {
+  otherCards: PerspectiveCard[],
+  diagnostics: StageDiagnostic[] = []
+): Promise<PerspectiveCard | null> {
+  if (chapterScript.insufficientData || !chapterScript.cause || !chapterScript.effect || !chapterScript.takeaway || chapterScript.keyFacts.length === 0) {
+    recordFallback(diagnostics, "documentaryWriter.card", "chapter has no real cause/effect/facts to write from");
+    return null;
+  }
+
   const apiKey = process.env.GEMINI_API_KEY;
 
-  const defaultF1 = cardIndex === 0 ? "foundational baseline details" : cardIndex === 1 ? "early rising benchmarks" : cardIndex === 2 ? "central actions observed" : cardIndex === 3 ? "consequent challenges faced" : "legacy status details";
-  const defaultF2 = cardIndex === 0 ? "early dynamics and core details" : cardIndex === 1 ? "key processes and central developments" : cardIndex === 2 ? "main achievements and critical stages" : cardIndex === 3 ? "observed difficulties and response actions" : "legacy outlines and subsequent records";
-  const defaultF3 = cardIndex === 0 ? "early outcomes and related findings" : cardIndex === 1 ? "secondary attributes and timeline events" : cardIndex === 2 ? "peak milestones and direct connections" : cardIndex === 3 ? "additional challenges and resolved queries" : "final reflections and study conclusions";
-
   const factList = [
-    `[Fact 1] ${chapterScript.keyFacts[0] || defaultF1}`,
-    `[Fact 2] ${chapterScript.keyFacts[1] || defaultF2}`,
-    `[Fact 3] ${chapterScript.keyFacts[2] || defaultF3}`,
+    `[Fact 1] ${chapterScript.keyFacts[0]}`,
+    `[Fact 2] ${chapterScript.keyFacts[1] || chapterScript.keyFacts[0]}`,
+    `[Fact 3] ${chapterScript.keyFacts[2] || chapterScript.keyFacts[chapterScript.keyFacts.length - 1]}`,
     `[Cause] ${chapterScript.cause}`,
     `[Effect] ${chapterScript.effect}`,
     `[Takeaway] ${chapterScript.takeaway}`
   ];
 
   if (!apiKey) {
+    recordFallback(diagnostics, "documentaryWriter.card", "no API key configured");
     return getFallbackCard(resolved, chapterScript, cardIndex, factList);
   }
 
@@ -128,9 +149,9 @@ Return a JSON object:
 
 Only return raw JSON. Start with { and end with }. Do not wrap in markdown.`;
 
+  const start = Date.now();
   try {
-    const response = await ai.models.generateContent({
-      model: "gemini-2.0-flash",
+    const { response, meta } = await callGeminiModel(ai, {
       contents: prompt,
       config: { temperature: 0.15, maxOutputTokens: 400 }
     });
@@ -139,21 +160,29 @@ Only return raw JSON. Start with { and end with }. Do not wrap in markdown.`;
     const parsed = JSON.parse(text) as { title: string; summary: string; keyTakeaway: string };
     const processedSummary = parseProvenanceAndClean(parsed.summary, factList);
 
+    if (containsPlaceholder(processedSummary.summary) || containsPlaceholder(parsed.title)) {
+      recordGeminiSuccess(diagnostics, "documentaryWriter.card", meta, Date.now() - start, true);
+      return getFallbackCard(resolved, chapterScript, cardIndex, factList);
+    }
+
     const card: PerspectiveCard = {
       title: parsed.title || chapterScript.chapterTitle,
       summary: sanitizeBannedWords(processedSummary.summary),
-      referenceLabel: chapterScript.chapterTitle.split(" ")[0] || "Overview",
+      referenceLabel: chapterScript.referenceLabel || "Overview",
       readerQuestion: chapterScript.questionAnswered,
-      keyTakeaway: sanitizeBannedWords(parsed.keyTakeaway || "Core lesson details."),
+      keyTakeaway: sanitizeBannedWords(parsed.keyTakeaway || chapterScript.takeaway),
       provenance: processedSummary.provenance.map(p => ({
         sentence: sanitizeBannedWords(p.sentence),
         fact: sanitizeBannedWords(p.fact)
       }))
     };
 
+    recordGeminiSuccess(diagnostics, "documentaryWriter.card", meta, Date.now() - start);
+
     return card;
   } catch (error) {
     console.warn(`writeDocumentaryCard failed for chapter ${cardIndex}, using fallback`, error);
+    recordGeminiFailure(diagnostics, "documentaryWriter.card", error, Date.now() - start);
   }
 
   return getFallbackCard(resolved, chapterScript, cardIndex, factList);
@@ -276,42 +305,39 @@ function parseProvenanceAndClean(
   };
 }
 
+// Deterministic recovery path. Previously used a local cleanFact() that
+// blindly sliced to 11 words and substituted the invented phrase
+// "Foundational historical occurrences" when a chapter had no real facts
+// (V17_FORENSIC_AUDIT.md, Bug #5 — the Japan kanji example came from this
+// exact truncation). Both are gone: chapters with no real facts are
+// skipped entirely rather than backfilled, and real facts are compressed
+// with sentenceCleaner's clause-aware logic, never cut mid-thought.
 function getFallbackSummary(
   resolved: ResolvedEntity,
-  script: FactScript,
-  allFacts: string[]
+  script: FactScript
 ): { summary: string; provenance: Array<{ sentence: string; fact: string }> } {
-  const cleanFact = (f: string) => {
-    let cleaned = f.replace(/\[(Fact \d+|Cause|Effect|Takeaway)\]/gi, "").trim();
-    cleaned = cleaned.replace(/\.(?=\s|$)/g, "").replace(/\./g, ";").trim();
-    const words = cleaned.split(/\s+/);
-    if (words.length > 11) {
-      cleaned = words.slice(0, 11).join(" ");
-    }
-    return cleaned;
-  };
-
   const sentences: string[] = [];
   const provenance: Array<{ sentence: string; fact: string }> = [];
 
-  script.chapters.slice(0, 3).forEach((ch, idx) => {
-    const factText = cleanFact(ch.keyFacts[0] || "Foundational historical occurrences");
-    // Concrete start for V17
-    const sentence = `${resolved.canonicalTitle} records confirm that ${factText.replace(/\.$/, "")}.`;
+  const usableChapters = script.chapters.filter((ch) => !ch.insufficientData && ch.keyFacts.length > 0);
+
+  usableChapters.slice(0, 3).forEach((ch) => {
+    const factText = cleanFragment(ch.keyFacts[0], 20);
+    if (!factText) return;
+    const sentence = `${resolved.canonicalTitle} records confirm that ${factText}.`;
     sentences.push(sentence);
-    provenance.push({
-      sentence,
-      fact: factText
-    });
+    provenance.push({ sentence, fact: factText });
   });
 
-  const finalFact = cleanFact(script.chapters[script.chapters.length - 1]?.takeaway || "modern details");
-  const finalSentence = `${resolved.canonicalTitle} remains study topic showing that ${finalFact.replace(/\.$/, "")}.`;
-  sentences.push(finalSentence);
-  provenance.push({
-    sentence: finalSentence,
-    fact: finalFact
-  });
+  const lastWithTakeaway = [...script.chapters].reverse().find((ch) => !ch.insufficientData && ch.takeaway);
+  if (lastWithTakeaway) {
+    const finalFact = cleanFragment(lastWithTakeaway.takeaway, 16);
+    if (finalFact) {
+      const finalSentence = `${resolved.canonicalTitle} remains a study topic showing that ${finalFact}.`;
+      sentences.push(finalSentence);
+      provenance.push({ sentence: finalSentence, fact: finalFact });
+    }
+  }
 
   return {
     summary: sentences.join(" "),
@@ -319,28 +345,24 @@ function getFallbackSummary(
   };
 }
 
+// Deterministic recovery path, reached only for a chapter whose
+// cause/effect/takeaway/keyFacts are already verified non-empty by the
+// caller (writeDocumentaryCard's guard above). Uses sentenceCleaner's
+// clause-aware compression instead of the old 11-word blind slice.
 function getFallbackCard(
   resolved: ResolvedEntity,
   chapterScript: FactScriptChapter,
   cardIndex: number,
   factList: string[]
 ): PerspectiveCard {
-  const cleanFact = (f: string) => {
-    let cleaned = f.replace(/\[(Fact \d+|Cause|Effect|Takeaway)\]/gi, "").trim();
-    cleaned = cleaned.replace(/\.(?=\s|$)/g, "").replace(/\./g, ";").trim();
-    const words = cleaned.split(/\s+/);
-    if (words.length > 11) {
-      cleaned = words.slice(0, 11).join(" ");
-    }
-    return cleaned;
-  };
-  
-  const f1 = cleanFact(factList[0]);
-  const f2 = cleanFact(factList[1]);
-  const f3 = cleanFact(factList[2]);
-  const cause = cleanFact(factList[3]);
-  const effect = cleanFact(factList[4]);
-  const takeaway = cleanFact(factList[5]);
+  const extract = (tagged: string) => tagged.replace(/\[(Fact \d+|Cause|Effect|Takeaway)\]/gi, "").trim();
+
+  const f1 = cleanFragment(extract(factList[0]), 16);
+  const f2 = cleanFragment(extract(factList[1]), 16);
+  const f3 = cleanFragment(extract(factList[2]), 16);
+  const cause = cleanFragment(extract(factList[3]), 14);
+  const effect = cleanFragment(extract(factList[4]), 14);
+  const takeaway = cleanFragment(extract(factList[5]), 12);
 
   // V17: Concrete paragraph starts and strict word-count limits (exactly 6 sentences, average 15-20 words, mix lengths)
   // Vary connecting phrases based on cardIndex to ensure 4-word identical phrases do not repeat across cards
@@ -408,9 +430,9 @@ function getFallbackCard(
   return {
     title: chapterScript.chapterTitle,
     summary: sentences.join(" "),
-    referenceLabel: chapterScript.chapterTitle.split(" ")[0] || "Overview",
+    referenceLabel: chapterScript.referenceLabel || "Overview",
     readerQuestion: chapterScript.questionAnswered,
-    keyTakeaway: takeaway.slice(0, 50),
+    keyTakeaway: takeaway,
     provenance
   };
 }

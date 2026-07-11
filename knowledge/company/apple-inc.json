@@ -1,7 +1,7 @@
 {
-  "version": "16.0",
-  "compilerVersion": "v17.0",
-  "ontologyVersion": "v17.0",
+  "version": "18.0",
+  "compilerVersion": "v18.0",
+  "ontologyVersion": "v18.0",
   "wikipediaRevision": "rev-1.0",
   "wikidataRevision": "Q312",
   "ontology": {
@@ -12,180 +12,245 @@
     ]
   },
   "structuredFacts": {
-    "founder": "Compiled detail for founder",
-    "industry": "Compiled detail for industry",
-    "headquarters": "Compiled detail for headquarters",
-    "products": "Compiled detail for products",
-    "businessModel": "Compiled detail for businessModel",
-    "revenue": "Compiled detail for revenue",
-    "leadership": "Compiled detail for leadership",
+    "founder": [
+      "Steve Jobs",
+      "Steve Wozniak",
+      "Ronald Wayne"
+    ],
+    "industry": [
+      "Consumer electronics",
+      "Software",
+      "Online services",
+      "Technology"
+    ],
+    "headquarters": {
+      "city": "Cupertino",
+      "state": "California",
+      "region": "Silicon Valley",
+      "country": "United States"
+    },
+    "products": [
+      "iPhone",
+      "iPad",
+      "Mac",
+      "Apple Watch",
+      "AirPods",
+      "Apple I",
+      "Apple II",
+      "Lisa",
+      "Macintosh",
+      "iMac",
+      "iPod",
+      "Disk II",
+      "iOS",
+      "iPadOS",
+      "macOS",
+      "Apple Pay",
+      "iCloud",
+      "Apple Music",
+      "Apple TV",
+      "iTunes Store",
+      "Apple Store"
+    ],
+    "businessModel": [
+      "Hardware manufacturing and sales",
+      "Software development and distribution",
+      "Digital content and subscription services",
+      "Retail and online store distribution"
+    ],
+    "revenue": [
+      "Annual sales grew from $775,000 in September 1977 to $118 million in September 1980",
+      "Largest manufacturing company by revenue as of 2024"
+    ],
+    "leadership": [
+      {
+        "name": "Steve Jobs",
+        "role": "Co-founder, former CEO (resigned 2011)"
+      },
+      {
+        "name": "Tim Cook",
+        "role": "Current CEO"
+      },
+      {
+        "name": "John Ternus",
+        "role": "Incoming CEO (succeeding Tim Cook in September 2026)"
+      },
+      {
+        "name": "John Sculley",
+        "role": "Former CEO (recruited in 1983)"
+      },
+      {
+        "name": "Mike Markkula",
+        "role": "Early investor and business expert (invested $250,000 during 1977 incorporation)"
+      }
+    ],
     "title": "Apple Inc.",
     "subtitle": "American multinational technology company",
     "leadParagraph": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, and known for consumer electronics, software and online services. Founded in 1976 as Apple Computer Company by Steve Jobs, Steve Wozniak and Ronald Wayne, the company was incorporated by Jobs and Wozniak as Apple Computer, Inc. the following year. Its current name was adopted in 2007 as the company expanded its focus from computers to consumer electronics. Apple is one of the Big Tech companies.\nThe company was founded to market Wozniak's Apple I computer. Its successor, the Apple II, became one of the first successful mass-produced microcomputers. Apple introduced the Lisa in 1983 and the Macintosh in 1984, popularizing graphical user interfaces navigated by a mouse. By 1985, internal conflicts led to Jobs leaving the company to form NeXT and Wozniak stepping back from active employment. During the 1990s, Apple lost considerable market share to lower-priced Wintel computers, Intel-powered PC clones running Windows. By 1997, Apple was reporting major losses and struggling to deliver a modernized operating system, leading Apple to acquire NeXT, which brought Jobs back to the company. Under his leadership, Apple returned to profitability through the iMac, iPod, iPhone, and iPad, the iTunes Store, the Apple Store retail chain, and the \"Think different\" advertising campaign. Jobs resigned in 2011 for health reasons and died later that year. He was succeeded as CEO by Tim Cook, who will be succeeded by John Ternus in September 2026.\nApple's product lineup includes portable and home hardware like the iPhone, iPad, Mac, Apple Watch, and AirPods; several in-house operating systems such as iOS, iPadOS, and macOS; and various software and services including Apple Pay and iCloud, as well as multimedia streaming services like Apple Music and Apple TV. Since 2011, Apple has for the most part been the world's largest company by market capitalization, and, as of 2024, is the largest manufacturing company by revenue, the fourth-largest PC vendor, the largest vendor of tablet computers, and the largest vendor of mobile phones. Apple became the first publicly traded US company to be valued at over $1 trillion in 2018, and, as of October 2025, is valued at just over $4 trillion.\nApple has received criticism regarding its contractors' labor conditions, its relationship with trade unions, its environmental practices, and its corporate ethics, including anti-competitive tactics, materials sourcing, and its acquisitions of smaller businesses. Nevertheless, the company has a large following and enjoys a high level of customer loyalty. Apple has consistently been ranked as one of the world's most valuable brands since the late 2000s.",
-    "briefSummary": "Apple Inc records confirm that Apple Inc is an American multinational technology company headquartered in Cupertino,. Apple Inc records confirm that Apple's product lineup includes portable and home hardware like the iPhone,. Apple Inc records confirm that Apple Computer was founded as a partnership on April 1, 1976,. Apple Inc remains study topic showing that final summary explaining the legacy.",
+    "briefSummary": "Steve Jobs, Steve Wozniak, and Ronald Wayne founded Apple in 1976 to market the Apple I motherboard. To fund this first run of production, Jobs sold his Volkswagen Bus while Wozniak parted with his HP-65 calculator. Only twelve days into the venture, Wayne sold his entire ten percent stake back to his co-founders for $800. This modest start gave way to rapid growth, with annual sales surging from $775,000 in September 1977 to $118 million by September 1980. Following decades of expansion, the company officially dropped \"Computer\" from its name in 2007. Today, Tim Cook leads the company as CEO, guiding Apple to a market capitalization that surpassed $4 trillion in October 2025.",
     "cards": [
       {
-        "title": "The Need for Apple Inc.",
-        "summary": "Apple Inc records verify that Apple Inc is an American multinational technology company headquartered in Cupertino,. This motivated early research explaining why motivating factors behind early phases of development. Subsequent investigations established that The company was founded to market Wozniak's Apple I computer Its. Because of these dynamics, details show initial events showing transition in the subject. Apple Inc data confirms that early outcomes and related findings. These changes established the basis for fundamental lessons from this period.",
-        "referenceLabel": "The",
-        "readerQuestion": "What represents the starting motivation behind Need?",
-        "keyTakeaway": "fundamental lessons from this period",
+        "title": "Funding the First Apple",
+        "summary": "When Steve Jobs, Steve Wozniak, and Ronald Wayne founded Apple in 1976, their immediate goal was marketing the Apple I motherboard. To fund the production of this hand-built circuit board, the young partners desperately needed upfront capital. Jobs sold his Volkswagen Bus and Wozniak parted with his HP-65 calculator to raise the necessary cash. While this sacrifice secured their initial funding, Wayne chose to minimize his financial risk through a swift exit. Just twelve days after helping launch the company, Wayne sold his ten percent share back for eight hundred dollars. Ultimately, a mix of extreme personal sacrifice and an early partner departure set Apple in motion.",
+        "referenceLabel": "Sacrifice",
+        "readerQuestion": "What personal sacrifices were required to fund the very first Apple computer?",
+        "keyTakeaway": "Extreme personal sacrifices and early partner departures launched Apple.",
         "provenance": [
           {
-            "sentence": "Apple Inc records verify that Apple Inc is an American multinational technology company headquartered in Cupertino,.",
-            "fact": "Apple Inc is an American multinational technology company headquartered in Cupertino,"
+            "sentence": "When Steve Jobs, Steve Wozniak, and Ronald Wayne founded Apple in 1976, their immediate goal was marketing the Apple I motherboard.",
+            "fact": "Apple was founded in 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne to market the Apple I motherboard."
           },
           {
-            "sentence": "This motivated early research explaining why motivating factors behind early phases of development.",
-            "fact": "motivating factors behind early phases of development"
+            "sentence": "To fund the production of this hand-built circuit board, the young partners desperately needed upfront capital.",
+            "fact": "Steve Jobs and Steve Wozniak needed immediate capital to fund the production of their first hand-built Apple I computer motherboard."
           },
           {
-            "sentence": "Subsequent investigations established that The company was founded to market Wozniak's Apple I computer Its.",
-            "fact": "The company was founded to market Wozniak's Apple I computer Its"
+            "sentence": "Jobs sold his Volkswagen Bus and Wozniak parted with his HP-65 calculator to raise the necessary cash.",
+            "fact": "To finance the initial Apple I production, Steve Jobs sold his Volkswagen Bus and Steve Wozniak sold his HP-65 calculator."
           },
           {
-            "sentence": "Because of these dynamics, details show initial events showing transition in the subject.",
-            "fact": "initial events showing transition in the subject"
+            "sentence": "While this sacrifice secured their initial funding, Wayne chose to minimize his financial risk through a swift exit.",
+            "fact": "The founders successfully raised the necessary startup capital, but co-founder Ronald Wayne chose to minimize his financial risk by rapidly exiting the partnership."
           },
           {
-            "sentence": "Apple Inc data confirms that early outcomes and related findings.",
-            "fact": "early outcomes and related findings"
+            "sentence": "Just twelve days after helping launch the company, Wayne sold his ten percent share back for eight hundred dollars.",
+            "fact": "Co-founder Ronald Wayne sold his entire 10% share of Apple back to Jobs and Wozniak for $800, just twelve days after the company was founded."
           },
           {
-            "sentence": "These changes established the basis for fundamental lessons from this period.",
-            "fact": "fundamental lessons from this period"
+            "sentence": "Ultimately, a mix of extreme personal sacrifice and an early partner departure set Apple in motion.",
+            "fact": "Extreme personal sacrifices and early partner departures launched Apple."
           }
         ]
       },
       {
-        "title": "The Founding of Apple Inc.",
-        "summary": "Historical records confirm that Apple's product lineup includes portable and home hardware like the iPhone,. This inspired further exploration showing why key drivers behind the rising influence. Later studies verified that Apple has received criticism regarding its contractors' labor conditions, its relationship. Following these events, analysts observed that consequent progress seen during this phase. Scientific tracking confirms that secondary attributes and timeline events. This transition created the groundwork for primary insights on the rise.",
-        "referenceLabel": "The",
-        "readerQuestion": "Which factors influenced early discoveries of Founding?",
-        "keyTakeaway": "primary insights on the rise",
+        "title": "The Devilish Price of Innovation",
+        "summary": "Debuting in 1976, the hand-built Apple I motherboard carried a highly unusual, devilish retail price of $666.66. Its successor, the Apple II, achieved major success when paired with the VisiCalc spreadsheet program. This killer software boosted the machine's popularity, leading to a massive IPO in 1980. By raising over $100 million and creating hundreds of millionaires, Apple transformed from a garage startup into a public phenomenon. The company's annual sales skyrocketed from $775,000 in September 1977 to $118 million by September 1980. Ultimately, this mix of quirky pricing and powerful software sparked a historic financial revolution.",
+        "referenceLabel": "Inception",
+        "readerQuestion": "How did a uniquely priced motherboard and a spreadsheet program spark a financial revolution?",
+        "keyTakeaway": "Unusual pricing and killer software sparked a historic financial revolution.",
         "provenance": [
           {
-            "sentence": "Historical records confirm that Apple's product lineup includes portable and home hardware like the iPhone,.",
-            "fact": "Apple's product lineup includes portable and home hardware like the iPhone,"
+            "sentence": "Debuting in 1976, the hand-built Apple I motherboard carried a highly unusual, devilish retail price of $666.66.",
+            "fact": "The Apple I was introduced at the highly unusual retail price of $666.66."
           },
           {
-            "sentence": "This inspired further exploration showing why key drivers behind the rising influence.",
-            "fact": "key drivers behind the rising influence"
+            "sentence": "Its successor, the Apple II, achieved major success when paired with the VisiCalc spreadsheet program.",
+            "fact": "The hand-built Apple I motherboard was priced at a devilish retail figure, while the subsequent Apple II was paired with the killer business application VisiCalc."
           },
           {
-            "sentence": "Later studies verified that Apple has received criticism regarding its contractors' labor conditions, its relationship.",
-            "fact": "Apple has received criticism regarding its contractors' labor conditions, its relationship"
+            "sentence": "This killer software boosted the machine's popularity, leading to a massive IPO in 1980.",
+            "fact": "The Apple II became a major success, boosted by the spreadsheet program VisiCalc, leading to a massive IPO in 1980."
           },
           {
-            "sentence": "Following these events, analysts observed that consequent progress seen during this phase.",
-            "fact": "consequent progress seen during this phase"
+            "sentence": "By raising over $100 million and creating hundreds of millionaires, Apple transformed from a garage startup into a public phenomenon.",
+            "fact": "Apple transformed from a garage startup into a public phenomenon, raising over $100 million in a massive 1980 IPO and creating hundreds of millionaires."
           },
           {
-            "sentence": "Scientific tracking confirms that secondary attributes and timeline events.",
-            "fact": "secondary attributes and timeline events"
+            "sentence": "The company's annual sales skyrocketed from $775,000 in September 1977 to $118 million by September 1980.",
+            "fact": "Apple's annual sales grew from $775,000 in September 1977 to $118 million in September 1980."
           },
           {
-            "sentence": "This transition created the groundwork for primary insights on the rise.",
-            "fact": "primary insights on the rise"
+            "sentence": "Ultimately, this mix of quirky pricing and powerful software sparked a historic financial revolution.",
+            "fact": "Unusual pricing and killer software sparked a historic financial revolution."
           }
         ]
       },
       {
-        "title": "The Growth of Apple Inc.",
-        "summary": "Primary documentation reveals that Apple Computer was founded as a partnership on April 1, 1976,. This led observers to trace why pivotal elements supporting the peak achievements. Archival reviews showed that Wozniak demonstrated the first Apple I prototype at the Homebrew Computer. With these developments, researchers saw that resultant breakthroughs related directly to these successes. Detailed observations show that peak milestones and direct connections. This structure formed the design for core takeaways regarding this era.",
-        "referenceLabel": "The",
-        "readerQuestion": "How do key chemical processes behave during Growth?",
-        "keyTakeaway": "core takeaways regarding this era",
+        "title": "The Spark of the Mac",
+        "summary": "Steve Jobs secured rare access to Xerox PARC's graphical user interface technology in 1979. To negotiate this exclusive preview, Jobs offered Xerox $1 million in pre-IPO Apple stock. This technology directly inspired the development of Apple's GUI-based Lisa and Macintosh computers. Building on these visual interfaces, Apple launched the Macintosh with a cinematic Super Bowl commercial. Director Ridley Scott filmed the landmark '1984' advertisement, which cost $1.5 million to air. Ultimately, Xerox's interface ideas fueled Apple's revolutionary Macintosh launch.",
+        "referenceLabel": "Evolution",
+        "readerQuestion": "How did a visit to Xerox PARC shape the future of personal computing interfaces?",
+        "keyTakeaway": "Xerox's interface ideas fueled Apple's revolutionary Macintosh launch.",
         "provenance": [
           {
-            "sentence": "Primary documentation reveals that Apple Computer was founded as a partnership on April 1, 1976,.",
-            "fact": "Apple Computer was founded as a partnership on April 1, 1976,"
+            "sentence": "Steve Jobs secured rare access to Xerox PARC's graphical user interface technology in 1979.",
+            "fact": "Steve Jobs secured access to Xerox PARC's graphical user interface technology in exchange for allowing Xerox to purchase $1 million of pre-IPO Apple stock."
           },
           {
-            "sentence": "This led observers to trace why pivotal elements supporting the peak achievements.",
-            "fact": "pivotal elements supporting the peak achievements"
+            "sentence": "To negotiate this exclusive preview, Jobs offered Xerox $1 million in pre-IPO Apple stock.",
+            "fact": "Steve Jobs sought access to Xerox PARC's graphical user interface technology by offering Xerox the opportunity to purchase pre-IPO Apple stock."
           },
           {
-            "sentence": "Archival reviews showed that Wozniak demonstrated the first Apple I prototype at the Homebrew Computer.",
-            "fact": "Wozniak demonstrated the first Apple I prototype at the Homebrew Computer"
+            "sentence": "This technology directly inspired the development of Apple's GUI-based Lisa and Macintosh computers.",
+            "fact": "The technology observed during the Xerox PARC visits directly inspired the development of Apple's GUI-based computers, the Lisa and the Macintosh."
           },
           {
-            "sentence": "With these developments, researchers saw that resultant breakthroughs related directly to these successes.",
-            "fact": "resultant breakthroughs related directly to these successes"
+            "sentence": "Building on these visual interfaces, Apple launched the Macintosh with a cinematic Super Bowl commercial.",
+            "fact": "Apple successfully integrated graphical user interfaces into the Lisa and Macintosh computers, launching the latter with a highly successful, cinematic Super Bowl advertisement."
           },
           {
-            "sentence": "Detailed observations show that peak milestones and direct connections.",
-            "fact": "peak milestones and direct connections"
+            "sentence": "Director Ridley Scott filmed the landmark '1984' advertisement, which cost $1.5 million to air.",
+            "fact": "The landmark '1984' Macintosh television commercial was directed by Ridley Scott and cost $1.5 million to air during the Super Bowl."
           },
           {
-            "sentence": "This structure formed the design for core takeaways regarding this era.",
-            "fact": "core takeaways regarding this era"
+            "sentence": "Ultimately, Xerox's interface ideas fueled Apple's revolutionary Macintosh launch.",
+            "fact": "Xerox's interface ideas fueled Apple's revolutionary Macintosh launch."
           }
         ]
       },
       {
-        "title": "Competition for Apple Inc.",
-        "summary": "Factual chronicles state that Apple Computer, Inc was incorporated in Cupertino, California, on January 3,. This drove thorough inquiries explaining why underlying issues prompting the challenges faced. Recent compilations proved that The Apple II, also designed by Wozniak, was introduced on April. Under these conditions, experts noted that resulting shifts that defined the response taken. Ontology patterns map that additional challenges and resolved queries. This transition shaped the modern standard for crucial lessons on these struggles.",
-        "referenceLabel": "Competition",
-        "readerQuestion": "Why do light steps trigger under Competition?",
-        "keyTakeaway": "crucial lessons on these struggles",
+        "title": "The Evolution Beyond Silicon",
+        "summary": "Apple launched the Macintosh in 1984 with a famous Ridley Scott commercial, but slow sales quickly triggered executive friction. This sluggish market performance created intense internal tension over the company's future direction. Ultimately, the resulting corporate power struggle led to the departure of co-founder Steve Jobs. Following this leadership dispute, Apple began a long-term shift toward a broader consumer electronics identity. To reflect this new era, the company officially dropped 'Computer' from its name in 2007. Internal rivalry and strategic rebranding had transformed Apple from a niche computer maker into a global tech giant.",
+        "referenceLabel": "Conflict",
+        "readerQuestion": "What internal conflicts and strategic pivots redefined Apple's identity beyond computers?",
+        "keyTakeaway": "Internal rivalry and rebranding transformed Apple into a tech giant.",
         "provenance": [
           {
-            "sentence": "Factual chronicles state that Apple Computer, Inc was incorporated in Cupertino, California, on January 3,.",
-            "fact": "Apple Computer, Inc was incorporated in Cupertino, California, on January 3,"
+            "sentence": "Apple launched the Macintosh in 1984 with a famous Ridley Scott commercial, but slow sales quickly triggered executive friction.",
+            "fact": "The Macintosh launched in 1984 with a famous Ridley Scott commercial, but slow sales eventually led to a power struggle between Steve Jobs and CEO John Sculley"
           },
           {
-            "sentence": "This drove thorough inquiries explaining why underlying issues prompting the challenges faced.",
-            "fact": "underlying issues prompting the challenges faced"
+            "sentence": "This sluggish market performance created intense internal tension over the company's future direction.",
+            "fact": "Slow sales of the newly launched Macintosh computer created intense executive friction, while a growing portfolio of non-computer devices necessitated a brand evolution."
           },
           {
-            "sentence": "Recent compilations proved that The Apple II, also designed by Wozniak, was introduced on April.",
-            "fact": "The Apple II, also designed by Wozniak, was introduced on April"
+            "sentence": "Ultimately, the resulting corporate power struggle led to the departure of co-founder Steve Jobs.",
+            "fact": "The corporate power struggle resulted in the departure of co-founder Steve Jobs from the company"
           },
           {
-            "sentence": "Under these conditions, experts noted that resulting shifts that defined the response taken.",
-            "fact": "resulting shifts that defined the response taken"
+            "sentence": "Following this leadership dispute, Apple began a long-term shift toward a broader consumer electronics identity.",
+            "fact": "Steve Jobs departed the company following a leadership dispute, and Apple eventually rebranded to reflect its broader consumer electronics identity."
           },
           {
-            "sentence": "Ontology patterns map that additional challenges and resolved queries.",
-            "fact": "additional challenges and resolved queries"
+            "sentence": "To reflect this new era, the company officially dropped 'Computer' from its name in 2007.",
+            "fact": "Apple officially transitioned from computers to consumer electronics, dropping 'Computer' from its name in 2007"
           },
           {
-            "sentence": "This transition shaped the modern standard for crucial lessons on these struggles.",
-            "fact": "crucial lessons on these struggles"
+            "sentence": "Internal rivalry and strategic rebranding had transformed Apple from a niche computer maker into a global tech giant.",
+            "fact": "Internal rivalry and rebranding transformed Apple from computer maker to tech giant."
           }
         ]
       },
       {
-        "title": "The Future of Apple Inc.",
-        "summary": "Verified sources show that On December 12, 1980, Apple became a public company through an. This prompted key factions to identify why lasting forces establishing the legacy left behind. Independent reviews confirmed that legacy outlines and subsequent records. Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject. Statistical records track that final reflections and study conclusions. This layout outlines the final outcome of final summary explaining the legacy.",
-        "referenceLabel": "The",
-        "readerQuestion": "Who validates the final outcomes regarding Future?",
-        "keyTakeaway": "final summary explaining the legacy",
+        "title": "The Four Trillion Dollar Era",
+        "summary": "Tim Cook assumed leadership of Apple as CEO in 2011 . He immediately implemented scaling strategies that drove unprecedented financial growth . The tech giant crossed the historic one trillion dollar market capitalization milestone in 2018 . This massive momentum ultimately secured a four trillion dollar valuation and a structured 2026 transition plan . By October 2025, Apple's market capitalization officially surpassed just over four trillion dollars . Cook's financial triumph secures a stable 2026 leadership transition .",
+        "referenceLabel": "Leadership",
+        "readerQuestion": "How did Tim Cook's era pave the way for Apple's next generation of leadership?",
+        "keyTakeaway": "Cook's financial triumph secures a stable 2026 leadership transition.",
         "provenance": [
           {
-            "sentence": "Verified sources show that On December 12, 1980, Apple became a public company through an.",
-            "fact": "On December 12, 1980, Apple became a public company through an"
+            "sentence": "Tim Cook assumed leadership of Apple as CEO in 2011 .",
+            "fact": "Tim Cook has led Apple as CEO since succeeding Steve Jobs in 2011."
           },
           {
-            "sentence": "This prompted key factions to identify why lasting forces establishing the legacy left behind.",
-            "fact": "lasting forces establishing the legacy left behind"
+            "sentence": "He immediately implemented scaling strategies that drove unprecedented financial growth .",
+            "fact": "Tim Cook assumed leadership of Apple in 2011 and implemented scaling strategies that drove unprecedented financial growth."
           },
           {
-            "sentence": "Independent reviews confirmed that legacy outlines and subsequent records.",
-            "fact": "legacy outlines and subsequent records"
+            "sentence": "The tech giant crossed the historic one trillion dollar market capitalization milestone in 2018 .",
+            "fact": "Apple crossed the $1 trillion market capitalization milestone for the first time in 2018."
           },
           {
-            "sentence": "Through these achievements, leaders realized that long-term outcomes that shaped the memory of the subject.",
-            "fact": "long-term outcomes that shaped the memory of the subject"
+            "sentence": "This massive momentum ultimately secured a four trillion dollar valuation and a structured 2026 transition plan .",
+            "fact": "Apple achieved a historic $4 trillion valuation and established a structured leadership transition plan for 2026."
           },
           {
-            "sentence": "Statistical records track that final reflections and study conclusions.",
-            "fact": "final reflections and study conclusions"
+            "sentence": "By October 2025, Apple's market capitalization officially surpassed just over four trillion dollars .",
+            "fact": "As of October 2025, Apple's market capitalization is valued at just over $4 trillion."
           },
           {
-            "sentence": "This layout outlines the final outcome of final summary explaining the legacy.",
-            "fact": "final summary explaining the legacy"
+            "sentence": "Cook's financial triumph secures a stable 2026 leadership transition .",
+            "fact": "Cook's financial triumph secures a stable 2026 leadership transition."
           }
         ]
       }
@@ -193,241 +258,379 @@
   },
   "namedEntities": [
     {
-      "name": "Apple Inc.",
-      "type": "Concept",
-      "description": "The primary resolved subject."
+      "name": "Steve Jobs",
+      "type": "Person",
+      "description": "Co-founder and former CEO of Apple Inc. who returned in 1997 to lead the company to profitability."
+    },
+    {
+      "name": "Steve Wozniak",
+      "type": "Person",
+      "description": "Co-founder of Apple and designer of the Apple I and Apple II computers."
+    },
+    {
+      "name": "Ronald Wayne",
+      "type": "Person",
+      "description": "Co-founder of Apple who sold his shares back to Jobs and Wozniak twelve days after founding."
+    },
+    {
+      "name": "Tim Cook",
+      "type": "Person",
+      "description": "CEO of Apple Inc. who succeeded Steve Jobs in 2011."
+    },
+    {
+      "name": "John Ternus",
+      "type": "Person",
+      "description": "Executive designated to succeed Tim Cook as CEO of Apple in September 2026."
+    },
+    {
+      "name": "Cupertino",
+      "type": "Place",
+      "description": "The California city where Apple Inc. is headquartered."
+    },
+    {
+      "name": "NeXT",
+      "type": "Org",
+      "description": "The computer company founded by Steve Jobs in 1985 and acquired by Apple in 1997."
+    },
+    {
+      "name": "Xerox PARC",
+      "type": "Org",
+      "description": "The research facility where Apple employees observed the GUI technology that inspired the Lisa and Macintosh."
     }
   ],
   "knowledgeGraph": [
     {
-      "subject": "Compiled detail for founder",
-      "predicate": "FOUNDED",
-      "object": "Apple Inc."
+      "subject": "Apple Inc.",
+      "predicate": "FOUNDED_BY",
+      "object": "Steve Jobs"
+    },
+    {
+      "subject": "Apple Inc.",
+      "predicate": "FOUNDED_BY",
+      "object": "Steve Wozniak"
+    },
+    {
+      "subject": "Apple Inc.",
+      "predicate": "FOUNDED_BY",
+      "object": "Ronald Wayne"
     },
     {
       "subject": "Apple Inc.",
       "predicate": "HEADQUARTERED_IN",
-      "object": "Compiled detail for headquarters"
+      "object": "Cupertino"
     },
     {
       "subject": "Apple Inc.",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_1"
+      "predicate": "OPERATES_IN_INDUSTRY",
+      "object": "Consumer electronics"
     },
     {
       "subject": "Apple Inc.",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_2"
+      "predicate": "DEVELOPED",
+      "object": "iPhone"
     },
     {
       "subject": "Apple Inc.",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_3"
+      "predicate": "DEVELOPED",
+      "object": "Macintosh"
     },
     {
       "subject": "Apple Inc.",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_4"
+      "predicate": "DEVELOPED",
+      "object": "iOS"
+    },
+    {
+      "subject": "Tim Cook",
+      "predicate": "CHIEF_EXECUTIVE_OFFICER_OF",
+      "object": "Apple Inc."
+    },
+    {
+      "subject": "John Ternus",
+      "predicate": "SUCCESSOR_TO",
+      "object": "Tim Cook"
     },
     {
       "subject": "Apple Inc.",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_5"
+      "predicate": "ACQUIRED",
+      "object": "NeXT"
     },
     {
       "subject": "Apple Inc.",
-      "predicate": "HAS_PROPERTY",
-      "object": "Detail_Aspect_6"
+      "predicate": "INFLUENCED_BY",
+      "object": "Xerox PARC"
+    },
+    {
+      "subject": "Mike Markkula",
+      "predicate": "INVESTED_IN",
+      "object": "Apple Inc."
+    },
+    {
+      "subject": "Cupertino",
+      "predicate": "PART_OF",
+      "object": "California"
     }
   ],
   "timeline": [
     {
       "year": "1976",
-      "headline": "Pivotal era in 1976",
-      "description": "Apple Inc. underwent core changes and reached major development in the year 1976",
-      "importance": 8,
+      "headline": "Apple Computer Founded",
+      "description": "Steve Jobs, Steve Wozniak, and Ronald Wayne form Apple Computer to market the hand-built Apple I motherboard.",
+      "importance": 10,
       "connections": [
-        "Apple Inc."
+        "Steve Jobs",
+        "Steve Wozniak",
+        "Ronald Wayne",
+        "Apple I"
       ],
       "image": null
     },
     {
-      "year": "2007",
-      "headline": "Pivotal era in 2007",
-      "description": "Apple Inc. underwent core changes and reached major development in the year 2007",
-      "importance": 8,
+      "year": "1977",
+      "headline": "Incorporation and Apple II",
+      "description": "Apple incorporates in Cupertino and introduces the Apple II, establishing the home computer market.",
+      "importance": 9,
       "connections": [
-        "Apple Inc."
+        "Apple II",
+        "Mike Markkula"
       ],
       "image": null
     },
     {
-      "year": "1983",
-      "headline": "Pivotal era in 1983",
-      "description": "Apple Inc. underwent core changes and reached major development in the year 1983",
+      "year": "1980",
+      "headline": "Initial Public Offering",
+      "description": "Apple goes public on Nasdaq, raising over $100 million and creating more than 300 millionaires.",
       "importance": 8,
       "connections": [
-        "Apple Inc."
+        "Nasdaq"
       ],
       "image": null
     },
     {
       "year": "1984",
-      "headline": "Pivotal era in 1984",
-      "description": "Apple Inc. underwent core changes and reached major development in the year 1984",
-      "importance": 8,
+      "headline": "Macintosh Computer Launched",
+      "description": "Apple introduces the Macintosh with a famous Super Bowl commercial, popularizing graphical user interfaces.",
+      "importance": 9,
       "connections": [
-        "Apple Inc."
-      ],
-      "image": null
-    },
-    {
-      "year": "1985",
-      "headline": "Pivotal era in 1985",
-      "description": "Apple Inc. underwent core changes and reached major development in the year 1985",
-      "importance": 8,
-      "connections": [
-        "Apple Inc."
+        "Macintosh",
+        "Ridley Scott"
       ],
       "image": null
     },
     {
       "year": "1997",
-      "headline": "Pivotal era in 1997",
-      "description": "Apple Inc. underwent core changes and reached major development in the year 1997",
+      "headline": "Steve Jobs Returns",
+      "description": "Struggling with major losses, Apple acquires NeXT, bringing Steve Jobs back to lead a return to profitability.",
+      "importance": 10,
+      "connections": [
+        "Steve Jobs",
+        "NeXT"
+      ],
+      "image": null
+    },
+    {
+      "year": "2007",
+      "headline": "Name Change to Apple Inc.",
+      "description": "The company drops 'Computer' from its name to reflect its expansion into consumer electronics.",
       "importance": 8,
       "connections": [
         "Apple Inc."
+      ],
+      "image": null
+    },
+    {
+      "year": "2011",
+      "headline": "Tim Cook Becomes CEO",
+      "description": "Steve Jobs resigns due to health reasons and is succeeded by Tim Cook.",
+      "importance": 9,
+      "connections": [
+        "Steve Jobs",
+        "Tim Cook"
       ],
       "image": null
     }
   ],
   "rankedFacts": [
     {
-      "fact": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, and known for consumer electronics, software and online services.",
-      "score": 0.7,
+      "fact": "To finance the production of the original Apple I, Steve Jobs sold his Volkswagen Bus and Steve Wozniak sold his HP-65 calculator.",
+      "score": 0.7374458874458875,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.8666666666666667,
+        "specificity": 0.85,
+        "narrativeValue": 0.7772727272727273,
+        "educationalValue": 0.75,
+        "visualValue": 0.6181818181818182,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "The company was founded to market Wozniak's Apple I computer. Its successor, the Apple II, became one of the first successful mass-produced microcomputers.",
-      "score": 0.7,
+      "fact": "Co-founder Ronald Wayne sold his entire share of Apple back to Jobs and Wozniak for just $800, twelve days after the company was founded.",
+      "score": 0.7029761904761905,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.9,
+        "specificity": 0.85,
+        "narrativeValue": 0.6125,
+        "educationalValue": 0.75,
+        "visualValue": 0.5083333333333333,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "Apple's product lineup includes portable and home hardware like the iPhone, iPad, Mac, Apple Watch, and AirPods; several in-house operating systems such as iOS, iPadOS, and macOS; and various software and services including Apple Pay and iCloud, as well as multimedia streaming services like Apple Music and Apple TV. Since 2011, Apple has for the most part been the world's largest company by market capitalization, and, as of 2024, is the largest manufacturing company by revenue, the fourth-largest PC vendor, the largest vendor of tablet computers, and the largest vendor of mobile phones.",
-      "score": 0.85,
+      "fact": "The Apple I was introduced at the highly unusual retail price of $666.66.",
+      "score": 0.6573260073260074,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.7166666666666667,
+        "specificity": 0.85,
+        "narrativeValue": 0.5307692307692308,
+        "educationalValue": 0.75,
+        "visualValue": 0.45384615384615384,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "Apple has received criticism regarding its contractors' labor conditions, its relationship with trade unions, its environmental practices, and its corporate ethics, including anti-competitive tactics, materials sourcing, and its acquisitions of smaller businesses. Nevertheless, the company has a large following and enjoys a high level of customer loyalty.",
-      "score": 0.7,
+      "fact": "Apple's rapid early growth saw its annual sales skyrocket from $775,000 in 1977 to $118 million in 1980, an average annual growth rate of 533%.",
+      "score": 0.6452380952380953,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.6,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.9166666666666667,
+        "specificity": 0.85,
+        "narrativeValue": 0.36,
+        "educationalValue": 0.75,
+        "visualValue": 0.33999999999999997,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "Apple Computer was founded as a partnership on April 1, 1976, by Steve Jobs, Steve Wozniak, and Ronald Wayne. The company's first product was the Apple I, designed by Wozniak and hand-built.",
-      "score": 0.85,
+      "fact": "The landmark '1984' Macintosh television commercial was directed by Ridley Scott and cost $1.5 million to air during the Super Bowl.",
+      "score": 0.6806122448979591,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.85,
+        "specificity": 0.85,
+        "narrativeValue": 0.7285714285714285,
+        "educationalValue": 0.75,
+        "visualValue": 0.5857142857142856,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.5
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "Wozniak demonstrated the first Apple I prototype at the Homebrew Computer Club in July 1976, where local computer retailer Byte Shop placed an order for 50 fully assembled computers. Unlike most contemporary hobbyist computers, which were sold as kits requiring assembly, the Apple I came as a pre-assembled motherboard with a CPU, RAM, and built-in video circuitry, allowing it to connect directly to a household television instead of requiring a costly computer terminal.",
-      "score": 0.85,
+      "fact": "Steve Jobs was inspired to build graphical user interfaces after visiting Xerox PARC in exchange for allowing Xerox to buy $1 million of pre-IPO Apple stock.",
+      "score": 0.7020146520146521,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.9333333333333333,
+        "specificity": 0.85,
+        "narrativeValue": 0.5884615384615385,
+        "educationalValue": 0.75,
+        "visualValue": 0.49230769230769234,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "Apple Computer, Inc. was incorporated in Cupertino, California, on January 3, 1977, without Wayne, who had left and sold his share of the company back to Jobs and Wozniak for $800 twelve days after its founding.",
-      "score": 0.85,
+      "fact": "Tim Cook, who has led Apple since 2011, is scheduled to be succeeded as CEO by John Ternus in September 2026.",
+      "score": 0.7234693877551021,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.85,
+        "specificity": 0.85,
+        "narrativeValue": 0.7285714285714285,
+        "educationalValue": 0.75,
+        "visualValue": 0.5857142857142856,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "The Apple II, also designed by Wozniak, was introduced on April 16, 1977, at the first West Coast Computer Faire. Alongside the Commodore PET 2001 and the TRS-80, it formed the \"1977 Trinity\" of influential personal computers that established the home computer market.",
-      "score": 0.85,
+      "fact": "As of October 2025, Apple's market capitalization is valued at just over $4 trillion, having first crossed the $1 trillion mark in 2018.",
+      "score": 0.7072463768115941,
       "metrics": {
-        "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "confidence": 0.8833333333333333,
+        "specificity": 0.85,
+        "narrativeValue": 0.4304347826086956,
+        "educationalValue": 0.75,
+        "visualValue": 0.3869565217391304,
+        "uniqueness": 0.85,
+        "ontologyRelevance": 0.8
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     },
     {
-      "fact": "On December 12, 1980, Apple became a public company through an initial public offering (IPO) on the Nasdaq. The company sold 4.",
-      "score": 0.85,
+      "fact": "Apple was founded in 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne",
+      "score": 0.7793040293040292,
+      "metrics": {
+        "confidence": 0.7166666666666667,
+        "specificity": 0.85,
+        "narrativeValue": 1,
+        "educationalValue": 0.75,
+        "visualValue": 0.8384615384615384,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "It transitioned from computers to consumer electronics, dropping 'Computer' from its name in 2007",
+      "score": 0.5874149659863946,
+      "metrics": {
+        "confidence": 0.7333333333333334,
+        "specificity": 0.85,
+        "narrativeValue": 0.40714285714285714,
+        "educationalValue": 0.75,
+        "visualValue": 0.37142857142857144,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.5
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "The Apple II became a major success, boosted by the spreadsheet program VisiCalc, leading to a massive IPO in 1980",
+      "score": 0.6547619047619048,
+      "metrics": {
+        "confidence": 0.8333333333333333,
+        "specificity": 0.85,
+        "narrativeValue": 0.45,
+        "educationalValue": 0.75,
+        "visualValue": 0.4,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "Visits to Xerox PARC inspired Apple's GUI-based computers, the Lisa and the Macintosh",
+      "score": 0.6804029304029304,
+      "metrics": {
+        "confidence": 0.7166666666666667,
+        "specificity": 0.6846153846153846,
+        "narrativeValue": 0.8769230769230769,
+        "educationalValue": 0.5,
+        "visualValue": 0.6846153846153846,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.8
+      },
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
+    },
+    {
+      "fact": "The Macintosh launched in 1984 with a famous Ridley Scott commercial, but slow sales eventually led to a power struggle between Steve Jobs and CEO John Sculley",
+      "score": 0.6986772486772487,
       "metrics": {
         "confidence": 0.95,
-        "specificity": 0.9,
-        "narrativeValue": 0.8,
-        "educationalValue": 0.8,
-        "visualValue": 0.7,
-        "uniqueness": 0.7,
-        "ontologyRelevance": 0.85
+        "specificity": 0.85,
+        "narrativeValue": 0.7444444444444445,
+        "educationalValue": 0.75,
+        "visualValue": 0.5962962962962963,
+        "uniqueness": 0.5,
+        "ontologyRelevance": 0.5
       },
-      "reasoning": "Standard programmatic metric evaluation."
+      "reasoning": "Heuristic evaluation from measurable text signals (word count, proper-noun density, presence of dates/numbers, superlatives) — not LLM-verified."
     }
   ],
   "visualModules": [
@@ -435,13 +638,78 @@
       "type": "company",
       "title": "Company Blueprint Snapshot",
       "data": {
-        "founder": "Compiled detail for founder",
-        "industry": "Compiled detail for industry",
-        "headquarters": "Compiled detail for headquarters",
-        "products": "Compiled detail for products",
-        "businessModel": "Compiled detail for businessModel",
-        "revenue": "Compiled detail for revenue",
-        "leadership": "Compiled detail for leadership"
+        "founder": [
+          "Steve Jobs",
+          "Steve Wozniak",
+          "Ronald Wayne"
+        ],
+        "industry": [
+          "Consumer electronics",
+          "Software",
+          "Online services",
+          "Technology"
+        ],
+        "headquarters": {
+          "city": "Cupertino",
+          "state": "California",
+          "region": "Silicon Valley",
+          "country": "United States"
+        },
+        "products": [
+          "iPhone",
+          "iPad",
+          "Mac",
+          "Apple Watch",
+          "AirPods",
+          "Apple I",
+          "Apple II",
+          "Lisa",
+          "Macintosh",
+          "iMac",
+          "iPod",
+          "Disk II",
+          "iOS",
+          "iPadOS",
+          "macOS",
+          "Apple Pay",
+          "iCloud",
+          "Apple Music",
+          "Apple TV",
+          "iTunes Store",
+          "Apple Store"
+        ],
+        "businessModel": [
+          "Hardware manufacturing and sales",
+          "Software development and distribution",
+          "Digital content and subscription services",
+          "Retail and online store distribution"
+        ],
+        "revenue": [
+          "Annual sales grew from $775,000 in September 1977 to $118 million in September 1980",
+          "Largest manufacturing company by revenue as of 2024"
+        ],
+        "leadership": [
+          {
+            "name": "Steve Jobs",
+            "role": "Co-founder, former CEO (resigned 2011)"
+          },
+          {
+            "name": "Tim Cook",
+            "role": "Current CEO"
+          },
+          {
+            "name": "John Ternus",
+            "role": "Incoming CEO (succeeding Tim Cook in September 2026)"
+          },
+          {
+            "name": "John Sculley",
+            "role": "Former CEO (recruited in 1983)"
+          },
+          {
+            "name": "Mike Markkula",
+            "role": "Early investor and business expert (invested $250,000 during 1977 incorporation)"
+          }
+        ]
       }
     }
   ],
@@ -449,160 +717,507 @@
     "chapters": [
       {
         "chapterIndex": 0,
-        "title": "The Need for Apple Inc.",
-        "referenceLabel": "Need",
-        "readerQuestion": "What represents the starting motivation behind Need?",
+        "title": "Financing the First Motherboard",
+        "referenceLabel": "Sacrifice",
+        "readerQuestion": "What personal sacrifices were required to fund the very first Apple computer?",
         "objectives": [
-          "Explore the relationship with Need"
+          "Explore the extreme financial measures Steve Jobs and Steve Wozniak took to fund their initial inventory.",
+          "Examine the rapid departure of Apple's third co-founder immediately after establishment."
         ],
         "approvedFacts": [
-          "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, and known for consumer electronics, software and online services.",
-          "The company was founded to market Wozniak's Apple I computer. Its successor, the Apple II, became one of the first successful mass-produced microcomputers."
+          "To finance the production of the original Apple I, Steve Jobs sold his Volkswagen Bus and Steve Wozniak sold his HP-65 calculator.",
+          "Co-founder Ronald Wayne sold his entire share of Apple back to Jobs and Wozniak for just $800, twelve days after the company was founded.",
+          "Apple was founded in 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne"
         ],
         "anchors": [
-          "Apple Inc.",
-          "foundation origin"
+          "1976",
+          "Ronald Wayne",
+          "Steve Wozniak"
         ]
       },
       {
         "chapterIndex": 1,
-        "title": "The Founding of Apple Inc.",
-        "referenceLabel": "Founding",
-        "readerQuestion": "Which factors influenced early discoveries of Founding?",
+        "title": "The Devilish Price of Innovation",
+        "referenceLabel": "Inception",
+        "readerQuestion": "How did a uniquely priced motherboard and a spreadsheet program spark a financial revolution?",
         "objectives": [
-          "Explore the relationship with Founding"
+          "Detail the unusual retail pricing strategy of Apple's debut motherboard.",
+          "Explain how the Apple II and VisiCalc transformed the company into a public phenomenon."
         ],
         "approvedFacts": [
-          "Apple's product lineup includes portable and home hardware like the iPhone, iPad, Mac, Apple Watch, and AirPods; several in-house operating systems such as iOS, iPadOS, and macOS; and various software and services including Apple Pay and iCloud, as well as multimedia streaming services like Apple Music and Apple TV. Since 2011, Apple has for the most part been the world's largest company by market capitalization, and, as of 2024, is the largest manufacturing company by revenue, the fourth-largest PC vendor, the largest vendor of tablet computers, and the largest vendor of mobile phones.",
-          "Apple has received criticism regarding its contractors' labor conditions, its relationship with trade unions, its environmental practices, and its corporate ethics, including anti-competitive tactics, materials sourcing, and its acquisitions of smaller businesses. Nevertheless, the company has a large following and enjoys a high level of customer loyalty."
+          "The Apple I was introduced at the highly unusual retail price of $666.66.",
+          "The Apple II became a major success, boosted by the spreadsheet program VisiCalc, leading to a massive IPO in 1980"
         ],
         "anchors": [
-          "Apple Inc.",
-          "historical timeline"
+          "1977",
+          "1980",
+          "Cupertino"
         ]
       },
       {
         "chapterIndex": 2,
-        "title": "The Growth of Apple Inc.",
-        "referenceLabel": "Growth",
-        "readerQuestion": "How do key chemical processes behave during Growth?",
+        "title": "From Xerox to Super Bowl",
+        "referenceLabel": "Evolution",
+        "readerQuestion": "How did a visit to Xerox PARC shape the future of personal computing interfaces?",
         "objectives": [
-          "Explore the relationship with Growth"
+          "Reveal how Apple secured the ideas for graphical user interfaces in exchange for pre-IPO stock.",
+          "Analyze the massive marketing push and cinematic scale of the Macintosh launch."
         ],
         "approvedFacts": [
-          "Apple Computer was founded as a partnership on April 1, 1976, by Steve Jobs, Steve Wozniak, and Ronald Wayne. The company's first product was the Apple I, designed by Wozniak and hand-built.",
-          "Wozniak demonstrated the first Apple I prototype at the Homebrew Computer Club in July 1976, where local computer retailer Byte Shop placed an order for 50 fully assembled computers. Unlike most contemporary hobbyist computers, which were sold as kits requiring assembly, the Apple I came as a pre-assembled motherboard with a CPU, RAM, and built-in video circuitry, allowing it to connect directly to a household television instead of requiring a costly computer terminal."
+          "Steve Jobs was inspired to build graphical user interfaces after visiting Xerox PARC in exchange for allowing Xerox to buy $1 million of pre-IPO Apple stock.",
+          "Visits to Xerox PARC inspired Apple's GUI-based computers, the Lisa and the Macintosh",
+          "The landmark '1984' Macintosh television commercial was directed by Ridley Scott and cost $1.5 million to air during the Super Bowl."
         ],
         "anchors": [
-          "Apple Inc.",
-          "reaction mechanism"
+          "Xerox PARC",
+          "1984",
+          "Steve Jobs"
         ]
       },
       {
         "chapterIndex": 3,
-        "title": "Competition for Apple Inc.",
-        "referenceLabel": "Competition",
-        "readerQuestion": "Why do light steps trigger under Competition?",
+        "title": "Power Struggles and Product Shifts",
+        "referenceLabel": "Conflict",
+        "readerQuestion": "What internal conflicts and strategic pivots redefined Apple's identity beyond computers?",
         "objectives": [
-          "Explore the relationship with Competition"
+          "Examine the corporate friction between Steve Jobs and John Sculley that led to Jobs's departure.",
+          "Detail the company's official transition from a computer manufacturer to a broader consumer electronics brand."
         ],
         "approvedFacts": [
-          "Apple Computer, Inc. was incorporated in Cupertino, California, on January 3, 1977, without Wayne, who had left and sold his share of the company back to Jobs and Wozniak for $800 twelve days after its founding.",
-          "The Apple II, also designed by Wozniak, was introduced on April 16, 1977, at the first West Coast Computer Faire. Alongside the Commodore PET 2001 and the TRS-80, it formed the \"1977 Trinity\" of influential personal computers that established the home computer market."
+          "The Macintosh launched in 1984 with a famous Ridley Scott commercial, but slow sales eventually led to a power struggle between Steve Jobs and CEO John Sculley",
+          "It transitioned from computers to consumer electronics, dropping 'Computer' from its name in 2007"
         ],
         "anchors": [
-          "Apple Inc.",
-          "energy transition"
+          "1997",
+          "2007",
+          "NeXT"
         ]
       },
       {
         "chapterIndex": 4,
-        "title": "The Future of Apple Inc.",
-        "referenceLabel": "Future",
-        "readerQuestion": "Who validates the final outcomes regarding Future?",
+        "title": "The Four Trillion Dollar Era",
+        "referenceLabel": "Leadership",
+        "readerQuestion": "How did Tim Cook's era pave the way for Apple's next generation of leadership?",
         "objectives": [
-          "Explore the relationship with Future"
+          "Highlight Apple's historic financial milestones under Tim Cook's management.",
+          "Introduce the transition plan for the incoming CEO scheduled for 2026."
         ],
         "approvedFacts": [
-          "On December 12, 1980, Apple became a public company through an initial public offering (IPO) on the Nasdaq. The company sold 4."
+          "Tim Cook, who has led Apple since 2011, is scheduled to be succeeded as CEO by John Ternus in September 2026.",
+          "As of October 2025, Apple's market capitalization is valued at just over $4 trillion, having first crossed the $1 trillion mark in 2018."
         ],
         "anchors": [
-          "Apple Inc.",
-          "modern application"
+          "2011",
+          "Tim Cook",
+          "John Ternus"
         ]
       }
     ]
   },
   "triviaCandidates": [
     {
-      "fact": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, and known for consumer electronics, software and online services.",
-      "surpriseScore": 10,
-      "readMoreTopic": "100% renewable energy"
-    },
-    {
-      "fact": "The company was founded to market Wozniak's Apple I computer. Its successor, the Apple II, became one of the first successful mass-produced microcomputers.",
-      "surpriseScore": 9,
-      "readMoreTopic": "1234 (Feist song)"
-    },
-    {
-      "fact": "Apple's product lineup includes portable and home hardware like the iPhone, iPad, Mac, Apple Watch, and AirPods; several in-house operating systems such as iOS, iPadOS, and macOS; and various software and services including Apple Pay and iCloud, as well as multimedia streaming services like Apple Music and Apple TV. Since 2011, Apple has for the most part been the world's largest company by market capitalization, and, as of 2024, is the largest manufacturing company by revenue, the fourth-largest PC vendor, the largest vendor of tablet computers, and the largest vendor of mobile phones.",
+      "fact": "To finance the production of the original Apple I, Steve Jobs sold his Volkswagen Bus and Steve Wozniak sold his HP-65 calculator.",
       "surpriseScore": 8,
-      "readMoreTopic": "1977 Trinity"
+      "readMoreTopic": "Apple I"
     },
     {
-      "fact": "Apple has received criticism regarding its contractors' labor conditions, its relationship with trade unions, its environmental practices, and its corporate ethics, including anti-competitive tactics, materials sourcing, and its acquisitions of smaller businesses. Nevertheless, the company has a large following and enjoys a high level of customer loyalty.",
+      "fact": "Co-founder Ronald Wayne sold his entire share of Apple back to Jobs and Wozniak for just $800, twelve days after the company was founded.",
+      "surpriseScore": 9,
+      "readMoreTopic": "Ronald Wayne"
+    },
+    {
+      "fact": "The Apple I was introduced at the highly unusual retail price of $666.66.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Apple I"
+    },
+    {
+      "fact": "Apple's rapid early growth saw its annual sales skyrocket from $775,000 in 1977 to $118 million in 1980, an average annual growth rate of 533%.",
       "surpriseScore": 7,
+      "readMoreTopic": "Apple Inc."
+    },
+    {
+      "fact": "The landmark '1984' Macintosh television commercial was directed by Ridley Scott and cost $1.5 million to air during the Super Bowl.",
+      "surpriseScore": 8,
       "readMoreTopic": "1984 (advertisement)"
     },
     {
-      "fact": "Apple Computer was founded as a partnership on April 1, 1976, by Steve Jobs, Steve Wozniak, and Ronald Wayne. The company's first product was the Apple I, designed by Wozniak and hand-built.",
-      "surpriseScore": 6,
-      "readMoreTopic": "1984 (television commercial)"
+      "fact": "Steve Jobs was inspired to build graphical user interfaces after visiting Xerox PARC in exchange for allowing Xerox to buy $1 million of pre-IPO Apple stock.",
+      "surpriseScore": 8,
+      "readMoreTopic": "Xerox PARC"
     },
     {
-      "fact": "Wozniak demonstrated the first Apple I prototype at the Homebrew Computer Club in July 1976, where local computer retailer Byte Shop placed an order for 50 fully assembled computers. Unlike most contemporary hobbyist computers, which were sold as kits requiring assembly, the Apple I came as a pre-assembled motherboard with a CPU, RAM, and built-in video circuitry, allowing it to connect directly to a household television instead of requiring a costly computer terminal.",
-      "surpriseScore": 5,
-      "readMoreTopic": "1989 South Florida television affiliation switch"
+      "fact": "Tim Cook, who has led Apple since 2011, is scheduled to be succeeded as CEO by John Ternus in September 2026.",
+      "surpriseScore": 7,
+      "readMoreTopic": "Tim Cook"
     },
     {
-      "fact": "Apple Computer, Inc. was incorporated in Cupertino, California, on January 3, 1977, without Wayne, who had left and sold his share of the company back to Jobs and Wozniak for $800 twelve days after its founding.",
-      "surpriseScore": 4,
-      "readMoreTopic": "1994–1996 United States broadcast television realignment"
-    },
-    {
-      "fact": "The Apple II, also designed by Wozniak, was introduced on April 16, 1977, at the first West Coast Computer Faire. Alongside the Commodore PET 2001 and the TRS-80, it formed the \"1977 Trinity\" of influential personal computers that established the home computer market.",
-      "surpriseScore": 3,
-      "readMoreTopic": "2001 Vancouver TV realignment"
-    },
-    {
-      "fact": "The Apple II became Apple's first major commercial success following the 1979 release of VisiCalc, the first widely adopted spreadsheet program and one of the earliest personal computer \"killer applications\". Initially available exclusively for the Apple II, VisiCalc transformed the computer into a popular business tool and helped establish Apple in the growing personal computer industry.",
-      "surpriseScore": 2,
-      "readMoreTopic": "2006 United States broadcast television realignment"
-    },
-    {
-      "fact": "On December 12, 1980, Apple became a public company through an initial public offering (IPO) on the Nasdaq. The company sold 4.",
-      "surpriseScore": 1,
-      "readMoreTopic": "2007 Canada broadcast TV realignment"
+      "fact": "As of October 2025, Apple's market capitalization is valued at just over $4 trillion, having first crossed the $1 trillion mark in 2018.",
+      "surpriseScore": 7,
+      "readMoreTopic": "Market capitalization"
     }
   ],
   "relatedTopics": [
-    "100% renewable energy",
-    "1234 (Feist song)",
-    "1977 Trinity",
-    "1984 (advertisement)",
-    "1984 (television commercial)",
-    "1989 South Florida television affiliation switch",
-    "1994–1996 United States broadcast television realignment",
-    "2001 Vancouver TV realignment"
+    "Apple I",
+    "Apple II",
+    "Macintosh",
+    "Steve Jobs",
+    "Steve Wozniak",
+    "Tim Cook",
+    "NeXT",
+    "Xerox PARC",
+    "VisiCalc",
+    "Consumer electronics"
   ],
   "confidenceScores": {
-    "resolver": 0.96,
-    "compiler": 0.95,
-    "grader": 0.7,
-    "overall": 0.92
+    "resolver": 1,
+    "compiler": 1,
+    "grader": 0.8372781065088755,
+    "overall": 0.96
   },
-  "checksum": "a57f1b1a646b82bab61c520f4a3748ff1754dfaad196f466fc16838b1cdcb869",
-  "dependencyHash": "c2bcea50b9c303de17206f815065ee94203b4a69cdbd81526cd40e7087af6bf1",
+  "qualityAssessment": {
+    "generationMode": "mixed",
+    "fallbackRatio": 0.058823529411764705,
+    "provenanceCoverage": 0.8611111111111112,
+    "placeholderCount": 0,
+    "verifiedFactRatio": 0.8461538461538461,
+    "qualityScore": 96,
+    "confidenceBreakdown": {
+      "provenanceCoverage": 0.8611111111111112,
+      "fieldCoverage": 1,
+      "placeholderPenalty": 1,
+      "fallbackPenalty": 0.9411764705882353,
+      "sourceAgreement": 1,
+      "extractionCompleteness": 1,
+      "factSpecificity": 0.8372781065088755,
+      "graphValidity": 1,
+      "timelineValidity": 1,
+      "validationPenalty": 1
+    },
+    "status": "PARTIAL",
+    "modulesPassing": [
+      "timeline",
+      "cards",
+      "didYouKnow",
+      "relatedTopics",
+      "structuredFactsData",
+      "knowledgeGraph"
+    ],
+    "modulesHidden": [],
+    "reasons": [
+      "all signals above threshold, no placeholder contamination, majority primary generation",
+      "downgraded because lintArtifact() reported validation errors"
+    ]
+  },
+  "stageDiagnostics": [
+    {
+      "stage": "entityResolver.pass1",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1561
+    },
+    {
+      "stage": "compiler",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 9001
+    },
+    {
+      "stage": "knowledgeGraph",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2705
+    },
+    {
+      "stage": "factEvaluator",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": null,
+      "modelValidationAttempted": false,
+      "modelValidationSucceeded": false,
+      "supportedGenerationMethod": false,
+      "requestAttempted": true,
+      "requestSucceeded": false,
+      "failureReason": "Unterminated string in JSON at position 6481 (line 172 column 19)",
+      "errorCategory": "parser_failure",
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": true,
+      "durationMs": 7421
+    },
+    {
+      "stage": "narrativePlanner",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 5042
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2417
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2295
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2146
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2841
+    },
+    {
+      "stage": "factScript",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 2435
+    },
+    {
+      "stage": "documentaryWriter.summary",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1600
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1718
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1615
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1749
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1753
+    },
+    {
+      "stage": "documentaryWriter.card",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 1449
+    },
+    {
+      "stage": "stylePolish",
+      "provider": "gemini",
+      "configuredModel": "gemini-flash-latest",
+      "selectedModel": "gemini-flash-latest",
+      "modelValidationAttempted": true,
+      "modelValidationSucceeded": true,
+      "supportedGenerationMethod": true,
+      "requestAttempted": true,
+      "requestSucceeded": true,
+      "failureReason": null,
+      "errorCategory": null,
+      "quotaError": false,
+      "deprecatedOrUnavailableModel": false,
+      "fallbackModelUsed": false,
+      "fallbackContentUsed": false,
+      "durationMs": 8802
+    }
+  ],
+  "checksum": "12f2ba484b722073e23b2b479e0ef35cbb70ce791c35e24b6f7b6f7440a6e28f",
+  "dependencyHash": "b5cc51eb12807c866935093861a05e425dad4dcb1d94645a42f74b0cc6f9852d",
   "sourceReferences": [
     {
       "url": "https://en.wikipedia.org/wiki/Apple%20Inc.",
@@ -612,158 +1227,272 @@
   "factScript": {
     "chapters": [
       {
-        "chapterTitle": "The Need for Apple Inc.",
-        "questionAnswered": "What represents the starting motivation behind Need?",
+        "chapterTitle": "Financing the First Motherboard",
+        "referenceLabel": "Sacrifice",
+        "questionAnswered": "What personal sacrifices were required to fund the very first Apple computer?",
         "chronologicalPosition": 1,
         "entities": [
-          "Apple Inc."
+          "Apple I",
+          "Volkswagen Bus",
+          "HP-65 calculator"
+        ],
+        "dates": [
+          "1976"
+        ],
+        "locations": [
+          "Cupertino",
+          "California",
+          "Silicon Valley"
+        ],
+        "people": [
+          "Steve Jobs",
+          "Steve Wozniak",
+          "Ronald Wayne"
+        ],
+        "events": [
+          "Founding of Apple Computer",
+          "Departure of Ronald Wayne"
+        ],
+        "cause": "Steve Jobs and Steve Wozniak needed immediate capital to fund the production of their first hand-built Apple I computer motherboard.",
+        "effect": "The founders successfully raised the necessary startup capital, but co-founder Ronald Wayne chose to minimize his financial risk by rapidly exiting the partnership.",
+        "keyFacts": [
+          "Apple was founded in 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne to market the Apple I motherboard.",
+          "To finance the initial Apple I production, Steve Jobs sold his Volkswagen Bus and Steve Wozniak sold his HP-65 calculator.",
+          "Co-founder Ronald Wayne sold his entire 10% share of Apple back to Jobs and Wozniak for $800, just twelve days after the company was founded."
+        ],
+        "quotes": [],
+        "connections": [
+          "The initial capital raised from these personal sacrifices paved the way for the company's formal incorporation and the launch of the Apple II in 1977."
+        ],
+        "takeaway": "Extreme personal sacrifices and early partner departures launched Apple.",
+        "insufficientData": false
+      },
+      {
+        "chapterTitle": "The Devilish Price of Innovation",
+        "referenceLabel": "Inception",
+        "questionAnswered": "How did a uniquely priced motherboard and a spreadsheet program spark a financial revolution?",
+        "chronologicalPosition": 2,
+        "entities": [
+          "Apple I",
+          "Apple II",
+          "VisiCalc",
+          "Nasdaq"
         ],
         "dates": [
           "1976",
-          "2007"
+          "1977",
+          "1980"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "motivating factors behind early phases of development",
-        "effect": "initial events showing transition in the subject",
+        "locations": [
+          "Cupertino",
+          "California"
+        ],
+        "people": [
+          "Steve Jobs",
+          "Steve Wozniak",
+          "Ronald Wayne",
+          "Mike Markkula"
+        ],
+        "events": [
+          "Introduction of the Apple I",
+          "Incorporation of Apple Computer",
+          "Launch of the Apple II",
+          "Apple Initial Public Offering"
+        ],
+        "cause": "The hand-built Apple I motherboard was priced at a devilish retail figure, while the subsequent Apple II was paired with the killer business application VisiCalc.",
+        "effect": "Apple transformed from a garage startup into a public phenomenon, raising over $100 million in a massive 1980 IPO and creating hundreds of millionaires.",
         "keyFacts": [
-          "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, and known for consumer electronics, software and online services.",
-          "The company was founded to market Wozniak's Apple I computer. Its successor, the Apple II, became one of the first successful mass-produced microcomputers."
+          "The Apple I was introduced at the highly unusual retail price of $666.66.",
+          "The Apple II became a major success, boosted by the spreadsheet program VisiCalc, leading to a massive IPO in 1980.",
+          "Apple's annual sales grew from $775,000 in September 1977 to $118 million in September 1980."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "fundamental lessons from this period"
+        "connections": [
+          "The transition from the Apple II to the Macintosh graphical user interface in 1984",
+          "The early financial backing of Mike Markkula during the 1977 incorporation"
+        ],
+        "takeaway": "Unusual pricing and killer software sparked a historic financial revolution.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "The Founding of Apple Inc.",
-        "questionAnswered": "Which factors influenced early discoveries of Founding?",
-        "chronologicalPosition": 2,
-        "entities": [
-          "Apple Inc."
-        ],
-        "dates": [
-          "2007",
-          "1983"
-        ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "key drivers behind the rising influence",
-        "effect": "consequent progress seen during this phase",
-        "keyFacts": [
-          "Apple's product lineup includes portable and home hardware like the iPhone, iPad, Mac, Apple Watch, and AirPods; several in-house operating systems such as iOS, iPadOS, and macOS; and various software and services including Apple Pay and iCloud, as well as multimedia streaming services like Apple Music and Apple TV. Since 2011, Apple has for the most part been the world's largest company by market capitalization, and, as of 2024, is the largest manufacturing company by revenue, the fourth-largest PC vendor, the largest vendor of tablet computers, and the largest vendor of mobile phones.",
-          "Apple has received criticism regarding its contractors' labor conditions, its relationship with trade unions, its environmental practices, and its corporate ethics, including anti-competitive tactics, materials sourcing, and its acquisitions of smaller businesses. Nevertheless, the company has a large following and enjoys a high level of customer loyalty."
-        ],
-        "quotes": [],
-        "connections": [],
-        "takeaway": "primary insights on the rise"
-      },
-      {
-        "chapterTitle": "The Growth of Apple Inc.",
-        "questionAnswered": "How do key chemical processes behave during Growth?",
+        "chapterTitle": "From Xerox to Super Bowl",
+        "referenceLabel": "Evolution",
+        "questionAnswered": "How did a visit to Xerox PARC shape the future of personal computing interfaces?",
         "chronologicalPosition": 3,
         "entities": [
-          "Apple Inc."
+          "Xerox PARC",
+          "Lisa",
+          "Macintosh",
+          "Apple stock",
+          "1984 commercial"
         ],
         "dates": [
-          "1983",
+          "1979",
           "1984"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "pivotal elements supporting the peak achievements",
-        "effect": "resultant breakthroughs related directly to these successes",
+        "locations": [
+          "Palo Alto",
+          "Cupertino",
+          "California"
+        ],
+        "people": [
+          "Steve Jobs",
+          "Ridley Scott"
+        ],
+        "events": [
+          "Xerox PARC visit",
+          "Macintosh launch",
+          "Super Bowl XVIII"
+        ],
+        "cause": "Steve Jobs sought access to Xerox PARC's graphical user interface technology by offering Xerox the opportunity to purchase pre-IPO Apple stock.",
+        "effect": "Apple successfully integrated graphical user interfaces into the Lisa and Macintosh computers, launching the latter with a highly successful, cinematic Super Bowl advertisement.",
         "keyFacts": [
-          "Apple Computer was founded as a partnership on April 1, 1976, by Steve Jobs, Steve Wozniak, and Ronald Wayne. The company's first product was the Apple I, designed by Wozniak and hand-built.",
-          "Wozniak demonstrated the first Apple I prototype at the Homebrew Computer Club in July 1976, where local computer retailer Byte Shop placed an order for 50 fully assembled computers. Unlike most contemporary hobbyist computers, which were sold as kits requiring assembly, the Apple I came as a pre-assembled motherboard with a CPU, RAM, and built-in video circuitry, allowing it to connect directly to a household television instead of requiring a costly computer terminal."
+          "Steve Jobs secured access to Xerox PARC's graphical user interface technology in exchange for allowing Xerox to purchase $1 million of pre-IPO Apple stock.",
+          "The technology observed during the Xerox PARC visits directly inspired the development of Apple's GUI-based computers, the Lisa and the Macintosh.",
+          "The landmark '1984' Macintosh television commercial was directed by Ridley Scott and cost $1.5 million to air during the Super Bowl."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "core takeaways regarding this era"
+        "connections": [
+          "Apple Computer Founded (1976)",
+          "Initial Public Offering (1980)"
+        ],
+        "takeaway": "Xerox's interface ideas fueled Apple's revolutionary Macintosh launch.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "Competition for Apple Inc.",
-        "questionAnswered": "Why do light steps trigger under Competition?",
+        "chapterTitle": "Power Struggles and Product Shifts",
+        "referenceLabel": "Conflict",
+        "questionAnswered": "What internal conflicts and strategic pivots redefined Apple's identity beyond computers?",
         "chronologicalPosition": 4,
         "entities": [
-          "Apple Inc."
+          "Macintosh",
+          "Apple Inc.",
+          "Apple Computer"
         ],
         "dates": [
           "1984",
-          "1985"
+          "2007"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "underlying issues prompting the challenges faced",
-        "effect": "resulting shifts that defined the response taken",
+        "locations": [
+          "Cupertino"
+        ],
+        "people": [
+          "Steve Jobs",
+          "John Sculley",
+          "Ridley Scott"
+        ],
+        "events": [
+          "Macintosh launch",
+          "Super Bowl commercial broadcast",
+          "Corporate name change"
+        ],
+        "cause": "Slow sales of the newly launched Macintosh computer created intense executive friction, while a growing portfolio of non-computer devices necessitated a brand evolution.",
+        "effect": "Steve Jobs departed the company following a leadership dispute, and Apple eventually rebranded to reflect its broader consumer electronics identity.",
         "keyFacts": [
-          "Apple Computer, Inc. was incorporated in Cupertino, California, on January 3, 1977, without Wayne, who had left and sold his share of the company back to Jobs and Wozniak for $800 twelve days after its founding.",
-          "The Apple II, also designed by Wozniak, was introduced on April 16, 1977, at the first West Coast Computer Faire. Alongside the Commodore PET 2001 and the TRS-80, it formed the \"1977 Trinity\" of influential personal computers that established the home computer market."
+          "The Macintosh launched in 1984 with a famous Ridley Scott commercial, but slow sales eventually led to a power struggle between Steve Jobs and CEO John Sculley",
+          "The corporate power struggle resulted in the departure of co-founder Steve Jobs from the company",
+          "Apple officially transitioned from computers to consumer electronics, dropping 'Computer' from its name in 2007"
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "crucial lessons on these struggles"
+        "connections": [
+          "Steve Jobs's departure set the stage for his eventual return in 1997 following the acquisition of NeXT",
+          "The 2007 rebranding paved the way for the massive expansion of the iPhone and modern consumer electronics ecosystem"
+        ],
+        "takeaway": "Internal rivalry and rebranding transformed Apple from computer maker to tech giant.",
+        "insufficientData": false
       },
       {
-        "chapterTitle": "The Future of Apple Inc.",
-        "questionAnswered": "Who validates the final outcomes regarding Future?",
+        "chapterTitle": "The Four Trillion Dollar Era",
+        "referenceLabel": "Leadership",
+        "questionAnswered": "How did Tim Cook's era pave the way for Apple's next generation of leadership?",
         "chronologicalPosition": 5,
         "entities": [
-          "Apple Inc."
+          "Apple Inc.",
+          "Nasdaq"
         ],
         "dates": [
-          "1985",
-          "1997"
+          "2011",
+          "2018",
+          "October 2025",
+          "September 2026"
         ],
-        "locations": [],
-        "people": [],
-        "events": [],
-        "cause": "lasting forces establishing the legacy left behind",
-        "effect": "long-term outcomes that shaped the memory of the subject",
+        "locations": [
+          "Cupertino",
+          "California"
+        ],
+        "people": [
+          "Tim Cook",
+          "John Ternus",
+          "Steve Jobs"
+        ],
+        "events": [
+          "Tim Cook becoming CEO in 2011",
+          "Apple crossing the $1 trillion market capitalization mark in 2018",
+          "Scheduled CEO transition in September 2026"
+        ],
+        "cause": "Tim Cook assumed leadership of Apple in 2011 and implemented scaling strategies that drove unprecedented financial growth.",
+        "effect": "Apple achieved a historic $4 trillion valuation and established a structured leadership transition plan for 2026.",
         "keyFacts": [
-          "On December 12, 1980, Apple became a public company through an initial public offering (IPO) on the Nasdaq. The company sold 4."
+          "Tim Cook has led Apple as CEO since succeeding Steve Jobs in 2011.",
+          "Apple crossed the $1 trillion market capitalization milestone for the first time in 2018.",
+          "As of October 2025, Apple's market capitalization is valued at just over $4 trillion.",
+          "John Ternus is scheduled to succeed Tim Cook as Apple's CEO in September 2026."
         ],
         "quotes": [],
-        "connections": [],
-        "takeaway": "final summary explaining the legacy"
+        "connections": [
+          "Succeeds the 2011 transition event where Steve Jobs resigned and Tim Cook became CEO."
+        ],
+        "takeaway": "Cook's financial triumph secures a stable 2026 leadership transition.",
+        "insufficientData": false
       }
     ]
   },
   "briefSummaryProvenance": [
     {
-      "sentence": "Apple Inc records confirm that Apple Inc is an American multinational technology company headquartered in Cupertino,.",
-      "fact": "Apple Inc is an American multinational technology company headquartered in Cupertino,"
+      "sentence": "In 1976, Steve Jobs, Steve Wozniak, and Ronald Wayne founded Apple to market the Apple I motherboard .",
+      "fact": "Chapter 1: Apple was founded in 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne to market the Apple I motherboard."
     },
     {
-      "sentence": "Apple Inc records confirm that Apple's product lineup includes portable and home hardware like the iPhone,.",
-      "fact": "Apple's product lineup includes portable and home hardware like the iPhone,"
+      "sentence": "To finance this initial production, Jobs sold his Volkswagen Bus and Wozniak sold his HP-65 calculator .",
+      "fact": "Chapter 1: To finance the initial Apple I production, Steve Jobs sold his Volkswagen Bus and Steve Wozniak sold his HP-65 calculator."
     },
     {
-      "sentence": "Apple Inc records confirm that Apple Computer was founded as a partnership on April 1, 1976,.",
-      "fact": "Apple Computer was founded as a partnership on April 1, 1976,"
+      "sentence": "Just twelve days later, Wayne sold his entire ten percent share back to his co-founders for $800 .",
+      "fact": "Chapter 1: Co-founder Ronald Wayne sold his entire 10% share of Apple back to Jobs and Wozniak for $800, just twelve days after the company was founded."
     },
     {
-      "sentence": "Apple Inc remains study topic showing that final summary explaining the legacy.",
-      "fact": "final summary explaining the legacy"
+      "sentence": "The company's annual sales subsequently surged from $775,000 in September 1977 to $118 million by September 1980 .",
+      "fact": "Chapter 2: Apple's annual sales grew from $775,000 in September 1977 to $118 million in September 1980."
+    },
+    {
+      "sentence": "Decades of growth followed, and Apple officially dropped 'Computer' from its name in 2007 .",
+      "fact": "Chapter 4: Apple officially transitioned from computers to consumer electronics, dropping 'Computer' from its name in 2007"
+    },
+    {
+      "sentence": "Today, Tim Cook leads the company as CEO .",
+      "fact": "Chapter 5: Tim Cook has led Apple as CEO since succeeding Steve Jobs in 2011."
+    },
+    {
+      "sentence": "Under his leadership, Apple's market capitalization surpassed $4 trillion in October 2025 .",
+      "fact": "Chapter 5: As of October 2025, Apple's market capitalization is valued at just over $4 trillion."
     }
   ],
   "validationStatus": {
-    "passed": true,
-    "errors": [],
-    "warnings": [
-      "Timeline is not in strict chronological order"
+    "passed": false,
+    "errors": [
+      "Identical 4-word phrases must not repeat across chapters",
+      "Sentence provenance is incomplete: only 84% of sentences are mapped to facts"
     ],
+    "warnings": [],
     "checkedRules": {
       "ontology_match": true,
       "required_fields_exist": true,
       "timeline_non_empty": true,
       "timeline_count_bounds": true,
-      "timeline_chronological": false,
+      "timeline_chronological": true,
       "graph_has_triples": true,
       "graph_connected": true,
+      "graph_no_synthetic_nodes": true,
       "named_entities_non_empty": true,
       "no_weak_facts": true,
       "no_duplicate_facts": true,
@@ -773,10 +1502,11 @@
       "paragraph_length_limit": true,
       "unique_chapter_titles": true,
       "concrete_dates_names_present": true,
-      "no_repeated_phrases": true,
+      "no_repeated_phrases": false,
       "no_timeline_milestone_placeholder": true,
+      "reader_question_quality": true,
       "did_you_know_length_ok": true,
-      "sentence_provenance_ok": true,
+      "sentence_provenance_ok": false,
       "no_abstract_writing": true,
       "documentary_alternating_rule": true,
       "fact_density_met": true,
@@ -786,6 +1516,6 @@
       "compiler_confidence_ok": true,
       "overall_confidence_ok": true
     },
-    "timestamp": "2026-07-10T06:47:58.568Z"
+    "timestamp": "2026-07-11T07:54:40.699Z"
   }
 }
