@@ -84,6 +84,165 @@ Only return raw JSON. Start with { and end with }. Do not wrap in markdown.`;
   return getFallbackSummary(resolved, script);
 }
 
+// ---------------------------------------------------------------------------
+// V19 Editorial Brief — the single editorial article shown on the results
+// page (target 180–250 words, 250 hard maximum). Distinct from briefSummary
+// (the 100–125 word intro) by explicit product decision: the V19 results
+// page replaces chapter-based reading with one coherent briefing.
+//
+// There is deliberately NO deterministic fallback article. If the LLM call
+// is unavailable, fails, or returns something that does not survive
+// validation, this returns null and the UI omits the section entirely —
+// per NON_NEGOTIABLES.md, an absent module is always preferred over an
+// invented one.
+// ---------------------------------------------------------------------------
+
+export const EDITORIAL_BRIEF_MIN_WORDS = 120;
+export const EDITORIAL_BRIEF_MAX_WORDS = 250;
+export const EDITORIAL_BRIEF_MAX_PARAGRAPH_WORDS = 130;
+
+// Pure, unit-testable acceptance check for a candidate editorial brief.
+// Used by writeEditorialBrief() below and by scripts/run-unit-tests.ts.
+export function validateEditorialBriefText(text: string): { ok: boolean; reason: string | null } {
+  const trimmed = (text || "").trim();
+  if (!trimmed) return { ok: false, reason: "empty" };
+
+  const paragraphs = trimmed.split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
+  if (paragraphs.length < 1 || paragraphs.length > 3) {
+    return { ok: false, reason: `expected 1-3 paragraphs, got ${paragraphs.length}` };
+  }
+
+  const totalWords = trimmed.split(/\s+/).filter(Boolean).length;
+  if (totalWords > EDITORIAL_BRIEF_MAX_WORDS) {
+    return { ok: false, reason: `exceeds hard maximum: ${totalWords} > ${EDITORIAL_BRIEF_MAX_WORDS} words` };
+  }
+  if (totalWords < EDITORIAL_BRIEF_MIN_WORDS) {
+    return { ok: false, reason: `too short to be a coherent briefing: ${totalWords} < ${EDITORIAL_BRIEF_MIN_WORDS} words` };
+  }
+
+  for (const paragraph of paragraphs) {
+    const words = paragraph.split(/\s+/).filter(Boolean).length;
+    if (words > EDITORIAL_BRIEF_MAX_PARAGRAPH_WORDS) {
+      return { ok: false, reason: `a paragraph exceeds ${EDITORIAL_BRIEF_MAX_PARAGRAPH_WORDS} words (${words})` };
+    }
+    // No headings, no bullets — the article must read as plain prose.
+    if (/^(#{1,6}\s|[-*•]\s|\d+[.)]\s)/.test(paragraph)) {
+      return { ok: false, reason: "contains a heading or bullet marker" };
+    }
+  }
+
+  if (containsPlaceholder(trimmed)) {
+    return { ok: false, reason: "contains placeholder-shaped content" };
+  }
+
+  return { ok: true, reason: null };
+}
+
+export async function writeEditorialBrief(
+  resolved: ResolvedEntity,
+  script: FactScript,
+  diagnostics: StageDiagnostic[] = []
+): Promise<{ brief: string; provenance: Array<{ sentence: string; fact: string }> } | null> {
+  // Same verified-fact pool the summary writer uses: only keyFacts from
+  // chapters the fact-script stage did not flag insufficient, never raw
+  // Wikipedia text.
+  const allFacts: string[] = [];
+  script.chapters.forEach((ch, chIdx) => {
+    if (ch.insufficientData) return;
+    ch.keyFacts.forEach((fact) => {
+      if (containsPlaceholder(fact)) return;
+      allFacts.push(`[Fact ${allFacts.length + 1}] Chapter ${chIdx + 1}: ${fact}`);
+    });
+  });
+
+  // A ~200-word article needs a real fact base. With fewer than 4 verified
+  // facts, an honest briefing of this length is not writable — return
+  // nothing rather than pad.
+  if (allFacts.length < 4) {
+    recordFallback(diagnostics, "documentaryWriter.editorialBrief", "insufficient verified facts for an editorial brief");
+    return null;
+  }
+
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) {
+    recordFallback(diagnostics, "documentaryWriter.editorialBrief", "no API key configured");
+    return null;
+  }
+
+  const { GoogleGenAI } = await import("@google/genai");
+  const ai = new GoogleGenAI({ apiKey });
+
+  const prompt = `You are a Senior Editor at National Geographic and The New York Times.
+Write ONE editorial briefing about "${resolved.canonicalTitle}" (${EDITORIAL_BRIEF_MIN_WORDS + 60}-${EDITORIAL_BRIEF_MAX_WORDS} words total), split into exactly 2 or 3 paragraphs separated by a blank line.
+
+This is a premium encyclopedia introduction, not a listicle:
+- No headings. No bullet points. No numbered lists. Plain flowing prose only.
+- Do NOT perform external research or infer facts. Every sentence must be directly supported by exactly one fact in the list below.
+- Do not repeat the same fact twice.
+- Each paragraph must stay under ${EDITORIAL_BRIEF_MAX_PARAGRAPH_WORDS} words.
+- Start with a concrete date, person, place, or entity. Never start with abstract intros.
+- Prefer short, punchy sentences (average 15-20 words), mixed lengths for natural rhythm.
+
+Forbidden words to reject:
+framework, ecosystem, protocol, stakeholder, leveraged, methodology, optimization, selected markers, our team, compiled data, industry practitioners, validation, implementation, deployment, core parameters, utilize, accelerating adoption, secondary adaptations, systematic approach, comprehensive analysis, critical infrastructure, dynamic environment, best practices, centering upon, these observations, compiled data reveals, this establishes, mechanism, therefore, collectively.
+
+Forbidden phrases:
+played an important role, served as a foundation, marked a turning point, helped shape, widely recognized, continues to influence, significant milestone, over time, throughout history, across industries.
+
+FACT LIST:
+${allFacts.join("\n")}
+
+You MUST trace sentence provenance. At the end of every sentence, append the exact fact key that supports it, e.g. "Sentence text here [Fact 1]." or "Another sentence here [Fact 2]."
+
+Return a JSON object with:
+{
+  "brief": "The full briefing text with [Fact X] tags, paragraphs separated by \\n\\n."
+}
+Only return raw JSON. Start with { and end with }. Do not wrap in markdown.`;
+
+  const start = Date.now();
+  try {
+    const { response, meta } = await callGeminiModel(ai, {
+      contents: prompt,
+      config: { temperature: 0.15, maxOutputTokens: 900 }
+    });
+
+    const text = typeof response.text === "string" ? response.text.replace(/```json|```/g, "").trim() : "";
+    const parsed = JSON.parse(text) as { brief: string };
+
+    // Strip tags and rebuild provenance per paragraph so paragraph breaks
+    // survive into the rendered article.
+    const rawParagraphs = (parsed.brief || "").split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
+    const cleanParagraphs: string[] = [];
+    const provenance: Array<{ sentence: string; fact: string }> = [];
+    for (const rawParagraph of rawParagraphs) {
+      const processed = parseProvenanceAndClean(rawParagraph, allFacts);
+      if (processed.summary) {
+        cleanParagraphs.push(sanitizeBannedWords(processed.summary));
+        provenance.push(...processed.provenance);
+      }
+    }
+    const brief = cleanParagraphs.join("\n\n");
+
+    const verdict = validateEditorialBriefText(brief);
+    if (verdict.ok) {
+      recordGeminiSuccess(diagnostics, "documentaryWriter.editorialBrief", meta, Date.now() - start);
+      return { brief, provenance };
+    }
+
+    // The model responded but the output does not meet the article
+    // contract — record it and return nothing. Never trimmed-to-fit,
+    // never padded, never replaced with a template.
+    console.warn(`writeEditorialBrief rejected output for "${resolved.canonicalTitle}": ${verdict.reason}`);
+    recordGeminiSuccess(diagnostics, "documentaryWriter.editorialBrief", meta, Date.now() - start, true);
+    return null;
+  } catch (error) {
+    console.warn("writeEditorialBrief failed; omitting the editorial article", error);
+    recordGeminiFailure(diagnostics, "documentaryWriter.editorialBrief", error, Date.now() - start);
+    return null;
+  }
+}
+
 // Returns null when a chapter cannot be honestly written — the caller
 // (dag.ts) drops that chapter from the final card list rather than
 // rendering a filled-in placeholder (V17_FORENSIC_AUDIT.md, Japan chapter

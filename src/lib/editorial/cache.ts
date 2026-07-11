@@ -1,4 +1,8 @@
-const CACHE_VERSION = "results-v11-editorial-engine";
+// V19: bumped so Redis-cached responses that predate the editorialBrief
+// field (and the removal of chapter-based reading from the results page)
+// miss and regenerate rather than serving a stale response shape. The
+// version is part of every Redis key below.
+const CACHE_VERSION = "results-v19-editorial-brief";
 
 export function createCacheKey(topic: string): string {
   return topic

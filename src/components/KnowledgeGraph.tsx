@@ -207,22 +207,20 @@ export default function KnowledgeGraph({ title, related, onSelectNode }: Props) 
   }, [title, related]);
 
   return (
-    <section className="border-t border-white/5 py-12 md:py-16">
-      <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
-        <div>
-          <p className="text-xs uppercase tracking-[0.35em] text-cyan-400">
-            Knowledge Map
-          </p>
-          <h2 className="mt-2 text-3xl font-semibold tracking-tight text-white">
-            Connected Ideas
-          </h2>
-        </div>
-        <p className="max-w-md text-sm leading-relaxed text-neutral-400">
-          A visual representation of topics connected through references. Click any connected node to explore its briefing.
+    <section className="py-16 md:py-24 border-b border-white/5 animate-fade-in-up">
+      <div className="flex flex-col gap-2 mb-10">
+        <p className="text-[10px] font-bold uppercase tracking-[0.35em] text-cyan-400 font-mono">
+          Knowledge Map
+        </p>
+        <h2 className="font-display text-3xl font-semibold tracking-tight text-white bg-gradient-to-b from-white to-neutral-400 bg-clip-text text-transparent">
+          Connected Ideas
+        </h2>
+        <p className="max-w-md text-sm leading-relaxed text-neutral-400 font-light">
+          Click any connected node to explore its briefing.
         </p>
       </div>
 
-      <div className="mt-8 h-[480px] w-full overflow-hidden rounded-[2rem] border border-white/5 bg-[#07070a] shadow-[0_0_50px_rgba(0,0,0,0.5)]">
+      <div className="h-[420px] w-full overflow-hidden rounded-[2rem] border border-white/5 bg-[#07070a] shadow-[0_0_50px_rgba(0,0,0,0.5)]">
         <ReactFlow
           nodes={nodes}
           edges={edges}

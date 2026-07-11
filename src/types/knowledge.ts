@@ -221,6 +221,11 @@ export interface KnowledgeArtifact {
   sourceReferences: Array<{ url: string; title: string }>;
   factScript?: FactScript;
   briefSummaryProvenance?: Array<{ sentence: string; fact: string }>;
+  // V19: sentence-level provenance for structuredFacts.editorialBrief — the
+  // single editorial article shown on the results page. Absent (alongside an
+  // absent/empty editorialBrief) when the writer could not produce a
+  // verified article; the fallback path never fabricates one.
+  editorialBriefProvenance?: Array<{ sentence: string; fact: string }>;
 }
 
 export interface PerspectiveCard {

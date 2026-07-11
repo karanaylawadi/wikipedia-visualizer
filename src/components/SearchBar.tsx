@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, useMemo } from "react";
+import { TRENDING_TOPIC_NAMES } from "@/lib/featuredTopics";
 
 type Props = {
   topic: string;
@@ -17,14 +18,7 @@ interface AutocompleteItem {
   category: string;
 }
 
-const TRENDING_TOPICS = [
-  "Space Race",
-  "Roman Empire",
-  "Napoleon Bonaparte",
-  "Quantum Computing",
-  "Renaissance Art",
-  "Taj Mahal",
-];
+const TRENDING_TOPICS = TRENDING_TOPIC_NAMES;
 
 const BROWSE_CATEGORIES = [
   "History",
@@ -259,10 +253,10 @@ export default function SearchBar({
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
                   <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
                 </svg>
-                Exploring
+                Understanding
               </span>
             ) : (
-              "Explore"
+              "Understand"
             )}
           </button>
         </div>

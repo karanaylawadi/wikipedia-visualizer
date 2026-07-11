@@ -8,6 +8,15 @@
   --accent-violet: #7928ca;
 }
 
+/* V19 — Stitch redesign. Cyan stays the single interactive/accent color
+   across the whole app (docs/UI_GUIDELINES.md); the display typeface is
+   net-new (see design/stitch-v19/README.md — no font was specified in the
+   export, chosen to match the geometric-sans display headlines shown in
+   the mocks while keeping body copy on the existing system font stack). */
+@theme {
+  --font-display: var(--font-display), system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
   background-color: var(--background);

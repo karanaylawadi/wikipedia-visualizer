@@ -189,15 +189,23 @@ export async function POST(request: Request) {
       ontologyLabels: artifact.ontology.labels,
       entityType: artifact.ontology.labels[0],
       shortSummary: isFail ? "" : artifact.structuredFacts.briefSummary,
+      // V19: the single editorial article. Empty string when the writer
+      // could not produce a verified one (never fabricated) or when the
+      // artifact failed the quality gate — the UI omits the section.
+      editorialBrief: isFail ? "" : artifact.structuredFacts.editorialBrief || "",
       resultCards: hidden.has("cards") ? [] : artifact.structuredFacts.cards || [],
       didYouKnow: hidden.has("didYouKnow") ? [] : artifact.triviaCandidates.slice(0, 5),
       exploredTopics: explored,
       timeline: hidden.has("timeline") ? [] : artifact.timeline,
+      // V19: additive field for the knowledge-graph visualization — the
+      // triples were always computed by knowledgeGraph.ts and stored on
+      // the artifact, just never previously sent to the frontend.
+      knowledgeGraph: hidden.has("knowledgeGraph") ? [] : artifact.knowledgeGraph,
       seo,
       structuredFacts: mappedStructuredFacts,
       relatedList: hidden.has("relatedTopics") ? [] : artifact.relatedTopics,
       generatedAt: new Date().toISOString(),
-      cacheVersion: "results-v18-trustworthy-artifacts",
+      cacheVersion: "results-v19-editorial-brief",
       // Minimal, always-present status field — safe to expose in
       // production. Full diagnostics (per-stage LLM/fallback breakdown)
       // are developer-facing only, per requirement 8.

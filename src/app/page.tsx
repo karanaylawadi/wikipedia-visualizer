@@ -2,8 +2,17 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { BookOpen, Calendar, Compass, Sparkles } from "lucide-react";
 import SearchBar from "@/components/SearchBar";
 import { trackSearch, trackTopicOpened } from "@/lib/gtag";
+
+const FEATURE_INDICATORS = [
+  { icon: BookOpen, label: "AI Editorial Summary" },
+  { icon: Calendar, label: "Interactive Timeline" },
+  { icon: Compass, label: "Connected Topics" },
+  { icon: Sparkles, label: "2.4M Wikipedia Articles" },
+];
 
 export default function Home() {
   const [topic, setTopic] = useState("");
@@ -34,15 +43,6 @@ export default function Home() {
     router.push(`/results?topic=${encodeURIComponent(targetTopic)}`);
   }
 
-  const suggestions = [
-    { name: "Space Race", description: "Cold War race to the stars", emoji: "🚀" },
-    { name: "Roman Empire", description: "From Republic to Fall", emoji: "🏛️" },
-    { name: "Renaissance Art", description: "Humanism and masterpieces", emoji: "🎨" },
-    { name: "Quantum Computing", description: "Superposition and qubits", emoji: "💻" },
-    { name: "Napoleon Bonaparte", description: "Rise and fall of an empire", emoji: "⚔️" },
-    { name: "Taj Mahal", description: "Monuments of eternal love", emoji: "🕌" },
-  ];
-
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-between overflow-hidden bg-[#030303] px-6 text-white selection:bg-cyan-500/30 selection:text-white">
       {/* Cinematic Glowing background blobs */}
@@ -65,14 +65,14 @@ export default function Home() {
           </span>
         </div>
 
-        <h1 className="mt-8 text-5xl font-extrabold tracking-tight sm:text-7xl md:text-8xl">
+        <h1 className="mt-8 font-display text-5xl font-bold tracking-tight sm:text-7xl md:text-8xl">
           <span className="bg-gradient-to-b from-white via-neutral-200 to-neutral-500 bg-clip-text text-transparent">
             Wiki Visualizer
           </span>
         </h1>
 
         <p className="mt-6 max-w-xl text-base leading-relaxed text-neutral-400 sm:text-lg">
-          Explore historical timelines, AI-synthesized editorial briefings, and interactive connected concepts maps for any Wikipedia subject.
+          Understand anything on Wikipedia through AI-generated editorial summaries, interactive timelines and connected knowledge.
         </p>
 
         {/* Search bar integration */}
@@ -86,36 +86,25 @@ export default function Home() {
           />
         </div>
 
-        {/* Curated featured topics suggested list */}
-        <div className="mt-16 w-full max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-neutral-500">
-            Or begin with a featured subject
-          </p>
-          <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
-            {suggestions.map((item) => (
-              <button
-                key={item.name}
-                type="button"
-                onClick={() => handleSearch(item.name)}
-                disabled={loading}
-                className="group relative flex flex-col items-start rounded-2xl border border-white/5 bg-white/[0.02] p-5 text-left transition-all duration-300 hover:border-cyan-400/30 hover:bg-white/[0.04] hover:shadow-[0_0_30px_rgba(0,245,160,0.05)] disabled:opacity-50"
-              >
-                <span className="text-2xl group-hover:scale-110 transition duration-300">
-                  {item.emoji}
-                </span>
-                <h3 className="mt-3 font-semibold text-white group-hover:text-cyan-300 transition duration-300">
-                  {item.name}
-                </h3>
-                <p className="mt-1 text-xs text-neutral-500 line-clamp-1">
-                  {item.description}
-                </p>
-                <div className="absolute right-4 bottom-4 text-neutral-600 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300 text-sm">
-                  →
-                </div>
-              </button>
-            ))}
-          </div>
+        {/* Compact feature indicators */}
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
+          {FEATURE_INDICATORS.map(({ icon: Icon, label }) => (
+            <span
+              key={label}
+              className="flex items-center gap-1.5 text-xs font-medium text-neutral-500"
+            >
+              <Icon className="h-3.5 w-3.5 text-cyan-400/70" />
+              {label}
+            </span>
+          ))}
         </div>
+
+        <Link
+          href="/featured"
+          className="mt-10 text-xs font-semibold uppercase tracking-[0.2em] text-neutral-500 transition hover:text-cyan-400"
+        >
+          Browse Featured Articles →
+        </Link>
       </section>
 
       {/* Footer Branding */}

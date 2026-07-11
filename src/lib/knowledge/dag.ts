@@ -4,7 +4,7 @@ import { buildKnowledgeGraph } from "./knowledgeGraph";
 import { evaluateFacts } from "./factEvaluator";
 import { planNarrative } from "./narrativePlanner";
 import { generateFactScript } from "./factScript";
-import { writeDocumentarySummary, writeDocumentaryCard, sanitizeBannedWords } from "./documentaryWriter";
+import { writeDocumentarySummary, writeDocumentaryCard, writeEditorialBrief, sanitizeBannedWords } from "./documentaryWriter";
 import { polishDocumentary } from "./stylePolish";
 import { lintArtifact } from "./linter";
 import { assessArtifactQuality, reconcileWithLintReport, deriveConfidenceScores } from "./qualityGate";
@@ -83,6 +83,8 @@ export async function processKnowledgeDAG(
   let triviaCandidates: SurprisingInsight[];
   let narrativePlan: NarrativePlan;
   let briefSummaryText = "";
+  let editorialBriefText = "";
+  let editorialBriefProvenance: Array<{ sentence: string; fact: string }> | undefined;
   let perspectiveCards: PerspectiveCard[] = [];
   let factScript: FactScript | undefined;
   let briefSummaryProvenance: Array<{ sentence: string; fact: string }> | undefined;
@@ -117,6 +119,18 @@ export async function processKnowledgeDAG(
     const summaryData = await writeDocumentarySummary(resolved, factScript, diagnostics);
     briefSummaryText = summaryData.summary;
     briefSummaryProvenance = summaryData.provenance;
+
+    // V19: the single editorial article (180–250 words). Null when it can't
+    // be honestly written — the artifact then simply carries no article and
+    // the UI omits the section. Text and provenance are already sanitized
+    // and validated inside the writer; deliberately not routed through the
+    // style-polish pass, whose sentence-count-preserving contract is built
+    // around the summary/cards, not a multi-paragraph article.
+    const editorialBriefData = await writeEditorialBrief(resolved, factScript, diagnostics);
+    if (editorialBriefData) {
+      editorialBriefText = editorialBriefData.brief;
+      editorialBriefProvenance = editorialBriefData.provenance;
+    }
 
     // A chapter flagged insufficientData (no real facts, or no real
     // cause/effect available deterministically) is dropped here rather
@@ -175,8 +189,10 @@ export async function processKnowledgeDAG(
     narrativePlan = cached!.narrativePlan;
     factScript = cached!.factScript;
     briefSummaryProvenance = cached!.briefSummaryProvenance;
+    editorialBriefProvenance = cached!.editorialBriefProvenance;
     perspectiveCards = (cached!.structuredFacts.cards || []) as PerspectiveCard[];
     briefSummaryText = cached!.structuredFacts.briefSummary || "";
+    editorialBriefText = cached!.structuredFacts.editorialBrief || "";
     totalChaptersPlanned = narrativePlan.chapters.length;
     insufficientChapterCount = (factScript?.chapters || []).filter((c) => c.insufficientData).length;
   }
@@ -223,7 +239,7 @@ export async function processKnowledgeDAG(
 
   // Stage 4: Compile into Canonical Knowledge Artifact
   const artifactPayload: Omit<KnowledgeArtifact, "validationStatus"> = {
-    version: "18.0",
+    version: "19.0",
     compilerVersion: COMPILER_VERSION,
     ontologyVersion: ONTOLOGY_VERSION,
     wikipediaRevision,
@@ -238,6 +254,7 @@ export async function processKnowledgeDAG(
       subtitle: article.description || "",
       leadParagraph: article.lead,
       briefSummary: briefSummaryText,
+      editorialBrief: editorialBriefText,
       cards: perspectiveCards
     },
     namedEntities: compiled.namedEntities,
@@ -258,6 +275,10 @@ export async function processKnowledgeDAG(
     ],
     factScript,
     briefSummaryProvenance: briefSummaryProvenance ? briefSummaryProvenance.map(p => ({
+      sentence: sanitizeBannedWords(p.sentence),
+      fact: sanitizeBannedWords(p.fact)
+    })) : undefined,
+    editorialBriefProvenance: editorialBriefProvenance ? editorialBriefProvenance.map(p => ({
       sentence: sanitizeBannedWords(p.sentence),
       fact: sanitizeBannedWords(p.fact)
     })) : undefined

@@ -166,6 +166,11 @@ export function lintArtifact(artifact: Omit<KnowledgeArtifact, "validationStatus
     }
   };
   checkBannedWords(artifact.structuredFacts.briefSummary || "");
+  // V19: the editorial brief is user-facing prose and gets the same
+  // banned-word scan as the summary and cards. Only checked when present —
+  // an absent brief is a legitimate outcome (the writer never fabricates
+  // one), not a lint failure.
+  checkBannedWords(artifact.structuredFacts.editorialBrief || "");
   (artifact.structuredFacts.cards || []).forEach((c: any) => {
     checkBannedWords(c.summary || "");
   });
@@ -177,6 +182,16 @@ export function lintArtifact(artifact: Omit<KnowledgeArtifact, "validationStatus
   if (briefSummaryWords > 130) {
     paragraphTooLong = true;
   }
+  // V19: the editorial brief is multi-paragraph by contract (paragraphs
+  // separated by blank lines), so the 130-word rule applies per paragraph,
+  // not to the whole article.
+  (artifact.structuredFacts.editorialBrief || "")
+    .split(/\n\s*\n/)
+    .forEach((paragraph: string) => {
+      if (paragraph.split(/\s+/).filter(Boolean).length > 130) {
+        paragraphTooLong = true;
+      }
+    });
   (artifact.structuredFacts.cards || []).forEach((c: any) => {
     const cardWords = (c.summary || "").split(/\s+/).filter(Boolean).length;
     if (cardWords > 130) {
@@ -306,6 +321,11 @@ export function lintArtifact(artifact: Omit<KnowledgeArtifact, "validationStatus
   };
 
   checkProvenance(artifact.structuredFacts.briefSummary || "", artifact.briefSummaryProvenance || []);
+  // V19: the editorial brief carries the same sentence-level provenance
+  // contract as the summary and cards. Checked only when the brief exists.
+  if (artifact.structuredFacts.editorialBrief) {
+    checkProvenance(artifact.structuredFacts.editorialBrief, artifact.editorialBriefProvenance || []);
+  }
   (artifact.structuredFacts.cards || []).forEach((c: any) => {
     checkProvenance(c.summary || "", c.provenance || []);
   });

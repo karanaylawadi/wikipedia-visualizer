@@ -3,9 +3,13 @@
 import { Suspense, useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import dynamic from "next/dynamic";
-import EditorialCarousel from "@/components/EditorialCarousel";
+import LoadingSynthesis from "@/components/LoadingSynthesis";
 import { trackTopicOpened } from "@/lib/gtag";
 
+// V19 correction: EditorialCarousel (chapter-based reading) is removed from
+// the render tree — the results page is now a single editorial article. The
+// component and the chapter-generation pipeline stages behind it are left
+// intact on disk/in the artifact, deliberately unrendered.
 interface PerspectiveCard {
   title: string;
   summary: string;
@@ -15,11 +19,18 @@ interface PerspectiveCard {
 }
 
 // Lazy-loaded components for optimal performance & high Core Web Vitals (LCP/INP)
-const VisualSnapshot = dynamic(() => import("@/components/VisualSnapshot"), {
+// V19: VisualSnapshot retired from the render tree — its ontology-specific
+// tabbed data explorer has no slot in the approved V19 hierarchy, and its
+// fallback values ("Key researchers", "Release era", etc.) independently
+// violated NON_NEGOTIABLES.md's "never invent placeholder content" rule.
+// The file is left on disk (not deleted) per this project's existing
+// dead-code convention (docs/DECISIONS.md) so it can be restored by adding
+// back a render call, without needing to reconstruct its props wiring.
+const KnowledgeGraph = dynamic(() => import("@/components/KnowledgeGraph"), {
   ssr: false,
   loading: () => (
     <div className="h-64 w-full rounded-3xl bg-[#07080c] border border-white/5 animate-pulse flex items-center justify-center">
-      <span className="text-[10px] uppercase tracking-[0.3em] text-neutral-600">Loading Visual Snapshot...</span>
+      <span className="text-[10px] uppercase tracking-[0.3em] text-neutral-600">Loading Knowledge Graph...</span>
     </div>
   )
 });
@@ -72,6 +83,12 @@ interface ExploreTopic {
   category: string;
 }
 
+interface GraphTriple {
+  subject: string;
+  predicate: string;
+  object: string;
+}
+
 interface StructuredFacts {
   title: string;
   subtitle: string;
@@ -98,10 +115,12 @@ interface AnalysisResponse {
   topicCategory: string;
   topicSubcategory: string;
   shortSummary: string;
+  editorialBrief: string;
   resultCards: PerspectiveCard[];
   didYouKnow: string[];
   exploredTopics: ExploreTopic[];
   timeline: TimelineMilestone[] | null;
+  knowledgeGraph: GraphTriple[];
   seo: {
     metaTitle: string;
     metaDescription: string;
@@ -118,6 +137,55 @@ interface AnalysisResponse {
   cacheStatus?: string;
   ontologyLabels?: string[];
   entityType?: string;
+}
+
+// Adapts the pipeline's raw subject/predicate/object triples into the
+// flat node list KnowledgeGraph.tsx expects. Caps node count and label
+// length deliberately — the Stitch mock's graphs are dense enough to be
+// hard to read, and this is a legibility floor, not a literal match to
+// the mock (see V19 plan, Risks #4).
+const MAX_GRAPH_NODES = 14;
+const MAX_LABEL_LENGTH = 24;
+
+function graphNodesFromTriples(
+  topic: string,
+  triples: GraphTriple[]
+): Array<{ title: string; connections: string[] }> {
+  const topicLower = topic.toLowerCase();
+  const truncate = (s: string) => (s.length > MAX_LABEL_LENGTH ? s.slice(0, MAX_LABEL_LENGTH - 1) + "…" : s);
+
+  const nodeNames: string[] = [];
+  const addNode = (name: string) => {
+    if (!name) return;
+    if (name.toLowerCase() === topicLower) return;
+    const truncated = truncate(name);
+    if (!nodeNames.some((n) => n.toLowerCase() === truncated.toLowerCase())) {
+      nodeNames.push(truncated);
+    }
+  };
+
+  triples.forEach((t) => {
+    addNode(t.subject);
+    addNode(t.object);
+  });
+
+  const capped = nodeNames.slice(0, MAX_GRAPH_NODES);
+  const cappedLower = new Set(capped.map((n) => n.toLowerCase()));
+
+  return capped.map((name) => {
+    const connections = new Set<string>();
+    triples.forEach((t) => {
+      const subj = truncate(t.subject).toLowerCase();
+      const obj = truncate(t.object).toLowerCase();
+      if (subj === name.toLowerCase() && obj !== topicLower && cappedLower.has(obj)) {
+        connections.add(truncate(t.object));
+      }
+      if (obj === name.toLowerCase() && subj !== topicLower && cappedLower.has(subj)) {
+        connections.add(truncate(t.subject));
+      }
+    });
+    return { title: name, connections: Array.from(connections) };
+  });
 }
 
 function ResultsContent() {
@@ -267,23 +335,7 @@ function ResultsContent() {
         )}
 
         {/* Loading State */}
-        {loading && (
-          <section className="flex min-h-[75vh] flex-col items-center justify-center text-center animate-fade-in-up">
-            <div className="relative mb-8 flex h-16 w-16 items-center justify-center">
-              <div className="absolute inset-0 rounded-full border-t-2 border-cyan-400 animate-spin" />
-              <div className="h-10 w-10 rounded-full bg-black/40 backdrop-blur-md" />
-            </div>
-            <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-cyan-400">
-              Reading Wikipedia
-            </p>
-            <h1 className="mt-5 max-w-2xl text-3xl font-extrabold tracking-tight sm:text-5xl md:text-6xl bg-gradient-to-b from-white to-neutral-500 bg-clip-text text-transparent">
-              Synthesizing Briefing
-            </h1>
-            <p className="mt-4 text-xs text-neutral-500 max-w-xs">
-              Fetching details, dynamic perspectives, and connected concepts for {decodedTopic}...
-            </p>
-          </section>
-        )}
+        {loading && <LoadingSynthesis topic={decodedTopic} />}
 
         {/* Error State */}
         {error && !loading && (
@@ -304,23 +356,37 @@ function ResultsContent() {
         {/* Render Results Content */}
         {data && !loading && (
           <div className="animate-fade-in-up mt-8 space-y-16 md:space-y-24">
-            <section className="space-y-6">
-              <div className="flex flex-col gap-2">
-                <div className="flex items-center justify-between">
-                  <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-cyan-400">
-                    {humanReadableCategory(data.topicCategory) || "Encyclopedia Profile"}
+            {/* 1. HERO */}
+            <section className="space-y-8">
+              <div className="flex items-center justify-between">
+                <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-cyan-400">
+                  {humanReadableCategory(data.topicCategory) || "Encyclopedia Profile"}
+                </span>
+                {data.cacheStatus && (
+                  <span className="text-[9px] uppercase tracking-[0.2em] text-neutral-600 bg-neutral-900 px-2 py-0.5 rounded border border-white/5 font-mono">
+                    Cache: {data.cacheStatus}
                   </span>
-                  {data.cacheStatus && (
-                    <span className="text-[9px] uppercase tracking-[0.2em] text-neutral-600 bg-neutral-900 px-2 py-0.5 rounded border border-white/5 font-mono">
-                      Cache: {data.cacheStatus}
-                    </span>
-                  )}
+                )}
+              </div>
+
+              {/* Optional hero image — no empty placeholder when absent */}
+              {data.article.thumbnail && (
+                <div className="relative h-56 w-full overflow-hidden rounded-3xl border border-white/5 sm:h-72 md:h-80">
+                  <img
+                    src={data.article.thumbnail}
+                    alt={data.article.title}
+                    className="h-full w-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#090A0F] via-[#090A0F]/20 to-transparent" />
                 </div>
-                <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl bg-gradient-to-b from-white to-neutral-400 bg-clip-text text-transparent leading-none">
+              )}
+
+              <div className="flex flex-col gap-4">
+                <h1 className="font-display text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl bg-gradient-to-b from-white to-neutral-400 bg-clip-text text-transparent leading-none">
                   {data.article.title}
                 </h1>
                 {data.ontologyLabels && data.ontologyLabels.length > 0 && (
-                  <div className="flex flex-wrap gap-2 text-[10px] text-neutral-400 font-mono mt-1 mb-2">
+                  <div className="flex flex-wrap gap-2 text-[10px] text-neutral-400 font-mono">
                     {data.ontologyLabels.map((label: string, idx: number) => (
                       <span key={idx} className="flex items-center gap-2">
                         {idx > 0 && <span className="text-neutral-700 font-sans">•</span>}
@@ -329,46 +395,63 @@ function ResultsContent() {
                     ))}
                   </div>
                 )}
-                <p className="text-base leading-relaxed text-neutral-400 font-light max-w-3xl">
+
+                {/* Short descriptor under the title — the article itself is
+                    the section below. */}
+                <p className="max-w-3xl text-base leading-relaxed text-neutral-400 font-light">
                   {data.article.description || data.article.extract.split(".")[0] + "."}
                 </p>
               </div>
             </section>
 
-            {/* 1. REPLACE EDITORIAL BRIEF WITH CAROUSEL */}
-            <EditorialCarousel
-              cards={data.resultCards}
-              importantDates={data.structuredFacts?.importantDates}
-              statistics={data.structuredFacts?.statistics}
-              category={data.topicCategory}
-              thumbnail={data.article.thumbnail || null}
-            />
+            {/* 2. SINGLE EDITORIAL ARTICLE (editorialBrief, 180–250 words,
+                written and validated server-side with sentence-level
+                provenance). Omitted entirely — no empty container — when the
+                writer could not produce a verified article. */}
+            {data.editorialBrief && (
+              <section className="border-b border-white/5 pb-16 md:pb-20">
+                <p className="text-[10px] font-bold uppercase tracking-[0.35em] text-cyan-400 font-mono mb-6">
+                  Editorial Briefing
+                </p>
+                <div className="max-w-[65ch] space-y-6">
+                  {data.editorialBrief.split(/\n\s*\n/).map((paragraph, idx) => (
+                    <p
+                      key={idx}
+                      className="text-lg md:text-xl leading-relaxed md:leading-loose text-neutral-300 font-light tracking-wide"
+                    >
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+              </section>
+            )}
 
-            {/* 2. DYNAMIC VISUAL SNAPSHOT */}
-            <VisualSnapshot
-              category={data.topicCategory}
-              facts={data.structuredFacts}
-              timeline={data.timeline}
-              thumbnail={data.article.thumbnail || null}
-            />
-
-            {/* 4. SURPRISING INSIGHTS (FACT CARDS) */}
+            {/* 4. DID YOU KNOW (already capped to 5 server-side) */}
             {data.didYouKnow && data.didYouKnow.length > 0 && (
               <FactCards facts={data.didYouKnow} />
             )}
 
-            {/* 5. DOCUMENTARY TIMELINE */}
-            {data.relatedList && data.relatedList.length > 0 && (
+            {/* 4. TIMELINE — gated on genuine timeline events from the
+                artifact (the quality gate already hides timelines with
+                fewer than 3 valid events server-side). Never synthesized
+                from related topics. */}
+            {data.timeline && data.timeline.length > 0 && (
               <KnowledgeJourney
-                currentTopic={data.article.title}
                 category={data.topicCategory}
-                subcategory={data.topicSubcategory}
-                relatedList={data.relatedList}
                 timeline={data.timeline}
               />
             )}
 
-            {/* 6. DISCOVERY CAROUSEL (PEOPLE ALSO EXPLORED) */}
+            {/* 6. KNOWLEDGE GRAPH */}
+            {data.knowledgeGraph && data.knowledgeGraph.length > 0 && (
+              <KnowledgeGraph
+                title={data.article.title}
+                related={graphNodesFromTriples(data.article.title, data.knowledgeGraph)}
+                onSelectNode={(nextTopic) => router.push(`/results?topic=${encodeURIComponent(nextTopic)}`)}
+              />
+            )}
+
+            {/* 7. CONTINUE LEARNING (DISCOVERY CAROUSEL) */}
             {data.exploredTopics && data.exploredTopics.length > 0 && (
               <DiscoveryCarousel topics={data.exploredTopics} />
             )}

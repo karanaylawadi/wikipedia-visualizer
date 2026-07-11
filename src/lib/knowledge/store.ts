@@ -12,7 +12,12 @@ const BASE_DIR = path.join(process.cwd(), "knowledge");
 // version "v17.0" and are now treated as stale on next read — they are
 // left on disk as a historical record rather than deleted (see
 // reports/releases/V18_PHASE1_IMPLEMENTATION_PLAN.md, Migration Strategy).
-export const COMPILER_VERSION = "v18.0";
+// V19: COMPILER_VERSION bumped so artifacts compiled before the editorial
+// brief existed (structuredFacts.editorialBrief + editorialBriefProvenance,
+// see documentaryWriter.ts/writeEditorialBrief) regenerate lazily on next
+// read. cacheGuard.ts still protects against a worse artifact overwriting a
+// better cached one during that regeneration.
+export const COMPILER_VERSION = "v19.0";
 export const ONTOLOGY_VERSION = "v18.0";
 // Separate version dimension so a future change to qualityGate.ts's
 // scoring alone (without touching the compiler or ontology) can also force

@@ -7,11 +7,17 @@
 // Run with: npx tsx scripts/run-unit-tests.ts
 
 import assert from "node:assert/strict";
+import fs from "node:fs";
+import path from "node:path";
 import { containsPlaceholder, isPlaceholderValue, scanForPlaceholders } from "../src/lib/knowledge/placeholderDetector";
 import { cleanSentence, cleanFragment } from "../src/lib/knowledge/sentenceCleaner";
 import { assessArtifactQuality, type QualityGateInput } from "../src/lib/knowledge/qualityGate";
 import { shouldAcceptWrite } from "../src/lib/knowledge/cacheGuard";
 import { validateTriple } from "../src/lib/knowledge/knowledgeGraph";
+import {
+  validateEditorialBriefText,
+  EDITORIAL_BRIEF_MAX_WORDS,
+} from "../src/lib/knowledge/documentaryWriter";
 import type { KnowledgeArtifact, ResolvedEntity, OntologyDefinition, TimelineEvent } from "../src/types/knowledge";
 
 let passed = 0;
@@ -357,6 +363,125 @@ test("a timeline with 3+ valid entries does not hide the 'timeline' module", () 
 test("an empty/absent knowledge graph hides the 'knowledgeGraph' module", () => {
   const result = assessArtifactQuality(baseInput({ knowledgeGraph: [] }));
   assert.ok(result.modulesHidden.includes("knowledgeGraph"));
+});
+
+// ---------------------------------------------------------------------
+console.log("\n=== V19 Editorial Brief Validation ===");
+// ---------------------------------------------------------------------
+
+// 15 words per sentence, concrete and placeholder-free.
+const BRIEF_SENTENCE =
+  "In 1804 Napoleon Bonaparte crowned himself Emperor of the French at Notre-Dame in Paris.";
+const briefParagraph = (sentences: number) => Array(sentences).fill(BRIEF_SENTENCE).join(" ");
+
+test("hard maximum is 250 words", () => {
+  assert.equal(EDITORIAL_BRIEF_MAX_WORDS, 250);
+});
+
+test("accepts a valid two-paragraph brief in the 180-250 word target range", () => {
+  const brief = `${briefParagraph(8)}\n\n${briefParagraph(7)}`; // 120 + 105 = 225 words
+  assert.equal(validateEditorialBriefText(brief).ok, true);
+});
+
+test("rejects a brief over the 250-word hard maximum", () => {
+  const brief = `${briefParagraph(8)}\n\n${briefParagraph(8)}\n\n${briefParagraph(8)}`; // 360 words
+  const verdict = validateEditorialBriefText(brief);
+  assert.equal(verdict.ok, false);
+  assert.ok(verdict.reason?.includes("hard maximum"));
+});
+
+test("rejects a brief too short to be a coherent briefing", () => {
+  const verdict = validateEditorialBriefText(BRIEF_SENTENCE); // 15 words
+  assert.equal(verdict.ok, false);
+  assert.ok(verdict.reason?.includes("too short"));
+});
+
+test("rejects any single paragraph over 130 words", () => {
+  const brief = briefParagraph(10); // one 140-word paragraph (14 words/sentence)
+  const verdict = validateEditorialBriefText(brief);
+  assert.equal(verdict.ok, false);
+  assert.ok(verdict.reason?.includes("paragraph exceeds"));
+});
+
+test("rejects headings inside the article", () => {
+  const brief = `## Early Life\n\n${briefParagraph(8)}`;
+  assert.equal(validateEditorialBriefText(brief).ok, false);
+});
+
+test("rejects bullet points inside the article", () => {
+  const brief = `${briefParagraph(8)}\n\n- ${BRIEF_SENTENCE}`;
+  assert.equal(validateEditorialBriefText(brief).ok, false);
+});
+
+test("rejects more than 3 paragraphs", () => {
+  const brief = [briefParagraph(2), briefParagraph(2), briefParagraph(2), briefParagraph(2)].join("\n\n");
+  const verdict = validateEditorialBriefText(brief);
+  assert.equal(verdict.ok, false);
+  assert.ok(verdict.reason?.includes("paragraphs"));
+});
+
+test("rejects placeholder-shaped content even at valid length", () => {
+  const brief = `${briefParagraph(8)}\n\nPivotal era in 1957. ${briefParagraph(6)}`;
+  const verdict = validateEditorialBriefText(brief);
+  assert.equal(verdict.ok, false);
+  assert.ok(verdict.reason?.includes("placeholder"));
+});
+
+test("rejects an empty brief (the never-fabricate contract)", () => {
+  assert.equal(validateEditorialBriefText("").ok, false);
+  assert.equal(validateEditorialBriefText("   ").ok, false);
+});
+
+// ---------------------------------------------------------------------
+console.log("\n=== V19 Results-Page Render Contract (source scans) ===");
+// ---------------------------------------------------------------------
+// The project has no React render-test infrastructure (deliberately no
+// jest/vitest dependency), so the render-tree guarantees are asserted
+// against the page source itself: cruder than mounting the tree, but it
+// fails loudly if someone re-introduces the removed modules or drops a
+// conditional gate.
+
+const resultsPageSource = fs.readFileSync(path.join(process.cwd(), "src/app/results/page.tsx"), "utf-8");
+const knowledgeJourneySource = fs.readFileSync(path.join(process.cwd(), "src/components/KnowledgeJourney.tsx"), "utf-8");
+
+test("EditorialCarousel is absent from the V19 results render tree", () => {
+  // Scan for the import and the JSX element specifically — a prose mention
+  // in a comment explaining the removal is fine; wiring it back in is not.
+  assert.ok(!resultsPageSource.includes('from "@/components/EditorialCarousel"'), "results/page.tsx must not import EditorialCarousel");
+  assert.ok(!resultsPageSource.includes("<EditorialCarousel"), "results/page.tsx must not render EditorialCarousel");
+});
+
+test("the editorial article does not render when unavailable (gated on data.editorialBrief)", () => {
+  assert.ok(/\{data\.editorialBrief && \(/.test(resultsPageSource));
+});
+
+test("the timeline section is gated on real timeline data, not relatedList", () => {
+  assert.ok(/\{data\.timeline && data\.timeline\.length > 0 && \(/.test(resultsPageSource));
+  assert.ok(!/relatedList=\{/.test(resultsPageSource), "KnowledgeJourney must not receive relatedList");
+});
+
+test("the synthetic timeline fallback no longer exists in KnowledgeJourney", () => {
+  // Scan for the generation code (template literals), not prose mentions
+  // of the removed behavior in comments.
+  assert.ok(!knowledgeJourneySource.includes("Timeline progression of ${"));
+  assert.ok(!knowledgeJourneySource.includes("Phase ${"));
+  assert.ok(knowledgeJourneySource.includes("if (parsedTimeline.length === 0) return null;"));
+});
+
+test("Did You Know hides when empty", () => {
+  assert.ok(/\{data\.didYouKnow && data\.didYouKnow\.length > 0 && \(/.test(resultsPageSource));
+});
+
+test("hero image omission leaves no empty image container", () => {
+  assert.ok(/\{data\.article\.thumbnail && \(/.test(resultsPageSource));
+});
+
+test("knowledge graph hides when empty", () => {
+  assert.ok(/\{data\.knowledgeGraph && data\.knowledgeGraph\.length > 0 && \(/.test(resultsPageSource));
+});
+
+test("Continue Learning hides when empty", () => {
+  assert.ok(/\{data\.exploredTopics && data\.exploredTopics\.length > 0 && \(/.test(resultsPageSource));
 });
 
 // ---------------------------------------------------------------------

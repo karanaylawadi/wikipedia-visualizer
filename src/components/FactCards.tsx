@@ -75,8 +75,8 @@ export default function FactCards({ facts }: Props) {
                 <div className="p-2 rounded-xl bg-cyan-950/10 border border-cyan-500/10 flex items-center justify-center shrink-0">
                   <Icon className="h-4 w-4 text-cyan-400" />
                 </div>
-                <span className="text-[9px] font-mono font-bold bg-cyan-400/5 px-2 py-0.5 rounded text-cyan-400">
-                  Surprise: {item.surpriseScore}/10
+                <span className="text-[9px] font-mono font-bold uppercase tracking-widest text-neutral-500">
+                  {label}
                 </span>
               </div>
               
@@ -129,9 +129,6 @@ export default function FactCards({ facts }: Props) {
 
               <div className="space-y-6">
                 <div className="flex items-center gap-3">
-                  <span className="text-[10px] font-mono bg-cyan-400/10 px-3 py-1 rounded text-cyan-400 font-bold uppercase tracking-wider">
-                    Surprise Index: {selectedInsight.surpriseScore}/10
-                  </span>
                   <span className="text-[10px] font-mono text-neutral-500 uppercase tracking-widest">
                     Verified Connection
                   </span>
